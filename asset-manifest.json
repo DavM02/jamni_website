@@ -1,15 +1,12 @@
 {
   "files": {
     "main.css": "/jamni_website/static/css/main.d291561a.css",
-    "main.js": "/jamni_website/static/js/main.e72cc22e.js",
+    "main.js": "/jamni_website/static/js/main.5e16d9e1.js",
     "static/js/453.cdc79342.chunk.js": "/jamni_website/static/js/453.cdc79342.chunk.js",
-    "static/media/img_10.jpeg": "/jamni_website/static/media/img_10.6acdbf67c22acdf87e4a.jpeg",
     "static/media/img_4.jpg": "/jamni_website/static/media/img_4.b4cc41dab2b95ec3f0db.jpg",
-    "static/media/img_14.jpg": "/jamni_website/static/media/img_14.798dd927ce6ab29773aa.jpg",
-    "static/media/img_9.jpeg": "/jamni_website/static/media/img_9.f3456b3ca33d22fe2913.jpeg",
-    "static/media/img_7.jpeg": "/jamni_website/static/media/img_7.ec805cd2043d5b242a26.jpeg",
+    "static/media/img_10.webp": "/jamni_website/static/media/img_10.a90e722251d48ff93daa.webp",
     "static/media/bg.jpg": "/jamni_website/static/media/bg.e8af82ee2292f78d867f.jpg",
-    "static/media/img_6.jpeg": "/jamni_website/static/media/img_6.d97866f04a54d2013416.jpeg",
+    "static/media/img_7.webp": "/jamni_website/static/media/img_7.e5013631ff14648cf5b9.webp",
     "static/media/img_13.jpg": "/jamni_website/static/media/img_13.b96ddf872af7740fe9fc.jpg",
     "static/media/img_2.jpeg": "/jamni_website/static/media/img_2.100eca3cdff95a823fd9.jpeg",
     "static/media/img_5.jpeg": "/jamni_website/static/media/img_5.117ce6db2e9fbc1578e2.jpeg",
@@ -21,6 +18,7 @@
     "static/media/Zetafonts - Lovelace Text Regular.otf": "/jamni_website/static/media/Zetafonts - Lovelace Text Regular.13f9fe62b251e0244a9e.otf",
     "static/media/img_8.jpeg": "/jamni_website/static/media/img_8.4a81d0aacd51950448c3.jpeg",
     "static/media/Mockup.png": "/jamni_website/static/media/Mockup.a84892d4929715ef98e9.png",
+    "static/media/img_14.webp": "/jamni_website/static/media/img_14.a6ef65b91d2ae4509d3c.webp",
     "static/media/img_3.jpeg": "/jamni_website/static/media/img_3.a2a19a14ac498f7edc41.jpeg",
     "static/media/img_1.jpeg": "/jamni_website/static/media/img_1.519b891ceb12ef4292a6.jpeg",
     "static/media/Moniqa-CondensedHeading.otf": "/jamni_website/static/media/Moniqa-CondensedHeading.3716ecb53ed5b90c33e0.otf",
@@ -29,9 +27,11 @@
     "static/media/img_6.jpg": "/jamni_website/static/media/img_6.f7f14422530b9293151a.jpg",
     "static/media/img_4.jpeg": "/jamni_website/static/media/img_4.9b2c4e3aab357a6fdcb8.jpeg",
     "static/media/img_2.jpg": "/jamni_website/static/media/img_2.6381dbc165216a4d26f2.jpg",
+    "static/media/img_9.webp": "/jamni_website/static/media/img_9.2eac86807c193808b81b.webp",
     "static/media/sketch.jpg": "/jamni_website/static/media/sketch.76bf1c621d960c66924b.jpg",
     "static/media/arrow-cursive-right.svg": "/jamni_website/static/media/arrow-cursive-right.f644df4929269fa8a26133dbd51858da.svg",
     "static/media/arrow-cursive-left.svg": "/jamni_website/static/media/arrow-cursive-left.beb4961461d1bdabe87eb41f6f12ff7d.svg",
+    "static/media/img_6.webp": "/jamni_website/static/media/img_6.bc801b1981f1a0777cc1.webp",
     "static/media/img_12.jpg": "/jamni_website/static/media/img_12.8d43eb3dd7a48ce2b5c8.jpg",
     "static/media/3d-modeling.svg": "/jamni_website/static/media/3d-modeling.9d3c5faa5b68b20c7893a9784b775da0.svg",
     "static/media/Jamni -.svg": "/jamni_website/static/media/Jamni -.46d43ba7ded7ef33c836ccf5d66d74ff.svg",
@@ -60,11 +60,11 @@
     "static/media/arrow-left.svg": "/jamni_website/static/media/arrow-left.663964bd5818d0ae86708ff85e9360e8.svg",
     "static/media/arrow-right.svg": "/jamni_website/static/media/arrow-right.546c00a8f4fc58f1ad76de5d0c8aae18.svg",
     "main.d291561a.css.map": "/jamni_website/static/css/main.d291561a.css.map",
-    "main.e72cc22e.js.map": "/jamni_website/static/js/main.e72cc22e.js.map",
+    "main.5e16d9e1.js.map": "/jamni_website/static/js/main.5e16d9e1.js.map",
     "453.cdc79342.chunk.js.map": "/jamni_website/static/js/453.cdc79342.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d291561a.css",
-    "static/js/main.e72cc22e.js"
+    "static/js/main.5e16d9e1.js"
   ]
 }
