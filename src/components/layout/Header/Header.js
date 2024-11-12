@@ -14,39 +14,34 @@ export default function Header() {
   const query = useMediaQ('(max-width: 777px)');
   const [scroll, setScroll] = useState(true);
   const { scrollbarAccess } = useContext(MainContext);
-  const [isScrollbarReady, setIsScrollbarReady] = useState(false);
   const [menu, setMenu] = useState({ open: false, backdrop: false, nested: false });
 
   useEffect(() => {
     if (scrollbarAccess.current) {
-      setIsScrollbarReady(true);
-      scrollbarAccess.current.addListener(() => {
-        console.log('a')
-      });
-    }
-  }, [scrollbarAccess]);
+      function handleScroll(event) {
+        const scrollY = event.offset.y;
+        console.log(scrollY)
+        setScroll(scrollY < 78);
+      }
 
-  useEffect(() => {
-    function handleScroll(event) {
-      const scrollY = event.offset.y;
-      console.log(scrollY)
-      setScroll(scrollY < 78);
-    }
 
-    if (isScrollbarReady) {
       const scrollbarInstance = scrollbarAccess.current;
       scrollbarInstance.addListener(handleScroll);
+
       return () => {
         scrollbarInstance.removeListener(handleScroll);
       };
+
     }
-  }, [isScrollbarReady, scrollbarAccess]);
+  }, [scrollbarAccess]);
+
+
 
   useEffect(() => {
     if (menu.open || menu.nested) {
       setMenu({ open: false, backdrop: false, nested: false });
     }
-   
+
   }, [query]);
 
   return (
