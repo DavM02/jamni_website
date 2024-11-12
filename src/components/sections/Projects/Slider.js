@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import img1 from '../../../assets/img_13.jpg'
-import img2 from '../../../assets/img_14.jpg'
+import img2 from '../../../assets/img_14.webp'
 import img3 from '../../../assets/sofas/img_1.jpg'
 import img4 from '../../../assets/beds/img_5.jpg'
 import img5 from '../../../assets/beds/img_4.jpg'

@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import img6 from '../../../assets/img_6.jpeg';
-import img7 from '../../../assets/img_7.jpeg';
+import img6 from '../../../assets/img_6.webp';
+import img7 from '../../../assets/img_7.webp';
 import img8 from '../../../assets/img_8.jpeg';
-import img9 from '../../../assets/img_9.jpeg';
-import img10 from '../../../assets/img_10.jpeg';
+import img9 from '../../../assets/img_9.webp';
+import img10 from '../../../assets/img_10.webp';
 import arrow from '../../../assets/icons/arrow-left-small.svg';
 import SliderNav from './SliderNav';
 import useDebounce from '../../../hooks/useDebounce';

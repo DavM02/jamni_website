@@ -26,6 +26,7 @@ export default function Header() {
   useEffect(() => {
     function handleScroll(event) {
       const scrollY = event.offset.y;
+      console.log(scrollY)
       setScroll(scrollY < 78);
     }
 
@@ -36,7 +37,7 @@ export default function Header() {
         scrollbarInstance.removeListener(handleScroll);
       };
     }
-  }, [isScrollbarReady]);
+  }, [isScrollbarReady, scrollbarAccess]);
 
   useEffect(() => {
     if (menu.open || menu.nested) {
