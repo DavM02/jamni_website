@@ -1,0 +1,141 @@
+#about {
+    padding: var(--section-padding-equal-big) 0;
+    background-color: var(--gray);
+}
+
+#about .container {
+    max-width: 1920px;
+}
+
+#about p {
+    position: relative;
+}
+
+#about p img {
+    top: -10px;
+}
+
+#about p:nth-child(2) {
+    margin-top: 20px;
+}
+
+#about .section-layout {
+    display: grid;
+    grid-template-columns: 1fr 44%;
+    width: 92%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 70px;
+}
+
+#about .section-layout>div {
+    justify-self: flex-end;
+}
+
+#about .section-layout div:nth-child(2):not(.image) {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    padding-bottom: 40px;
+}
+
+
+#about .section-layout .image:nth-child(1) {
+    max-width: 79%;
+    justify-self: flex-end;
+}
+
+#about .section-layout div:nth-child(1):not(.image) {
+    max-width: 409px;
+}
+
+#about .section-layout div:nth-child(2) .image:nth-child(2) {
+    position: absolute;
+    width: 50%;
+    max-width: 300px;
+    left: 0;
+    bottom: 0;
+}
+
+
+@media all and (max-width: 1440px) {
+    #about .section-layout>div {
+        justify-self: center;
+    }
+
+    #about .section-layout {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 769px) {
+    #about .section-layout {
+        display: flex;
+        flex-direction: column;
+        margin-top: 34px;
+    }
+
+    #about .section-layout div:nth-child(2):not(.image) {
+        order: -1;
+    }
+}
+
+#about .number {
+    position: relative;
+    opacity: 0;
+    filter: blur(6px);
+    transition: var(--transition) 1s filter, var(--transition) 1s opacity;
+
+}
+
+#about .number:not(.number:nth-child(1)):after {
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    height: 66px;
+    position: absolute;
+    left: -12px;
+    width: 1px;
+    background-color: #CECECE;
+    align-self: center;
+}
+
+#about .advantages.visible .number {
+    filter: blur(0);
+    opacity: 1;
+}
+
+#about .number>div:nth-child(1) {
+    width: clamp(5.5rem, 5.2837rem + 0.9615vw, 6.4375rem);
+}
+
+#about .number:nth-child(1)>div:nth-child(1) {
+    width: clamp(5rem, 4.8558rem + 0.641vw, 5.625rem);
+}
+
+#about .icon {
+    width: 43px;
+}
+
+#about .advantages {
+    max-width: 1115px;
+    width: 100%;
+    margin-top: clamp(2.9375rem, 1.9567rem + 4.359vw, 7.1875rem);
+}
+
+#about .advantages {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+#about .advantages span {
+    line-height: 20px;
+}
+
+
+@media all and (max-width: 1023px) {
+    #about .number::after {
+        content: none !important;
+    }
+}

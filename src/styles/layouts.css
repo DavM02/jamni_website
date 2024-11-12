@@ -1,0 +1,7 @@
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 1420px;
+    padding: 0 var(--container-padding);
+    overflow: hidden;
+}

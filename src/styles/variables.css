@@ -1,0 +1,65 @@
+:root {
+    --transition: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --gray: #F5F5F5;
+    --white: #FFFFFF;
+    --black: #000000;
+    --line-bg: #D3D3D3;
+    --backdrop: #00000052;
+    --placeholder-1: rgb(157, 153, 149);
+    --placeholder-2: rgb(73 69 69);
+    --placeholder-3: rgb(87, 99, 87);
+    --nav-height: 80px;
+    --section-padding-equal-big: clamp(4.375rem, 3.2212rem + 5.1282vw, 9.375rem);
+    --section-padding-bottom-small: clamp(0rem, -1.4856rem + 6.6026vw, 6.4375rem);
+    --section-padding-top-small: clamp(2.125rem, 1.6058rem + 2.3077vw, 4.375rem);
+    --header-container-padding: clamp(0.625rem, 0.3654rem + 1.1538vw, 1.75rem);
+    --container-padding: clamp(1.875rem, 1.625rem + 1.25vw, 3.125rem);
+
+    --home-slider-transform: clamp(-5rem, -26.6949rem + 33.8983vw, 0rem);
+    --home-slider-gap: clamp(0.9375rem, 0.5625rem + 1.875vw, 2.8125rem);
+    --home-slider-img-size: clamp(6.875rem, 5.9125rem + 4.8125vw, 11.6875rem);
+    --home-slider-active-img-size: clamp(25.625rem, 3.0536rem + 35.2679vw, 45.375rem);
+    --home-slider-width: calc((var(--home-slider-gap) * 15) + (15 * var(--home-slider-img-size)) + var(--home-slider-active-img-size));
+
+    --bestsellers-slider-img-width: clamp(13.75rem, 11.7308rem + 8.9744vw, 22.5rem);
+    --bestsellers-slider-img-height: clamp(16.25rem, 12.0673rem + 18.5897vw, 34.375rem);
+    --bestsellers-slider-padding-left: clamp(1.875rem, -1.3413rem + 14.2949vw, 15.8125rem);
+
+    --projects-slider-active-img-width: clamp(28.75rem, 18.7283rem + 20.8514vw, 43.75rem);
+    --projects-slider-img-width: clamp(13.125rem, 9.3669rem + 7.8193vw, 18.75rem);
+    --projects-slider-side-img-width: clamp(12.8125rem, 11.351rem + 3.0408vw, 15rem);
+
+    --projects-slider-active-img-height: clamp(18.75rem, 12.0689rem + 13.901vw, 28.75rem);
+    --projects-slider-img-height: 180px;
+    --projects-slider-side-img-height: clamp(13.125rem, 9.3669rem + 7.8193vw, 18.75rem);
+    
+
+  
+}
+
+
+
+@media all and (max-width: 1024px) {
+    :root {
+        --home-slider-img-size: calc(100vw / 3 - var(--home-slider-gap) / 2);
+        --home-slider-active-img-size: 0px;
+        --home-slider-transform: none;
+    }
+}
+
+@media all and (max-width: 777px) {
+    :root {
+        --nav-height: 0px;
+    }
+}
+
+
+@media all and (max-width: 769px) {
+    :root {
+        --projects-slider-active-img-width: 220px;
+        --projects-slider-img-width: 220px;
+        --projects-slider-side-img-width: 220px;
+        --projects-slider-img-height: 260px;
+        --projects-slider-active-img-height: 260px;
+    }
+}

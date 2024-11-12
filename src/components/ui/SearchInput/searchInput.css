@@ -1,0 +1,26 @@
+.input-wrapper  {
+    padding: 8.2px 22px;
+    border-radius: 20px;
+    background-color: var(--gray);
+    width: clamp(15.3125rem, 0.9964rem + 29.4798vw, 18.5rem);
+    overflow: hidden;
+    outline: transparent 0.5px solid;
+    transition: var(--transition) 0.5s outline;
+    
+}
+input[type='search'] {
+    width: inherit;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="search"]::-moz-search-cancel-button {
+    display: none;
+}
+
+.input-wrapper.is-typing {
+    outline: 0.5px solid var(--black);
+}

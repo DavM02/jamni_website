@@ -1,0 +1,10 @@
+.heading-wrapper span {
+    opacity: 0;
+    filter: blur(6px);
+    transition: var(--transition) 1s filter, var(--transition) 1s opacity;
+}
+
+.heading-wrapper.visible span {
+    opacity: 1;
+    filter: blur(0);
+}

@@ -1,0 +1,245 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 55;
+    background-color: var(--white);
+}
+
+.info {
+    z-index: 60;
+    background-color: var(--black);
+}
+
+.logo {
+    display: inline-block;
+}
+
+header .info span a{
+    text-decoration: underline;
+    color: inherit;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 2px;
+}
+
+nav,
+.info {
+    position: relative;
+}
+
+.menu {
+    transition: 0.5s top var(--transition);
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--line-bg);
+}
+
+nav a {
+    color: inherit;
+}
+
+nav a:hover {
+    font-weight: 900;
+}
+
+header img:hover {
+    opacity: 40%;
+}
+
+@media all and (min-width: 778px) and (hover: hover) {
+    header ul li a:not(#catalog-list li a):hover::after {
+        clip-path: inset(0);
+    }
+}
+
+header ul li a:not(#catalog-list li a).active::after {
+    clip-path: inset(0);
+}
+
+header img {
+    cursor: pointer;
+    transition: var(--transition) opacity 0.5s;
+}
+
+.navigation {
+    border-top: 1px solid var(--line-bg);
+}
+
+header ul li a:not(#catalog-list li a) {
+    position: relative;
+    padding: 25px 0;
+
+}
+
+
+header ul li a:not(#catalog-list li a)::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 2px;
+    width: calc(100% + 50px);
+    background-color: var(--black);
+    clip-path: inset(0 50%);
+    transition: var(--transition) 0.5s clip-path;
+}
+
+header .arrow-up {
+    display: none;
+    width: 12px;
+    height: 12px;
+    transition: var(--transition) transform 0.5s;
+}
+
+.menu .container .grid-3 {
+    padding: var(--header-container-padding) 0;
+}
+
+.menu>.container:nth-child(1) {
+    overflow: hidden;
+}
+
+#catalog-list {
+    transition: var(--transition) 0.5s opacity;
+    position: absolute;
+    top: calc(50% + -34.5px);
+    z-index: 5;
+    left: 50%;
+    transform: translateY(50%) translateX(-50%);
+    width: min(741px, 100%);
+    padding: 30px 60px;
+    border-bottom-left-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-bottom-right-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--white);
+}
+
+#catalog-list.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.toggle-menu,
+header .column {
+    display: none;
+}
+
+.menu-bars {
+    padding: 10px 0;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.menu-bars div {
+    width: 33px;
+    height: 1px;
+    background-color: var(--black);
+    transition: var(--transition) transform 0.5s 0.3s;
+}
+
+.menu-bars.active div:nth-child(1) {
+    transform: rotate(42.23deg) translateX(7px);
+}
+
+.menu-bars.active div:nth-child(2) {
+    transform: rotate(137.77deg) translateX(-7px);
+}
+
+.mobile-header {
+    position: absolute;
+    height: calc(55px + var(--header-container-padding)*2);
+    top: 0;
+    width: 100%;
+    left: 0;
+    max-width: 280px;
+    display: none;
+    border-bottom: 1px solid var(--line-bg);
+    padding: 0 32px;
+}
+
+@media all and (max-width: 777px) {
+
+    header .icons:not(.mobile-header .icons) .icon:nth-child(1),
+    header .icons:not(.mobile-header .icons) .icon:nth-child(2),
+    .info span+.row,
+    header .input-wrapper {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    header .column,
+    header .mobile-header {
+        display: flex;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 30px;
+        width: 100%;
+        left: -100%;
+        transition: var(--transition) 0.5s left;
+        overflow: hidden;
+        max-width: 280px;
+        z-index: 666;
+        background-color: var(--white);
+        padding: 113px 0 55px 37px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        overflow-y: scroll;
+    }
+
+    #catalog-list {
+        transition: var(--transition) 1.5s height;
+        position: static;
+        height: 0;
+        overflow: hidden;
+        transform: none;
+        width: min(741px, 100%);
+        padding: unset;
+        box-shadow: none;
+        opacity: 1;
+        justify-content: initial;
+    }
+
+    #catalog-list.active {
+        height: 450px;
+    }
+
+    #catalog-list a {
+        font-size: 14px;
+        text-transform: initial;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navigation a:not(#catalog-list a, .column a) {
+        padding: 10px 0 !important;
+    }
+
+    #catalog-list a {
+        padding: 0 0 15px 0;
+    }
+
+    nav {
+        justify-content: start !important;
+        padding-bottom: 40px;
+    }
+
+    header .arrow-up {
+        display: block;
+    }
+
+}

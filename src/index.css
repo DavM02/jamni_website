@@ -1,13 +1,63 @@
+@import './styles/reset.css';
+@import './styles/variables.css';
+@import './styles/helpers.css';
+@import './styles/layouts.css';
+@import './styles/media.css';
+@import './styles/typography.css';
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+html,
+.App,
+#root {
+  /* width: 100%; */
+  height: 100%;
+}
+
+#scroll-wrapper {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  padding-top: calc(30px + 55px + var(--nav-height) + (var(--header-container-padding)*2));
+  background-color: var(--white);
+}
+
+.scroll-content {
+  min-height: 100% !important;
+  /* height: inherit; */
+  display: flex !important;
+  flex-direction: column;
+  will-change: transform;
+  height: inherit;
+}
+
+.scrollbar-thumb-y {
+  background-color: var(--white) !important;
+  cursor: grab;
+}
+
+.scrollbar-track-y {
+  background-color: transparent !important;
+  width: 11px !important;
+  mix-blend-mode: exclusion;
+}
+
+.scrollbar-track-x {
+  display: none !important;
+
+}
+
+@media all and (max-width: 1023px) {
+
+  html body .scrollbar-track-y,
+  html body .scrollbar-thumb-y {
+    display: none !important;
+  }
+}
+
+main {
+  flex-grow: 1;
 }

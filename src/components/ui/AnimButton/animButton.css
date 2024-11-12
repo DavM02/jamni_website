@@ -1,0 +1,23 @@
+.anim-button {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 22px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.anim-button .mask {
+    overflow: hidden;
+    height: 16px;
+}
+
+.anim-button .mask div {
+        transition: var(--transition) 0.5s transform;
+}
+
+.anim-button:hover .mask div{
+    transform: translateY(-100%);
+}
