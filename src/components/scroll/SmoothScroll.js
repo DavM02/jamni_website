@@ -1,7 +1,6 @@
 import React, { useLayoutEffect } from 'react'
 import Scrollbar, { ScrollbarPlugin } from 'smooth-scrollbar';
-import { useRef, useEffect } from 'react';
-import { useContext } from 'react';
+import { useRef, useContext } from 'react';
 import { MainContext } from '../../context/MainContext';
 export default function SmoothScroll({ children }) {
     const scrollRef = useRef(null);
