@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Slide = ({ image, isActive, index, onClick }) => {
     return (
@@ -16,7 +17,12 @@ const Slide = ({ image, isActive, index, onClick }) => {
                 pointerEvents: isActive || index >= 12 || index === 0 ? 'none' : 'all'
             }}
         >
-            <img src={image} alt={`slider-image-${index + 1}`}/>
+            <LazyLoadImage
+                // visibleByDefault={true} 
+                width={'100%'}
+                height={'100%'}
+                effect='blur'
+                src={image} alt={`slider-image-${index + 1}`} />
         </motion.div>
     );
 };

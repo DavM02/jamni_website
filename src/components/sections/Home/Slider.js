@@ -9,6 +9,7 @@ import img4 from '../../../assets/img_4.jpeg';
 import img5 from '../../../assets/img_5.jpeg';
 
 import useDebounce from '../../../hooks/useDebounce';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const slideImages = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img5, img1, img2, img3, img4, img5];
 
@@ -19,27 +20,32 @@ const Slider = () => {
     const debouncedFunction = useDebounce();
 
     const handleNextSlide = () => {
-      debouncedFunction(300, () => {
-          setActiveSlide((prev) => Math.min(prev + 1, maxTransformIndex));
-      }) 
+        debouncedFunction(300, () => {
+            setActiveSlide((prev) => Math.min(prev + 1, maxTransformIndex));
+        })
     };
 
     const handlePrevSlide = () => {
         debouncedFunction(300, () => {
             setActiveSlide((prev) => Math.max(prev - 1, 0));
-        }) 
+        })
     };
 
     const handleSlideByIndex = (id) => {
         debouncedFunction(300, () => {
             setActiveSlide((prev) => Math.max(id - 1, 0));
-        }) 
+        })
     };
 
     return (
         <div className='slider-container'>
             {query && <div className='mobile-slider'>
-                <img src={slideImages[activeSlide + 1]} alt={`slider-image-${activeSlide + 1}`} />
+                <LazyLoadImage
+                    width={'100%'}
+                    height={'100%'}
+                    effect='blur'
+                    src={slideImages[activeSlide + 1]}
+                    alt={`slider-image-${activeSlide + 1}`} />
             </div>}
             <div
                 className='slider-wrapper row'

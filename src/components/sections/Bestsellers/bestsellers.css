@@ -6,6 +6,7 @@
 
 #bestsellers .slider-item {
     position: absolute;
+    will-change: left;
 }
 
 #bestsellers .slider-image {

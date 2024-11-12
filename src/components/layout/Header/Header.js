@@ -21,7 +21,6 @@ export default function Header() {
  
       function handleScroll(event) {
         const scrollY = event.offset.y;
-        console.log(scrollY)
         setScroll(scrollY < 78);
       }
  

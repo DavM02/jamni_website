@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Slide({ el, activeSlide, adjustTransition }) {
     return (
@@ -10,7 +11,12 @@ export default function Slide({ el, activeSlide, adjustTransition }) {
                 }}
                 className={`slider-image ${el.index === activeSlide ? 'active-center' : (el.index === activeSlide - 1 || el.index === activeSlide + 1) ? 'active-side' : 'inactive'}`}
             >
-                <img src={el.image} alt={`slider-image-${el.index + 1}`} />
+                <LazyLoadImage
+                    // visibleByDefault={true} 
+                    width={'100%'}
+                    height={'100%'}
+                    effect='blur'
+                    src={el.image} alt={`slider-image-${el.index + 1}`} />
             </div>
             <div style={{ opacity: adjustTransition ? 0 : 1 }}>
                 <span className='xsmall-text text-main text-black up-case'>{el.name}</span>

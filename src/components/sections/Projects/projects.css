@@ -20,6 +20,7 @@
     overflow: hidden;
     position: relative;
     height: calc(var(--projects-slider-active-img-height) + 220px);
+    will-change: left;
 }
 
 #projects .slider-item img {

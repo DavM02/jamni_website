@@ -1,6 +1,9 @@
 import React, { useMemo } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import SmoothAppearance from '../../ui/SmoothAppearance'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
+
 export default function ProductsImages({ category, getImages, data }) {
     
     const getIndex = useMemo(() => {
@@ -19,7 +22,11 @@ export default function ProductsImages({ category, getImages, data }) {
                             className={`image ${getIndex.indexOf(category) % 2 === 0 ? 'even' : 'odd'}`}
                             key={index}
                         >
-                            <img src={img[1]} alt={`product ${index + 1}`} />
+                                <LazyLoadImage effect="blur" 
+                                width="100%"  
+                                height="100%"
+                                src={img[1]} 
+                                alt={`product ${index + 1}`} />
                         </div>
                     ))}
 
