@@ -18,13 +18,13 @@ export default function Header() {
 
   useEffect(() => {
     if (scrollbarAccess.current) {
+ 
       function handleScroll(event) {
         const scrollY = event.offset.y;
         console.log(scrollY)
         setScroll(scrollY < 78);
       }
-
-
+ 
       const scrollbarInstance = scrollbarAccess.current;
       scrollbarInstance.addListener(handleScroll);
 
@@ -32,43 +32,44 @@ export default function Header() {
         scrollbarInstance.removeListener(handleScroll);
       };
 
+
     }
   }, [scrollbarAccess]);
+ 
+ 
 
+      useEffect(() => {
+        if (menu.open || menu.nested) {
+          setMenu({ open: false, backdrop: false, nested: false });
+        }
 
+      }, [query]);
 
-  useEffect(() => {
-    if (menu.open || menu.nested) {
-      setMenu({ open: false, backdrop: false, nested: false });
-    }
-
-  }, [query]);
-
-  return (
-    <header id='header'>
-      <ContactInfo />
-      <div className='menu' style={{ top: `${(!scroll && !query) ? 'calc(30px - 55px - (var(--header-container-padding)*2))' : '30px'}` }}>
-        <div className='container'>
-          <div className='grid-3 center-y'>
-            <div className='toggle-menu'>
-              <div className='menu-bars' onClick={() => setMenu({ open: true, backdrop: true })}>
-                <div></div>
-                <div></div>
+      return (
+        <header id='header'>
+          <ContactInfo />
+          <div className='menu' style={{ top: `${(!scroll && !query) ? 'calc(30px - 55px - (var(--header-container-padding)*2))' : '30px'}` }}>
+            <div className='container'>
+              <div className='grid-3 center-y'>
+                <div className='toggle-menu'>
+                  <div className='menu-bars' onClick={() => setMenu({ open: true, backdrop: true })}>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <SearchInput />
+                <div className='row center-x'>
+                  <Link to='/' className='logo'>
+                    <img width={148} height={55} src={logo} alt='logo' />
+                  </Link>
+                </div>
+                <UserIcons />
               </div>
             </div>
-            <SearchInput />
-            <div className='row center-x'>
-              <Link to='/' className='logo'>
-                <img width={148} height={55} src={logo} alt='logo' />
-              </Link>
-            </div>
-            <UserIcons />
+            <Navigation
+              setMenu={setMenu}
+              menu={menu} />
           </div>
-        </div>
-        <Navigation
-          setMenu={setMenu}
-          menu={menu} />
-      </div>
-    </header>
-  );
-}
+        </header>
+      );
+    }
