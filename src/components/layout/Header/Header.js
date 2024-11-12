@@ -20,6 +20,9 @@ export default function Header() {
   useEffect(() => {
     if (scrollbarAccess.current) {
       setIsScrollbarReady(true);
+      scrollbarAccess.current.addListener(() => {
+        console.log('a')
+      });
     }
   }, [scrollbarAccess]);
 
