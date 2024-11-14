@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
- 
+
 
 @media all and (min-width: 1025px) {
     #home .slider-item.active {
@@ -22,7 +22,7 @@
         aspect-ratio: unset;
     }
 
-    #home .container{
+    #home .container {
         position: relative;
     }
 
@@ -111,7 +111,7 @@
 
 #home h3 {
     margin-top: 114px;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 #home .headline {
@@ -151,19 +151,19 @@
 
 @media all and (max-width: 1024px) {
 
-#home .headline {
+    #home .headline {
         right: unset;
         transform: translateX(calc(-50% - 4px));
         left: 50%;
         top: var(--section-padding-top-small);
     }
 
-        #home .years,
-        #home .headline::after {
+    #home .years,
+    #home .headline::after {
         top: 0 !important;
     }
 
-   #home .headline::after {
+    #home .headline::after {
         width: 140px;
     }
 
