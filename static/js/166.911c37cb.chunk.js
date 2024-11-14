@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjamni=self.webpackChunkjamni||[]).push([[166],{2158:(e,n,s)=>{s.r(n),s.d(n,{default:()=>l});var a=s(5043),c=s(8557),i=s(7891),u=s(579);console.log("a");const l=(0,a.memo)((0,c.A)((function(){return(0,u.jsx)("div",{id:"news-page",children:(0,u.jsx)(i.A,{})})})))}}]);
+//# sourceMappingURL=166.911c37cb.chunk.js.map

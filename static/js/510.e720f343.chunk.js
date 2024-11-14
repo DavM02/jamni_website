@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjamni=self.webpackChunkjamni||[]).push([[510],{6820:(e,a,n)=>{n.r(a),n.d(a,{default:()=>u});var s=n(5043),c=n(8557),i=(n(4328),n(7891),n(3679)),t=n(579);const u=(0,s.memo)((0,c.A)((function(){return(0,t.jsx)("div",{id:"catalog-page",children:(0,t.jsx)(i.A,{})})})))}}]);
+//# sourceMappingURL=510.e720f343.chunk.js.map
