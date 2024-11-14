@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import arrow from '../../../assets/icons/arrow-up.svg';
 import Backdrop from '../../ui/Backdrop/Backdrop';
 
@@ -42,7 +42,10 @@ export default function NestedList({ menu, setMenu }) {
                     }
                 }}
             >
-                <Link className='row-inline center-y gap-10'>
+                <NavLink 
+                onClick={(e) => e.preventDefault()}
+                to={'catalog'} 
+                className='row-inline center-y gap-10'>
                     каталог
                     <img
                         className='arrow-up'
@@ -50,7 +53,7 @@ export default function NestedList({ menu, setMenu }) {
                         src={arrow}
                         alt='arrow'
                     />
-                </Link>
+                </NavLink>
                 <ul
                     id='catalog-list'
                     className={`row s-between ${menu.nested ? 'active' : 'inactive'}`}
@@ -77,7 +80,7 @@ export default function NestedList({ menu, setMenu }) {
                     </li>
                     <li>
                         <ul>
-                            <li><Link>Декор</Link></li>
+                            <li><NavLink to={'catalog/decor'}>Декор</NavLink></li>
                             <li><Link>Шторы</Link></li>
                         </ul>
                     </li>

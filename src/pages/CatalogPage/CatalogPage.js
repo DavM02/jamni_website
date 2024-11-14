@@ -1,14 +1,11 @@
-import React, { memo } from 'react'
-import PageTransition from '../../components/pageTransition/PageTransition'
-import Projects from '../../components/sections/Projects/Projects'
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import DecorPage from './DecorPage/DecorPage'
 
- function CatalogPage() {
- 
+export default function CatalogPage() {
     return (
-        <div id='catalog-page'>
-             <Projects/>
-        </div>
+        <Routes>
+            <Route path='decor' element={<DecorPage/>} />
+        </Routes>
     )
 }
-
-export default memo(PageTransition(CatalogPage))

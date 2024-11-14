@@ -1,16 +1,16 @@
-import React, { memo } from 'react'
+import React, { memo, Suspense } from 'react'
 import PageTransition from '../../components/pageTransition/PageTransition'
-import Projects from '../../components/sections/Projects/Projects'
-import About from '../../components/sections/About/About'
-import ProductsDisplay from '../../components/sections/ProductsDisplay/ProductsDisplay'
-
- function AboutPage() {
- 
+import ChunkLoading from '../../components/ui/ChunkLoading/ChunkLoading'
+const AboutSections = React.lazy(() => import('./AboutSections'))
+function AboutPage() {
     return (
-        <div id='catalog-page'>
-             <ProductsDisplay/>
+        <div id='about-page' >
+
+            <Suspense fallback={<ChunkLoading/>}>
+                <AboutSections />
+            </Suspense>
+
         </div>
     )
 }
-
 export default memo(PageTransition(AboutPage))

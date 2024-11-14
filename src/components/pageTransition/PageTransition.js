@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import { motion } from 'framer-motion';
 import ReactDOM from 'react-dom';
 import './pageTransition.css';
@@ -12,7 +12,9 @@ function PageTransition(Component) {
         return (
             <React.Fragment>
 
+
                 <Component {...props} />
+
                 {ReactDOM.createPortal(
                     <>
                         <motion.div
@@ -37,8 +39,8 @@ function PageTransition(Component) {
                                 <motion.div
                                     initial={{ opacity: 1 }}
                                     animate={{ opacity: pathname ? 0 : 1 }}
-                                    transition={{ duration: 0.3, delay: 1.1}}
-                                   
+                                    transition={{ duration: 0.3, delay: 1.1 }}
+
                                 >
                                     <AnimatedText
                                         center={true}

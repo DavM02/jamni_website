@@ -1,11 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import NestedList from './NestedList'; 
 import userIcon from '../../../assets/icons/user.svg'
 import heartIcon from '../../../assets/icons/heart.svg'
+import { useEffect } from 'react';
 
 export default function Navigation({ menu, setMenu }) {
 
 
+const location = useLocation().pathname
+
+useEffect(() => {
+   return () => {
+     setMenu({ open: false, backdrop: false, nested: false })
+   }
+}, [location])
 
   return (
     <div className='navigation' style={{ left: menu.open ? '0' : '-100%' }}>
@@ -27,21 +35,22 @@ export default function Navigation({ menu, setMenu }) {
         <ul className='row gap-70 text-main xsmall-text text-black up-case'>
           <NestedList setMenu={setMenu} menu={menu}/>  
           <li>
-            <Link 
-            onClick={() =>   setMenu({ open: false, backdrop: false, nested: false })}
-            to={'news'}>новости</Link>
+            <NavLink 
+              to={'news'}>новости</NavLink>
           </li>
           <li>
-            <Link 
-              onClick={() => setMenu({ open: false, backdrop: false, nested: false })}
-
-            to={'about'}>о нас</Link>
+            <NavLink 
+              to={'about'}>о нас</NavLink>
           </li>
           <li>
-            <Link>отзывы</Link>
+            <NavLink
+              to={'reviews'}
+            >отзывы</NavLink>
           </li>
           <li>
-            <Link>контакты</Link>
+            <NavLink
+              to={'contacts'}
+            >контакты</NavLink>
           </li>
         </ul>
       </nav>

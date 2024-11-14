@@ -1,0 +1,3 @@
+.chunk-loading {
+    height: calc(100vh - (30px + 55px + var(--nav-height) + (var(--header-container-padding)*2)));
+}

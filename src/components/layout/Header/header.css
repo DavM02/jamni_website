@@ -14,7 +14,7 @@ header {
     display: inline-block;
 }
 
-header .info span a{
+header .info span a {
     text-decoration: underline;
     color: inherit;
     text-decoration-thickness: 0.5px;
@@ -39,7 +39,7 @@ nav a {
     color: inherit;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
     font-weight: 900;
 }
 
@@ -53,8 +53,10 @@ header img:hover {
     }
 }
 
-header ul li a:not(#catalog-list li a).active::after {
-    clip-path: inset(0);
+@media all and (min-width: 778px) {
+    header ul li a:not(#catalog-list li a).active::after {
+        clip-path: inset(0);
+    }
 }
 
 header img {

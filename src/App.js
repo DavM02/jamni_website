@@ -1,22 +1,20 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import React, { Suspense } from "react";
 import Footer from "./components/layout/Footer/Footer";
 import Header from "./components/layout/Header/Header";
 import SmoothScroll from "./components/scroll/SmoothScroll";
 import MainContextProvider from "./context/MainContext";
+import HomePage from "./pages/HomePage/HomePage";
 import { AnimatePresence } from "framer-motion";
- 
-
-const HomePage = React.lazy(() => import('./pages/HomePage/HomePage'))
-const AboutPage = React.lazy(() => import('./pages/AboutPage/AboutPage'))
-const NewsPage = React.lazy(() => import('./pages/NewsPage/NewsPage'))
+import NewsPage from "./pages/NewsPage/NewsPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import CatalogPage from "./pages/CatalogPage/CatalogPage";
 
 
 function App() {
 
 
   const location = useLocation()
- 
+
   return (
     <div className="App">
       <MainContextProvider>
@@ -24,13 +22,12 @@ function App() {
         <SmoothScroll>
           <main>
             <AnimatePresence mode="wait">
- 
-                <Routes location={location} key={location.pathname} >
-                  <Route path="/" element={<HomePage />} />
-                  <Route path="news" element={<NewsPage />} />
-                  <Route path="about" element={<AboutPage />} />
-                </Routes>
- 
+              <Routes location={location} key={location.pathname} >
+                <Route path="/" element={<HomePage />} />
+                <Route path="news" element={<NewsPage />} />
+                <Route path="about" element={<AboutPage />} />
+                <Route path="catalog/*"element={<CatalogPage/>}/>
+              </Routes>
             </AnimatePresence>
           </main>
           <Footer />

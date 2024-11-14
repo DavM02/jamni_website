@@ -1,20 +1,15 @@
-import React, { memo } from 'react'
-import Bestsellers from '../../components/sections/Bestsellers/Bestsellers'
-import Home from '../../components/sections/Home/Home'
-import Subscribe from '../../components/sections/Subscribe/Subscribe'
-import About from '../../components/sections/About/About'
-import ProductsDisplay from '../../components/sections/ProductsDisplay/ProductsDisplay'
-import Projects from '../../components/sections/Projects/Projects'
+import React, { memo, Suspense } from 'react'
 import PageTransition from '../../components/pageTransition/PageTransition'
- function HomePage() {
+import ChunkLoading from '../../components/ui/ChunkLoading/ChunkLoading'
+const HomeSections = React.lazy(() => import('./HomeSections'))
+function HomePage() {
   return (
     <div id='home-page' >
-      <Home />
-      <Bestsellers />
-      <ProductsDisplay />
-      <About />
-      <Projects />
-      <Subscribe />
+
+      <Suspense fallback={<ChunkLoading />}>
+        <HomeSections />
+      </Suspense>
+
     </div>
   )
 }
