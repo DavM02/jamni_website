@@ -43,6 +43,10 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.self-end-x {
+    justify-self: flex-end;
+}
+
 .end-x {
     justify-content: flex-end;
 }
