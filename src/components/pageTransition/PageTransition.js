@@ -19,7 +19,7 @@ function PageTransition(Component) {
 
                             onAnimationComplete={(e) => {
                                 if (e.clipPath === 'inset(0% 0% 0% 0%)') {
-                                    const getPath = window.location.pathname.slice(1)
+                                    const getPath = window.location.hash.slice(2)
                                     setPathname(getPath.length === 0 ? 'home' : getPath)
                                 }
                             }}
