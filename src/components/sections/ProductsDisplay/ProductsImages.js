@@ -15,7 +15,7 @@ export default function ProductsImages({ category, getImages, data }) {
     return (
         <AnimatePresence mode='wait'>
             {
-                <SmoothAppearance key={category} blur={true} className='image-group'>
+                <SmoothAppearance key={category}  className='image-group'>
                     {getImages && Object.entries(getImages).map((img, index) => (
                         new RegExp(`(^|/)${category}($|/)`).test(img[0]) &&
                         <div

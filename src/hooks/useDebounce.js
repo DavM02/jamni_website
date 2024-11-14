@@ -12,8 +12,6 @@ export default function useDebounce() {
             timeoutId.current = setTimeout(() => {
                 setExecuted(false);
             }, time);
-
- 
         }
     }
 

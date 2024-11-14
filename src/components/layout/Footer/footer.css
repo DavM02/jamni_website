@@ -3,10 +3,6 @@ footer {
     border: 1px solid #000001;
 }
 
-footer .container {
-    max-width: 1920px !important;
-}
-
 footer>.container:nth-child(1) {
     padding: clamp(4.0625rem, 3.774rem + 1.2821vw, 5.3125rem) var(--container-padding);
 

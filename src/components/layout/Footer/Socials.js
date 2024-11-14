@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 export default function Socials() {
     return (
         <div className='column center-y gap-30'>
-            <Link className='logo'><img src={logo} alt='logo' /></Link>
+            <Link className='logo' to={'/'}><img src={logo} alt='logo' /></Link>
             <div className='footer-socials row gap-25 center-x'>
                 <a className='social' href='#'>
                     <img src={instagram} alt='instagram' />

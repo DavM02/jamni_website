@@ -44,6 +44,8 @@ export default function Header() {
 
       }, [query]);
 
+ 
+
       return (
         <header id='header'>
           <ContactInfo />

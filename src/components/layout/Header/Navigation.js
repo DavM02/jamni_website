@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom';
 import NestedList from './NestedList'; 
 import userIcon from '../../../assets/icons/user.svg'
 import heartIcon from '../../../assets/icons/heart.svg'
+
 export default function Navigation({ menu, setMenu }) {
+
 
 
   return (
@@ -25,10 +27,15 @@ export default function Navigation({ menu, setMenu }) {
         <ul className='row gap-70 text-main xsmall-text text-black up-case'>
           <NestedList setMenu={setMenu} menu={menu}/>  
           <li>
-            <Link>новости</Link>
+            <Link 
+            onClick={() =>   setMenu({ open: false, backdrop: false, nested: false })}
+            to={'news'}>новости</Link>
           </li>
           <li>
-            <Link>о нас</Link>
+            <Link 
+              onClick={() => setMenu({ open: false, backdrop: false, nested: false })}
+
+            to={'about'}>о нас</Link>
           </li>
           <li>
             <Link>отзывы</Link>
