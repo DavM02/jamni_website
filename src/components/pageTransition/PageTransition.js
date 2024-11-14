@@ -21,8 +21,9 @@ function PageTransition(Component) {
 
                             onAnimationComplete={(e) => {
                                 if (e.clipPath === 'inset(0% 0% 0% 0%)') {
-                                    const getPath = window.location.hash.slice(2)
-                                    setPathname(getPath.length === 0 ? 'home' : getPath)
+                                    const getPath = window.location.hash.split('/')
+                                    const path = getPath[getPath.length-1]  
+                                    setPathname(path.length === 0 ? 'home' : path)
                                 }
                             }}
                             initial={{ clipPath: 'inset(100% 0% 0% 0%)' }}

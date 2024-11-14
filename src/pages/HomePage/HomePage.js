@@ -1,5 +1,5 @@
 import React, { memo, Suspense } from 'react'
-import PageTransition from '../../components/pageTransition/PageTransition'
+import PageTransition from '../../components/PageTransition/PageTransition'
 import ChunkLoading from '../../components/ui/ChunkLoading/ChunkLoading'
 const HomeSections = React.lazy(() => import('./HomeSections'))
 function HomePage() {

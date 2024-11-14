@@ -1,0 +1,28 @@
+
+.infinite-slider .slider-item {
+    position: absolute;
+    will-change: left;
+}
+
+.infinite-slider.slider-container {
+    overflow: hidden;
+}
+
+.infinite-slider .slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+
+}
+
+.infinite-slider .slider-image img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.infinite-slider .slider-nav {
+    width: 100%;
+}
+
+
+ 

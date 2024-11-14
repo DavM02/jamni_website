@@ -78,28 +78,6 @@
     }
 }
 
-.slider-nav button {
-    cursor: pointer;
-    width: 39px;
-    aspect-ratio: 1/1;
-    height: 39px;
-    border: 1px solid #E8E8E8;
-    border-radius: 50%;
-    transition: var(--transition) 0.5s background-color;
-}
-
-.slider-nav button:hover {
-    background-color: var(--black);
-}
-
-.slider-nav button img {
-    transition: var(--transition) 0.5s filter;
-}
-
-.slider-nav button:hover img {
-    filter: invert();
-}
-
 #home .slider-nav {
     position: absolute;
     top: 50%;

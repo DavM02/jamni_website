@@ -33,7 +33,8 @@
     --projects-slider-img-height: 180px;
     --projects-slider-side-img-height: clamp(13.125rem, 9.3669rem + 7.8193vw, 18.75rem);
     
-
+    --catalog-slider-img-width: clamp(16.25rem, 15.0962rem + 5.1282vw, 21.25rem);
+    --catalog-slider-img-height: clamp(10rem, 9.4231rem + 2.5641vw, 12.5rem);
   
 }
 

@@ -79,5 +79,43 @@ main {
   opacity: 1;
   transition: opacity .3s;
 }
- 
- 
+
+.slider-nav button {
+  cursor: pointer;
+  width: 39px;
+  aspect-ratio: 1/1;
+  height: 39px;
+  border: 1px solid #E8E8E8;
+  border-radius: 50%;
+  transition: var(--transition) 0.5s background-color;
+}
+
+.slider-nav button:hover {
+  background-color: var(--black);
+}
+
+.slider-nav button img {
+  transition: var(--transition) 0.5s filter;
+}
+
+.slider-nav button:hover img {
+  filter: invert();
+}
+.slider-indicator {
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--line-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+
+.indicator-line {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--black);
+  transition: var(--transition) left 0.7s;
+}

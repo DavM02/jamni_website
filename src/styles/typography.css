@@ -35,7 +35,8 @@ input {
 .text-main,
 #products-display li::after,
 input::placeholder,
-input, button {
+input,
+button {
     font-family: 'font-main';
 }
 
@@ -81,11 +82,14 @@ h5 {
     font-size: 42px;
     font-weight: 400;
     color: var(--black);
-line-height: clamp(2.6875rem, 2.1971rem + 2.1795vw, 4.8125rem);
+    line-height: clamp(2.6875rem, 2.1971rem + 2.1795vw, 4.8125rem);
 }
 
 h6 {
     font-size: 28px;
+    font-weight: 400;
+    color: var(--black);
+    line-height: 77px;
 }
 
 .small-text {

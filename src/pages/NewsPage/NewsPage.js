@@ -1,11 +1,11 @@
 import React, { memo } from 'react'
-import PageTransition from '../../components/pageTransition/PageTransition'
+import PageTransition from '../../components/PageTransition/PageTransition'
 import About from '../../components/sections/About/About'
 console.log('a')
- function NewsPage() {
+function NewsPage() {
   return (
-    <div id='news-page'> 
-      <About/>
+    <div id='news-page'>
+      <About />
     </div>
   )
 }

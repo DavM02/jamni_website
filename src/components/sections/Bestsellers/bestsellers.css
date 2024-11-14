@@ -4,11 +4,6 @@
     /* overflow: hidden; */
 }
 
-#bestsellers .slider-item {
-    position: absolute;
-    will-change: left;
-}
-
 #bestsellers .slider-image {
     width: var(--bestsellers-slider-img-width);
     height: var(--bestsellers-slider-img-height);
@@ -23,47 +18,19 @@
 }
 
 #bestsellers .slider-container {
-    overflow: hidden;
     margin-left: var(--bestsellers-slider-padding-left);
 }
 
 #bestsellers .slider-wrapper {
-    overflow: hidden;
-    position: relative;
-    height: 100%;
     transform: translateX(calc(var(--bestsellers-slider-img-width)* -3 - 60px));
     width: calc((var(--bestsellers-slider-img-width) * 10) + 10 * 20px);
     height: calc(var(--bestsellers-slider-img-height) + 40px);
-
 }
 
-#bestsellers .slider-image img {
-    object-fit: cover;
-    height: 100%;
-}
 
 #bestsellers .slider-nav {
     margin-top: clamp(2.5rem, 1.7788rem + 3.2051vw, 5.625rem);
     padding: 0 var(--bestsellers-slider-padding-left);
-    width: 100%;
-}
-
-.slider-indicator {
-    width: 100%;
-    height: 1.5px;
-    background-color: var(--line-bg);
-    position: relative;
-    overflow: hidden;
-}
-
-.indicator-line {
-    width: 20%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: var(--black);
-    transition: var(--transition) left 0.7s;
 }
 
 #bestsellers h1 {
@@ -92,21 +59,21 @@
 
 @media all and (max-width: 1045px) {
     #bestsellers .heading-wrapper {
-            position: static;
-                height: unset;
-                margin-left: calc(-1* var(--bestsellers-slider-padding-left));
-                width: unset;
-                margin-bottom: 35px;
-            
+        position: static;
+        height: unset;
+        margin-left: calc(-1* var(--bestsellers-slider-padding-left));
+        width: unset;
+        margin-bottom: 35px;
+
     }
 
-        #bestsellers h1 {
-            position: static;
-            writing-mode: unset;
-            transform: none
-        }
+    #bestsellers h1 {
+        position: static;
+        writing-mode: unset;
+        transform: none
+    }
 
-        #bestsellers .learn-mone {
-            display: none;
-        }
+    #bestsellers .learn-mone {
+        display: none;
+    }
 }
