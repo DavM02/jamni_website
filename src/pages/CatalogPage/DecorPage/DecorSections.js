@@ -1,5 +1,5 @@
 import React from 'react'
-import bg from '../../../assets/img_16.jpg'
+import bg from '../../../assets/img_16.webp'
 import img1 from '../../../assets/decor/img_6.jpg'
 import img2 from '../../../assets/decor/img_7.jpg'
 import img3 from '../../../assets/decor/img_8.jpg'

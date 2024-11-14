@@ -1,6 +1,6 @@
 .slide-in,
 .slide-out {
-    background-color: var(--placeholder-1);
+    background-color: var(--black);
     position: fixed;
     top: 0;
     left: 0;

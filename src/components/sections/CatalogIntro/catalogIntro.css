@@ -1,15 +1,33 @@
-#catalog-intro > div:nth-child(1) {
+#catalog-intro>div:nth-child(1) {
     width: 100%;
     height: 350px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     position: relative;
     z-index: 1;
     padding: 0 var(--container-padding);
     overflow: hidden;
 }
-#catalog-intro > div:nth-child(1)::after {
+
+#catalog-intro .catalog-bg span {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-38%);
+}
+
+@media all and (max-width: 750px) {
+    #catalog-intro .catalog-bg span {
+        top: 0%;
+        transform: none;
+        height: 100%;
+    }
+
+    #catalog-intro .catalog-bg span img {
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+#catalog-intro>div:nth-child(1)::after {
     position: absolute;
     content: '';
     opacity: 15%;
@@ -21,6 +39,7 @@
     z-index: -1;
     left: 0;
 }
+
 #catalog-intro p {
     max-width: 724px;
     font-weight: 300 !important;
