@@ -37,7 +37,7 @@ function PageTransition(Component) {
                                 <motion.div
                                     initial={{ opacity: 1 }}
                                     animate={{ opacity: pathname ? 0 : 1 }}
-                                    transition={{ duration: 0.3, delay: 1.3}}
+                                    transition={{ duration: 0.3, delay: 1.1}}
                                    
                                 >
                                     <AnimatedText
@@ -62,7 +62,7 @@ function PageTransition(Component) {
                             exit={{
                                 clipPath: 'inset(0% 0% 100% 0%)',
                                 transition: {
-                                    delay: 2.3,
+                                    delay: 1.8,
                                 },
                             }}
                             transition={{
