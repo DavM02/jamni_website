@@ -8,6 +8,15 @@
     --placeholder-1: rgb(157, 153, 149);
     --placeholder-2: rgb(73 69 69);
     --placeholder-3: rgb(87, 99, 87);
+
+    --palette-gray-light: #D9D9D9;
+    --palette-brown: #6A4C2D;
+    --palette-beige: #EEDECB;
+    --palettte-brown-light: #7E7662;
+    --palette-green: #053109;
+    --palette-gray: #2C3136;
+
+
     --nav-height: 80px;
     --section-padding-equal-big: clamp(4.375rem, 3.2212rem + 5.1282vw, 9.375rem);
     --section-padding-bottom-small: clamp(0rem, -1.4856rem + 6.6026vw, 6.4375rem);
@@ -32,10 +41,10 @@
     --projects-slider-active-img-height: clamp(18.75rem, 12.0689rem + 13.901vw, 28.75rem);
     --projects-slider-img-height: 180px;
     --projects-slider-side-img-height: clamp(13.125rem, 9.3669rem + 7.8193vw, 18.75rem);
-    
+
     --catalog-slider-img-width: clamp(16.25rem, 15.0962rem + 5.1282vw, 21.25rem);
     --catalog-slider-img-height: clamp(10rem, 9.4231rem + 2.5641vw, 12.5rem);
-  
+
 }
 
 
