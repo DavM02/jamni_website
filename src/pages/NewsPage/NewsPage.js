@@ -11,4 +11,4 @@ function NewsPage() {
 }
 
 
-export default memo(PageTransition(NewsPage))
+export default PageTransition(memo(NewsPage))

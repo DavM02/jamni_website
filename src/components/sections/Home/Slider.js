@@ -12,7 +12,7 @@ import useDebounce from '../../../hooks/useDebounce';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const slideImages = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img5, img1, img2, img3, img4, img5];
-
+ 
 const Slider = () => {
     const query = useMediaQ('(max-width: 1024px)');
     const [activeSlide, setActiveSlide] = useState(0);

@@ -12,4 +12,4 @@ function DecorPage() {
     )
 }
 
-export default React.memo(PageTransition(DecorPage))
+export default PageTransition(React.memo(DecorPage))

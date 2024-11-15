@@ -8,13 +8,15 @@ import { AnimatePresence } from "framer-motion";
 import NewsPage from "./pages/NewsPage/NewsPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import CatalogPage from "./pages/CatalogPage/CatalogPage";
-
+ 
 
 function App() {
 
 
   const location = useLocation()
-   
+
+ console.log('a')
+
   return (
     <div className="App">
       <MainContextProvider>
@@ -26,7 +28,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="news" element={<NewsPage />} />
                 <Route path="about" element={<AboutPage />} />
-                <Route path="catalog/*"element={<CatalogPage/>}/>
+                <Route path="catalog/*" element={<CatalogPage />} />
               </Routes>
             </AnimatePresence>
           </main>

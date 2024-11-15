@@ -16,7 +16,7 @@ export default function ProductsDisplay() {
 
   const getImages = importAll(require.context('../../../assets', true, /\.(png|jpe?g|svg)$/));
 
-
+  console.log('mmmmm')
   return (
     <section id='products-display'>
       <div className='container'>

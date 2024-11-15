@@ -3,6 +3,7 @@ import PageTransition from '../../components/PageTransition/PageTransition'
 import ChunkLoading from '../../components/ui/ChunkLoading/ChunkLoading'
 const HomeSections = React.lazy(() => import('./HomeSections'))
 function HomePage() {
+ 
   return (
     <div id='home-page' >
 
@@ -13,4 +14,4 @@ function HomePage() {
     </div>
   )
 }
-export default memo(PageTransition(HomePage))
+export default PageTransition(memo(HomePage))
