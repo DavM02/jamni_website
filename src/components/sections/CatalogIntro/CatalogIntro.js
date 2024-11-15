@@ -8,7 +8,7 @@ export default function CatalogIntro({ bg, headline, text, sliderData }) {
         <section id='catalog-intro'>
             <div className='catalog-bg text-center center-gr up-case'>
                 <LazyLoadImage
-                    visibleByDefault={true}
+                     
                     width={'100%'}
                     // height={'100%'}
                     effect='blur'

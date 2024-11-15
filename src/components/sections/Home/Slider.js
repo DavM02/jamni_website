@@ -56,8 +56,7 @@ const Slider = () => {
                     width={'100%'}
                     height={'100%'}
                     effect='blur'
-                    visibleByDefault={true}
-                    src={slideImages[activeSlide + 1]}
+                     src={slideImages[activeSlide + 1]}
                     alt={`slider-image-${activeSlide + 1}`} />
             </div>}
             <div
