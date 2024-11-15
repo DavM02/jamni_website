@@ -11,18 +11,20 @@ import Descriptor from '../../ui/Descriptor/Descriptor';
 import useDebounce from '../../../hooks/useDebounce';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import descriptors from '../../../data/descriptors';
-const slideImages = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img5, img1, img2, img3, img4, img5];
+ const slideImages = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img5, img1, img2, img3, img4, img5];
 
 
 
 const Slider = () => {
     const query = useMediaQ('(max-width: 1024px)');
     const [activeSlide, setActiveSlide] = useState(0);
+    const [mobileDescriptor, setMobileDescriptor] = useState(true)
     const maxTransformIndex = 10;
     const debouncedFunction = useDebounce();
 
     const handleNextSlide = () => {
         debouncedFunction(300, () => {
+
             setActiveSlide((prev) => Math.min(prev + 1, maxTransformIndex));
         })
     };
@@ -34,15 +36,22 @@ const Slider = () => {
     };
 
     const handleSlideByIndex = (id) => {
+        if (query) {
+            setMobileDescriptor(false)
+        }
         debouncedFunction(300, () => {
             setActiveSlide((prev) => Math.max(id - 1, 0));
         })
+        setTimeout(() => {
+            setMobileDescriptor(true)
+        }, 300);
+       
     };
 
     return (
         <div className='slider-container'>
             {query && <div className='mobile-slider'>
-                <Descriptor data={descriptors[(activeSlide + 1) % 5]} />
+                {mobileDescriptor && <Descriptor data={descriptors[(activeSlide + 1) % 5]} />} 
                 <LazyLoadImage
                     width={'100%'}
                     height={'100%'}

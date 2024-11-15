@@ -22,7 +22,7 @@ export default function Descriptor({ data }) {
                 </div>
                 <div className='descriptor-circle small'>
                 </div>
-                <AnimatePresence mode='wait'>
+                <AnimatePresence  >
                     {
                         (showDescriptor === i) && <SmoothAppearance
                             blur={true} 

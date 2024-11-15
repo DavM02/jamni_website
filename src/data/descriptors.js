@@ -24,7 +24,7 @@ const descriptors = [
     [
         {
             directions: {
-                top: '70%',
+                top: '74%',
                 left: '25%'
             },
             title: 'Leisure Chair',
