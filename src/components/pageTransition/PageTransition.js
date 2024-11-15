@@ -1,21 +1,29 @@
-import React, { memo, useState } from 'react';
+import React, {  useContext, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import ReactDOM from 'react-dom';
 import { useBlocker } from 'react-router-dom';
 import './pageTransition.css';
 import AnimatedText from '../scroll/TextAnimation';
+import { MainContext } from '../../context/MainContext';
 
 function PageTransition(Component) {
     return function WrappedComponent(props) {
         const [pathname, setPathname] = useState(null);
         const [isAnimating, setIsAnimating] = useState(false);
-         
+        const {scrollbarAccess} = useContext(MainContext)
+        useEffect(() => {
+            if (scrollbarAccess.current) {
+            
+                scrollbarAccess.current.scrollTo(0, 0);  
+            }
+        }, [])
+
         useBlocker(
             ({ currentLocation, nextLocation }) => {
                 return (isAnimating && currentLocation.pathname !== nextLocation.pathname) || currentLocation.pathname === nextLocation.pathname
             }
         );
-
+ 
         return (
             <React.Fragment>
                 <Component {...props} />

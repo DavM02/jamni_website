@@ -1,11 +1,14 @@
-import React, { useLayoutEffect } from 'react'
+import React, { useEffect, useLayoutEffect } from 'react'
 import Scrollbar, { ScrollbarPlugin } from 'smooth-scrollbar';
 import { useRef, useContext } from 'react';
 import { MainContext } from '../../context/MainContext';
+import { useLocation } from 'react-router-dom';
 export default function SmoothScroll({ children }) {
     const scrollRef = useRef(null);
     const { scrollbarAccess } = useContext(MainContext)
 
+ 
+    
     useLayoutEffect(() => {
         let scrollbar;
 
@@ -28,12 +31,12 @@ export default function SmoothScroll({ children }) {
     }, []);
 
     return (
- 
-            <div id="scroll-wrapper"
-                ref={scrollRef}>
-                {children}
-            </div>
- 
+
+        <div id="scroll-wrapper"
+            ref={scrollRef}>
+            {children}
+        </div>
+
     )
 }
 

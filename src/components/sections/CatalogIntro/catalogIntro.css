@@ -13,6 +13,7 @@
     z-index: -1;
     top: 50%;
     transform: translateY(-38%);
+    filter: blur(1.5px);
 }
 
 @media all and (max-width: 750px) {

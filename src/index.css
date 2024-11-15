@@ -80,7 +80,12 @@ main {
   transition: opacity .3s;
 }
 
+.slider-nav {
+  pointer-events: none;
+}
+
 .slider-nav button {
+  pointer-events: all;
   cursor: pointer;
   width: 39px;
   aspect-ratio: 1/1;

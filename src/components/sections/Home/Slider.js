@@ -7,12 +7,14 @@ import img2 from '../../../assets/img_2.jpeg';
 import img3 from '../../../assets/img_3.jpeg';
 import img4 from '../../../assets/img_4.jpeg';
 import img5 from '../../../assets/img_5.jpeg';
-
+import Descriptor from '../../ui/Descriptor/Descriptor';
 import useDebounce from '../../../hooks/useDebounce';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
+import descriptors from '../../../data/descriptors';
 const slideImages = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img5, img1, img2, img3, img4, img5];
- 
+
+
+
 const Slider = () => {
     const query = useMediaQ('(max-width: 1024px)');
     const [activeSlide, setActiveSlide] = useState(0);
@@ -40,6 +42,7 @@ const Slider = () => {
     return (
         <div className='slider-container'>
             {query && <div className='mobile-slider'>
+                <Descriptor data={descriptors[(activeSlide + 1) % 5]} />
                 <LazyLoadImage
                     width={'100%'}
                     height={'100%'}
@@ -56,12 +59,13 @@ const Slider = () => {
             >
                 {slideImages.map((el, i) => (
                     <Slide
+                        data={descriptors[i%5]}
                         key={i}
                         image={el}
                         index={i}
                         isActive={i === activeSlide + 1}
                         onClick={handleSlideByIndex}
-                    />
+                    ></Slide>
                 ))}
             </div>
             {!query && (

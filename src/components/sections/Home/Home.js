@@ -3,8 +3,7 @@ import './home.css';
 import Slider from './Slider';
 
 export default function Home() {
-    console.log('sasas')
-    return (
+     return (
         <section id='home'>
             <div className='container'>
                 <Slider />

@@ -4,8 +4,12 @@ export default function AnimButton(props) {
   return (
     <button className='anim-button text-main center-gr' {...props}>
       <div className='mask'>
-        {props.children}
-        {props.children}
+        <div className='row gap-10'>
+          {props.children}
+        </div>
+        <div className='row gap-10'>
+          {props.children}
+        </div>
       </div>
     </button>
   )

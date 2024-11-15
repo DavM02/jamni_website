@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Descriptor from '../../ui/Descriptor/Descriptor';
 
-const Slide = ({ image, isActive, index, onClick }) => {
+const Slide = ({ image, isActive, index, onClick, data }) => {
     return (
         <motion.div
             onClick={() => onClick(index)}
@@ -17,6 +18,7 @@ const Slide = ({ image, isActive, index, onClick }) => {
                 pointerEvents: isActive || index >= 12 || index === 0 ? 'none' : 'all'
             }}
         >
+            {isActive && <Descriptor data={data}/>}
             <LazyLoadImage
                 // visibleByDefault={true} 
                 width={'100%'}
@@ -27,4 +29,4 @@ const Slide = ({ image, isActive, index, onClick }) => {
     );
 };
 
-export default Slide;
+export default memo(Slide);

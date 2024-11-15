@@ -31,7 +31,7 @@
     }
 }
 
-#home .slider-item img {
+#home .slider-item img:not(.descriptor img) {
     object-fit: fill;
     height: 100%;
     aspect-ratio: 1/1;
@@ -46,9 +46,10 @@
     background-color: var(--placeholder-1);
     height: 70vh;
     width: 100%;
-    min-height: 500px;
+    min-height: 600px;
     margin-bottom: 20px;
     margin-top: 220px;
+    position: relative;
 }
 
 #home .mobile-slider img {
@@ -128,6 +129,10 @@
 }
 
 @media all and (max-width: 1024px) {
+
+    #home .descriptor-wrapper:not(.mobile-slider .descriptor-wrapper) {
+        display: none;
+    }
 
     #home .headline {
         right: unset;
