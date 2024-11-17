@@ -1,8 +1,8 @@
 import React, { useEffect, useContext, useRef } from 'react'
 import './About.css'
 import logo from '../../../assets/Jamni -.svg'
-import img1 from '../../../assets/img_11.jpg'
-import img2 from '../../../assets/img_12.jpg'
+import img1 from '../../../assets/img_11.webp'
+import img2 from '../../../assets/img_12.webp'
 import Advantages from './Advantages'
  
 export default function About() {

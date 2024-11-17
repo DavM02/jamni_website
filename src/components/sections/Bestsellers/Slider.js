@@ -1,6 +1,6 @@
 import img1 from '../../../assets/img_6.webp';
 import img2 from '../../../assets/img_7.webp';
-import img3 from '../../../assets/img_8.jpeg';
+import img3 from '../../../assets/img_8.webp';
 import img4 from '../../../assets/img_9.webp';
 import img5 from '../../../assets/img_10.webp';
 import arrow from '../../../assets/icons/arrow-left-small.svg';

@@ -109,6 +109,7 @@
      right: 8%;
      bottom: 10%;
      width: 17%;
+     max-width: 280px;
  }
 
  #products-display .image-group .image.odd:nth-child(4){

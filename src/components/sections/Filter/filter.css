@@ -1,0 +1,31 @@
+#filter {
+    padding-top: 42px;
+}
+
+#filter .section-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+}
+
+#filter .filter-display {
+    display: grid;
+    grid-template-areas:
+        "a b c c d"
+        "e f g h i"
+        "j j k l l"
+        "m n o l l"
+        "p p q r s";
+        gap: 50px 20px;
+}
+ 
+#filter img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#filter .filter-item span.text-main {
+    font-weight: 600;
+    display: inline-block;
+    margin: 13px 0;
+}

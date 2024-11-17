@@ -10,7 +10,7 @@ import img9 from '../assets/decor/img_19.jpg';
 import img10 from '../assets/decor/img_20.jpg';
 import img11 from '../assets/decor/img_21.jpg';
 import img12 from '../assets/decor/img_22.jpg';
-import img13 from '../assets/decor/img_23.png';
+import img13 from '../assets/decor/img_23.jpg';
 import img14 from '../assets/decor/img_24.jpg';
 
 const data = {
@@ -138,6 +138,18 @@ const data = {
         {
             "id": 11,
             "name": "foster",
+            "price": 5000,
+            "collection": "свечи",
+            "discount:": true,
+            "bestseller:": true,
+            "isNew": true,
+            "material": "мрамор",
+            "colors": ['white', 'palette-brown', 'black', 'palette-gray'],
+            "img": img12
+        },
+        {
+            "id": 12,
+            "name": "foster",
             "price": 6000,
             "collection": "Картины",
             "discount:": true,
@@ -148,7 +160,7 @@ const data = {
             "img": img4
         },
         {
-            "id": 12,
+            "id": 13,
             "name": "ramani",
             "price": 15000,
             "collection": "вазы и кашпо",
@@ -160,7 +172,7 @@ const data = {
             "img": img11
         },
         {
-            "id": 13,
+            "id": 14,
             "name": "foster",
             "price": 8000,
             "collection": "вазы и кашпо",
@@ -170,18 +182,6 @@ const data = {
             "material": "стекло",
             "colors": ['palette-green', 'palette-gray-light'],
             "img": img2
-        },
-        {
-            "id": 14,
-            "name": "foster",
-            "price": 5000,
-            "collection": "свечи",
-            "discount:": true,
-            "bestseller:": true,
-            "isNew": true,
-            "material": "мрамор",
-            "colors": ['white', 'palette-brown', 'black', 'palette-gray'],
-            "img": img12
         },
         {
             "id": 15,
