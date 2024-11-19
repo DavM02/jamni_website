@@ -12,7 +12,7 @@
     --palette-gray-light: #D9D9D9;
     --palette-brown: #6A4C2D;
     --palette-beige: #EEDECB;
-    --palettte-brown-light: #7E7662;
+    --palette-brown-light: #7E7662;
     --palette-green: #053109;
     --palette-gray: #2C3136;
 
@@ -44,6 +44,8 @@
 
     --catalog-slider-img-width: clamp(16.25rem, 15.0962rem + 5.1282vw, 21.25rem);
     --catalog-slider-img-height: clamp(10rem, 9.4231rem + 2.5641vw, 12.5rem);
+
+    --filter-item-img-height: clamp(10rem, 8.7019rem + 5.7692vw, 15.625rem);
 
 }
 

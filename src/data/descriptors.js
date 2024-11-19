@@ -1,12 +1,12 @@
 
-import img1 from '../assets/descriptors/img_1.jpg'
-import img2 from '../assets/descriptors/img_2.jpg'
+import img1 from '../assets/descriptors/img_1.webp'
+import img2 from '../assets/descriptors/img_2.webp'
 import img3 from '../assets/descriptors/img_3.webp'
-import img4 from '../assets/descriptors/img_4.jpg'
+import img4 from '../assets/descriptors/img_4.webp'
 import img5 from '../assets/descriptors/img_5.webp'
 import img6 from '../assets/descriptors/img_6.webp'
 import img7 from '../assets/descriptors/img_7.webp'
-import img8 from '../assets/descriptors/img_8.jpg'
+import img8 from '../assets/descriptors/img_8.webp'
 
 const descriptors = [
     [

@@ -7,10 +7,12 @@ import {  RouterProvider } from 'react-router-dom';
 import { createRoutesFromElements, createHashRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+ 
 const router = createHashRouter(
   createRoutesFromElements(<Route path="*" element={<App />} />)
 );
-
+ 
 root.render(
   <RouterProvider router={router}>
     <React.StrictMode/>

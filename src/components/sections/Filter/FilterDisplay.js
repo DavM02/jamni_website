@@ -1,18 +1,19 @@
-import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-export default function FilterDisplay({ data }) {
+ import Article from './Article';
+ import FilterItem from './FilterItem';
+import FilterPagination from './FilterPagination';
+export default function FilterDisplay({ data, dataLength }) {
 
-  const gridAreas = [
+  let gridAreas = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
   ];
-
+ 
+  
   let dataIndex = 0;
-
-  return (
+   return (
     <div className="filter-display">
-      {gridAreas.map((el, i) => {
+       {data && gridAreas.slice(0, data.length >= 9 ? data.length+1 : data.length).map((el, i) => {
         if (el === 'j') {
-          return <div style={{ gridArea: 'j' }} id="article" key="article"></div>;
+          return <Article style={{ gridArea: 'j' }} key="article"></Article>;
         }
 
         const item = data[dataIndex];
@@ -21,22 +22,10 @@ export default function FilterDisplay({ data }) {
           dataIndex++;
         }
 
-        return (
-          <div className="filter-item" key={item?.id} style={{ gridArea: el }}>
-            {item ? (
-              <LazyLoadImage
-                effect="blur"
-                height={el === 'l' ? '100%' : '250px'}
-                width="100%"
-                src={item.img}
-                alt={item.name}
-                className="image"
-              />
-            ) : null}
-            <span className='xxsmall-text text-main text-black up-case'>{item.name}</span>
-          </div>
-        );
+        return <FilterItem key={item.id} el={el} item={item}/>
       })}
+       {data && <FilterPagination pagesCount={Math.ceil(dataLength / 17)} />}  
     </div>
+ 
   );
 }

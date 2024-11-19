@@ -8,7 +8,7 @@ import img5 from '../../../assets/decor/img_10.jpg'
  
 import CatalogIntro from '../../../components/sections/CatalogIntro/CatalogIntro'
 import Filter from '../../../components/sections/Filter/Filter'
-import data from '../../../data/decor'
+
 export default function DecorSections() {
 
     const initialItems = [
@@ -31,7 +31,7 @@ export default function DecorSections() {
                 headline={'декор'}
                 text={'Изысканные детали для уюта и стиля: обогатите свой интерьер уникальными декоративными акцентами'}
             />
-            <Filter data={data.decor}/>
+            <Filter/>
         </>
     )
 }
