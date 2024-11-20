@@ -20,7 +20,8 @@ function PageTransition(Component) {
 
         useBlocker(
             ({ currentLocation, nextLocation }) => {
-                return (isAnimating && currentLocation.pathname !== nextLocation.pathname) || currentLocation.pathname === nextLocation.pathname
+                return (isAnimating && currentLocation.pathname !== nextLocation.pathname) 
+                // || currentLocation.pathname === nextLocation.pathname
             }
         );
  
