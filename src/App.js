@@ -25,7 +25,7 @@ function App() {
                   <Route path="/" element={<HomePage />} />
                   <Route path="news" element={<NewsPage />} />
                   <Route path="about" element={<AboutPage />} />
-                  {/* <Route path="catalog/*" element={<CatalogPage />} /> */}
+                  <Route path="catalog/*" element={<CatalogPage />} />
                 </Routes>
               </AnimatePresence>
             </main>
