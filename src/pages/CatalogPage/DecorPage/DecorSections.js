@@ -10,7 +10,7 @@ import CatalogIntro from '../../../components/sections/CatalogIntro/CatalogIntro
 import Filter from '../../../components/sections/Filter/Filter'
 
 export default function DecorSections() {
-
+ 
     const initialItems = [
         { name: "картины", image: img1 },
         { name: "свечи", image: img2 },
@@ -31,7 +31,9 @@ export default function DecorSections() {
                 headline={'декор'}
                 text={'Изысканные детали для уюта и стиля: обогатите свой интерьер уникальными декоративными акцентами'}
             />
-            <Filter/>
+            <Filter
+            materials={["ткань", "кожа", "стекло", "керамика" ,"мрамор"]}
+            collections={['картины', 'свечи', 'вазы и кашпо', 'зеркала','часы']}/>
         </>
     )
 }

@@ -8,7 +8,7 @@ export default function SmoothScroll({ children }) {
     const { scrollbarAccess } = useContext(MainContext)
 
  
-    
+ 
     useLayoutEffect(() => {
         let scrollbar;
 

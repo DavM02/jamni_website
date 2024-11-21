@@ -1,16 +1,14 @@
 import React from 'react';
 import { SWRConfig } from 'swr';
-import loadData from '../db/LoadData';
+import loadData from '../db/loadData';
 
 export default function SWRConfigWrapper({ children }) {
     return (
         <SWRConfig
             value={{
-                fetcher: loadData,  
-                revalidateOnFocus: false, 
-      
-
-             }}
+                fetcher: loadData,
+                revalidateOnFocus: false,
+            }}
         >
             {children}
         </SWRConfig>

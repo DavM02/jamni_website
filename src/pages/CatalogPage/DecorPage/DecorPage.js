@@ -6,8 +6,8 @@ import PageTransition from '../../../components/PageTransition/PageTransition'
 
 const DecorSections = React.lazy(() => import('./DecorSections'))
 function DecorPage() {
- 
-    return (
+    console.log('ehehe')
+     return (
         <div id='decor-page'>
             <Suspense fallback={<ChunkLoading />}>
                 <DecorSections />

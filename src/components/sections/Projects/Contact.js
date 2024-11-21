@@ -6,7 +6,7 @@ import arrowRight from '../../../assets/icons/arrow-cursive-right.svg'
 export default function Contact() {
     return (
         <div className='container'>
-<div className='row center-x'>
+            <div className='row center-x'>
                 <div className='center-y gap-50'>
                     <p className='xsmall-text text-main text-black up-case text-center'>
                         Если у вас, как у дизайнера,уже есть готовый проект и вы ищете возможность его реализации, обратитесь к нам
@@ -26,7 +26,7 @@ export default function Contact() {
                         Если вы хотите заказатьдизайн-проект, мы с удовольствием поможем вам связаться с профессиональным дизайнером для сотрудничества
                     </p>
                 </div>
-</div>
+            </div>
         </div>
     )
 }

@@ -9,17 +9,18 @@ async function loadData([path, page]) {
         const limitedQuery = query(dbRef, orderByKey(), startAt(String(startPage)), endAt(String(startPage + 17)));
 
         const snapshot = await get(limitedQuery);
-
+ 
+ 
         if (snapshot.exists()) {
-            console.log('loading' + " " + path);
+    
             const data = snapshot.val();
-            return Array.isArray(data) ? data : Object.values(data);
+            return Array.isArray(data) ? Object.values(data) : Object.values(data).map((item, index) => item);
+
         } else {
             return []; 
         }
     } catch (error) {
-        console.error(error);
-        return [];  
+        throw new Error('An error occured when loading');
     }
 }
 
@@ -38,6 +39,7 @@ export async function getLength([path]) {
             return 0;  
         }
     } catch (error) {
+        
         throw new Error(`error: ${error.message}`);
     }
 }

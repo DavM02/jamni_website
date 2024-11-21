@@ -9,10 +9,11 @@ import NewsPage from "./pages/NewsPage/NewsPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import CatalogPage from "./pages/CatalogPage/CatalogPage";
 import SWRConfigWrapper from "./swr/SWRConfigWrapper";
+import NoFound from "./pages/NoFound/NoFound";
 function App() {
 
    const location = useLocation()
-
+ 
   return (
     <div className="App">
       <MainContextProvider>
@@ -26,6 +27,7 @@ function App() {
                   <Route path="news" element={<NewsPage />} />
                   <Route path="about" element={<AboutPage />} />
                   <Route path="catalog/*" element={<CatalogPage />} />
+                  <Route path="/*" element={<NoFound/>} />
                 </Routes>
               </AnimatePresence>
             </main>

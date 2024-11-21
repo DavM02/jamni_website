@@ -12,7 +12,6 @@ const descriptors = [
     [
         {
             directions: {
-
                 top: '70%',
                 left: '50%'
             },

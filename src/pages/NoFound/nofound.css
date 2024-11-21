@@ -1,0 +1,7 @@
+.no-found {
+    height: calc(100vh - (30px + 55px + var(--nav-height) + (var(--header-container-padding)*2)));
+}
+
+.no-found h1 {
+    text-transform: capitalize;
+}

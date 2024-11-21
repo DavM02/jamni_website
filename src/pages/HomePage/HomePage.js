@@ -3,8 +3,7 @@ import PageTransition from '../../components/PageTransition/PageTransition'
 import ChunkLoading from '../../components/ui/ChunkLoading/ChunkLoading'
 const HomeSections = React.lazy(() => import('./HomeSections'))
 function HomePage() {
- 
-  return (
+   return (
     <div id='home-page' >
 
       <Suspense fallback={<ChunkLoading />}>

@@ -1,12 +1,12 @@
-import React from 'react'
 import usePagination from '../../../hooks/usePagination';
 import arrowLeft from '../../../assets/icons/pagination-arrow-left.svg'
 import arrowRight from '../../../assets/icons/pagination-arrow-right.svg'
-
+ 
 export default function FilterPagination({ pagesCount }) {
 
     const { pages, activePage, handlePagination } = usePagination(pagesCount);
- 
+
+
     return (
         <div className='filter-pagination'>
             <div className='row gap-30 center-y end-x'>

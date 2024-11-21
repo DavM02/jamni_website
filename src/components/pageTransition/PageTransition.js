@@ -24,7 +24,7 @@ function PageTransition(Component) {
                 // || currentLocation.pathname === nextLocation.pathname
             }
         );
- 
+  
         return (
             <React.Fragment>
                 <Component {...props} />
@@ -35,13 +35,13 @@ function PageTransition(Component) {
                             onAnimationComplete={(e) => {
                                 if (e.clipPath === 'inset(0% 0% 0% 0%)') {
                                     const getPath = window.location.hash.split('/');
-                                    const path = getPath[getPath.length - 1];
+                                    let path = getPath[getPath.length - 1];
+                                    path = path.includes('?') ? path.split('?')[0] : path;
                                     setPathname(path.length === 0 ? 'home' : path);
                                 }
                             }}
                             onAnimationStart={() => {
                                 setIsAnimating(true)
-                                console.log('starttt')
                             }}
                             initial={{ clipPath: 'inset(100% 0% 0% 0%)' }}
                             animate={{ clipPath: 'inset(100% 0% 0% 0%)' }}

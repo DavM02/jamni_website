@@ -1,7 +1,7 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-import AddToFav from './AddToFav'
+import AddToFav from '../AddToFav'
 export default function FilterItem({ item, el }) {
     return (
         <div className="filter-item"
@@ -29,7 +29,7 @@ export default function FilterItem({ item, el }) {
                             style={{
                                 backgroundColor: `var(--${el})`,
                                 border: el === 'white' ? '1px solid #DDDDDD' : 'none'
-                        }}></div>
+                            }}></div>
                     })
                 }
             </div>

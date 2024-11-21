@@ -60,6 +60,6 @@
 }
 
 #catalog-intro .container {
-    max-width: 1920px;
+    max-width: 1438px;
     padding: clamp(2.5rem, 2.125rem + 1.6667vw, 4.125rem) var(--container-padding);
 }
