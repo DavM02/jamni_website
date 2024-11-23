@@ -1,8 +1,8 @@
 import useFilter from '../../../../hooks/useFilter';
 
-export default function Main({  headline }) {
+export default function FilterByDescription({ headline }) {
 
- const {allFilterParams, handleSearchParams} = useFilter('filter')
+    const { allFilterParams, handleSearchParams } = useFilter('description')
 
     return (
         <div className="main-filter column gap-15 xsmall-text text-main text-black up-case">

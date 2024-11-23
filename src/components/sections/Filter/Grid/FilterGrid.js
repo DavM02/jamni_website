@@ -6,8 +6,8 @@ export default function FilterGrid({ data }) {
   let gridAreas = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
   ];
-   const visibleItems = data.filter(item => item?.isShown !== false);
-
+  const visibleItems = data.filter(item => item?.isShown !== false);
+ 
   let dataIndex = 0;
   return (
     <div className="filter-display">
@@ -20,7 +20,6 @@ export default function FilterGrid({ data }) {
         if (item) {
           dataIndex++;
         }
-
      
         return <FilterItem key={item.id} el={el} item={item} />
       
