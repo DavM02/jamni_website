@@ -1,21 +1,31 @@
-import React, { useCallback, useEffect, useState, useRef } from "react";
-import PropTypes from "prop-types";
+import React, { useCallback, useEffect, useState, useRef, useContext } from "react";
+ 
 import "./multiRangeSlider.css";
-
+import { MainContext } from "../../../context/MainContext";
 const MultiRangeSlider = ({ min, max, onChange }) => {
+  
+  const handleScrollPrevent = () => {
+    scrollbarAccess.current.updatePluginOptions('overflow', { open: true })
+  }
+
+  const handleScrollAllow = () => { 
+    scrollbarAccess.current.updatePluginOptions('overflow', { open: false })
+  }
+
+  const {scrollbarAccess} = useContext(MainContext)
+
   const [minVal, setMinVal] = useState(min);
   const [maxVal, setMaxVal] = useState(max);
   const minValRef = useRef(min);
   const maxValRef = useRef(max);
   const range = useRef(null);
 
-  // Convert to percentage
-  const getPercent = useCallback(
+   const getPercent = useCallback(
     (value) => Math.round(((value - min) / (max - min)) * 100),
     [min, max]
   );
 
-  // Set width of the range to decrease from the left side
+ 
   useEffect(() => {
     const minPercent = getPercent(minVal);
     const maxPercent = getPercent(maxValRef.current);
@@ -26,7 +36,7 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
     }
   }, [minVal, getPercent]);
 
-  // Set width of the range to decrease from the right side
+  
   useEffect(() => {
     const minPercent = getPercent(minValRef.current);
     const maxPercent = getPercent(maxVal);
@@ -36,19 +46,21 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
     }
   }, [maxVal, getPercent]);
 
-  // Get min and max values when their state changes
-  useEffect(() => {
-    onChange({ min: minVal, max: maxVal });
-  }, [minVal, maxVal, onChange]);
-
+  
   return (
-    <div className="range-input">
+    <div className="range-input"
+    
+    >
       <input
         type="range"
         min={min}
         max={max}
         value={minVal}
+        onMouseLeave={() => handleScrollAllow()}
+        onTouchEnd={() => handleScrollAllow()}
+        onTouchCancel={() => handleScrollAllow()}
         onChange={(event) => {
+          handleScrollPrevent()
           const value = Math.min(Number(event.target.value), maxVal - 1);
           setMinVal(value);
           minValRef.current = value;
@@ -61,7 +73,11 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
         min={min}
         max={max}
         value={maxVal}
+        onTouchCancel={() => handleScrollAllow()}
+        onTouchEnd={() => handleScrollAllow()}
+        onMouseLeave={() => handleScrollAllow()}
         onChange={(event) => {
+          handleScrollPrevent()
           const value = Math.max(Number(event.target.value), minVal + 1);
           setMaxVal(value);
           maxValRef.current = value;
@@ -73,16 +89,11 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
         <div className="slider__track" />
         <div ref={range} className="slider__range" />
         <div className="slider__left-value">{minVal.toLocaleString('ru-RU')}</div>
-        <div className="slider__right-value">{maxVal.toLocaleString('ru-RU')}</div>
+        <div className="slider__right-value" >{maxVal.toLocaleString('ru-RU')}</div>
       </div>
     </div>
   );
 };
-
-MultiRangeSlider.propTypes = {
-  min: PropTypes.number.isRequired,
-  max: PropTypes.number.isRequired,
-  onChange: PropTypes.func.isRequired
-};
+ 
 
 export default MultiRangeSlider;

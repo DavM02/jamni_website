@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react'
+import React, { useLayoutEffect } from 'react'
 import Scrollbar, { ScrollbarPlugin } from 'smooth-scrollbar';
 import { useRef, useContext } from 'react';
 import { MainContext } from '../../context/MainContext';
@@ -41,17 +41,17 @@ export default function SmoothScroll({ children }) {
 }
 
 
-// class OverflowPlugin extends ScrollbarPlugin {
-//     static pluginName = 'overflow';
+class OverflowPlugin extends ScrollbarPlugin {
+    static pluginName = 'overflow';
 
-//     static defaultOptions = {
-//         open: false,
-//     };
+    static defaultOptions = {
+        open: false,
+    };
 
-//     transformDelta(delta) {
-//         return this.options.open ? { x: 0, y: 0 } : delta;
-//     }
-// }
+    transformDelta(delta) {
+        return this.options.open ? { x: 0, y: 0 } : delta;
+    }
+}
 
-// Scrollbar.use(OverflowPlugin);
+Scrollbar.use(OverflowPlugin);
 

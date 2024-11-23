@@ -1,7 +1,7 @@
 import React from 'react'
 import FilterAccordion from '../FilterAccordion'
 import MultiRangeSlider from '../../../ui/RangeInput/MultiRangeSlider'
-export default function FilterByPrice() {
+export default function FilterByPrice({ min, max }) {
   return (
     <div className="price-filter xsmall-text text-main text-black up-case">
 
@@ -12,8 +12,7 @@ export default function FilterByPrice() {
         <MultiRangeSlider
           min={50000}
           max={250000}
-          onChange={({ min, max }) => console.log(`min = ${min}, max = ${max}`)}
-
+ 
         />
       </FilterAccordion>
 
