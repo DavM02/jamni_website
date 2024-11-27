@@ -4,9 +4,10 @@ export default function FilterAccordion({
     headline,
     dataLength,
     elHeight,
+    isOpen,
     children
 }) {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(isOpen);
 
     return (
         <>

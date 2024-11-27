@@ -27,7 +27,7 @@ export default function usePagination(pagesCount) {
  
             searchParams.set('page', page);
             setSearchParams(searchParams);
-        }, 300);
+        }, 500);
 
     };
 

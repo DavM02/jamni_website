@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import FilterAccordion from '../FilterAccordion'
 import FilterParam from '../FilterParam'
 export default function FilterByCollection({ collections }) {
@@ -8,7 +8,9 @@ export default function FilterByCollection({ collections }) {
             <FilterAccordion
                 headline="коллекции"
                 dataLength={collections.length}
-                elHeight={30}>
+                elHeight={30}
+                isOpen={true}
+                >
                 <FilterParam
                     filterParam={"collection"}
                     data={collections}

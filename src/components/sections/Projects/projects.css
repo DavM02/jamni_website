@@ -45,10 +45,11 @@
 }
 
 
-#projects .slider-item span {
+#projects .slider-item span:not(.slider-image span) {
     display: block;
-    margin: 23px 0 10px 0;
+    margin: 20px 0 10px 0;
     font-weight: 400;
+    line-height: 24px;
 }
 
 #projects .slider-image+div {

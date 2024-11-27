@@ -3,17 +3,21 @@ import FilterByCollection from "./FilterBy/FilterByCollection";
 import FilterByMaterial from "./FilterBy/FilterByMaterial";
 import FilterByColors from "./FilterBy/FilterByColors";
 import FilterByPrice from "./FilterBy/FilterByPrice";
+ 
 
-
-export default function FilterParams({ collections, materials, headline }) {
+export default function FilterParams({ data}) {
+ 
     return (
-        <div className="filter-params">
-            <FilterByDescription headline={headline} />
-            <FilterByCollection collections={collections} />
-            <FilterByMaterial materials={materials} />
-   
-             <FilterByPrice/>
+        <>
+            <FilterByDescription headline={data.headline} />
+            <FilterByCollection collections={data.collections} />
+            <FilterByMaterial materials={data.materials} />
+            <FilterByPrice
+                min={data.price.min}
+                val={data.price.val}
+                max={data.price.max}
+            />
             <FilterByColors />
-        </div>
+        </>
     );
 }

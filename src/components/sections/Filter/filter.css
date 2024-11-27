@@ -3,14 +3,17 @@
 }
 
 #filter .container {
+    overflow: unset;
     max-width: 1438px;
 }
 
 #filter .section-layout {
+    position: relative;
     display: grid;
     grid-template-columns: 220px 1fr;
     gap: 20px;
-
+    padding: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem) 0 26px;
+    border-top: 1px solid var(--line-bg);
 }
 
 #filter .filter-display {
@@ -25,10 +28,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#filter img {
+#filter .filter-display img {
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
 }
 
 #filter .filter-item {
@@ -36,6 +39,17 @@
     margin-bottom: 30px;
 }
 
+#filter .filter-item:nth-child(1n) .placeholder {
+    background-color: var(--placeholder-1);
+}
+
+#filter .filter-item:nth-child(2n) .placeholder {
+    background-color: var(--placeholder-2);
+}
+
+#filter .filter-item:nth-child(3n) .placeholder {
+    background-color: var(--placeholder-3);
+}
 
 
 #filter .filter-item>span:nth-child(3) {
@@ -60,12 +74,19 @@
 }
 
 #filter .filter-item .palette {
-    opacity: 0;
+
     transition: var(--transition) 0.3s opacity;
 }
 
-#filter .filter-item:hover .palette {
-    opacity: 1;
+@media all and (hover: hover) {
+    #filter .filter-item .palette {
+        opacity: 0;
+
+    }
+
+    #filter .filter-item:hover .palette {
+        opacity: 1;
+    }
 }
 
 #filter .filter-item .palette div {
@@ -74,40 +95,9 @@
     border-radius: 50%;
 }
 
-#filter .filter-item .add-to-favorites {
-    position: absolute;
-    top: 12px;
-    right: 9px;
-    height: 23px;
-    width: 27px;
-    z-index: 5;
-    opacity: 0;
-}
 
-#filter .filter-item:hover .add-to-favorites {
-    opacity: 1;
-}
-
-#filter .filter-item .add-to-favorites input {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 6;
-}
-
-#filter .filter-item .add-to-favorites input:checked+svg path {
-    fill: var(--black);
-    stroke: none;
-}
-
- 
 #filter .filter-pagination {
-    padding: 17px 0 26px;
+    padding-top: 17px;
     border-top: 1.5px solid var(--line-bg);
     margin-left: 240px;
     grid-column: 1 / -1;
@@ -130,30 +120,30 @@
     filter: invert(1);
 }
 
-#filter .row.center-y.center-x {
-        transform: translate(-9%, -10%);
-            min-height: 500px;
-            align-items: center;
-            text-transform: capitalize;
+#filter .row.center-y.center-x,
+#filter .center-gr.no-results {
+    min-height: 500px;
+    align-items: center;
+    text-transform: capitalize;
 }
 
-#filter .filter-params .main-filter span:hover, 
-#filter .filter-params .main-filter span.active{
+.filter-params .main-filter span:hover,
+.filter-params .main-filter span.active {
     font-weight: 600;
 }
 
-#filter .filter-params .main-filter span:hover::after,
-#filter .filter-params .main-filter span.active::after {
-  clip-path: inset(0);
+.filter-params .main-filter span:hover::after,
+.filter-params .main-filter span.active::after {
+    clip-path: inset(0);
 }
 
-#filter .filter-params .main-filter span {
+.filter-params .main-filter span {
     position: relative;
-   width: fit-content;
+    width: fit-content;
     cursor: pointer;
 }
 
-#filter .filter-params .main-filter span::after {
+.filter-params .main-filter span::after {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -165,7 +155,7 @@
     transition: var(--transition) 0.5s clip-path;
 }
 
-.filter-params > div {
+.filter-params>div {
     border-bottom: 1px solid var(--line-bg);
     padding-bottom: 30px;
 }
@@ -173,23 +163,25 @@
 .filter-params>div:not(div:nth-child(1)) {
     padding-top: 30px;
 }
-#filter .filter-params .open-accordion {
+
+.filter-params .open-accordion {
     margin-right: 25px;
     font-size: 18px;
     user-select: none;
     cursor: pointer;
 }
 
-#filter .filter-params .accordion { 
+.filter-params .accordion {
     overflow: hidden;
     transition: var(--transition) 0.5s height;
 }
-#filter .filter-params .accordion ul {
-padding-top: 20px;
+
+.filter-params .accordion ul {
+    padding-top: 20px;
 }
-              
- 
-#filter .filter-params .custom-radio {
+
+
+.filter-params .custom-radio {
     width: 18px;
     height: 18px;
     position: relative;
@@ -197,35 +189,220 @@ padding-top: 20px;
 
 }
 
-#filter .filter-params .custom-radio input,
-#filter .filter-params .custom-radio .input-state
- {
+.filter-params .custom-radio input,
+.filter-params .custom-radio .input-state {
     top: 0;
     left: 0;
     height: 100%;
-        width: 100%;
- 
+    width: 100%;
+
     position: absolute;
-    
+
 }
 
 
-#filter .filter-params .custom-radio .input-state {
-z-index: 44;
+.filter-params .custom-radio .input-state {
+    z-index: 44;
 
-        border-radius: 50%;
-            border: 1px solid var(--line-bg);
-            pointer-events: none;
+    border-radius: 50%;
+    border: 1px solid var(--line-bg);
+    pointer-events: none;
 }
 
-#filter .filter-params .custom-radio input {
+.filter-params .custom-radio input {
     opacity: 0;
-        cursor: pointer;
+    cursor: pointer;
 }
 
-#filter .filter-params .custom-radio input:checked + .input-state {
+.filter-params .custom-radio input:checked+.input-state,
+.filter-params .colors-filter li:nth-child(4) .custom-radio input:checked+.input-state {
     background-color: var(--black);
     border: none;
     outline: 2px solid var(--white);
     outline-offset: -4px;
+}
+
+.filter-params .colors-filter li:nth-child(1) .input-state {
+
+    background-color: var(--palette-gray-light);
+    border: none;
+}
+
+.filter-params .colors-filter li:nth-child(2) .input-state {
+
+    background-color: var(--black);
+    border: none;
+
+}
+
+.filter-params .colors-filter li:nth-child(3) .input-state {
+    border: none;
+    background-color: var(--palette-brown);
+}
+
+.filter-params .colors-filter li:nth-child(4) .input-state {
+    background-color: var(--white);
+}
+
+
+.filter-params .colors-filter li:nth-child(5) .input-state {
+    border: none;
+    background-color: var(--palette-beige);
+}
+
+.filter-params .colors-filter li:nth-child(6) .input-state {
+    border: none;
+    background-color: var(--palette-green);
+}
+
+.filter-params .colors-filter li:nth-child(7) .input-state {
+    border: none;
+    background-color: var(--palette-gray);
+}
+
+.filter-params .colors-filter li:nth-child(8) .input-state {
+    border: none;
+    background-color: var(--palette-brown-light);
+}
+
+#filter .filter-header {
+    margin-bottom: 15px;
+}
+
+#filter .filter-header a {
+    color: #A7A7A7;
+}
+
+#filter .filter-header>div:nth-child(1) {
+    padding-bottom: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
+}
+
+#filter .sorting {
+    position: relative;
+    cursor: pointer;
+}
+
+.filters>span,
+.sorting>span {
+    text-transform: capitalize;
+
+}
+
+#filter .sorting-params {
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    z-index: 5;
+    border: 0.5px solid var(--line-bg);
+    padding: 40px 10px;
+    white-space: nowrap;
+    border-radius: 20px;
+    background-color: var(--white);
+    top: 50px;
+    right: 0;
+    z-index: 55;
+}
+
+#filter .sorting-params span {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+#filter .sorting-params span:hover,
+#filter .sorting-params span.active {
+    background-color: var(--gray);
+}
+
+#modal-root .filter-params {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 555;
+    border-radius: unset;
+    padding: 0 30px 40px;
+}
+
+#modal-root .filter-params>.row:nth-child(1) {
+    width: 100%;
+    padding-bottom: unset;
+    position: relative;
+    border-bottom: unset;
+}
+
+#modal-root .filter-params>.row:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -32px;
+    width: 128%;
+    height: 1px;
+    background-color: var(--line-bg);
+
+}
+
+#modal-root .filter-params .text-heading {
+    font-size: 24px;
+    line-height: 74px;
+    font-weight: 400;
+}
+
+@media all and (max-width: 1024px) {
+    #filter .section-layout {
+        display: block;
+    }
+
+    .filter-params {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        padding: 40px 30px;
+        background-color: var(--white);
+        width: 280px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+        z-index: 5;
+        border: 0.5px solid var(--line-bg);
+        overflow-y: scroll;
+        min-height: 200px;
+
+
+    }
+
+
+    #filter .filter-pagination {
+        margin-left: 0;
+    }
+
+
+}
+
+@media all and (max-width: 769px) {
+    #filter .filter-display {
+        grid-template-areas: initial;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    #filter .filter-display #article {
+        margin-bottom: 30px;
+    }
+
+
+    #filter .filter-display .filter-item,
+    #filter .filter-display #article {
+        grid-area: initial !important
+    }
+
+    /* #filter .filter-display #article */
+    #filter .filter-display>div:nth-child(3n),
+    #filter .filter-display #article,
+    #filter .filter-display #article+div {
+        grid-column: 1/-1 !important;
+    }
+
+    #filter .filter-pagination .row {
+        justify-content: center;
+    }
 }

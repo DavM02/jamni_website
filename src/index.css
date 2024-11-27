@@ -115,6 +115,7 @@ main {
 .slider-nav button:hover img {
   filter: invert();
 }
+
 .slider-indicator {
   width: 100%;
   height: 1.5px;
@@ -131,4 +132,51 @@ main {
   top: 0;
   background-color: var(--black);
   transition: var(--transition) left 0.7s;
+}
+
+#filter .filter-item .add-to-favorites,
+#more-products .slider-item .add-to-favorites {
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  width: 25px;
+  height: 20px;
+  z-index: 5;
+}
+
+#filter .filter-item:hover .add-to-favorites img {
+  width: 25px;
+  height: 20px;
+}
+
+@media all and (hover: hover) {
+
+  #filter .filter-item .add-to-favorites,
+  #more-products .slider-item .add-to-favorites {
+    opacity: 0;
+  }
+
+  #filter .filter-item:hover .add-to-favorites,
+  #more-products .slider-item:hover .add-to-favorites {
+    opacity: 1;
+  }
+}
+
+#filter .filter-item .add-to-favorites input,
+#more-products .slider-item .add-to-favorites input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 6;
+}
+
+#filter .filter-item .add-to-favorites input:checked+svg path,
+#more-products .slider-item .add-to-favorites input:checked+svg path {
+  fill: var(--black);
+  stroke: none;
 }

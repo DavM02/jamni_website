@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import FilterParam from '../FilterParam'
 import FilterAccordion from '../FilterAccordion'
 export default function FilterByMaterial({ materials }) {
@@ -7,7 +7,9 @@ export default function FilterByMaterial({ materials }) {
             <FilterAccordion
                 headline="материал"
                 dataLength={materials.length}
-                elHeight={20}>
+                elHeight={20}
+                isOpen={true}
+                >
                 <FilterParam
                     filterParam={"material"}
                     data={materials}

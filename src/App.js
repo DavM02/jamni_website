@@ -13,7 +13,7 @@ import NoFound from "./pages/NoFound/NoFound";
 function App() {
 
    const location = useLocation()
- 
+ console.log('lal')
   return (
     <div className="App">
       <MainContextProvider>

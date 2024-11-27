@@ -1,50 +1,54 @@
 
-.slider {
+.range-input {
   position: relative;
-  width: 200px;
+    width: 100%;
+    padding-top: 20px;
 }
 
-.slider__track,
-.slider__range,
-.slider__left-value,
-.slider__right-value {
+.range-input span {
+  color: var(--gray);
+}
+
+.range-input .values {
+  margin-bottom: 21px;
+}
+
+.range-input .slider {
+  position: relative;
+  width: 100%;
+}
+
+ .slider-track,
+.slider-range {
   position: absolute;
 }
 
-.slider__track,
-.slider__range {
-  border-radius: 3px;
-  height: 5px;
+.slider-track,
+.slider-range {
+  border-radius: 4px;
+  height: 3px;
 }
 
-.slider__track {
-  background-color: #ced4da;
+.slider-track {
+  background-color: var(--black);
   width: 100%;
   z-index: 1;
 }
 
-.slider__range {
-  background-color: #9fe5e1;
+.slider-range {
+  background-color: var(--line-bg);
   z-index: 2;
 }
 
-.slider__left-value,
-.slider__right-value {
-  color: #dee2e6;
-  font-size: 12px;
-  margin-top: 20px;
+.range-input .values div {
+  border-radius: 20px;
+  width: 100px;
+  height: 31px;
+  background-color: var(--gray);
 }
 
-.slider__left-value {
-  left: 6px;
-}
-
-.slider__right-value {
-  right: -4px;
-}
-
-/* Removing the default appearance */
-.thumb,
+ 
+ .thumb,
 .thumb::-webkit-slider-thumb {
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
@@ -54,42 +58,43 @@
   pointer-events: none;
   position: absolute;
   height: 0;
-  width: 200px;
+  width: 100%;
   outline: none;
 }
 
-.thumb--left {
+.thumb-left {
   z-index: 3;
 }
 
-.thumb--right {
+.thumb-right {
   z-index: 4;
 }
 
-/* For Chrome browsers */
-.thumb::-webkit-slider-thumb {
-  background-color: #f1f5f7;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 0 1px 1px #ced4da;
-  cursor: pointer;
-  height: 18px;
-  width: 18px;
-  margin-top: 4px;
-  pointer-events: all;
-  position: relative;
+ .thumb::-webkit-slider-thumb {
+  background-color: var(--white);
+    outline: 6px solid var(--line-bg);
+    outline-offset: -6px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 19px;
+    width: 19px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
 }
 
-/* For Firefox browsers */
+ 
 .thumb::-moz-range-thumb {
-  background-color: #f1f5f7;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 0 1px 1px #ced4da;
-  cursor: pointer;
-  height: 18px;
-  width: 18px;
-  margin-top: 4px;
-  pointer-events: all;
-  position: relative;
+  background-color: var(--white);
+    outline: 6px solid var(--line-bg);
+    outline-offset: -6px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 19px;
+    width: 19px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
 }

@@ -8,6 +8,7 @@ import img5 from '../../../assets/decor/img_10.jpg'
  
 import CatalogIntro from '../../../components/sections/CatalogIntro/CatalogIntro'
 import Filter from '../../../components/sections/Filter/Filter'
+import MoreProducts from '../../../components/sections/MoreProducts/MoreProducts'
 
 export default function DecorSections() {
  
@@ -32,9 +33,11 @@ export default function DecorSections() {
                 text={'Изысканные детали для уюта и стиля: обогатите свой интерьер уникальными декоративными акцентами'}
             />
             <Filter
+            price={{min: 1000, max: 250000, val: 'руб'}}
             headline={'весь декор'}
             materials={["ткань", "кожа", "стекло", "керамика" ,"мрамор"]}
             collections={['картины', 'свечи', 'вазы и кашпо', 'зеркала','часы']}/>
+            <MoreProducts/>
         </>
     )
 }

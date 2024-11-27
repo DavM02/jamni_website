@@ -3,6 +3,7 @@ import { database } from './firebaseConfig';
 
 async function loadData([path, page]) {
     const startPage = (page - 1) * 18;
+    console.log(path, page)
     try {
         const dbRef = ref(database, path);
 

@@ -7,7 +7,7 @@ export default function SmoothScroll({ children }) {
     const scrollRef = useRef(null);
     const { scrollbarAccess } = useContext(MainContext)
 
- 
+ console.log('lalal')
  
     useLayoutEffect(() => {
         let scrollbar;
