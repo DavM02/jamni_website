@@ -38,7 +38,6 @@
 
 #about .section-layout .image:nth-child(1) {
     max-width: 79%;
-    justify-self: flex-end;
 }
 
 #about .section-layout div:nth-child(1):not(.image) {
@@ -54,8 +53,8 @@
 }
 
 
-@media all and (max-width: 1440px) {
-    #about .section-layout>div {
+@media all and (max-width: 1420px) {
+    #about .section-layout>div:nth-child(1) {
         justify-self: center;
     }
 

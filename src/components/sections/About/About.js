@@ -1,5 +1,4 @@
-import React, { useEffect, useContext, useRef } from 'react'
-import './About.css'
+import './about.css'
 import logo from '../../../assets/Jamni -.svg'
 import img1 from '../../../assets/img_11.webp'
 import img2 from '../../../assets/img_12.webp'
@@ -25,7 +24,7 @@ export default function About() {
                             это ландшафтное ателье с дружной командой единомышленников, искренне любящих свое дело. Для каждого из нас это не просто работа, это одна маленькая жизнь, где мы создаём лёгкие, яркие и действительно качественные вещи для дома и сада.</p>
                         <p>Впереди ещё много открытий, знакомство с которымивам предстоит на страницах нашего сайта.</p>
                     </div>
-                    <div className='self-end-x'>
+                    <div className='row end-x'>
                         <div className='image'>
                             <img src={img1} alt='img-11' />
                         </div>
