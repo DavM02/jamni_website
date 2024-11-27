@@ -47,7 +47,7 @@
 
     --filter-item-img-height: clamp(10rem, 8.7019rem + 5.7692vw, 15.625rem);
 
-    --moreproducts-slider-img-width: clamp(18.75rem, 18.1731rem + 2.5641vw, 21.25rem);
+    --moreproducts-slider-img-width: clamp(14.375rem, 13rem + 6.875vw, 21.25rem);
     --moreproducts-slider-img-height-odd: clamp(22.5rem, 21.7933rem + 3.141vw, 25.5625rem);
     --moreproducts-slider-img-height-even: clamp(16.625rem, 16.1202rem + 2.2436vw, 18.8125rem);
 }
