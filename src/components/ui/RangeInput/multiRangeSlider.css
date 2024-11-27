@@ -81,11 +81,15 @@
     width: 19px;
     margin-top: 4px;
     pointer-events: all;
+  box-shadow: unset !important;
+    filter: none !important;
     position: relative;
 }
 
  
 .thumb::-moz-range-thumb {
+  box-shadow: unset !important;
+  filter: none !important;
   background-color: var(--white);
     outline: 6px solid var(--line-bg);
     outline-offset: -6px;
