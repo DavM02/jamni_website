@@ -1,6 +1,7 @@
 import React from 'react'
 import './bestsellers.css'
-import Slider from './Slider'
+import './media.css'
+import Slider from './Slider/Slider'
 export default function Bestsellers() {
   return (
     <section id='bestsellers'>

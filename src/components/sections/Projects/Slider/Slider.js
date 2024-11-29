@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import img1 from '../../../assets/img_13.webp'
-import img2 from '../../../assets/img_14.webp'
-import img3 from '../../../assets/sofas/img_1.jpg'
-import img4 from '../../../assets/beds/img_5.webp'
-import img5 from '../../../assets/beds/img_4.webp'
-import useMediaQ from '../../../hooks/useMediaQ'
-
+import img1 from '../../../../assets/img_13.webp'
+import img2 from '../../../../assets/img_14.webp'
+import img3 from '../../../../assets/sofas/img_1.jpg'
+import img4 from '../../../../assets/beds/img_5.webp'
+import img5 from '../../../../assets/beds/img_4.webp'
+import useMediaQ from '../../../../hooks/useMediaQ'
+import './slider.css'
 import SliderNav from './SliderNav'
 import Slide from './Slide'
 export default function Slider() {

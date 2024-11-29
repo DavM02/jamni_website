@@ -7,97 +7,6 @@
     padding-top: var(--section-padding-equal-big);
 }
 
-#projects .slider-container {
-    transform: translateX(-50%);
-    position: relative;
-    left: 50%;
-    overflow: hidden;
-    padding-top: clamp(2.125rem, 1.6635rem + 2.0513vw, 4.125rem);
-    width: calc(var(--projects-slider-side-img-width) * 2 + var(--projects-slider-active-img-width) + (20px * 14) + (12 * var(--projects-slider-img-width)));
-}
-
-#projects .slider-wrapper {
-    overflow: hidden;
-    position: relative;
-    height: calc(var(--projects-slider-active-img-height) + 220px);
-    will-change: left;
-}
-
-#projects .slider-item img {
-    height: 100%;
-    object-fit: cover;
-}
-
-#projects .slider-image {
-    will-change: left, width, height;
-    width: var(--projects-slider-img-width);
-    height: var(--projects-slider-img-height);
-}
-
-#projects .slider-image.active-center {
-    width: var(--projects-slider-active-img-width);
-    height: var(--projects-slider-active-img-height)
-}
-
-#projects .slider-image.active-side {
-    width: var(--projects-slider-side-img-width);
-    height: var(--projects-slider-side-img-height);
-}
-
-
-#projects .slider-item span:not(.slider-image span) {
-    display: block;
-    margin: 20px 0 10px 0;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-#projects .slider-image+div {
-    transition: var(--transition) 0.3s opacity;
-}
-
-#projects .slider-item p {
-    line-height: 22px;
-}
-
-#projects .indicator-line {
-    left: 40%;
-}
-
-#projects .slider-nav {
-    max-width: 1340px;
-    width: 100%;
-}
-
-@media all and (max-width: 769px) {
-    #projects .slider-container {
-        transform: unset;
-        left: 0;
-    }
-
-    #projects .slider-wrapper {
-        height: unset;
-        margin-bottom: 60px;
-    }
-
-    #projects .slider-image+div {
-        opacity: 1 !important;
-    }
-
-    #projects p br {
-        display: none;
-    }
-
-    #projects .sketch+div p {
-        text-align: start;
-    }
-
-                #projects .sketch {
-                    max-width: unset !important;
-                }
-
-}
-
 #projects .background {
     margin-top: var(--section-padding-equal-big);
     height: 530px;
@@ -220,21 +129,4 @@
     padding: var(--section-padding-equal-big) 0;
 }
 
-@media all and (max-width: 1023px) {
-    #projects .container:nth-last-child(1)>.row>div:nth-child(1) {
-        grid-template-columns: auto;
-    }
-}
 
-@media all and (max-width: 769px) {
-
-    #projects .arrow-right,
-    #projects .arrow-left {
-        transform: rotate(90deg) !important;
-    }
-
-    #projects .container:nth-last-child(1) p+div.row {
-        flex-direction: column;
-    }
-
-}

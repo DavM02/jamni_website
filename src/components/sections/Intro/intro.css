@@ -1,0 +1,43 @@
+.intro {
+    height: 350px;
+    background-size: cover !important;
+    background-position-x: center !important;
+    position: relative;
+}
+
+.intro .center-gr {
+    height: 100%;
+}
+
+.intro p {
+    max-width: 724px;
+    font-weight: 300 !important;
+}
+
+.intro .container {
+    position: relative;
+}
+
+#decor-intro.intro::after {
+    content: "";
+    opacity: 10%;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#news-intro p, #news-intro h2 {
+    color: var(--black);
+}
+
+.intro .mask-layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(1.2px);
+}

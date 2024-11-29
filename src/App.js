@@ -34,7 +34,6 @@ function App() {
           </SWRConfigWrapper>
           <Footer />
         </SmoothScroll>
-
       </MainContextProvider>
     </div>
   );

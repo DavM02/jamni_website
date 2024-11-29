@@ -1,9 +1,9 @@
-import useFilter from "../../../hooks/useFilter";
+import useFilter from "../../../../hooks/useFilter";
 export default function FilterParam({
     filterParam,
     data,
 }) {
- 
+
 
     const { handleSearchParams, allFilterParams } = useFilter(filterParam);
 

@@ -1,0 +1,16 @@
+#catalog-collections .slider-image {
+    width: var(--catalog-slider-img-width);
+    height: var(--catalog-slider-img-height);
+}
+
+#catalog-collections .slider-wrapper {
+    transform: translateX(calc(var(--catalog-slider-img-width)* -3 - 60px));
+    width: calc((var(--catalog-slider-img-width) * 10) + 10 * 20px);
+    height: calc(var(--catalog-slider-img-height) + 63px);
+    margin-bottom: 40px;
+}
+
+#catalog-collections .container {
+    max-width: 1920px !important;
+    padding: clamp(2.5rem, 2.125rem + 1.6667vw, 4.125rem) var(--container-padding);
+}

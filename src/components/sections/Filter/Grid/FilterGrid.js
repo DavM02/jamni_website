@@ -1,4 +1,4 @@
-import Article from '../Article';
+import Article from './Article';
 import FilterItem from './FilterItem';
 
 export default function FilterGrid({ data }) {

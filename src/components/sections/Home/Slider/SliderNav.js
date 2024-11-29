@@ -1,6 +1,6 @@
 import React from 'react';
-import arrowLeft from '../../../assets/icons/arrow-left.svg';
-import arrowRight from '../../../assets/icons/arrow-right.svg';
+import arrowLeft from '../../../../assets/icons/arrow-left.svg';
+import arrowRight from '../../../../assets/icons/arrow-right.svg';
 
 const SliderNav = ({ onPrev, onNext, isPrevDisabled, isNextDisabled }) => {
     return (

@@ -3,14 +3,15 @@ import "./filter.css";
 import { useLocation, useSearchParams } from "react-router-dom";
 import useSWRImmutable from "swr/immutable";
 import { getLength } from "../../../db/loadData";
-import FilterPagination from "./FilterPagination";
 import useFilter from "../../../hooks/useFilter";
-import FilterParams from "./FilterParams";
+import FilterParams from "./FilterParams/FilterParams";
 import FilterDisplay from "./Grid/FilterDisplay";
 import FilterHeader from "./FilterHeader";
 import useMediaQ from '../../../hooks/useMediaQ';
+import './media.css'
 import { AnimatePresence } from "framer-motion";
 import SmoothAppearance from "../../ui/SmoothAppearance";
+import Pagination from "../../ui/Pagination/Pagination";
 
 export default function Filter({ collections, materials, headline, price }) {
 
@@ -21,7 +22,7 @@ export default function Filter({ collections, materials, headline, price }) {
 
     const page = parseInt(searchParams.get("page") ?? 1);
 
-    const { data, error, isLoading, mutate } = useSWRImmutable([key, page]);
+    const { data, error, isLoading, mutate } = useSWRImmutable([key, page, 18]);
     const { data: dataLength } = useSWRImmutable([key], getLength);
     const { handleFilter } = useFilter();
     const [showParams, setShowParams] = useState(false)
@@ -34,7 +35,7 @@ export default function Filter({ collections, materials, headline, price }) {
 
     const isDesktop = useMediaQ('(max-width: 1023px)');
     const isMobile = useMediaQ('(max-width: 480px)');
- 
+
 
     return (
         <section id="filter">
@@ -63,7 +64,7 @@ export default function Filter({ collections, materials, headline, price }) {
                         </div>
                     )}
                     {dataLength && (
-                        <FilterPagination pagesCount={Math.ceil(dataLength / 17)} />
+                        <Pagination pagesCount={Math.ceil(dataLength / 17)} />
                     )}
                 </div>
             </div>

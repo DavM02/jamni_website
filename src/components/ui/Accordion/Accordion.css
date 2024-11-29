@@ -1,0 +1,15 @@
+.filter-params .open-accordion {
+    margin-right: 25px;
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.filter-params .accordion {
+    overflow: hidden;
+    transition: var(--transition) 0.5s height;
+}
+
+.filter-params .accordion ul {
+    padding-top: 20px;
+}

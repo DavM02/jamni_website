@@ -1,0 +1,118 @@
+.filter-params .main-filter span:hover,
+.filter-params .main-filter span.active {
+    font-weight: 600;
+}
+
+.filter-params .main-filter span:hover::after,
+.filter-params .main-filter span.active::after {
+    clip-path: inset(0);
+}
+
+.filter-params .main-filter span {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.filter-params .main-filter span::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    left: 0;
+    clip-path: inset(0 50%);
+    transition: var(--transition) 0.5s clip-path;
+}
+
+.filter-params>div {
+    border-bottom: 1px solid var(--line-bg);
+    padding-bottom: 30px;
+}
+
+.filter-params>div:not(div:nth-child(1)) {
+    padding-top: 30px;
+}
+
+
+.filter-params .custom-radio {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin-bottom: 2px;
+
+}
+
+.filter-params .custom-radio input,
+.filter-params .custom-radio .input-state {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+.filter-params .custom-radio .input-state {
+    z-index: 44;
+    border-radius: 50%;
+    border: 1px solid var(--line-bg);
+    pointer-events: none;
+}
+
+.filter-params .custom-radio input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.filter-params .custom-radio input:checked+.input-state,
+.filter-params .colors-filter li:nth-child(4) .custom-radio input:checked+.input-state {
+    background-color: var(--black);
+    border: none;
+    outline: 2px solid var(--white);
+    outline-offset: -4px;
+}
+
+.filter-params .colors-filter li:nth-child(1) .input-state {
+
+    background-color: var(--palette-gray-light);
+    border: none;
+}
+
+.filter-params .colors-filter li:nth-child(2) .input-state {
+
+    background-color: var(--black);
+    border: none;
+
+}
+
+.filter-params .colors-filter li:nth-child(3) .input-state {
+    border: none;
+    background-color: var(--palette-brown);
+}
+
+.filter-params .colors-filter li:nth-child(4) .input-state {
+    background-color: var(--white);
+}
+
+
+.filter-params .colors-filter li:nth-child(5) .input-state {
+    border: none;
+    background-color: var(--palette-beige);
+}
+
+.filter-params .colors-filter li:nth-child(6) .input-state {
+    border: none;
+    background-color: var(--palette-green);
+}
+
+.filter-params .colors-filter li:nth-child(7) .input-state {
+    border: none;
+    background-color: var(--palette-gray);
+}
+
+.filter-params .colors-filter li:nth-child(8) .input-state {
+    border: none;
+    background-color: var(--palette-brown-light);
+}

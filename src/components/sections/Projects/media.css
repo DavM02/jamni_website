@@ -1,0 +1,47 @@
+@media all and (max-width: 769px) {
+    #projects .slider-container {
+        transform: unset;
+        left: 0;
+    }
+
+    #projects .slider-wrapper {
+        height: unset;
+        margin-bottom: 60px;
+    }
+
+    #projects .slider-image+div {
+        opacity: 1 !important;
+    }
+
+    #projects p br {
+        display: none;
+    }
+
+    #projects .sketch+div p {
+        text-align: start;
+    }
+
+    #projects .sketch {
+        max-width: unset !important;
+    }
+
+}
+
+@media all and (max-width: 1023px) {
+    #projects .container:nth-last-child(1)>.row>div:nth-child(1) {
+        grid-template-columns: auto;
+    }
+}
+
+@media all and (max-width: 769px) {
+
+    #projects .arrow-right,
+    #projects .arrow-left {
+        transform: rotate(90deg) !important;
+    }
+
+    #projects .container:nth-last-child(1) p+div.row {
+        flex-direction: column;
+    }
+
+}

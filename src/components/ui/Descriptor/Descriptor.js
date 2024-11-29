@@ -4,6 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import AnimButton from '../AnimButton/AnimButton'
 import SmoothAppearance from '../SmoothAppearance'
 import { AnimatePresence } from 'framer-motion'
+
 export default function Descriptor({ data }) {
     const [showDescriptor, setShowDescriptor] = useState(false)
  

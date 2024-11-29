@@ -1,0 +1,21 @@
+.pagination {
+    padding-top: 17px;
+    border-top: 1.5px solid var(--line-bg);
+    color: #8B8B8B;
+}
+
+.pagination li,
+.pagination .prev,
+.pagination .next {
+    cursor: pointer;
+}
+
+.pagination li.active,
+.pagination li:hover {
+    color: var(--black);
+}
+
+.pagination .prev:hover,
+.pagination .next:hover {
+    filter: invert(1);
+}

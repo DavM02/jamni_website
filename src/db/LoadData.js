@@ -1,13 +1,13 @@
 import { ref, get, query, startAt, endAt, orderByKey } from "firebase/database";
 import { database } from './firebaseConfig';
 
-async function loadData([path, page]) {
-    const startPage = (page - 1) * 18;
-    console.log(path, page)
+async function loadData([path, page, count]) {
+    const startPage = (page - 1) * count;
+  
     try {
         const dbRef = ref(database, path);
 
-        const limitedQuery = query(dbRef, orderByKey(), startAt(String(startPage)), endAt(String(startPage + 17)));
+        const limitedQuery = query(dbRef, orderByKey(), startAt(String(startPage)), endAt(String(startPage + count-1)));
 
         const snapshot = await get(limitedQuery);
  

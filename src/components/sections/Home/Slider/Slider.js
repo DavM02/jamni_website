@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import useMediaQ from '../../../hooks/useMediaQ';
+import useMediaQ from '../../../../hooks/useMediaQ';
 import Slide from './Slide';
 import SliderNav from './SliderNav';
-import img1 from '../../../assets/img_1.webp';
-import img2 from '../../../assets/img_2.webp';
-import img3 from '../../../assets/img_3.webp';
-import img4 from '../../../assets/img_4.webp';
-import img5 from '../../../assets/img_5.webp';
-import Descriptor from '../../ui/Descriptor/Descriptor';
-import useDebounce from '../../../hooks/useDebounce';
+import './slider.css'
+import img1 from '../../../../assets/img_1.webp';
+import img2 from '../../../../assets/img_2.webp';
+import img3 from '../../../../assets/img_3.webp';
+import img4 from '../../../../assets/img_4.webp';
+import img5 from '../../../../assets/img_5.webp';
+import Descriptor from '../../../ui/Descriptor/Descriptor';
+import useDebounce from '../../../../hooks/useDebounce';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import descriptors from '../../../data/descriptors';
- const slideImages = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img5, img1, img2, img3, img4, img5];
+import descriptors from '../../../../data/descriptors';
+const slideImages = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img5, img1, img2, img3, img4, img5];
 
 
 
@@ -45,18 +46,18 @@ const Slider = () => {
         setTimeout(() => {
             setMobileDescriptor(true)
         }, 300);
-       
+
     };
 
     return (
         <div className='slider-container'>
             {query && <div className='mobile-slider'>
-                {mobileDescriptor && <Descriptor data={descriptors[(activeSlide + 1) % 5]} />} 
+                {mobileDescriptor && <Descriptor data={descriptors[(activeSlide + 1) % 5]} />}
                 <LazyLoadImage
                     width={'100%'}
                     height={'100%'}
                     effect='blur'
-                     src={slideImages[activeSlide + 1]}
+                    src={slideImages[activeSlide + 1]}
                     alt={`slider-image-${activeSlide + 1}`} />
             </div>}
             <div
@@ -67,7 +68,7 @@ const Slider = () => {
             >
                 {slideImages.map((el, i) => (
                     <Slide
-                        data={descriptors[i%5]}
+                        data={descriptors[i % 5]}
                         key={i}
                         image={el}
                         index={i}

@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import filter from '../../../assets/icons/filter.svg'
-import Sort from './Sort'
-import FilterParams from './FilterParams';
+import Sort from './Sort/Sort';
+
 import { useEffect, useState } from 'react';
 import Backdrop from '../../ui/Backdrop/Backdrop';
-import Portal from '../../ui/Portal';
+import MobileFilter from './MobileFilter';
 export default function FilterHeader({ data, setShowParams, query, isMobile }) {
- 
+
     const [showMobileParams, setShowMobileParams] = useState(false)
 
     function handleMedia() {
@@ -49,18 +49,10 @@ export default function FilterHeader({ data, setShowParams, query, isMobile }) {
                     <Sort />
                 </div>
             </div>
-            <Portal root={'modal-root'} className='filter-params' value={showMobileParams}>
-                <div className='row s-between center-y'>
-                    <span className='text-heading text-black'>
-                        фильтры
-                    </span>
-                    <div className='menu-bars active' onClick={() => setShowMobileParams(false)}>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-                <FilterParams data={data} />
-            </Portal>
+            <MobileFilter
+                data={data}
+                setShowMobileParams={setShowMobileParams}
+                showMobileParams={showMobileParams} />
             <Backdrop root={'modal-root'} value={showMobileParams} />
         </>
 

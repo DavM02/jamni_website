@@ -1,0 +1,1875 @@
+{
+    "news": [
+        {
+            "id": 1,
+            "tag": "тренды",
+            "title": "Тренды в мебели 2024",
+            "description": "Какие модные тренды и тенденции в мире мебели нас ждут в 2024 году? Расскажем и покажем в этой статье",
+            "image": "https://i.ibb.co/3k92zft/img-1.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 2,
+            "tag": "вдохновение",
+            "title": "Идеи декорирования в стиле прованс",
+            "description": "Обновите свой интерьер с эстетикой и позитивной энергией природы",
+            "image": "https://i.ibb.co/jDQCP3s/img-2.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 3,
+            "tag": "обзоры",
+            "title": "Лучшие диваны для комфортного отдыха: топовые модели и расцветки",
+            "description": "Изучаем преимущества и особенности популярных диванов, чтобы выбрать идеальный вариант",
+            "image": "https://i.ibb.co/HTbFJq8/img-3.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 4,
+            "tag": "технологии",
+            "title": "Мебель для современного дома: комфорт и технологии в единстве",
+            "description": "От смарт-диванов до умных столов - взгляните на последние тенденции в мире мебельных инноваций",
+            "image": "https://i.ibb.co/GMq3kBS/img-4.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 5,
+            "tag": "тренды",
+            "title": "Вдохновитесь последними направлениями стиля",
+            "description": "От смелых цветовых сочетаний до минимализма: исследуйте актуальные тренды в мире мебели и интерьера",
+            "image": "https://i.ibb.co/h96K0M1/img-5.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 6,
+            "tag": "технологии",
+            "title": "Будущее мебельного дизайна: впереди удивительные возможности и новые технологии",
+            "description": "От интеллектуальных систем управления до умных материалов: откройте для себя передовые инновации, которые меняют взгляд на мебельную индустрию",
+            "image": "https://i.ibb.co/0s447nJ/img-6.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 7,
+            "tag": "вдохновение",
+            "title": "Идеи для стильного интерьера: откройте новые горизонты в дизайне своего дома",
+            "description": "Вдохновляйтесь лучшими интерьерными решениями и создавайте уютный дом своей мечты",
+            "image": "https://i.ibb.co/cK96fxQ/img-7.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 8,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/DWmRHND/img-8.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 9,
+            "tag": "тренды",
+            "title": "Тренды в мебели 2024",
+            "description": "Какие модные тренды и тенденции в мире мебели нас ждут в 2024 году? Расскажем и покажем в этой статье",
+            "image": "https://i.ibb.co/MN24Lfw/img-9.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 10,
+            "tag": "вдохновение",
+            "title": "Идеи декорирования в стиле прованс",
+            "description": "Обновите свой интерьер с эстетикой и позитивной энергией природы",
+            "image": "https://i.ibb.co/mBXmgs9/img-10.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 11,
+            "tag": "обзоры",
+            "title": "Лучшие диваны для комфортного отдыха: топовые модели и расцветки",
+            "description": "Изучаем преимущества и особенности популярных диванов, чтобы выбрать идеальный вариант",
+            "image": "https://i.ibb.co/mbx7DPP/img-11.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 12,
+            "tag": "технологии",
+            "title": "Мебель для современного дома: комфорт и технологии в единстве",
+            "description": "От смарт-диванов до умных столов - взгляните на последние тенденции в мире мебельных инноваций",
+            "image": "https://i.ibb.co/tBxp2yC/img-12.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 13,
+            "tag": "тренды",
+            "title": "Вдохновитесь последними направлениями стиля",
+            "description": "От смелых цветовых сочетаний до минимализма: исследуйте актуальные тренды в мире мебели и интерьера",
+            "image": "https://i.ibb.co/WFg8ZVW/img-13.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 14,
+            "tag": "технологии",
+            "title": "Будущее мебельного дизайна: впереди удивительные возможности и новые технологии",
+            "description": "От интеллектуальных систем управления до умных материалов: откройте для себя передовые инновации, которые меняют взгляд на мебельную индустрию",
+            "image": "https://i.ibb.co/0ZgKF44/img-14.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 15,
+            "tag": "вдохновение",
+            "title": "Идеи для стильного интерьера: откройте новые горизонты в дизайне своего дома",
+            "description": "Вдохновляйтесь лучшими интерьерными решениями и создавайте уютный дом своей мечты",
+            "image": "https://i.ibb.co/p4RMHrR/img-15.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 16,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/ch5MNPF/img-16.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 17,
+            "tag": "тренды",
+            "title": "Тренды в мебели 2024",
+            "description": "Какие модные тренды и тенденции в мире мебели нас ждут в 2024 году? Расскажем и покажем в этой статье",
+            "image": "https://i.ibb.co/3k92zft/img-1.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 18,
+            "tag": "вдохновение",
+            "title": "Идеи декорирования в стиле прованс",
+            "description": "Обновите свой интерьер с эстетикой и позитивной энергией природы",
+            "image": "https://i.ibb.co/jDQCP3s/img-2.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 19,
+            "tag": "обзоры",
+            "title": "Лучшие диваны для комфортного отдыха: топовые модели и расцветки",
+            "description": "Изучаем преимущества и особенности популярных диванов, чтобы выбрать идеальный вариант",
+            "image": "https://i.ibb.co/HTbFJq8/img-3.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 20,
+            "tag": "технологии",
+            "title": "Мебель для современного дома: комфорт и технологии в единстве",
+            "description": "От смарт-диванов до умных столов - взгляните на последние тенденции в мире мебельных инноваций",
+            "image": "https://i.ibb.co/GMq3kBS/img-4.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 21,
+            "tag": "тренды",
+            "title": "Вдохновитесь последними направлениями стиля",
+            "description": "От смелых цветовых сочетаний до минимализма: исследуйте актуальные тренды в мире мебели и интерьера",
+            "image": "https://i.ibb.co/h96K0M1/img-5.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 22,
+            "tag": "технологии",
+            "title": "Будущее мебельного дизайна: впереди удивительные возможности и новые технологии",
+            "description": "От интеллектуальных систем управления до умных материалов: откройте для себя передовые инновации, которые меняют взгляд на мебельную индустрию",
+            "image": "https://i.ibb.co/0s447nJ/img-6.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 23,
+            "tag": "вдохновение",
+            "title": "Идеи для стильного интерьера: откройте новые горизонты в дизайне своего дома",
+            "description": "Вдохновляйтесь лучшими интерьерными решениями и создавайте уютный дом своей мечты",
+            "image": "https://i.ibb.co/cK96fxQ/img-7.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 24,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/DWmRHND/img-8.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 25,
+            "tag": "тренды",
+            "title": "Тренды в мебели 2024",
+            "description": "Какие модные тренды и тенденции в мире мебели нас ждут в 2024 году? Расскажем и покажем в этой статье",
+            "image": "https://i.ibb.co/MN24Lfw/img-9.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 26,
+            "tag": "вдохновение",
+            "title": "Идеи декорирования в стиле прованс",
+            "description": "Обновите свой интерьер с эстетикой и позитивной энергией природы",
+            "image": "https://i.ibb.co/mBXmgs9/img-10.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 27,
+            "tag": "обзоры",
+            "title": "Лучшие диваны для комфортного отдыха: топовые модели и расцветки",
+            "description": "Изучаем преимущества и особенности популярных диванов, чтобы выбрать идеальный вариант",
+            "image": "https://i.ibb.co/mbx7DPP/img-11.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 28,
+            "tag": "технологии",
+            "title": "Мебель для современного дома: комфорт и технологии в единстве",
+            "description": "От смарт-диванов до умных столов - взгляните на последние тенденции в мире мебельных инноваций",
+            "image": "https://i.ibb.co/tBxp2yC/img-12.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 29,
+            "tag": "вдохновение",
+            "title": "Идеи декорирования в стиле прованс",
+            "description": "Обновите свой интерьер с эстетикой и позитивной энергией природы",
+            "image": "https://i.ibb.co/jDQCP3s/img-2.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 30,
+            "tag": "обзоры",
+            "title": "Лучшие диваны для комфортного отдыха: топовые модели и расцветки",
+            "description": "Изучаем преимущества и особенности популярных диванов, чтобы выбрать идеальный вариант",
+            "image": "https://i.ibb.co/HTbFJq8/img-3.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 31,
+            "tag": "технологии",
+            "title": "Мебель для современного дома: комфорт и технологии в единстве",
+            "description": "От смарт-диванов до умных столов - взгляните на последние тенденции в мире мебельных инноваций",
+            "image": "https://i.ibb.co/GMq3kBS/img-4.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 33,
+            "tag": "технологии",
+            "title": "Будущее мебельного дизайна: впереди удивительные возможности и новые технологии",
+            "description": "От интеллектуальных систем управления до умных материалов: откройте для себя передовые инновации, которые меняют взгляд на мебельную индустрию",
+            "image": "https://i.ibb.co/0ZgKF44/img-14.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 34,
+            "tag": "вдохновение",
+            "title": "Идеи для стильного интерьера: откройте новые горизонты в дизайне своего дома",
+            "description": "Вдохновляйтесь лучшими интерьерными решениями и создавайте уютный дом своей мечты",
+            "image": "https://i.ibb.co/p4RMHrR/img-15.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 35,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/ch5MNPF/img-16.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 36,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/ch5MNPF/img-16.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 37,
+            "tag": "тренды",
+            "title": "Тренды в мебели 2024",
+            "description": "Какие модные тренды и тенденции в мире мебели нас ждут в 2024 году? Расскажем и покажем в этой статье",
+            "image": "https://i.ibb.co/3k92zft/img-1.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 38,
+            "tag": "вдохновение",
+            "title": "Идеи декорирования в стиле прованс",
+            "description": "Обновите свой интерьер с эстетикой и позитивной энергией природы",
+            "image": "https://i.ibb.co/jDQCP3s/img-2.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 39,
+            "tag": "тренды",
+            "title": "Тренды в мебели 2024",
+            "description": "Какие модные тренды и тенденции в мире мебели нас ждут в 2024 году? Расскажем и покажем в этой статье",
+            "image": "https://i.ibb.co/3k92zft/img-1.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 40,
+            "tag": "вдохновение",
+            "title": "Идеи декорирования в стиле прованс",
+            "description": "Обновите свой интерьер с эстетикой и позитивной энергией природы",
+            "image": "https://i.ibb.co/jDQCP3s/img-2.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 41,
+            "tag": "обзоры",
+            "title": "Лучшие диваны для комфортного отдыха: топовые модели и расцветки",
+            "description": "Изучаем преимущества и особенности популярных диванов, чтобы выбрать идеальный вариант",
+            "image": "https://i.ibb.co/HTbFJq8/img-3.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 42,
+            "tag": "технологии",
+            "title": "Мебель для современного дома: комфорт и технологии в единстве",
+            "description": "От смарт-диванов до умных столов - взгляните на последние тенденции в мире мебельных инноваций",
+            "image": "https://i.ibb.co/GMq3kBS/img-4.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 43,
+            "tag": "тренды",
+            "title": "Вдохновитесь последними направлениями стиля",
+            "description": "От смелых цветовых сочетаний до минимализма: исследуйте актуальные тренды в мире мебели и интерьера",
+            "image": "https://i.ibb.co/h96K0M1/img-5.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 44,
+            "tag": "технологии",
+            "title": "Будущее мебельного дизайна: впереди удивительные возможности и новые технологии",
+            "description": "От интеллектуальных систем управления до умных материалов: откройте для себя передовые инновации, которые меняют взгляд на мебельную индустрию",
+            "image": "https://i.ibb.co/0s447nJ/img-6.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 45,
+            "tag": "вдохновение",
+            "title": "Идеи для стильного интерьера: откройте новые горизонты в дизайне своего дома",
+            "description": "Вдохновляйтесь лучшими интерьерными решениями и создавайте уютный дом своей мечты",
+            "image": "https://i.ibb.co/cK96fxQ/img-7.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 46,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/DWmRHND/img-8.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 47,
+            "tag": "обзоры",
+            "title": "Лучшие диваны для комфортного отдыха: топовые модели и расцветки",
+            "description": "Изучаем преимущества и особенности популярных диванов, чтобы выбрать идеальный вариант",
+            "image": "https://i.ibb.co/mbx7DPP/img-11.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 48,
+            "tag": "технологии",
+            "title": "Мебель для современного дома: комфорт и технологии в единстве",
+            "description": "От смарт-диванов до умных столов - взгляните на последние тенденции в мире мебельных инноваций",
+            "image": "https://i.ibb.co/tBxp2yC/img-12.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 49,
+            "tag": "тренды",
+            "title": "Вдохновитесь последними направлениями стиля",
+            "description": "От смелых цветовых сочетаний до минимализма: исследуйте актуальные тренды в мире мебели и интерьера",
+            "image": "https://i.ibb.co/WFg8ZVW/img-13.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 50,
+            "tag": "технологии",
+            "title": "Будущее мебельного дизайна: впереди удивительные возможности и новые технологии",
+            "description": "От интеллектуальных систем управления до умных материалов: откройте для себя передовые инновации, которые меняют взгляд на мебельную индустрию",
+            "image": "https://i.ibb.co/0ZgKF44/img-14.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 51,
+            "tag": "вдохновение",
+            "title": "Идеи для стильного интерьера: откройте новые горизонты в дизайне своего дома",
+            "description": "Вдохновляйтесь лучшими интерьерными решениями и создавайте уютный дом своей мечты",
+            "image": "https://i.ibb.co/p4RMHrR/img-15.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 52,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/ch5MNPF/img-16.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 53,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/ch5MNPF/img-16.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 54,
+            "tag": "тренды",
+            "title": "Тренды в мебели 2024",
+            "description": "Какие модные тренды и тенденции в мире мебели нас ждут в 2024 году? Расскажем и покажем в этой статье",
+            "image": "https://i.ibb.co/3k92zft/img-1.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 55,
+            "tag": "вдохновение",
+            "title": "Идеи для стильного интерьера: откройте новые горизонты в дизайне своего дома",
+            "description": "Вдохновляйтесь лучшими интерьерными решениями и создавайте уютный дом своей мечты",
+            "image": "https://i.ibb.co/p4RMHrR/img-15.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 56,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/ch5MNPF/img-16.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 57,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/ch5MNPF/img-16.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 58,
+            "tag": "тренды",
+            "title": "Тренды в мебели 2024",
+            "description": "Какие модные тренды и тенденции в мире мебели нас ждут в 2024 году? Расскажем и покажем в этой статье",
+            "image": "https://i.ibb.co/3k92zft/img-1.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 59,
+            "tag": "вдохновение",
+            "title": "Идеи декорирования в стиле прованс",
+            "description": "Обновите свой интерьер с эстетикой и позитивной энергией природы",
+            "image": "https://i.ibb.co/jDQCP3s/img-2.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 60,
+            "tag": "обзоры",
+            "title": "Лучшие диваны для комфортного отдыха: топовые модели и расцветки",
+            "description": "Изучаем преимущества и особенности популярных диванов, чтобы выбрать идеальный вариант",
+            "image": "https://i.ibb.co/HTbFJq8/img-3.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 61,
+            "tag": "технологии",
+            "title": "Мебель для современного дома: комфорт и технологии в единстве",
+            "description": "От смарт-диванов до умных столов - взгляните на последние тенденции в мире мебельных инноваций",
+            "image": "https://i.ibb.co/GMq3kBS/img-4.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 62,
+            "tag": "тренды",
+            "title": "Вдохновитесь последними направлениями стиля",
+            "description": "От смелых цветовых сочетаний до минимализма: исследуйте актуальные тренды в мире мебели и интерьера",
+            "image": "https://i.ibb.co/h96K0M1/img-5.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 63,
+            "tag": "технологии",
+            "title": "Будущее мебельного дизайна: впереди удивительные возможности и новые технологии",
+            "description": "От интеллектуальных систем управления до умных материалов: откройте для себя передовые инновации, которые меняют взгляд на мебельную индустрию",
+            "image": "https://i.ibb.co/0s447nJ/img-6.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 64,
+            "tag": "вдохновение",
+            "title": "Идеи для стильного интерьера: откройте новые горизонты в дизайне своего дома",
+            "description": "Вдохновляйтесь лучшими интерьерными решениями и создавайте уютный дом своей мечты",
+            "image": "https://i.ibb.co/cK96fxQ/img-7.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 65,
+            "tag": "обзоры",
+            "title": "Обзор новых моделей мебели для современного образа жизни",
+            "description": "Узнайте о самых популярных и практичных решениях в мире мебели",
+            "image": "https://i.ibb.co/DWmRHND/img-8.jpg",
+            "date": "10.07.23"
+        },
+        {
+            "id": 66,
+            "tag": "тренды",
+            "title": "Тренды в мебели 2024",
+            "description": "Какие модные тренды и тенденции в мире мебели нас ждут в 2024 году? Расскажем и покажем в этой статье",
+            "image": "https://i.ibb.co/MN24Lfw/img-9.jpg",
+            "date": "05.10.23"
+        },
+        {
+            "id": 67,
+            "tag": "вдохновение",
+            "title": "Идеи декорирования в стиле прованс",
+            "description": "Обновите свой интерьер с эстетикой и позитивной энергией природы",
+            "image": "https://i.ibb.co/mBXmgs9/img-10.jpg",
+            "date": "01.09.23"
+        },
+        {
+            "id": 68,
+            "tag": "обзоры",
+            "title": "Лучшие диваны для комфортного отдыха: топовые модели и расцветки",
+            "description": "Изучаем преимущества и особенности популярных диванов, чтобы выбрать идеальный вариант",
+            "image": "https://i.ibb.co/mbx7DPP/img-11.jpg",
+            "date": "20.08.23"
+        },
+        {
+            "id": 69,
+            "tag": "технологии",
+            "title": "Мебель для современного дома: комфорт и технологии в единстве",
+            "description": "От смарт-диванов до умных столов - взгляните на последние тенденции в мире мебельных инноваций",
+            "image": "https://i.ibb.co/tBxp2yC/img-12.jpg",
+            "date": "10.07.23"
+        }
+    ],
+    "decor": [
+        {
+            "bestseller": false,
+            "collection": "свечи",
+            "colors": [
+                "palette-beige",
+                "palette-brown-light",
+                "palette-green",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 1,
+            "img": "https://i.ibb.co/xDkZPVC/img-11.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 5
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "white",
+                "palette-brown-light",
+                "palette-gray"
+            ],
+            "discount": false,
+            "id": 2,
+            "img": "https://i.ibb.co/XyD03Jx/img-12.jpg",
+            "isNew": false,
+            "material": "стекло",
+            "name": "Petrified",
+            "price": 7000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-brown",
+                "palette-gray-light"
+            ],
+            "discount": true,
+            "id": 3,
+            "img": "https://i.ibb.co/PFwSM1D/img-13.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "foster",
+            "price": 25000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "картины",
+            "colors": [
+                "palette-beige",
+                "black",
+                "white",
+                "palette-brown"
+            ],
+            "discount": false,
+            "id": 4,
+            "img": "https://i.ibb.co/dm4qWNh/img-14.jpg",
+            "isNew": true,
+            "material": "ткань",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-green",
+                "white",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 5,
+            "img": "https://i.ibb.co/CKHgVTL/img-15.jpg",
+            "isNew": true,
+            "material": "кожа",
+            "name": "Chest",
+            "price": 10000,
+            "rating": 5
+        },
+        {
+            "bestseller": true,
+            "collection": "часы",
+            "colors": [
+                "palette-gray",
+                "palette-brown"
+            ],
+            "discount": false,
+            "id": 6,
+            "img": "https://i.ibb.co/d4vjmJz/img-16.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 5
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-beige",
+                "palette-gray-light",
+                "white"
+            ],
+            "discount": true,
+            "id": 7,
+            "img": "https://i.ibb.co/FB9ZT4X/img-17.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "ivory",
+            "price": 3000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-gray-light",
+                "white"
+            ],
+            "discount": false,
+            "id": 8,
+            "img": "https://i.ibb.co/FWgHnbx/img-18.jpg",
+            "isNew": false,
+            "material": "керамика",
+            "name": "Petrified",
+            "price": 3000,
+            "rating": 4
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-beige",
+                "palette-green",
+                "black"
+            ],
+            "discount": true,
+            "id": 9,
+            "img": "https://i.ibb.co/Y29vQD3/img-19.jpg",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 3
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-brown-light",
+                "black"
+            ],
+            "discount": false,
+            "id": 10,
+            "img": "https://i.ibb.co/VwMgKwx/img-20.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 2
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "white",
+                "palette-brown",
+                "black",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 11,
+            "img": "https://i.ibb.co/87NHx6P/img-10.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 4
+        },
+        {
+            "bestseller": false,
+            "collection": "картины",
+            "colors": [
+                "palette-gray",
+                "white"
+            ],
+            "discount": true,
+            "id": 12,
+            "img": "https://i.ibb.co/dm4qWNh/img-14.jpg",
+            "isNew": true,
+            "material": "стекло",
+            "name": "foster",
+            "price": 6000,
+            "rating": 5
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-beige",
+                "palette-brown",
+                "white",
+                "palette-gray"
+            ],
+            "discount": false,
+            "id": 13,
+            "img": "https://i.ibb.co/RpHXVL7/img-21.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "ramani",
+            "price": 15000,
+            "rating": 1
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-green",
+                "palette-gray-light"
+            ],
+            "discount": false,
+            "id": 14,
+            "img": "https://i.ibb.co/XyD03Jx/img-12.jpg",
+            "isNew": true,
+            "material": "стекло",
+            "name": "foster",
+            "price": 8000,
+            "rating": 3
+        },
+        {
+            "bestseller": false,
+            "collection": "свечи",
+            "colors": [
+                "palette-beige",
+                "black"
+            ],
+            "discount": false,
+            "id": 15,
+            "img": "https://i.ibb.co/jL7KC3x/img-9.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "Petrified",
+            "price": 10000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-gray",
+                "palette-brown-light"
+            ],
+            "discount": true,
+            "id": 16,
+            "img": "https://i.ibb.co/Y29vQD3/img-19.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "Ivory",
+            "price": 5000,
+            "rating": 3
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-brown",
+                "palette-gray-light"
+            ],
+            "discount": false,
+            "id": 17,
+            "img": "https://i.ibb.co/CKHgVTL/img-15.jpg",
+            "isNew": false,
+            "material": "кожа",
+            "name": "Chest",
+            "price": 20000,
+            "rating": 1
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-beige",
+                "palette-gray",
+                "white"
+            ],
+            "discount": true,
+            "id": 18,
+            "img": "https://i.ibb.co/p3b5L97/img-24.jpg",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 2
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "white",
+                "palette-brown",
+                "black",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 19,
+            "img": "https://i.ibb.co/87NHx6P/img-10.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 3
+        },
+        {
+            "bestseller": false,
+            "collection": "картины",
+            "colors": [
+                "palette-gray",
+                "white"
+            ],
+            "discount": true,
+            "id": 20,
+            "img": "https://i.ibb.co/dm4qWNh/img-14.jpg",
+            "isNew": true,
+            "material": "стекло",
+            "name": "foster",
+            "price": 6000,
+            "rating": 5
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-beige",
+                "palette-brown",
+                "white",
+                "palette-gray"
+            ],
+            "discount": false,
+            "id": 21,
+            "img": "https://i.ibb.co/RpHXVL7/img-21.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "ramani",
+            "price": 15000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-green",
+                "palette-gray-light"
+            ],
+            "discount": false,
+            "id": 22,
+            "img": "https://i.ibb.co/XyD03Jx/img-12.jpg",
+            "isNew": true,
+            "material": "стекло",
+            "name": "foster",
+            "price": 8000,
+            "rating": 3
+        },
+        {
+            "bestseller": false,
+            "collection": "свечи",
+            "colors": [
+                "palette-beige",
+                "black"
+            ],
+            "discount": false,
+            "id": 23,
+            "img": "https://i.ibb.co/jL7KC3x/img-9.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "Petrified",
+            "price": 10000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-gray",
+                "palette-brown-light"
+            ],
+            "discount": true,
+            "id": 24,
+            "img": "https://i.ibb.co/Y29vQD3/img-19.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "Ivory",
+            "price": 5000,
+            "rating": 4
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-brown",
+                "palette-gray-light"
+            ],
+            "discount": false,
+            "id": 25,
+            "img": "https://i.ibb.co/CKHgVTL/img-15.jpg",
+            "isNew": false,
+            "material": "кожа",
+            "name": "Chest",
+            "price": 20000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-beige",
+                "palette-gray",
+                "white"
+            ],
+            "discount": true,
+            "id": 26,
+            "img": "https://i.ibb.co/p3b5L97/img-24.jpg",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "свечи",
+            "colors": [
+                "palette-beige",
+                "palette-brown-light",
+                "palette-green",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 27,
+            "img": "https://i.ibb.co/xDkZPVC/img-11.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 1
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "white",
+                "palette-brown-light",
+                "palette-gray"
+            ],
+            "discount": false,
+            "id": 28,
+            "img": "https://i.ibb.co/XyD03Jx/img-12.jpg",
+            "isNew": false,
+            "material": "стекло",
+            "name": "Petrified",
+            "price": 7000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-brown",
+                "palette-gray-light"
+            ],
+            "discount": true,
+            "id": 29,
+            "img": "https://i.ibb.co/PFwSM1D/img-13.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "foster",
+            "price": 25000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "картины",
+            "colors": [
+                "palette-beige",
+                "black",
+                "white",
+                "palette-brown"
+            ],
+            "discount": false,
+            "id": 30,
+            "img": "https://i.ibb.co/dm4qWNh/img-14.jpg",
+            "isNew": true,
+            "material": "ткань",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 3
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-green",
+                "white",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 31,
+            "img": "https://i.ibb.co/CKHgVTL/img-15.jpg",
+            "isNew": true,
+            "material": "кожа",
+            "name": "Chest",
+            "price": 10000,
+            "rating": 3
+        },
+        {
+            "bestseller": true,
+            "collection": "часы",
+            "colors": [
+                "palette-gray",
+                "palette-brown"
+            ],
+            "discount": false,
+            "id": 32,
+            "img": "https://i.ibb.co/d4vjmJz/img-16.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 2
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-beige",
+                "palette-gray-light",
+                "white"
+            ],
+            "discount": true,
+            "id": 33,
+            "img": "https://i.ibb.co/FB9ZT4X/img-17.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "ivory",
+            "price": 3000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-gray-light",
+                "white"
+            ],
+            "discount": false,
+            "id": 34,
+            "img": "https://i.ibb.co/FWgHnbx/img-18.jpg",
+            "isNew": false,
+            "material": "керамика",
+            "name": "Petrified",
+            "price": 3000,
+            "rating": 3
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-beige",
+                "palette-green",
+                "black"
+            ],
+            "discount": true,
+            "id": 35,
+            "img": "https://i.ibb.co/Y29vQD3/img-19.jpg",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 4
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-brown-light",
+                "black"
+            ],
+            "discount": false,
+            "id": 36,
+            "img": "https://i.ibb.co/VwMgKwx/img-20.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 1
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "white",
+                "palette-brown",
+                "black",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 37,
+            "img": "https://i.ibb.co/87NHx6P/img-10.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "картины",
+            "colors": [
+                "palette-gray",
+                "white"
+            ],
+            "discount": true,
+            "id": 38,
+            "img": "https://i.ibb.co/dm4qWNh/img-14.jpg",
+            "isNew": true,
+            "material": "стекло",
+            "name": "foster",
+            "price": 6000,
+            "rating": 5
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-beige",
+                "palette-brown",
+                "white",
+                "palette-gray"
+            ],
+            "discount": false,
+            "id": 39,
+            "img": "https://i.ibb.co/RpHXVL7/img-21.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "ramani",
+            "price": 15000,
+            "rating": 3
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-green",
+                "palette-gray-light"
+            ],
+            "discount": false,
+            "id": 40,
+            "img": "https://i.ibb.co/XyD03Jx/img-12.jpg",
+            "isNew": true,
+            "material": "стекло",
+            "name": "foster",
+            "price": 8000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "свечи",
+            "colors": [
+                "palette-beige",
+                "black"
+            ],
+            "discount": false,
+            "id": 41,
+            "img": "https://i.ibb.co/jL7KC3x/img-9.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "Petrified",
+            "price": 10000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-gray",
+                "palette-brown-light"
+            ],
+            "discount": true,
+            "id": 42,
+            "img": "https://i.ibb.co/Y29vQD3/img-19.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "Ivory",
+            "price": 5000,
+            "rating": 5
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-brown",
+                "palette-gray-light"
+            ],
+            "discount": false,
+            "id": 43,
+            "img": "https://i.ibb.co/CKHgVTL/img-15.jpg",
+            "isNew": false,
+            "material": "кожа",
+            "name": "Chest",
+            "price": 20000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-beige",
+                "palette-gray",
+                "white"
+            ],
+            "discount": true,
+            "id": 44,
+            "img": "https://i.ibb.co/p3b5L97/img-24.jpg",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 1
+        },
+        {
+            "bestseller": false,
+            "collection": "картины",
+            "colors": [
+                "palette-beige",
+                "black",
+                "white",
+                "palette-brown"
+            ],
+            "discount": false,
+            "id": 45,
+            "img": "https://i.ibb.co/dm4qWNh/img-14.jpg",
+            "isNew": true,
+            "material": "ткань",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-green",
+                "white",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 46,
+            "img": "https://i.ibb.co/CKHgVTL/img-15.jpg",
+            "isNew": true,
+            "material": "кожа",
+            "name": "Chest",
+            "price": 10000,
+            "rating": 1
+        },
+        {
+            "bestseller": true,
+            "collection": "часы",
+            "colors": [
+                "palette-gray",
+                "palette-brown"
+            ],
+            "discount": false,
+            "id": 47,
+            "img": "https://i.ibb.co/d4vjmJz/img-16.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 3
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-beige",
+                "palette-gray-light",
+                "white"
+            ],
+            "discount": true,
+            "id": 48,
+            "img": "https://i.ibb.co/FB9ZT4X/img-17.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "ivory",
+            "price": 3000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-gray-light",
+                "white"
+            ],
+            "discount": false,
+            "id": 49,
+            "img": "https://i.ibb.co/FWgHnbx/img-18.jpg",
+            "isNew": false,
+            "material": "керамика",
+            "name": "Petrified",
+            "price": 3000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-beige",
+                "palette-green",
+                "black"
+            ],
+            "discount": true,
+            "id": 50,
+            "img": "https://i.ibb.co/Y29vQD3/img-19.jpg",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 4
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-brown-light",
+                "black"
+            ],
+            "discount": false,
+            "id": 51,
+            "img": "https://i.ibb.co/VwMgKwx/img-20.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "свечи",
+            "colors": [
+                "palette-beige",
+                "palette-brown-light",
+                "palette-green",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 52,
+            "img": "https://i.ibb.co/xDkZPVC/img-11.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 3
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "white",
+                "palette-brown-light",
+                "palette-gray"
+            ],
+            "discount": false,
+            "id": 53,
+            "img": "https://i.ibb.co/XyD03Jx/img-12.jpg",
+            "isNew": false,
+            "material": "стекло",
+            "name": "Petrified",
+            "price": 7000,
+            "rating": 4
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-brown",
+                "palette-gray-light"
+            ],
+            "discount": true,
+            "id": 54,
+            "img": "https://i.ibb.co/PFwSM1D/img-13.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "foster",
+            "price": 25000,
+            "rating": 4
+        },
+        {
+            "bestseller": false,
+            "collection": "картины",
+            "colors": [
+                "palette-beige",
+                "black",
+                "white",
+                "palette-brown"
+            ],
+            "discount": false,
+            "id": 55,
+            "img": "https://i.ibb.co/dm4qWNh/img-14.jpg",
+            "isNew": true,
+            "material": "ткань",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 3
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-green",
+                "white",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 56,
+            "img": "https://i.ibb.co/CKHgVTL/img-15.jpg",
+            "isNew": true,
+            "material": "кожа",
+            "name": "Chest",
+            "price": 10000,
+            "rating": 3
+        },
+        {
+            "bestseller": true,
+            "collection": "часы",
+            "colors": [
+                "palette-gray",
+                "palette-brown"
+            ],
+            "discount": false,
+            "id": 57,
+            "img": "https://i.ibb.co/d4vjmJz/img-16.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 2
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-beige",
+                "palette-gray-light",
+                "white"
+            ],
+            "discount": true,
+            "id": 58,
+            "img": "https://i.ibb.co/FB9ZT4X/img-17.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "ivory",
+            "price": 3000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-gray-light",
+                "white"
+            ],
+            "discount": false,
+            "id": 59,
+            "img": "https://i.ibb.co/FWgHnbx/img-18.jpg",
+            "isNew": false,
+            "material": "керамика",
+            "name": "Petrified",
+            "price": 3000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-beige",
+                "palette-green",
+                "black"
+            ],
+            "discount": true,
+            "id": 60,
+            "img": "https://i.ibb.co/Y29vQD3/img-19.jpg",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 3
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-brown-light",
+                "black"
+            ],
+            "discount": false,
+            "id": 61,
+            "img": "https://i.ibb.co/VwMgKwx/img-20.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 2
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "white",
+                "palette-brown",
+                "black",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 62,
+            "img": "https://i.ibb.co/87NHx6P/img-10.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 4
+        },
+        {
+            "bestseller": false,
+            "collection": "картины",
+            "colors": [
+                "palette-gray",
+                "white"
+            ],
+            "discount": true,
+            "id": 63,
+            "img": "https://i.ibb.co/dm4qWNh/img-14.jpg",
+            "isNew": true,
+            "material": "стекло",
+            "name": "foster",
+            "price": 6000,
+            "rating": 4
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-beige",
+                "palette-brown",
+                "white",
+                "palette-gray"
+            ],
+            "discount": false,
+            "id": 64,
+            "img": "https://i.ibb.co/RpHXVL7/img-21.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "ramani",
+            "price": 15000,
+            "rating": 4
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-green",
+                "palette-gray-light"
+            ],
+            "discount": false,
+            "id": 65,
+            "img": "https://i.ibb.co/FB9ZT4X/img-17.jpg",
+            "isNew": true,
+            "material": "стекло",
+            "name": "foster",
+            "price": 8000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-beige",
+                "palette-gray",
+                "white"
+            ],
+            "discount": true,
+            "id": 66,
+            "img": "https://i.ibb.co/p3b5L97/img-24.jpg",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 5
+        },
+        {
+            "bestseller": false,
+            "collection": "свечи",
+            "colors": [
+                "palette-beige",
+                "palette-brown-light",
+                "palette-green",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 67,
+            "img": "https://i.ibb.co/xDkZPVC/img-11.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 2
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "white",
+                "palette-brown-light",
+                "palette-gray"
+            ],
+            "discount": false,
+            "id": 68,
+            "img": "https://i.ibb.co/XyD03Jx/img-12.jpg",
+            "isNew": false,
+            "material": "стекло",
+            "name": "Petrified",
+            "price": 7000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-brown",
+                "palette-gray-light"
+            ],
+            "discount": true,
+            "id": 69,
+            "img": "https://i.ibb.co/PFwSM1D/img-13.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "foster",
+            "price": 25000,
+            "rating": 3
+        },
+        {
+            "bestseller": false,
+            "collection": "картины",
+            "colors": [
+                "palette-beige",
+                "black",
+                "white",
+                "palette-brown"
+            ],
+            "discount": false,
+            "id": 70,
+            "img": "https://i.ibb.co/dm4qWNh/img-14.jpg",
+            "isNew": true,
+            "material": "ткань",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 4
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-green",
+                "white",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 71,
+            "img": "https://i.ibb.co/CKHgVTL/img-15.jpg",
+            "isNew": true,
+            "material": "кожа",
+            "name": "Chest",
+            "price": 10000,
+            "rating": 5
+        },
+        {
+            "bestseller": true,
+            "collection": "часы",
+            "colors": [
+                "palette-gray",
+                "palette-brown"
+            ],
+            "discount": false,
+            "id": 72,
+            "img": "https://i.ibb.co/d4vjmJz/img-16.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "ramani",
+            "price": 5000,
+            "rating": 5
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-beige",
+                "palette-gray-light",
+                "white"
+            ],
+            "discount": true,
+            "id": 73,
+            "img": "https://i.ibb.co/FB9ZT4X/img-17.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "ivory",
+            "price": 3000,
+            "rating": 1
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-gray-light",
+                "white"
+            ],
+            "discount": false,
+            "id": 74,
+            "img": "https://i.ibb.co/FWgHnbx/img-18.jpg",
+            "isNew": false,
+            "material": "керамика",
+            "name": "Petrified",
+            "price": 3000,
+            "rating": 2
+        },
+        {
+            "bestseller": false,
+            "collection": "другое",
+            "colors": [
+                "palette-beige",
+                "palette-green",
+                "black"
+            ],
+            "discount": true,
+            "id": 75,
+            "img": "https://i.ibb.co/Y29vQD3/img-19.jpg",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 2
+        },
+        {
+            "bestseller": true,
+            "collection": "другое",
+            "colors": [
+                "palette-brown-light",
+                "black"
+            ],
+            "discount": false,
+            "id": 76,
+            "img": "https://i.ibb.co/VwMgKwx/img-20.jpg",
+            "isNew": false,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 4
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "white",
+                "palette-brown",
+                "black",
+                "palette-gray"
+            ],
+            "discount": true,
+            "id": 77,
+            "img": "https://i.ibb.co/87NHx6P/img-10.webp",
+            "isNew": true,
+            "material": "мрамор",
+            "name": "foster",
+            "price": 5000,
+            "rating": 3
+        },
+        {
+            "bestseller": false,
+            "collection": "картины",
+            "colors": [
+                "palette-gray",
+                "white"
+            ],
+            "discount": true,
+            "id": 78,
+            "img": "https://i.ibb.co/dm4qWNh/img-14.jpg",
+            "isNew": true,
+            "material": "стекло",
+            "name": "foster",
+            "price": 6000,
+            "rating": 3
+        },
+        {
+            "bestseller": true,
+            "collection": "вазы и кашпо",
+            "colors": [
+                "palette-beige",
+                "palette-brown",
+                "white",
+                "palette-gray"
+            ],
+            "discount": false,
+            "id": 79,
+            "img": "https://i.ibb.co/RpHXVL7/img-21.jpg",
+            "isNew": true,
+            "material": "керамика",
+            "name": "ramani",
+            "price": 15000,
+            "rating": 5
+        }
+    ]
+}

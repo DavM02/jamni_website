@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
-
 export default function AddToFav() {
-     return (
+    return (
         <div className='add-to-favorites' >
-            <input type='checkbox'  />
+            <input type='checkbox' />
             <svg width="28" height="25" viewBox="-2 -1 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     fillRule="evenodd"

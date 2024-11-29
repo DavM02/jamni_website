@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import arrowLeft from '../../../assets/icons/arrow-left.svg';
-import arrowRight from '../../../assets/icons/arrow-right.svg';
-import useDebounce from '../../../hooks/useDebounce';
-import useMediaQ from '../../../hooks/useMediaQ';
+import arrowLeft from '../../../../assets/icons/arrow-left.svg';
+import arrowRight from '../../../../assets/icons/arrow-right.svg';
+import useDebounce from '../../../../hooks/useDebounce';
+import useMediaQ from '../../../../hooks/useMediaQ';
 const SliderNav = ({ onPrev, onNext, transformIndex, indicator, setIndicator }) => {
  
     const debouncedFunction = useDebounce();

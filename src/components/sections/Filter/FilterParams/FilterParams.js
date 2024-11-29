@@ -1,12 +1,12 @@
-import FilterByDescription from "./FilterBy/FilterByDescription";
-import FilterByCollection from "./FilterBy/FilterByCollection";
-import FilterByMaterial from "./FilterBy/FilterByMaterial";
-import FilterByColors from "./FilterBy/FilterByColors";
-import FilterByPrice from "./FilterBy/FilterByPrice";
- 
+import FilterByDescription from "../FilterBy/FilterByDescription";
+import FilterByCollection from "../FilterBy/FilterByCollection";
+import FilterByMaterial from "../FilterBy/FilterByMaterial";
+import FilterByColors from "../FilterBy/FilterByColors";
+import FilterByPrice from "../FilterBy/FilterByPrice";
+import './params.css'
 
-export default function FilterParams({ data}) {
- 
+export default function FilterParams({ data }) {
+
     return (
         <>
             <FilterByDescription headline={data.headline} />

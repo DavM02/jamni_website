@@ -4,89 +4,13 @@
     padding-top: var(--section-padding-top-small);
 }
 
-#home .slider-item {
-    width: var(--home-slider-img-size);
-    height: auto;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-}
 
-
-
-@media all and (min-width: 1025px) {
-    #home .slider-item.active {
-        height: 100%;
-        width: var(--home-slider-active-img-size);
-        aspect-ratio: unset;
-    }
-
-    #home .container {
-        position: relative;
-    }
-
-    #home .slider-wrapper {
-        height: clamp(33.75rem, 20.4643rem + 20.7589vw, 45.375rem);
-    }
-}
-
-#home .slider-item img:not(.descriptor img) {
-    object-fit: fill;
-    height: 100%;
-    aspect-ratio: 1/1;
-    width: 120%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-#home .mobile-slider {
-    background-color: var(--placeholder-1);
-    height: 70vh;
-    width: 100%;
-    min-height: 600px;
-    margin-bottom: 20px;
-    margin-top: 220px;
-    position: relative;
-}
-
-#home .mobile-slider img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-#home .slider-wrapper {
-    transform: translateX(var(--home-slider-transform));
-    gap: var(--home-slider-gap);
-    align-items: flex-end;
-    position: relative;
-    width: var(--home-slider-width);
-    overflow: hidden;
-    padding-bottom: var(--section-padding-bottom-small);
-}
 
 #home .container {
     max-width: 1920px;
     padding: unset;
 }
 
-@media all and (max-width: 1260px) {
-    #home .container {
-        overflow: unset !important;
-    }
-}
-
-#home .slider-nav {
-    position: absolute;
-    top: 50%;
-    transform: translate(var(--home-slider-transform), -50%);
-    width: calc(var(--home-slider-active-img-size) + var(--home-slider-gap)*2 + 40px);
-    left: calc(var(--home-slider-img-size) - 20px);
-    padding-bottom: var(--section-padding-bottom-small);
-}
 
 #home h3 {
     margin-top: 114px;
@@ -128,34 +52,3 @@
     position: absolute;
 }
 
-@media all and (max-width: 1024px) {
-
-    #home .descriptor-wrapper:not(.mobile-slider .descriptor-wrapper) {
-        display: none;
-    }
-
-    #home .headline {
-        right: unset;
-        transform: translateX(calc(-50% - 4px));
-        left: 50%;
-        top: var(--section-padding-top-small);
-    }
-
-    #home .years,
-    #home .headline::after {
-        top: 0 !important;
-    }
-
-    #home .headline::after {
-        width: 140px;
-    }
-
-    #home .slider-item.inactive {
-        opacity: 50% !important;
-    }
-
-    #home h3 {
-        margin-top: 68px;
-    }
-
-}

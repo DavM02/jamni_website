@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
-export default function FilterAccordion({
+import './Accordion.css'
+export default function Accordion({
     headline,
     dataLength,
     elHeight,

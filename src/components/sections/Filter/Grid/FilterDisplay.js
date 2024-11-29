@@ -4,6 +4,7 @@ import SmoothAppearance from '../../../ui/SmoothAppearance'
 import FilterGrid from './FilterGrid'
 import AnimButton from '../../../ui/AnimButton/AnimButton'
 import { useNavigate } from 'react-router-dom'
+import './grid.css'
 export default function FilterDisplay({ isLoading, searchParams, data }) {
     const navigate = useNavigate()
     const noResults = data && data.every((el) => el.isShown === false);
@@ -17,7 +18,7 @@ export default function FilterDisplay({ isLoading, searchParams, data }) {
 
                         <div className='no-results center-gr'>
                             <h3 className='up-case'>no results found</h3>
-                            <AnimButton onClick={() => navigate(-1)}>go back</AnimButton>
+                            <AnimButton onClick={() => navigate('./')}>go back</AnimButton>
                         </div>
 
                     ))}

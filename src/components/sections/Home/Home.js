@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css';
-import Slider from './Slider';
-
+import './media.css'
+import Slider from './Slider/Slider';
 export default function Home() {
      return (
         <section id='home'>

@@ -1,11 +1,10 @@
- 
-import FilterAccordion from '../FilterAccordion'
-import FilterParam from '../FilterParam'
+import Accordion from '../../../ui/Accordion/Accordion'
+import FilterParam from '../FilterParams/FilterParam'
 export default function FilterByCollection({ collections }) {
     return (
         <div className="collection-filter xsmall-text text-main text-black up-case">
 
-            <FilterAccordion
+            <Accordion
                 headline="коллекции"
                 dataLength={collections.length}
                 elHeight={30}
@@ -15,7 +14,7 @@ export default function FilterByCollection({ collections }) {
                     filterParam={"collection"}
                     data={collections}
                 />
-            </FilterAccordion>
+            </Accordion>
 
         </div>
     )

@@ -1,5 +1,5 @@
-import FilterAccordion from '../FilterAccordion'
-import FilterParam from '../FilterParam'
+import Accordion from '../../../ui/Accordion/Accordion'
+import FilterParam from '../FilterParams/FilterParam'
 export default function FilterByColors() {
      const colors =   ['серый', 'черный', 'коричневый', 'белый', 'бежевый', 'зеленый', 'темно-серый', 'светло-коричневый']
   
@@ -8,7 +8,7 @@ export default function FilterByColors() {
     return (
 
         <div className="colors-filter xxsmall-text text-main text-black">
-            <FilterAccordion
+            <Accordion
                 headline="цвет"
                 dataLength={8}
                 elHeight={20}
@@ -19,7 +19,7 @@ export default function FilterByColors() {
                     data={colors}
 
                 />
-            </FilterAccordion>
+            </Accordion>
         </div>
     )
 }

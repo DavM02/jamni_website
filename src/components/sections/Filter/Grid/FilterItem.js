@@ -1,8 +1,8 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
-import AddToFav from '../AddToFav'
+import AddToFav from '../../../Cart/Favorites/AddToFav'
 export default function FilterItem({ item, el }) {
+
     return (
         <div className="filter-item"
             style={{ gridArea: el, }}>
