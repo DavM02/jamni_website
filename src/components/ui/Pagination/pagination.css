@@ -13,6 +13,7 @@
 .pagination li.active,
 .pagination li:hover {
     color: var(--black);
+    font-weight: 400;
 }
 
 .pagination .prev:hover,

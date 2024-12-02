@@ -1,87 +1,71 @@
 #filter .section-layout {
-    position: relative;
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 20px;
-    padding: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem) 0 26px;
-    border-top: 1px solid var(--line-bg);
+  position: relative;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  padding: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem) 0 26px;
+  border-top: 1px solid var(--line-bg);
 }
 
 #filter .filter-display {
-    display: grid;
-    grid-template-areas:
-        "a b c c d"
-        "e f g h i"
-        "j j k l l"
-        "m n o l l"
-        "p p q r s";
-    column-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-areas:
+    "a b c c d"
+    "e f g h i"
+    "j j k l l"
+    "m n o l l"
+    "p p q r s";
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #filter .filter-display img {
-    height: 100%;
-    object-fit: cover;
-    /* aspect-ratio: 1/1; */
+  height: 100%;
+  object-fit: cover;
+  /* aspect-ratio: 1/1; */
 }
 
 #filter .filter-item {
-    position: relative;
-    margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 30px;
 }
 
-#filter .filter-item:nth-child(1n) .placeholder {
-    background-color: var(--placeholder-1);
-}
-
-#filter .filter-item:nth-child(2n) .placeholder {
-    background-color: var(--placeholder-2);
-}
-
-#filter .filter-item:nth-child(3n) .placeholder {
-    background-color: var(--placeholder-3);
-}
-
-
-#filter .filter-item>span:nth-child(3) {
-    font-weight: 600;
-    margin-top: 16px;
-    line-height: 6px;
+#filter .filter-item > span:nth-child(3) {
+  font-weight: 600;
+  margin-top: 16px;
+  line-height: 6px;
 }
 
 #filter .filter-item span:not(span:nth-child(2)) {
-    display: block;
+  display: block;
 }
 
-#filter .filter-item>span:nth-child(4) {
-    color: #A5A5A5;
-
+#filter .filter-item > span:nth-child(4) {
+  color: #a5a5a5;
 }
 
 #filter #article {
-    border: 1px solid var(--line-bg);
-    height: calc(var(--filter-item-img-height) + 46px);
-    width: 100%;
+  border: 1px solid var(--line-bg);
+  height: calc(var(--filter-item-img-height) + 46px);
+  width: 100%;
 }
 
 #filter .filter-item .palette {
-
-    transition: var(--transition) 0.3s opacity;
+  transition: var(--transition) 0.3s opacity;
 }
 
 @media all and (hover: hover) {
-    #filter .filter-item .palette {
-        opacity: 0;
+  #filter .filter-item .palette {
+    opacity: 0;
+  }
 
-    }
-
-    #filter .filter-item:hover .palette {
-        opacity: 1;
-    }
+  #filter .filter-item:hover .palette {
+    opacity: 1;
+  }
 }
 
 #filter .filter-item .palette div {
-    height: 19px;
-    width: 19px;
-    border-radius: 50%;
+  height: 19px;
+  width: 19px;
+  border-radius: 50%;
 }

@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { MainContext } from '../context/MainContext';
-export default function usePagination(pagesCount) {
+export default function usePagination(pagesCount, scrollOffset) {
     const [pages, setPages] = useState(pagesCount > 5 ? [1, 2, 3, 4, 5, '...', pagesCount] :
         Array(pagesCount).fill(null).map((_, i) => i + 1));
     const [searchParams, setSearchParams] = useSearchParams()
@@ -11,7 +11,7 @@ export default function usePagination(pagesCount) {
 
     const handlePagination = (page) => {
         if (page > pagesCount || page <= 0 || page === '...') return;
-        scrollbarAccess.current.scrollTo(0, 750, 500)
+        scrollbarAccess.current.scrollTo(0, scrollOffset, 500)
         setTimeout(() => {
             if (pagesCount > 5) {
                 if (page >= 5 && page + 2 < pagesCount) {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./filter.css";
 import { useLocation, useSearchParams } from "react-router-dom";
 import useSWRImmutable from "swr/immutable";
@@ -36,7 +36,9 @@ export default function Filter({ collections, materials, headline, price }) {
     const isDesktop = useMediaQ('(max-width: 1023px)');
     const isMobile = useMediaQ('(max-width: 480px)');
 
-
+ 
+const parentRef = useRef(null)
+ 
     return (
         <section id="filter">
             <div className="container">
@@ -46,7 +48,7 @@ export default function Filter({ collections, materials, headline, price }) {
                     data={{ collections, materials, headline, price }}
                     query={isDesktop && !isMobile}
                 />
-                <div className="section-layout">
+                <div className="section-layout" ref={parentRef}>
                     <AnimatePresence initial={false} mode="wait">
                         {((!isDesktop && !isMobile) || showParams) && <SmoothAppearance blur={true} className="filter-params">
                             <FilterParams
@@ -64,7 +66,9 @@ export default function Filter({ collections, materials, headline, price }) {
                         </div>
                     )}
                     {dataLength && (
-                        <Pagination pagesCount={Math.ceil(dataLength / 17)} />
+                        <Pagination
+                        scrollOffset={parentRef.current.offsetTop}
+                        pagesCount={Math.ceil(dataLength / 17)} />
                     )}
                 </div>
             </div>

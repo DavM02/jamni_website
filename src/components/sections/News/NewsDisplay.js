@@ -1,19 +1,23 @@
-import React from "react";
+import NewsItem from "./NewsItem";
 import { AnimatePresence } from "framer-motion";
-import SmoothAppearance from "../../../ui/SmoothAppearance";
-import FilterGrid from "./FilterGrid";
-import AnimButton from "../../../ui/AnimButton/AnimButton";
 import { useNavigate } from "react-router-dom";
-import "./grid.css";
-export default function FilterDisplay({ isLoading, searchParams, data }) {
-  const navigate = useNavigate();
+import AnimButton from "../../ui/AnimButton/AnimButton";
+import SmoothAppearance from "../../ui/SmoothAppearance";
+export default function NewsDisplay({ data, isLoading, searchParams }) {
+  const visibleItems = data && data.filter((item) => item?.isShown !== false);
   const noResults = data && data.every((el) => el.isShown === false);
+
+  const navigate = useNavigate();
   return (
     <AnimatePresence mode="wait">
       {!isLoading && data ? (
         <SmoothAppearance key={searchParams}>
           {!noResults ? (
-            <FilterGrid data={data} />
+            <div className="section-layout">
+              {visibleItems.map((el, i) => {
+                return <NewsItem key={el.id} el={el} />;
+              })}
+            </div>
           ) : (
             <div className="no-results center-gr">
               <h3 className="up-case">no results found</h3>
@@ -23,7 +27,7 @@ export default function FilterDisplay({ isLoading, searchParams, data }) {
         </SmoothAppearance>
       ) : (
         <SmoothAppearance>
-          <div className="row center-x center-y">
+          <div className="loading row center-x center-y">
             <h2>Loading...</h2>
           </div>
         </SmoothAppearance>

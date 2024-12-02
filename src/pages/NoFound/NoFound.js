@@ -1,5 +1,5 @@
 import React from 'react'
-import PageTransition from '../../components/PageTransition/PageTransition'
+import PageTransition from '../../components/pageTransition/PageTransition'
 import AnimButton from '../../components/ui/AnimButton/AnimButton'
 import { useNavigate } from 'react-router-dom'
 import './nofound.css'
