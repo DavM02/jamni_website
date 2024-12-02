@@ -2,7 +2,10 @@
     height: 350px;
     background-size: cover !important;
     background-position-x: center !important;
+        background-position-y: var(--posY) !important;
     position: relative;
+    z-index: 3;
+    background-color: var(--placeholder-1) !important;
 }
 
 .intro .center-gr {
@@ -18,7 +21,7 @@
     position: relative;
 }
 
-#decor-intro.intro::after {
+#decor-intro.intro::after, #reviews-intro.intro::after {
     content: "";
     opacity: 10%;
     background-color: #000000;
@@ -26,8 +29,13 @@
     width: 100%;
     position: absolute;
     top: 0;
+    z-index: -1;
     left: 0;
 }
+
+ #reviews-intro.intro::after {
+    opacity: 32%;
+ }
 
 #news-intro p, #news-intro h2 {
     color: var(--black);
@@ -40,4 +48,9 @@
     top: 0;
     left: 0;
     backdrop-filter: blur(1.2px);
+
+}
+
+#reviews-intro .mask-layer {
+    backdrop-filter: blur(0.5px);
 }

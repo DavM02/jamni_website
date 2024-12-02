@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import searchIcon from '../../../assets/icons/search.svg';
+import searchIcon from '../../../../assets/icons/search.svg';
 import './searchInput.css';
 
 export default function SearchInput() {

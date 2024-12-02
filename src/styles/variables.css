@@ -50,6 +50,8 @@
     --moreproducts-slider-img-width: clamp(14.375rem, 13rem + 6.875vw, 21.25rem);
     --moreproducts-slider-img-height-odd: clamp(22.5rem, 21.7933rem + 3.141vw, 25.5625rem);
     --moreproducts-slider-img-height-even: clamp(16.625rem, 16.1202rem + 2.2436vw, 18.8125rem);
+
+    --grid-padding: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
 }
 
 

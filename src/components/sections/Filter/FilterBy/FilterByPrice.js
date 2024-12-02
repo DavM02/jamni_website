@@ -1,6 +1,6 @@
 import React from 'react'
 import Accordion from '../../../ui/Accordion/Accordion'
-import MultiRangeSlider from '../../../ui/RangeInput/MultiRangeSlider'
+import MultiRangeSlider from '../../../ui/inputs/RangeInput/MultiRangeSlider'
 export default function FilterByPrice({ min, max, val }) {
   return (
     <div className="price-filter xsmall-text text-main text-black up-case">

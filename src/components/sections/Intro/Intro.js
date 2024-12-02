@@ -3,7 +3,7 @@ import './intro.css'
 export default function Intro({bg, posY, text, ...props}) {
   return (
       <section {...props} className='intro'
-          style={{ background: `url(${bg}) no-repeat`, backgroundPositionY: posY }}
+          style={{ background: `url(${bg}) no-repeat`, '--posY': posY }}
       >
           <div className='center-gr text-center'>
               <div className='mask-layer'></div>

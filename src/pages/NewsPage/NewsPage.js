@@ -1,5 +1,5 @@
-import React, { memo } from "react";
-import PageTransition from "../../components/pageTransition/PageTransition";
+import React from "react";
+import PageTransition from "../../components/PageTransition/PageTransition";
 import NewsSections from "./NewsSections";
 
 function NewsPage() {
@@ -10,4 +10,4 @@ function NewsPage() {
   );
 }
 
-export default PageTransition(memo(NewsPage));
+export default PageTransition(React.memo(NewsPage));

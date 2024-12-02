@@ -11,7 +11,7 @@ export default function usePagination(pagesCount, scrollOffset) {
 
     const handlePagination = (page) => {
         if (page > pagesCount || page <= 0 || page === '...') return;
-        scrollbarAccess.current.scrollTo(0, scrollOffset, 500)
+        scrollbarAccess.current.scrollTo(0, scrollOffset-182, 500)
         setTimeout(() => {
             if (pagesCount > 5) {
                 if (page >= 5 && page + 2 < pagesCount) {

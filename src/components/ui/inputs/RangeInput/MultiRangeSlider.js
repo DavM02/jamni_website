@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState, useRef, useContext } from "react";
 import "./multiRangeSlider.css";
-import useFilter from "../../../hooks/useFilter";
-import { MainContext } from "../../../context/MainContext";
+import useFilter from "../../../../hooks/useFilter";
+import { MainContext } from "../../../../context/MainContext";
 
 const MultiRangeSlider = ({ min, max, val }) => {
   const { handleSearchParams: handleMinParam, allFilterParams: minParam } = useFilter('min');

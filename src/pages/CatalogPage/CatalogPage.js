@@ -6,7 +6,7 @@ import NoFound from '../NoFound/NoFound'
 export default function CatalogPage() {
     const location = useLocation();
 
- console.log("hshshshs")
+ 
     if (location.pathname === '/catalog') {
         return <NoFound />;
     }

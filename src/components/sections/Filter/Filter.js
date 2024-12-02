@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useCallback, useState } from "react";
 import "./filter.css";
 import { useLocation, useSearchParams } from "react-router-dom";
 import useSWRImmutable from "swr/immutable";
@@ -37,8 +37,14 @@ export default function Filter({ collections, materials, headline, price }) {
     const isMobile = useMediaQ('(max-width: 480px)');
 
  
-const parentRef = useRef(null)
- 
+    const [offsetTop, setOffsetTop] = useState(null)
+
+    const elemRef = useCallback((node) => {
+        if (node !== null) {
+            setOffsetTop(node.getBoundingClientRect().top)
+        }
+    }, [])
+  
     return (
         <section id="filter">
             <div className="container">
@@ -48,7 +54,7 @@ const parentRef = useRef(null)
                     data={{ collections, materials, headline, price }}
                     query={isDesktop && !isMobile}
                 />
-                <div className="section-layout" ref={parentRef}>
+                <div className="section-layout" ref={elemRef}>
                     <AnimatePresence initial={false} mode="wait">
                         {((!isDesktop && !isMobile) || showParams) && <SmoothAppearance blur={true} className="filter-params">
                             <FilterParams
@@ -56,18 +62,15 @@ const parentRef = useRef(null)
                             /></SmoothAppearance>}
                     </AnimatePresence>
                     <FilterDisplay
+                        error={error}
                         isLoading={isLoading}
                         searchParams={searchParams}
                         data={data}
                     />
-                    {error && (
-                        <div className="row center-x center-y">
-                            <h2>{error.message}</h2>
-                        </div>
-                    )}
                     {dataLength && (
                         <Pagination
-                        scrollOffset={parentRef.current.offsetTop}
+                            scrollOffset={1159.6640625
+}
                         pagesCount={Math.ceil(dataLength / 17)} />
                     )}
                 </div>

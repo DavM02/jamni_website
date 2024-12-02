@@ -1,13 +1,13 @@
 import React, { useState, } from 'react'
 import './descriptor.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import AnimButton from '../AnimButton/AnimButton'
+import AnimButton from '../buttons/AnimButton/AnimButton'
 import SmoothAppearance from '../SmoothAppearance'
 import { AnimatePresence } from 'framer-motion'
 
 export default function Descriptor({ data }) {
     const [showDescriptor, setShowDescriptor] = useState(false)
- 
+
     return (
         data.map((el, i) => {
             return <div
@@ -26,7 +26,7 @@ export default function Descriptor({ data }) {
                 <AnimatePresence  >
                     {
                         (showDescriptor === i) && <SmoothAppearance
-                            blur={true} 
+                            blur={true}
                             className={`descriptor ${el.title.toLowerCase().replace(' ', '-')}`}>
                             <div className='row gap-10 center-y'>
                                 <LazyLoadImage

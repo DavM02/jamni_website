@@ -10,6 +10,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import CatalogPage from "./pages/CatalogPage/CatalogPage";
 import SWRConfigWrapper from "./swr/SWRConfigWrapper";
 import NoFound from "./pages/NoFound/NoFound";
+import ReviewsPage from "./pages/ReviewsPage/ReviewsPage";
 function App() {
 
    const location = useLocation()
@@ -25,6 +26,7 @@ function App() {
                 <Routes location={location} key={location.pathname} >
                   <Route path="/" element={<HomePage />} />
                   <Route path="news" element={<NewsPage />} />
+                  <Route path="reviews" element={<ReviewsPage />} />
                   <Route path="about" element={<AboutPage />} />
                   <Route path="catalog/*" element={<CatalogPage />} />
                   <Route path="/*" element={<NoFound/>} />

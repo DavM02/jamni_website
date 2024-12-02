@@ -108,6 +108,7 @@ h6 {
 input::placeholder,
 input {
     font-size: 14px;
+    font-weight: 400;
 }
 
 .xxxsmall-text {

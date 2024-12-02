@@ -4,7 +4,7 @@ import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
 import UserIcons from './UserIcons';
-import SearchInput from '../../ui/SearchInput/SearchInput';
+import SearchInput from '../../ui/inputs/SearchInput/SearchInput';
 import { MainContext } from '../../../context/MainContext';
 import useMediaQ from '../../../hooks/useMediaQ';
 import ContactInfo from './ContactInfo';

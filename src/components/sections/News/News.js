@@ -1,16 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
-import { useLocation, useSearchParams, Link } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 import useSWRImmutable from "swr/immutable";
 import { getLength } from "../../../db/loadData";
 import useFilter from "../../../hooks/useFilter";
-import { AnimatePresence } from "framer-motion";
 import "./news.css";
-import SmoothAppearance from "../../ui/SmoothAppearance";
 import Pagination from "../../ui/Pagination/Pagination";
 import NewsFilter from "./NewsFilter";
-import NewsItem from "./NewsItem";
 import NewsDisplay from "./NewsDisplay";
+import FetchError from "../../ui/messages/FetchError";
 
 export default function News() {
   const [searchParams] = useSearchParams();
@@ -29,30 +27,37 @@ export default function News() {
     if (!data) return;
     handleFilter(mutate);
   }, [searchParams, isLoading]);
+const [offsetTop, setOffsetTop] = useState(null)
 
-  const parentRef = useRef(null)
+  const elemRef = useCallback((node) => {
+    if(node !== null) {
+      setOffsetTop(node.getBoundingClientRect().top)
+    }
+  }, [])
+
+ 
 
   return (
     <section id="news">
-      <div className="container" ref={parentRef}>
-                <div className='row gap-10 xxxsmall-text text-main text-black up-case'>
-                    <Link to={'/'}>
-                        Главная
-                    </Link>
-                    <span>/</span>
-                    <span>новости</span>
-                </div>
+      <div className="container" ref={elemRef}>
+        <div className='row gap-10 xxxsmall-text text-main text-black up-case'>
+          <Link to={'/'}>
+            Главная
+          </Link>
+          <span>/</span>
+          <span>новости</span>
+        </div>
         <NewsFilter />
-
-        <NewsDisplay
+        {error ? (
+          <FetchError message={error.message} />
+        ) : <NewsDisplay
           isLoading={isLoading}
           searchParams={searchParams}
           data={data}
-        />
-
+        />}
         {dataLength && (
           <Pagination
-            scrollOffset={parentRef?.current?.offsetTop}
+            scrollOffset={offsetTop}
             pagesCount={Math.ceil(dataLength / 16)}
           />
         )}

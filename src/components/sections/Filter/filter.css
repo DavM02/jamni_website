@@ -7,16 +7,7 @@
     max-width: 1438px;
 }
 
-
-
-#filter .row.center-y.center-x,
-#filter .center-gr.no-results {
-    min-height: 500px;
-    align-items: center;
-    text-transform: capitalize;
-}
-
-
+ 
 #filter .filter-header {
     margin-bottom: 15px;
 }
@@ -26,7 +17,7 @@
 }
 
 #filter .filter-header>div:nth-child(1) {
-    padding-bottom: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
+    padding-bottom: var(--grid-padding);
 }
 
 #filter .pagination {

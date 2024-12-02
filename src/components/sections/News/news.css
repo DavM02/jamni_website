@@ -37,9 +37,6 @@
   clip-path: inset(0);
 }
 
-#news .news-filter .news-filter-item.active {
-}
-
 #news .news-item,
 #news .news-filter .news-filter-item {
   cursor: pointer;
@@ -47,9 +44,9 @@
 
 #news .section-layout {
   border-top: 1px solid var(--line-bg);
-  padding: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem) 0;
+  padding:var(--grid-padding) 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(251px, 1fr));
   gap: 45px 20px;
 }
 
@@ -81,11 +78,4 @@
   display: block;
   margin-bottom: 7px;
 }
-
-#news .no-results,
-#news .loading,
-#news .section-layout {
-  min-height: 100vh;
-}
-
  

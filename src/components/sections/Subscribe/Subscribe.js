@@ -2,8 +2,8 @@ import React from 'react'
 import './subscribe.css'
 import mochup from '../../../assets/Mockup.png';
 import AnimatedText from '../../scroll/TextAnimation';
-import Input from '../../ui/Input/Input';
-import AnimButton from '../../ui/AnimButton/AnimButton';
+import Input from '../../ui/inputs/Input/Input';
+import AnimButton from '../../ui/buttons/AnimButton/AnimButton';
 import mailIcon from '../../../assets/icons/mail.svg'
 export default function Subscribe() {
     return (
@@ -19,9 +19,9 @@ export default function Subscribe() {
                         <div className='row wrap gap-15'>
                             <Input type='email' placeholder='Введите свой адрес электронной почты' />
                             <AnimButton type='submit'>
-                       
-                                    <img src={mailIcon} alt='mail' /> ПОДПИСАТЬСЯ
-                         
+
+                                <img src={mailIcon} alt='mail' /> ПОДПИСАТЬСЯ
+
                             </AnimButton>
                         </div>
                     </form>

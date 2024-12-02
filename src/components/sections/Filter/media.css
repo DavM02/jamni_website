@@ -29,6 +29,13 @@
 }
 
 @media all and (max-width: 769px) {
+
+    .error,
+    .loading,
+    .no-results {
+        grid-column: 1/-1;
+    }
+
     #filter .filter-display {
         grid-template-areas: initial;
         grid-template-columns: 1fr 1fr 1fr;
@@ -51,8 +58,6 @@
     #filter .filter-display .placeholder {
         height: var(--filter-item-img-height) !important;
     }
-
-
 
 }
 

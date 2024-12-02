@@ -45,4 +45,23 @@ export async function getLength([path]) {
     }
 }
 
+export async function getReviews() {
+    try {
+        const dbRef = ref(database, ('reviews'));
+
+        const snapshot = await get(query(dbRef, orderByKey()));
+
+        if (snapshot.exists()) {
+            return snapshot.val().map(el => el.review);
+        } else {
+            return 0;
+        }
+    } catch (error) {
+
+        throw new Error(`error: ${error.message}`);
+    }
+}
+
+
+
  

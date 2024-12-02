@@ -1,6 +1,6 @@
-import React, { memo, Suspense } from "react";
-import PageTransition from "../../components/pageTransition/PageTransition";
-import ChunkLoading from "../../components/ui/ChunkLoading/ChunkLoading";
+import React, { Suspense } from "react";
+import PageTransition from "../../components/PageTransition/PageTransition";
+import ChunkLoading from "../../components/ui/messages/ChunkLoading/ChunkLoading";
 const AboutSections = React.lazy(() => import("./AboutSections"));
 function AboutPage() {
   return (
@@ -11,4 +11,5 @@ function AboutPage() {
     </div>
   );
 }
-export default memo(PageTransition(AboutPage));
+
+export default PageTransition(React.memo(AboutPage));
