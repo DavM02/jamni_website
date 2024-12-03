@@ -1,4 +1,4 @@
-import React, {  useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import ReactDOM from 'react-dom';
 import { useBlocker } from 'react-router-dom';
@@ -10,21 +10,21 @@ function PageTransition(Component) {
     return function WrappedComponent(props) {
         const [pathname, setPathname] = useState(null);
         const [isAnimating, setIsAnimating] = useState(false);
-        const {scrollbarAccess} = useContext(MainContext)
+        const { scrollbarAccess } = useContext(MainContext)
         useEffect(() => {
             if (scrollbarAccess.current) {
-            
-                scrollbarAccess.current.scrollTo(0, 0);  
+
+                scrollbarAccess.current.scrollTo(0, 0);
             }
         }, [])
 
         useBlocker(
             ({ currentLocation, nextLocation }) => {
-                return (isAnimating && currentLocation.pathname !== nextLocation.pathname) 
+                return (isAnimating && currentLocation.pathname !== nextLocation.pathname)
                 // || currentLocation.pathname === nextLocation.pathname
             }
         );
-  
+
         return (
             <React.Fragment>
                 <Component {...props} />
@@ -35,8 +35,11 @@ function PageTransition(Component) {
                             onAnimationComplete={(e) => {
                                 if (e.clipPath === 'inset(0% 0% 0% 0%)') {
                                     const getPath = window.location.hash.split('/');
+                                    console.log(getPath)
                                     let path = getPath[getPath.length - 1];
-                                    path = path.includes('?') ? path.split('?')[0] : path;
+
+                                    path = path.includes('?') ? path.split('?')[0] : decodeURIComponent(path);
+                                    console.log(path)
                                     setPathname(path.length === 0 ? 'home' : path);
                                 }
                             }}
@@ -58,7 +61,19 @@ function PageTransition(Component) {
                                     animate={{ opacity: pathname ? 0 : 1 }}
                                     transition={{ duration: 0.3, delay: 1.1 }}
                                 >
-                                    <AnimatedText center={true} as="h2" text={pathname} />
+                                    {
+                                        pathname.split('_').length > 1 ?
+                                            <div className='text-group row center-x wrap gap-20'>
+                                                {
+                                                    pathname.split('_').map((el, i) => {
+                                                        return <AnimatedText key={i} center={true} as="h4" text={el} />
+                                                    })
+                                                }
+                                            </div>
+
+                                            : <AnimatedText center={true} as="h2" text={pathname} />
+
+                                    }
                                 </motion.div>
                             )}
                         </motion.div>

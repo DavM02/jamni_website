@@ -1,5 +1,6 @@
 .intro {
-    height: 350px;
+    min-height: 350px;
+        height: 100%;
     background-size: cover !important;
     background-position-x: center !important;
         background-position-y: var(--posY) !important;
@@ -7,11 +8,7 @@
     z-index: 3;
     background-color: var(--placeholder-1) !important;
 }
-
-.intro .center-gr {
-    height: 100%;
-}
-
+ 
 .intro p {
     max-width: 724px;
     font-weight: 300 !important;
@@ -21,7 +18,7 @@
     position: relative;
 }
 
-#decor-intro.intro::after, #reviews-intro.intro::after {
+#decor-intro.intro::after, #reviews-intro.intro::after, #article-intro.intro::after {
     content: "";
     opacity: 10%;
     background-color: #000000;
@@ -33,7 +30,7 @@
     left: 0;
 }
 
- #reviews-intro.intro::after {
+ #reviews-intro.intro::after, #article-intro.intro::after {
     opacity: 32%;
  }
 
@@ -51,6 +48,6 @@
 
 }
 
-#reviews-intro .mask-layer {
+#reviews-intro .mask-layer , #article-intro .mask-layer{
     backdrop-filter: blur(0.5px);
 }

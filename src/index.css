@@ -181,17 +181,17 @@ main {
 }
 
 #filter .filter-item:nth-child(1n) .placeholder,
-#news .news-item:nth-child(1n) .placeholder {
+.news-item:nth-child(1n) .placeholder {
   background-color: var(--placeholder-1);
 }
 
 #filter .filter-item:nth-child(2n) .placeholder,
-#news .news-item:nth-child(2n) .placeholder {
+ .news-item:nth-child(2n) .placeholder {
   background-color: var(--placeholder-2);
 }
 
 #filter .filter-item:nth-child(3n) .placeholder,
-#news .news-item:nth-child(3n) .placeholder {
+.news-item:nth-child(3n) .placeholder {
   background-color: var(--placeholder-3);
 }
 

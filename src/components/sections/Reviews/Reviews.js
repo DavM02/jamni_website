@@ -1,4 +1,4 @@
-import React, {useEffect, useCallback, useState} from 'react'
+import React, {useEffect} from 'react'
 import './reviews.css'
 import useSWRImmutable from 'swr/immutable';
 import { Link } from 'react-router-dom'
@@ -29,17 +29,11 @@ export default function Reviews() {
         handleFilter(mutate);
     }, [searchParams, isLoading]);
 
-    const [offsetTop, setOffsetTop] = useState(null)
-
-    const elemRef = useCallback((node) => {
-        if (node !== null) {
-            setOffsetTop(node.getBoundingClientRect().top)
-        }
-    }, [])
-
+ 
+  
   return (
     <section id='reviews'>
-          <div className="container" ref={elemRef}>
+          <div className="container" >
               <div className='row gap-10 xxxsmall-text text-main text-black up-case'>
                   <Link to={'/'}>
                       Главная
@@ -57,7 +51,7 @@ export default function Reviews() {
               />}
               {reviewsCount && (
                   <Pagination
-                      scrollOffset={offsetTop}
+                      scrollOffset={350}
                       pagesCount={Math.ceil((reviewsCount.length - 1) / 12)}
                   />
               )}

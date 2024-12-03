@@ -1,13 +1,21 @@
-import React, { memo } from "react";
+import React, { Suspense } from "react";
 import PageTransition from "../../components/PageTransition/PageTransition";
-import ReviewsSections from "./ReviewsSections";
+import ChunkLoading from "../../components/ui/messages/ChunkLoading/ChunkLoading";
+
+const ReviewsSections = React.lazy(() => import("./ReviewsSections"));
+
 
 function ReviewsPage() {
   return (
     <div id="news-page">
-      <ReviewsSections />
+      <Suspense fallback={<ChunkLoading />}>
+        <ReviewsSections />
+      </Suspense>
     </div>
   );
 }
 
-export default PageTransition(memo(ReviewsPage));
+ 
+export default PageTransition(React.memo(ReviewsPage));
+
+ 

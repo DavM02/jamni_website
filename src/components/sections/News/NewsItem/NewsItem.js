@@ -1,9 +1,15 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Link } from "react-router-dom";
-export default function NewsItem({ el }) {
+import { useNavigate } from "react-router-dom";
+
+import './newsItem.css'
+export default function NewsItem({ el, height }) {
+  const navigate = useNavigate()
   return (
-    <Link className="news-item">
-      <div className="news-image placeholder">
+    <div className="news-item" 
+      onClick={() => navigate(`/news/article/${el.title.toLowerCase().replace(/\s+/g, '_')}`)} >
+      <div className="news-image placeholder"
+        style={height ? { height: `${height}` } : {}}
+      >
         <LazyLoadImage
           src={el.image}
           width={"100%"}
@@ -19,7 +25,7 @@ export default function NewsItem({ el }) {
       <span className="xsmall-text text-black text-main up-case">
         {el.title}
       </span>
-      <p className="xsmall-tex text-black text-main">{el.description}</p>
-    </Link>
+      <p className="xsmall-text text-black text-main">{el.description}</p>
+    </div>
   );
 }

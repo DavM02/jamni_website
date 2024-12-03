@@ -1,0 +1,18 @@
+#more-articles {
+    padding: var(--section-padding-equal-big) 0;
+}
+
+#more-articles .container {
+    max-width: 1920px !important;
+}
+
+#more-articles .slider-item {
+    width: var(--moreitems-slider-img-width);
+}
+
+#more-articles .slider-wrapper {
+    transform: translateX(calc(var(--moreitems-slider-img-width)* -3 - 60px));
+    width: calc((var(--moreitems-slider-img-width) * 10) + 10 * 20px);
+    height: calc(var(--moreitems-slider-img-height-odd) + 215px);
+    margin: clamp(2.625rem, 2.0769rem + 2.4359vw, 5rem) 0 70px;
+}

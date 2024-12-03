@@ -1,4 +1,4 @@
-import NewsItem from "./NewsItem";
+import NewsItem from "./NewsItem/NewsItem";
 import { AnimatePresence } from "framer-motion";
 import SmoothAppearance from "../../ui/SmoothAppearance";
 import NoResults from "../../ui/messages/NoResults";

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, {  useEffect, } from "react";
 
 import { useSearchParams, Link } from "react-router-dom";
 import useSWRImmutable from "swr/immutable";
@@ -27,19 +27,15 @@ export default function News() {
     if (!data) return;
     handleFilter(mutate);
   }, [searchParams, isLoading]);
-const [offsetTop, setOffsetTop] = useState(null)
-
-  const elemRef = useCallback((node) => {
-    if(node !== null) {
-      setOffsetTop(node.getBoundingClientRect().top)
-    }
-  }, [])
-
  
 
+
+
+ 
+   
   return (
     <section id="news">
-      <div className="container" ref={elemRef}>
+      <div className="container" >
         <div className='row gap-10 xxxsmall-text text-main text-black up-case'>
           <Link to={'/'}>
             Главная
@@ -57,7 +53,7 @@ const [offsetTop, setOffsetTop] = useState(null)
         />}
         {dataLength && (
           <Pagination
-            scrollOffset={offsetTop}
+            scrollOffset={350}
             pagesCount={Math.ceil(dataLength / 16)}
           />
         )}

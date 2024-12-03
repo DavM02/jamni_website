@@ -14,3 +14,11 @@
 .slide-in span {
     color: var(--white) !important;
 }
+
+.slide-in .text-group {
+    padding: 0 var(--container-padding);
+    max-width: 600px;
+    /* row-gap: 20px; */
+}
+
+ 

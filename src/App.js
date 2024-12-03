@@ -5,17 +5,16 @@ import SmoothScroll from "./components/scroll/SmoothScroll";
 import MainContextProvider from "./context/MainContext";
 import HomePage from "./pages/HomePage/HomePage";
 import { AnimatePresence } from "framer-motion";
-import NewsPage from "./pages/NewsPage/NewsPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
-import CatalogPage from "./pages/CatalogPage/CatalogPage";
+import CatalogRoute from "./pages/CatalogPage/Route";
 import SWRConfigWrapper from "./swr/SWRConfigWrapper";
 import NoFound from "./pages/NoFound/NoFound";
 import ReviewsPage from "./pages/ReviewsPage/ReviewsPage";
+import NewsRoute from "./pages/NewsPage/Route";
 function App() {
 
    const location = useLocation()
- console.log('lal')
-  return (
+   return (
     <div className="App">
       <MainContextProvider>
         <Header />
@@ -25,10 +24,10 @@ function App() {
               <AnimatePresence mode="wait" initial={false}>
                 <Routes location={location} key={location.pathname} >
                   <Route path="/" element={<HomePage />} />
-                  <Route path="news" element={<NewsPage />} />
+                  <Route path="news/*" element={<NewsRoute/>} />
                   <Route path="reviews" element={<ReviewsPage />} />
                   <Route path="about" element={<AboutPage />} />
-                  <Route path="catalog/*" element={<CatalogPage />} />
+                  <Route path="catalog/*" element={<CatalogRoute />} />
                   <Route path="/*" element={<NoFound/>} />
                 </Routes>
               </AnimatePresence>

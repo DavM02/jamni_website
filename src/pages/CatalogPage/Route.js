@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import DecorPage from './DecorPage/DecorPage'
 import NoFound from '../NoFound/NoFound'
 
-export default function CatalogPage() {
+export default function CatalogRoute() {
     const location = useLocation();
 
  

@@ -7,7 +7,7 @@ import img3 from '../../../assets/img_8.webp'
 import img4 from '../../../assets/img_19.webp'
 import img5 from '../../../assets/img_6.webp'
 
-import Slide from './Slider'
+import Slide from './Slide'
 
 export default function MoreProducts() {
 
@@ -29,14 +29,14 @@ export default function MoreProducts() {
         },
         {
             "image": img4,
-             "name": "ivory",
+            "name": "ivory",
             "price": 3000,
         },
         {
             "image": img5,
             "name": "foster",
             "price": 3000,
-},
+        },
         {
             "image": img1,
             "name": "ramani",
@@ -56,11 +56,12 @@ export default function MoreProducts() {
             "image": img4,
             "name": "ivory",
             "price": 3000,
-},
+        },
         {
             "image": img5,
             "name": "foster",
-            "price": 3000, },
+            "price": 3000,
+        },
 
     ]
 
