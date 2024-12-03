@@ -1,4 +1,4 @@
-import { ref, get, query, startAt, endAt, orderByKey } from "firebase/database";
+import { ref, get, query, startAt, endAt, orderByKey, orderByChild, equalTo } from "firebase/database";
 import { database } from './firebaseConfig';
 
 async function loadData([path, page, count]) {
@@ -46,7 +46,7 @@ export async function getLength([path]) {
     }
 }
 
-export async function getReviews() {
+export async function getReviewsCount() {
     try {
         const dbRef = ref(database, ('reviews'));
 
@@ -60,6 +60,27 @@ export async function getReviews() {
     } catch (error) {
 
         throw new Error(`error: ${error.message}`);
+    }
+}
+
+ 
+export async function getArticle([id]) {
+    try {
+        console.log(id)
+        const articlesRef = ref(database, 'news'); 
+        const q = query(articlesRef, orderByChild('id'), equalTo(id)); 
+
+        const snapshot = await get(q);
+
+        if (snapshot.exists()) {
+            const data = snapshot.val();
+   
+            return Object.values(data)[0]; 
+        } else {
+            return null;
+        }
+    } catch (error) {
+        throw new Error('An error occurred while loading the article');
     }
 }
 

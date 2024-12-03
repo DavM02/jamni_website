@@ -12,8 +12,7 @@ export default function Slide({ el, adjustTransition, transformIndex }) {
         >
 
             <NewsItem
-                el={{ ...el, title: el.title.split(' ').slice(0, 4).join(' ') + '...' 
-                    , description: el.description.split(' ').slice(0, 20).join(' ') + '...'}} 
+                el={{ ...el, description: el.description.split(' ').slice(0, 8).join(' ') + '...'}} 
             
             height={el.id % 2 ? 'var(--moreitems-slider-img-height-even)' : 'var(--moreitems-slider-img-height-odd)' } />
         </div>

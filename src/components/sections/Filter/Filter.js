@@ -63,7 +63,7 @@ export default function Filter({ collections, materials, headline, price }) {
                     />
                     {dataLength && (
                         <Pagination
-                            scrollOffset={780}
+                        scrollOffset={780}
                         pagesCount={Math.ceil(dataLength / 17)} />
                     )}
                 </div>

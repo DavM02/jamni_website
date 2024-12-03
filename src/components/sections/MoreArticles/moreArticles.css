@@ -1,4 +1,5 @@
 #more-articles {
+    background-color: var(--gray); 
     padding: var(--section-padding-equal-big) 0;
 }
 

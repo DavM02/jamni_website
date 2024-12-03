@@ -3,6 +3,7 @@ import './moreArticles.css'
 import InfiniteSlider from '../../InfiniteSlider/InfiniteSlider'
 import useSWRImmutable from 'swr/immutable'
 import Slide from './Slide'
+import DataLoading from '../../ui/messages/DataLoading'
 export default function MoreArticles() {
 
 
@@ -20,7 +21,7 @@ export default function MoreArticles() {
                     <span className='small-text text-main text-black up-case'>вам может понравиться</span>
                 </div>
                 {
-                    data && <InfiniteSlider sliderData={data.slice(0, 10)} wrapper={Slide} />
+                    data ? <InfiniteSlider sliderData={data.slice(0, 10)} wrapper={Slide} /> : <DataLoading/>
                 }
             </div>
         </section>

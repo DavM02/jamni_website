@@ -2,6 +2,7 @@ import bg from "../../assets/decor/img_9.webp";
 import Intro from "../../components/sections/Intro/Intro";
 import News from "../../components/sections/News/News";
 function NewsSections() {
+ 
   return (
     <>
       <Intro

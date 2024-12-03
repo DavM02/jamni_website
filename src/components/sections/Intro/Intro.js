@@ -5,7 +5,6 @@ export default function Intro({bg, posY, text, ...props}) {
       <section {...props} className='intro center-gr'
           style={{ background: `url(${bg}) no-repeat`, '--posY': posY }}
       >
- 
               <div className='mask-layer'></div>
               <div className='container text-center'>
                   <h2 className='text-light'>{text.headline}</h2>

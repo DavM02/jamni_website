@@ -3,7 +3,7 @@ import './reviews.css'
 import useSWRImmutable from 'swr/immutable';
 import { Link } from 'react-router-dom'
 import { useSearchParams } from 'react-router-dom';
-import { getReviews } from '../../../db/loadData';
+import { getReviewsCount } from '../../../db/loadData';
 import FetchError from '../../ui/messages/FetchError';
 import Pagination from '../../ui/Pagination/Pagination';
 import useFilter from '../../../hooks/useFilter';
@@ -21,7 +21,7 @@ export default function Reviews() {
         12,
     ]);
 
-    const { data: reviewsCount } = useSWRImmutable(["reviews-count"], getReviews);
+    const { data: reviewsCount } = useSWRImmutable(["reviews-count"], getReviewsCount);
     const { handleFilter } = useFilter();
      
     useEffect(() => {

@@ -37,9 +37,9 @@ function PageTransition(Component) {
                                     const getPath = window.location.hash.split('/');
                                     console.log(getPath)
                                     let path = getPath[getPath.length - 1];
-
-                                    path = path.includes('?') ? path.split('?')[0] : decodeURIComponent(path);
                                     console.log(path)
+                                    path = decodeURIComponent(path.includes('?') ? path.split('?')[0] : path);
+                                  
                                     setPathname(path.length === 0 ? 'home' : path);
                                 }
                             }}

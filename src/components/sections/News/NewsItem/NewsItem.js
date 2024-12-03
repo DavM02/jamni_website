@@ -6,7 +6,7 @@ export default function NewsItem({ el, height }) {
   const navigate = useNavigate()
   return (
     <div className="news-item" 
-      onClick={() => navigate(`/news/article/${el.title.toLowerCase().replace(/\s+/g, '_')}`)} >
+      onClick={() => navigate(`/news/article/${el.title.toLowerCase().replace(/\s+/g, '_')}?id=${el.id}`)} >
       <div className="news-image placeholder"
         style={height ? { height: `${height}` } : {}}
       >
