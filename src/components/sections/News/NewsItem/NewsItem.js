@@ -11,7 +11,7 @@ export default function NewsItem({ el, height }) {
         style={height ? { height: `${height}` } : {}}
       >
         <LazyLoadImage
-          src={el.image}
+          src={el.previewImage}
           width={"100%"}
           height={"100%"}
           effect="blur"
