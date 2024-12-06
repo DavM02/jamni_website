@@ -20,7 +20,7 @@ export default function Sort() {
     const key = location.pathname.split('/')[2];
     const [searchParams] = useSearchParams();
     const page = parseInt(searchParams.get('page') ?? 1);
-    const { mutate } = useSWRImmutable([key, page]);
+    const { mutate } = useSWRImmutable([key, page, 18]);
 
     const handleSort = useCallback((sortType) => {
         setSort(sortType);

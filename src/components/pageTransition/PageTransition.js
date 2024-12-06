@@ -24,7 +24,7 @@ function PageTransition(Component) {
                 // || currentLocation.pathname === nextLocation.pathname
             }
         );
-
+ 
         return (
             <React.Fragment>
                 <Component {...props} />
@@ -35,11 +35,15 @@ function PageTransition(Component) {
                             onAnimationComplete={(e) => {
                                 if (e.clipPath === 'inset(0% 0% 0% 0%)') {
                                     const getPath = window.location.hash.split('/');
-                                    console.log(getPath)
+                
+                                    if (getPath.includes('article'))  {
+                                        setPathname(`article-${decodeURIComponent(getPath[getPath.length - 1].split('?')[1].replace('id=', ''))}`) 
+                                        return
+                                    }
                                     let path = getPath[getPath.length - 1];
-                                    console.log(path)
+                               
                                     path = decodeURIComponent(path.includes('?') ? path.split('?')[0] : path);
-                                  
+                                 
                                     setPathname(path.length === 0 ? 'home' : path);
                                 }
                             }}
@@ -61,19 +65,7 @@ function PageTransition(Component) {
                                     animate={{ opacity: pathname ? 0 : 1 }}
                                     transition={{ duration: 0.3, delay: 1.1 }}
                                 >
-                                    {
-                                        pathname.split('_').length > 1 ?
-                                            <div className='text-group row center-x wrap gap-20'>
-                                                {
-                                                    pathname.split('_').map((el, i) => {
-                                                        return <AnimatedText key={i} center={true} as="h4" text={el} />
-                                                    })
-                                                }
-                                            </div>
-
-                                            : <AnimatedText center={true} as="h2" text={pathname} />
-
-                                    }
+                                    <AnimatedText center={true} as="h2" text={pathname} />
                                 </motion.div>
                             )}
                         </motion.div>

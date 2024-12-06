@@ -9,3 +9,24 @@
     border: none;
     width: 100%;
 }
+
+#contacts .section-layout {
+    padding: 0 var(--container-padding);
+    display: grid;
+    grid-template-columns: 1fr 180px 1fr;
+    padding-top: clamp(3.75rem, 3.1731rem + 2.5641vw, 6.25rem);;
+}
+#contacts .section-layout > div:nth-child(1) {
+    border-right: 1px solid #D3D3D3;
+    justify-self: end;
+    padding-right: 85px;
+}
+
+#contacts .section-layout>div:nth-child(1) img {
+   width: 16px;
+  mix-blend-mode: difference;
+}
+
+#contacts .section-layout p {
+    margin-bottom: 30px;
+}

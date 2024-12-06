@@ -47,7 +47,7 @@
 }
 
 #projects .sketch {
-    max-width: min(35%, 540px);
+    max-width: min(40%, 540px);
         width: 100%;
         align-self: center;
 

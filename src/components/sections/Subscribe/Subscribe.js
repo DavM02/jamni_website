@@ -1,6 +1,6 @@
 import React from 'react'
 import './subscribe.css'
-import mochup from '../../../assets/Mockup.png';
+import mockup from '../../../assets/Mockup.png';
 import AnimatedText from '../../scroll/TextAnimation';
 import Input from '../../ui/inputs/Input/Input';
 import AnimButton from '../../ui/buttons/AnimButton/AnimButton';
@@ -28,7 +28,7 @@ export default function Subscribe() {
                 </div>
 
                 <div className='mockup'>
-                    <img src={mochup} alt='mobile-app' />
+                    <img src={mockup} alt='mobile-app' />
                 </div>
 
 

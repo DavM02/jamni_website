@@ -1,7 +1,6 @@
 import React from 'react'
 import mail from '../../../assets/icons/mail.svg'
 import phone from '../../../assets/icons/phone.svg'
-
 import location from '../../../assets/icons/location.svg'
 
 export default function Contacts() {
@@ -27,7 +26,6 @@ export default function Contacts() {
                 <a className='text-main text-light xxsmall-text'
                     href="mailto:mailto:info@jamni.ru">
                     mailto:info@jamni.ru</a>
-
             </div>
         </div>
     )
