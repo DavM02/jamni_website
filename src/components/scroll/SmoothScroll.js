@@ -19,10 +19,10 @@ export default function SmoothScroll({ children }) {
             });
 
         };
-        console.log(scrollbar)
+       
         initScrollbar();
         scrollbarAccess.current = scrollbar
-        console.log(scrollbar)
+      
         return () => {
             if (scrollbar) {
                 scrollbar.destroy();
