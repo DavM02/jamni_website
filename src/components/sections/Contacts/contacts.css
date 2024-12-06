@@ -1,0 +1,10 @@
+#contacts {
+    padding: var(--section-padding-equal-big) 0;
+    background-color: var(--gray);
+}
+#contacts #map {
+   filter: grayscale();
+}
+#contacts iframe {
+    border: none;
+}

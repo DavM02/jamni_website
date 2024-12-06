@@ -11,6 +11,7 @@ import SWRConfigWrapper from "./swr/SWRConfigWrapper";
 import NoFound from "./pages/NoFound/NoFound";
 import ReviewsPage from "./pages/ReviewsPage/ReviewsPage";
 import NewsRoute from "./pages/NewsPage/Route";
+import ContactsPage from "./pages/ContactsPage/ContactsPage";
 function App() {
 
    const location = useLocation()
@@ -27,6 +28,7 @@ function App() {
                   <Route path="news/*" element={<NewsRoute/>} />
                   <Route path="reviews" element={<ReviewsPage />} />
                   <Route path="about" element={<AboutPage />} />
+                   <Route path="contacts" element={<ContactsPage />} />
                   <Route path="catalog/*" element={<CatalogRoute />} />
                   <Route path="/*" element={<NoFound/>} />
                 </Routes>
