@@ -12,11 +12,14 @@ import NoFound from "./pages/NoFound/NoFound";
 import ReviewsPage from "./pages/ReviewsPage/ReviewsPage";
 import NewsRoute from "./pages/NewsPage/Route";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
+import Map from "./components/sections/Contacts/Map";
 function App() {
 
    const location = useLocation()
    return (
+
     <div className="App">
+       {/* <Map /> */}
       <MainContextProvider>
         <Header />
         <SmoothScroll>

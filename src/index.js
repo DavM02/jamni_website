@@ -17,6 +17,7 @@ root.render(
   <RouterProvider router={router}>
     <React.StrictMode/>
   </RouterProvider>
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function

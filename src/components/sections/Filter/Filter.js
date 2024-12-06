@@ -37,8 +37,6 @@ export default function Filter({ collections, materials, headline, price }) {
     const isMobile = useMediaQ('(max-width: 480px)');
 
  
-
- 
     return (
         <section id="filter">
             <div className="container" >

@@ -1,7 +1,13 @@
 import React from 'react'
 import './contacts.css'
 import Map from './Map'
+import { MainContext } from '../../../context/MainContext'
+import { useContext } from 'react'
 export default function Contacts() {
+    const { scrollbarAccess } = useContext(MainContext)
+
+    
+
     return (
         <section id='contacts'>
             <div className='container'>
@@ -12,9 +18,9 @@ export default function Contacts() {
                 <div className='section-layout'>
                     <div></div>
                     <div></div>
-              <div>
+                    <div>
                         <Map />
-              </div>
+                    </div>
                 </div>
             </div>
         </section>
