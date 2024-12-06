@@ -5,11 +5,15 @@
 #news .news-filter .row {
   padding: 43px 0 17px;
   column-gap: 64px;
+  
 }
 
 #news .news-filter .news-filter-item.active span {
   color: var(--black);
   font-weight: 400;
+}
+#news .news-filter {
+    border-bottom: 1px solid var(--line-bg);
 }
 
 #news .news-filter,
@@ -42,7 +46,7 @@
 }
 
 #news .section-layout {
-  border-top: 1px solid var(--line-bg);
+
   padding:var(--grid-padding) 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(251px, 1fr));

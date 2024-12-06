@@ -16,13 +16,15 @@ export default function FilterDisplay({ isLoading, searchParams, data, error }) 
       {error ? (
         <FetchError message={error.message} />
       ) : !isLoading && data ? (
-        <SmoothAppearance key={searchParams}>
-          {!noResults ? (
+        !noResults ? (
+          <SmoothAppearance key={searchParams}>
             <FilterGrid data={data} />
-          ) : (
-            <NoResults />
-          )}
-        </SmoothAppearance>
+          </SmoothAppearance>
+
+        ) : (
+          <NoResults />
+        )
+
       ) : (
         <DataLoading />
       )}

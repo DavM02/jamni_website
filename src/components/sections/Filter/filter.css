@@ -24,3 +24,7 @@
     margin-left: 240px;
     grid-column: 1 / -1;
 }
+
+#filter .loading, #filter .error {
+    padding-bottom: var(--grid-padding);
+}

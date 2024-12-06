@@ -7,7 +7,6 @@
 }
 
 #reviews .section-layout {
-    border-top: 1px solid var(--line-bg);
     display: grid;
     gap: 40px 20px;
     padding: var(--grid-padding) 0 26px;
@@ -46,6 +45,7 @@
 
 #reviews .reviews-header {
     padding: 50px 0 17px;
+    border-bottom: 1px solid var(--line-bg);
 }
 
 #reviews .reviews-header .reviews-stars {

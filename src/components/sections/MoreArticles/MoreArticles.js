@@ -4,15 +4,18 @@ import InfiniteSlider from '../../InfiniteSlider/InfiniteSlider'
 import useSWRImmutable from 'swr/immutable'
 import Slide from './Slide'
 import DataLoading from '../../ui/messages/DataLoading'
+import FetchError from '../../ui/messages/FetchError'
+import { AnimatePresence } from 'framer-motion'
+import SmoothAppearance from '../../ui/SmoothAppearance'
 export default function MoreArticles() {
 
 
-    const { data, } = useSWRImmutable([
+    const { data, error, isLoading } = useSWRImmutable([
         "news",
         1,
         16,
     ]);
- 
+
     return (
         <section id='more-articles'>
             <div className='container'>
@@ -20,9 +23,22 @@ export default function MoreArticles() {
                     <h2>еще статьи</h2>
                     <span className='small-text text-main text-black up-case'>вам может понравиться</span>
                 </div>
-                {
-                    data ? <InfiniteSlider sliderData={data.slice(0, 10)} wrapper={Slide} /> : <DataLoading/>
-                }
+                <AnimatePresence mode='wait'>
+                    {error ? (
+                        <FetchError message={error.message} />
+                    ) : (
+                        !isLoading && data ? <>
+                            <SmoothAppearance>
+                                <InfiniteSlider sliderData={data.slice(0, 10)} wrapper={Slide} />
+                            </SmoothAppearance>
+                        </> : (
+                            <DataLoading />
+                        )
+                    )
+
+                    }
+                </AnimatePresence>
+
             </div>
         </section>
     )

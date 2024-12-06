@@ -17,3 +17,7 @@
     height: calc(var(--moreitems-slider-img-height-odd) + 215px);
     margin: clamp(2.625rem, 2.0769rem + 2.4359vw, 5rem) 0 40px;
 }
+
+#more-articles .loading, #more-articles .error {
+    padding-top: var(--section-padding-equal-big);
+}

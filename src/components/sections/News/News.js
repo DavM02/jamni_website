@@ -8,7 +8,6 @@ import "./news.css";
 import Pagination from "../../ui/Pagination/Pagination";
 import NewsFilter from "./NewsFilter";
 import NewsDisplay from "./NewsDisplay";
-import FetchError from "../../ui/messages/FetchError";
 
 export default function News() {
   const [searchParams] = useSearchParams();
@@ -44,13 +43,12 @@ export default function News() {
           <span>новости</span>
         </div>
         <NewsFilter />
-        {error ? (
-          <FetchError message={error.message} />
-        ) : <NewsDisplay
+        <NewsDisplay
+          error={error}
           isLoading={isLoading}
           searchParams={searchParams}
           data={data}
-        />}
+        />
         {dataLength && (
           <Pagination
             scrollOffset={350}
