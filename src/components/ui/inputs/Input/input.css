@@ -1,16 +1,19 @@
-input.main-input {
-    padding: 9px 22px;
+.main-input {
+    padding: 9px 25px;
     border-radius: 20px;
     max-width: 422px;
     width: 100%;
     outline: transparent 1px solid;
     transition: var(--transition) 0.5s outline;
 }
-input.main-input::placeholder {
+.main-input::placeholder {
     color: #A7A7A7;
 }
-
-input.main-input:focus-visible {
+ 
+.main-input:focus-visible {
     outline: var(--black) 1px solid;
 }
 
+textarea.main-input {
+     min-height: 80px;
+}

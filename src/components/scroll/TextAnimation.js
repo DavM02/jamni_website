@@ -1,12 +1,12 @@
 import React from 'react';
 import Observer from './Observer';
 import './scroll.css'
-function AnimatedText({ text, as: Tag, center}) {
+function AnimatedText({ text, as, center}) {
     let index = 0;
 
     return (
         <Observer className='heading-wrapper'>
-            <Tag className={`row wrap ${center ? 'center-x' : ''} gap-30-y`}>
+            <div className={`${as} row wrap ${center ? 'center-x' : ''} gap-30-y`}>
                 {text.split(' ').map((word, i) => (
                     <div key={i} className='row no-wrap'>
                         {word.split('').map((letter, j) => {
@@ -19,7 +19,7 @@ function AnimatedText({ text, as: Tag, center}) {
                         })}
                     </div>
                 ))}
-            </Tag>
+            </div>
         </Observer>
     );
 }

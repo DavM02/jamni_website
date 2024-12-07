@@ -5,9 +5,11 @@
 #subscribe .container {
     position: relative;
     overflow: visible;
-    min-height: 500px;
-    padding: var(--section-padding-equal-big) var(--container-padding) 0;
     max-width: 1310px;
+}
+
+#subscribe .container>.row:nth-child(1) {
+    min-height: 500px;
 }
 
 #subscribe .mockup {
@@ -38,30 +40,28 @@
 
 @media all and (max-width: 1220px) {
     #subscribe .mockup {
-    right: clamp(1.5rem, -7.6429rem + 14.2857vw, 3.25rem);
+        right: clamp(1.5rem, -7.6429rem + 14.2857vw, 3.25rem);
     }
 }
 
 @media all and (max-width: 1023px) {
     #subscribe .mockup {
         position: static;
-       
+
     }
 
     #subscribe .mockup,
-    #subscribe .text-wrapper {
-        display: grid;
-        place-content: center;
+    #subscribe .container>.row:nth-child(1) {
+        flex-direction: column;
     }
 
     #subscribe .text-wrapper {
+        padding-top: var(--section-padding-equal-big);
         margin-bottom: 50px;
     }
 }
 
 @media all and (max-width: 422px) {
-
-
 
     #subscribe .anim-button {
         width: 100%;

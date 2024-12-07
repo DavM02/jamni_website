@@ -2,31 +2,98 @@
     padding: var(--section-padding-equal-big) 0;
     background-color: var(--gray);
 }
+
 #contacts #map {
-   filter: grayscale();
+    filter: grayscale();
+    min-height: 225px;
 }
+
 #contacts iframe {
     border: none;
     width: 100%;
 }
 
 #contacts .section-layout {
-    padding: 0 var(--container-padding);
+
+    padding-left: var(--container-padding);
     display: grid;
-    grid-template-columns: 1fr 180px 1fr;
-    padding-top: clamp(3.75rem, 3.1731rem + 2.5641vw, 6.25rem);;
+    grid-template-columns: 50% 180px 1fr;
+    padding-top: clamp(3.75rem, 3.1731rem + 2.5641vw, 6.25rem);
+    ;
 }
-#contacts .section-layout > div:nth-child(1) {
+
+#contacts .section-layout>div:nth-child(1) {
     border-right: 1px solid #D3D3D3;
     justify-self: end;
-    padding-right: 85px;
+    padding-right: 105px;
 }
 
 #contacts .section-layout>div:nth-child(1) img {
-   width: 16px;
-  mix-blend-mode: difference;
+    width: 16px;
+    mix-blend-mode: difference;
 }
 
 #contacts .section-layout p {
     margin-bottom: 30px;
+}
+
+@media all and (max-width: 1023px) {
+
+
+    #contacts #map,
+    #contacts #map div,
+    #contacts iframe {
+        height: 100% !important;
+    }
+
+
+    #contacts .section-layout {
+        overflow: hidden;
+        grid-template-columns: 50% 50%;
+        column-gap: 55px;
+        grid-template-areas: "a b"
+            "c b";
+    }
+
+    #contacts .section-layout>div:nth-child(1) {
+        grid-area: a;
+    }
+
+    #contacts .section-layout>div:nth-child(2) {
+        grid-area: c;
+        flex-direction: row;
+        margin: 60px 0 0 0;
+    }
+
+    #contacts .section-layout>div:nth-child(3) {
+        grid-area: b;
+
+    }
+
+    #contacts .section-layout>div:nth-child(1) {
+        border-right: none;
+        justify-self: initial;
+        padding-right: 0;
+    }
+
+}
+
+@media all and (max-width: 769px) {
+    #contacts .section-layout {
+        padding-left: unset;
+        grid-template-columns: auto !important;
+        grid-template-areas: initial !important;
+    }
+
+    #contacts .section-layout>div {
+        grid-area: unset !important;
+    }
+
+    #contacts .section-layout>div:nth-child(1) {
+        padding: 0 var(--container-padding);
+    }
+
+    #contacts .section-layout>div:nth-child(2) {
+        margin: 40px 0;
+    }
 }

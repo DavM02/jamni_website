@@ -65,7 +65,7 @@ function PageTransition(Component) {
                                     animate={{ opacity: pathname ? 0 : 1 }}
                                     transition={{ duration: 0.3, delay: 1.1 }}
                                 >
-                                    <AnimatedText center={true} as="h2" text={pathname} />
+                                    <AnimatedText center={true} as="big-heading" text={pathname} />
                                 </motion.div>
                             )}
                         </motion.div>

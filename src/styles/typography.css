@@ -27,12 +27,12 @@
 }
 
 .text-black,
-input::placeholder,
+input::placeholder, textarea, textarea::placeholder,
 input {
     color: var(--black);
 }
 
-.text-main,
+.text-main, textarea, textarea::placeholder,
 #products-display li::after,
 input::placeholder,
 input,
@@ -40,7 +40,7 @@ button {
     font-family: 'font-main';
 }
 
-.text-heading,
+.text-heading, .big-heading, .middle-heading, .small-heading,
 h1,
 h2,
 h3,
@@ -57,7 +57,7 @@ h1 {
     color: var(--black);
 }
 
-h2 {
+h2, .big-heading {
     font-weight: 400;
     font-size: clamp(1.875rem, 1.45rem + 2.125vw, 4rem);
     line-height: clamp(2.5rem, 2.0375rem + 2.3125vw, 4.8125rem);
@@ -71,14 +71,14 @@ h3 {
     color: var(--black);
 }
 
-h4 {
+h4, .middle-heading {
     font-size: 44px;
     font-weight: 400;
     color: var(--black);
     line-height: 50px;
 }
 
-h5 {
+h5, .small-heading {
     font-size: 42px;
     font-weight: 400;
     color: var(--black);
@@ -105,7 +105,7 @@ h6 {
 
 .xxsmall-text,
 #products-display li::after,
-input::placeholder,
+input::placeholder, textarea, textarea::placeholder
 input {
     font-size: 14px;
     font-weight: 400;

@@ -14,7 +14,7 @@ export default function Sketch() {
         </div>
         <div className='column center-x gap-40 text-center'>
       
-            <AnimatedText text={'Воплотим ваш проект в уникальную мебель'} as={'h4'}  center={true}/>
+            <AnimatedText text={'Воплотим ваш проект в уникальную мебель'} as={'middle-heading'}  center={true}/>
    
         
           <p className='xsmall-text text-main text-black'>
