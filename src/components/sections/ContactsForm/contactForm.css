@@ -1,93 +1,103 @@
 #contact-form {
-    background-color: var(--white);
-    position: relative;
+  background-color: var(--white);
+  position: relative;
 }
 
 #contact-form::after {
-    position: absolute;
-    content: "";
-    background-color: var(--gray);
-    height: 30px;
-    width: 100%;
-    top: 0;
-    left: 0;
+  position: absolute;
+  content: "";
+  background-color: var(--gray);
+  height: 30px;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 #contact-form .small-heading {
-    font-size: 38px;
-    line-height: initial;
+  font-size: 38px;
+  line-height: initial;
 }
 
-#contact-form .heading-wrapper>.row {
-    column-gap: 15px !important;
+#contact-form .heading-wrapper > .row {
+  column-gap: 15px !important;
 }
 
-#contact-form .container {
-    max-width: 1240px;
+#contact-form .container,
+#company-info .container {
+  max-width: 1240px;
 }
-
 
 #contact-form .text-wrapper {
-    margin-top: 30px;
-    max-width: 694px;
+  margin-top: 30px;
+  max-width: 694px;
 }
 
 #contact-form p {
-    line-height: 28px;
-    margin: 23px 0 45px;
+  line-height: 28px;
+  margin: 23px 0 45px;
 }
 
 #contact-form img {
-    width: 258px;
+  width: 258px;
 }
 
 #contact-form input,
 #contact-form textarea {
-    background-color: var(--gray);
-
+  background-color: var(--gray);
 }
 
 #contact-form form .row .column {
-    width: 50%;
+  width: 50%;
 }
 
 #contact-form button img {
-    width: 18px;
+  width: 18px;
 }
 
 #contact-form .mockup {
-    position: relative;
-    z-index: 44;
+  position: relative;
+  z-index: 44;
 }
 
-
 #contact-form .anim-button {
-    margin-top: 20px;
-    width: 100%;
+  margin-top: 20px;
+  width: 100%;
 }
 
 @media all and (max-width: 1023px) {
+  #contact-form .mockup,
+  #contact-form .container > .row:nth-child(1) {
+    flex-direction: column;
+  }
 
-    #contact-form .mockup,
-    #contact-form .container>.row:nth-child(1) {
-        flex-direction: column;
-    }
-
-    #contact-form .text-wrapper {
-        padding-top: var(--section-padding-equal-big);
-    }
-
-    
+  #contact-form .text-wrapper {
+    padding-top: var(--section-padding-equal-big);
+  }
 }
 
-
 @media all and (max-width: 500px) {
-    #contact-form form>.row {
-        flex-direction: column;
-    }
+  #contact-form form > .row,
+  #company-info .row {
+    flex-direction: column;
+  }
 
-    #contact-form form .row .column {
-        width: 100%;
-    }
+  #contact-form form .row .column {
+    width: 100%;
+  }
+}
 
+#company-info {
+  padding: var(--section-padding-equal-big) 0;
+  background-color: var(--gray);
+}
+
+#company-info p {
+  font-weight: 300;
+  line-height: 20px;
+  color: #a7a7a7;
+}
+
+#company-info .row {
+  column-gap: 15%;
+  row-gap: 40px;
 }
