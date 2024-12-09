@@ -1,3 +1,7 @@
+.slide-in span {
+    color: var(--white) !important;
+}
+
 .slide-in,
 .slide-out {
     background-color: var(--black);
@@ -11,7 +15,3 @@
 
 }
 
-.slide-in span {
-    color: var(--white) !important;
-}
- 
