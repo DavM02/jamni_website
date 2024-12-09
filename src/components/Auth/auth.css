@@ -1,0 +1,73 @@
+.sign-in .form-heading,
+.sign-up .form-heading {
+  font-size: 46px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.sign-in,
+.sign-up {
+  border-radius: 20px;
+  z-index: 557;
+  width: 90%;
+  padding: 70px clamp(1.5625rem, 0.6538rem + 4.0385vw, 5.5rem);
+  background-color: var(--white);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 460px;
+  transform: translate(-50%, -50%);
+}
+
+.auth {
+  position: fixed;
+  z-index: 559;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sign-in form,
+.sign-up form {
+  max-width: 284px;
+}
+
+.sign-in form .xxxsmall-text,
+.sign-up form .xxxsmall-text {
+  color: #a7a7a7;
+  margin-top: 10px;
+}
+
+.sign-in form .xxxsmall-text span,
+.sign-up form .xxxsmall-text span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sign-in form input,
+.sign-up form input {
+  background-color: var(--gray);
+}
+
+.sign-in form input:nth-child(2) {
+  margin-bottom: 12px;
+}
+
+.sign-in .anim-button,
+.sign-up .anim-button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.close-auth-modal {
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+  top: 13px;
+  font-weight: 500;
+}
+
+.auth p {
+  line-height: 14.62px;
+}

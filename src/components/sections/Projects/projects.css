@@ -95,17 +95,17 @@
     justify-self: center;
 }
 
+#projects .arrow-left,
+#projects .arrow-right {
+    transition: var(--transition) 0.5s transform;
+}
+
 #projects .circle {
     background-color: var(--black);
     border-radius: 50%;
     min-width: 156px;
     aspect-ratio: 1/1;
     cursor: pointer;
-}
-
-#projects .arrow-left,
-#projects .arrow-right {
-    transition: var(--transition) 0.5s transform;
 }
 
 #projects .circle img {
