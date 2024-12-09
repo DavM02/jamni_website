@@ -75,7 +75,7 @@
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 550px) {
   #contact-form form > .row,
   #company-info .row {
     flex-direction: column;

@@ -12,12 +12,10 @@ import NoFound from "./pages/NoFound/NoFound";
 import ReviewsPage from "./pages/ReviewsPage/ReviewsPage";
 import NewsRoute from "./pages/NewsPage/Route";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
-import Map from "./components/sections/Contacts/Map";
+import ProjectPage from "./pages/ProjectPage/ProjectPage";
 function App() {
-
-   const location = useLocation()
-   return (
-
+  const location = useLocation();
+  return (
     <div className="App">
       <MainContextProvider>
         <Header />
@@ -25,14 +23,15 @@ function App() {
           <SWRConfigWrapper>
             <main>
               <AnimatePresence mode="wait" initial={false}>
-                <Routes location={location} key={location.pathname} >
+                <Routes location={location} key={location.pathname}>
                   <Route path="/" element={<HomePage />} />
-                  <Route path="news/*" element={<NewsRoute/>} />
+                  <Route path="news/*" element={<NewsRoute />} />
                   <Route path="reviews" element={<ReviewsPage />} />
+                  <Route path="project" element={<ProjectPage />} />
                   <Route path="about" element={<AboutPage />} />
-                   <Route path="contacts" element={<ContactsPage />} />
+                  <Route path="contacts" element={<ContactsPage />} />
                   <Route path="catalog/*" element={<CatalogRoute />} />
-                  <Route path="/*" element={<NoFound/>} />
+                  <Route path="/*" element={<NoFound />} />
                 </Routes>
               </AnimatePresence>
             </main>

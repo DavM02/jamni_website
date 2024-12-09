@@ -1,0 +1,112 @@
+#project {
+  background-color: var(--gray);
+  padding-top: var(--section-padding-equal-big);
+}
+
+#project .container .text-center {
+  max-width: 809px;
+  padding-bottom: clamp(2.5rem, 1.7788rem + 3.2051vw, 5.625rem);
+}
+
+#project .text-center p:nth-child(3) {
+  margin-top: clamp(1.875rem, 1.5865rem + 1.2821vw, 3.125rem);
+}
+
+#project .arrow {
+  display: inline-block;
+  height: 85px;
+  margin-top: 50px;
+}
+
+#project .arrow img {
+  height: 95px;
+  width: 38px;
+}
+
+#project .section-layout {
+  background-color: var(--white);
+
+  display: grid;
+  grid-template-columns: 1fr 132px 1fr;
+  grid-template-areas:
+    "a a b"
+    "c d b"
+    "c e e";
+  column-gap: 100px;
+}
+
+#project .section-layout > div {
+  grid-area: var(--area);
+}
+#project .section-layout > div:nth-child(2) {
+  margin-bottom: 130px;
+}
+#project .section-layout > div:nth-child(3) {
+  margin-top: 130px;
+}
+#project .section-layout .image {
+  height: 710px;
+}
+
+#project .section-layout .image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#project .circle {
+  background-color: var(--black);
+  border-radius: 50%;
+  width: 132px;
+  aspect-ratio: 1/1;
+}
+
+#project .circle img {
+  filter: invert();
+  width: 113px;
+  margin-bottom: 5px;
+}
+
+#project .form-container {
+  background-color: var(--gray);
+  width: 100%;
+  padding: clamp(3.125rem, 2.2596rem + 3.8462vw, 6.875rem)
+    clamp(1.5625rem, 0.4808rem + 4.8077vw, 6.25rem);
+}
+
+#project .center-gr {
+  max-width: 780px;
+}
+
+#project .center-gr:nth-child(1) {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+#project .center-gr:nth-child(5) {
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+#project .section-layout div:nth-child(4) {
+  align-self: center;
+}
+#project .form-container p {
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+#project .section-layout div:nth-child(5) textarea {
+  height: 100%;
+}
+
+#project .form-container .anim-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#project .form-container .column {
+  width: 50%;
+}
+
+#project .form-container .main-input {
+  background-color: var(--white);
+}

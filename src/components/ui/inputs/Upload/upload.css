@@ -1,0 +1,42 @@
+.upload {
+  width: 100%;
+  border-radius: 20px;
+  background: var(--white);
+  height: 34px;
+  position: relative;
+}
+
+.upload input {
+  opacity: 0;
+  width: 100%;
+}
+
+.upload .row {
+  pointer-events: none;
+  padding: 0 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.upload label {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 88;
+}
+
+.upload img {
+  width: 17px;
+}
+
+.upload span {
+  color: #a7a7a7;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+}
