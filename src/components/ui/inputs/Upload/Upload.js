@@ -19,7 +19,7 @@ export default function Upload({ text = "dsadsad" }) {
       <label htmlFor="upload"></label>
       <div className="row center-y gap-5">
         <img width={17} height={17} src={recieve} alt="reviece" />
-        <span className="xxsmall-text text-main">{name}</span>
+        <span className="xxsmall-text text-main text-gray">{name}</span>
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ export default function News() {
     <section id="news">
       <div className="container" >
         <div className='row gap-10 xxxsmall-text text-main text-black up-case'>
-          <Link to={'/'}>
+          <Link className="text-gray" to={'/'}>
             Главная
           </Link>
           <span>/</span>

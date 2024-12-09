@@ -8,7 +8,7 @@
 }
 
 .main-input::placeholder {
-  color: #a7a7a7;
+  color: var(--text-gray);
 }
 
 .main-input:focus-visible {

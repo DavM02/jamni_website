@@ -12,10 +12,6 @@
     margin-bottom: 15px;
 }
 
-#filter .filter-header a {
-    color: #A7A7A7;
-}
-
 #filter .filter-header>div:nth-child(1) {
     padding-bottom: var(--grid-padding);
 }

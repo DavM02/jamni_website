@@ -1,15 +1,15 @@
 export default function ArticleText({ fullText }) {
     return (
         <>
-            <div className="gap-a"></div>
-            <div className="b">
+            <div style={{ '--area': 'gap-a' }}></div>
+            <div style={{ '--area': 'b' }}>
                 <p className="xsmall-text text-main">{fullText[0]}</p>
             </div>
-            <div className="c">
+            <div style={{ '--area': 'c' }}>
                 <p className="xsmall-text text-main">{fullText[1]}</p>
             </div>
-            <div className="gap-b"></div>
-            <div className="d">
+            <div style={{ '--area': 'gap-b' }} ></div>
+            <div style={{ '--area': 'd' }}  >
                 <p className="xsmall-text text-main">{fullText[0]}</p>
             </div>
         </>

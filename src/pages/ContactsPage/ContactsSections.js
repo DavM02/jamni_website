@@ -8,7 +8,7 @@ function ContactsSections() {
       <section id="company-info">
         <div className="container">
           <div className="row">
-            <p className="xxxsmall-text text-main">
+            <p className="xxxsmall-text text-main text-gray">
               Общество с ограниченной ответственностью «ПАРКИТЕКТУРА»
               <br /> ИНН 7736656972
               <br /> КПП 771701001
@@ -17,7 +17,7 @@ function ContactsSections() {
               Сельскохозяйственная, д12А, стр.6, 2 этаж, пом I, ком 12
               <br /> ОКПО 17255738
             </p>
-            <p className="xxxsmall-text text-main">
+            <p className="xxxsmall-text text-main text-gray">
               ОКТМО 459044000
               <br />
               ОКВЭД 01.41.2

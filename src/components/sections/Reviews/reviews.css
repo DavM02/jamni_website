@@ -2,9 +2,6 @@
     padding: 40px 0 clamp(3.75rem, 3.2163rem + 2.3718vw, 6.0625rem);
 }
 
-#reviews a {
-    color: #a7a7a7;
-}
 
 #reviews .section-layout {
     display: grid;
@@ -39,7 +36,6 @@
 }
 
 #reviews .review-item .xxsmall-text:not(p + span.xxsmall-text, .review-image+span.xxsmall-text) {
-    color: #A7A7A7;
     display: block;
 }
 
@@ -66,9 +62,8 @@
 
 #reviews .review-output {
     padding: 10px 20px;
-    border: #A7A7A7 1px solid;
+    border: var(--gray-text) 1px solid;
     font-weight: 400 !important;
-    color: #A7A7A7;
     height: 35px;
     border-radius: 20px;
 }

@@ -19,7 +19,7 @@ export default function Article() {
   return (
     <section id="news-article">
       <div className="container">
-        <div className='row wrap center-y gap-10 xxxsmall-text text-main text-black up-case'>
+        <div className='row wrap center-y gap-10 xxxsmall-text text-main text-gray up-case'>
           <Link to={'/'}>
             Главная
           </Link>
@@ -28,7 +28,7 @@ export default function Article() {
             Новости
           </Link>
           <span>/</span>
-          <span>{title.replaceAll('_', ' ')}</span>
+          <span className='text-black'>{title.replaceAll('_', ' ')}</span>
         </div>
         <AnimatePresence mode="wait">
           {error ? (

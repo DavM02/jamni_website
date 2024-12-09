@@ -35,7 +35,7 @@ export default function Reviews() {
         <section id='reviews'>
             <div className="container" >
                 <div className='row gap-10 xxxsmall-text text-main text-black up-case'>
-                    <Link to={'/'}>
+                    <Link className='text-gray' to={'/'}>
                         Главная
                     </Link>
                     <span>/</span>

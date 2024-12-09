@@ -16,11 +16,6 @@
     border-bottom: 1px solid var(--line-bg);
 }
 
-#news .news-filter,
-#news a {
-  color: #a7a7a7;
-}
-
 #news .news-filter .news-filter-item {
   position: relative;
 }

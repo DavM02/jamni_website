@@ -33,7 +33,7 @@ export default function FilterHeader({ data, setShowParams, query, isMobile }) {
         <>
             <div className='filter-header'>
                 <div className='row gap-10 xxxsmall-text text-main text-black up-case'>
-                    <Link to={'/'}>
+                    <Link className='text-gray' to={'/'}>
                         Главная
                     </Link>
                     <span>/</span>

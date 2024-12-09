@@ -1,10 +1,10 @@
 export default function ArticleCareRules({ careRules }) {
     return (
         <>
-            <div className="f">
+            <div style={{ '--area': 'f' }} >
                 <span className="xsmall-text text-main up-case">10 правил по уходу за мебелью</span>
             </div>
-            <ol className="xsmall-text text-main g">
+            <ol style={{ '--area': 'g' }} className="xsmall-text text-main">
                 {careRules.map((rule, index) => (
                     <li key={index}>
                         <p>{rule}</p>

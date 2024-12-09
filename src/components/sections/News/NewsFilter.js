@@ -12,7 +12,7 @@ export default function NewsFilter() {
   ];
 
   return (
-    <div className="news-filter row center-x xsmall-text text-main up-case">
+    <div className="news-filter row center-x xsmall-text text-main text-gray up-case">
       <div className="row wrap">
         {filterItems.map(({ label, value }) => {
           const isActive = allFilterParams.includes(value) || (value === "" && allFilterParams.length === 0);

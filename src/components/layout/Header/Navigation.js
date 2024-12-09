@@ -1,8 +1,8 @@
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import NestedList from './NestedList'; 
-import userIcon from '../../../assets/icons/user.svg'
 import heartIcon from '../../../assets/icons/heart.svg'
 import { useEffect } from 'react';
+import OpenAuthModals from './OpenAuthModals';
 
 export default function Navigation({ menu, setMenu }) {
 
@@ -23,9 +23,7 @@ useEffect(() => {
           <div></div>
         </div>
         <div className='icons row gap-25'>
-          <div className='icon'>
-            <img src={userIcon} alt='user-icon' />
-          </div>
+          <OpenAuthModals/>
           <div className='icon'>
             <img src={heartIcon} alt='heart-icon' />
           </div>

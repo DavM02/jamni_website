@@ -1,13 +1,17 @@
 :root {
     --transition: cubic-bezier(0.645, 0.045, 0.355, 1);
     --gray: #F5F5F5;
+    --gray-text: #a7a7a7;
     --white: #FFFFFF;
     --black: #000000;
     --line-bg: #D3D3D3;
     --backdrop: #00000052;
+
     --placeholder-1: rgb(157, 153, 149);
     --placeholder-2: rgb(73 69 69);
     --placeholder-3: rgb(87, 99, 87);
+
+    --red-error: #E17070;
 
     --palette-gray-light: #D9D9D9;
     --palette-brown: #6A4C2D;

@@ -18,7 +18,7 @@ export default function NewsItem({ el, height }) {
           alt={`news-image-${el.id + 1}`}
         />
       </div>
-      <div className="row s-between gap-10 xxxsmall-text text-main up-case">
+      <div className="row s-between gap-10 xxxsmall-text text-main text-gray up-case">
         <span>{el.tag}</span>
         <span>{el.date}</span>
       </div>

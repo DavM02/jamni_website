@@ -46,7 +46,7 @@ export default function ReviewsHeader({ reviewsCount }) {
             </div>
             <div className='row wrap gap-10'>
                 {Object.values(allRates).reverse().map((el, i) => {
-                    return <div className='review-output row gap-5 center-y text-main xsmall-text' key={i}>
+                    return <div className='review-output row gap-5 center-y text-main text-gray xsmall-text' key={i}>
                         {Math.abs(5-i)} <ReviewStarIcon filled={false} /> {`(${el})`}
                     </div>
                 })}

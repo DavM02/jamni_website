@@ -35,7 +35,6 @@
 
 .sign-in form .xxxsmall-text,
 .sign-up form .xxxsmall-text {
-  color: #a7a7a7;
   margin-top: 10px;
 }
 
@@ -70,4 +69,26 @@
 
 .auth p {
   line-height: 14.62px;
+}
+ @media all and (max-width: 500px) {
+  .sign-up .form-heading {
+      font-size: 37px !important;
+    }
+ }
+
+ 
+@media all and (max-height: 500px) {
+ 
+    .auth {
+        overflow: scroll;
+          padding-bottom: 20px;
+    }
+  .sign-up, .sign-in{
+      top: 20px;
+        left: 50%;
+       
+        transform: translateX(-50%);
+     
+
+  }
 }

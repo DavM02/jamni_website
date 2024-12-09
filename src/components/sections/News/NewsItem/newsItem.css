@@ -31,7 +31,3 @@
     object-fit: cover;
     transition: var(--transition) 1s transform, opacity 0.3s !important;
 }
-
-.news-item .row span {
-    color: #a7a7a7;
-}

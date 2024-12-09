@@ -43,10 +43,6 @@
     font-family: inherit;
 }
 
-#news-article a,
-#news-article a+span {
-    color: #A7A7A7;
-}
 
 #news-article .section-layout {
     margin-top: 58px;
@@ -62,60 +58,10 @@
         "j gap-a k k k";
 }
 
-#news-article .section-layout .gap-c {
-    grid-area: gap-c;
-}
 
-#news-article .section-layout .gap-b {
-    grid-area: gap-b;
-}
-
-#news-article .section-layout .gap-a {
-    grid-area: gap-a;
-}
-
-#news-article .section-layout .a {
-    grid-area: a;
-}
-
-#news-article .section-layout .b {
-    grid-area: b;
-}
-
-#news-article .section-layout .c {
-    grid-area: c;
-}
-
-#news-article .section-layout .d {
-    grid-area: d;
-}
-
-#news-article .section-layout .e {
-    grid-area: e;
-}
-
-#news-article .section-layout .f {
-    grid-area: f;
-}
-
-#news-article .section-layout .g {
-    grid-area: g;
-}
-
-#news-article .section-layout .h {
-    grid-area: h;
-}
-
-#news-article .section-layout .i {
-    grid-area: i;
-}
-
-#news-article .section-layout .j {
-    grid-area: j;
-}
-
-#news-article .section-layout .k {
-    grid-area: k;
+#news-article .section-layout>div,
+#news-article .section-layout>ol {
+    grid-area: var(--area);
 }
 
 
@@ -155,15 +101,21 @@
         padding: unset;
     }
 
-    .a, .b, .f, .g, .j, .k {
+    #news-article .section-layout>div:nth-child(1),
+    #news-article .section-layout>div:nth-child(3),
+    #news-article .section-layout>ol,
+    #news-article .section-layout>div:nth-last-child(4),
+    #news-article .section-layout>div:nth-last-child(2),
+    #news-article .section-layout>div:nth-last-child(1) {
         padding: 0 var(--container-padding);
     }
 
-    .c {
-    padding-left: var(--container-padding);
+    #news-article .section-layout>div:nth-child(4) {
+        padding-left: var(--container-padding);
     }
-    .d {
-        padding-right:  var(--container-padding);
+
+    #news-article .section-layout>div:nth-child(6) {
+        padding-right: var(--container-padding);
     }
 }
 
@@ -186,7 +138,8 @@
         ;
 
     }
-                .c, .d {
-                    padding: 0 var(--container-padding) !important;
-                }
+
+                #news-article .section-layout>div:nth-child(6),     #news-article .section-layout>div:nth-child(4){
+        padding: 0 var(--container-padding) !important;
+    }
 }
