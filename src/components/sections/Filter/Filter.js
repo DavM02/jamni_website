@@ -32,11 +32,11 @@ export default function Filter({ collections, materials, headline, price }) {
         handleFilter(mutate);
 
     }, [searchParams, isLoading]);
-
+    
     const isDesktop = useMediaQ('(max-width: 1023px)');
     const isMobile = useMediaQ('(max-width: 480px)');
 
- 
+
     return (
         <section id="filter">
             <div className="container" >
@@ -61,8 +61,8 @@ export default function Filter({ collections, materials, headline, price }) {
                     />
                     {dataLength && (
                         <Pagination
-                        scrollOffset={780}
-                        pagesCount={Math.ceil(dataLength / 17)} />
+                            scrollOffset={780}
+                            pagesCount={Math.ceil(dataLength / 17)} />
                     )}
                 </div>
             </div>

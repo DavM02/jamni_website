@@ -19,7 +19,7 @@ const SliderNav = ({ onPrev, onNext, itemsCount }) => {
             setIndicator((prev) => (prev === 0 ? (itemsCount - 2) : prev - 1));
         });
     };
-
+    
     return (
         // <div className='row center-x'>
         <div className='slider-nav row center-y s-between gap-20'>
@@ -36,7 +36,7 @@ const SliderNav = ({ onPrev, onNext, itemsCount }) => {
             <div className='slider-indicator'>
                 <div
                     className='indicator-line'
-                    style={{ left: `${(100 / itemsCount) * indicator}%` }}
+                    style={{ left: `${Math.min((100 / itemsCount) * indicator, 80)}%` }}
                 ></div>
             </div>
             <button

@@ -2,7 +2,7 @@ import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import AddToFav from '../../../Cart/Favorites/AddToFav'
 export default function FilterItem({ item, el }) {
-
+    console.log(item.advantages)
     return (
         <div className="filter-item"
             style={{ gridArea: el, }}>
@@ -14,7 +14,7 @@ export default function FilterItem({ item, el }) {
                         effect="opacity"
                         height={'inherit'}
                         width="100%"
-                        src={item.img}
+                        src={item.images[0]}
                         alt={item.name}
                         className="image"
                     />
