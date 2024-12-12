@@ -1,8 +1,9 @@
 import ProductImageSlider from "./ProductImageSlider";
 import "./productOptions.css";
 import useSWRImmutable from "swr/immutable";
-import { useParams, useSearchParams, useLocation } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 import { getItem } from "../../../db/loadData";
+import ProductDetails from "./ProductDetails";
 export default function ProductOptions() {
   const [searchParams] = useSearchParams();
   const param = useParams();
@@ -14,13 +15,17 @@ export default function ProductOptions() {
     getItem
   );
 
-  console.log(data);
-
+ 
   return (
     <section id="product-options">
       <div className="container">
         <div className="section-layout">
-          <ProductImageSlider />
+          <ProductImageSlider images={data?.images} />
+          <ProductDetails
+            
+            catalog={data?.collection}
+            data={data}
+          />
         </div>
       </div>
     </section>

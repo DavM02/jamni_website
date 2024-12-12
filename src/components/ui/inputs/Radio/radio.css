@@ -1,0 +1,38 @@
+.custom-radio span {
+    color: #AAAAAA;
+        transition: var(--transition) 0.5s color;
+}
+
+.custom-radio {
+
+        position: relative;
+}
+
+.custom-radio input:checked+div, .custom-radio:hover input +div {
+    border: 1px solid var(--black);
+}
+
+.custom-radio input:checked+div span,
+.custom-radio:hover input+div span {
+    color: var(--black);
+}
+
+.custom-radio div {
+    transition: var(--transition) 0.5s border;
+    border: 1px solid var(--line-bg);
+    border-radius: 20px;
+    height: 48px;
+
+
+    min-width: 180px;
+}
+
+.custom-radio input {
+        cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
