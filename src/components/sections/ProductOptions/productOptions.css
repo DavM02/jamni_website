@@ -1,0 +1,14 @@
+#product-options {
+  padding: 56px 0 45px;
+}
+
+#product-options .section-layout {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 60% 40%;
+}
+
+#product-options .product-image-slider .main-image {
+  height: 670px;
+  width: 100%;
+}

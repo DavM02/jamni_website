@@ -26,6 +26,7 @@
 }
 
 #filter .filter-item {
+  cursor: pointer;
   position: relative;
   margin-bottom: 30px;
 }

@@ -1,89 +1,93 @@
-import { ref, get, query, startAt, endAt, orderByKey, orderByChild, equalTo } from "firebase/database";
-import { database } from './firebaseConfig';
+import {
+  ref,
+  get,
+  query,
+  startAt,
+  endAt,
+  orderByKey,
+  orderByChild,
+  equalTo,
+} from "firebase/database";
+import { database } from "./firebaseConfig";
 
 async function loadData([path, page, count]) {
-    const startPage = (page - 1) * count;
-  
-    try {
-         
-        const dbRef = ref(database, path);
+  const startPage = (page - 1) * count;
 
-        const limitedQuery = query(dbRef, orderByKey(), startAt(String(startPage)), endAt(String(startPage + count-1)));
+  try {
+    const dbRef = ref(database, path);
 
-        const snapshot = await get(limitedQuery);
- 
- 
-        if (snapshot.exists()) {
-    
-            const data = snapshot.val();
-            return Array.isArray(data) ? Object.values(data) : Object.values(data).map((item, index) => item);
+    const limitedQuery = query(
+      dbRef,
+      orderByKey(),
+      startAt(String(startPage)),
+      endAt(String(startPage + count - 1))
+    );
 
-        } else {
-            return []; 
-        }
-    } catch (error) {
-        throw new Error('An error occured when loading');
+    const snapshot = await get(limitedQuery);
+
+    if (snapshot.exists()) {
+      const data = snapshot.val();
+      return Array.isArray(data)
+        ? Object.values(data)
+        : Object.values(data).map((item, index) => item);
+    } else {
+      return [];
     }
+  } catch (error) {
+    throw new Error("An error occured when loading");
+  }
 }
 
 export default loadData;
 
 export async function getLength([path]) {
-    try {
-        const dbRef = ref(database, path.replace('catalog/', ''));
+  try {
+    const dbRef = ref(database, path.replace("catalog/", ""));
 
-         const snapshot = await get(query(dbRef, orderByKey()));
+    const snapshot = await get(query(dbRef, orderByKey()));
 
-        if (snapshot.exists()) {
-          
-            return snapshot.size;
-        } else {
-            return 0;  
-        }
-    } catch (error) {
-        
-        throw new Error(`error: ${error.message}`);
+    if (snapshot.exists()) {
+      return snapshot.size;
+    } else {
+      return 0;
     }
+  } catch (error) {
+    throw new Error(`error: ${error.message}`);
+  }
 }
 
 export async function getReviewsCount() {
-    try {
-        const dbRef = ref(database, ('reviews'));
+  try {
+    const dbRef = ref(database, "reviews");
 
-        const snapshot = await get(query(dbRef, orderByKey()));
+    const snapshot = await get(query(dbRef, orderByKey()));
 
-        if (snapshot.exists()) {
-            return snapshot.val().map(el => el.review);
-        } else {
-            return 0;
-        }
-    } catch (error) {
-
-        throw new Error(`error: ${error.message}`);
+    if (snapshot.exists()) {
+      return snapshot.val().map((el) => el.review);
+    } else {
+      return 0;
     }
+  } catch (error) {
+    throw new Error(`error: ${error.message}`);
+  }
 }
 
- 
-export async function getArticle([id]) {
-    try {
-        console.log(id)
-        const articlesRef = ref(database, 'news'); 
-        const q = query(articlesRef, orderByChild('id'), equalTo(id)); 
+export async function getItem([id, dbName]) {
+  try {
+    console.log("fecthed");
+    const articlesRef = ref(database, dbName);
+    const q = query(articlesRef, orderByChild("id"), equalTo(id));
 
-        const snapshot = await get(q);
+    const snapshot = await get(q);
 
-        if (snapshot.exists()) {
-            const data = snapshot.val();
-   
-            return Object.values(data)[0]; 
-        } else {
-            return null;
-        }
-    } catch (error) {
-        throw new Error('An error occurred while loading the article');
+    if (snapshot.exists()) {
+      const data = snapshot.val();
+
+      return Object.values(data)[0];
+    } else {
+      return null;
     }
+  } catch (error) {
+    throw new Error("An error occurred while loading the article");
+  }
 }
-
-
-
- 
