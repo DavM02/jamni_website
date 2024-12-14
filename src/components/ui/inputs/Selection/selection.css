@@ -1,41 +1,49 @@
 .custom-selection {
-    cursor: pointer;
+  cursor: pointer;
+  user-select: none;
 }
 
-.custom-selection .selection-header {
-    width: 100%;
-    border-radius: 20px 20px 20px 20px;
-    border: 1px solid var(--line-bg);
-    height: 48px;
-    padding: 0 24px;
+.custom-selection .row {
+  height: 48px;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--line-bg);
+}
+
+.custom-selection .selected-option {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid var(--line-bg);
+  height: 48px;
+
+  border: 1px solid var(--line-bg);
+  overflow: hidden;
+  transition: var(--transition) 0.8s height;
 }
 
 .custom-selection img {
-    transition: var(--transition) 0.8s transform;
-    width: 11px;
-    height: 11px;
-}
-
-.custom-selection .selection-items {
-    overflow: hidden;
-    transition: var(--transition) 0.8s height;
-    padding: 0 24px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-left: 1px solid var(--line-bg);
-    border-right: 1px solid var(--line-bg);
-    border-bottom: 1px solid var(--line-bg);
-}
-
-.custom-selection .selection-items li:nth-child(1) {
-    margin-top: 24px;
-}
-
-.custom-selection .selection-items li:nth-last-child(1) {
-    margin-bottom: 24px;
+  transition: var(--transition) 0.8s transform;
+  width: 11px;
+  height: 11px;
 }
 
 .custom-selection ul li::first-letter {
+  text-transform: uppercase !important;
+}
 
-    text-transform: uppercase !important;
+.custom-selection ul {
+  padding: 0 9px;
+}
+
+.custom-selection ul li {
+  padding: 0 15px;
+
+  border-radius: 20px;
+}
+
+.custom-selection ul li:nth-child(1) {
+  margin-top: 20px;
+}
+
+.custom-selection ul li:hover {
+  background-color: var(--gray);
 }
