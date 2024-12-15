@@ -4,7 +4,7 @@ import useDebounce from '../../hooks/useDebounce';
 import './infiniteSlider.css'
 
 export default function InfiniteSlider({ sliderData, wrapper: WrapperComponent, children}) {
-    const initialItems = sliderData.map((item, index) => ({ ...item, id: index }));
+    const initialItems = sliderData.map((item, index) => ({ ...item, slideId: index }));
 
     const [slideItems, setSlideItems] = useState(initialItems);
     const [transformIndex, setTransformIndex] = useState(0);
@@ -53,7 +53,7 @@ export default function InfiniteSlider({ sliderData, wrapper: WrapperComponent, 
                 <div className='slider-wrapper'>
                     {slideItems.map((el, i) => (
                         <WrapperComponent
-                            key={el.id}
+                            key={el.slideId}
                             adjustTransition={adjustTransition}
                             transformIndex={i - transformIndex}
                             el={el}

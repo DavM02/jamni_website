@@ -30,7 +30,6 @@ export default function Reviews() {
     }, [searchParams, isLoading]);
 
 
-
     return (
         <section id='reviews'>
             <div className="container" >

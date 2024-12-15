@@ -1,11 +1,11 @@
 import './radio.css'
-export default function Radio({ text, ...props }) {
+export default function Radio({ value, ...props }) {
     return (
         <div className='custom-radio'>
-            <input type='radio' {...props} />
+            <input type='radio' value={value}  {...props}/>
             <div className='center-gr'>
                 <span className='xsmall-text text-main'>
-                    {text}
+                    {value}
                 </span>
             </div>
         </div>

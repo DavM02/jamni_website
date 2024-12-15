@@ -1,5 +1,16 @@
 import { useSearchParams } from "react-router-dom";
 
+export const colorMap = {
+    "серый": "palette-gray-light",
+    "черный": "black",
+    "коричневый": "palette-brown",
+    "белый": "white",
+    "бежевый": "palette-beige",
+    "зеленый": "palette-green",
+    "темно-серый": "palette-gray",
+    "светло-коричневый": "palette-brown-light",
+  };
+
 export default function useFilter(filterParam) {
   const [searchParams, setSearchParams] = useSearchParams();
   const allFilterParams = searchParams.getAll(filterParam) ?? [];
@@ -37,17 +48,6 @@ export default function useFilter(filterParam) {
     let min = null;
     let max = null;
 
-    const colorMap = {
-      серый: "palette-gray-light",
-      черный: "black",
-      коричневый: "palette-brown",
-      белый: "white",
-      бежевый: "palette-beige",
-      зеленый: "palette-green",
-      "темно-серый": "palette-gray",
-      "светло-коричневый": "palette-brown-light",
-    };
-
     const selectedColors = [];
 
     for (const [key, value] of searchParams.entries()) {
@@ -67,7 +67,7 @@ export default function useFilter(filterParam) {
     }
 
     mutate((data) => {
-      console.log("again");
+    
       return data.map((el) => {
         const matchQuery = Object.entries(filters).every(([key, values]) =>
           values.includes(el[key])

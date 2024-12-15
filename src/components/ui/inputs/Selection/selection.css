@@ -1,15 +1,22 @@
 .custom-selection {
   cursor: pointer;
   user-select: none;
+      margin-top: 5px;
 }
 
-.custom-selection .row {
+.custom-selection .row:not(li .row, .selected-option .row){
   height: 48px;
   padding: 0 24px;
   border-bottom: 1px solid var(--line-bg);
 }
 
-.custom-selection .selected-option {
+.custom-selection li .row div, .selected-option .row div  {
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+}
+
+.custom-selection .selection-group {
   width: 100%;
   border-radius: 20px;
   border: 1px solid var(--line-bg);
@@ -36,7 +43,7 @@
 
 .custom-selection ul li {
   padding: 0 15px;
-
+position: relative;
   border-radius: 20px;
 }
 
@@ -44,6 +51,20 @@
   margin-top: 20px;
 }
 
-.custom-selection ul li:hover {
-  background-color: var(--gray);
+.custom-selection ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  z-index: -1;
+  left: 0;
+  opacity: 0;
+    border-radius: 20px;
+  height: 35px;
+    background-color: var(--gray);
+  width: 100%;
+}
+
+.custom-selection ul li:hover::after {
+  opacity: 1;
+
 }

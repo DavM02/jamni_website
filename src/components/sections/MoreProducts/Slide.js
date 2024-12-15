@@ -1,7 +1,6 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import AddToFav from '../../Cart/Favorites/AddToFav'
-
+import AddToFav from '../../ui/buttons/AttToFav/AddToFav'
 export default function Slide({ el, adjustTransition, transformIndex }) {
     return (
         <div

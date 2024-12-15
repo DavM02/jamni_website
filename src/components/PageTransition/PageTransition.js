@@ -5,6 +5,7 @@ import { useBlocker } from "react-router-dom";
 import "./pageTransition.css";
 import AnimatedText from "../scroll/TextAnimation";
 import { MainContext } from "../../context/MainContext";
+import SmoothAppearance from "../ui/SmoothAppearance";
 
 function PageTransition(Component) {
   return function WrappedComponent(props) {
@@ -21,10 +22,12 @@ function PageTransition(Component) {
       return isAnimating && currentLocation.pathname !== nextLocation.pathname;
       // || currentLocation.pathname === nextLocation.pathname
     });
-
+ 
     return (
       <React.Fragment>
-        <Component {...props} />
+   
+          <Component {...props} />
+ 
 
         {ReactDOM.createPortal(
           <>

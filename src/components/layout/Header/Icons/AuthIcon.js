@@ -1,7 +1,7 @@
-import userIcon from "../../../assets/icons/user.svg";
+import userIcon from "../../../../assets/icons/user.svg";
 import { useState } from "react";
-import Auth from "../../Auth/Auth";
-export default function OpenAuthModals() {
+import Auth from "../../../Auth/Auth";
+export default function AuthIcon() {
     const [auth, setAuth] = useState(null);
     return (
         <>
@@ -11,5 +11,5 @@ export default function OpenAuthModals() {
 
             <Auth auth={auth} setAuth={setAuth} />
         </>
-  )
+    )
 }

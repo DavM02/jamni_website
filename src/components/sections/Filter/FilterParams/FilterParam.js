@@ -12,7 +12,7 @@ export default function FilterParam({
             {data.map((el, i) => {
                 return (
                     <li key={i} className="row center-y gap-10">
-                        <div className="custom-radio">
+                        <div className="custom-checkbox">
                             <input
                                 checked={allFilterParams.includes(el)}
                                 onChange={(e) => handleSearchParams(el)}

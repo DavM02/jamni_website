@@ -1,9 +1,11 @@
 import AnimButton from "../../ui/buttons/AnimButton/AnimButton";
 import Input from "../../ui/inputs/Input/Input";
 import CloseButton from "../CloseButton";
+import { useActionState, } from "react";
 export default function SignUp({ setAuth }) {
+  
   return (
-    <form>
+    <form action="#">
       <div className="text-center">
         <span className="form-heading text-heading text-black up-case">
           регистрация

@@ -1,29 +1,29 @@
 import { NavLink, useLocation } from 'react-router-dom';
-import NestedList from './NestedList'; 
+import NestedList from './NestedList';
 import heartIcon from '../../../assets/icons/heart.svg'
 import { useEffect } from 'react';
-import OpenAuthModals from './OpenAuthModals';
+import AuthIcon from './Icons/AuthIcon';
 
 export default function Navigation({ menu, setMenu }) {
 
 
-const location = useLocation().pathname
+  const location = useLocation().pathname
 
-useEffect(() => {
-   return () => {
-     setMenu({ open: false, backdrop: false, nested: false })
-   }
-}, [location])
+  useEffect(() => {
+    return () => {
+      setMenu({ open: false, backdrop: false, nested: false })
+    }
+  }, [location])
 
   return (
     <div className='navigation' style={{ left: menu.open ? '0' : '-100%' }}>
       <div className='mobile-header row center-y s-between'>
-        <div className={`menu-bars ${menu.open ? 'active' : 'inactive'}`} onClick={() => setMenu({open: false, backdrop: false})}>
+        <div className={`menu-bars ${menu.open ? 'active' : 'inactive'}`} onClick={() => setMenu({ open: false, backdrop: false })}>
           <div></div>
           <div></div>
         </div>
         <div className='icons row gap-25'>
-          <OpenAuthModals/>
+          <AuthIcon />
           <div className='icon'>
             <img src={heartIcon} alt='heart-icon' />
           </div>
@@ -31,13 +31,13 @@ useEffect(() => {
       </div>
       <nav className='row center-x'>
         <ul className='row gap-70 text-main xsmall-text text-black up-case'>
-          <NestedList setMenu={setMenu} menu={menu}/>  
+          <NestedList setMenu={setMenu} menu={menu} />
           <li>
-            <NavLink 
+            <NavLink
               to={'news'}>новости</NavLink>
           </li>
           <li>
-            <NavLink 
+            <NavLink
               to={'about'}>о нас</NavLink>
           </li>
           <li>

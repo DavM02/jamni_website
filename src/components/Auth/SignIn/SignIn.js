@@ -3,7 +3,7 @@ import Input from "../../ui/inputs/Input/Input";
 import CloseButton from "../CloseButton";
 export default function SignIn({ setAuth }) {
   return (
-    <form>
+    <form action="#">
       <div className="text-center">
         <span className="form-heading text-heading text-black up-case">
           войти

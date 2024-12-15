@@ -21,7 +21,7 @@ export default function Filter({ collections, materials, headline, price }) {
     const [searchParams] = useSearchParams();
 
     const page = parseInt(searchParams.get("page") ?? 1);
-
+ 
     const { data, error, isLoading, mutate } = useSWRImmutable([key, page, 18]);
     const { data: dataLength } = useSWRImmutable([key], getLength);
     const { handleFilter } = useFilter();

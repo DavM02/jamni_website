@@ -1,0 +1,49 @@
+.add-to-favorites {
+    width: 25px;
+        height: 22px;
+    position: relative;
+}
+
+#filter .filter-item .add-to-favorites,
+#more-products .slider-item .add-to-favorites {
+    position: absolute;
+    top: 12px;
+    right: 9px;
+    z-index: 5;
+}
+
+@media all and (hover: hover) {
+
+    #filter .filter-item .add-to-favorites,
+        #more-products .slider-item .add-to-favorites {
+            opacity: 0;
+        }
+    
+        #filter .filter-item:hover .add-to-favorites,
+        #more-products .slider-item:hover .add-to-favorites {
+            opacity: 1;
+        }
+    
+       .add-to-favorites:hover svg path,
+       .add-to-favorites:hover svg path {
+            fill: var(--black);
+            
+        }
+}
+
+.add-to-favorites input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.add-to-favorites input:checked+svg path {
+    fill: var(--black) ;
+}
+ 

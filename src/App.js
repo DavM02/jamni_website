@@ -15,6 +15,7 @@ import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 function App() {
   const location = useLocation();
+  console.log('apprerendered')
   return (
     <div className="App">
       <MainContextProvider>

@@ -1,6 +1,6 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import AddToFav from "../../../Cart/Favorites/AddToFav";
+import AddToFav from "../../../ui/buttons/AttToFav/AddToFav";
 import { useNavigate } from "react-router-dom";
 export default function FilterItem({ item, el }) {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ export default function FilterItem({ item, el }) {
           style={{
             height:
               el === "l"
-                ? "calc(var(--filter-item-img-height) * 2 + 125px)"
+                ? "calc(var(--filter-item-img-height) * 2 + 101px)"
                 : "var(--filter-item-img-height)",
           }}
         >

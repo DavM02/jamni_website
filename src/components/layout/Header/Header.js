@@ -3,7 +3,7 @@ import './header.css';
 import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
-import UserIcons from './UserIcons';
+import Icons from './Icons/Icons';
 import SearchInput from '../../ui/inputs/SearchInput/SearchInput';
 import { MainContext } from '../../../context/MainContext';
 import useMediaQ from '../../../hooks/useMediaQ';
@@ -18,12 +18,12 @@ export default function Header() {
 
   useEffect(() => {
     if (scrollbarAccess.current) {
- 
+
       function handleScroll(event) {
         const scrollY = event.offset.y;
         setScroll(scrollY < 78);
       }
- 
+
       const scrollbarInstance = scrollbarAccess.current;
       scrollbarInstance.addListener(handleScroll);
 
@@ -34,43 +34,43 @@ export default function Header() {
 
     }
   }, [scrollbarAccess]);
- 
- 
 
-      useEffect(() => {
-        if (menu.open || menu.nested) {
-          setMenu({ open: false, backdrop: false, nested: false });
-        }
 
-      }, [query]);
 
- 
+  useEffect(() => {
+    if (menu.open || menu.nested) {
+      setMenu({ open: false, backdrop: false, nested: false });
+    }
 
-      return (
-        <header id='header'>
-          <ContactInfo />
-          <div className='menu' style={{ top: `${(!scroll && !query) ? 'calc(30px - 55px - (var(--header-container-padding)*2))' : '30px'}` }}>
-            <div className='container'>
-              <div className='grid-3 center-y'>
-                <div className='toggle-menu'>
-                  <div className='menu-bars' onClick={() => setMenu({ open: true, backdrop: true })}>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-                <SearchInput />
-                <div className='row center-x'>
-                  <Link to='/' className='logo'>
-                    <img width={148} height={55} src={logo} alt='logo' />
-                  </Link>
-                </div>
-                <UserIcons />
+  }, [query]);
+
+
+
+  return (
+    <header id='header'>
+      <ContactInfo />
+      <div className='menu' style={{ top: `${(!scroll && !query) ? 'calc(30px - 55px - (var(--header-container-padding)*2))' : '30px'}` }}>
+        <div className='container'>
+          <div className='grid-3 center-y'>
+            <div className='toggle-menu'>
+              <div className='menu-bars' onClick={() => setMenu({ open: true, backdrop: true })}>
+                <div></div>
+                <div></div>
               </div>
             </div>
-            <Navigation
-              setMenu={setMenu}
-              menu={menu} />
+            <SearchInput />
+            <div className='row center-x'>
+              <Link to='/' className='logo'>
+                <img width={148} height={55} src={logo} alt='logo' />
+              </Link>
+            </div>
+            <Icons />
           </div>
-        </header>
-      );
-    }
+        </div>
+        <Navigation
+          setMenu={setMenu}
+          menu={menu} />
+      </div>
+    </header>
+  );
+}
