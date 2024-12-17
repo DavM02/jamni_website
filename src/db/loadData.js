@@ -11,13 +11,13 @@ import {
 import { database } from "./firebaseConfig";
 
 async function loadData([path, page, count]) {
-  if (!path, !page, !count) {
-    return
+  if ((!path, !page, !count)) {
+    throw new Error("An error occured when loading");
   }
   const startPage = (page - 1) * count;
   try {
     const dbRef = ref(database, path);
- 
+
     const limitedQuery = query(
       dbRef,
       orderByKey(),
