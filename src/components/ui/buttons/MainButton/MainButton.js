@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './addToCartButton.css';
+import './mainButton.css';
 
-export default function AddToCartButton({...props}) {
+export default function MainButton({...props}) {
     const [isAnimation, setIsAnimating] = useState(false);
     const [allowAnim, setAllowAnim] = useState(true)
     const [entered, setEntered] = useState(false)
@@ -18,7 +18,7 @@ export default function AddToCartButton({...props}) {
         <button
            {...props}
             type="submit"
-            className={`add-to-cart-btn ${isAnimation ? 'anim' : 'no-anim'} ${isAnimation ? 'transform-back' : 'initial'}`}
+            className={`main-button ${isAnimation ? 'anim' : 'no-anim'} ${isAnimation ? 'transform-back' : 'initial'}`}
             onMouseEnter={(e) => {
                 handleAnim()
                 setEntered(true)
@@ -37,7 +37,7 @@ export default function AddToCartButton({...props}) {
             }}
 
         >
-            <span className="xsmall-text text-main up-case">добавить в корзину</span>
+            <span className="xsmall-text text-main up-case">{props.text}</span>
         </button>
     );
 }

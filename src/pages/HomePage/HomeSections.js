@@ -5,7 +5,7 @@ import Subscribe from '../../components/sections/Subscribe/Subscribe'
 import About from '../../components/sections/About/About'
 import ProductsDisplay from '../../components/sections/ProductsDisplay/ProductsDisplay'
 import Projects from '../../components/sections/Projects/Projects'
-console.log('fdsfd')
+ 
 function HomeSections() {
     return (
         <>

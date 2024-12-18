@@ -1,4 +1,3 @@
-// SliderNav.js
 import React, { useState } from 'react';
 import arrowLeft from '../../assets/icons/arrow-left.svg';
 import arrowRight from '../../assets/icons/arrow-right.svg';

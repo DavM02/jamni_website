@@ -15,7 +15,7 @@
     row-gap: 30px;
   }
 
-  #news-article .container {
+  #news-article .container:nth-child(2) {
     padding: unset;
   }
 

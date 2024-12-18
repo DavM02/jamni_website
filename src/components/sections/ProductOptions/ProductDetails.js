@@ -2,8 +2,6 @@ import ProductHeader from "./ProductHeader";
 import DownloadDetails from "./DownloadDetails";
 import Form from "./Form";
 export default function ProductDetails({ data, catalog }) {
-  const dimensions = data && data?.characteristics[0].dimensions;
-  const options = data && data?.characteristics[1].options;
 
   return (
     <div className="product-details">
@@ -14,18 +12,8 @@ export default function ProductDetails({ data, catalog }) {
       </span>
       <DownloadDetails />
       <Form
-        data={data && {
-          id: data.id,
-          image: data.images[0],
-          product: data.product,
-          name: data.name,
-          price: data.price,
-          options,
-          dimensions,
-          catalog,
-          colors: data.colors,
-        }}
-
+        data={data}
+        catalog={catalog}
       />
     </div>
   );

@@ -56,7 +56,7 @@ footer .footer-contacts .row:nth-last-child(1) a {
   text-underline-offset: 2px;
 }
 
-@media all and (max-width: 1119px) {
+@media all and (max-width: 1211px) {
   footer .footer-menu {
     justify-content: end;
   }

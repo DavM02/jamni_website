@@ -6,15 +6,14 @@ import Portal from "../../../ui/Portal";
 
 export default function CartIcon() {
   const {
-    error,
+    cartRecommendations,
+    getCartRecommendations,
     isCartOpen,
     toggleCart,
-    addedProduct,
-    getCartRecommendations,
-    cartRecommendations,
+    isAdded,
+
   } = cartModalStore();
 
-  console.log(cartRecommendations, error);
   return (
     <>
       <div
@@ -24,37 +23,38 @@ export default function CartIcon() {
           if (cartRecommendations.length === 0) {
             getCartRecommendations();
           }
-        }}
+        }
+
+        }
       >
         <img src={bagIcon} alt="bag-icon" />
       </div>
-      {
+   
         <Portal
           value={isCartOpen}
           root={"modal-root"}
-          className={"cart-wrapper"}
-        >
+          className={"cart-wrapper"}>
           <Cart />
         </Portal>
-      }
+ 
       <Backdrop
         onClick={() => toggleCart()}
         value={isCartOpen}
         root={"modal-root"}
         style={{ zIndex: 555 }}
       />
-      {
+ 
         <Portal
-          value={addedProduct.length > 0}
+          value={isAdded}
           root={"modal-root"}
           className="added-item"
         >
           <span className="xsmall-text text-main text-light up-case">
             Товар успешно добавлен в корзину!
           </span>
-          {/* <h1>{addedProduct}</h1> */}
+ 
         </Portal>
-      }
+ 
     </>
   );
 }

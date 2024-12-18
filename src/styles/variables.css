@@ -56,6 +56,8 @@
     --moreitems-slider-img-height-even: clamp(16.625rem, 16.1202rem + 2.2436vw, 18.8125rem);
 
     --grid-padding: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
+
+    --rec-slider-width: 95px;
 }
 
 

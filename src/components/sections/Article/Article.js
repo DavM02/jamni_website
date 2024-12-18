@@ -30,6 +30,9 @@ export default function Article() {
           <span>/</span>
           <span className="text-black">{title.replaceAll("_", " ")}</span>
         </div>
+      </div>
+      <div className="container">
+
         <AnimatePresence mode="wait">
           {error ? (
             <FetchError message={error.message} />

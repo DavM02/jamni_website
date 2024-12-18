@@ -29,7 +29,7 @@ export default function MoreArticles() {
                     ) : (
                         !isLoading && data ? <>
                             <SmoothAppearance>
-                                <InfiniteSlider sliderData={data.slice(0, 10)} wrapper={Slide} />
+                                    <InfiniteSlider itemWidth={'moreitems-slider-img-width'} sliderData={data.slice(0, 10)} wrapper={Slide} />
                             </SmoothAppearance>
                         </> : (
                             <DataLoading />

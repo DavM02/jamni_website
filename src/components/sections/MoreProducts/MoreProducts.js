@@ -72,7 +72,7 @@ export default function MoreProducts() {
                     <h2>еще товары</h2>
                     <span className='small-text text-main text-black up-case'>вам может понравиться</span>
                 </div>
-                <InfiniteSlider sliderData={sliderData} wrapper={Slide} />
+                <InfiniteSlider itemWidth={'moreitems-slider-img-width'} sliderData={sliderData} wrapper={Slide} />
             </div>
         </section>
     )

@@ -5,16 +5,21 @@ import { useBlocker } from "react-router-dom";
 import "./pageTransition.css";
 import AnimatedText from "../scroll/TextAnimation";
 import { MainContext } from "../../context/MainContext";
-import SmoothAppearance from "../ui/SmoothAppearance";
-
+import { cartModalStore } from "../../stores/cartModalStore";
+ 
 function PageTransition(Component) {
   return function WrappedComponent(props) {
     const [pathname, setPathname] = useState(null);
     const [isAnimating, setIsAnimating] = useState(false);
     const { scrollbarAccess } = useContext(MainContext);
+    const {isCartOpen, toggleCart} = cartModalStore()
     useEffect(() => {
       if (scrollbarAccess.current) {
         scrollbarAccess.current.scrollTo(0, 0);
+      }
+
+      if(isCartOpen) {
+        toggleCart(false)
       }
     }, []);
 

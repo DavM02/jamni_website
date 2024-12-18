@@ -76,18 +76,11 @@
 #project .center-gr {
   max-width: 780px;
 }
-
-#project .center-gr:nth-child(1) {
-  justify-self: flex-end;
-  align-self: flex-end;
-}
-#project .center-gr:nth-child(5) {
-  justify-self: flex-start;
-  align-self: flex-start;
-}
+ 
 #project .section-layout div:nth-child(4) {
   align-self: center;
 }
+
 #project .form-container p {
   line-height: 28px;
   font-weight: 400;

@@ -25,7 +25,10 @@ export default function Slider() {
 
     return (
         <>
-            <InfiniteSlider sliderData={initialItems} wrapper={Slide}>
+            <InfiniteSlider 
+            sliderData={initialItems} 
+                itemWidth={'bestsellers-slider-img-width'}
+            wrapper={Slide}>
                 <div className='heading-wrapper'>
                     <h1 className='text-center'>Бестселлеры</h1>
                 </div>

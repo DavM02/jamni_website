@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './header.css';
+import './media.css';
 import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';

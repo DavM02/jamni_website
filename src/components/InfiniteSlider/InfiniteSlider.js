@@ -2,8 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import SliderNav from './SliderNav';
 import useDebounce from '../../hooks/useDebounce';
 import './infiniteSlider.css'
+import SlideItemWrapper from './SlideItemWrapper';
 
-export default function InfiniteSlider({ sliderData, wrapper: WrapperComponent, children}) {
+export default function InfiniteSlider({ sliderData, wrapper: WrapperComponent, children, itemWidth, Tag = 'div'}) {
     const initialItems = sliderData.map((item, index) => ({ ...item, slideId: index }));
 
     const [slideItems, setSlideItems] = useState(initialItems);
@@ -52,12 +53,18 @@ export default function InfiniteSlider({ sliderData, wrapper: WrapperComponent, 
                 {children}
                 <div className='slider-wrapper'>
                     {slideItems.map((el, i) => (
-                        <WrapperComponent
+                        <SlideItemWrapper
                             key={el.slideId}
                             adjustTransition={adjustTransition}
                             transformIndex={i - transformIndex}
-                            el={el}
-                        />
+                            Tag={Tag}
+                            width={itemWidth}
+                        >
+                            <WrapperComponent
+
+                                el={el}
+                            />
+                        </SlideItemWrapper>
                     ))}
                 </div>
             </div>

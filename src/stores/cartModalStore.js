@@ -1,14 +1,12 @@
 import { create } from "zustand";
-import { userCartStore } from "./cartStore";
 import loadData, { getLength } from "../db/loadData";
 export const cartModalStore = create((set) => ({
   isCartOpen: false,
-  addedProduct: "",
+  isAdded: false,
   cartRecommendations: [],
   loading: false,
   error: null,
-  updateAddedProduct: (name) => set(() => ({ addedProduct: name })),
-  resetAddedProduct: () => set(() => ({ addedProduct: "" })),
+  toggleAdded: () => set((state) => ({ isAdded: !state.isAdded })),
   toggleCart: () => set((state) => ({ isCartOpen: !state.isCartOpen })),
   getCartRecommendations: async () => {
     set({ loading: true, error: null });
@@ -27,21 +25,4 @@ export const cartModalStore = create((set) => ({
   },
 }));
 
-userCartStore.subscribe(
-  (state) => state.products,
-  (products) => {
-    // Only update addedProduct if a new product is added (not on quantity change)
-    const latestProduct = products[products.length - 1];
-    if (latestProduct && !latestProduct.updated) {
-      cartModalStore.getState().updateAddedProduct(latestProduct.name);
-
-      // Mark the product as updated to avoid resetting it on quantity change
-      latestProduct.updated = true;
-
-      // Reset addedProduct after 1.5 seconds
-      setTimeout(() => {
-        cartModalStore.getState().resetAddedProduct();
-      }, 1500);
-    }
-  }
-);
+ 

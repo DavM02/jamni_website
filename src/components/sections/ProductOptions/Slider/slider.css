@@ -1,9 +1,12 @@
 #product-options .product-image-slider {
     height: fit-content;
 }
-
+#product-options .product-image-slider .column { 
+        height: clamp(18.75rem, 13.4135rem + 23.7179vw, 41.875rem);
+}
 #product-options .product-image-slider .main-image {
-    height: clamp(18.75rem, 13.4135rem + 23.7179vw, 41.875rem);
+height: clamp(18.75rem, 13.4135rem + 23.7179vw, 41.875rem);
+
     overflow: hidden;
     width: 100%;
     position: relative;

@@ -6,7 +6,7 @@ export default function CatalogCollections({ sliderData }) {
     return (
         <section id='catalog-collections'>
             <div className='container'>
-                <InfiniteSlider sliderData={sliderData} wrapper={Slide} />
+                <InfiniteSlider sliderData={sliderData} itemWidth={'catalog-slider-img-width'} wrapper={Slide} />
             </div>
         </section>
     )

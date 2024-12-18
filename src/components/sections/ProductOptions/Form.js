@@ -2,13 +2,16 @@
 import Dimensions from './Dimensions/Dimensions';
 import Options from './Options/Options';
 import AddToFav from '../../ui/buttons/AttToFav/AddToFav';
-import AddToCartButton from '../../ui/buttons/AddToCartButton/AddToCartButton';
+import MainButton from '../../ui/buttons/MainButton/MainButton';
 import { userCartStore } from '../../../stores/cartStore';
+import { cartModalStore } from '../../../stores/cartModalStore';
 
-export default function Form({ data }) {
+export default function Form({ data, catalog }) {
 
     const addToCart = userCartStore((state) => state.addProduct);
-  
+    const { toggleAdded } = cartModalStore()
+    const dimensions = data && data?.characteristics[0].dimensions;
+    const options = data && data?.characteristics[1].options;
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -16,10 +19,10 @@ export default function Form({ data }) {
         const formData = new FormData(e.target);
 
         const newProduct = {
-            catalog: data?.catalog,
+            catalog,
             id: data.id,
             product: data.product,
-            image: data.image,
+            image: data.images[0],
             name: data.name,
             collection: data.collection,
             price: data.price,
@@ -30,18 +33,24 @@ export default function Form({ data }) {
             newProduct[key] = value;
         }
 
-    
+
         addToCart(newProduct);
+
+        toggleAdded()
+
+        setTimeout(() => {
+            toggleAdded()
+        }, 1500);
     }
-console.log('lol')
+ 
     return (
         <form action="#" onSubmit={(e) => handleSubmit(e)}>
             <div className="row wrap gap-20">
-                <Dimensions dimensions={data?.dimensions} />
-                <Options options={data?.options} colors={data?.colors} />
+                <Dimensions dimensions={dimensions} />
+                <Options options={options} colors={data?.colors} />
             </div>
             <div className="submit-wrapper">
-                <AddToCartButton />
+                <MainButton type={"submit"} text="добавить в корзину"/>
                 <div className="row center-y center-x gap-10">
                     <AddToFav />
                     <span className="text-main xxsmall-text">В избранное</span>

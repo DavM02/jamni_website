@@ -14,7 +14,7 @@ export default function Project() {
         <ProjectHeader />
       </div>
       <div className="section-layout">
-        <div className="center-gr" style={{ "--area": "a" }}>
+        <div className="center-gr self-end-y self-end-x" style={{ "--area": "a" }}>
           <ProjectForm includeUpload={true} />
         </div>
         <div style={{ "--area": "b" }}>
@@ -26,7 +26,7 @@ export default function Project() {
         <div style={{ "--area": "d" }}>
           <ProjectLogo />
         </div>
-        <div className="center-gr" style={{ "--area": "e" }}>
+        <div className="center-gr self-start-y self-start-x" style={{ "--area": "e" }}>
           <ProjectForm />
         </div>
       </div>

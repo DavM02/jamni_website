@@ -48,6 +48,18 @@
     justify-self: flex-end;
 }
 
+.self-end-y {
+    align-self: flex-end;
+}
+
+.self-start-x {
+    justify-self: flex-start;
+}
+
+.self-start-y {
+    align-self: flex-start;
+}
+
 .end-x {
     justify-content: flex-end;
 }

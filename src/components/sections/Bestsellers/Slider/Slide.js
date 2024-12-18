@@ -1,15 +1,9 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-export default function Slide({ el, adjustTransition, transformIndex }) {
+export default function Slide({ el }) {
     return (
-        <div
-            className='slider-item'
-            style={{
-                left: `calc((var(--bestsellers-slider-img-width) + 20px) * ${transformIndex})`,
-                transition: adjustTransition ? 'var(--transition) left 0.7s' : 'unset'
-            }}
-        >
+        <>
             <div className='slider-image'>
                 <LazyLoadImage
                     // visibleByDefault={true} 
@@ -20,6 +14,6 @@ export default function Slide({ el, adjustTransition, transformIndex }) {
                     alt={`slider-image-${el.id + 1}`} />
             </div>
             <span className='small-text text-main text-black up-case'>{el.name}</span>
-        </div>
+        </>
     )
 }
