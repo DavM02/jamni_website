@@ -6,7 +6,7 @@ import Packing from './Packing';
 import ProductVisuals from './ProductVisuals';
 
 export default function DescriptionItem({ sectionKey, label, content, open, onToggle }) {
- 
+ console.log(content)
     return (
         <li>
             <div className="container">

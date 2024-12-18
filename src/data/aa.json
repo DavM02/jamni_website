@@ -2333,9 +2333,10 @@
             "discount": true,
             "id": 3,
             "images": [
-                "https://i.ibb.co/7SJ0w0k/img-1.jpg",
+                "https://i.ibb.co/pjv1Wds/img-1.jpg",
+                "https://i.ibb.co/9prPBsG/img-3.webp",
                 "https://i.ibb.co/N7jQ16x/img-2.webp",
-                "https://i.ibb.co/Zxsj4Z3/img-3.jpg"
+                "https://i.ibb.co/PZkGqGC/img-4.webp"
             ],
             "isNew": true,
             "material": "керамика",
@@ -2505,7 +2506,8 @@
             "images": [
                 "https://i.ibb.co/5ktYRt6/img-1.jpg",
                 "https://i.ibb.co/DpjCFB9/img-2.webp",
-                "https://i.ibb.co/p4DJnkn/img-3.webp"
+                "https://i.ibb.co/p4DJnkn/img-3.webp",
+                "https://i.ibb.co/258VftK/img-4.jpg"
             ],
             "isNew": true,
             "material": "ткань",
@@ -2925,44 +2927,26 @@
             "technicalSpecifications": {
                 "sizes": {
                     "диаметр": [
-                        {
-                            "value": 30,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 40,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 50,
-                            "unit": "см"
-                        }
+                        "30 см",
+                        "40 см",
+                        "50 см"
                     ],
                     "вес": [
-                        {
-                            "value": 800,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1000,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1200,
-                            "unit": "г"
-                        }
+                        "800 г",
+                        "1000 г",
+                        "1200 г"
                     ],
-                    "mechanism": [
-                        {
-                            "тип механизма": "кварцевый"
-                        },
-                        {
-                            "тип механизма": "механический"
-                        },
-                        {
-                            "тип механизма": "автоматический"
-                        }
+                    "механизм": [
+                        "кварцевый",
+                        "механический",
+                        "автоматический"
                     ]
+                },
+                "materials": {
+                    "основной материал": "сталь",
+                    "ремешок": "кожа",
+                    "стекло": "сапфировое",
+                    "декор": "с гравировкой"
                 }
             },
             "maintenance": [
@@ -3076,44 +3060,26 @@
             "technicalSpecifications": {
                 "sizes": {
                     "диаметр": [
-                        {
-                            "value": 30,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 40,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 50,
-                            "unit": "см"
-                        }
+                        "30 см",
+                        "40 см",
+                        "50 см"
                     ],
                     "вес": [
-                        {
-                            "value": 800,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1000,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1200,
-                            "unit": "г"
-                        }
+                        "800 г",
+                        "1000 г",
+                        "1200 г"
                     ],
-                    "mechanism": [
-                        {
-                            "тип механизма": "кварцевый"
-                        },
-                        {
-                            "тип механизма": "механический"
-                        },
-                        {
-                            "тип механизма": "автоматический"
-                        }
+                    "механизм": [
+                        "кварцевый",
+                        "механический",
+                        "автоматический"
                     ]
+                },
+                "materials": {
+                    "основной материал": "сталь",
+                    "ремешок": "кожа",
+                    "стекло": "сапфировое",
+                    "декор": "с гравировкой"
                 }
             },
             "maintenance": [
@@ -3831,7 +3797,8 @@
             "images": [
                 "https://i.ibb.co/5ktYRt6/img-1.jpg",
                 "https://i.ibb.co/DpjCFB9/img-2.webp",
-                "https://i.ibb.co/p4DJnkn/img-3.webp"
+                "https://i.ibb.co/p4DJnkn/img-3.webp",
+                "https://i.ibb.co/258VftK/img-4.jpg"
             ],
             "isNew": true,
             "material": "стекло",
@@ -5197,7 +5164,8 @@
             "images": [
                 "https://i.ibb.co/5ktYRt6/img-1.jpg",
                 "https://i.ibb.co/DpjCFB9/img-2.webp",
-                "https://i.ibb.co/p4DJnkn/img-3.webp"
+                "https://i.ibb.co/p4DJnkn/img-3.webp",
+                "https://i.ibb.co/258VftK/img-4.jpg"
             ],
             "isNew": true,
             "material": "стекло",
@@ -6653,9 +6621,10 @@
             "discount": true,
             "id": 29,
             "images": [
-                "https://i.ibb.co/7SJ0w0k/img-1.jpg",
+                "https://i.ibb.co/pjv1Wds/img-1.jpg",
+                "https://i.ibb.co/9prPBsG/img-3.webp",
                 "https://i.ibb.co/N7jQ16x/img-2.webp",
-                "https://i.ibb.co/Zxsj4Z3/img-3.jpg"
+                "https://i.ibb.co/PZkGqGC/img-4.webp"
             ],
             "isNew": true,
             "material": "керамика",
@@ -6825,7 +6794,10 @@
             "images": [
                 "https://i.ibb.co/5ktYRt6/img-1.jpg",
                 "https://i.ibb.co/DpjCFB9/img-2.webp",
-                "https://i.ibb.co/p4DJnkn/img-3.webp"
+                "https://i.ibb.co/p4DJnkn/img-3.webp",
+                "https://i.ibb.co/258VftK/img-4.jpg",
+                "https://i.ibb.co/258VftK/img-4.jpg",
+                "https://i.ibb.co/258VftK/img-4.jpg"
             ],
             "isNew": true,
             "material": "ткань",
@@ -7245,44 +7217,26 @@
             "technicalSpecifications": {
                 "sizes": {
                     "диаметр": [
-                        {
-                            "value": 30,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 40,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 50,
-                            "unit": "см"
-                        }
+                        "30 см",
+                        "40 см",
+                        "50 см"
                     ],
                     "вес": [
-                        {
-                            "value": 800,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1000,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1200,
-                            "unit": "г"
-                        }
+                        "800 г",
+                        "1000 г",
+                        "1200 г"
                     ],
-                    "mechanism": [
-                        {
-                            "тип механизма": "кварцевый"
-                        },
-                        {
-                            "тип механизма": "механический"
-                        },
-                        {
-                            "тип механизма": "автоматический"
-                        }
+                    "механизм": [
+                        "кварцевый",
+                        "механический",
+                        "автоматический"
                     ]
+                },
+                "materials": {
+                    "основной материал": "сталь",
+                    "ремешок": "кожа",
+                    "стекло": "сапфировое",
+                    "декор": "с гравировкой"
                 }
             },
             "maintenance": [
@@ -7396,44 +7350,26 @@
             "technicalSpecifications": {
                 "sizes": {
                     "диаметр": [
-                        {
-                            "value": 30,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 40,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 50,
-                            "unit": "см"
-                        }
+                        "30 см",
+                        "40 см",
+                        "50 см"
                     ],
                     "вес": [
-                        {
-                            "value": 800,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1000,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1200,
-                            "unit": "г"
-                        }
+                        "800 г",
+                        "1000 г",
+                        "1200 г"
                     ],
-                    "mechanism": [
-                        {
-                            "тип механизма": "кварцевый"
-                        },
-                        {
-                            "тип механизма": "механический"
-                        },
-                        {
-                            "тип механизма": "автоматический"
-                        }
+                    "механизм": [
+                        "кварцевый",
+                        "механический",
+                        "автоматический"
                     ]
+                },
+                "materials": {
+                    "основной материал": "сталь",
+                    "ремешок": "кожа",
+                    "стекло": "сапфировое",
+                    "декор": "с гравировкой"
                 }
             },
             "maintenance": [
@@ -8142,7 +8078,9 @@
             "images": [
                 "https://i.ibb.co/5ktYRt6/img-1.jpg",
                 "https://i.ibb.co/DpjCFB9/img-2.webp",
-                "https://i.ibb.co/p4DJnkn/img-3.webp"
+                "https://i.ibb.co/p4DJnkn/img-3.webp",
+                "https://i.ibb.co/258VftK/img-4.jpg",
+                "https://i.ibb.co/258VftK/img-4.jpg"
             ],
             "isNew": true,
             "material": "стекло",
@@ -9329,7 +9267,9 @@
             "images": [
                 "https://i.ibb.co/5ktYRt6/img-1.jpg",
                 "https://i.ibb.co/DpjCFB9/img-2.webp",
-                "https://i.ibb.co/p4DJnkn/img-3.webp"
+                "https://i.ibb.co/p4DJnkn/img-3.webp",
+                "https://i.ibb.co/258VftK/img-4.jpg",
+                "https://i.ibb.co/258VftK/img-4.jpg"
             ],
             "isNew": true,
             "material": "ткань",
@@ -9749,44 +9689,26 @@
             "technicalSpecifications": {
                 "sizes": {
                     "диаметр": [
-                        {
-                            "value": 30,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 40,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 50,
-                            "unit": "см"
-                        }
+                        "30 см",
+                        "40 см",
+                        "50 см"
                     ],
                     "вес": [
-                        {
-                            "value": 800,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1000,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1200,
-                            "unit": "г"
-                        }
+                        "800 г",
+                        "1000 г",
+                        "1200 г"
                     ],
-                    "mechanism": [
-                        {
-                            "тип механизма": "кварцевый"
-                        },
-                        {
-                            "тип механизма": "механический"
-                        },
-                        {
-                            "тип механизма": "автоматический"
-                        }
+                    "механизм": [
+                        "кварцевый",
+                        "механический",
+                        "автоматический"
                     ]
+                },
+                "materials": {
+                    "основной материал": "сталь",
+                    "ремешок": "кожа",
+                    "стекло": "сапфировое",
+                    "декор": "с гравировкой"
                 }
             },
             "maintenance": [
@@ -9900,44 +9822,26 @@
             "technicalSpecifications": {
                 "sizes": {
                     "диаметр": [
-                        {
-                            "value": 30,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 40,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 50,
-                            "unit": "см"
-                        }
+                        "30 см",
+                        "40 см",
+                        "50 см"
                     ],
                     "вес": [
-                        {
-                            "value": 800,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1000,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1200,
-                            "unit": "г"
-                        }
+                        "800 г",
+                        "1000 г",
+                        "1200 г"
                     ],
-                    "mechanism": [
-                        {
-                            "тип механизма": "кварцевый"
-                        },
-                        {
-                            "тип механизма": "механический"
-                        },
-                        {
-                            "тип механизма": "автоматический"
-                        }
+                    "механизм": [
+                        "кварцевый",
+                        "механический",
+                        "автоматический"
                     ]
+                },
+                "materials": {
+                    "основной материал": "сталь",
+                    "ремешок": "кожа",
+                    "стекло": "сапфировое",
+                    "декор": "с гравировкой"
                 }
             },
             "maintenance": [
@@ -10810,9 +10714,10 @@
             "discount": true,
             "id": 54,
             "images": [
-                "https://i.ibb.co/7SJ0w0k/img-1.jpg",
+                "https://i.ibb.co/pjv1Wds/img-1.jpg",
+                "https://i.ibb.co/9prPBsG/img-3.webp",
                 "https://i.ibb.co/N7jQ16x/img-2.webp",
-                "https://i.ibb.co/Zxsj4Z3/img-3.jpg"
+                "https://i.ibb.co/PZkGqGC/img-4.webp"
             ],
             "isNew": true,
             "material": "керамика",
@@ -10982,7 +10887,9 @@
             "images": [
                 "https://i.ibb.co/5ktYRt6/img-1.jpg",
                 "https://i.ibb.co/DpjCFB9/img-2.webp",
-                "https://i.ibb.co/p4DJnkn/img-3.webp"
+                "https://i.ibb.co/p4DJnkn/img-3.webp",
+                "https://i.ibb.co/258VftK/img-4.jpg",
+                "https://i.ibb.co/258VftK/img-4.jpg"
             ],
             "isNew": true,
             "material": "ткань",
@@ -11399,44 +11306,26 @@
             "technicalSpecifications": {
                 "sizes": {
                     "диаметр": [
-                        {
-                            "value": 30,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 40,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 50,
-                            "unit": "см"
-                        }
+                        "30 см",
+                        "40 см",
+                        "50 см"
                     ],
                     "вес": [
-                        {
-                            "value": 800,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1000,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1200,
-                            "unit": "г"
-                        }
+                        "800 г",
+                        "1000 г",
+                        "1200 г"
                     ],
-                    "mechanism": [
-                        {
-                            "тип механизма": "кварцевый"
-                        },
-                        {
-                            "тип механизма": "механический"
-                        },
-                        {
-                            "тип механизма": "автоматический"
-                        }
+                    "механизм": [
+                        "кварцевый",
+                        "механический",
+                        "автоматический"
                     ]
+                },
+                "materials": {
+                    "основной материал": "сталь",
+                    "ремешок": "кожа",
+                    "стекло": "сапфировое",
+                    "декор": "с гравировкой"
                 }
             },
             "maintenance": [
@@ -11550,44 +11439,26 @@
             "technicalSpecifications": {
                 "sizes": {
                     "диаметр": [
-                        {
-                            "value": 30,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 40,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 50,
-                            "unit": "см"
-                        }
+                        "30 см",
+                        "40 см",
+                        "50 см"
                     ],
                     "вес": [
-                        {
-                            "value": 800,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1000,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1200,
-                            "unit": "г"
-                        }
+                        "800 г",
+                        "1000 г",
+                        "1200 г"
                     ],
-                    "mechanism": [
-                        {
-                            "тип механизма": "кварцевый"
-                        },
-                        {
-                            "тип механизма": "механический"
-                        },
-                        {
-                            "тип механизма": "автоматический"
-                        }
+                    "механизм": [
+                        "кварцевый",
+                        "механический",
+                        "автоматический"
                     ]
+                },
+                "materials": {
+                    "основной материал": "сталь",
+                    "ремешок": "кожа",
+                    "стекло": "сапфировое",
+                    "декор": "с гравировкой"
                 }
             },
             "maintenance": [
@@ -12381,7 +12252,9 @@
             "images": [
                 "https://i.ibb.co/5ktYRt6/img-1.jpg",
                 "https://i.ibb.co/DpjCFB9/img-2.webp",
-                "https://i.ibb.co/p4DJnkn/img-3.webp"
+                "https://i.ibb.co/p4DJnkn/img-3.webp",
+                "https://i.ibb.co/258VftK/img-4.jpg",
+                "https://i.ibb.co/258VftK/img-4.jpg"
             ],
             "isNew": true,
             "material": "стекло",
@@ -12779,44 +12652,26 @@
             "technicalSpecifications": {
                 "sizes": {
                     "диаметр": [
-                        {
-                            "value": 30,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 40,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 50,
-                            "unit": "см"
-                        }
+                        "30 см",
+                        "40 см",
+                        "50 см"
                     ],
                     "вес": [
-                        {
-                            "value": 800,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1000,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1200,
-                            "unit": "г"
-                        }
+                        "800 г",
+                        "1000 г",
+                        "1200 г"
                     ],
-                    "mechanism": [
-                        {
-                            "тип механизма": "кварцевый"
-                        },
-                        {
-                            "тип механизма": "механический"
-                        },
-                        {
-                            "тип механизма": "автоматический"
-                        }
+                    "механизм": [
+                        "кварцевый",
+                        "механический",
+                        "автоматический"
                     ]
+                },
+                "materials": {
+                    "основной материал": "сталь",
+                    "ремешок": "кожа",
+                    "стекло": "сапфировое",
+                    "декор": "с гравировкой"
                 }
             },
             "maintenance": [
@@ -13542,7 +13397,9 @@
             "images": [
                 "https://i.ibb.co/5ktYRt6/img-1.jpg",
                 "https://i.ibb.co/DpjCFB9/img-2.webp",
-                "https://i.ibb.co/p4DJnkn/img-3.webp"
+                "https://i.ibb.co/p4DJnkn/img-3.webp",
+                "https://i.ibb.co/258VftK/img-4.jpg",
+                "https://i.ibb.co/258VftK/img-4.jpg"
             ],
             "isNew": true,
             "material": "ткань",
@@ -13960,44 +13817,26 @@
             "technicalSpecifications": {
                 "sizes": {
                     "диаметр": [
-                        {
-                            "value": 30,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 40,
-                            "unit": "см"
-                        },
-                        {
-                            "value": 50,
-                            "unit": "см"
-                        }
+                        "30 см",
+                        "40 см",
+                        "50 см"
                     ],
                     "вес": [
-                        {
-                            "value": 800,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1000,
-                            "unit": "г"
-                        },
-                        {
-                            "value": 1200,
-                            "unit": "г"
-                        }
+                        "800 г",
+                        "1000 г",
+                        "1200 г"
                     ],
-                    "mechanism": [
-                        {
-                            "тип механизма": "кварцевый"
-                        },
-                        {
-                            "тип механизма": "механический"
-                        },
-                        {
-                            "тип механизма": "автоматический"
-                        }
+                    "механизм": [
+                        "кварцевый",
+                        "механический",
+                        "автоматический"
                     ]
+                },
+                "materials": {
+                    "основной материал": "сталь",
+                    "ремешок": "кожа",
+                    "стекло": "сапфировое",
+                    "декор": "с гравировкой"
                 }
             },
             "maintenance": [
@@ -14138,7 +13977,7 @@
                             "unit": "г"
                         }
                     ],
-                    "mechanism": [
+                    "механизм": [
                         {
                             "тип механизма": "кварцевый"
                         },
@@ -14866,7 +14705,9 @@
             "images": [
                 "https://i.ibb.co/5ktYRt6/img-1.jpg",
                 "https://i.ibb.co/DpjCFB9/img-2.webp",
-                "https://i.ibb.co/p4DJnkn/img-3.webp"
+                "https://i.ibb.co/p4DJnkn/img-3.webp",
+                "https://i.ibb.co/258VftK/img-4.jpg",
+                "https://i.ibb.co/258VftK/img-4.jpg"
             ],
             "isNew": true,
             "material": "стекло",
