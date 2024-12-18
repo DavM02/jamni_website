@@ -96,7 +96,7 @@
 }
 
 @media all and (max-width: 769px) {
-    #product-options .section-layout .column {
+    #product-options .section-layout .column.dots {
         display: none !important;
       }
 }

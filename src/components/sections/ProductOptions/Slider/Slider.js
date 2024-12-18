@@ -13,7 +13,7 @@ export default function Slider({ images }) {
     return (
         <div className="product-image-slider row gap-35">
   
-            <div className="column center-x center-y gap-15">
+            <div className="dots column center-x center-y gap-15">
                 {thumbnails.map((_, i) => (
                     <Dot
                         key={i}
