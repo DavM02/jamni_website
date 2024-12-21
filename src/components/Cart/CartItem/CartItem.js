@@ -5,7 +5,7 @@ import SmoothAppearance from "../../ui/SmoothAppearance";
 import './cartItem.css'
 function CartItem({ product, navigate, increaseQuantity, decreaseQuantity, removeProduct }) {
     const handleNavigate = () => {
-        navigate(`catalog/${product.catalog}/${product.name.toLowerCase()}?id=${product.id}`);
+        navigate(`/catalog/${product.catalog}/${product.name.toLowerCase()}?id=${product.id}`);
     };
  
     const handleDecreaseQuantity = (e) => {

@@ -10,19 +10,26 @@ export const cartModalStore = create((set) => ({
   toggleCart: () => set((state) => ({ isCartOpen: !state.isCartOpen })),
   getCartRecommendations: async () => {
     set({ loading: true, error: null });
-    const dataLength = await getLength(["decor"]);
-    if (dataLength) {
-      const randomPage = Math.floor(
-        Math.random() * Math.max(1, Math.floor(dataLength / 18))
-      );
-      try {
-        const data = await loadData(["decor", randomPage, 14]);
-        set({ cartRecommendations: data, loading: false });
-      } catch (error) {
-        set({ error: error.message, loading: false });
+
+    try {
+       const dataLength = await getLength(["decor"]);
+      console.log(dataLength)
+      if (dataLength) {
+         const randomPage = Math.floor(
+          Math.random() * Math.max(1, Math.floor(dataLength / 18))
+        );
+
+         const data = await loadData(["decor", randomPage, 14]);
+        console.log(data)
+         set({ cartRecommendations: data, loading: false });
+      } else {
+        set({ cartRecommendations: [], loading: false });
       }
+    } catch (error) {
+       set({ error: error.message, loading: false });
     }
-  },
+  }
+
 }));
 
  

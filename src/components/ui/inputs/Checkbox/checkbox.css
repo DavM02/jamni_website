@@ -1,0 +1,37 @@
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin-bottom: 1px;
+
+}
+
+ .custom-checkbox input,
+ .custom-checkbox .input-state {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+.custom-checkbox .input-state {
+    z-index: 44;
+    border-radius: 50%;
+    border: 1px solid var(--line-bg);
+    pointer-events: none;
+}
+
+ .custom-checkbox input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox input:checked+.input-state,
+.filter-params .colors-filter li:nth-child(4) .custom-checkbox input:checked+.input-state {
+    background-color: var(--black);
+    border: none;
+    outline: 2px solid var(--white);
+    outline-offset: -4px;
+}

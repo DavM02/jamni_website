@@ -19,7 +19,6 @@ export const userCartStore = create(
             ];
             return { products: updatedProducts };
           } else {
-            // Update quantity if product already exists
             const updatedProducts = state.products.map((el) =>
               el.id === item.id ? { ...el, quantity: el.quantity + 1 } : el
             );

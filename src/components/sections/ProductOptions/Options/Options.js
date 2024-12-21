@@ -11,7 +11,7 @@ export default function Options({ options, colors }) {
                 ? { width: '48.3%' }
                 : { width: '100%' };
 
-            if (key === 'цвет') {
+            if (key.includes('цвет')) {
                 const swapped = Object.fromEntries(
                     Object.entries(colorMap).map(([key, value]) => [value, key])
                 );

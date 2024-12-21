@@ -157,3 +157,7 @@ main {
   height: 100%;
   text-transform: capitalize;
 }
+
+#cart .loading, #cart .error {
+  min-height: unset !important;
+}

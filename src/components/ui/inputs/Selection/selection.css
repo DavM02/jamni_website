@@ -15,6 +15,7 @@
   width: 19px;
   height: 19px;
 }
+ 
 
 .custom-selection .selection-group {
   width: 100%;
@@ -33,7 +34,7 @@
   height: 11px;
 }
 
-.custom-selection ul li::first-letter {
+.custom-selection ul li::first-letter,  .selected-option span::first-letter {
   text-transform: uppercase !important;
 }
 

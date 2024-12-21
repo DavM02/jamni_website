@@ -30,7 +30,7 @@ export default function Selection({ name, data }) {
      const renderTextOption = (el) => (
         <span className="xsmall-text text-main text-black">{el}</span>
     );
-
+    console.log(name.includes("цвет"), name, data)
     return (
         <div className="custom-selection">
             <div
@@ -39,7 +39,7 @@ export default function Selection({ name, data }) {
                 onClick={() => setOpen((prev) => !prev)}
             >
                  <div className="selected-option row center-y s-between">
-                    {name === "цвет" ? (
+                    {name.includes("цвет") ? (
                         renderColorOption(value)
                     ) : (
                         <span className="option-key xsmall-text text-main text-black">
@@ -56,7 +56,7 @@ export default function Selection({ name, data }) {
                  <ul className="selection-items column gap-10">
                     {data.map((el, i) => (
                         <li key={i} onClick={() => setValue(el)}>
-                            {name === "цвет" ? renderColorOption(el) : renderTextOption(el)}
+                            {name.includes("цвет") ? renderColorOption(el) : renderTextOption(el)}
                         </li>
                     ))}
                 </ul>
@@ -65,7 +65,7 @@ export default function Selection({ name, data }) {
              <input
                 type="hidden"
                 name={name}
-                value={name === "цвет" ? value.colorName : value}
+                value={name.includes("цвет") ? value.colorName : value}
             />
         </div>
     );

@@ -13,6 +13,7 @@ import ReviewsPage from "./pages/ReviewsPage/ReviewsPage";
 import NewsRoute from "./pages/NewsPage/Route";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import OrderPage from "./pages/OrderPage/OrderPage";
 function App() {
   const location = useLocation();
  
@@ -31,6 +32,7 @@ function App() {
                   <Route path="project" element={<ProjectPage />} />
                   <Route path="about" element={<AboutPage />} />
                   <Route path="contacts" element={<ContactsPage />} />
+                  <Route path="order/*" element={<OrderPage />}/>
                   <Route path="catalog/*" element={<CatalogRoute />} />
                   <Route path="/*" element={<NoFound />} />
                 </Routes>

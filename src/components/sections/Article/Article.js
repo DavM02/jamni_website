@@ -9,6 +9,7 @@ import FetchError from "../../ui/messages/FetchError";
 import DataLoading from "../../ui/messages/DataLoading";
 import SmoothAppearance from "../../ui/SmoothAppearance";
 import ArticleContent from "./ArticleContent";
+import NoResults from "../../ui/messages/NoResults";
 import { Link } from "react-router-dom";
 export default function Article() {
   const [searchParams] = useSearchParams();
@@ -36,14 +37,17 @@ export default function Article() {
         <AnimatePresence mode="wait">
           {error ? (
             <FetchError message={error.message} />
+          ) : data === null ? (
+            <NoResults level={-1}/>
           ) : data && !isLoading ? (
-            <SmoothAppearance className="section-layout">
+            <SmoothAppearance key={'article'} className="section-layout">
               <ArticleContent data={data} />
             </SmoothAppearance>
           ) : (
             <DataLoading />
           )}
         </AnimatePresence>
+
       </div>
     </section>
   );

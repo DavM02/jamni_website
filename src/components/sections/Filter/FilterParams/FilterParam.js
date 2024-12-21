@@ -1,4 +1,5 @@
 import useFilter from "../../../../hooks/useFilter";
+import Checkbox from "../../../ui/inputs/Checkbox/Checkbox";
 export default function FilterParam({
     filterParam,
     data,
@@ -12,16 +13,12 @@ export default function FilterParam({
             {data.map((el, i) => {
                 return (
                     <li key={i} className="row center-y gap-10">
-                        <div className="custom-checkbox">
-                            <input
-                                checked={allFilterParams.includes(el)}
-                                onChange={(e) => handleSearchParams(el)}
-                                id={el}
-                                type="checkbox"
-                                value={el}
-                            />
-                            <div className="input-state"></div>
-                        </div>
+                        <Checkbox 
+                            checked={allFilterParams.includes(el)}
+                            onChange={(e) => handleSearchParams(el)}
+                            id={el}
+                            value={el}
+                        />
                         <span>{el}</span>
                     </li>
                 );

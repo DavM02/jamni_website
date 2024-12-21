@@ -10,8 +10,8 @@ export default function Form({ data, catalog }) {
 
     const addToCart = userCartStore((state) => state.addProduct);
     const { toggleAdded } = cartModalStore()
-    const dimensions = data && data?.characteristics[0].dimensions;
-    const options = data && data?.characteristics[1].options;
+    const dimensions = data && data.characteristics[0].dimensions;
+    const options = data && data.characteristics[1].options;
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -47,7 +47,7 @@ export default function Form({ data, catalog }) {
         <form action="#" onSubmit={(e) => handleSubmit(e)}>
             <div className="row wrap gap-20">
                 <Dimensions dimensions={dimensions} />
-                <Options options={options} colors={data?.colors} />
+                <Options options={options} colors={data.colors} />
             </div>
             <div className="submit-wrapper">
                 <MainButton type={"submit"} text="добавить в корзину"/>

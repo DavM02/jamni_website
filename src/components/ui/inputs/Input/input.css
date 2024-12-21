@@ -12,9 +12,10 @@
 }
 
 .main-input:focus-visible {
-  outline: var(--black) 1px solid;
+  outline: var(--black) 1px solid !important;
 }
 
 textarea.main-input {
   min-height: 80px;
+  height: 40px;
 }

@@ -28,12 +28,9 @@
 }
 
 
-
-#cart .cart-item .cart-item-quantity div:nth-child(1),
-#cart .cart-item .cart-item-quantity div:nth-child(3),
-#cart .show-recommendations .row,
-#cart .cart-content .menu-bars,
-#cart .cart-item {
+ 
+#cart .show-recommendations .row.gap-5,
+#cart .cart-content .menu-bars {
   user-select: none;
   cursor: pointer;
 }
@@ -43,11 +40,6 @@
   font-size: 32px !important;
 }
 
-#cart .cart-content h6 {
-  font-size: 24px !important;
-  color: #23221e;
-  line-height: normal;
-}
 
 #cart .cart-content .menu-bars div {
   width: 33px;
@@ -64,7 +56,7 @@
   transform: rotate(137.77deg) translateX(-7px);
 }
 
-#cart .cart-content > .row:nth-child(1) {
+#cart .cart-content>.row:nth-child(1) {
   padding: 42px 30px;
   border-bottom: 1px solid var(--line-bg);
 }
@@ -76,12 +68,13 @@
 }
 
 #cart .recommendations {
+  align-content: center;
   overflow: hidden;
   margin-top: 10px;
   transition: var(--transition) 0.5s height;
 }
 
-#cart .recommendations li {
+#cart .recommendations .slider-item {
   width: 100px;
   height: 100px;
   aspect-ratio: 1/1;
@@ -93,14 +86,14 @@
   width: 100%;
 }
 
-#cart .recommendations li img {
+#cart .recommendations .slider-item img {
   height: 100%;
   object-fit: cover;
 }
 
 #cart .slider-wrapper {
-  transform: translateX(calc((100px * -3) - 30px));
-  width: calc((100px * 10) + 10 * 15px);
+  transform: translateX(calc((100px* -3) - 45px));
+  width: calc((100px* 10) + 10* 15px);
   height: 120px;
 }
 
@@ -109,7 +102,7 @@
   border-top: 1px solid var(--line-bg);
 }
 
-#cart .show-recommendations > .row:nth-child(1) {
+#cart .show-recommendations>.row:nth-child(1) {
   width: fit-content;
 }
 
@@ -135,4 +128,27 @@
 
 .added-item span {
   line-height: normal;
+}
+
+header .icons .icon:nth-child(3) {
+  position: relative;
+}
+
+header .icons .icon:nth-child(3)::after {
+  content: attr(data-count);
+  position: absolute;
+  right: -11px;
+  top: -5px;
+  background-color: var(--black);
+  border-radius: 50%;
+  color: var(--white);
+  aspect-ratio: 1 / 1;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  min-width: 15px;
+  pointer-events: none;
+  cursor: pointer;
 }

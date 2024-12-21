@@ -1,3 +1,4 @@
+
 import React, { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ReactDOM from "react-dom";
@@ -5,35 +6,35 @@ import { useBlocker } from "react-router-dom";
 import "./pageTransition.css";
 import AnimatedText from "../scroll/TextAnimation";
 import { MainContext } from "../../context/MainContext";
-import { cartModalStore } from "../../stores/cartModalStore";
- 
+
 function PageTransition(Component) {
   return function WrappedComponent(props) {
     const [pathname, setPathname] = useState(null);
     const [isAnimating, setIsAnimating] = useState(false);
     const { scrollbarAccess } = useContext(MainContext);
-    const {isCartOpen, toggleCart} = cartModalStore()
+
+
+    useBlocker(({ currentLocation: current, nextLocation: next }) => {
+
+ 
+      return isAnimating && current.pathname !== next.pathname;
+      // || currentLocation.pathname === nextLocation.pathname
+    });
+ 
+
+
     useEffect(() => {
       if (scrollbarAccess.current) {
         scrollbarAccess.current.scrollTo(0, 0);
       }
 
-      if(isCartOpen) {
-        toggleCart(false)
-      }
     }, []);
 
-    useBlocker(({ currentLocation, nextLocation }) => {
-      return isAnimating && currentLocation.pathname !== nextLocation.pathname;
-      // || currentLocation.pathname === nextLocation.pathname
-    });
- 
+
+
     return (
       <React.Fragment>
-   
-          <Component {...props} />
- 
-
+        <Component {...props} />
         {ReactDOM.createPortal(
           <>
             <motion.div
@@ -113,9 +114,12 @@ function PageTransition(Component) {
           </>,
           document.getElementById("modal-root")
         )}
+
       </React.Fragment>
     );
   };
 }
 
 export default PageTransition;
+
+ 

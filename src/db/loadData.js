@@ -11,6 +11,7 @@ import {
 import { database } from "./firebaseConfig";
 
 async function loadData([path, page, count]) {
+
   if ((!path, !page, !count)) {
     throw new Error("An error occured when loading");
   }
@@ -43,7 +44,9 @@ async function loadData([path, page, count]) {
 export default loadData;
 
 export async function getLength([path]) {
+
   try {
+ 
     const dbRef = ref(database, path.replace("catalog/", ""));
 
     const snapshot = await get(query(dbRef, orderByKey()));
@@ -76,7 +79,7 @@ export async function getReviewsCount() {
 
 export async function getItem([id, dbName]) {
   try {
-    console.log("fecthed");
+  
     const articlesRef = ref(database, dbName);
     const q = query(articlesRef, orderByChild("id"), equalTo(id));
 
@@ -90,6 +93,7 @@ export async function getItem([id, dbName]) {
       return null;
     }
   } catch (error) {
-    throw new Error("An error occurred while loading the article");
+    console.log(error)
+    throw new Error("An error occurred loading");
   }
 }

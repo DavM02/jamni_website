@@ -14,8 +14,8 @@ export default function ProjectForm({ includeUpload = false }) {
             <form action="#">
                 <div className="row gap-15">
                     <div className="column gap-10">
-                        <Input type="name" placeholder="Имя" />
-                        <Input type="phone" placeholder="Телефон" />
+                        <Input type="text" placeholder="Имя" />
+                        <Input type="tel" placeholder="Телефон" />
                         <Input type="email" placeholder="Почта" />
                     </div>
                     <div className="column gap-10">

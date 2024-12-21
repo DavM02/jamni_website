@@ -1,11 +1,44 @@
 import MoreProducts from "../../components/sections/MoreProducts/MoreProducts";
 import ProductDescription from "../../components/sections/ProductDescrioption/ProductDescription";
 import ProductOptions from "../../components/sections/ProductOptions/ProductOptions";
-
+import { useParams, useSearchParams } from "react-router-dom";
+import useSWRImmutable from "swr/immutable";
+import { getItem } from "../../db/loadData";
+import { AnimatePresence } from "framer-motion";
+import NoResults from "../../components/ui/messages/NoResults";
+import FetchError from "../../components/ui/messages/FetchError";
+import SmoothAppearance from "../../components/ui/SmoothAppearance";
+import DataLoading from "../../components/ui/messages/DataLoading";
 export default function ProductSections() {
+
+  const [searchParams, setSearchparams] = useSearchParams()
+
+  const param = useParams();
+  const catalog = param["*"].split("/")[0];
+  const id = parseInt(searchParams.get("id"));
+
+  const { data, error, isLoading } = useSWRImmutable(
+    [id, catalog, id + catalog],
+    getItem
+  );
+
+
   return <>
-    <ProductOptions />;
-    <ProductDescription/>
-    <MoreProducts/>
+    <AnimatePresence mode="wait">
+      {error ? (
+        <FetchError message={error?.message} />
+      ) : data === null ? (
+        <NoResults level={-1} />
+      ) : data && !isLoading ? (
+        <SmoothAppearance key={'product'}>
+          <ProductOptions data={data} catalog={catalog} />
+          <ProductDescription data={data} />
+        </SmoothAppearance>
+      ) : (
+        <DataLoading />
+      )}
+
+    </AnimatePresence>
+    <MoreProducts />
   </>
 }

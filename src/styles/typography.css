@@ -39,7 +39,7 @@ input {
 .text-main, textarea, textarea::placeholder,
 #products-display li::after,
 input::placeholder,
-input,
+input,header .icons .icon:nth-child(3)::after,
 button {
     font-family: 'font-main';
 }
@@ -115,7 +115,7 @@ input {
     font-weight: 400;
 }
 
-.xxxsmall-text {
+.xxxsmall-text, header .icons .icon:nth-child(3)::after {
     font-size: 12px;
     line-height: 30px;
     font-weight: 400;
