@@ -2,7 +2,7 @@
   width: 18px;
   height: 18px;
   position: relative;
-  margin-bottom: 1px;
+
 }
 
 .custom-checkbox input,
@@ -41,6 +41,7 @@
 
 .custom-checkbox + label {
   user-select: none;
+  cursor: pointer;
 }
 
 .custom-checkbox + label::first-letter {

@@ -1,10 +1,13 @@
 import "./checkbox.css";
-import { useState } from "react";
 export default function Checkbox({ label, checked, children, ...props }) {
   return (
     <>
       <div className="custom-checkbox">
-        <input {...props} type={label ? "radio" : "checkbox"} />
+        <input 
+        checked={checked}
+        {...props}
+
+          type="checkbox" />
         <div className="input-state"></div>
       </div>
       {label && (

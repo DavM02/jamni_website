@@ -18,7 +18,7 @@ export default function Subscribe() {
                         </p>
                         <form action='#'>
                             <div className='row wrap gap-15'>
-                                <Input type='email' placeholder='Введите свой адрес электронной почты' />
+                                <Input type='email' name="email" placeholder='Введите свой адрес электронной почты' />
                                 <AnimButton type='submit'>
 
                                     <img src={mailIcon} alt='mail' /> ПОДПИСАТЬСЯ

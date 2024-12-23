@@ -8,13 +8,13 @@ export default function Form() {
     <form action="#">
       <div className="row gap-15">
         <div className="column gap-10">
-          <Input type="text" placeholder="Имя" />
-          <Input type="tel" placeholder="Телефон" />
-          <Input type="email" placeholder="Почта" />
+          <Input type="text" placeholder="Имя" name="name" />
+          <Input type="tel" placeholder="Телефон" name="phone" />
+          <Input type="email" placeholder="Почта" name="email" />
         </div>
         <div className="column gap-10">
-          <Input type="text" placeholder="Ссылка на сайт / соц. сети" />
-          <Input tag={"textarea"} placeholder="Сообщение" />
+          <Input type="text" placeholder="Ссылка на сайт / соц. сети" name="social"/>
+          <Input tag={"textarea"} placeholder="Сообщение" name="message"/>
         </div>
       </div>
       <AnimButton type="submit">

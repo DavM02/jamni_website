@@ -119,3 +119,8 @@
 #order .section-layout > div:nth-child(1) > .row:nth-child(1) {
   margin-bottom: 60px;
 }
+
+#order .section-layout>div:nth-child(1)>.row:nth-child(1) span:nth-child(1) {
+  user-select: none;
+  cursor: pointer;
+}

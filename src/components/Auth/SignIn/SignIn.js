@@ -9,8 +9,8 @@ export default function SignIn({ setAuth }) {
           войти
         </span>
       </div>
-      <Input type="email" placeholder="E-mail*" />
-      <Input type="password" placeholder="Пароль" />
+      <Input type="email" placeholder="E-mail*" name="email" />
+      <Input type="password" placeholder="Пароль" name="password" />
       <AnimButton type="submit">войти</AnimButton>
       <p className="xxxsmall-text text-main text-gray">
         У вас еще нет профиля?{" "}

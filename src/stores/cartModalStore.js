@@ -13,7 +13,7 @@ export const cartModalStore = create((set) => ({
 
     try {
        const dataLength = await getLength(["decor"]);
-      console.log(dataLength)
+   
       if (dataLength) {
          const randomPage = Math.floor(
           Math.random() * Math.max(1, Math.floor(dataLength / 18))

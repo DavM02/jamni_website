@@ -11,7 +11,7 @@ export default function SignUp({ setAuth }) {
           регистрация
         </span>{" "}
       </div>
-      <Input type="email" placeholder="E-mail*" />
+      <Input type="email" placeholder="E-mail*" name="email" />
       <p className="xxxsmall-text text-main text-gray">
         Пароль будет отправлен на указанный адрес электронной почты
       </p>

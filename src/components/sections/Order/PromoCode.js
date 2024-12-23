@@ -4,11 +4,12 @@ import Input from "../../ui/inputs/Input/Input";
 import { userCartStore } from "../../../stores/cartStore";
 export default function PromoCode() {
   const { totalPrice } = userCartStore();
+  console.log('loll')
   return (
     <div className="promo-code">
       <form action="#">
         <div className="row gap-15">
-          <Input type="text" placeholder="Подарочная карта или купон" />
+          <Input type="text" placeholder="Подарочная карта или купон" name="code" />
           <AnimButton style={{ minWidth: "170px" }} type="submit">
             применить
           </AnimButton>

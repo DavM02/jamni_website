@@ -24,3 +24,7 @@
 #filter .loading, #filter .error {
     padding-bottom: var(--grid-padding);
 }
+
+#filter .collection-filter  .custom-checkbox {
+    margin-bottom: 3px;
+}

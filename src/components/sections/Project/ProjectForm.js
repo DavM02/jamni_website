@@ -14,13 +14,13 @@ export default function ProjectForm({ includeUpload = false }) {
             <form action="#">
                 <div className="row gap-15">
                     <div className="column gap-10">
-                        <Input type="text" placeholder="Имя" />
-                        <Input type="tel" placeholder="Телефон" />
-                        <Input type="email" placeholder="Почта" />
+                        <Input type="text" placeholder="Имя" name="name" />
+                        <Input type="tel" placeholder="Телефон" name="phone" />
+                        <Input type="email" placeholder="Почта" name="email" />
                     </div>
                     <div className="column gap-10">
                         {includeUpload && <Upload text="Загрузить проект*" />}
-                        <Input tag={"textarea"} placeholder="Сообщение" />
+                        <Input tag={"textarea"} placeholder="Сообщение" name="message"/>
                     </div>
                 </div>
                 <AnimButton type="submit">
