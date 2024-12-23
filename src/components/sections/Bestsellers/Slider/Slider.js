@@ -33,7 +33,7 @@ export default function Slider() {
                     <h1 className='text-center'>Бестселлеры</h1>
                 </div>
                 <div className='learn-mone row gap-15' >
-                    <span className='text-main xsmall-text up-case'>смотреть больше</span>
+                    <span className='text-main xsmall-text text-black-secondary up-case'>смотреть больше</span>
                     <img src={arrow} alt='image-left' style={{ width: '25px' }} />
                 </div>
             </InfiniteSlider>

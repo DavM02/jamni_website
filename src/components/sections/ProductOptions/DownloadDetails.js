@@ -8,7 +8,7 @@ export default function DownloadDetails() {
               <div className="icon center-gr">
                   <img src={cube} alt="cube" />
               </div>
-              <span className="xsmall-text text-main text-black">
+              <span className="xsmall-text text-main text-black-secondary">
                   Посмотреть 3D-модель
               </span>
           </div>
@@ -16,7 +16,7 @@ export default function DownloadDetails() {
               <div className="icon center-gr">
                   <img src={download} alt="download" />
               </div>
-              <span className="xsmall-text text-main text-black">
+              <span className="xsmall-text text-main text-black-secondary">
                   Скачать 3D-модель
               </span>
           </div>

@@ -10,52 +10,51 @@ import DataLoading from "../ui/messages/DataLoading";
 import SmoothAppearance from "../ui/SmoothAppearance";
 
 function Recommendations() {
-    const [showRecs, setShowRecs] = useState(true);
-    const { cartRecommendations, error, isLoading } = cartModalStore()
- 
-     return (
-        <div className="show-recommendations">
-            <div
-                className="row center-y gap-5"
-                onClick={() =>{ setShowRecs((prev) => !prev);
+  const [showRecs, setShowRecs] = useState(true);
+  const { cartRecommendations, error, isLoading } = cartModalStore();
 
-                }}
-            >
-                <span className="xsmall-text text-main text-black up-case">
-                    Рекомендации для вас
-                </span>
-                <img
-                    style={{ transform: !showRecs ? "rotate(180deg)" : "none" }}
-                    src={arrow}
-                    alt="arrow"
-                />
-            </div>
-             <div className="recommendations"
-                 style={{ height: showRecs ? "170px" : "0px" }}>
-             <AnimatePresence mode="wait">
-                 {error ? (
-                     <FetchError message={error.message ?? error} />
-                 ) : cartRecommendations.length > 0 && !isLoading ? (
-                         <SmoothAppearance
-                         >
-                             <InfiniteSlider
-                                 sliderData={cartRecommendations.map((el) => ({
-                                     ...el,
-                                     catalog: "decor",
-                                 }))}
-                                 wrapper={Slide}
-                                 itemWidth={'rec-slider-width'}
-
-                             />
-                         </SmoothAppearance>
-                 ) : (
-                     <DataLoading />
-                 )}
-             </AnimatePresence>
-             </div>
-        </div>
-    );
+  return (
+    <div className="show-recommendations">
+      <div
+        className="row center-y gap-5"
+        onClick={() => {
+          setShowRecs((prev) => !prev);
+        }}
+      >
+        <span className="xsmall-text text-main text-black up-case">
+          Рекомендации для вас
+        </span>
+        <img
+          style={{ transform: !showRecs ? "rotate(180deg)" : "none" }}
+          src={arrow}
+          alt="arrow"
+        />
+      </div>
+      <div
+        className="recommendations"
+        style={{ height: showRecs ? "170px" : "0px" }}
+      >
+        <AnimatePresence mode="wait">
+          {error ? (
+            <FetchError message={error.message ?? error} />
+          ) : cartRecommendations.length > 0 && !isLoading ? (
+            <SmoothAppearance>
+              <InfiniteSlider
+                sliderData={cartRecommendations.map((el) => ({
+                  ...el,
+                  catalog: "decor",
+                }))}
+                wrapper={Slide}
+                itemWidth={"rec-slider-width"}
+              />
+            </SmoothAppearance>
+          ) : (
+            <DataLoading style={{ height: "100%" }} />
+          )}
+        </AnimatePresence>
+      </div>
+    </div>
+  );
 }
 
-
-export default  memo(Recommendations)
+export default memo(Recommendations);

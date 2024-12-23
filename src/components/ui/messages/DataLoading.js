@@ -1,8 +1,8 @@
 import React from 'react'
 import SmoothAppearance from '../SmoothAppearance'
-export default function DataLoading() {
+export default function DataLoading({...props}) {
     return (
-        <SmoothAppearance key={'loading'}>
+        <SmoothAppearance {...props} key={'loading'}>
             <div className="loading row center-x center-y">
                 <h2>Loading...</h2>
             </div>

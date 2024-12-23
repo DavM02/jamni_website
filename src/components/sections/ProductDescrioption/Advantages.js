@@ -11,8 +11,8 @@ export default function Advantages({data}) {
                          </div>
                       <span 
                       style={{lineHeight: 'normal'}}
-                      className='xsmall-text text-main up-case'><b>{el.title}</b></span>
-                      <p className='xsmall-text text-main'>{el.text}</p>
+                      className='xsmall-text text-main text-black-secondary up-case'><b>{el.title}</b></span>
+                      <p className='xsmall-text text-main text-black-secondary'>{el.text}</p>
                   </li>
               })}
       </ul>

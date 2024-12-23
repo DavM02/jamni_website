@@ -8,8 +8,8 @@ export default function ProductHeader({catalog, name}) {
           <Link to={"/catalog"}>каталог</Link>
           <span>/</span>
           <Link to={`/catalog/decor?collection=${catalog}`}>{catalog}</Link>
-          <span className="text-black">/</span>
-          <span className="text-black">{name}</span>
+          <span className="text-black-secondary">/</span>
+          <span className="text-black-secondary">{name}</span>
       </div>
   )
 }

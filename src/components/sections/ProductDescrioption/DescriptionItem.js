@@ -14,8 +14,8 @@ export default function DescriptionItem({ sectionKey, label, content, open, onTo
                     className="description-heading row center-y s-between gap-10"
                     onClick={() => onToggle()}
                 >
-                    <span className="xxsmall-text text-main up-case">{label}</span>
-                    <span className="xxsmall-text text-main up-case">{open === sectionKey ? '-' : '+'}</span>
+                    <span className="xxsmall-text text-main text-black-secondary up-case">{label}</span>
+                    <span className="xxsmall-text text-main text-black-secondary up-case">{open === sectionKey ? '-' : '+'}</span>
                 </div>
             </div>
             <AnimatePresence initial={false} mode="wait">

@@ -3,7 +3,7 @@ import Radio from '../../../ui/inputs/Radio/Radio'
 export default function DimensionItems({ label, values, height }) {
     return (
         <div>
-            <span className="option-key xsmall-text text-main text-black">
+            <span className="option-key xsmall-text text-main text-black-secondary">
                 {label}
             </span>
             <div className="options row wrap">

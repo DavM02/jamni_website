@@ -2,11 +2,6 @@
   padding: 42px 0 var(--section-padding-equal-big);
 }
 
-#news-article p,
-#news-article .section-layout span {
-  color: #23221e;
-}
-
 #news-article a {
   color: inherit;
 }

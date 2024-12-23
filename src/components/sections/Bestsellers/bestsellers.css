@@ -1,35 +1,31 @@
 #bestsellers {
-    padding: var(--section-padding-equal-big) 0;
-    background-color: var(--gray);
-    /* overflow: hidden; */
+  padding: var(--section-padding-equal-big) 0;
+  background-color: var(--gray);
+  /* overflow: hidden; */
 }
 
 #bestsellers .container {
-    max-width: 1920px;
-    padding: unset;
-    position: relative;
+  max-width: 1920px;
+  padding: unset;
+  position: relative;
 }
 
 #bestsellers h1 {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    writing-mode: vertical-rl;
-    transform: scale(-1) translateY(50%);
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  writing-mode: vertical-rl;
+  transform: scale(-1) translateY(50%);
 }
 
 #bestsellers .heading-wrapper {
-    position: absolute;
-    height: var(--bestsellers-slider-img-height);
-    left: calc(var(--bestsellers-slider-padding-left) - 80px);
-    width: 80px;
-    top: 47px;
-}
-
-#bestsellers span {
-    color: #23221E;
+  position: absolute;
+  height: var(--bestsellers-slider-img-height);
+  left: calc(var(--bestsellers-slider-padding-left) - 80px);
+  width: 80px;
+  top: 47px;
 }
 
 #bestsellers .learn-mone {
-    margin-bottom: 17px;
+  margin-bottom: 17px;
 }

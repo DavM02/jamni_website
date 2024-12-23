@@ -14,7 +14,7 @@ export default function ProductVisuals({ data, images, advantages, }) {
                 </div>
                 <div>
                     {data.text.map((el, i) => {
-                        return <p key={i} className='xsmall-text text-main'>{el}</p>
+                        return <p key={i} className='xsmall-text text-main text-black-secondary'>{el}</p>
                     })}
                     <div className='row gap-40'>
                         <div className='self-end-y'>

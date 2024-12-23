@@ -1,0 +1,121 @@
+#order {
+  padding: clamp(2rem, 1.6538rem + 1.5385vw, 3.5rem) 0
+    var(--section-padding-equal-big);
+}
+
+#order .section-layout {
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 1fr 40%;
+}
+
+#order .cart-items {
+  height: 470px;
+  margin: clamp(1.25rem, 0.6731rem + 2.5641vw, 3.75rem) 30px;
+  overflow-y: scroll;
+}
+
+#order h5 {
+  font-size: 32px !important;
+  margin: 0 30px;
+  line-height: normal;
+}
+
+#order .promo-code {
+  padding: 30px;
+  background-color: var(--gray);
+}
+
+#order .promo-code input {
+  background-color: var(--white);
+}
+
+#order .promo-code form > .row:nth-child(2) {
+  margin-top: 30px;
+}
+
+#order .promo-code form > .row:nth-child(3) {
+  margin: 20px 0 40px;
+}
+
+#order .form-info .main-input {
+  max-width: unset;
+  height: 48px;
+  outline: 1px solid var(--line-bg);
+}
+
+#order form:not(.promo-code form) button {
+  width: 100%;
+  height: 48px;
+  background-color: var(--black-secondary);
+}
+
+#order .form-info .row .main-input {
+  width: calc(50% - 10px);
+}
+
+#order .form-info > div:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+#order .custom-selection + div {
+  margin: 20px 0;
+}
+
+#order .form-info > .row.gap-10 {
+  padding: 18px 0 50px;
+}
+
+#order form:not(.promo-code form) > div:nth-last-child(2) {
+  border-bottom: 1px solid var(--line-bg);
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+
+#order .form-delivery > .row:nth-last-child(2),
+#order .form-delivery > .row:nth-last-child(3) {
+  min-height: 48px;
+  border: 1px solid var(--line-bg);
+  padding: 0 25px;
+  border-radius: 20px;
+}
+
+#order .form-delivery + .row button {
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+#order .form-delivery + .row button img {
+  width: 11px;
+  height: 11px;
+}
+
+#order .form-output {
+  margin-bottom: 45px;
+  border: 1px solid var(--line-bg);
+  border-radius: 20px;
+}
+#order .form-output .text-black-secondary {
+  width: 120px;
+}
+#order .form-output .text-gray {
+  text-decoration-line: underline;
+}
+
+#order .form-output > .row {
+  margin: 0 25px;
+  min-height: 48px;
+}
+
+#order .form-output > .row:nth-child(1) {
+  border-bottom: 1px solid var(--line-bg);
+}
+
+#order .form-delivery > span:nth-child(1) {
+  margin-bottom: 20px;
+  display: block;
+}
+
+#order .section-layout > div:nth-child(1) > .row:nth-child(1) {
+  margin-bottom: 60px;
+}

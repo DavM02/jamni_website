@@ -7,7 +7,7 @@ export default function ProductDetails({ data, catalog }) {
     <div className="product-details">
       <ProductHeader catalog={data.collection} name={data.name} />
       <h4>{data.product + " " + data?.name}</h4>
-      <span className="small-text text-main text-black">
+      <span className="small-text text-main text-black-secondary">
         {data?.price.toLocaleString("ru-RU")} руб
       </span>
       <DownloadDetails />
