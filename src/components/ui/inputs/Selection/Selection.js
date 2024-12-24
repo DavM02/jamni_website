@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./selection.css";
 import arrow from "../../../../assets/icons/arrow-up.svg";
 
-export default function Selection({ name, data }) {
-  const [value, setValue] = useState(data[0]);
+export default function Selection({ name, defaultValue, data }) {
+  const [value, setValue] = useState(defaultValue ?? data[0]);
   const [open, setOpen] = useState(false);
 
   const calculateHeight = () => {

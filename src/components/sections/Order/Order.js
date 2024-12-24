@@ -33,7 +33,9 @@ export default function Order() {
             <Navigation activeTab={activeTab} />
             <AnimatePresence mode="wait">
               {
-                activeTab === 'information' ? <Information key={'information'} /> : 
+                activeTab === 'information' ? <Information
+                setActiveTab={setActiveTab}
+                key={'information'} /> : 
                   (activeTab === 'delivery' ? <Delivery setActiveTab={setActiveTab} key={'delivery'} /> 
                   : <SmoothAppearance key={'ddsadasd'}><h1>dsadasd</h1></SmoothAppearance>)
               }
