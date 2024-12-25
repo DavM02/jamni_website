@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Input from "../../../ui/inputs/Input/Input";
 import SmoothAppearance from "../../../ui/SmoothAppearance";
 import Checkbox from "../../../ui/inputs/Checkbox/Checkbox";

@@ -3,7 +3,7 @@ import Options from "./Options/Options";
 import AddToFav from "../../ui/buttons/AttToFav/AddToFav";
 import MainButton from "../../ui/buttons/MainButton/MainButton";
 import { userCartStore } from "../../../stores/cartStore";
-import { cartModalStore } from "../../../stores/cartModalStore";
+import { cartModalStore } from "../../../stores/modalStore";
 
 export default function Form({ data, catalog }) {
   const addToCart = userCartStore((state) => state.addProduct);

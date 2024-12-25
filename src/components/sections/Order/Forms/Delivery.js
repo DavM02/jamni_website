@@ -20,7 +20,7 @@ export default function Delivery({ setActiveTab }) {
     };
     if (validateFormData("deliveryForm", formDataObject)) {
       updateFormData("deliveryForm", formDataObject);
-      setActiveTab("delivery");
+      // setActiveTab("delivery");
     }
   }
   return (

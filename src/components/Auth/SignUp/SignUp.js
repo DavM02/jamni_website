@@ -1,7 +1,6 @@
 import AnimButton from "../../ui/buttons/AnimButton/AnimButton";
 import Input from "../../ui/inputs/Input/Input";
 import CloseButton from "../CloseButton";
-import { useActionState, } from "react";
 export default function SignUp({ setAuth }) {
   
   return (
