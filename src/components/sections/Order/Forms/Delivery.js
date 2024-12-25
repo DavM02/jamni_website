@@ -9,7 +9,7 @@ export default function Delivery({ setActiveTab }) {
   const { forms, updateFormData, validateFormData } = formStore();
 
   const [isChecked, setIsChecked] = useState(
-    forms.deliveryForm.formData.deliveryType ?? "pickup"
+    forms?.deliveryForm?.formData?.deliveryType ?? "pickup"
   );
 
   function handleSubmit(e) {
