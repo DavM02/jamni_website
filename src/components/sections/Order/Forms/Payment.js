@@ -47,7 +47,7 @@ export default function Payment({ setActiveTab, setIsBought }) {
                         </span>
                     </div>
                     <span
-                        className="xxsmall-text text-main text-gray"
+                        className="edit xxsmall-text text-main text-gray"
                         onClick={() => setActiveTab("delivery")}
                     >
                         изменить

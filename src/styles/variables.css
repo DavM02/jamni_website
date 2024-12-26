@@ -101,6 +101,8 @@
   --grid-padding: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
 
   --rec-slider-width: 95px;
+
+  --cart-item-height: 130px;
 }
 
 @media all and (max-width: 1024px) {

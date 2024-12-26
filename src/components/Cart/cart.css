@@ -24,11 +24,11 @@
 }
 
 #cart .cart-items {
-  padding: 30px;
+  margin: 30px;
 }
 
 .cart-items {
-  height: 360px;
+  height: calc(var(--cart-item-height) * var(--cart-items-min-count));
   overflow-y: scroll;
 
   container-type: inline-size;
@@ -161,5 +161,9 @@ header .icons .icon:nth-child(3)::after {
 @container (max-width: 400px) {
   .cart-items li>.row:nth-child(1) {
     flex-direction: column;
+  }
+
+  :root {
+    --cart-item-height: 265px !important;
   }
 }

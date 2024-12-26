@@ -1,10 +1,11 @@
 #order {
-  padding: clamp(2rem, 1.6538rem + 1.5385vw, 3.5rem) 0
-    var(--section-padding-equal-big);
+  padding: clamp(2rem, 1.6538rem + 1.5385vw, 3.5rem) 0 var(--section-padding-equal-big);
 }
-#order-page #more-products{
-background-color: var(--gray);
+
+#order-page #more-products {
+  background-color: var(--gray);
 }
+
 #order .section-layout {
   display: grid;
   gap: clamp(1.875rem, 1.2981rem + 2.5641vw, 4.375rem);
@@ -12,9 +13,8 @@ background-color: var(--gray);
 }
 
 #order .cart-items {
-  height: 470px;
+  /* height: 470px; */
   margin: clamp(1.25rem, 0.6731rem + 2.5641vw, 3.75rem) 30px;
-  overflow-y: scroll;
 }
 
 #order h5 {
@@ -33,11 +33,11 @@ background-color: var(--gray);
   background-color: var(--white);
 }
 
-#order .promo-code form > .row:nth-child(2) {
+#order .promo-code form>.row:nth-child(2) {
   margin-top: 30px;
 }
 
-#order .promo-code form > .row:nth-child(3) {
+#order .promo-code form>.row:nth-child(3) {
   margin: 20px 0 40px;
 }
 
@@ -45,7 +45,7 @@ background-color: var(--gray);
   text-align: end;
 }
 
-#order .form-info > .row:nth-child(1) {
+#order .form-info>.row:nth-child(1) {
   margin-bottom: 20px;
 }
 
@@ -59,7 +59,7 @@ background-color: var(--gray);
   max-width: unset;
 }
 
-#order .form-info > .row.gap-10 {
+#order .form-info>.row.gap-10 {
   margin-top: 18px;
 }
 
@@ -72,7 +72,7 @@ background-color: var(--gray);
   max-width: 1920px !important;
 }
 
-#order .form-info>.row.gap-10+ span {
+#order .form-info>.row.gap-10+span {
   display: block;
   margin-top: 45px;
   margin-bottom: 15px;
@@ -87,21 +87,20 @@ background-color: var(--gray);
 #order .form-info .row .main-input {
   width: calc(50% - 10px);
 }
- 
-#order  form .line {
-background-color: var(--line-bg);
+
+#order form .line {
+  background-color: var(--line-bg);
   margin: 45px 0;
   height: 1px;
   width: 100%;
 }
- 
 
-#order .form-delivery > .row:nth-child(2),
-#order .form-delivery > .row:nth-child(3),
+
+#order .form-delivery>.row:nth-child(2),
+#order .form-delivery>.row:nth-child(3),
 #order .form-payment>.row:nth-last-child(2),
-#order .form-payment>.row:nth-last-child(3)
-{
- 
+#order .form-payment>.row:nth-last-child(3) {
+
   border: 1px solid var(--line-bg);
   padding: 13px 25px;
   border-radius: 20px;
@@ -111,15 +110,13 @@ background-color: var(--line-bg);
   margin-top: 10px;
 }
 
-#order .form-delivery + .row button,
-#order .form-payment+.row button
-{
+#order .form-delivery+.row button,
+#order .form-payment+.row button {
   cursor: pointer;
   margin-top: 25px;
 }
 
-#order form + .row button img 
-{
+#order form+.row button img {
   width: 11px;
   height: 11px;
 }
@@ -130,51 +127,57 @@ background-color: var(--line-bg);
   border-radius: 20px;
 }
 
-#order .form-output > .row > .row span, #order .form-output>.row>.row b {
-        text-decoration: none !important;
+#order .form-output>.row>.row span,
+#order .form-output>.row>.row b {
+  text-decoration: none !important;
+  text-decoration-line: unset !important;
+  text-decoration-style: none !important;
 }
 
 
 #order .form-output .text-black-secondary {
   width: 120px;
 }
+
 #order .form-output .text-gray {
   text-decoration-line: underline;
 }
 
-#order .form-output > .row {
+#order .form-output>.row {
   margin: 0 25px;
   padding: 13px 0;
 }
 
-#order .form-output > .row:not(.row:nth-last-child(1)) {
+#order .form-output>.row:not(.row:nth-last-child(1)) {
   border-bottom: 1px solid var(--line-bg);
 }
 
-#order .form-delivery > span:nth-child(1),
+#order .form-delivery>span:nth-child(1),
 #order .form-payment>span:nth-child(1) {
   margin-bottom: 20px;
   display: block;
 }
 
-#order .section-layout  >div:nth-child(1) > div:nth-child(1) > .row:nth-child(1):not(.bought div) {
+#order .section-layout>div:nth-child(1)>div:nth-child(1)>.row:nth-child(1):not(.bought div) {
   margin-bottom: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
 }
 
-#order span:not(.selection-items span) {
-    line-height: normal;
+#order span:not(.selection-items span, h6+span) {
+  line-height: normal;
 }
 
-#order .section-layout  >div:nth-child(1)>div:nth-child(1)>.row:nth-child(1) span:nth-child(1):not(.bought span), 
-#order p span, #order .form-output .row > span:nth-child(2) {
+#order .section-layout>div:nth-child(1)>div:nth-child(1)>.row:nth-child(1) span:nth-child(1):not(.bought span),
+#order p span,
+#order .form-output .edit {
   user-select: none;
   cursor: pointer;
 
 }
 
-#order .bought > div.row:nth-child(1) {
+#order .bought>div.row:nth-child(1) {
   gap: clamp(1.875rem, 1.0096rem + 3.8462vw, 5.625rem);
 }
+
 #order .bought img {
   object-fit: cover;
   height: 100%;
@@ -184,10 +187,9 @@ background-color: var(--line-bg);
   font-weight: bold;
   text-decoration: underline;
   text-decoration-thickness: 0.5px;
-    text-underline-offset: 2px;
+  text-underline-offset: 2px;
 }
 
 #order .form-info p {
   text-align: end;
 }
-

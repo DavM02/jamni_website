@@ -17,7 +17,7 @@ export default function DeliveryOutput({ setActiveTab, children }) {
           </span>
         </div>
         <span
-          className="xxsmall-text text-main text-gray"
+          className="edit xxsmall-text text-main text-gray"
           onClick={() => setActiveTab("information")}
         >
           изменить
@@ -34,7 +34,7 @@ export default function DeliveryOutput({ setActiveTab, children }) {
           </span>
         </div>
         <span
-          className="xxsmall-text text-main text-gray"
+          className="edit xxsmall-text text-main text-gray"
           onClick={() => setActiveTab("information")}
         >
           изменить

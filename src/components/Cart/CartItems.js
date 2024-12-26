@@ -12,6 +12,8 @@ export default function CartItems() {
     return (
         <AnimatePresence mode="wait">
             {products.length > 0 ? <SmoothAppearance
+            style={{ '--cart-items-min-count': products.length >= 3 ? 3 : (products.length === 2 ? 2 : 1) }}
+            
                 key={"list"}
                 Tag={motion.ul} className="cart-items column gap-40">
                 {products.map((el) => (
