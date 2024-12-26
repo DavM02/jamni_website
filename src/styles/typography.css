@@ -123,14 +123,17 @@ h6 {
 }
 
 .xxsmall-text,
-#products-display li::after,
-input::placeholder,
-textarea,
-textarea::placeholder, input {
+#products-display li::after{
   font-size: 14px;
   font-weight: 400;
 }
-
+input::placeholder,
+textarea,
+textarea::placeholder,
+input {
+  font-size: 16px;
+  font-weight: 400;
+}
 .xxxsmall-text,
 header .icons .icon:nth-child(3)::after {
   font-size: 12px;

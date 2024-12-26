@@ -37,7 +37,7 @@ export default function Payment({ setActiveTab, setIsBought }) {
     return (
         <SmoothAppearance blur={true}>
             <DeliveryOutput setActiveTab={setActiveTab}>
-                <div className="row center-y s-between wrap">
+                <div className="row center-y s-between wrap gap-10">
                     <div className="row center-y wrap gap-10">
                         <span className="xxsmall-text text-main text-black-secondary up-case">
                             <b>доставка</b>

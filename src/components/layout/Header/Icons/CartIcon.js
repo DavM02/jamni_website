@@ -32,6 +32,7 @@ export default function CartIcon() {
  
   return (
     <>
+      <h1>{products.length}</h1>
       <div
         data-count={products.length}
         className="icon"

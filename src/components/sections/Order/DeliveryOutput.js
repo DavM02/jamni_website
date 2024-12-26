@@ -7,7 +7,7 @@ export default function DeliveryOutput({ setActiveTab, children }) {
   const formData = forms?.infoForm?.formData;
   return (
     <div className="form-output">
-      <div className="row center-y s-between wrap">
+      <div className="row center-y s-between wrap gap-10">
         <div className="row center-y wrap gap-10">
           <span className="xxsmall-text text-main text-black-secondary up-case">
             <b> Контакт</b>
@@ -23,7 +23,7 @@ export default function DeliveryOutput({ setActiveTab, children }) {
           изменить
         </span>
       </div>
-      <div className="row center-y s-between wrap">
+      <div className="row center-y s-between wrap gap-10">
         <div className="row center-y wrap gap-10">
           <span className="xxsmall-text text-main text-black-secondary up-case">
             <b>адрес</b>
