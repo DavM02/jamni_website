@@ -32,9 +32,11 @@ export default function CartIcon() {
  
   return (
     <>
-      <h1>{products.length}</h1>
+    
       <div
+        key={products.length} 
         data-count={products.length}
+        style={{ "--dummy": products.length }} 
         className="icon"
         onClick={() => {
           toggleCart();
@@ -47,7 +49,7 @@ export default function CartIcon() {
       >
         <img src={bagIcon} alt="bag-icon" />
       </div>
-   
+  
         <Portal
           value={isCartOpen}
           root={"modal-root"}
