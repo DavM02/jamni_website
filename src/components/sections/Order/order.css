@@ -155,7 +155,7 @@ background-color: var(--line-bg);
   margin-bottom: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
 }
 
-#order span {
+#order span:not(.selection-items span) {
     line-height: normal;
 }
 

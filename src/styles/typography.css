@@ -126,7 +126,7 @@ h6 {
 #products-display li::after,
 input::placeholder,
 textarea,
-textarea::placeholder input {
+textarea::placeholder, input {
   font-size: 14px;
   font-weight: 400;
 }
