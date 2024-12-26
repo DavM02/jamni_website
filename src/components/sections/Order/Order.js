@@ -1,6 +1,7 @@
 import { MainContext } from "../../../context/MainContext";
 import CartItems from "../../Cart/CartItems";
 import "./order.css";
+import './media.css'
 import { useContext, useState } from "react";
 import PromoCode from "./PromoCode";
 
@@ -11,8 +12,8 @@ import Information from "./Forms/Information";
 import Payment from "./Forms/Payment";
 import Bought from "./Bought";
 import SmoothAppearance from "../../ui/SmoothAppearance";
-export default function Order() {
-  console.log('lol')
+export default function Order({ setIsBought }) {
+ 
   const { scrollbarAccess } = useContext(MainContext);
   const isTouchDevice = () => {
     return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -50,6 +51,7 @@ export default function Order() {
                             setActiveTab={setActiveTab}
                             key={'delivery'} />
                           : <Payment
+                            setIsBought={setIsBought}
                             setActiveTab={setActiveTab}
                             key={'payment'}
                           />)

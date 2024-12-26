@@ -7,7 +7,7 @@ background-color: var(--gray);
 }
 #order .section-layout {
   display: grid;
-  gap: 70px;
+  gap: clamp(1.875rem, 1.2981rem + 2.5641vw, 4.375rem);
   grid-template-columns: 1fr 40%;
 }
 
@@ -24,6 +24,7 @@ background-color: var(--gray);
 }
 
 #order .promo-code {
+  container-type: inline-size;
   padding: 30px;
   background-color: var(--gray);
 }
@@ -40,10 +41,22 @@ background-color: var(--gray);
   margin: 20px 0 40px;
 }
 
+#order .promo-code form>.row:nth-child(3) span:nth-child(2) {
+  text-align: end;
+}
+
+#order .form-info > .row:nth-child(1) {
+  margin-bottom: 20px;
+}
+
 #order .form-info .main-input {
   max-width: unset;
   height: 48px;
   outline: 1px solid var(--line-bg);
+}
+
+#order .promo-code .main-input {
+  max-width: unset;
 }
 
 #order .form-info > .row.gap-10 {
@@ -52,13 +65,14 @@ background-color: var(--gray);
 
 #order .form-info>.row.gap-20 {
   margin: 20px 0;
+  container-type: inline-size;
 }
 
 #order .container {
   max-width: 1920px !important;
 }
 
-#order .form-info>.row.gap-10 + span {
+#order .form-info>.row.gap-10+ span {
   display: block;
   margin-top: 45px;
   margin-bottom: 15px;
@@ -87,9 +101,9 @@ background-color: var(--line-bg);
 #order .form-payment>.row:nth-last-child(2),
 #order .form-payment>.row:nth-last-child(3)
 {
-  min-height: 48px;
+ 
   border: 1px solid var(--line-bg);
-  padding: 0 25px;
+  padding: 13px 25px;
   border-radius: 20px;
 }
 
@@ -124,7 +138,7 @@ background-color: var(--line-bg);
 
 #order .form-output > .row {
   margin: 0 25px;
-  min-height: 48px;
+  padding: 13px 0;
 }
 
 #order .form-output > .row:not(.row:nth-last-child(1)) {
@@ -137,17 +151,23 @@ background-color: var(--line-bg);
   display: block;
 }
 
-#order .section-layout  >div:nth-child(1) > div:nth-child(1) > .row:nth-child(1) {
-  margin-bottom: 60px;
+#order .section-layout  >div:nth-child(1) > div:nth-child(1) > .row:nth-child(1):not(.bought div) {
+  margin-bottom: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
+}
+
+#order span {
+    line-height: normal;
 }
 
 #order .section-layout  >div:nth-child(1)>div:nth-child(1)>.row:nth-child(1) span:nth-child(1), #order p span, #order .form-output .row > span:nth-child(2) {
   user-select: none;
   cursor: pointer;
+
 }
 
-
-
+#order .bought > div.row:nth-child(1) {
+  gap: clamp(1.875rem, 1.0096rem + 3.8462vw, 5.625rem);
+}
 #order .bought img {
   object-fit: cover;
   height: 100%;
@@ -159,3 +179,8 @@ background-color: var(--line-bg);
   text-decoration-thickness: 0.5px;
     text-underline-offset: 2px;
 }
+
+#order .form-info p {
+  text-align: end;
+}
+

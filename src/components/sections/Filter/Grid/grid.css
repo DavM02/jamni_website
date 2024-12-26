@@ -49,8 +49,15 @@
   border: 1px solid var(--line-bg);
   height: calc(var(--filter-item-img-height) + 46px);
   width: 100%;
+  cursor: pointer;
 }
-
+#filter #article a {
+  padding: 37px 29px;
+}
+#filter #article span:nth-child(2) {
+  display: block;
+  margin: 10px 0 20px;
+}
 #filter .filter-item .palette {
   transition: var(--transition) 0.3s opacity;
 }

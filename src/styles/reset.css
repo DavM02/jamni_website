@@ -46,7 +46,7 @@ textarea:-webkit-autofill:focus,
 textarea:-webkit-autofill:hover {
     color: var(--black) !important;
     -webkit-text-fill-color: var(--black) !important;
-    -webkit-box-shadow: inset 0 0 0 1000px transparent !important;
+    -webkit-box-shadow: inset 0 0 0 1000px var(--gray) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
 }

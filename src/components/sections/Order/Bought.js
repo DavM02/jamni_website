@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 export default function Bought() {
     return (
         <SmoothAppearance blur={true} className="bought column gap-60">
-            <div className='row gap-90'>
+            <div className='row center-x wrap'>
                 <div>
                     <LazyLoadImage effect="blur"
                         style={{ objectViewBox: 'inset(0% 17% 0% 0%)' }}

@@ -8,7 +8,7 @@ export default function DeliveryOutput({ setActiveTab, children }) {
   return (
     <div className="form-output">
       <div className="row center-y s-between wrap">
-        <div className="row center-y wrap gap-20">
+        <div className="row center-y wrap gap-10">
           <span className="xxsmall-text text-main text-black-secondary up-case">
             <b> Контакт</b>
           </span>
@@ -24,7 +24,7 @@ export default function DeliveryOutput({ setActiveTab, children }) {
         </span>
       </div>
       <div className="row center-y s-between wrap">
-        <div className="row center-y wrap gap-20">
+        <div className="row center-y wrap gap-10">
           <span className="xxsmall-text text-main text-black-secondary up-case">
             <b>адрес</b>
           </span>

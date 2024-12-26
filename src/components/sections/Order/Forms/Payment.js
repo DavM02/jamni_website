@@ -7,7 +7,7 @@ import AnimButton from '../../../ui/buttons/AnimButton/AnimButton';
 import Checkbox from '../../../ui/inputs/Checkbox/Checkbox'
 
 import Cart from '../Cart/Cart';
-export default function Payment({ setActiveTab }) {
+export default function Payment({ setActiveTab, setIsBought }) {
     const { forms, updateFormData, validateFormData, clearErrors } = formStore()
     const [isChecked, setIsChecked] = useState(
         forms?.paymentForm?.formData?.paymentType ?? "onspot"
@@ -31,13 +31,14 @@ export default function Payment({ setActiveTab }) {
         if (validateFormData("paymentForm", formDataObject)) {
             updateFormData("paymentForm", formDataObject);
             setActiveTab("bought");
+            setIsBought(true)
         }
     }
     return (
         <SmoothAppearance blur={true}>
             <DeliveryOutput setActiveTab={setActiveTab}>
                 <div className="row center-y s-between wrap">
-                    <div className="row center-y wrap gap-20">
+                    <div className="row center-y wrap gap-10">
                         <span className="xxsmall-text text-main text-black-secondary up-case">
                             <b>доставка</b>
                         </span>
@@ -64,7 +65,7 @@ export default function Payment({ setActiveTab }) {
                     оплата
                 </span>
                 <Cart isChecked={isChecked} setIsChecked={setIsChecked} />
-                <div className="row center-y gap-20">
+                <div className="row center-y gap-10">
                     <Checkbox
                         checked={isChecked === "onspot"}
                         onChange={() =>
@@ -93,3 +94,5 @@ export default function Payment({ setActiveTab }) {
         </SmoothAppearance >
     )
 }
+
+ 

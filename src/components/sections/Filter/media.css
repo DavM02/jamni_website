@@ -53,6 +53,8 @@
 
     #filter .filter-display #article {
         grid-column: 1/-1 !important;
+        height: auto;
+        min-height: calc(var(--filter-item-img-height) + 46px);
     }
 
     #filter .filter-display .placeholder {

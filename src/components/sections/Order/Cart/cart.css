@@ -9,6 +9,7 @@ margin-bottom: 20px;
 #order #form-cart .cart-data {
     width: 100%;
     margin-top: 35px;
+    container-type: inline-size;
 }
 
 #order #form-cart .num-group {

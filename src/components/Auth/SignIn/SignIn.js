@@ -1,9 +1,11 @@
+import FormWrapper from "../../FormWrapper/FormWrapper";
 import AnimButton from "../../ui/buttons/AnimButton/AnimButton";
 import Input from "../../ui/inputs/Input/Input";
 import CloseButton from "../CloseButton";
-export default function SignIn({ setAuth }) {
+ export default function SignIn({ setAuth }) {
+ 
   return (
-    <form action="#">
+    <FormWrapper formkey={"signinForm"}>
       <div className="text-center">
         <span className="form-heading text-heading text-black up-case">
           войти
@@ -17,6 +19,6 @@ export default function SignIn({ setAuth }) {
         <span onClick={() => setAuth("sign-up")}>Зарегистрироваться</span>
       </p>
       <CloseButton setAuth={setAuth} />
-    </form>
+    </FormWrapper>
   );
 }

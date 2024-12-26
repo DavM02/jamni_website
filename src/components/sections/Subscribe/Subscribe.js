@@ -5,10 +5,9 @@ import AnimatedText from "../../scroll/TextAnimation";
 import Input from "../../ui/inputs/Input/Input";
 import AnimButton from "../../ui/buttons/AnimButton/AnimButton";
 import mailIcon from "../../../assets/icons/mail.svg";
-import { formStore } from "../../../stores/formStore";
+import FormWrapper from "../../FormWrapper/FormWrapper";
 export default function Subscribe() {
-  const { updateFormData, validateFormData, clearErrors } = formStore();
-
+ 
   return (
     <section id="subscribe">
       <div className="container">
@@ -22,19 +21,8 @@ export default function Subscribe() {
             <p className="small-text text-main text-black up-case">
               получайте <b>скидки</b> и супер предложения
             </p>
-            <form
-              data-formkey="subscribeForm"
-              action="#"
-              onSubmit={(e) => {
-                e.preventDefault();
-                const fd = new FormData(e.target);
-                const formDataObject = Object.fromEntries(fd.entries());
-                clearErrors("subscribeForm");
-                if (validateFormData("subscribeForm", formDataObject)) {
-                  updateFormData("subscribeForm", formDataObject);
-                }
-              }}
-            >
+            <FormWrapper
+            formkey="subscribeForm">
               <div className="row wrap gap-15">
                 <Input
                   type="email"
@@ -45,7 +33,7 @@ export default function Subscribe() {
                   <img src={mailIcon} alt="mail" /> ПОДПИСАТЬСЯ
                 </AnimButton>
               </div>
-            </form>
+            </FormWrapper>
           </div>
 
           <div className="mockup">

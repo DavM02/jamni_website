@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Upload({ text = "dsadsad" }) {
   const [name, setName] = useState(text);
   function handleChange(e) {
-    console.log(e.target.value);
+ 
     const getName = e.target.value.split("\\");
     setName(getName[getName.length - 1]);
   }

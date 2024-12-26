@@ -36,7 +36,7 @@ export default function Delivery({ setActiveTab }) {
         <span className="text-main xsmall-text text-black-secondary up-case">
           способ доставки
         </span>
-        <div className="row center-y gap-20">
+        <div className="row center-y gap-10">
           <Checkbox
             checked={isChecked === "pickup"}
             onChange={() =>
@@ -50,7 +50,7 @@ export default function Delivery({ setActiveTab }) {
             12А, стр. 6.)
           </Checkbox>
         </div>
-        <div className="row center-y gap-20">
+        <div className="row center-y gap-10">
           <Checkbox
             checked={isChecked === "delivery"}
             onChange={() =>

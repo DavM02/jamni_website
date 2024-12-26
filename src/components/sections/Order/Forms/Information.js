@@ -31,7 +31,7 @@ export default function Information({ setActiveTab }) {
         action="#"
         data-formkey="infoForm"
       >
-        <div className="row s-between">
+        <div className="row center-y s-between">
           <span className="text-main xsmall-text up-case">Контакт</span>
           <p className="text-main xxsmall-text text-gray">
             У Вас уже есть аккаунт?{" "}

@@ -1,10 +1,10 @@
 import AnimButton from "../../ui/buttons/AnimButton/AnimButton";
 import Input from "../../ui/inputs/Input/Input";
 import CloseButton from "../CloseButton";
+import FormWrapper from "../../FormWrapper/FormWrapper"; 
 export default function SignUp({ setAuth }) {
-  
-  return (
-    <form action="#">
+   return (
+    <FormWrapper formkey={"signinForm"}>
       <div className="text-center">
         <span className="form-heading text-heading text-black up-case">
           регистрация
@@ -20,6 +20,6 @@ export default function SignUp({ setAuth }) {
         <span onClick={() => setAuth("sign-in")}> Войти</span>
       </p>
       <CloseButton setAuth={setAuth} />
-    </form>
+    </FormWrapper>
   );
 }

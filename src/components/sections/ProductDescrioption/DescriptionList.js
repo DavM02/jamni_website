@@ -10,7 +10,7 @@ export default function DescriptionList({ data }) {
     const handleToggle = (section) => {
         setOpen((prev) => (prev === section ? '' : section));
     };
-   
+ 
     const sections = [
         { key: 'technical', label: 'технические характеристики', content: data?.technicalSpecifications },
         { key: 'maintenance', label: 'обслуживание', content: data?.maintenance },

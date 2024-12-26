@@ -9,8 +9,8 @@ import masterCard from '../../../../assets/icons/master-card.svg'
 export default function Cart({ setIsChecked, isChecked }) {
     return (
         <div id='form-cart'>
-            <div className='row s-between center-y gap-10'>
-                <div className='row center-y s gap-20'>
+            <div className='row wrap s-between center-y gap-10'>
+                <div className='row center-y gap-10'>
                     <Checkbox
                         checked={isChecked === "bycard"}
                         onChange={() =>

@@ -95,3 +95,8 @@
   border-radius: 50%;
   border: 2px solid var(--black);
 }
+
+
+#product-description .bed-sketch {
+  max-width: 500px;
+}
