@@ -129,6 +129,12 @@ background-color: var(--line-bg);
   border: 1px solid var(--line-bg);
   border-radius: 20px;
 }
+
+#order .form-output > .row > .row span, #order .form-output>.row>.row b {
+        text-decoration: none !important;
+}
+
+
 #order .form-output .text-black-secondary {
   width: 120px;
 }

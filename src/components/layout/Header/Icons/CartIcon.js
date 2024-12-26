@@ -19,7 +19,8 @@ export default function CartIcon() {
 
   } = modalStore();
 
-  const { products } = userCartStore()
+  const products = userCartStore((state) => state.products);
+
 
   useEffect(() => {
  
