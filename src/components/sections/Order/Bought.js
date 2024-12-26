@@ -7,7 +7,7 @@ export default function Bought() {
             <div className='row center-x wrap'>
                 <div>
                     <LazyLoadImage effect="blur"
-                        style={{ objectViewBox: 'inset(0% 17% 0% 0%)' }}
+                        style={{ objectViewBox: 'inset(0% 17% 0% 0%)', WebkitObjectViewBox: 'inset(0% 17% 0% 0%)' }}
                         width="254px"
                         height="254px"
                         src='https://i.ibb.co/pjv1Wds/img-1.jpg' alt='vase' />

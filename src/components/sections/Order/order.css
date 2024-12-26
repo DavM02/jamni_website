@@ -159,7 +159,8 @@ background-color: var(--line-bg);
     line-height: normal;
 }
 
-#order .section-layout  >div:nth-child(1)>div:nth-child(1)>.row:nth-child(1) span:nth-child(1), #order p span, #order .form-output .row > span:nth-child(2) {
+#order .section-layout  >div:nth-child(1)>div:nth-child(1)>.row:nth-child(1) span:nth-child(1):not(.bought span), 
+#order p span, #order .form-output .row > span:nth-child(2) {
   user-select: none;
   cursor: pointer;
 
