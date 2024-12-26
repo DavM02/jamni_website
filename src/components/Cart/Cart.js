@@ -1,5 +1,5 @@
 import "./cart.css";
-import { cartModalStore } from "../../stores/cartModalStore";
+import { modalStore } from "../../stores/modalStore";
 import { userCartStore } from "../../stores/cartStore";
 import CartHeader from "./CartHeader";
 import Recommendations from "./Recommendations";
@@ -7,7 +7,7 @@ import CartFooter from "./CartFooter";
 import CartItems from "./CartItems";
 
 export default function Cart() {
-  const { toggleCart } = cartModalStore();
+  const { toggleCart } = modalStore();
   const { totalPrice } = userCartStore();
 
 

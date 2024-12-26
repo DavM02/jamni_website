@@ -4,15 +4,15 @@ import arrow from "../../assets/icons/arrow-up.svg";
 import Slide from "./Slide";
 import { AnimatePresence } from "framer-motion";
 import { memo, useState } from "react";
-import { cartModalStore } from "../../stores/modalStore";
+import { modalStore } from "../../stores/modalStore";
 import FetchError from "../ui/messages/FetchError";
 import DataLoading from "../ui/messages/DataLoading";
 import SmoothAppearance from "../ui/SmoothAppearance";
 
 function Recommendations() {
   const [showRecs, setShowRecs] = useState(true);
-  const { cartRecommendations, error, isLoading } = cartModalStore();
-  console.log(cartRecommendations)
+  const { cartRecommendations, error, isLoading } = modalStore();
+ 
   return (
     <div className="show-recommendations">
       <div

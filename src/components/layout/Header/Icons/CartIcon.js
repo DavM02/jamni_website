@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import bagIcon from "../../../../assets/icons/shopping-bag.svg";
-import { cartModalStore } from "../../../../stores/cartModalStore";
-import { userCartStore } from "../../../../stores/cartStore";
-import Cart from "../../../Cart/Cart";
+import { modalStore } from "../../../../stores/modalStore";
+ import Cart from "../../../Cart/Cart";
 import Backdrop from "../../../ui/Backdrop/Backdrop";
 import Portal from "../../../ui/Portal";
 import { useLocation } from "react-router-dom";
+import { userCartStore } from "../../../../stores/cartStore";
 export default function CartIcon() {
 
   const location = useLocation()
@@ -17,9 +17,9 @@ export default function CartIcon() {
     toggleCart,
     isAdded,
 
-  } = cartModalStore();
+  } = modalStore();
 
-  const {products} = userCartStore()
+  const { products } = userCartStore()
 
   useEffect(() => {
  

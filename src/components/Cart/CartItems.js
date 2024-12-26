@@ -26,7 +26,7 @@ export default function CartItems() {
                 ))}
             </SmoothAppearance> : <SmoothAppearance key={'no-found'} style={{ padding: '30px 0' }}>
                 <h5 className="text-center">
-                    cart is empty
+                   ваша карта пуста
                 </h5>
             </SmoothAppearance>}
         </AnimatePresence>

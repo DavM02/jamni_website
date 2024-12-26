@@ -2,7 +2,7 @@ import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import AddToFav from '../../ui/buttons/AttToFav/AddToFav'
 export default function Slide({ el }) {
-    console.log(el.id)
+ 
     return (
         <>
             <AddToFav/>
@@ -11,7 +11,7 @@ export default function Slide({ el }) {
             >
                 <LazyLoadImage
                     // visibleByDefault={true} 
-                    src={el.image}
+                    src={el.images[1]}
                     width={'100%'}
                     height={'100%'}
                     effect='blur'

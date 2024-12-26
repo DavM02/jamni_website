@@ -2,7 +2,9 @@
   padding: clamp(2rem, 1.6538rem + 1.5385vw, 3.5rem) 0
     var(--section-padding-equal-big);
 }
-
+#order-page #more-products{
+background-color: var(--gray);
+}
 #order .section-layout {
   display: grid;
   gap: 70px;
@@ -44,6 +46,24 @@
   outline: 1px solid var(--line-bg);
 }
 
+#order .form-info > .row.gap-10 {
+  margin-top: 18px;
+}
+
+#order .form-info>.row.gap-20 {
+  margin: 20px 0;
+}
+
+#order .container {
+  max-width: 1920px !important;
+}
+
+#order .form-info>.row.gap-10 + span {
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
 #order form:not(.promo-code form) button {
   width: 100%;
   height: 48px;
@@ -53,39 +73,39 @@
 #order .form-info .row .main-input {
   width: calc(50% - 10px);
 }
-
-#order .form-info > div:nth-child(1) {
-  margin-bottom: 20px;
+ 
+#order  form .line {
+background-color: var(--line-bg);
+  margin: 45px 0;
+  height: 1px;
+  width: 100%;
 }
+ 
 
-#order .custom-selection + div {
-  margin: 20px 0;
-}
-
-#order .form-info > .row.gap-10 {
-  padding: 18px 0 50px;
-}
-
-#order form:not(.promo-code form) > div:nth-last-child(2) {
-  border-bottom: 1px solid var(--line-bg);
-  margin-top: 10px;
-  margin-bottom: 45px;
-}
-
-#order .form-delivery > .row:nth-last-child(2),
-#order .form-delivery > .row:nth-last-child(3) {
+#order .form-delivery > .row:nth-child(2),
+#order .form-delivery > .row:nth-child(3),
+#order .form-payment>.row:nth-last-child(2),
+#order .form-payment>.row:nth-last-child(3)
+{
   min-height: 48px;
   border: 1px solid var(--line-bg);
   padding: 0 25px;
   border-radius: 20px;
 }
 
-#order .form-delivery + .row button {
+#order .form-delivery>.row:nth-child(3) {
+  margin-top: 10px;
+}
+
+#order .form-delivery + .row button,
+#order .form-payment+.row button
+{
   cursor: pointer;
   margin-top: 25px;
 }
 
-#order .form-delivery + .row button img {
+#order form + .row button img 
+{
   width: 11px;
   height: 11px;
 }
@@ -107,20 +127,35 @@
   min-height: 48px;
 }
 
-#order .form-output > .row:nth-child(1) {
+#order .form-output > .row:not(.row:nth-last-child(1)) {
   border-bottom: 1px solid var(--line-bg);
 }
 
-#order .form-delivery > span:nth-child(1) {
+#order .form-delivery > span:nth-child(1),
+#order .form-payment>span:nth-child(1) {
   margin-bottom: 20px;
   display: block;
 }
 
-#order .section-layout > div:nth-child(1) > .row:nth-child(1) {
+#order .section-layout  >div:nth-child(1) > div:nth-child(1) > .row:nth-child(1) {
   margin-bottom: 60px;
 }
 
-#order .section-layout>div:nth-child(1)>.row:nth-child(1) span:nth-child(1) {
+#order .section-layout  >div:nth-child(1)>div:nth-child(1)>.row:nth-child(1) span:nth-child(1), #order p span, #order .form-output .row > span:nth-child(2) {
   user-select: none;
   cursor: pointer;
+}
+
+
+
+#order .bought img {
+  object-fit: cover;
+  height: 100%;
+}
+
+#order .bought p span {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+    text-underline-offset: 2px;
 }

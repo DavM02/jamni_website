@@ -3,11 +3,11 @@ import Options from "./Options/Options";
 import AddToFav from "../../ui/buttons/AttToFav/AddToFav";
 import MainButton from "../../ui/buttons/MainButton/MainButton";
 import { userCartStore } from "../../../stores/cartStore";
-import { cartModalStore } from "../../../stores/modalStore";
+import { modalStore } from "../../../stores/modalStore";
 
 export default function Form({ data, catalog }) {
   const addToCart = userCartStore((state) => state.addProduct);
-  const { toggleAdded } = cartModalStore();
+  const { toggleAdded } = modalStore();
   const dimensions = data && data.characteristics[0].dimensions;
   const options = data && data.characteristics[1].options;
 

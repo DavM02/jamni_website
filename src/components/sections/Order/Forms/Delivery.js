@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DeliveryOutput from "../Outputs/DeliveryOutput";
+import DeliveryOutput from "../DeliveryOutput";
 import Checkbox from "../../../ui/inputs/Checkbox/Checkbox";
 import AnimButton from "../../../ui/buttons/AnimButton/AnimButton";
 import arrowLeft from "../../../../assets/icons/arrow-left.svg";
@@ -16,11 +16,12 @@ export default function Delivery({ setActiveTab }) {
     e.preventDefault();
     const fd = new FormData(e.target);
     const formDataObject = {
-      deliveryType: fd.get("pickup") ? "pickup" : "delivery",
+      deliveryType: fd.get("pickup") ? "delivery" : "pickup",
     };
     if (validateFormData("deliveryForm", formDataObject)) {
       updateFormData("deliveryForm", formDataObject);
-      // setActiveTab("delivery");
+      setActiveTab("payment");
+    
     }
   }
   return (
@@ -62,6 +63,7 @@ export default function Delivery({ setActiveTab }) {
             курьер
           </Checkbox>
         </div>
+        <div className="line"></div>
         <AnimButton type="submit">перейти к оплате</AnimButton>
       </form>
       <div className="row center-x">

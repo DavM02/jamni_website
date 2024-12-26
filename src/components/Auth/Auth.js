@@ -5,7 +5,9 @@ import Portal from "../ui/Portal";
 import "./auth.css";
 import SmoothAppearance from "../ui/SmoothAppearance";
 import { AnimatePresence } from "framer-motion";
-export default function Auth({ auth, setAuth }) {
+import { modalStore } from "../../stores/modalStore";
+export default function Auth() {
+  const { auth, setAuth } = modalStore();
   return (
     <>
       <Portal value={auth !== null} root={"modal-root"} className={`auth`}>

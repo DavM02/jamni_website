@@ -1,8 +1,8 @@
 import React from "react";
-import { formStore } from "../../../../stores/formStore";
+import { formStore } from "../../../stores/formStore";
 
-export default function DeliveryOutput({ setActiveTab }) {
-  const { forms, errors, clearErrors, updateFormData, validateFormData } =
+export default function DeliveryOutput({ setActiveTab, children }) {
+  const { forms } =
     formStore();
   const formData = forms?.infoForm?.formData;
   return (
@@ -29,7 +29,7 @@ export default function DeliveryOutput({ setActiveTab }) {
             <b>адрес</b>
           </span>
           <span className="xsmall-text text-main text-black">
-            {formData.street} {formData.homeaddress}, {formData.index},{" "}
+            {formData.street} {formData.homeAddress}, {formData.index},{" "}
             {formData.city}, {formData.country}
           </span>
         </div>
@@ -40,6 +40,7 @@ export default function DeliveryOutput({ setActiveTab }) {
           изменить
         </span>
       </div>
+      {children}
     </div>
   );
 }

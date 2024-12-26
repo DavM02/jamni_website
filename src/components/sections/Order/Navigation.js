@@ -1,8 +1,8 @@
 import React from 'react';
-import { cartModalStore } from '../../../stores/cartModalStore';
+import { modalStore } from '../../../stores/modalStore';
 
 export default function Navigation({ activeTab }) {
-    const { toggleCart, isCartOpen } = cartModalStore();
+    const { toggleCart, isCartOpen } = modalStore();
 
      const tabs = [
         { id: 'information', label: 'информация' },

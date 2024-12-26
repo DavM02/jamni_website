@@ -4,12 +4,13 @@ import ChunkLoading from "../../components/ui/messages/ChunkLoading/ChunkLoading
  ;
  
 
-const Order = React.lazy(() => import("../../components/sections/Order/Order"));
+const OrderSections = React.lazy(() => import("./OrderSections"));
 function OrderPage() {
   return (
-    <div id="contacts-page">
+    <div id="order-page">
       <Suspense fallback={<ChunkLoading />}>
-        <Order />
+        <OrderSections />
+         
       </Suspense>
     </div>
   );

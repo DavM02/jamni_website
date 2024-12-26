@@ -5,6 +5,7 @@ import Checkbox from "../../../ui/inputs/Checkbox/Checkbox";
 import Selection from "../../../ui/inputs/Selection/Selection";
 import AnimButton from "../../../ui/buttons/AnimButton/AnimButton";
 import { formStore } from "../../../../stores/formStore";
+import { modalStore } from "../../../../stores/modalStore";
 export default function Information({ setActiveTab }) {
   const [subscribe, setSubscribe] = useState(false);
   const [saveInfo, setSaveInfo] = useState(false);
@@ -19,6 +20,7 @@ export default function Information({ setActiveTab }) {
       setActiveTab("delivery");
     }
   }
+  const { setAuth } = modalStore()
 
   return (
     <SmoothAppearance blur={true}>
@@ -33,7 +35,7 @@ export default function Information({ setActiveTab }) {
           <span className="text-main xsmall-text up-case">Контакт</span>
           <p className="text-main xxsmall-text text-gray">
             У Вас уже есть аккаунт?{" "}
-            <span className="text-black">Авторизоваться</span>
+            <span className="text-black" onClick={() => setAuth('sign-in')}>Авторизоваться</span>
           </p>
         </div>
         <Input type="email" name="email" placeholder="Электронная почта" />
@@ -60,7 +62,7 @@ export default function Information({ setActiveTab }) {
           <Input type="text" placeholder="Город" name="city" />
           <Input type="number" placeholder="Индекс" name="index" />
           <Input type="text" placeholder="Улица" name="street" />
-          <Input type="number" placeholder="Номер дома" name="homeaddress" />
+          <Input type="number" placeholder="Номер дома" name="homeAddress" />
         </div>
         <Input type="tel" placeholder="Телефон" name="phone" />
         <div className="row gap-10">
@@ -74,6 +76,7 @@ export default function Information({ setActiveTab }) {
             Сохраните эту информацию для использования в следующий раз
           </Checkbox>
         </div>
+        <div className="line"></div>
         <AnimButton type="submit">продолжить</AnimButton>
       </form>
     </SmoothAppearance>

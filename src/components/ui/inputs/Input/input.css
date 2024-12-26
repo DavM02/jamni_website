@@ -23,5 +23,5 @@ textarea.main-input {
 
 .main-input.has-error {
   outline: var(--red-error) 1px solid !important;
-  background-color: var(--white) !important;
+  /* background-color: var(--white) !important; */
 }

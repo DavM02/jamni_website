@@ -6,6 +6,10 @@ export const modalStore = create((set) => ({
   cartRecommendations: [],
   loading: false,
   error: null,
+  auth: null,
+  setAuth: (val) => set((state) => ({
+    auth: val
+  })),
   toggleAdded: () => set((state) => ({ isAdded: !state.isAdded })),
   toggleCart: () => set((state) => ({ isCartOpen: !state.isCartOpen })),
   getCartRecommendations: () => {
@@ -17,7 +21,7 @@ export const modalStore = create((set) => ({
           Math.random() * Math.max(1, Math.floor(dataLength / 18))
         );
         console.log(dataLength)
-        return loadData(["decor", randomPage, 14]);  
+        return loadData(["decor", randomPage, 14]);
       })
       .then((data) => {
         console.log(data)
@@ -30,4 +34,3 @@ export const modalStore = create((set) => ({
 
 }));
 
- 
