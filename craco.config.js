@@ -14,20 +14,18 @@ module.exports = {
         },
         configure: (webpackConfig) => {
             webpackConfig.optimization.splitChunks = {
-                chunks: 'all',
+                chunks: 'all',  
                 cacheGroups: {
                     default: {
-                      
+                        // minChunks: 2,
                         reuseExistingChunk: true,
                     },
                     sharedStyles: {
-                        name: "shared-styles",
+                        name: "shared-styles",   
                         test: /src\/(components\/(ui|sections\/(moreproducts|about|projects|news\/newsItem)|cart\/.*|infiniteslider)\/.*\.css)$/i,
-                        chunks: "all",
-                        enforce: true,
-                     
-                        // Указание порядка
-                        order: 1,
+                        chunks: "all",   
+                        enforce: true,  
+                        priority: 10,   
                     },
                 },
             };
