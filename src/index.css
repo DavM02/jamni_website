@@ -4,7 +4,7 @@
 @import "./styles/layouts.css";
 @import "./styles/media.css";
 @import "./styles/typography.css";
-
+@import "./styles/shared.css";
 body {
   overscroll-behavior: none;
 }

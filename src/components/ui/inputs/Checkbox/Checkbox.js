@@ -1,4 +1,4 @@
-import "./checkbox.css";
+// import "./checkbox.css";
 export default function Checkbox({ label, checked, children, ...props }) {
   return (
     <>

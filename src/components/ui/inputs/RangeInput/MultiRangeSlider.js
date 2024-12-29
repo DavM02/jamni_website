@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState, useRef, useContext } from "react";
-import "./multiRangeSlider.css";
+// import "./multiRangeSlider.css";
 import useFilter from "../../../../hooks/useFilter";
 import { MainContext } from "../../../../context/MainContext";
 

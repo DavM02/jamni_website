@@ -1,4 +1,4 @@
-import "./upload.css";
+// import "./upload.css";
 import recieve from "../../../../assets/icons/recieve.svg";
 import { useState } from "react";
 export default function Upload({ text = "dsadsad" }) {

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import SliderNav from './SliderNav';
 import useDebounce from '../../hooks/useDebounce';
-import './infiniteSlider.css'
+// import './infiniteSlider.css'
 import SlideItemWrapper from './SlideItemWrapper';
 
 export default function InfiniteSlider({ sliderData, wrapper: WrapperComponent, children, itemWidth, Tag = 'div'}) {

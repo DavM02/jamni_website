@@ -1,5 +1,5 @@
 import React from 'react'
-import './chunkLoading.css' 
+// import './chunkLoading.css' 
 export default function ChunkLoading() {
   return (
       <div className='chunk-loading center-gr'>

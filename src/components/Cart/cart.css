@@ -164,7 +164,4 @@ header .icons .icon:nth-child(3)::after {
     flex-direction: column;
   }
 
-  /* .cart-items {
-    --cart-item-height: 265px !important;
-  } */
 }

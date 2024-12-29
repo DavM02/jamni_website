@@ -1,11 +1,9 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
     webpack: {
         plugins: {
             add: [
-                new CleanWebpackPlugin(),
                 new MiniCssExtractPlugin({
                     filename: "static/css/[name].[contenthash].css",
                     chunkFilename: "static/css/[name].[contenthash].chunk.css",
@@ -13,24 +11,20 @@ module.exports = {
             ],
         },
         configure: (webpackConfig) => {
-            webpackConfig.optimization.splitChunks = {
-                chunks: 'all',  
+             const updatedConfig = { ...webpackConfig };
+
+            updatedConfig.optimization.splitChunks = {
                 cacheGroups: {
-                    default: {
-                        // minChunks: 2,
-                        reuseExistingChunk: true,
-                    },
                     sharedStyles: {
-                        name: "shared-styles",   
-                        test: /src\/(components\/(ui|sections\/(moreproducts|about|projects|news\/newsItem)|cart\/.*|infiniteslider)\/.*\.css)$/i,
-                        chunks: "all",   
-                        enforce: true,  
-                        priority: 10,   
+                        name: "shared-styles",
+                        test: /src\/(components\/(ui|sections\/(moreproducts|about|projects|news\/newsItem)|cart\/.*|infiniteslider)\/.*\.css)$/i,  // Обновленное регулярное выражение
+                        chunks: "all", 
+                        enforce: true,
                     },
                 },
             };
 
-            return webpackConfig;
+             return updatedConfig;
         },
     },
 };
