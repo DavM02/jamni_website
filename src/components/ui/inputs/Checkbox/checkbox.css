@@ -46,4 +46,5 @@ aspect-ratio: 1/1;
 
 .custom-checkbox + label::first-letter {
   text-transform: uppercase;
+
 }

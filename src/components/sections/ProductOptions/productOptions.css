@@ -55,14 +55,12 @@
   gap: 10px 20px;
 }
 
-#product-options .product-details .option-key::first-letter {
+#product-options .product-details form > .row:nth-child(1) > div::first-letter {
   text-transform: uppercase;
+ 
   
 }
-
-#product-options form > div > div::first-letter, #product-options form>div>div>.option-key::first-letter {
-  text-transform: uppercase;
-}
+ 
 
 #product-options form .submit-wrapper {
   border-top: var(--line-bg) 1px solid;

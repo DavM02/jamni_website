@@ -36,6 +36,7 @@
 
 .custom-selection ul li::first-letter,  .selected-option span::first-letter {
   text-transform: uppercase !important;
+    background-color: red;
 }
 
 .custom-selection ul {

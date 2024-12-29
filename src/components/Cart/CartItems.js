@@ -10,9 +10,7 @@ const CartItems = forwardRef((props, ref) => {
     const { products, removeProduct, increaseQuantity, decreaseQuantity } = userCartStore();
     const navigate = useNavigate();
 
-    // useImperativeHandle(ref, () => ({
-    //     scrollHeight: containerRef.current?.scrollHeight || 0,
-    // }));
+ 
    
     return (
         <AnimatePresence mode="wait">
@@ -20,7 +18,6 @@ const CartItems = forwardRef((props, ref) => {
                 {...props}
                 key={"list"}>
                 <ul
- 
                     ref={ref}
                     className="cart-items column gap-40">
                     {products.map((el) => (

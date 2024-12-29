@@ -37,6 +37,7 @@ function CartItem({
 
   return (
     <SmoothAppearance
+     key={product.id}
       Tag={motion.li}
       layout
       onClick={handleNavigate}
