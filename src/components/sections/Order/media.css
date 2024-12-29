@@ -18,6 +18,13 @@
 }
 
 @media all and (max-width: 769px) {
+
+    #order {
+   
+                padding: 0 0 var(--section-padding-equal-big);
+     
+    }
+
     #order .section-layout {
         grid-template-columns: auto;
         gap: 0;
