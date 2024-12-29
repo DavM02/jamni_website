@@ -16,7 +16,7 @@ export default function Cart() {
     <div id="cart" className="column s-between">
       <div className="cart-content">
         <CartHeader toggleCart={toggleCart} />
-        <CartItems />
+        <CartItems/>
       </div>
       <div>
         <Recommendations />

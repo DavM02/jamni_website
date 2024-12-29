@@ -19,7 +19,7 @@
 
 .cart-item .cart-item-image {
   width: 130px;
-  height: 130px;
+  min-height: 130px;
   aspect-ratio: 1/1;
 }
 

@@ -13,18 +13,16 @@
 }
 
 #order .cart-items {
-  /* height: 470px; */
   margin: clamp(1.25rem, 0.6731rem + 2.5641vw, 3.75rem) 30px;
 }
 
 #order h5 {
-  font-size: 32px !important;
+ 
   margin: 0 30px;
-  line-height: normal;
+ 
 }
 
 #order .promo-code {
-  container-type: inline-size;
   padding: 30px;
   background-color: var(--gray);
 }

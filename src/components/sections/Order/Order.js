@@ -2,7 +2,7 @@ import { MainContext } from "../../../context/MainContext";
 import CartItems from "../../Cart/CartItems";
 import "./order.css";
 import './media.css'
-import { useContext, useState } from "react";
+import { useContext, useState,   useRef, useEffect, useCallback } from "react";
 import PromoCode from "./PromoCode";
 
 import { AnimatePresence } from "framer-motion";
@@ -12,23 +12,41 @@ import Information from "./Forms/Information";
 import Payment from "./Forms/Payment";
 import Bought from "./Bought";
 import SmoothAppearance from "../../ui/SmoothAppearance";
-export default function Order({ setIsBought }) {
- 
-  const { scrollbarAccess } = useContext(MainContext);
-  const isTouchDevice = () => {
-    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  };
-  function allowScroll() {
+import { userCartStore } from "../../../stores/cartStore";
+ export default function Order({ setIsBought }) {
 
-    scrollbarAccess.current.updatePluginOptions("overflow", { open: false });
-  }
+   const { scrollbarAccess } = useContext(MainContext);
+   
+  const elRef = useRef(null)
+  const [height, setHeight] = useState(0)
+const {products} = userCartStore()
+
+   const allowScroll = useCallback(() => {
+
+     scrollbarAccess.current.updatePluginOptions("overflow", { open: false });
+
+
+   }, [scrollbarAccess])
 
   function disableScroll() {
+ 
+     const height = elRef?.current?.scrollHeight
+    if (height > 470) {
+      scrollbarAccess.current.updatePluginOptions("overflow", { open: true });
 
-    scrollbarAccess.current.updatePluginOptions("overflow", { open: true });
+    }
   }
   const [activeTab, setActiveTab] = useState('information')
 
+
+  useEffect(() => {
+    
+    allowScroll()
+    setHeight(elRef?.current?.scrollHeight)
+  }, [products.length, allowScroll])
+
+ 
+ 
   return (
     <section id="order">
       <div className="container">
@@ -64,17 +82,18 @@ export default function Order({ setIsBought }) {
             </AnimatePresence>
 
           </div>
-          <div>
+          <div className="cart-content">
             <h5 className="text-black-secondary">итоговая сумма</h5>
-            <div
-              onMouseEnter={() => !isTouchDevice() && disableScroll()}
-              onMouseLeave={() => !isTouchDevice() && allowScroll()}
-              onTouchStart={() => isTouchDevice() && disableScroll()}
-              onTouchEnd={() => isTouchDevice() && allowScroll()}
-              onTouchCancel={() => isTouchDevice() && allowScroll()}
-            >
-              <CartItems />
-            </div>
+
+            <CartItems
+              height={height > 470 ? '470px' : 'unset'}
+              ref={elRef}
+              onMouseEnter={() => disableScroll()}
+              onMouseLeave={() => allowScroll()}
+              onTouchStart={() => disableScroll()}
+              onTouchEnd={() => allowScroll()}
+              onTouchCancel={() => allowScroll()}
+            />
             <PromoCode />
           </div>
         </div>
