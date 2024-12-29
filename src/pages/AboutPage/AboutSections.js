@@ -5,8 +5,6 @@ import Projects from '../../components/sections/Projects/Projects'
 function AboutSections() {
     return (
         <>
-
- 
             <About />
             <Projects/>
         </>

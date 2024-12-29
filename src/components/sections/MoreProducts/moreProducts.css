@@ -19,7 +19,7 @@
 }
 
 
-#more-products .slider-image + div span:nth-child(1) {
+#more-products .slider-image+div span:nth-child(1) {
     display: block;
     font-weight: 600;
     margin-top: 13px;
@@ -31,12 +31,12 @@
     line-height: 20px;
 }
 
- @media all and (hover: hover) {
-#more-products .slider-image+div {
+@media all and (hover: hover) {
+    #more-products .slider-image+div {
         opacity: 0;
     }
 
-        #more-products .slider-item:hover .slider-image+div {
-            opacity: 1;
-        }
- }
+    #more-products .slider-item:hover .slider-image+div {
+        opacity: 1;
+    }
+}
