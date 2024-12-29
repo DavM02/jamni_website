@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-// import "./input.css";
+import "./input.css";
 import { formStore } from "../../../../stores/formStore";
 
 export default function Input({ tag, ...props }) {

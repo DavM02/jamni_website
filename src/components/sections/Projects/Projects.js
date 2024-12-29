@@ -1,6 +1,6 @@
 import React from 'react'
-// import './projects.css'
-// import './media.css'
+import './projects.css'
+import './media.css'
 import Slider from './Slider/Slider'
 import Sketch from './Sketch'
 import Contact from './Contact'

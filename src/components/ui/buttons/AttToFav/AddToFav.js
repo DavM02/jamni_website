@@ -1,4 +1,4 @@
-// import './addToFav.css'
+import './addToFav.css'
 
 export default function AddToFav() {
   return (

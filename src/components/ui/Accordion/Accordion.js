@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import './accordion.css'
+import './accordion.css'
 export default function Accordion({
     headline,
     dataLength,

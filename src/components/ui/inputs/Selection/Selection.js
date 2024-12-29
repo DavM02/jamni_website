@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./selection.css";
+import "./selection.css";
 import arrow from "../../../../assets/icons/arrow-up.svg";
 
 export default function Selection({ name, defaultValue, data }) {
