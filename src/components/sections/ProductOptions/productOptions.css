@@ -57,9 +57,10 @@
 
 #product-options .product-details .option-key::first-letter {
   text-transform: uppercase;
+  
 }
 
-#product-options form > div > div::first-letter {
+#product-options form > div > div::first-letter, #product-options form>div>div>.option-key::first-letter {
   text-transform: uppercase;
 }
 
