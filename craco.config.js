@@ -15,7 +15,7 @@ module.exports = {
                 cacheGroups: {
                     sharedStyles: {
                         name: "shared-styles",  
-                        test: /src\/(components\/(ui|sections\/(moreproducts|about|projects|news\/newsItem)|cart|infiniteslider)\/.*\.css)$/i,   
+                        test: /src\/(components\/(ui|sections\/(moreproducts|about|projects|news\/newsItem)|cart\/.*|infiniteslider)\/.*\.css)$/i,  // Обновленное регулярное выражение
                         enforce: true,  
                     },
                 },
