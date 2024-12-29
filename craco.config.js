@@ -14,14 +14,20 @@ module.exports = {
         },
         configure: (webpackConfig) => {
             webpackConfig.optimization.splitChunks = {
+                chunks: 'all',
                 cacheGroups: {
                     default: {
+                      
                         reuseExistingChunk: true,
                     },
                     sharedStyles: {
-                        name: "shared-styles",  
-                        test: /src\/(components\/(ui|sections\/(moreproducts|about|projects|news\/newsItem)|cart\/.*|infiniteslider)\/.*\.css)$/i,  // Обновленное регулярное выражение
-                        enforce: true,  
+                        name: "shared-styles",
+                        test: /src\/(components\/(ui|sections\/(moreproducts|about|projects|news\/newsItem)|cart\/.*|infiniteslider)\/.*\.css)$/i,
+                        chunks: "all",
+                        enforce: true,
+                     
+                        // Указание порядка
+                        order: 1,
                     },
                 },
             };
