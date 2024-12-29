@@ -13,7 +13,7 @@ export default function Navigation({ activeTab }) {
      const getColor = (condition) => (condition ? 'var(--black)' : 'inherit');
 
     return (
-        <div className="row gap-5 wrap xxxsmall-text text-main text-gray up-case">
+        <div className="form-steps row gap-5 wrap xxxsmall-text text-main text-gray up-case">
             <span
                 style={{ color: getColor(isCartOpen) }}
                 onClick={toggleCart}

@@ -25,10 +25,6 @@ export default function DescriptionItem({ sectionKey, label, content, open, onTo
                         initial={{ height: 0, overflow: 'hidden' }}
                         animate={{ height: 'auto' }}
                         exit={{ height: 0 }}
-                        transition={{
-                            duration: 0.5,
-                            ease: [0.645, 0.045, 0.355, 1],
-                        }}
                      >
                         <div>
                             {sectionKey === 'technical' && <TechnicalSpecifications content={content} />}

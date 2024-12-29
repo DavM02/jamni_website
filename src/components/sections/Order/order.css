@@ -17,9 +17,9 @@
 }
 
 #order h5 {
- 
+
   margin: 0 30px;
- 
+
 }
 
 #order .promo-code {
@@ -66,6 +66,7 @@
   container-type: inline-size;
 }
 
+ 
 #order .container {
   max-width: 1920px !important;
 }
@@ -156,7 +157,7 @@
   display: block;
 }
 
-#order .section-layout>div:nth-child(1)>div:nth-child(1)>.row:nth-child(1):not(.bought div) {
+#order .form-steps {
   margin-bottom: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
 }
 
@@ -164,7 +165,9 @@
   line-height: normal;
 }
 
-#order .section-layout>div:nth-child(1)>div:nth-child(1)>.row:nth-child(1) span:nth-child(1):not(.bought span),
+
+
+#order .form-steps,
 #order p span,
 #order .form-output .edit {
   user-select: none;
@@ -190,4 +193,17 @@
 
 #order .form-info p {
   text-align: end;
+}
+
+#order .wrap-cart {
+  display: none;
+  border-top: 1px solid var(--line-bg);
+  background-color: var(--gray);
+  border-bottom: 1px solid var(--line-bg);
+  padding: 22px 30px;
+}
+
+#order .wrap-cart span:nth-child(2) {
+  font-size: 24px;
+   
 }

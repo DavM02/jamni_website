@@ -13,7 +13,7 @@ const CartItems = forwardRef((props, ref) => {
  
    
     return (
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait" initial={false}>
             {products.length > 0 ? <SmoothAppearance
                 {...props}
                 key={"list"}>
@@ -31,7 +31,10 @@ const CartItems = forwardRef((props, ref) => {
                         />
                     ))}
                 </ul>
-            </SmoothAppearance> : <SmoothAppearance key={'no-found'} style={{ padding: '30px 0' }}>
+            </SmoothAppearance> : <SmoothAppearance
+            className="row center-y center-x"
+             key={'no-found'} 
+             style={{height: '470px', margin: '30px 0' }}>
                 <h5 className="text-center">
                     ваша карта пуста
                 </h5>

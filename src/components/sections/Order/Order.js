@@ -2,10 +2,10 @@ import { MainContext } from "../../../context/MainContext";
 import CartItems from "../../Cart/CartItems";
 import "./order.css";
 import './media.css'
-import { useContext, useState,   useRef, useEffect, useCallback } from "react";
+import { useContext, useState, useRef, useEffect, useCallback } from "react";
 import PromoCode from "./PromoCode";
 
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Navigation from "./Navigation";
 import Delivery from "./Forms/Delivery";
 import Information from "./Forms/Information";
@@ -13,24 +13,27 @@ import Payment from "./Forms/Payment";
 import Bought from "./Bought";
 import SmoothAppearance from "../../ui/SmoothAppearance";
 import { userCartStore } from "../../../stores/cartStore";
- export default function Order({ setIsBought }) {
+import useMediaQ from "../../../hooks/useMediaQ";
+export default function Order({ setIsBought }) {
 
-   const { scrollbarAccess } = useContext(MainContext);
-   
+  const { scrollbarAccess } = useContext(MainContext);
+  const query = useMediaQ('(max-width: 769px)');
+ 
   const elRef = useRef(null)
-  const [height, setHeight] = useState(0)
-const {products} = userCartStore()
 
-   const allowScroll = useCallback(() => {
+  const [openCart, setOpenCart] = useState(false)
+  const { products } = userCartStore()
 
-     scrollbarAccess.current.updatePluginOptions("overflow", { open: false });
+  const allowScroll = useCallback(() => {
+
+    scrollbarAccess.current.updatePluginOptions("overflow", { open: false });
 
 
-   }, [scrollbarAccess])
+  }, [scrollbarAccess])
 
   function disableScroll() {
- 
-     const height = elRef?.current?.scrollHeight
+
+    const height = elRef?.current?.scrollHeight
     if (height > 470) {
       scrollbarAccess.current.updatePluginOptions("overflow", { open: true });
 
@@ -40,19 +43,27 @@ const {products} = userCartStore()
 
 
   useEffect(() => {
-    
+
     allowScroll()
-    setHeight(elRef?.current?.scrollHeight)
+
   }, [products.length, allowScroll])
 
- 
- 
+
+
   return (
     <section id="order">
       <div className="container">
         <div className="section-layout">
+          <div className="wrap-cart row s-between center-y">
+            <span className="xsmall-text text-main text-black-secondary up-case">
+              показать заказ
+            </span>
+            <span className="text-main text-black up-case" onClick={() => setOpenCart(prev => !prev)}>
+              {openCart ? '-' : "+"}
+            </span>
+          </div>
           <div>
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait" initial={false}>
               {
                 activeTab !== 'bought' ? <SmoothAppearance key={'main-tabs'}>
 
@@ -82,20 +93,30 @@ const {products} = userCartStore()
             </AnimatePresence>
 
           </div>
-          <div className="cart-content">
-            <h5 className="text-black-secondary">итоговая сумма</h5>
 
-            <CartItems
-              height={height > 470 ? '470px' : 'unset'}
-              ref={elRef}
-              onMouseEnter={() => disableScroll()}
-              onMouseLeave={() => allowScroll()}
-              onTouchStart={() => disableScroll()}
-              onTouchEnd={() => allowScroll()}
-              onTouchCancel={() => allowScroll()}
-            />
-            <PromoCode />
-          </div>
+          <AnimatePresence mode="wait" initial={false}>
+            {
+              ((!query) || (openCart && query) )&& <motion.div
+                layout
+                initial={{ height: 0 }}
+                animate={{ height: 'auto'}}
+                exit={{ height: 0 }}
+                
+                className="cart-content">
+                <h5 className="text-black-secondary">итоговая сумма</h5>
+
+                <CartItems
+                  ref={elRef}
+                  onMouseEnter={() => disableScroll()}
+                  onMouseLeave={() => allowScroll()}
+                  onTouchStart={() => disableScroll()}
+                  onTouchEnd={() => allowScroll()}
+                  onTouchCancel={() => allowScroll()}
+                />
+                <PromoCode />
+              </motion.div>
+            }
+          </AnimatePresence>
         </div>
       </div>
     </section>
