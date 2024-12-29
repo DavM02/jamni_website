@@ -1,7 +1,7 @@
-import AnimButton from "../../ui/buttons/AnimButton/AnimButton";
-import Input from "../../ui/inputs/Input/Input";
-import { userCartStore } from "../../../stores/cartStore";
-import FormWrapper from "../../FormWrapper/FormWrapper";
+import AnimButton from "../../../ui/buttons/AnimButton/AnimButton";
+import Input from "../../../ui/inputs/Input/Input";
+import { userCartStore } from "../../../../stores/cartStore";
+import FormWrapper from "../../../FormWrapper/FormWrapper";
 
 export default function PromoCode() {
   const { totalPrice } = userCartStore();
