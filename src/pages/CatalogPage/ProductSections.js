@@ -33,12 +33,13 @@ export default function ProductSections() {
           <SmoothAppearance key={"product"}>
             <ProductOptions data={data} catalog={catalog} />
             <ProductDescription data={data} />
+                <Configuration product={data} />
           </SmoothAppearance>
         ) : (
           <DataLoading />
         )}
       </AnimatePresence>
-      <Configuration />
+
       <MoreProducts />
     </>
   );

@@ -29,7 +29,7 @@ export default function Form({ data, catalog }) {
     for (let [key, value] of formData.entries()) {
       newProduct[key] = value;
     }
-
+    console.log(newProduct)
     addToCart(newProduct);
 
     toggleAdded();

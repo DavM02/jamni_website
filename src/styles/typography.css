@@ -167,3 +167,23 @@ header .icons .icon:nth-child(3)::after {
 .text-center {
   text-align: center;
 }
+
+.display-num::after {
+  position: absolute;
+  content: attr(data-num);
+  font-family: 'font-secondary';
+  color: var(--white);
+  line-height: 67px;
+  text-align: center;
+  font-size: 36px;
+  background-color: var(--black);
+  border-radius: 50%;
+  user-select: none;
+  aspect-ratio: 1/1;
+  width: 59px;
+  height: 59px;
+ left: 50%;
+ top: 0;
+ transform: translate(-50%, -50%);
+
+}
