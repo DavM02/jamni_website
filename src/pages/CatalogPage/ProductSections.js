@@ -9,9 +9,9 @@ import NoResults from "../../components/ui/messages/NoResults";
 import FetchError from "../../components/ui/messages/FetchError";
 import SmoothAppearance from "../../components/ui/SmoothAppearance";
 import DataLoading from "../../components/ui/messages/DataLoading";
+import Configuration from "../../components/sections/Configuration/Configuration";
 export default function ProductSections() {
-
-  const [searchParams, setSearchparams] = useSearchParams()
+  const [searchParams, setSearchparams] = useSearchParams();
 
   const param = useParams();
   const catalog = param["*"].split("/")[0];
@@ -22,23 +22,24 @@ export default function ProductSections() {
     getItem
   );
 
-
-  return <>
-    <AnimatePresence mode="wait">
-      {error ? (
-        <FetchError message={error?.message} />
-      ) : data === null ? (
-        <NoResults level={-1} />
-      ) : data && !isLoading ? (
-        <SmoothAppearance key={'product'}>
-          <ProductOptions data={data} catalog={catalog} />
-          <ProductDescription data={data} />
-        </SmoothAppearance>
-      ) : (
-        <DataLoading />
-      )}
-
-    </AnimatePresence>
-    <MoreProducts />
-  </>
+  return (
+    <>
+      <AnimatePresence mode="wait">
+        {error ? (
+          <FetchError message={error?.message} />
+        ) : data === null ? (
+          <NoResults level={-1} />
+        ) : data && !isLoading ? (
+          <SmoothAppearance key={"product"}>
+            <ProductOptions data={data} catalog={catalog} />
+            <ProductDescription data={data} />
+          </SmoothAppearance>
+        ) : (
+          <DataLoading />
+        )}
+      </AnimatePresence>
+      <Configuration />
+      <MoreProducts />
+    </>
+  );
 }

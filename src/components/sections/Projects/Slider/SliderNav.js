@@ -8,14 +8,14 @@ const SliderNav = ({ onPrev, onNext, transformIndex, indicator, setIndicator }) 
     
 
     const handleNextIndicator = () => {
-        debouncedFunction(700, () => {
+        debouncedFunction(1000, () => {
             onNext()
             setIndicator((prev) => (prev + 1));
         });
     };
 
     const handlePrevIndicator = () => {
-        debouncedFunction(700, () => {
+        debouncedFunction(1000, () => {
             onPrev()
             setIndicator((prev) => (prev - 1));
         });

@@ -8,13 +8,13 @@ const SliderNav = ({ onPrev, onNext, itemsCount }) => {
     const debouncedFunction = useDebounce();
 
     const handleNextIndicator = () => {
-        debouncedFunction(700, () => {
+        debouncedFunction(1000, () => {
             setIndicator((prev) => (prev + 1) % (itemsCount - 1));
         });
     };
 
     const handlePrevIndicator = () => {
-        debouncedFunction(700, () => {
+        debouncedFunction(1000, () => {
             setIndicator((prev) => (prev === 0 ? (itemsCount - 2) : prev - 1));
         });
     };

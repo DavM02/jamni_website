@@ -1,31 +1,29 @@
-@import url('../components/Cart/cart.css');
-@import url('../components/Cart/CartItem/cartItem.css');
-@import url('../components/sections/News/NewsItem/newsItem.css');
+@import url("../components/Cart/cart.css");
+@import url("../components/Cart/CartItem/cartItem.css");
+@import url("../components/sections/News/NewsItem/newsItem.css");
 
-@import url('../components/ui/Accordion/accordion.css');
-@import url('../components/ui/Backdrop/backdrop.css');
-@import url('../components/ui/buttons/AnimButton/animButton.css');
-@import url('../components/ui/buttons/AttToFav/addToFav.css');
-@import url('../components/ui/buttons/MainButton/mainButton.css');
+@import url("../components/ui/Accordion/accordion.css");
+@import url("../components/ui/Backdrop/backdrop.css");
+@import url("../components/ui/buttons/AnimButton/animButton.css");
+@import url("../components/ui/buttons/AttToFav/addToFav.css");
+@import url("../components/ui/buttons/MainButton/mainButton.css");
 
-@import url('../components/ui/Descriptor/descriptor.css');
-@import url('../components/ui/inputs/Checkbox/checkbox.css');
-@import url('../components/ui/inputs/Input/input.css');
-@import url('../components/ui/inputs/Radio/radio.css');
-@import url('../components/ui/inputs/RangeInput/multiRangeSlider.css');
-@import url('../components/ui/inputs/SearchInput/searchInput.css');
-@import url('../components/ui/inputs/Selection/selection.css');
-@import url('../components/ui/inputs/Upload/upload.css');
-@import url('../components/ui/messages/ChunkLoading/chunkLoading.css');
-@import url('../components/ui/Pagination/pagination.css');
+@import url("../components/ui/Descriptor/descriptor.css");
+@import url("../components/ui/inputs/Checkbox/checkbox.css");
+@import url("../components/ui/inputs/Input/input.css");
+@import url("../components/ui/inputs/Radio/radio.css");
+@import url("../components/ui/inputs/RangeInput/multiRangeSlider.css");
+@import url("../components/ui/inputs/SearchInput/searchInput.css");
+@import url("../components/ui/inputs/Selection/selection.css");
+@import url("../components/ui/inputs/Upload/upload.css");
+@import url("../components/ui/messages/ChunkLoading/chunkLoading.css");
+@import url("../components/ui/Pagination/pagination.css");
 
-@import url('../components/InfiniteSlider/infiniteSlider.css');
+@import url("../components/InfiniteSlider/infiniteSlider.css");
 
-@import url('../components/sections/Projects/media.css');
-@import url('../components/sections/Projects/projects.css');
-@import url('../components/sections/Projects/Slider/slider.css');
+@import url("../components/sections/Projects/media.css");
+@import url("../components/sections/Projects/projects.css");
+@import url("../components/sections/Projects/Slider/slider.css");
 
-@import url('../components/sections/About/about.css');
-@import url('../components/sections/MoreProducts/moreProducts.css')
-
- 
+@import url("../components/sections/About/about.css");
+@import url("../components/sections/MoreProducts/moreProducts.css");

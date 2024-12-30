@@ -15,7 +15,7 @@
     transform: translateX(calc(var(--moreitems-slider-img-width)* -3 - 60px));
     width: calc((var(--moreitems-slider-img-width) * 10) + 10 * 20px);
     height: calc(var(--moreitems-slider-img-height-odd) + 215px);
-    margin: var(--morde-items-section-padding) 0 40px;
+    margin: var(--more-items-section-padding) 0 40px;
 }
 
 #more-articles .loading, #more-articles .error {
