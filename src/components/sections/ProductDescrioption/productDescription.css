@@ -83,7 +83,7 @@
 }
 
 #product-description .advantages {
-  margin-top: clamp(2.5rem, 1.7788rem + 3.2051vw, 5.625rem) !important;
+  margin-top: var(--middle-padding-responsive) !important;
   display: grid;
   gap: 90px;
   grid-template-columns: repeat(auto-fill, minmax(251px, 1fr));

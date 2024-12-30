@@ -16,6 +16,6 @@
 
 
 #bestsellers .slider-nav {
-    margin-top: clamp(2.5rem, 1.7788rem + 3.2051vw, 5.625rem);
+    margin-top: var(--middle-padding-responsive);
     padding: 0 var(--bestsellers-slider-padding-left);
 }
