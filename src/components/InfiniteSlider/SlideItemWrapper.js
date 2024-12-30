@@ -11,7 +11,7 @@ export default function SlideItemWrapper({
             className='slider-item'
             style={{
                 left: `calc((var(--${width}) + 20px) * ${transformIndex})`,
-                transition: adjustTransition ? 'var(--transition) left 0.7s' : 'unset'
+                transition: adjustTransition ? 'var(--transition) left 1s' : 'unset'
             }}
         >
             {children}

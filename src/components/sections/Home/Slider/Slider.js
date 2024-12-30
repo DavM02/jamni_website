@@ -3,11 +3,11 @@ import useMediaQ from '../../../../hooks/useMediaQ';
 import Slide from './Slide';
 import SliderNav from './SliderNav';
 import './slider.css'
-import img1 from '../../../../assets/img_1.webp';
-import img2 from '../../../../assets/img_2.webp';
-import img3 from '../../../../assets/img_3.webp';
-import img4 from '../../../../assets/img_4.webp';
-import img5 from '../../../../assets/img_5.webp';
+import img1 from '../../../../assets/img_1.jpeg';
+import img2 from '../../../../assets/img_2.jpeg';
+import img3 from '../../../../assets/img_3.jpeg';
+import img4 from '../../../../assets/img_4.jpeg';
+import img5 from '../../../../assets/img_5.jpeg';
 import Descriptor from '../../../ui/Descriptor/Descriptor';
 import useDebounce from '../../../../hooks/useDebounce';
 import { LazyLoadImage } from 'react-lazy-load-image-component';

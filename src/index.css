@@ -131,7 +131,7 @@ main {
   left: 0;
   top: 0;
   background-color: var(--black);
-  transition: var(--transition) left 0.7s;
+  transition: var(--transition) left 1s;
 }
 
 
