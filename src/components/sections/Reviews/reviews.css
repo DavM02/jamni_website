@@ -1,5 +1,5 @@
 #reviews {
-    padding: 40px 0 clamp(3.75rem, 3.2163rem + 2.3718vw, 6.0625rem);
+    padding: 40px 0 var(--small-padding-responsive);
 }
 
 

@@ -1,11 +1,12 @@
 #product-options .product-image-slider {
     height: fit-content;
+    --product-image-height: clamp(18.75rem, 13.4135rem + 23.7179vw, 41.875rem);
 }
 #product-options .product-image-slider .column { 
-        height: clamp(18.75rem, 13.4135rem + 23.7179vw, 41.875rem);
+        height: var(--product-image-height);
 }
 #product-options .product-image-slider .main-image {
-height: clamp(18.75rem, 13.4135rem + 23.7179vw, 41.875rem);
+height: var(--product-image-height);
 
     overflow: hidden;
     width: 100%;
@@ -45,7 +46,7 @@ height: clamp(18.75rem, 13.4135rem + 23.7179vw, 41.875rem);
 
 #product-options .product-image-slider .thumbnail-image,
 #product-options .product-image-slider .main-image {
-    background-color: var(--placeholder-2);
+    background-color: var(--placeholder-1);
     display: block;
 }
 

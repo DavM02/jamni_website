@@ -4,6 +4,7 @@ import OrderTabs from "./OrderTabs";
 import CartContent from "./Cart/CartContent";
 import "./order.css";
 import "./media.css";
+import "./Forms/forms.css";
 
 export default function Order({ setIsBought }) {
 

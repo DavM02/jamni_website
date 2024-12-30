@@ -30,14 +30,13 @@
         gap: 0;
     }
         #order .section-layout>div:nth-child(2) {
-            order: 2;
-           margin-top: clamp(1.875rem, 1.2981rem + 2.5641vw, 4.375rem); 
+           order: 2;
+           margin-top: var(--small-gap-responsive); 
         }
         
     #order .section-layout>div:nth-child(3) {
         height: 0;
         overflow-y: clip;
-        /* padding-bottom: clamp(1.875rem, 1.2981rem + 2.5641vw, 4.375rem) */
     }
 
     #order .promo-code,
@@ -50,7 +49,7 @@
     }
 
     #order .cart-items {
-        margin: clamp(1.25rem, 0.6731rem + 2.5641vw, 3.75rem) 0;
+        margin: var(--order--margin) 0;
     }
 
     #order .wrap-cart {

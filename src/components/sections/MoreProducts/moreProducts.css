@@ -15,7 +15,7 @@
     transform: translateX(calc(var(--moreitems-slider-img-width)* -3 - 60px));
     width: calc((var(--moreitems-slider-img-width) * 10) + 10 * 20px);
     height: calc(var(--moreitems-slider-img-height-odd) + 50px);
-    margin: clamp(2.625rem, 2.0769rem + 2.4359vw, 5rem) 0 70px;
+    margin: var(----morde-items-section-padding) 70px;
 }
 
 

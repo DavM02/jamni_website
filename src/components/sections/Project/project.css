@@ -9,7 +9,7 @@
 }
 
 #project .text-center p:nth-child(3) {
-  margin-top: clamp(1.875rem, 1.5865rem + 1.2821vw, 3.125rem);
+  margin-top: var(--middle-gap-responsive)
 }
 
 #project .arrow {

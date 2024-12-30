@@ -35,7 +35,7 @@
 }
 
 #product-options .product-details .download-details {
-  margin: clamp(1.875rem, 1.5865rem + 1.2821vw, 3.125rem) 0;
+  margin: var(--middle-gap-responsive) 0;
 
   border-top: var(--line-bg) 1px solid;
   border-bottom: var(--line-bg) 1px solid;
@@ -64,8 +64,8 @@
 
 #product-options form .submit-wrapper {
   border-top: var(--line-bg) 1px solid;
-  padding-top: clamp(1.875rem, 1.5865rem + 1.2821vw, 3.125rem);
-  margin-top: clamp(1.875rem, 1.5865rem + 1.2821vw, 3.125rem);
+  padding-top: var(--middle-gap-responsive);
+  margin-top: var(--middle-gap-responsive)
 }
 
 #product-options form .main-button + .row {

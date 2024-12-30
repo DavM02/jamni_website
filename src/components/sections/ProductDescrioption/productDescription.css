@@ -12,7 +12,7 @@
 }
 
 #product-description .show-descriptions li > div:nth-child(2) > div {
-  padding: clamp(1.875rem, 1.2981rem + 2.5641vw, 4.375rem) 0;
+  padding: var(--small-gap-responsive) 0;
   overflow: hidden;
 }
 
