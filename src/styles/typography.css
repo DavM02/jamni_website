@@ -1,42 +1,42 @@
 @font-face {
   font-family: "font-main";
-  src: url("../assets/fonts/ofont.ru_Proxima\ Nova.woff2") format("woff2"),
+  src: url("%PUBLIC_URL%/fonts/ofont.ru_Proxima\ Nova.woff2") format("woff2"),
 
-    url("../assets/fonts/ofont.ru_Proxima\ Nova.woff") format("woff"),
+    url("%PUBLIC_URL%/fonts/ofont.ru_Proxima\ Nova.woff") format("woff"),
 
-    url("../assets/fonts/ofont.ru_Proxima\ Nova.ttf") format("truetype"),
+    url("%PUBLIC_URL%/fonts/ofont.ru_Proxima\ Nova.ttf") format("truetype"),
 
-    url("../assets/fonts/ofont.ru_Proxima\ Nova.eot?#iefix") format("embedded-opentype"),
+    url("%PUBLIC_URL%/fonts/ofont.ru_Proxima\ Nova.eot?#iefix") format("embedded-opentype"),
 
-    url("../assets/fonts/ofont.ru_Proxima\ Nova.otf") format("opentype");
+    url("%PUBLIC_URL%/fonts/ofont.ru_Proxima\ Nova.otf") format("opentype");
 
 }
 
 @font-face {
   font-family: "font-main-cursive";
-  src: url("../assets/fonts/Romile-Regular.woff2") format("woff2"),
-    url("../assets/fonts/Romile-Regular.woff") format("woff"),
-    url("../assets/fonts/Romile-Regular.ttf") format("truetype"),
-    url("../assets/fonts/Romile-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/Romile-Regular.otf") format("opentype");
+  src: url("%PUBLIC_URL%/fonts/Romile-Regular.woff2") format("woff2"),
+    url("%PUBLIC_URL%/fonts/Romile-Regular.woff") format("woff"),
+    url("%PUBLIC_URL%/fonts/Romile-Regular.ttf") format("truetype"),
+    url("%PUBLIC_URL%/fonts/Romile-Regular.eot?#iefix") format("embedded-opentype"),
+    url("%PUBLIC_URL%/fonts/Romile-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "font-secondary";
-  src: url("../assets/fonts/Zetafonts - Lovelace Text Regular.woff2") format("woff2"),
-    url("../assets/fonts/Zetafonts - Lovelace Text Regular.woff") format("woff"),
-    url("../assets/fonts/Zetafonts - Lovelace Text Regular.ttf") format("truetype"),
-    url("../assets/fonts/Zetafonts - Lovelace Text Regular.eot") format("embedded-opentype"),
-    url("../assets/fonts/Zetafonts - Lovelace Text Regular.otf") format("opentype");
+  src: url("%PUBLIC_URL%/fonts/Zetafonts - Lovelace Text Regular.woff2") format("woff2"),
+    url("%PUBLIC_URL%/fonts/Zetafonts - Lovelace Text Regular.woff") format("woff"),
+    url("%PUBLIC_URL%/fonts/Zetafonts - Lovelace Text Regular.ttf") format("truetype"),
+    url("%PUBLIC_URL%/fonts/Zetafonts - Lovelace Text Regular.eot") format("embedded-opentype"),
+    url("%PUBLIC_URL%/fonts/Zetafonts - Lovelace Text Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "font-extra";
-  src: url("../assets/fonts/Moniqa-CondensedHeading.woff2") format("woff2"),
-    url("../assets/fonts/Moniqa-CondensedHeading.woff") format("woff"),
-    url("../assets/fonts/Moniqa-CondensedHeading.ttf") format("truetype"),
-    url("../assets/fonts/Moniqa-CondensedHeading.eot") format("embedded-opentype"),
-    url("../assets/fonts/Moniqa-CondensedHeading.otf") format("opentype"),
+  src: url("%PUBLIC_URL%/fonts/Moniqa-CondensedHeading.woff2") format("woff2"),
+    url("%PUBLIC_URL%/fonts/Moniqa-CondensedHeading.woff") format("woff"),
+    url("%PUBLIC_URL%/fonts/Moniqa-CondensedHeading.ttf") format("truetype"),
+    url("%PUBLIC_URL%/fonts/Moniqa-CondensedHeading.eot") format("embedded-opentype"),
+    url("%PUBLIC_URL%/fonts/Moniqa-CondensedHeading.otf") format("opentype"),
 }
 
 .up-case {
