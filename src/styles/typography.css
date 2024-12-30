@@ -1,21 +1,42 @@
 @font-face {
   font-family: "font-main";
-  src: url("../assets/fonts/ofont.ru_Proxima\ Nova.ttf");
+  src: url("../assets/fonts/ofont.ru_Proxima\ Nova.woff2") format("woff2"),
+
+    url("../assets/fonts/ofont.ru_Proxima\ Nova.woff") format("woff"),
+
+    url("../assets/fonts/ofont.ru_Proxima\ Nova.ttf") format("truetype"),
+
+    url("../assets/fonts/ofont.ru_Proxima\ Nova.eot?#iefix") format("embedded-opentype"),
+
+    url("../assets/fonts/ofont.ru_Proxima\ Nova.otf") format("opentype");
+
 }
 
 @font-face {
   font-family: "font-main-cursive";
-  src: url("../assets/fonts/Romile-Regular.ttf");
+  src: url("../assets/fonts/Romile-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Romile-Regular.woff") format("woff"),
+    url("../assets/fonts/Romile-Regular.ttf") format("truetype"),
+    url("../assets/fonts/Romile-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Romile-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "font-secondary";
-  src: url("../assets/fonts/Zetafonts\ -\ Lovelace\ Text\ Regular.otf");
+  src: url("../assets/fonts/Zetafonts - Lovelace Text Regular.woff2") format("woff2"),
+    url("../assets/fonts/Zetafonts - Lovelace Text Regular.woff") format("woff"),
+    url("../assets/fonts/Zetafonts - Lovelace Text Regular.ttf") format("truetype"),
+    url("../assets/fonts/Zetafonts - Lovelace Text Regular.eot") format("embedded-opentype"),
+    url("../assets/fonts/Zetafonts - Lovelace Text Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "font-extra";
-  src: url("../assets/fonts/Moniqa-CondensedHeading.otf");
+  src: url("../assets/fonts/Moniqa-CondensedHeading.woff2") format("woff2"),
+    url("../assets/fonts/Moniqa-CondensedHeading.woff") format("woff"),
+    url("../assets/fonts/Moniqa-CondensedHeading.ttf") format("truetype"),
+    url("../assets/fonts/Moniqa-CondensedHeading.eot") format("embedded-opentype"),
+    url("../assets/fonts/Moniqa-CondensedHeading.otf") format("opentype"),
 }
 
 .up-case {
@@ -123,10 +144,11 @@ h6 {
 }
 
 .xxsmall-text,
-#products-display li::after{
+#products-display li::after {
   font-size: 14px;
   font-weight: 400;
 }
+
 input::placeholder,
 textarea,
 textarea::placeholder,
@@ -134,6 +156,7 @@ input {
   font-size: 16px;
   font-weight: 400;
 }
+
 .xxxsmall-text,
 header .icons .icon:nth-child(3)::after {
   font-size: 12px;
