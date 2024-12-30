@@ -14,9 +14,11 @@ import NewsRoute from "./pages/NewsPage/Route";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import OrderPage from "./pages/OrderPage/OrderPage";
+import { preload } from 'react-dom';
+
 function App() {
   const location = useLocation();
-
+  preload('./assets/fonts/Moniqa-CondensedHeading.woff2', { as: "font" })
   return (
     <div className="App">
       <MainContextProvider>
