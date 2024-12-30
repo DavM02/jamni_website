@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import searchIcon from '../../../../assets/icons/search.svg';
-import './searchInput.css';
-
+ 
 export default function SearchInput() {
     const [blur, setBlur] = useState(false);
 

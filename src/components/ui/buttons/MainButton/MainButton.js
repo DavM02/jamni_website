@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "./mainButton.css";
-
+ 
 export default function MainButton({ ...props }) {
   const [isAnimation, setIsAnimating] = useState(false);
   const [allowAnim, setAllowAnim] = useState(true);

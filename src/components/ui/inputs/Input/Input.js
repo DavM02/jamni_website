@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from "react";
-import "./input.css";
-import { formStore } from "../../../../stores/formStore";
+ import { formStore } from "../../../../stores/formStore";
 
 export default function Input({ tag, ...props }) {
   const { forms } = formStore();

@@ -1,4 +1,3 @@
-import './about.css'
 import logo from '../../../assets/Jamni -.svg'
 import img1 from '../../../assets/img_11.webp'
 import img2 from '../../../assets/img_12.webp'

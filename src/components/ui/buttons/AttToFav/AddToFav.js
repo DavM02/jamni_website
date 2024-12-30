@@ -1,5 +1,4 @@
-import './addToFav.css'
-
+ 
 export default function AddToFav() {
   return (
     <div className="add-to-favorites" onClick={(e) => e.stopPropagation()}>

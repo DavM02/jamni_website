@@ -1,5 +1,4 @@
-import "./cart.css";
-import { modalStore } from "../../stores/modalStore";
+ import { modalStore } from "../../stores/modalStore";
 import { userCartStore } from "../../stores/cartStore";
 import CartHeader from "./CartHeader";
 import Recommendations from "./Recommendations";

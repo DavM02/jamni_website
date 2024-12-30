@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import { motion } from "framer-motion";
 import trashIcon from "../../../assets/icons/bag.svg";
 import SmoothAppearance from "../../ui/SmoothAppearance";
-import "./cartItem.css";
+ 
 function CartItem({
   product,
   navigate,

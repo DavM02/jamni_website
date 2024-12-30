@@ -1,5 +1,4 @@
-import './radio.css'
-export default function Radio({ value, ...props }) {
+ export default function Radio({ value, ...props }) {
     return (
         <div className='custom-radio'>
             <input type='radio' value={value}  {...props}/>

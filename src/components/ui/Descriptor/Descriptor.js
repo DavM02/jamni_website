@@ -1,6 +1,5 @@
 import React, { useState, } from 'react'
-import './descriptor.css'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import AnimButton from '../buttons/AnimButton/AnimButton'
 import SmoothAppearance from '../SmoothAppearance'
 import { AnimatePresence } from 'framer-motion'

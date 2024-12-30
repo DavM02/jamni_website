@@ -1,8 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useNavigate } from "react-router-dom";
 
-import './newsItem.css'
-export default function NewsItem({ el, height }) {
+ export default function NewsItem({ el, height }) {
   const navigate = useNavigate()
   return (
     <div className="news-item" 

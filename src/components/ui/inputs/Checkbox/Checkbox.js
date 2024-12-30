@@ -1,5 +1,4 @@
-import "./checkbox.css";
-export default function Checkbox({ label, checked, children, ...props }) {
+ export default function Checkbox({ label, checked, children, ...props }) {
   return (
     <>
       <div className="custom-checkbox">
