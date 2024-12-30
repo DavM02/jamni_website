@@ -6,7 +6,7 @@
 
     url("../../public/fonts/ofont.ru_Proxima\ Nova.ttf") format("truetype"),
 
-    url("../../public/fonts/ofont.ru_Proxima\ Nova.eot?#iefix") format("embedded-opentype"),
+    url("../../public/fonts/ofont.ru_Proxima\ Nova.eot") format("embedded-opentype"),
 
     url("../../public/fonts/ofont.ru_Proxima\ Nova.otf") format("opentype");
 
@@ -17,7 +17,7 @@
   src: url("../../public/fonts/Romile-Regular.woff2") format("woff2"),
     url("../../public/fonts/Romile-Regular.woff") format("woff"),
     url("../../public/fonts/Romile-Regular.ttf") format("truetype"),
-    url("../../public/fonts/Romile-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../../public/fonts/Romile-Regular.eot") format("embedded-opentype"),
     url("../../public/fonts/Romile-Regular.otf") format("opentype");
 }
 
