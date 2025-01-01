@@ -1,13 +1,13 @@
 #app-loading {
     position: fixed;
-    z-index: 1000;
+    z-index: 99999990;
     width: 100%;
     height: 100%;
     background-color: var(--placeholder-1);
     top: 0;left: 0;
+    pointer-events: all;
     --loading-height:clamp(6.25rem, 3.75rem + 12.5vw, 18.75rem);
-    cursor: wait;
-        transition: var(--transition) 1s 1s clip-path;
+    transition: var(--transition) 1s 1s clip-path;
 }
 
 #app-loading h1 {

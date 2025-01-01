@@ -16,12 +16,14 @@ import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import OrderPage from "./pages/OrderPage/OrderPage";
 import AppLoading from "./components/AppLoading/AppLoading";
 import { useState } from "react";
+import Cursor from "./components/Cursor/Cursor";
 
 function App() {
   const location = useLocation();
   const [renderApp, setRenderApp] = useState(false)
   return (
     <>
+      {renderApp && <Cursor />}
       <AppLoading setRenderApp={setRenderApp} />
       <div className="App" style={{ visibility: !renderApp ? 'hidden' : 'initial' }}>
         <MainContextProvider>

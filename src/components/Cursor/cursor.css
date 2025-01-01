@@ -1,0 +1,15 @@
+.custom-cursor {
+    background-color: var(--white);
+    position: fixed;
+ 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+
+    mix-blend-mode: exclusion;
+    z-index: 1299;
+    pointer-events: none;
+    transition: var(--cursor-transition) 1s transform, 
+}

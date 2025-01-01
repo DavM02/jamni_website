@@ -107,6 +107,8 @@
   --middle-gap-responsive: clamp(1.875rem, 1.5865rem + 1.2821vw, 3.125rem);
   --small-gap-responsive: clamp(1.875rem, 1.2981rem + 2.5641vw, 4.375rem);
   --more-items-section-padding: clamp(2.625rem, 2.0769rem + 2.4359vw, 5rem);
+
+  --cursor-transition: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @media all and (max-width: 1024px) {
