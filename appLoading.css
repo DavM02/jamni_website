@@ -1,0 +1,61 @@
+#app-loading {
+    position: fixed;
+    z-index: 99999990;
+    width: 100%;
+    height: 100%;
+    background-color: var(--placeholder-1);
+    top: 0;left: 0;
+    pointer-events: all;
+    --loading-height:clamp(6.25rem, 3.75rem + 12.5vw, 18.75rem);
+    transition: var(--transition) 1s 1s clip-path;
+}
+
+#app-loading h1 {
+    color: var(--black);
+    font-size: var(--loading-height);
+    line-height: var(--loading-height);
+    text-align: end;
+}
+
+
+#app-loading .row {
+    overflow: hidden;
+    height: var(--loading-height);
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+
+#app-loading .row .column {
+    transition: var(--transition) 2.5s transform;
+}
+
+#app-loading .row .column:nth-child(3) h1:nth-child(n):not(:nth-child(1)) {
+    opacity: 0;
+}
+
+#app-loading .app-loading-images {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+transition: var(--transition) 1s clip-path;
+}
+
+#app-loading .app-loading-images .image{
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    will-change: clip-path;
+    transition: var(--transition) 1.2s clip-path;
+}
+
+#app-loading .app-loading-images img {
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale();
+}
