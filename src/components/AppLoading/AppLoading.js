@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import './appLoading.css';
 import ReactDOM from "react-dom";
 
 import img1 from '../../assets/img_6.webp';
