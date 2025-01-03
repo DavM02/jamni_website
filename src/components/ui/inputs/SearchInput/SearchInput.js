@@ -3,7 +3,7 @@ import searchIcon from '../../../../assets/icons/search.svg';
  
 export default function SearchInput() {
     const [blur, setBlur] = useState(false);
-
+ 
     return (
         <div className={`input-wrapper row center-y gap-20 ${blur ? 'is-typing' : ''}`}>
             <label htmlFor='search'>
@@ -12,7 +12,7 @@ export default function SearchInput() {
             <input
                 spellCheck={false}
                 id='search'
-                type='search'
+                 type='search'
                 placeholder='Что будем искать?'
                 onBlur={() => setBlur(false)}
                 onFocus={() => setBlur(true)}

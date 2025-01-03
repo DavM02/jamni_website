@@ -3,6 +3,7 @@ import loadData, { getLength } from "../db/loadData";
 export const modalStore = create((set) => ({
   isCartOpen: false,
   isAdded: false,
+  isFav: false,
   cartRecommendations: [],
   loading: false,
   error: null,
@@ -11,6 +12,8 @@ export const modalStore = create((set) => ({
     auth: val
   })),
   toggleAdded: () => set((state) => ({ isAdded: !state.isAdded })),
+  toggleFav: () => set((state) => ({ isFav: !state.isFav })),
+
   toggleCart: () => set((state) => ({ isCartOpen: !state.isCartOpen })),
   getCartRecommendations: () => {
     set({ loading: true, error: null });

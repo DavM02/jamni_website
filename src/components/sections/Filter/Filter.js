@@ -17,8 +17,7 @@ export default function Filter({ collections, materials, headline, price }) {
 
     const location = useLocation();
     const key = location.pathname.split("/")[2];
-
-    const [searchParams] = useSearchParams();
+     const [searchParams] = useSearchParams();
 
     const page = parseInt(searchParams.get("page") ?? 1);
  
@@ -58,6 +57,7 @@ export default function Filter({ collections, materials, headline, price }) {
                         isLoading={isLoading}
                         searchParams={searchParams}
                         data={data}
+                        catalog={key && key}
                     />
                     {dataLength && (
                         <Pagination

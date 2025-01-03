@@ -20,7 +20,7 @@ export default function AppLoading({ setRenderApp }) {
     const numbers = useMemo(() => [
         Array(22).fill(null).map((el, i) => i === 0 ? 1 : generateRandomNumber()),
         Array(22).fill(null).map((el, i) => i === 0 ? 0 : generateRandomNumber()),
-        Array(22).fill(0)
+        Array(22).fill(0+'%')
     ], []);
 
     const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];

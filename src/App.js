@@ -17,6 +17,7 @@ import OrderPage from "./pages/OrderPage/OrderPage";
 import AppLoading from "./components/AppLoading/AppLoading";
 import { useState } from "react";
 import Cursor from "./components/Cursor/Cursor";
+import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
 
 function App() {
   const location = useLocation();
@@ -47,7 +48,8 @@ function App() {
                       <Route path="contacts" element={<ContactsPage />} />
                       <Route path="order/*" element={<OrderPage />} />
                       <Route path="catalog/*" element={<CatalogRoute />} />
-                      <Route path="/*" element={<NoFound />} />
+                      <Route path="favorites" element={<FavoritesPage />} />
+                      <Route path="/*/**" element={<NoFound />} />
                     </Routes>
                   </AnimatePresence>
                 </main>

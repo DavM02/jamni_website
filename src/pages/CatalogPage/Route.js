@@ -1,15 +1,12 @@
 import React from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import DecorPage from "./DecorPage/DecorPage";
 import NoFound from "../NoFound/NoFound";
 import ProductPage from "./ProductPage";
 
 export default function CatalogRoute() {
-  const location = useLocation();
+ 
 
-  if (location.pathname === "/catalog") {
-    return <NoFound />;
-  }
 
   return (
     <Routes>

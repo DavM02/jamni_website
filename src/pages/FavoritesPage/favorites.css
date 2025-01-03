@@ -1,0 +1,24 @@
+#favorites {
+    background-color: var(--gray);
+}
+
+#favorites .center-flex {
+    padding: var(--section-padding-equal-big) 0;
+    min-height: calc(100vh - (30px + 55px + var(--nav-height) + (var(--header-container-padding)*2)));
+}
+
+#favorites .container {
+    max-width: 600px;
+    width: -webkit-fill-available;
+}
+
+#favorites .fav-items {
+    container-type: inline-size;
+}
+
+@container (max-width: 400px) {
+    #favorites .fav-items li>.row:nth-child(1) {
+        flex-direction: column;
+    }
+
+}

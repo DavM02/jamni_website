@@ -4,13 +4,14 @@ import AddToFav from "../../../ui/buttons/AttToFav/AddToFav";
 import { useNavigate } from "react-router-dom";
 export default function FilterItem({ item, el }) {
   const navigate = useNavigate();
+  console.log(item)
   return (
     <div
       className="filter-item"
       onClick={() => navigate(`${item.name.toLowerCase()}?id=${item.id}`)}
       style={{ gridArea: el }}
     >
-      <AddToFav />
+      <AddToFav data={item}/>
       {item ? (
         <div
           className="placeholder"

@@ -1,22 +1,15 @@
 import React, { memo } from "react";
-import { motion } from "framer-motion";
-import trashIcon from "../../../assets/icons/bag.svg";
-import SmoothAppearance from "../../ui/SmoothAppearance";
- 
+ import trashIcon from "../../../assets/icons/bag.svg";
+  
 function CartItem({
   product,
-  navigate,
   increaseQuantity,
   decreaseQuantity,
   removeProduct,
 }) {
-  const handleNavigate = () => {
-    navigate(
-      `/catalog/${product.catalog}/${product.name.toLowerCase()}?id=${
-        product.id
-      }`
-    );
-  };
+
+
+  console.log(product)
 
   const handleDecreaseQuantity = (e) => {
     e.stopPropagation();
@@ -36,13 +29,7 @@ function CartItem({
   };
 
   return (
-    <SmoothAppearance
-     key={product.id}
-      Tag={motion.li}
-      layout
-      onClick={handleNavigate}
-      className="cart-item gap-30 row s-between"
-    >
+    <>
       <div className="row gap-30">
         <div className="cart-item-image">
           <img src={product.image} alt={product.name} />
@@ -72,7 +59,7 @@ function CartItem({
       <div className="remove-item center-gr" onClick={handleRemoveProduct}>
         <img src={trashIcon} alt="remove" />
       </div>
-    </SmoothAppearance>
+    </>
   );
 }
 

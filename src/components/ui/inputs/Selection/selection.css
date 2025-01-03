@@ -34,7 +34,9 @@
   height: 11px;
 }
 
-.custom-selection ul li::first-letter,  .selected-option span::first-letter {
+.custom-selection ul li::first-letter,  
+.custom-selection ul li .row span::first-letter,
+.selected-option span::first-letter {
   text-transform: uppercase !important;
  
 }

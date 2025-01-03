@@ -9,6 +9,7 @@ export default function InfiniteSlider({
   children,
   itemWidth,
   Tag = "div",
+  ...props
 }) {
   const initialItems = sliderData.map((item, index) => ({
     ...item,

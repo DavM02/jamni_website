@@ -7,10 +7,10 @@ import NoResults from "../../../ui/messages/NoResults";
 import DataLoading from "../../../ui/messages/DataLoading";
 import FetchError from "../../../ui/messages/FetchError";
 
-export default function FilterDisplay({ isLoading, searchParams, data, error }) {
+export default function FilterDisplay({ isLoading, searchParams, data, error, catalog }) {
 
   const noResults = data && data.every((el) => el.isShown === false);
-
+  
   return (
     <AnimatePresence mode="wait">
       {error ? (
@@ -18,7 +18,7 @@ export default function FilterDisplay({ isLoading, searchParams, data, error }) 
       ) : !isLoading && data ? (
         !noResults ? (
           <SmoothAppearance key={searchParams}>
-            <FilterGrid data={data} />
+              <FilterGrid catalog={catalog} data={data} />
           </SmoothAppearance>
 
         ) : (

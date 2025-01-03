@@ -15,7 +15,7 @@ export default function Project() {
       </div>
       <div className="section-layout">
         <div className="center-gr self-end-y self-end-x" style={{ "--area": "a" }}>
-          <ProjectForm includeUpload={true} />
+          <ProjectForm id={1} includeUpload={true} />
         </div>
         <div style={{ "--area": "b" }}>
           <ProjectImage src={img1} alt="image-1" />
@@ -27,7 +27,7 @@ export default function Project() {
           <ProjectLogo />
         </div>
         <div className="center-gr self-start-y self-start-x" style={{ "--area": "e" }}>
-          <ProjectForm />
+          <ProjectForm id={2} />
         </div>
       </div>
     </section>

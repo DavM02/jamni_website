@@ -13,7 +13,7 @@ import { database } from "./firebaseConfig";
 async function loadData([path, page, count]) {
 
   if ((!path, !page, !count)) {
-    throw new Error("An error occured when loading");
+    throw new Error("An unexpected error occurred");
   }
   const startPage = (page - 1) * count;
   try {
@@ -37,7 +37,7 @@ async function loadData([path, page, count]) {
       return [];
     }
   } catch (error) {
-    throw new Error("An error occured when loading");
+    throw new Error("An unexpected error occurred");
   }
 }
 
@@ -94,7 +94,7 @@ export async function getItem([id, dbName]) {
     }
   } catch (error) {
     console.log(error)
-    throw new Error("An error occurred loading");
+    throw new Error("An unexpected error occurred");
   }
 }
-
+  

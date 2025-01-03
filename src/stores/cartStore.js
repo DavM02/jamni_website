@@ -8,24 +8,25 @@ export const userCartStore = create(
 
       addProduct: (item) => {
         set((state) => {
-          const productExists = state.products.some(
-            (el) => el.id === item.id
-          );
+          const productExists = state.products.some((el) => el.id === item.id);
 
           if (!productExists) {
             const updatedProducts = [
               ...state.products,
-              { ...item, quantity: 1},
+              { ...item, quantity: item.quantity || 1 }, 
             ];
             return { products: updatedProducts };
           } else {
             const updatedProducts = state.products.map((el) =>
-              el.id === item.id ? { ...el, quantity: el.quantity + 1 } : el
+              el.id === item.id
+                ? { ...el, quantity: el.quantity + (item.quantity || 1) }  
+                : el
             );
             return { products: updatedProducts };
           }
         });
       },
+
 
       removeProduct: (itemId) => {
         set((state) => {

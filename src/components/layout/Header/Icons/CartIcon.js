@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import bagIcon from "../../../../assets/icons/shopping-bag.svg";
 import { modalStore } from "../../../../stores/modalStore";
- import Cart from "../../../Cart/Cart";
+import Cart from "../../../Cart/Cart";
 import Backdrop from "../../../ui/Backdrop/Backdrop";
 import Portal from "../../../ui/Portal";
 import { useLocation } from "react-router-dom";
@@ -16,6 +16,7 @@ export default function CartIcon() {
     isCartOpen,
     toggleCart,
     isAdded,
+    isFav,
 
   } = modalStore();
 
@@ -23,20 +24,20 @@ export default function CartIcon() {
 
 
   useEffect(() => {
- 
-      if (isCartOpen) {
-        toggleCart(false)
-      }
- 
+
+    if (isCartOpen) {
+      toggleCart(false)
+    }
+
   }, [location.pathname])
- 
+
   return (
     <>
-    
+
       <div
-        key={products.length} 
+        key={products.length}
         data-count={products.length}
-        style={{ "--dummy": products.length }} 
+        style={{ "--dummy": products.length }}
         className="icon"
         onClick={() => {
           toggleCart();
@@ -49,32 +50,32 @@ export default function CartIcon() {
       >
         <img src={bagIcon} alt="bag-icon" />
       </div>
-  
-        <Portal
-          value={isCartOpen}
-          root={"modal-root"}
-          className={"cart-wrapper"}>
-          <Cart />
-        </Portal>
- 
+
+      <Portal
+        value={isCartOpen}
+        root={"modal-root"}
+        className={"cart-wrapper"}>
+        <Cart />
+      </Portal>
+
       <Backdrop
         onClick={() => toggleCart()}
         value={isCartOpen}
         root={"modal-root"}
         style={{ zIndex: 555 }}
       />
- 
-        <Portal
-          value={isAdded}
-          root={"modal-root"}
-          className="added-item"
-        >
-          <span className="xsmall-text text-main text-light up-case">
-            Товар успешно добавлен в корзину!
-          </span>
- 
-        </Portal>
- 
+
+      <Portal
+        value={isAdded || isFav}
+        root={"modal-root"}
+        className="added-item"
+      >
+        <span className="xsmall-text text-main text-light up-case">
+          Товар успешно добавлен <br /> в {isAdded ? 'корзину' : 'избранное'} !
+        </span>
+
+      </Portal>
+
     </>
   );
 }

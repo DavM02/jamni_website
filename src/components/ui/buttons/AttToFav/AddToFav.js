@@ -1,7 +1,42 @@
  
-export default function AddToFav() {
+
+import { userFavStore } from "../../../../stores/favStore";
+import { modalStore } from "../../../../stores/modalStore";
+export default function AddToFav({data}) {
+   
+  const addToFav = userFavStore((state) => state.addProduct);
+  const { toggleFav } = modalStore();
+
+  function handleFav() {
+   
+
+    // const formData = new FormData(e.target);
+
+    const newProduct = {
+      catalog: data.catalog,
+      id: data.id,
+      product: data.product,
+      image: data.images[0],
+      name: data.name,
+      collection: data.collection,
+      price: data.price,
+    };
+
+    // for (let [key, value] of formData.entries()) {
+    //   newProduct[key] = value;
+    // }
+
+    addToFav(newProduct);
+
+    toggleFav();
+
+    setTimeout(() => {
+      toggleFav();
+    }, 1500);
+  }
+
   return (
-    <div className="add-to-favorites" onClick={(e) => e.stopPropagation()}>
+    <div className="add-to-favorites" onClick={(e) => { e.stopPropagation(); handleFav()}}>
       <input type="checkbox" />
       <svg
         width="28"

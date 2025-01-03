@@ -29,7 +29,7 @@ export default function Form({ data, catalog }) {
     for (let [key, value] of formData.entries()) {
       newProduct[key] = value;
     }
-    console.log(newProduct)
+  
     addToCart(newProduct);
 
     toggleAdded();
@@ -48,7 +48,7 @@ export default function Form({ data, catalog }) {
       <div className="submit-wrapper">
         <MainButton type={"submit"}>добавить в корзину</MainButton>
         <div className="row center-y center-x gap-10">
-          <AddToFav />
+          <AddToFav data={{...data, catalog}} />
           <span className="text-main xxsmall-text text-black-secondary">
             В избранное
           </span>

@@ -1,9 +1,8 @@
 import Article from './Article';
 import FilterItem from './FilterItem';
 
-export default function FilterGrid({ data }) {
-
-  let gridAreas = [
+export default function FilterGrid({ data, catalog }) {
+   let gridAreas = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
   ];
   const visibleItems = data.filter(item => item?.isShown !== false);
@@ -21,7 +20,7 @@ export default function FilterGrid({ data }) {
           dataIndex++;
         }
      
-        return <FilterItem key={item.id} el={el} item={item} />
+        return <FilterItem key={item.id} el={el} item={{...item, catalog}} />
       
       })}
 
