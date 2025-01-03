@@ -6,10 +6,7 @@ export default function Cursor() {
     const posRef = useRef(null)
 
     const query = useMediaQ('(max-width: 1024px)');
-
-    const isTouchDevice = () => {
-        return "ontouchstart" in window || navigator.maxTouchPoints > 0;
-    };
+ 
 
     useEffect(() => {
 
