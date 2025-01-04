@@ -16,6 +16,10 @@
     container-type: inline-size;
 }
 
+#favorites .fav-items .cart-item {
+    flex-wrap: wrap;
+}
+
 @container (max-width: 400px) {
     #favorites .fav-items li>.row:nth-child(1) {
         flex-direction: column;

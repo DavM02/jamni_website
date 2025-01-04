@@ -1,8 +1,8 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import NestedList from './NestedList';
-import heartIcon from '../../../assets/icons/heart.svg'
 import { useEffect } from 'react';
 import AuthIcon from './Icons/AuthIcon';
+import FavoritesIcon from './Icons/FavoritesIcon';
 
 export default function Navigation({ menu, setMenu }) {
 
@@ -24,9 +24,7 @@ export default function Navigation({ menu, setMenu }) {
         </div>
         <div className='icons row gap-25'>
           <AuthIcon />
-          <div className='icon'>
-            <img src={heartIcon} alt='heart-icon' />
-          </div>
+          <FavoritesIcon />
         </div>
       </div>
       <nav className='row center-x'>

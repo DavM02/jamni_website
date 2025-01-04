@@ -153,9 +153,7 @@ header .icons .icon:nth-child(3)::after {
   min-width: 15px;
   pointer-events: none;
   cursor: pointer;
-
 }
-
 
 
 @container (max-width: 400px) {

@@ -13,7 +13,7 @@ const CartWrapper = ({ children, product, navigate }) => (
                 }`
             );
         }}
-        className="cart-item gap-30 row wrap s-between"
+        className="cart-item gap-30 row s-between"
 
     >
         {children}

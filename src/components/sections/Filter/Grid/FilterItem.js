@@ -4,7 +4,7 @@ import AddToFav from "../../../ui/buttons/AttToFav/AddToFav";
 import { useNavigate } from "react-router-dom";
 export default function FilterItem({ item, el }) {
   const navigate = useNavigate();
-  console.log(item)
+ 
   return (
     <div
       className="filter-item"
