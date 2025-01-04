@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import TechnicalSpecifications from './TechnicalSpecifications';
 import Maintenance from './Maintenance';
@@ -6,8 +5,7 @@ import Packing from './Packing';
 import ProductVisuals from './ProductVisuals';
 
 export default function DescriptionItem({ sectionKey, label, content, open, onToggle }) {
- console.log(content)
-    return (
+     return (
         <li>
             <div className="container">
                 <div

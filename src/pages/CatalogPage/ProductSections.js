@@ -21,8 +21,7 @@ export default function ProductSections() {
     [id, catalog, id + catalog],
     getItem
   );
-
-  return (
+   return (
     <>
       <AnimatePresence mode="wait">
         {error ? (

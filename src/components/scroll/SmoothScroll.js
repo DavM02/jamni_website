@@ -1,45 +1,50 @@
-import React, { useLayoutEffect } from 'react'
+import React, { useLayoutEffect, useRef, useContext } from 'react';
 import Scrollbar, { ScrollbarPlugin } from 'smooth-scrollbar';
-import { useRef, useContext } from 'react';
 import { MainContext } from '../../context/MainContext';
- 
+
 export default function SmoothScroll({ children }) {
     const scrollRef = useRef(null);
-    const { scrollbarAccess } = useContext(MainContext)
-
-  
-    useLayoutEffect(() => {
+    const { scrollbarAccess } = useContext(MainContext);
+     useLayoutEffect(() => {
         let scrollbar;
 
         const initScrollbar = () => {
-            scrollbar = Scrollbar.init(scrollRef.current, {
-                damping: 0.09,
-                alwaysShowTrack: true,
-                renderByPixels: true,
-            });
+            if (scrollRef.current) {
+                scrollbar = Scrollbar.init(scrollRef.current, {
+                    damping: 0.09,
+                    alwaysShowTrack: true,
+                    renderByPixels: true,
+                });
 
+                scrollbarAccess.current = scrollbar;
+            }
         };
-       
-        initScrollbar();
-        scrollbarAccess.current = scrollbar
-      
+
+        const handleResize = () => {
+            if (scrollRef.current) {
+                initScrollbar();
+            }
+        };
+
+        const resizeObserver = new ResizeObserver(handleResize);
+        if (scrollRef.current) {
+            resizeObserver.observe(scrollRef.current); 
+        }
+ 
         return () => {
             if (scrollbar) {
                 scrollbar.destroy();
             }
+            resizeObserver.disconnect();
         };
-    }, []);
+    }, []);  
 
     return (
-
-        <div id="scroll-wrapper"
-            ref={scrollRef}>
+        <div id="scroll-wrapper" ref={scrollRef}>
             {children}
         </div>
-
-    )
+    );
 }
-
 
 class OverflowPlugin extends ScrollbarPlugin {
     static pluginName = 'overflow';
@@ -54,4 +59,3 @@ class OverflowPlugin extends ScrollbarPlugin {
 }
 
 Scrollbar.use(OverflowPlugin);
-

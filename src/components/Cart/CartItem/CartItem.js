@@ -9,8 +9,7 @@ function CartItem({
 }) {
 
 
-  console.log(product)
-
+ 
   const handleDecreaseQuantity = (e) => {
     e.stopPropagation();
     product.quantity > 1

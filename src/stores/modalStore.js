@@ -23,12 +23,10 @@ export const modalStore = create((set) => ({
         const randomPage = Math.floor(
           Math.random() * Math.max(1, Math.floor(dataLength / 18))
         );
-        console.log(dataLength)
-        return loadData(["decor", randomPage, 14]);
+         return loadData(["decor", randomPage, 14]);
       })
       .then((data) => {
-        console.log(data)
-        set({ cartRecommendations: data, loading: false });
+         set({ cartRecommendations: data, loading: false });
       })
       .catch((error) => {
         set({ error: error.message, loading: false });

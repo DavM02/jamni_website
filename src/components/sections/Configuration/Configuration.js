@@ -12,7 +12,7 @@ import img4 from '../../../assets/config-4.jpg';
 import img5 from '../../../assets/config-5.jpg';
 import img6 from '../../../assets/config-6.jpg';
 import img7 from '../../../assets/config-7.jpg';
-
+ 
 const initialData = [
   { type: "3 - модульный", price: 120000, quantity: 0, img: img1 },
   { type: "2 - модульный", price: 80000, quantity: 0, img: img2 },

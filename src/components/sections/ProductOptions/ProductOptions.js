@@ -5,8 +5,7 @@ import Slider from "./Slider/Slider";
 export default function ProductOptions({ data, catalog }) {
 
 
-
-  return (
+   return (
     <section id="product-options">
       <div className="container">
        
