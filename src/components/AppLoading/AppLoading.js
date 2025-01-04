@@ -33,15 +33,18 @@ export default function AppLoading({ setRenderApp }) {
             setRenderApp(true);
             setLoaded(3);
         } else {
-            setLoaded(1);
+            setTimeout(() => {
+                setLoaded(1);
+            }, 100);
+            sessionStorage.setItem('animationCompleted', 'true');
         }
     
-    }, []);
+    }, [setRenderApp]);
 
 
-    useEffect(() => {
-        sessionStorage.setItem('animationCompleted', 'true');
-    }, [])
+    // useEffect(() => {
+    //     sessionStorage.setItem('animationCompleted', 'true');
+    // }, [])
 
    
 
@@ -81,7 +84,7 @@ export default function AppLoading({ setRenderApp }) {
                                 return <div className='column'
                                     style={{
                                         transitionDelay: `${(i + 1) * 0.3}s`,
-                                        transform: !loaded ? `translateY(calc(var(--loading-height) * -21))` : 'none'
+                                        transform: loaded === 0 ? `translateY(calc(var(--loading-height) * -21))` : 'none'
                                     }} key={i}>
                                     {el.map((num, j) => {
                                         return <h1 key={j}>{num}</h1>
