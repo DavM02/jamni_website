@@ -19,7 +19,7 @@ export default function Header() {
 
   useEffect(() => {
     if (scrollbarAccess.current) {
-
+ 
       function handleScroll(event) {
         const scrollY = event.offset.y;
         setScroll(scrollY < 78);
