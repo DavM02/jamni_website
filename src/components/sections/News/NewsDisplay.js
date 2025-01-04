@@ -7,7 +7,21 @@ import FetchError from "../../ui/messages/FetchError";
 export default function NewsDisplay({ data, isLoading, searchParams, error }) {
   const visibleItems = data && data.filter((item) => item?.isShown !== false);
   const noResults = data && data.every((el) => el.isShown === false);
-
+  // <AnimatePresence mode="wait">
+  //   {error ? (
+  //     <FetchError message={error?.message} />
+  //   ) : data === null ? (
+  //     <NoResults level={-1} />
+  //   ) : data && !isLoading ? (
+  //     <SmoothAppearance key={"product"}>
+  //       <ProductOptions data={data} catalog={catalog} />
+  //       <ProductDescription data={data} />
+  //       <Configuration product={data} />
+  //     </SmoothAppearance>
+  //   ) : (
+  //     <DataLoading />
+  //   )}
+  // </AnimatePresence>
   return (
     <AnimatePresence mode="wait">
       {error ? (
