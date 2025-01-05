@@ -65,7 +65,7 @@ export default function NestedList({ menu, setMenu }) {
                 <Link to={"catalog/decor"}>Кровати</Link>
               </li>
               <li>
-                <Link to={"catalog/decor"}>Пуфы и банкетки</Link>
+                <Link to={"catalog/poufs"}>Пуфы и банкетки</Link>
               </li>
             </ul>
           </li>

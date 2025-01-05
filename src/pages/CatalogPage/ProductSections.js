@@ -21,6 +21,7 @@ export default function ProductSections() {
     [id, catalog, id + catalog],
     getItem
   );
+  console.log(id, catalog,)
    return (
     <>
       <AnimatePresence mode="wait">

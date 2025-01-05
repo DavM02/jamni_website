@@ -146,7 +146,7 @@ main {
 #bestsellers .slider-item:nth-child(1n) .slider-image,
 #projects .slider-item:nth-child(1n) .slider-image, #more-products .slider-item:nth-child(1n) .slider-image,
 .recommendations .slider-item:nth-child(1n) .rec-item-image,
-.cart-item-image:nth-child(1n) {
+.cart-item-image:nth-child(1n),  #catalog-collections .slider-item:nth-child(1n) .slider-image {
   background-color: var(--placeholder-1);
 }
 
@@ -155,7 +155,7 @@ main {
 #bestsellers .slider-item:nth-child(2n) .slider-image,
 #projects .slider-item:nth-child(2n) .slider-image, #more-products .slider-item:nth-child(2n) .slider-image,
 .recommendations .slider-item:nth-child(2n) .rec-item-image,
-.cart-item-image:nth-child(2n) {
+.cart-item-image:nth-child(2n),  #catalog-collections .slider-item:nth-child(2n) .slider-image {
   background-color: var(--placeholder-2);
 }
 
@@ -165,7 +165,7 @@ main {
 #bestsellers .slider-item:nth-child(3n) .slider-image,
 #projects .slider-item:nth-child(3n) .slider-image, #more-products .slider-item:nth-child(3n) .slider-image,
 .recommendations .slider-item:nth-child(3n) .rec-item-image,
-.cart-item-image:nth-child(3n) {
+.cart-item-image:nth-child(3n), #catalog-collections .slider-item:nth-child(3n) .slider-image {
   background-color: var(--placeholder-3);
 }
 

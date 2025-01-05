@@ -79,7 +79,7 @@ export async function getReviewsCount() {
 
 export async function getItem([id, dbName]) {
   try {
-  
+    console.log(id, dbName)
     const articlesRef = ref(database, dbName);
     const q = query(articlesRef, orderByChild("id"), equalTo(id));
 
@@ -87,7 +87,7 @@ export async function getItem([id, dbName]) {
 
     if (snapshot.exists()) {
       const data = snapshot.val();
-
+ 
       return Object.values(data)[0];
     } else {
       return null;
