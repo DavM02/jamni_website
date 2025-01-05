@@ -49,7 +49,7 @@ function App() {
                       <Route path="order/*" element={<OrderPage />} />
                       <Route path="catalog/*" element={<CatalogRoute />} />
                       <Route path="favorites" element={<FavoritesPage />} />
-                      <Route path="/*/**" element={<NoFound />} />
+                      <Route path="/*/*/*" element={<NoFound />} />
                     </Routes>
                   </AnimatePresence>
                 </main>
