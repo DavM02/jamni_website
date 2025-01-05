@@ -1,4 +1,23 @@
 
+
+@font-face {
+  font-family: "font-secondary";
+  src: url("../../public/fonts/Zetafonts - Lovelace Text Regular.woff2") format("woff2"),
+    url("../../public/fonts/Zetafonts - Lovelace Text Regular.woff") format("woff"),
+    url("../../public/fonts/Zetafonts - Lovelace Text Regular.ttf") format("truetype"),
+    url("../../public/fonts/Zetafonts - Lovelace Text Regular.eot") format("embedded-opentype"),
+    url("../../public/fonts/Zetafonts - Lovelace Text Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "font-extra";
+  src: url("../../public/fonts/Moniqa-CondensedHeading.woff2") format("woff2"),
+    url("../../public/fonts/Moniqa-CondensedHeading.woff") format("woff"),
+    url("../../public/fonts/Moniqa-CondensedHeading.ttf") format("truetype"),
+    url("../../public/fonts/Moniqa-CondensedHeading.eot") format("embedded-opentype"),
+    url("../../public/fonts/Moniqa-CondensedHeading.otf") format("opentype"),
+}
+
 .up-case {
   text-transform: uppercase;
 }
