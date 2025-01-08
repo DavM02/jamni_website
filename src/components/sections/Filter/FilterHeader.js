@@ -1,11 +1,13 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import filter from '../../../assets/icons/filter.svg'
 import Sort from './Sort/Sort';
-
+import catalog from '../../../data/catalog';
 import { useEffect, useState } from 'react';
 import Backdrop from '../../ui/Backdrop/Backdrop';
 import MobileFilter from './MobileFilter';
-export default function FilterHeader({ data, setShowParams, query, isMobile }) {
+export default function FilterHeader({   setShowParams, query, isMobile }) {
+
+    const {  catalog: path} = useParams()
 
     const [showMobileParams, setShowMobileParams] = useState(false)
 
@@ -37,7 +39,7 @@ export default function FilterHeader({ data, setShowParams, query, isMobile }) {
                         Главная
                     </Link>
                     <span>/</span>
-                    <span>{data.headline.split(' ')[1]}</span>
+                    <span>{catalog[path].headline}</span>
                 </div>
                 <div className='row s-between gap-10 xxsmall-text text-main text-black'>
                     <div className='filters row gap-5 center-y' onClick={() => handleMedia()}>
@@ -50,7 +52,6 @@ export default function FilterHeader({ data, setShowParams, query, isMobile }) {
                 </div>
             </div>
             <MobileFilter
-                data={data}
                 setShowMobileParams={setShowMobileParams}
                 showMobileParams={showMobileParams} />
             <Backdrop root={'modal-root'} value={showMobileParams} />

@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
-import PageTransition from "../../components/PageTransition/PageTransition";
-import ChunkLoading from "../../components/ui/messages/ChunkLoading/ChunkLoading";
+import PageTransition from "../../../components/PageTransition/PageTransition";
+import ChunkLoading from "../../../components/ui/messages/ChunkLoading/ChunkLoading";
 
 const ProductSections = React.lazy(() => import("./ProductSections"));
 

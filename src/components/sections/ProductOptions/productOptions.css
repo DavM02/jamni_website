@@ -98,7 +98,7 @@
     flex-direction: column;
   }
 
-  #product-options form > .row > divc {
+  #product-options form > .row > div {
     width: 100% !important;
   }
 }

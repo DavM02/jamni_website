@@ -8,7 +8,7 @@ export default function Options({ options, colors }) {
             const [key, values] = Object.entries(el)[0];
 
             const style = (i % 2 !== 0 ? i >= 4 && i + 1 <= arr.length : i >= 4 && i + 1 < arr.length)
-                ? { width: '48.3%' }
+                ? { width: 'calc(100% / 2 - 10px)' }
                 : { width: '100%' };
 
             if (key.includes('цвет')) {

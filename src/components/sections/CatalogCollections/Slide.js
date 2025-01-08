@@ -6,7 +6,6 @@ export default function Slide({ el}) {
         < >
             <div className='slider-image'>
                 <LazyLoadImage
-
                     src={el.image}
                     width={'100%'}
                     height={'100%'}

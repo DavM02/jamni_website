@@ -7,7 +7,7 @@ import NoResults from "../../../ui/messages/NoResults";
 import DataLoading from "../../../ui/messages/DataLoading";
 import FetchError from "../../../ui/messages/FetchError";
 
-export default function FilterDisplay({ isLoading, searchParams, data, error, catalog }) {
+export default function FilterDisplay({ isLoading, searchParams, data, error }) {
 
   const noResults = data && data.every((el) => el.isShown === false);
   
@@ -18,7 +18,7 @@ export default function FilterDisplay({ isLoading, searchParams, data, error, ca
       ) : !isLoading && data ? (
         !noResults ? (
           <SmoothAppearance key={searchParams}>
-              <FilterGrid catalog={catalog} data={data} />
+              <FilterGrid data={data} />
           </SmoothAppearance>
 
         ) : (

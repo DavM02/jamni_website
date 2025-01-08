@@ -2,14 +2,14 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import AddToFav from "../../../ui/buttons/AttToFav/AddToFav";
 import { useNavigate } from "react-router-dom";
-export default function FilterItem({ item, el }) {
+export default function FilterItem({ item }) {
   const navigate = useNavigate();
  
   return (
     <div
       className="filter-item"
       onClick={() => navigate(`${item.name.toLowerCase()}?id=${item.id}`)}
-      style={{ gridArea: el }}
+      style={{ gridArea: item.area }}
     >
       <AddToFav data={item}/>
       {item ? (
@@ -17,7 +17,7 @@ export default function FilterItem({ item, el }) {
           className="placeholder"
           style={{
             height:
-              el === "l"
+              item.area === "l"
                 ? "calc(var(--filter-item-img-height) * 2 + 101px)"
                 : "var(--filter-item-img-height)",
           }}

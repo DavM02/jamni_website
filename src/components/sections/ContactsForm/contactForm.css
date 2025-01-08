@@ -18,7 +18,7 @@
   line-height: initial;
 }
 
-#contact-form .heading-wrapper > .row {
+#contact-form .heading-wrapper>.row {
   column-gap: 15px !important;
 }
 
@@ -65,8 +65,9 @@
 }
 
 @media all and (max-width: 1023px) {
+
   #contact-form .mockup,
-  #contact-form .container > .row:nth-child(1) {
+  #contact-form .container>.row:nth-child(1) {
     flex-direction: column;
   }
 
@@ -76,13 +77,18 @@
 }
 
 @media all and (max-width: 550px) {
-  #contact-form form > .row,
+
+  #contact-form form>.row,
   #company-info .row {
     flex-direction: column;
   }
 
   #contact-form form .row .column {
     width: 100%;
+  }
+
+  #contact-form form .row .column input {
+    max-width: unset;
   }
 }
 
