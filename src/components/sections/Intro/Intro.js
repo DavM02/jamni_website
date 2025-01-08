@@ -1,18 +1,17 @@
 import React from 'react'
 import './intro.css'
-import catalog from '../../../data/catalog'
-export default function Intro({path}) {
+export default function Intro({ id, bg, posY, description, headline}) {
 
     
   return (
-      <section id={catalog[path].id} className='intro center-gr'
-          style={{ background: `url(${catalog[path].bg}) no-repeat`, '--posY': catalog[path].posY }}
+      <section id={id} className='intro center-gr'
+          style={{ background: `url(${bg}) no-repeat`, '--posY': posY }}
       >
               <div className='mask-layer'></div>
               <div className='container text-center'>
-              <h2 className='text-light'>{catalog[path].headline}</h2>
-              {catalog[path].description && <p className='text-light small-text text-main up-case'
-                  dangerouslySetInnerHTML={{ __html: catalog[path].description }}
+              <h2 className='text-light'>{headline}</h2>
+              {description && <p className='text-light small-text text-main up-case'
+                  dangerouslySetInnerHTML={{ __html: description }}
                   ></p>
                   } 
               </div>

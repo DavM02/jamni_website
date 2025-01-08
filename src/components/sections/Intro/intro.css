@@ -22,7 +22,7 @@
     position: relative;
 }
 
-#decor-intro.intro::after, #reviews-intro.intro::after, #article-intro.intro::after {
+#decor-intro.intro::after, #reviews-intro.intro::after, #article-intro.intro::after, #news-intro.intro::after, #poufs-intro.intro::after {
     content: "";
     opacity: 10%;
     background-color: #000000;
@@ -38,9 +38,6 @@
     opacity: 32%;
  }
 
-#news-intro p, #news-intro h2 {
-    color: var(--black);
-}
 
 .intro .mask-layer {
     height: 100%;

@@ -2,7 +2,7 @@ import "./productOptions.css";
 
 import ProductDetails from "./ProductDetails";
 import Slider from "./Slider/Slider";
-export default function ProductOptions({ data, catalog }) {
+export default function ProductOptions({ data }) {
 
 
    return (
@@ -11,7 +11,7 @@ export default function ProductOptions({ data, catalog }) {
        
         <div className="section-layout">
           <Slider images={data.images} />
-          <ProductDetails catalog={catalog} data={data} />
+          <ProductDetails data={data} />
         </div>
       
       </div>

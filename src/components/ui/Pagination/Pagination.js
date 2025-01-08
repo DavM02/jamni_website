@@ -7,8 +7,7 @@ export default function Pagination({ pagesCount, scrollOffset }) {
     scrollOffset
   );
 
-  console.log(pagesCount)
-
+ 
   return (
     <div className="pagination">
       <div className="row gap-30 center-y end-x">

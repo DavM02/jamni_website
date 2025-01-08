@@ -1,9 +1,9 @@
 import React from 'react'
 import Accordion from '../../../ui/Accordion/Accordion'
 import MultiRangeSlider from '../../../ui/inputs/RangeInput/MultiRangeSlider'
-export default function FilterByRange({ min, max, val, headline }) {
+export default function FilterByRange({ min, max, val, headline, filterParam }) {
   return (
-    <div className="price-filter xsmall-text text-main text-black up-case">
+    <div className="xsmall-text text-main text-black up-case">
 
       <Accordion
         headline={headline} 
@@ -12,6 +12,7 @@ export default function FilterByRange({ min, max, val, headline }) {
         isOpen={true}
       >
         <MultiRangeSlider
+          filterParam={filterParam}
           min={min}
           max={max}
           val={val}

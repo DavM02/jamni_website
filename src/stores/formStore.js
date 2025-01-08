@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
 export const formStore = create((set, get) => ({
-  forms: {}, // Храним данные и ошибки по ключам формы
-  // Обновление данных формы
+  forms: {},  
+ 
   updateFormData: (formKey, newData) => {
     set((state) => ({
       forms: {
@@ -14,8 +14,7 @@ export const formStore = create((set, get) => ({
       },
     }));
   },
-
-  // Установка ошибок
+ 
   setErrors: (formKey, newErrors) => {
     set((state) => ({
       forms: {
@@ -28,20 +27,18 @@ export const formStore = create((set, get) => ({
     }));
   },
 
-  // Очистка ошибок
   clearErrors: (formKey) => {
     set((state) => ({
       forms: {
-        ...state.forms, // сохраняем все формы
+        ...state.forms,  
         [formKey]: {
-          ...state.forms[formKey], // сохраняем данные формы
-          errors: {}, // очищаем только ошибки
+          ...state.forms[formKey],  
+          errors: {}, 
         },
       },
     }));
   },
 
-  // Валидация данных формы
   validateFormData: (formKey, fd) => {
     const errors = {};
     Object.entries(fd).forEach(([key, value]) => {
@@ -60,8 +57,8 @@ export const formStore = create((set, get) => ({
           },
         },
       }));
-      return false; // Form is invalid
+      return false; 
     }
-    return true; // Form is valid
+    return true; 
   },
 }));

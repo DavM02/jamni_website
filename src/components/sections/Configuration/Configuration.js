@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import { userCartStore } from "../../../stores/cartStore";
-import { modalStore } from "../../../stores/modalStore";
 import ConfigItem from "./ConfigItem";
 import ConfigSummary from "./ConfigSummary";
 import './configuration.css'
@@ -24,10 +21,8 @@ const initialData = [
 ];
 
 export default function Configuration({ product }) {
-  const { toggleAdded } = modalStore();
-  const addToCart = userCartStore((state) => state.addProduct);
-  const param = useParams();
-  const catalog = param["*"].split("/")[0];
+ 
+ 
 
   const [data, setData] = useState(initialData);
 
@@ -43,23 +38,6 @@ export default function Configuration({ product }) {
 
   const calculateTotal = () => {
     return product.price + data.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  };
-
-  const handleAddToCart = () => {
-    const newProduct = {
-      catalog,
-      id: product.id + "with-config" + Math.random(),
-      product: product.product,
-      image: product.images[0],
-      name: product.name,
-      collection: product.collection,
-      price: calculateTotal(),
-      configuration: data.map((el) => ({ type: el.type, quantity: el.quantity })),
-    };
-
-    addToCart(newProduct);
-    toggleAdded();
-    setTimeout(toggleAdded, 1500);
   };
 
   return (
@@ -83,7 +61,9 @@ export default function Configuration({ product }) {
             />
           ))}
         </div>
-        <ConfigSummary totalPrice={calculateTotal()} onAddToCart={handleAddToCart} />
+        <ConfigSummary 
+        configuration={data.filter((el, i) => el.quantity > 0)}
+        totalPrice={calculateTotal()} />
       </div>
     </section>
   );

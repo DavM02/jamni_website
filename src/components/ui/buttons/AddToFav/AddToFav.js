@@ -1,43 +1,27 @@
  
 
+
+import { useState } from "react";
+import useProductActions from "../../../../hooks/useProductActions";
 import { userFavStore } from "../../../../stores/favStore";
-import { modalStore } from "../../../../stores/modalStore";
-export default function AddToFav({data}) {
-   
-  const addToFav = userFavStore((state) => state.addProduct);
-  const { toggleFav } = modalStore();
+export default function AddToFav({ data, formRef }) {
 
-  function handleFav() {
-   
+  const {handleAddToFav } = useProductActions()
 
-    // const formData = new FormData(e.target);
+  const { removeProduct } = userFavStore()
+ 
 
-    const newProduct = {
-      catalog: data.catalog,
-      id: data.id,
-      product: data.product,
-      image: data.images[0],
-      name: data.name,
-      collection: data.collection,
-      price: data.price,
-    };
-
-    // for (let [key, value] of formData.entries()) {
-    //   newProduct[key] = value;
-    // }
-
-    addToFav(newProduct);
-
-    toggleFav();
-
-    setTimeout(() => {
-      toggleFav();
-    }, 1500);
-  }
+  const [added, setAdded] = useState(false)
 
   return (
-    <div className="add-to-favorites" onClick={(e) => { e.stopPropagation(); handleFav()}}>
-      <input type="checkbox" />
+    <div className="add-to-favorites" onClick={(e) => {e.stopPropagation(); 
+    
+      !added ? handleAddToFav(data, formRef) : removeProduct(data.id)
+  
+  }
+    
+    }>
+      <input type="checkbox" onChange={() =>  setAdded((prev) => !prev)} />
       <svg
         width="28"
         height="25"

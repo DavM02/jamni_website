@@ -8,11 +8,10 @@ function ReviewsSections() {
         bg={bg}
         id="reviews-intro"
         posY={"70%"}
-        text={{
-          headline: "отзывы",
-          description:
-            "Мнение наших клиентов очень важно для нас",
-        }}
+   
+          headline="отзывы"
+          description="Мнение наших клиентов очень важно для нас"
+  
       />
    <Reviews/>
     </>

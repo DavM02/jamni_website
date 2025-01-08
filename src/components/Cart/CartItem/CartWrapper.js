@@ -4,7 +4,7 @@ import SmoothAppearance from "../../ui/SmoothAppearance";
 
 const CartWrapper = ({ children, product, navigate }) => (
     <SmoothAppearance
-    key={product.id}
+        key={product.id}
         Tag={motion.li}
         layout
         onClick={() => {

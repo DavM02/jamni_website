@@ -2645,7 +2645,7 @@
             ],
             "isNew": true,
             "material": "кожа",
-            "name": "Chest",
+            "name": "foster",
             "price": 10000,
             "rating": 5,
             "characteristics": [
@@ -4598,7 +4598,7 @@
             ],
             "isNew": false,
             "material": "кожа",
-            "name": "Chest",
+            "name": "foster",
             "price": 20000,
             "rating": 1,
             "characteristics": [
@@ -5892,7 +5892,7 @@
             ],
             "isNew": false,
             "material": "кожа",
-            "name": "Chest",
+            "name": "foster",
             "price": 20000,
             "rating": 2,
             "characteristics": [
@@ -6927,7 +6927,7 @@
             ],
             "isNew": true,
             "material": "кожа",
-            "name": "Chest",
+            "name": "foster",
             "price": 10000,
             "rating": 3,
             "characteristics": [
@@ -8863,7 +8863,7 @@
             ],
             "isNew": false,
             "material": "кожа",
-            "name": "Chest",
+            "name": "foster",
             "price": 20000,
             "rating": 5,
             "characteristics": [
@@ -9393,7 +9393,7 @@
             ],
             "isNew": true,
             "material": "кожа",
-            "name": "Chest",
+            "name": "foster",
             "price": 10000,
             "rating": 1,
             "characteristics": [
@@ -11006,7 +11006,7 @@
             ],
             "isNew": true,
             "material": "кожа",
-            "name": "Chest",
+            "name": "foster",
             "price": 10000,
             "rating": 3,
             "characteristics": [
@@ -13508,7 +13508,7 @@
             ],
             "isNew": true,
             "material": "кожа",
-            "name": "Chest",
+            "name": "foster",
             "price": 10000,
             "rating": 5,
             "characteristics": [
@@ -14963,7 +14963,6 @@
             ]
         }
     ],
- 
     "poufs": [
         {
             "bestseller": true,
@@ -14987,7 +14986,7 @@
             ],
             "isNew": false,
             "material": "ткань",
-            "name": "luxepouf",
+            "name": "modular",
             "price": 25500,
             "rating": 4.8,
             "characteristics": [
@@ -15130,8 +15129,8 @@
             ],
             "isNew": true,
             "material": "экокожа",
-            "name": "officePouf",
-            "price": 4200,
+            "name": "officepouf",
+            "price": 50500,
             "rating": 4.7,
             "characteristics": [
                 {
@@ -15266,7 +15265,7 @@
             "isNew": true,
             "material": "велюр",
             "name": "relaxpouf",
-            "price": 4800,
+            "price": 62000,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -15888,7 +15887,7 @@
             "isNew": false,
             "material": "синтепон",
             "name": "relaxcube",
-            "price": 5200,
+            "price": 90000,
             "rating": 4.8,
             "characteristics": [
                 {
@@ -16179,8 +16178,8 @@
                         },
                         {
                             "дополнительно": [
-                                                            "встроенное хранилище",
-                                                            "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]
@@ -16380,8 +16379,8 @@
                         },
                         {
                             "дополнительно": [
-                                                            "встроенное хранилище",
-                                                            "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]
@@ -16807,7 +16806,7 @@
             "isNew": true,
             "material": "жаккард",
             "name": "Optima",
-            "price": 4200,
+            "price": 120500,
             "rating": 4.6,
             "characteristics": [
                 {
@@ -17108,7 +17107,7 @@
             "isNew": true,
             "material": "поролон",
             "name": "symphony",
-            "price": 14200,
+            "price": 120500,
             "rating": 4.2,
             "characteristics": [
                 {
@@ -17265,7 +17264,7 @@
             ],
             "isNew": false,
             "material": "ткань",
-            "name": "luxepouf",
+            "name": "modular",
             "price": 3500,
             "rating": 4.8,
             "characteristics": [
@@ -17406,9 +17405,9 @@
                 "https://cb.scene7.com/is/image/Crate/CovePkPrChckrdFloorCushSHS25?$web_pdp_main_carousel_med$"
             ],
             "isNew": true,
-            "material": "велюр",
+            "material": "синтепон",
             "name": "relaxpouf",
-            "price": 4800,
+            "price": 85000,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -17538,7 +17537,7 @@
             "isNew": true,
             "material": "микрофибра",
             "name": "cozyrest",
-            "price": 4200,
+            "price": 92500,
             "rating": 4.6,
             "characteristics": [
                 {
@@ -17995,8 +17994,8 @@
                         },
                         {
                             "дополнительно": [
-                                                            "встроенное хранилище",
-                                                            "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]
@@ -18097,7 +18096,7 @@
             "isNew": true,
             "material": "кожзам",
             "name": "modular",
-            "price": 4200,
+            "price": 40000,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -18196,8 +18195,8 @@
                         },
                         {
                             "дополнительно": [
-                                                        "встроенное хранилище",
-                                                        "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]
@@ -18456,7 +18455,7 @@
             "isNew": false,
             "material": "синтепон",
             "name": "relaxcube",
-            "price": 5200,
+            "price": 14000,
             "rating": 4.8,
             "characteristics": [
                 {
@@ -18849,7 +18848,7 @@
             "isNew": true,
             "material": "экокожа",
             "name": "modular",
-            "price": 4200,
+            "price": 22500,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -19048,9 +19047,9 @@
                 "https://4house.ru/upload/iblock/0c6/etfve5grx7jt1ez68bipb4k4anzoi294.jpg"
             ],
             "isNew": false,
-            "material": "ткань",
+            "material": "жаккард",
             "name": "luxepouf",
-            "price": 3500,
+            "price": 50500,
             "rating": 4.8,
             "characteristics": [
                 {
@@ -19192,7 +19191,7 @@
             ],
             "isNew": true,
             "material": "экокожа",
-            "name": "officePouf",
+            "name": "officepouf",
             "price": 15500,
             "rating": 4.7,
             "characteristics": [
@@ -19328,7 +19327,7 @@
             "isNew": true,
             "material": "велюр",
             "name": "relaxpouf",
-            "price": 4800,
+            "price": 14500,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -19457,7 +19456,7 @@
             ],
             "isNew": true,
             "material": "микрофибра",
-            "name": "cozyrest",
+            "name": "relaxpouf",
             "price": 4200,
             "rating": 4.6,
             "characteristics": [
@@ -19623,7 +19622,7 @@
             ],
             "isNew": false,
             "material": "синтепон",
-            "name": "relaxcube",
+            "name": "cascade",
             "price": 5200,
             "rating": 4.8,
             "characteristics": [
@@ -20116,8 +20115,8 @@
                         },
                         {
                             "дополнительно": [
-                                                        "встроенное хранилище",
-                                                        "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]
@@ -20475,8 +20474,8 @@
                         },
                         {
                             "дополнительно": [
-                                                            "встроенное хранилище",
-                                                            "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]
@@ -20577,7 +20576,7 @@
             "isNew": false,
             "material": "ткань",
             "name": "luxepouf",
-            "price": 3500,
+            "price": 50500,
             "rating": 4.8,
             "characteristics": [
                 {
@@ -20889,7 +20888,7 @@
             "isNew": true,
             "material": "микрофибра",
             "name": "cozyrest",
-            "price": 4200,
+            "price": 28500,
             "rating": 4.6,
             "characteristics": [
                 {
@@ -21054,7 +21053,7 @@
             ],
             "isNew": false,
             "material": "синтепон",
-            "name": "relaxcube",
+            "name": "cascade",
             "price": 5200,
             "rating": 4.8,
             "characteristics": [
@@ -21241,8 +21240,8 @@
             ],
             "isNew": true,
             "material": "кожзам",
-            "name": "symphony",
-            "price": 15500,
+            "name": "versailles",
+            "price": 35000,
             "rating": 4.2,
             "characteristics": [
                 {
@@ -21398,7 +21397,7 @@
                 "https://4house.ru/upload/iblock/0c6/etfve5grx7jt1ez68bipb4k4anzoi294.jpg"
             ],
             "isNew": false,
-            "material": "ткань",
+            "material": "синтепон",
             "name": "luxepouf",
             "price": 3500,
             "rating": 4.8,
@@ -21541,8 +21540,8 @@
             ],
             "isNew": true,
             "material": "велюр",
-            "name": "relaxpouf",
-            "price": 4800,
+            "name": "optima",
+            "price": 56500,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -21671,7 +21670,7 @@
             ],
             "isNew": true,
             "material": "экокожа",
-            "name": "officePouf",
+            "name": "officepouf",
             "price": 15500,
             "rating": 4.7,
             "characteristics": [
@@ -21805,7 +21804,7 @@
                 "https://cb.scene7.com/is/image/Crate/CovePkPrChckrdFloorCushSHS25?$web_pdp_main_carousel_med$"
             ],
             "isNew": true,
-            "material": "велюр",
+            "material": "кожзам",
             "name": "relaxpouf",
             "price": 4800,
             "rating": 4.9,
@@ -22103,7 +22102,7 @@
             "isNew": false,
             "material": "синтепон",
             "name": "relaxcube",
-            "price": 5200,
+            "price": 90000,
             "rating": 4.8,
             "characteristics": [
                 {
@@ -22290,8 +22289,8 @@
             ],
             "isNew": true,
             "material": "экокожа",
-            "name": "officePouf",
-            "price": 4200,
+            "name": "officepouf",
+            "price": 40000,
             "rating": 4.7,
             "characteristics": [
                 {
@@ -22425,7 +22424,7 @@
             ],
             "isNew": true,
             "material": "велюр",
-            "name": "relaxpouf",
+            "name": "optima",
             "price": 4800,
             "rating": 4.9,
             "characteristics": [
@@ -22555,7 +22554,7 @@
             "isNew": true,
             "material": "велюр",
             "name": "cozypouf",
-            "price": 4200,
+            "price": 38500,
             "rating": 4.6,
             "characteristics": [
                 {
@@ -22981,8 +22980,8 @@
                         },
                         {
                             "дополнительно": [
-                                                                "встроенное хранилище",
-                                                                "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]
@@ -23408,7 +23407,7 @@
             "isNew": true,
             "material": "жаккард",
             "name": "Optima",
-            "price": 4200,
+            "price": 48500,
             "rating": 4.6,
             "characteristics": [
                 {
@@ -23573,7 +23572,7 @@
             ],
             "isNew": false,
             "material": "ткань",
-            "name": "luxepouf",
+            "name": "premium",
             "price": 25500,
             "rating": 4.8,
             "characteristics": [
@@ -23716,8 +23715,8 @@
             ],
             "isNew": true,
             "material": "экокожа",
-            "name": "officePouf",
-            "price": 4200,
+            "name": "officepouf",
+            "price": 78500,
             "rating": 4.7,
             "characteristics": [
                 {
@@ -23853,7 +23852,7 @@
             "isNew": true,
             "material": "экокожа",
             "name": "modular",
-            "price": 4200,
+            "price": 5000,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -23952,8 +23951,8 @@
                         },
                         {
                             "дополнительно": [
-                                                        "встроенное хранилище",
-                                                        "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]
@@ -24052,9 +24051,9 @@
                 "https://4house.ru/upload/iblock/0c6/etfve5grx7jt1ez68bipb4k4anzoi294.jpg"
             ],
             "isNew": false,
-            "material": "ткань",
+            "material": "кожзам",
             "name": "luxepouf",
-            "price": 3500,
+            "price": 50500,
             "rating": 4.8,
             "characteristics": [
                 {
@@ -24196,8 +24195,8 @@
             ],
             "isNew": true,
             "material": "экокожа",
-            "name": "officePouf",
-            "price": 15500,
+            "name": "officepouf",
+            "price": 40000,
             "rating": 4.7,
             "characteristics": [
                 {
@@ -24331,8 +24330,8 @@
             ],
             "isNew": true,
             "material": "велюр",
-            "name": "relaxpouf",
-            "price": 4800,
+            "name": "optima",
+            "price": 18000,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -24460,8 +24459,8 @@
                 "https://puresaltinteriors.com/cdn/shop/files/233140-001_DET_3.jpg?v=1706591356"
             ],
             "isNew": true,
-            "material": "микрофибра",
-            "name": "cozyrest",
+            "material": "поролон",
+            "name": "relaxpouf",
             "price": 4200,
             "rating": 4.6,
             "characteristics": [
@@ -24628,7 +24627,7 @@
             "isNew": false,
             "material": "синтепон",
             "name": "relaxcube",
-            "price": 5200,
+            "price": 34000,
             "rating": 4.8,
             "characteristics": [
                 {
@@ -24919,8 +24918,8 @@
                         },
                         {
                             "дополнительно": [
-                                                            "встроенное хранилище",
-                                                            "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]
@@ -25019,7 +25018,7 @@
                 "https://4house.ru/upload/iblock/0c6/etfve5grx7jt1ez68bipb4k4anzoi294.jpg"
             ],
             "isNew": false,
-            "material": "ткань",
+            "material": "экокожа",
             "name": "luxepouf",
             "price": 3500,
             "rating": 4.8,
@@ -25163,7 +25162,7 @@
             "isNew": true,
             "material": "велюр",
             "name": "relaxpouf",
-            "price": 4800,
+            "price": 38000,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -25293,7 +25292,7 @@
             "isNew": true,
             "material": "микрофибра",
             "name": "cozyrest",
-            "price": 4200,
+            "price": 13500,
             "rating": 4.6,
             "characteristics": [
                 {
@@ -25458,8 +25457,8 @@
             ],
             "isNew": false,
             "material": "синтепон",
-            "name": "relaxcube",
-            "price": 5200,
+            "name": "cascade",
+            "price": 6000,
             "rating": 4.8,
             "characteristics": [
                 {
@@ -25750,8 +25749,8 @@
                         },
                         {
                             "дополнительно": [
-                                                                "встроенное хранилище",
-                                                                "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]
@@ -25850,9 +25849,9 @@
                 "https://puresaltinteriors.com/cdn/shop/files/233140-001_DET_3.jpg?v=1706591356"
             ],
             "isNew": true,
-            "material": "микрофибра",
-            "name": "cozyrest",
-            "price": 4200,
+            "material": "натуральная кожа",
+            "name": "relaxpouf",
+            "price": 83500,
             "rating": 4.6,
             "characteristics": [
                 {
@@ -26018,7 +26017,7 @@
             "isNew": false,
             "material": "синтепон",
             "name": "relaxcube",
-            "price": 5200,
+            "price": 15700,
             "rating": 4.8,
             "characteristics": [
                 {
@@ -26204,8 +26203,8 @@
             ],
             "isNew": true,
             "material": "кожзам",
-            "name": "symphony",
-            "price": 15500,
+            "name": "versailles",
+            "price": 35000,
             "rating": 4.2,
             "characteristics": [
                 {
@@ -26504,8 +26503,8 @@
             ],
             "isNew": true,
             "material": "велюр",
-            "name": "relaxpouf",
-            "price": 4800,
+            "name": "optima",
+            "price": 58000,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -26634,7 +26633,7 @@
             ],
             "isNew": true,
             "material": "экокожа",
-            "name": "officePouf",
+            "name": "officepouf",
             "price": 15500,
             "rating": 4.7,
             "characteristics": [
@@ -26769,8 +26768,8 @@
             ],
             "isNew": true,
             "material": "велюр",
-            "name": "relaxpouf",
-            "price": 4800,
+            "name": "optima",
+            "price": 68000,
             "rating": 4.9,
             "characteristics": [
                 {
@@ -26899,8 +26898,8 @@
             ],
             "isNew": true,
             "material": "микрофибра",
-            "name": "cozyrest",
-            "price": 4200,
+            "name": "relaxpouf",
+            "price": 33500,
             "rating": 4.6,
             "characteristics": [
                 {
@@ -27066,7 +27065,7 @@
             "isNew": false,
             "material": "синтепон",
             "name": "relaxcube",
-            "price": 5200,
+            "price": 54000,
             "rating": 4.8,
             "characteristics": [
                 {
@@ -27357,8 +27356,8 @@
                         },
                         {
                             "дополнительно": [
-                                                            "встроенное хранилище",
-                                                            "съемная крышка"
+                                "встроенное хранилище",
+                                "съемная крышка"
                             ]
                         }
                     ]

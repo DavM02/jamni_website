@@ -14,15 +14,15 @@ export default function ProductSections() {
   const [searchParams, setSearchparams] = useSearchParams();
 
   const { catalog } = useParams();
- 
+
   const id = parseInt(searchParams.get("id"));
 
   const { data, error, isLoading } = useSWRImmutable(
     [id, catalog, id + catalog],
     getItem
   );
- 
-   return (
+
+  return (
     <>
       <AnimatePresence mode="wait">
         {error ? (
@@ -31,16 +31,18 @@ export default function ProductSections() {
           <NoResults level={-1} />
         ) : data && !isLoading ? (
           <SmoothAppearance key={"product"}>
-            <ProductOptions data={data} catalog={catalog}/>
+            <ProductOptions data={data}  />
             <ProductDescription data={data} />
-                <Configuration product={data} />
+            <Configuration product={data} />
+            <MoreProducts />
           </SmoothAppearance>
         ) : (
           <DataLoading />
         )}
+        
       </AnimatePresence>
 
-      <MoreProducts />
+
     </>
   );
 }

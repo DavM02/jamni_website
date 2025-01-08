@@ -1,46 +1,18 @@
 import Dimensions from "./Dimensions/Dimensions";
 import Options from "./Options/Options";
-import AddToFav from "../../ui/buttons/AttToFav/AddToFav";
+import AddToFav from "../../ui/buttons/AddToFav/AddToFav";
 import MainButton from "../../ui/buttons/MainButton/MainButton";
-import { userCartStore } from "../../../stores/cartStore";
-import { modalStore } from "../../../stores/modalStore";
+  import useProductActions from "../../../hooks/useProductActions";
+  import { useRef } from "react";
+export default function Form({ data }) {
+ 
+  const {handleAddToCart} = useProductActions()
 
-export default function Form({ data, catalog }) {
-  const addToCart = userCartStore((state) => state.addProduct);
-  const { toggleAdded } = modalStore();
   const dimensions = data && data.characteristics[0].dimensions;
   const options = data && data.characteristics[1].options;
-
-  function handleSubmit(e) {
-    e.preventDefault();
-
-    const formData = new FormData(e.target);
-
-    const newProduct = {
-      catalog,
-      id: data.id,
-      product: data.product,
-      image: data.images[0],
-      name: data.name,
-      collection: data.collection,
-      price: data.price,
-    };
-
-    for (let [key, value] of formData.entries()) {
-      newProduct[key] = value;
-    }
-  
-    addToCart(newProduct);
-
-    toggleAdded();
-
-    setTimeout(() => {
-      toggleAdded();
-    }, 1500);
-  }
-
+ const formRef = useRef(null)
   return (
-    <form action="#" onSubmit={(e) => handleSubmit(e)}>
+    <form ref={formRef} action="#" onSubmit={(e) =>  handleAddToCart(e)}>
       <div className="row wrap gap-20">
         <Dimensions dimensions={dimensions} />
         <Options options={options} colors={data.colors} />
@@ -48,7 +20,7 @@ export default function Form({ data, catalog }) {
       <div className="submit-wrapper">
         <MainButton type={"submit"}>добавить в корзину</MainButton>
         <div className="row center-y center-x gap-10">
-          <AddToFav data={{...data, catalog}} />
+          <AddToFav data={data} formRef={formRef} />
           <span className="text-main xxsmall-text text-black-secondary">
             В избранное
           </span>

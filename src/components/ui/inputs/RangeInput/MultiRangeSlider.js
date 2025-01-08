@@ -2,9 +2,10 @@ import React, { useCallback, useEffect, useState, useRef, useContext } from "rea
  import useFilter from "../../../../hooks/useFilter";
 import { MainContext } from "../../../../context/MainContext";
 
-const MultiRangeSlider = ({ min, max, val }) => {
-  const { handleSearchParams: handleMinParam, allFilterParams: minParam } = useFilter('min');
-  const { handleSearchParams: handleMaxParam, allFilterParams: maxParam } = useFilter('max');
+const MultiRangeSlider = ({ min, max, val, filterParam }) => {
+ 
+  const { handleSearchParams: handleMinParam, allFilterParams: minParam } = useFilter(`min${filterParam}`);
+  const { handleSearchParams: handleMaxParam, allFilterParams: maxParam } = useFilter(`max${filterParam}`);
 
   const [minVal, setMinVal] = useState(Math.max(minParam[0] ?? min, min));
   const [maxVal, setMaxVal] = useState(Math.min(maxParam[0] ?? max, max));

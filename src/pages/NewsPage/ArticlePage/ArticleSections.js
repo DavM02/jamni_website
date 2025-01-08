@@ -12,7 +12,7 @@ export default function ArticleSections() {
       bg={bg}
       id="article-intro"
       posY={'85%'}
-              text={{ headline: title.replaceAll('_', ' ')}}
+        headline={title.replaceAll('_', ' ')}
       />
       <Article/>
       <MoreArticles/>

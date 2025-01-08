@@ -76,6 +76,8 @@ export default function CartIcon() {
 
       </Portal>
 
+      
+
     </>
   );
 }

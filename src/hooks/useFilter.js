@@ -15,6 +15,8 @@ export default function useFilter(filterParam) {
   const [searchParams, setSearchParams] = useSearchParams();
   const allFilterParams = searchParams.getAll(filterParam) ?? [];
 
+  const rangeParams = ["minprice", "maxprice", "minwidth", "maxwidth", "mindepth", "maxdepth"];
+
   function resetFilter(filterValue) {
     searchParams.delete(filterValue);
     setSearchParams(searchParams);
@@ -23,7 +25,7 @@ export default function useFilter(filterParam) {
   function handleSearchParams(filterValue) {
     const newSearchParams = new URLSearchParams(searchParams);
 
-    if (filterParam === "min" || filterParam === "max") {
+    if (rangeParams.includes(filterParam)) {
       newSearchParams.set(filterParam, filterValue);
       setSearchParams(newSearchParams);
       return;
@@ -44,30 +46,27 @@ export default function useFilter(filterParam) {
   function handleFilter(mutate) {
     const filters = {};
     const descriptions = [];
-
-    let min = null;
-    let max = null;
-
     const selectedColors = [];
+
+    let minPrice = null, maxPrice = null;
+    let minWidth = null, maxWidth = null;
+    let minDepth = null, maxDepth = null;
 
     for (const [key, value] of searchParams.entries()) {
       if (key !== "page") {
-        if (key === "min") {
-          min = parseFloat(value) || 0;
-        } else if (key === "max") {
-          max = parseFloat(value) || 250000;
-        } else if (key === "description") {
-          descriptions.push(value);
-        } else if (key === "colors") {
-          selectedColors.push(colorMap[value]);
-        } else {
-          filters[key] = filters[key] ? [...filters[key], value] : [value];
-        }
+        if (key === "minprice") minPrice = parseFloat(value) || 0;
+        else if (key === "maxprice") maxPrice = parseFloat(value) || 250000;
+        else if (key === "minwidth") minWidth = parseFloat(value) || 0;
+        else if (key === "maxwidth") maxWidth = parseFloat(value) || 10000;
+        else if (key === "mindepth") minDepth = parseFloat(value) || 0;
+        else if (key === "maxdepth") maxDepth = parseFloat(value) || 10000;
+        else if (key === "description") descriptions.push(value);
+        else if (key === "colors") selectedColors.push(colorMap[value]);
+        else filters[key] = filters[key] ? [...filters[key], value] : [value];
       }
     }
 
     mutate((data) => {
-    
       return data.map((el) => {
         const matchQuery = Object.entries(filters).every(([key, values]) =>
           values.includes(el[key])
@@ -76,14 +75,27 @@ export default function useFilter(filterParam) {
           (desc) => el[desc] === true
         );
         const matchPrice =
-          (max ? el.price <= max : true) && (min ? el.price >= min : true);
+          (maxPrice ? el.price <= maxPrice : true) &&
+          (minPrice ? el.price >= minPrice : true);
+        const matchWidth =
+          (maxWidth ? el.width <= maxWidth : true) &&
+          (minWidth ? el.width >= minWidth : true);
+        const matchDepth =
+          (maxDepth ? el.depth <= maxDepth : true) &&
+          (minDepth ? el.depth >= minDepth : true);
         const matchColors =
           selectedColors.length === 0 ||
           el.colors.some((color) => selectedColors.includes(color));
 
         return {
           ...el,
-          isShown: matchQuery && matchDescription && matchPrice && matchColors,
+          isShown:
+            matchQuery &&
+            matchDescription &&
+            matchPrice &&
+            matchWidth &&
+            matchDepth &&
+            matchColors,
         };
       });
     }, false);

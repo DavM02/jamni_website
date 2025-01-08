@@ -22,9 +22,9 @@ const catalog = {
         ],
         collections: ['картины', 'свечи', 'шкатулки', 'вазы и кашпо', 'зеркала', 'часы'],
         filters: [
-            ["price", {
+            ["цена", {
                 min: 1000, max: 250000, val: 'руб'
-            }]
+            }, 'price']
         ],
         sliderData: [
             { name: "картины", image: img1 },
@@ -70,26 +70,25 @@ const catalog = {
             ],
 
         filters: [
-            ["price", {
-                min: 30000, max: 250000, val: 'руб'
-            }]
+            ["цена", {
+                min: 1000, max: 250000, val: 'руб'
+            }, 'price']
         ],
         sliderData: [
-            { name: "картины", image: img1 },
-            { name: "свечи", image: img2 },
-            { name: "вазы и кашпо", image: img3 },
-            { name: "зеркала", image: img4 },
-            { name: "часы", image: img5 },
-            { name: "шкатулки", image: img6 },
-            { name: "картины", image: img1 },
-            { name: "свечи", image: img2 },
-            { name: "вазы и кашпо", image: img3 },
-            { name: "зеркала", image: img4 },
-            { name: "часы", image: img5 },
-            { name: "шкатулки", image: img6 },
+            { name: "декор", image: "https://4house.ru/upload/iblock/257/o0wkvitfm8l70fef7g21ch6t482fut71.jpg" },
+            { name: "для дома", image: "https://cb.scene7.com/is/image/Crate/TexturedPldPoufsFSSF23?$web_pdp_main_carousel_high$" },
+            { name: "офисные пуфы", image: "https://dd3ka9h4chfr8.cloudfront.net/image/725136000567/image_40jrbtvo3d1uh0v7m0jhn4qd7o/-S1200x1200-FJPG/231476-001_ESS_1.jpg" },
+            { name: "для отдыха", image: "https://4house.ru/upload/iblock/0c6/etfve5grx7jt1ez68bipb4k4anzoi294.jpg" },
+            { name: "модульные пуфы", image: "https://www.mcgeeandco.com/cdn/shop/products/beck_pines5_final47.jpg?v=1670443983&width=800" },
+            { name: "декор", image: "https://4house.ru/upload/iblock/257/o0wkvitfm8l70fef7g21ch6t482fut71.jpg" },
+            { name: "для дома", image: "https://cb.scene7.com/is/image/Crate/TexturedPldPoufsFSSF23?$web_pdp_main_carousel_high$" },
+            { name: "офисные пуфы", image: "https://dd3ka9h4chfr8.cloudfront.net/image/725136000567/image_40jrbtvo3d1uh0v7m0jhn4qd7o/-S1200x1200-FJPG/231476-001_ESS_1.jpg" },
+            { name: "для отдыха", image: "https://4house.ru/upload/iblock/0c6/etfve5grx7jt1ez68bipb4k4anzoi294.jpg" },
+            { name: "модульные пуфы", image: "https://www.mcgeeandco.com/cdn/shop/products/beck_pines5_final47.jpg?v=1670443983&width=800" },
+
         ],
-        bg: bg,
-        posY: '32%',
+        bg: 'https://4house.ru/upload/iblock/cbc/jvyhwbpd4wxpymhomklqtsumb20l25ly.jpg',
+        posY: '65%',
 
     },
     sofas: {
@@ -119,9 +118,15 @@ const catalog = {
             ],
 
         filters: [
-            ["price", {
+            ["цена", {
                 min: 50000, max: 250000, val: 'руб'
-            }]
+            }, 'price'],
+            ["размер (ширина)", {
+                min: 100, max: 350, val: ''
+            }, 'width'],
+            ["размер (глубина)", {
+                min: 50, max: 100, val: ''
+            }, 'depth']
         ],
         sliderData: [
             { name: "картины", image: img1 },
@@ -139,10 +144,35 @@ const catalog = {
         ],
         bg: bg,
         posY: '32%',
-
+        extraFilters: [
+            ["спальное место", [
+                "есть",
+                "нет",
+                "полутораспальное",
+                "двуспальное",
+                "кинг-сайз"
+            ], "sleepingArea"
+            ],
+            [
+                "бельевой ящик", [
+                    "есть",
+                    "нет",
+                    "встроенный",
+                    "выдвижной"
+                ], "linenBox"
+            ],
+            ["тип дивана", [
+                "прямой",
+                "угловой",
+                "модульный",
+                "раскладной",
+                "диван-кровать",
+                "диван-пуф",
+                "компактный"
+            ], "sofaType"]
+        ]
     }
 }
 
 export default catalog
 
- 

@@ -181,3 +181,7 @@ main {
 #cart .error {
   min-height: unset !important;
 }
+
+#product-page .loading, #product-page .error, #product-page .no-results {
+      height: calc(100vh - (30px + 55px + var(--nav-height) + (var(--header-container-padding)*2)));
+}

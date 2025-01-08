@@ -118,7 +118,7 @@
     margin-bottom: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
 }
 
-#order .form-steps,
+#order .form-steps span:nth-child(1), #order .form-steps span:nth-child(2),
 #order p span,
 #order .form-output .edit {
     user-select: none;

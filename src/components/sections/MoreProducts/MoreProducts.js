@@ -10,8 +10,8 @@ import useSWRImmutable from 'swr/immutable'
 export default function MoreProducts({ headline = "еще товары" }) {
 
 
-    const param = useParams();
-    const catalog = param["*"].split("/")[0];
+    const {catalog} = useParams();
+ 
     const { data, error, isLoading } = useSWRImmutable([
         catalog,
         1,
