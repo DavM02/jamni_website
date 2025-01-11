@@ -5,7 +5,10 @@ import img3 from '../assets/decor/img_8.jpg'
 import img4 from '../assets/decor/img_9.webp'
 import img5 from '../assets/decor/img_10.jpg'
 import img6 from '../assets/decor/img_11.webp'
-
+import img7 from '../assets/sofas/img_2.jpeg'
+import img8 from '../assets/sofas/img_3.jpg'
+import img9 from '../assets/sofas/img_4.jpg'
+ 
 
 const catalog = {
     decor: {
@@ -129,21 +132,19 @@ const catalog = {
             }, 'depth']
         ],
         sliderData: [
-            { name: "картины", image: img1 },
-            { name: "свечи", image: img2 },
-            { name: "вазы и кашпо", image: img3 },
-            { name: "зеркала", image: img4 },
-            { name: "часы", image: img5 },
-            { name: "шкатулки", image: img6 },
-            { name: "картины", image: img1 },
-            { name: "свечи", image: img2 },
-            { name: "вазы и кашпо", image: img3 },
-            { name: "зеркала", image: img4 },
-            { name: "часы", image: img5 },
-            { name: "шкатулки", image: img6 },
+            { name: "compact collection", image: img7 },
+            { name: "module collection", image: img8 },
+            { name: "goodnight collection", image: img9 },
+            { name: "compact collection", image: img7 },
+            { name: "module collection", image: img8 },
+            { name: "goodnight collection", image: img9 },
+            { name: "compact collection", image: img7 },
+            { name: "module collection", image: img8 },
+            { name: "goodnight collection", image: img9 },
+            { name: "module collection", image: img8 },
         ],
-        bg: bg,
-        posY: '32%',
+        bg: "https://daiahome.com/cdn/shop/files/EbbeDeepSeatLowProfileModernLeatherSofa_1.jpg",
+        posY: '70%',
         extraFilters: [
             ["спальное место", [
                 "есть",

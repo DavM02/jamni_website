@@ -34,7 +34,7 @@ export default function Filter({ path }) {
 
     const isDesktop = useMediaQ('(max-width: 1023px)');
     const isMobile = useMediaQ('(max-width: 480px)');
-
+    console.log(dataLength)
     return (
         <section id="filter">
             <div className="container" >
@@ -59,7 +59,7 @@ export default function Filter({ path }) {
                     {dataLength && (
                         <Pagination
                             scrollOffset={780}
-                            pagesCount={Math.ceil(dataLength / 17)} />
+                            pagesCount={Math.ceil(dataLength / 18)} />
                     )}
                 </div>
             </div>

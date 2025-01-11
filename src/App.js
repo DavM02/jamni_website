@@ -18,6 +18,7 @@ import AppLoading from "./components/AppLoading/AppLoading";
 import { useState } from "react";
 import Cursor from "./components/Cursor/Cursor";
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
+import Gen from "./data/generateData";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
       {renderApp && <Cursor />}
+      <Gen/>
       <AppLoading setRenderApp={setRenderApp} />
       <div className="App" style={{ visibility: !renderApp ? 'hidden' : 'initial' }}>
         <MainContextProvider>

@@ -81,9 +81,6 @@
     18.75rem
   );
 
-  --catalog-slider-img-width: clamp(16.25rem, 15.0962rem + 5.1282vw, 21.25rem);
-  --catalog-slider-img-height: clamp(10rem, 9.4231rem + 2.5641vw, 12.5rem);
-
   --filter-item-img-height: clamp(10rem, 8.7019rem + 5.7692vw, 15.625rem);
 
   --moreitems-slider-img-width: clamp(14.375rem, 13rem + 6.875vw, 21.25rem);

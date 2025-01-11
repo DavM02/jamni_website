@@ -6,7 +6,7 @@ export default function Pagination({ pagesCount, scrollOffset }) {
     pagesCount,
     scrollOffset
   );
-
+  console.log(pagesCount)
  
   return (
     <div className="pagination">
