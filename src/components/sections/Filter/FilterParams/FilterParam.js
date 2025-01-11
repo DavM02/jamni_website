@@ -16,7 +16,7 @@ export default function FilterParam({
                         <Checkbox 
                             checked={allFilterParams.includes(el)}
                             onChange={(e) => handleSearchParams(el)}
-                            id={el}
+                            // id={el}
                             value={el}
                         />
                         <span>{el}</span>

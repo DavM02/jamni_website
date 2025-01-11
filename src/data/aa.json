@@ -14985,19 +14985,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -15085,10 +15085,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -15135,7 +15135,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Антибактериальные свойства",
                     "text": "Наполнители с антибактериальной пропиткой предотвращают рост бактерий и грибков."
@@ -15325,7 +15325,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Дизайн с акцентом на комфорт",
                     "text": "Мягкие сиденья и регулируемые подлокотники создают пространство для идеального расслабления после долгого дня."
@@ -15366,19 +15366,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -15464,10 +15464,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -15514,7 +15514,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Стабильная конструкция",
                     "text": "Каркас из усиленного дерева и стали обеспечивает максимальную прочность и устойчивость."
@@ -15554,19 +15554,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -15648,10 +15648,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -15697,7 +15697,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_C230829.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_D230829.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Гладкий механизм трансформации",
                     "text": "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол."
@@ -15746,19 +15746,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -15841,10 +15841,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "80 см",
@@ -15890,7 +15890,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_G240227.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_F240227.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Оптимальная поддержка",
                     "text": "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха."
@@ -16084,7 +16084,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_G240227.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_F240227.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -16124,19 +16124,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -16222,10 +16222,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "80 см",
@@ -16272,7 +16272,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Улучшенная вентиляция",
                     "text": "Наполнители с эффектом вентиляции поддерживают комфортную температуру во время отдыха."
@@ -16312,19 +16312,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -16408,10 +16408,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -16458,7 +16458,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_K220509.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_M220509.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -16640,7 +16640,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_HB240820_240820.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_IC240820_240820.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Дизайн с акцентом на комфорт",
                     "text": "Мягкие сиденья и регулируемые подлокотники создают пространство для идеального расслабления после долгого дня."
@@ -16680,19 +16680,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -16775,10 +16775,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -16824,7 +16824,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_B240712.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_A240712.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Улучшенная вентиляция",
                     "text": "Наполнители с эффектом вентиляции поддерживают комфортную температуру во время отдыха."
@@ -16865,19 +16865,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -16960,10 +16960,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -17010,7 +17010,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Универсальный дизайн",
                     "text": "Подходит как для современных интерьеров, так и для классического оформления."
@@ -17192,7 +17192,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_G240227.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_F240227.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Оптимальная поддержка",
                     "text": "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха."
@@ -17392,7 +17392,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BF220426.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BE220426.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Легкость сборки",
                     "text": "Благодаря простому дизайну, сборка дивана занимает минимальное количество времени."
@@ -17577,7 +17577,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BF220426.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BE220426.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Просторное спальное место",
                     "text": "Диван легко трансформируется в кровать, обеспечивая комфортное спальное место для гостей."
@@ -17759,7 +17759,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_C230829.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_D230829.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Регулируемые подголовники",
                     "text": "Обеспечивают поддержку шеи и головы, позволяя выбрать оптимальное положение для отдыха или чтения."
@@ -17800,19 +17800,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -17901,10 +17901,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "80 см",
@@ -17950,7 +17950,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Поддержка поясницы",
                     "text": "Специально разработанная форма спинки помогает снизить нагрузку на поясничный отдел и предотвращает дискомфорт."
@@ -17990,19 +17990,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -18084,10 +18084,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "50 см",
@@ -18133,7 +18133,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Мягкие подушки",
                     "text": "Подушки с наполнителем обеспечивают дополнительный уют и поддержку."
@@ -18319,7 +18319,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_F201207.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_G201207.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Универсальный дизайн",
                     "text": "Подходит как для современных интерьеров, так и для классического оформления."
@@ -18359,19 +18359,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -18455,10 +18455,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -18505,7 +18505,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Легкость сборки",
                     "text": "Благодаря простому дизайну, сборка дивана занимает минимальное количество времени."
@@ -18695,7 +18695,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_K220509.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_M220509.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Улучшенная вентиляция",
                     "text": "Наполнители с эффектом вентиляции поддерживают комфортную температуру во время отдыха."
@@ -18735,19 +18735,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -18827,10 +18827,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "80 см",
@@ -18877,7 +18877,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_F220919.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_D220919.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -18917,19 +18917,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -19016,10 +19016,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "50 см",
@@ -19065,7 +19065,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_B240712.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_A240712.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Угловая конфигурация",
                     "text": "Идеальное решение для максимального использования пространства в углах комнаты, создавая больше мест для отдыха."
@@ -19115,19 +19115,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -19211,10 +19211,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "50 см",
@@ -19260,7 +19260,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_HB240820_240820.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_IC240820_240820.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Съемные подлокотники",
                     "text": "Позволяют использовать диван в нескольких конфигурациях."
@@ -19449,7 +19449,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_G240227.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_F240227.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Гладкий механизм трансформации",
                     "text": "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол."
@@ -19643,7 +19643,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Антибактериальные свойства",
                     "text": "Наполнители с антибактериальной пропиткой предотвращают рост бактерий и грибков."
@@ -19684,19 +19684,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -19781,10 +19781,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "50 см",
@@ -19831,7 +19831,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BT210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BA210525.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Универсальный дизайн",
                     "text": "Подходит как для современных интерьеров, так и для классического оформления."
@@ -20018,7 +20018,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Универсальный дизайн",
                     "text": "Подходит как для современных интерьеров, так и для классического оформления."
@@ -20206,7 +20206,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_HB240820_240820.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_IC240820_240820.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -20246,19 +20246,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -20348,10 +20348,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -20398,7 +20398,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_F220919.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_D220919.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Легкость сборки",
                     "text": "Благодаря простому дизайну, сборка дивана занимает минимальное количество времени."
@@ -20584,7 +20584,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Съемные подлокотники",
                     "text": "Позволяют использовать диван в нескольких конфигурациях."
@@ -20769,7 +20769,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_HB240820_240820.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_IC240820_240820.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Мягкие подушки",
                     "text": "Подушки с наполнителем обеспечивают дополнительный уют и поддержку."
@@ -20959,7 +20959,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -21000,19 +21000,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -21103,10 +21103,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -21153,7 +21153,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Элегантные линии",
                     "text": "Современный минималистичный дизайн для стильного интерьера."
@@ -21338,7 +21338,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BF220426.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BE220426.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Гладкий механизм трансформации",
                     "text": "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол."
@@ -21537,7 +21537,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_F220919.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_D220919.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Оптимальная поддержка",
                     "text": "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха."
@@ -21585,19 +21585,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -21684,10 +21684,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -21734,7 +21734,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BT210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BA210525.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Гладкий механизм трансформации",
                     "text": "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол."
@@ -21782,19 +21782,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -21877,10 +21877,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "50 см",
@@ -21926,7 +21926,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_C230829.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_D230829.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -21968,19 +21968,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -22063,10 +22063,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -22112,7 +22112,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_C230829.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_D230829.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Легкость сборки",
                     "text": "Благодаря простому дизайну, сборка дивана занимает минимальное количество времени."
@@ -22299,7 +22299,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BF220426.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BE220426.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Поддержка поясницы",
                     "text": "Специально разработанная форма спинки помогает снизить нагрузку на поясничный отдел и предотвращает дискомфорт."
@@ -22340,19 +22340,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -22440,10 +22440,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -22489,7 +22489,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_HB240820_240820.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_IC240820_240820.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Регулируемые подголовники",
                     "text": "Обеспечивают поддержку шеи и головы, позволяя выбрать оптимальное положение для отдыха или чтения."
@@ -22529,19 +22529,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -22627,10 +22627,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "80 см",
@@ -22676,7 +22676,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_F201207.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_G201207.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Стабильная конструкция",
                     "text": "Каркас из усиленного дерева и стали обеспечивает максимальную прочность и устойчивость."
@@ -22866,7 +22866,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_F220919.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_D220919.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Поддержка поясницы",
                     "text": "Специально разработанная форма спинки помогает снизить нагрузку на поясничный отдел и предотвращает дискомфорт."
@@ -23052,7 +23052,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_F220919.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_D220919.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Мягкие подушки",
                     "text": "Подушки с наполнителем обеспечивают дополнительный уют и поддержку."
@@ -23093,19 +23093,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -23187,10 +23187,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "50 см",
@@ -23236,7 +23236,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_B240712.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_A240712.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Поддержка поясницы",
                     "text": "Специально разработанная форма спинки помогает снизить нагрузку на поясничный отдел и предотвращает дискомфорт."
@@ -23426,7 +23426,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Легкость сборки",
                     "text": "Благодаря простому дизайну, сборка дивана занимает минимальное количество времени."
@@ -23466,19 +23466,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -23566,10 +23566,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -23615,7 +23615,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_HB240820_240820.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_IC240820_240820.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Универсальный дизайн",
                     "text": "Подходит как для современных интерьеров, так и для классического оформления."
@@ -23804,7 +23804,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_F220919.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_D220919.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -23844,19 +23844,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -23943,10 +23943,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -23993,7 +23993,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Оптимальная поддержка",
                     "text": "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха."
@@ -24187,7 +24187,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_K220509.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_M220509.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Просторное спальное место",
                     "text": "Диван легко трансформируется в кровать, обеспечивая комфортное спальное место для гостей."
@@ -24376,7 +24376,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_K220509.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_M220509.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -24563,7 +24563,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Гладкий механизм трансформации",
                     "text": "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол."
@@ -24763,7 +24763,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BF220426.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BE220426.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -24803,19 +24803,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -24900,10 +24900,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -24949,7 +24949,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Антибактериальные свойства",
                     "text": "Наполнители с антибактериальной пропиткой предотвращают рост бактерий и грибков."
@@ -24989,19 +24989,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -25084,10 +25084,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -25134,7 +25134,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_F220919.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_D220919.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Легкость сборки",
                     "text": "Благодаря простому дизайну, сборка дивана занимает минимальное количество времени."
@@ -25316,7 +25316,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Регулируемые подголовники",
                     "text": "Обеспечивают поддержку шеи и головы, позволяя выбрать оптимальное положение для отдыха или чтения."
@@ -25503,7 +25503,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_K220509.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_M220509.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Стабильная конструкция",
                     "text": "Каркас из усиленного дерева и стали обеспечивает максимальную прочность и устойчивость."
@@ -25691,7 +25691,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Стабильная конструкция",
                     "text": "Каркас из усиленного дерева и стали обеспечивает максимальную прочность и устойчивость."
@@ -25732,19 +25732,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -25832,10 +25832,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -25882,7 +25882,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BF220426.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BE220426.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Элегантные линии",
                     "text": "Современный минималистичный дизайн для стильного интерьера."
@@ -26066,7 +26066,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_B240712.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_A240712.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Дизайн с акцентом на комфорт",
                     "text": "Мягкие сиденья и регулируемые подлокотники создают пространство для идеального расслабления после долгого дня."
@@ -26257,7 +26257,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BJ210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BK210524.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Улучшенная вентиляция",
                     "text": "Наполнители с эффектом вентиляции поддерживают комфортную температуру во время отдыха."
@@ -26297,19 +26297,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -26396,10 +26396,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -26445,7 +26445,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_F201207.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_G201207.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Гладкий механизм трансформации",
                     "text": "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол."
@@ -26638,7 +26638,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BJ210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BK210524.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Съемные подлокотники",
                     "text": "Позволяют использовать диван в нескольких конфигурациях."
@@ -26826,7 +26826,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_G240227.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_F240227.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Поддержка поясницы",
                     "text": "Специально разработанная форма спинки помогает снизить нагрузку на поясничный отдел и предотвращает дискомфорт."
@@ -26868,19 +26868,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -26965,10 +26965,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -27015,7 +27015,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BT210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BA210525.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Просторное спальное место",
                     "text": "Диван легко трансформируется в кровать, обеспечивая комфортное спальное место для гостей."
@@ -27201,7 +27201,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Элегантные линии",
                     "text": "Современный минималистичный дизайн для стильного интерьера."
@@ -27241,19 +27241,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -27344,10 +27344,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -27393,7 +27393,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_F201207.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_G201207.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Дизайн с акцентом на комфорт",
                     "text": "Мягкие сиденья и регулируемые подлокотники создают пространство для идеального расслабления после долгого дня."
@@ -27434,19 +27434,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -27529,10 +27529,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -27578,7 +27578,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -27618,19 +27618,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -27718,10 +27718,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -27768,7 +27768,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BT210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BA210525.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Оптимальная поддержка",
                     "text": "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха."
@@ -27960,7 +27960,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_C230829.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_D230829.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Мягкие подушки",
                     "text": "Подушки с наполнителем обеспечивают дополнительный уют и поддержку."
@@ -28000,19 +28000,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -28099,10 +28099,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -28149,7 +28149,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BJ210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BK210524.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Дизайн с акцентом на комфорт",
                     "text": "Мягкие сиденья и регулируемые подлокотники создают пространство для идеального расслабления после долгого дня."
@@ -28190,19 +28190,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -28285,10 +28285,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -28334,7 +28334,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Регулируемые подголовники",
                     "text": "Обеспечивают поддержку шеи и головы, позволяя выбрать оптимальное положение для отдыха или чтения."
@@ -28521,7 +28521,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BJ210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BK210524.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Легкость сборки",
                     "text": "Благодаря простому дизайну, сборка дивана занимает минимальное количество времени."
@@ -28562,19 +28562,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -28662,10 +28662,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -28711,7 +28711,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_B240712.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_A240712.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Оптимальная поддержка",
                     "text": "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха."
@@ -28759,19 +28759,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -28857,10 +28857,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -28907,7 +28907,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BJ210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BK210524.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Гладкий механизм трансформации",
                     "text": "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол."
@@ -29105,7 +29105,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BJ210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BK210524.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Универсальный дизайн",
                     "text": "Подходит как для современных интерьеров, так и для классического оформления."
@@ -29145,19 +29145,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -29242,10 +29242,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "50 см",
@@ -29291,7 +29291,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_HB240820_240820.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_IC240820_240820.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Оптимальная поддержка",
                     "text": "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха."
@@ -29340,19 +29340,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -29437,10 +29437,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -29486,7 +29486,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_F201207.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_G201207.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Оптимальная поддержка",
                     "text": "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха."
@@ -29685,7 +29685,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_K220509.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_M220509.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Оптимальная поддержка",
                     "text": "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха."
@@ -29881,7 +29881,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_G240227.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_F240227.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Универсальный дизайн",
                     "text": "Подходит как для современных интерьеров, так и для классического оформления."
@@ -30067,7 +30067,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_C230829.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_D230829.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Антибактериальные свойства",
                     "text": "Наполнители с антибактериальной пропиткой предотвращают рост бактерий и грибков."
@@ -30250,7 +30250,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BT210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BA210525.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Угловая конфигурация",
                     "text": "Идеальное решение для максимального использования пространства в углах комнаты, создавая больше мест для отдыха."
@@ -30298,19 +30298,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -30391,10 +30391,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "70 см",
@@ -30440,7 +30440,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Съемные подлокотники",
                     "text": "Позволяют использовать диван в нескольких конфигурациях."
@@ -30481,19 +30481,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -30577,10 +30577,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "80 см",
@@ -30626,7 +30626,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Дизайн с акцентом на комфорт",
                     "text": "Мягкие сиденья и регулируемые подлокотники создают пространство для идеального расслабления после долгого дня."
@@ -30666,19 +30666,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -30764,10 +30764,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "60 см",
@@ -30813,7 +30813,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Гладкий механизм трансформации",
                     "text": "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол."
@@ -31004,7 +31004,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_F201207.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_G201207.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Оптимальная поддержка",
                     "text": "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха."
@@ -31198,7 +31198,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_G240227.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_F240227.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Эргономичный дизайн",
                     "text": "Обеспечивает оптимальную поддержку спины для длительного отдыха."
@@ -31240,19 +31240,19 @@
                         {
                             "ширина": [
                                 {
-                                    "value": "0",
-                                    "unit": "см"
-                                },
-                                {
-                                    "value": "20",
-                                    "unit": "см"
-                                },
-                                {
                                     "value": "40",
                                     "unit": "см"
                                 },
                                 {
+                                    "value": "50",
+                                    "unit": "см"
+                                },
+                                {
                                     "value": "60",
+                                    "unit": "см"
+                                },
+                                {
+                                    "value": "70",
                                     "unit": "см"
                                 }
                             ]
@@ -31338,10 +31338,10 @@
             "technicalSpecifications": {
                 "sizes": {
                     "ширина": [
-                        "0 см",
-                        "20 см",
                         "40 см",
-                        "60 см"
+                        "50 см",
+                        "60 см",
+                        "70 см"
                     ],
                     "высота": [
                         "80 см",
@@ -31388,7 +31388,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BJ210524.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BK210524.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Дизайн с акцентом на комфорт",
                     "text": "Мягкие сиденья и регулируемые подлокотники создают пространство для идеального расслабления после долгого дня."
@@ -31575,7 +31575,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_B240712.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_A240712.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Универсальный дизайн",
                     "text": "Подходит как для современных интерьеров, так и для классического оформления."
@@ -31760,7 +31760,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BF220426.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BE220426.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Стабильная конструкция",
                     "text": "Каркас из усиленного дерева и стали обеспечивает максимальную прочность и устойчивость."
@@ -31951,7 +31951,7 @@
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_C230829.jpg?preset=Product3840x2880",
                 "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_D230829.jpg?preset=Product3840x2880"
             ],
-            "advatnages": [
+            "advantages": [
                 {
                     "title": "Гладкий механизм трансформации",
                     "text": "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол."

@@ -148,6 +148,7 @@ main {
 .recommendations .slider-item:nth-child(1n) .rec-item-image,
 .cart-item-image:nth-child(1n),  #catalog-collections .slider-item:nth-child(1n) .slider-image {
   background-color: var(--placeholder-1);
+  transition: var(--transition) 1s background-color;
 }
 
 #filter .filter-item:nth-child(2n) .placeholder, .news-item:nth-child(2n) .placeholder, 
@@ -157,6 +158,7 @@ main {
 .recommendations .slider-item:nth-child(2n) .rec-item-image,
 .cart-item-image:nth-child(2n),  #catalog-collections .slider-item:nth-child(2n) .slider-image {
   background-color: var(--placeholder-2);
+    transition: var(--transition) 1s background-color;
 }
 
 #filter .filter-item:nth-child(3n) .placeholder,
@@ -167,6 +169,7 @@ main {
 .recommendations .slider-item:nth-child(3n) .rec-item-image,
 .cart-item-image:nth-child(3n), #catalog-collections .slider-item:nth-child(3n) .slider-image {
   background-color: var(--placeholder-3);
+    transition: var(--transition) 1s background-color;
 }
 
 .error,
