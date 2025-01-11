@@ -8,7 +8,7 @@ import NoFound from '../../NoFound/NoFound'
 export default function CatalogSections({path}) {
 
 
-    const pathExists = ['decor', "sofas", "poufs"].includes(path)
+    const pathExists = ['decor', "sofas", "poufs", "chairs"].includes(path)
 
     
     return (

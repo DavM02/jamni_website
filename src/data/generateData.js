@@ -317,163 +317,98 @@ const bestseller = [true, false];
 
 const images = [
     [
-        "https://i.ibb.co/1qXR3tD/img-1.jpg",
-        "https://murukaka.com/wp-content/uploads/2022/05/Neopolo-Sofa-3A-Seater5.jpg",
-        "https://murukaka.com/wp-content/uploads/2022/05/Neopolo-Sofa-3-Seater.jpg",
-        "https://murukaka.com/wp-content/uploads/2022/05/Neopolo-Sofa-3-Seater2.jpg",
-        "https://murukaka.com/wp-content/uploads/2022/05/Neopolo-Sofa-3-Seater3.jpg",
-        "https://murukaka.com/wp-content/uploads/2022/05/Neopolo-Sofa-3-Seater4.jpg"
-    ],
-    [
-        "https://i.ibb.co/fF2hTyS/img-2.jpg",
-        "https://s.alicdn.com/@sc04/kf/H589c309514a54234afc729da38f101dcn.jpg?avif=close",
-        "https://s.alicdn.com/@sc04/kf/H36e27806749542cda5c3c0b39b08f5d8L.jpg?avif=close",
-        "https://s.alicdn.com/@sc04/kf/H798705063d37449286c8d28e65897e04l.jpg?avif=close",
-        "https://s.alicdn.com/@sc04/kf/H569b43c2c3374655a7935ab2ea102695D.jpg?avif=close",
-        "https://s.alicdn.com/@sc04/kf/H9d04843ff2ae471fbaca9fea24b160ece.jpg?avif=close"
-    ],
-    [
-        "https://i.ibb.co/jZ9SDFc/img-3.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CB230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_F230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CA230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CJ230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CF230127.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/cXtw5Wn/img-4.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/XEBFSFA_C210820.jpg?preset=Product1920x1440",
-        "https://cdn.arhaus.com/product/StandardV2/XEBFSFA_G210820.jpg?preset=Product1920x1440",
-        "https://cdn.arhaus.com/product/StandardV2/XEBFSFA_D210820.jpg?preset=Product1920x1440",
-        "https://cdn.arhaus.com/product/StandardV2/XEBFSFA_F210820.jpg?preset=Product1920x1440"
-    ],
-    [
-        "https://i.ibb.co/2g3BTnB/img-5.jpg",
-        "https://imageresizer4.furnituredealer.net/img/remote/images.furnituredealer.net/img/products%2frowe%2fcolor%2foliver--1945899455_p880-038-b3.jpg?width=2000&height=2000&scale=canvas",
-        "https://imageresizer4.furnituredealer.net/img/remote/images.furnituredealer.net/img/products%2frowe%2fcolor%2foliver--1945899455_p880-038-b1.jpg?width=2000&height=2000&scale=canvas",
-        "https://imageresizer4.furnituredealer.net/img/remote/images.furnituredealer.net/img/products%2frowe%2fcolor%2foliver--1945899455_p880-038-b5.jpg?width=2000&height=2000&scale=canvas"
-    ],
-    [
-        "https://i.ibb.co/yX78CB6/img-6.jpg",
-        "https://img.inmyroom.ru/inmyroom/resize/1400x1400/jpg:85/uploads/photo/file/1d/1dd1/jpg_2000_1dd16762-e8e3-4452-a408-8b658bdf680a.jpg?sign=60c33130aa91fbbb97c02e5a2631aa5fb29d987217f7bb413f39c6b252cad12d",
-        "https://img.inmyroom.ru/inmyroom/resize/1400x1400/jpg:85/uploads/photo/file/7e/7ea5/jpg_2000_7ea59062-5d27-4e7e-9900-3b2d5a559539.jpg?sign=282a7269068d6a25d26b62e4b44f8b9ed7287c7d9a3ff52fed8d3aad2252749d",
-        "https://img.inmyroom.ru/inmyroom/resize/1400x1400/jpg:85/uploads/photo/file/8c/8ce7/jpg_2000_8ce7ccd1-3c1b-4564-b745-43941333dae2.jpg?sign=443ddacc0f36600bf1bb1a60032f6033340fb988e6cdc872b19f23b7d4c932c1",
-        "https://img.inmyroom.ru/inmyroom/resize/1400x1400/jpg:85/uploads/photo/file/db/dbdd/jpg_2000_dbddfea3-3e90-4998-8bca-f006ba13c875.jpg?sign=81ae34478dce42ee34ae67208ac94d3e01aaaed64483f632420e200bddb89f9d"
-    ],
-    [
-        "https://i.ibb.co/7K0Lc2t/img-7.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/10718SEC2NT_I230111.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718SEC2NT_K230111.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718SEC2NT_L230111.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718SEC2NT_O230111.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718SEC2NT_P230111.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/ftysdD4/img-8.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/102762SEC3NS_BZ220105.jpg?preset=Product1920x1440",
-        "https://cdn.arhaus.com/product/StandardV2/102762SEC3NS_CA220105.jpg?preset=Product1920x1440",
-        "https://cdn.arhaus.com/product/StandardV2/102762SEC3NS_CC220105.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/102762SEC3NS_CD220105.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/102762SEC3NS_Y220505.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/wzCsRTJ/img-9.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/102464SETTBG_D240812.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/102464SETTBG_A240812.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/102464SETTBG_B240812.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/102464SETTBG_C240812.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/dbKNMTH/img-10.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/101695MQGL_E211231.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/101695MQGL_A220113.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/101695MQGL_H211231.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/101695MQGL_I211231.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/101695MQGL_A211231.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/KqmpXDw/img-11.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CB230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_F230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CA230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CJ230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CF230127.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/6J369DC/img-12.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/XANFSFC_D230811.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XANFSFC_C230811.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XANFSFC_B230811.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XANFSFC_A230811.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/fCpHzJL/img-13.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/10AR02GSWF_A220520.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10AR02GSWF_C220520.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10AR02GSWF_F220520.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10AR02GSWF_G220520.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/Jc0P27F/img-14.jpg",
-        "https://product-images-cdn.liketoknow.it/.fqXVcMjHnEEzPLBjiKYhqAT8SoAOG1w7v1qC3KjI3KSnL.KyEDNm7H3mia5wVAJR09WEnryAOB1kkQ30ft6DxCCZRGcjoWErdae2woUfHFj.4JvnCQuPcHilf6QYZjzcW2pD55VQCozI4sCIn8zVwIKjxUY?v=2&auto=format&fm=webp&q=80",
-        "https://static01.nyt.com/images/2022/08/28/realestate/22shopping01/oakImage-1660837530419-superJumbo.jpg?quality=75&auto=webp",
-        "https://cdn.arhaus.com/product/StandardV2/ZFWFSTC_BL200708.jpg"
-    ],
-    [
-        "https://i.ibb.co/m87LQLD/img-15.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CB230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_F230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CA230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CJ230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CF230127.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/yfv6Hbh/img-16.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/20AR02APLC_T230406.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/20AR02APLC_U230406.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/20AR02APLC_V230406.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/20AR02APLC_S230406.jpg?preset=Product3840x2880"
+        "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_E240712.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_D240712.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_C240712.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_B240712.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30ALLYSDCHVO_A240712.jpg?preset=Product3840x2880",
+
     ],
 
     [
-        "https://i.ibb.co/f9v6SzJ/img-17.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/CTMLTUPHASFB_A230313.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/CTMLTUPHASFB_C230313.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/CTMLTUPHASFB_F230313.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/CTMLTUPHASFB_G230313.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/CTMLTUPHASFB_B230313.jpg?preset=Product3840x2880"
+        "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_J240227.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_I240227.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_H240227.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_G240227.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30HNSDCHRCSM_F240227.jpg?preset=Product3840x2880"
     ],
     [
-        "https://i.ibb.co/yp1myT4/img-18.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/XVRFSFC_F230327.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XVRFSFC_H230327.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XVRFSFC_I230327.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XVRFSFC_F230404.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XVRFSFC_G230327.jpg?preset=Product3840x2880"
+        "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_E230829.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_A230829.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_B230829.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_C230829.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30RDNMTCCSD_D230829.jpg?preset=Product3840x2880",
+    ],
+    [
+        "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_KE240820_240820.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_JD240820_240820.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_GA240820_240820.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_HB240820_240820.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_IC240820_240820.jpg?preset=Product3840x2880"
+    ],
+    [
+        "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BD220426.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_A220103.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BI220426.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BH220426.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BF220426.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_BE220426.jpg?preset=Product3840x2880"
+    ],
+    [
+        "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DP200709.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DU200709.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DT200709.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DR200709.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DQ200709.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DO200709.jpg?preset=Product3840x2880"
+    ],
+    [
+        "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_B201207.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_A201207.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_C201207.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_F201207.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_G201207.jpg?preset=Product3840x2880"
+    ],
+    [
+        "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_E230731.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_D230731.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_A230731.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_B230731.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_C230731.jpg?preset=Product3840x2880"
+    ],
+    [
+        "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_Q210524.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BQ210524.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BR210524.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BS210524.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BT210524.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30LNDNSNSDCH_BA210525.jpg?preset=Product3840x2880"
+    ],
+    [
+        "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_B220919.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_C220919.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_A220919.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_G220919.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_F220919.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_D220919.jpg?preset=Product3840x2880"
+    ],
+    [
+        "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_I220509.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_H220509.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_T220509.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_J220509.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_K220509.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_M220509.jpg?preset=Product3840x2880"
+    ],
+    [
+        "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_M210524.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BG210524.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BH210524.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BI210524.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BJ210524.jpg?preset=Product3840x2880",
+        "https://cdn.arhaus.com/product/StandardV2/30KIRNMSNWS2_BK210524.jpg?preset=Product3840x2880"
     ]
-];
- 
-
-const material = [
-    "ткань",
-    "кожзам",
-    "натуральная кожа",
-    "велюр",
-    "экокожа",
-    "микрофибра",
-    "поролон",
-    "синтепон",
-    "жаккард",
-    "пружинный блок",
-    "пух",
-    "латекс",
-];
-
-const collections = [
-    "compact collection",
-    "module collection",
-    "goodnight collection",
-];
+]
 
 const colors = [
     "palette-gray-light",
@@ -486,88 +421,78 @@ const colors = [
     "palette-brown-light",
 ];
 
+const material = [
+    "ткань",
+    "кожзам",
+    "натуральная кожа",
+    "велюр",
+    "экокожа",
+    "микрофибра",
+    "поролон",
+    "синтепон",
+    "жаккард",
+    "металл",
+    "дерево",
+    "пластик",
+];
+
+const collections = [
+    "classic collection",
+    "modern collection",
+    "comfort collection",
+    "elegance collection",
+    "premium collection",
+    "office collection",
+];
+
+const names = [
+    "chairlux",
+    "stylemax",
+    "comfortline",
+    "relaxchair",
+    "urbanstyle",
+    "luxseating",
+    "softseat",
+    "modularfit",
+    "charmchair",
+    "classicseat",
+    "comfortzone",
+    "prestigechair",
+    "flexichair",
+    "easyrest",
+    "sleekseat",
+    "cozysit",
+    "dreamchair",
+    "primechair",
+    "perfectfit",
+];
+
+const products = [
+    "удобный стул",
+    "классический стул",
+    "современный стул",
+    "комфортный стул",
+    "изящный стул",
+ 
+  
+    "модульный стул",
+    "стул для отдыха",
+    "стул для кухни",
+  
+];
+
+
+
 const discount = [true, false];
 
 const isNew = [true, false];
 
-  
-const sleepingArea = [
-    "есть",
-    "нет",
-    "полутораспальное",
-    "двуспальное",
-    "кинг-сайз",
-];
-const linenBox = ["есть", "нет", "встроенный", "выдвижной"];
-const sofaType = [
-    "прямой",
-    "угловой",
-    "модульный",
-    "раскладной",
-    "диван-кровать",
-    "диван-пуф",
-    "компактный",
-];
-
-const names = [
-    "comforlux",
-    "foster",
-    "petrified",
-    "ramani",
-    "ivory",
-    "relaxmax",
-    "elegantform",
-    "modularease",
-    "cozynest",
-    "classicstyle",
-    "ultrasofa",
-    "dreamlounge",
-    "softline",
-    "primecomfort",
-    "spacesaver",
-    "urbanrelax",
-    "royalseat",
-    "harmonyset",
-    "flexisleep",
-    "velvettouch",
-    "cloudrest",
-    "modernfit",
-];
-
-const products = [
-    "удобный диван",
-    "современный диван",
-    "уютный диван",
-    "стильный диван",
-    "роскошный диван",
-    "практичный диван",
-    "просторный диван",
-  
-    "современный диван",
-
-    "классический диван",
-    "изящный диван",
-    "мягкий диван",
-    "уникальный диван",
-    "необычный диван",
-];
 
 const options = [
     {
         "наличие подлокотников": ["есть", "нет"],
     },
-    {
-        "ширина сиденья": ["80 см", "100 см", "120 см", "140 см"],
-    },
-    {
-        тип: [
-            "классический",
-            "раздвижной",
-            "кровать-раскладушка",
-            "с механизмом трансформации",
-            "диван-кровать",
-        ],
-    },
+  
     {
         декор: [
             "гладкая",
@@ -580,7 +505,7 @@ const options = [
         ],
     },
     {
-        "максимальная нагрузка": ["50 кг", "100 кг", "150 кг", "200 кг", "250 кг"],
+        "максимальная нагрузка": ["50 кг", "100 кг", "150 кг", "200 кг"],
     },
     {
         "материал каркаса": ["дерево", "металл", "пластик"],
@@ -592,10 +517,10 @@ const options = [
         "тип обивки": ["ткань", "кожа", "экокожа", "велюр", "микрофибра"],
     },
     {
-        "регулировка спинки": ["есть", "нет"],
+        "регулировка высоты": ["есть", "нет"],
     },
     {
-        "наличие ящика для хранения": ["есть", "нет"],
+        "наличие подставки для ног": ["есть", "нет"],
     },
     {
         "цвет каркаса": [
@@ -606,100 +531,99 @@ const options = [
             "деревянный",
         ],
     },
-];
-
+]
 const maintenance = [
-    "Регулярно пылесосьте диван, чтобы избежать накопления пыли и грязи в обивке.",
-    "Для чистки используйте мягкие ткани или щетку, чтобы не повредить материал обивки.",
-    "Не допускайте попадания жидкости на диван, особенно если материал не водоотталкивающий.",
+    "Регулярно пылесосьте стулья, чтобы избежать накопления пыли и грязи на сиденьях и спинках.",
+    "Для чистки используйте мягкие ткани или щетку, чтобы не повредить материал обивки стула.",
+    "Не допускайте попадания жидкости на стул, особенно если материал не водоотталкивающий.",
     "Для тканей с чувствительным покрытием используйте средства, предназначенные для ухода за этим типом материала.",
-    "Не ставьте диван в места с высокой влажностью, чтобы избежать повреждения наполнителя и материала.",
+    "Не ставьте стулья в места с высокой влажностью, чтобы избежать повреждения наполнителя и материала.",
     "Для кожи и экокожи используйте специальные средства для ухода, чтобы поддерживать эластичность и внешний вид.",
-    "Протирайте поверхность дивана сухой или слегка увлажненной тканью, чтобы предотвратить появление пятен.",
-    "Храните диван вдали от прямых солнечных лучей, чтобы избежать выцветания или деградации материала.",
-    "Регулярно проверяйте крепление подушек и каркас дивана, чтобы предотвратить износ и повреждения.",
-    "Если диван оснащен механизмом трансформации, периодически проверяйте его работоспособность и смазывайте движущиеся части.",
-    "Не ставьте тяжелые предметы на диван, чтобы не повредить его форму и структуру.",
-    "Не допускайте частого нахождения животных на диване, чтобы избежать повреждения ткани или кожаных элементов.",
-    "При использовании дивана в общественных местах или офисах, проводите регулярную чистку для поддержания гигиеничности.",
-    "Периодически проветривайте диван, чтобы избежать накопления запахов и влаги.",
-    "Для чистки диванов с встраиваемыми подушками используйте чистку по отдельности, чтобы сохранить форму и комфорт.",
-    "Используйте специальные чехлы для защиты дивана от пыли и грязи, особенно в местах с высокой проходимостью.",
-    "Не помещайте диван рядом с источниками тепла, такими как обогреватели или радиаторы, чтобы избежать деформации материалов.",
+    "Протирайте поверхность стула сухой или слегка увлажненной тканью, чтобы предотвратить появление пятен.",
+    "Храните стулья вдали от прямых солнечных лучей, чтобы избежать выцветания или деградации материала.",
+    "Регулярно проверяйте крепление сиденья и каркас стула, чтобы предотвратить износ и повреждения.",
+    "Если стул оснащен механизмом регулировки высоты, периодически проверяйте его работоспособность и смазывайте движущиеся части.",
+    "Не ставьте тяжелые предметы на стул, чтобы не повредить его форму и структуру.",
+    "Не допускайте частого нахождения животных на стуле, чтобы избежать повреждения ткани или кожаных элементов.",
+    "При использовании стульев в общественных местах или офисах, проводите регулярную чистку для поддержания гигиеничности.",
+    "Периодически проветривайте стулья, чтобы избежать накопления запахов и влаги.",
+    "Для чистки стульев с подушками или съемными элементами используйте чистку по отдельности, чтобы сохранить форму и комфорт.",
+    "Используйте специальные чехлы для защиты стула от пыли и грязи, особенно в местах с высокой проходимостью.",
+    "Не помещайте стулья рядом с источниками тепла, такими как обогреватели или радиаторы, чтобы избежать деформации материалов.",
     "Используйте средства для ухода за наполнителями, чтобы сохранить форму и упругость сиденья на долгие годы.",
 ];
 
 const descriptions = [
     [
-        "Этот диван — воплощение стиля и комфорта. Он идеально подходит для любого интерьера, будь то современный, классический или минималистичный стиль. Прочные материалы и изысканный дизайн делают его не только красивым, но и долговечным. Диван доступен в разных цветах и размерах, что позволяет легко подобрать модель для вашего помещения.",
-        "Кроме того, диван оснащён высококачественными материалами для сиденья, что обеспечивает комфорт на протяжении долгого времени. Он подойдёт как для гостиной, так и для офисных помещений, добавляя уюта и стиля в любую комнату.",
+        "Этот стул — идеальное сочетание стиля и комфорта. Он будет отлично смотреться в любом интерьере, будь то современный, классический или минималистичный стиль. Прочные материалы и продуманный дизайн делают его не только красивым, но и долговечным. Стул доступен в различных цветах и размерах, что позволяет легко выбрать модель для вашего помещения.",
+        "Кроме того, стул оснащён удобным сиденьем, которое обеспечит комфорт на протяжении долгого времени. Он подходит как для гостиной, так и для офисных помещений, добавляя уюта и стиля в любую комнату.",
     ],
     [
-        "Диван с элегантным дизайном, который привнесёт в ваш дом атмосферу уюта и роскоши. Его простота и в то же время выразительность сделают его центральным элементом вашего интерьера. Подушки с мягкой наполнителями и удобное сиденье дарят незабываемый комфорт.",
-        "Изготовленный из высококачественных материалов, этот диван будет служить вам долгие годы. Он легко чистится и прост в уходе, что делает его отличным выбором для семей с детьми или домашними животными.",
+        "Элегантный стул с простым, но выразительным дизайном, который привнесёт в ваш дом атмосферу уюта и роскоши. Его лаконичность и элегантность сделают его центральным элементом вашего интерьера.",
+        "Изготовленный из высококачественных материалов, этот стул будет служить вам долгие годы. Он легко чистится и прост в уходе, что делает его отличным выбором для семей с детьми или домашними животными.",
     ],
     [
-        "Простой и в то же время стильный диван, который органично впишется в любой интерьер. Его минималистичный дизайн и функциональность делают его идеальным вариантом для малогабаритных квартир или офисных помещений.",
-        "Диван выполнен из прочных материалов, что обеспечивает его долговечность. Удобные подушки и простота ухода делают его идеальным выбором для ежедневного использования.",
+        "Простой и стильный стул, который идеально впишется в любой интерьер. Его минималистичный дизайн и комфорт делают его отличным выбором для малогабаритных квартир или офисных помещений.",
+        "Стул выполнен из прочных материалов, что гарантирует его долговечность. Удобное сиденье и простота ухода делают его идеальным выбором для ежедневного использования.",
     ],
     [
-        "Этот диван придаст вашему интерьеру роскошный вид и обеспечит комфорт для всей семьи. Удобные глубокие сиденья и мягкая спинка делают его идеальным для отдыха после долгого дня. Диван можно заказать в разных тканях и цветах.",
-        "Высококачественная обивка и наполнитель обеспечат долговечность и комфорт, а простота ухода сделает его отличным выбором для любого дома или офиса.",
+        "Этот стул придаст вашему интерьеру роскошный вид и обеспечит комфорт для всей семьи. Удобное сиденье и прочный каркас делают его идеальным для долгих вечеров и отдыха.",
+        "Высококачественные материалы и простота ухода делают его отличным выбором для любого дома или офиса.",
     ],
     [
-        "Диван с современным дизайном и комфортными сиденьями, который станет отличным дополнением вашего интерьера. Он легко сочетается с различными стилями — от классики до модерна.",
-        "Удобные и мягкие подушки, а также прочные материалы гарантируют долговечность и комфорт. Диван будет служить вам верой и правдой многие годы.",
+        "Стул с современным дизайном и удобным сиденьем, который станет отличным дополнением вашего интерьера. Он легко сочетается с различными стилями — от классики до модерна.",
+        "Удобное сиденье и прочные материалы гарантируют долговечность и комфорт. Стул будет служить вам верой и правдой многие годы.",
     ],
     [
-        "Элегантный и стильный диван с уникальными формами и текстурами, который станет акцентом в вашем доме. Этот диван идеально подходит для больших гостиных и современных офисов.",
-        "Собранный из качественных материалов, диван легко очищается и сохраняет свою форму. Мягкие и удобные подушки добавляют комфорта, делая отдых на этом диване приятным.",
+        "Элегантный и стильный стул с уникальными формами и текстурами, который станет акцентом в вашем доме. Этот стул идеально подходит для больших гостиных и современных офисов.",
+        "Собранный из качественных материалов, стул легко очищается и сохраняет свою форму. Удобное сиденье добавляет комфорта, делая отдых на этом стуле приятным.",
     ],
     [
-        "Компактный и функциональный диван, который идеально подходит для небольших помещений. Его стильный дизайн и комфорт обеспечивают удобство для всей семьи.",
-        "Этот диван выполнен из прочных тканей, которые легко чистятся. Его можно использовать как для отдыха, так и для ночного сна, так как он оборудован механизмом трансформации.",
+        "Компактный и функциональный стул, который идеально подходит для небольших помещений. Его стильный дизайн и комфорт обеспечивают удобство для всей семьи.",
+        "Этот стул выполнен из прочных тканей, которые легко чистятся. Он подойдёт как для отдыха, так и для работы в офисе или дома.",
     ],
     [
-        "Диван с уникальным дизайном и качественной обивкой, который подчеркнёт стиль вашего интерьера. Он идеально подойдёт для тех, кто ценит не только внешний вид, но и функциональность.",
-        "Этот диван гарантирует комфорт и удобство, благодаря высококачественным наполнителям и продуманной конструкции. Удобные подушки создадут атмосферу уюта в вашем доме.",
+        "Стул с уникальным дизайном и качественной обивкой, который подчеркнёт стиль вашего интерьера. Он идеально подойдёт для тех, кто ценит не только внешний вид, но и функциональность.",
+        "Этот стул гарантирует комфорт и удобство, благодаря высококачественным материалам и продуманной конструкции. Удобное сиденье создаст атмосферу уюта в вашем доме.",
     ],
     [
-        "Этот диван сочетает в себе стильный внешний вид и максимальный комфорт. Подушки с мягким наполнителем и удобная спинка создают идеальные условия для отдыха.",
-        "Изготовленный из материалов, которые выдержат время и не потеряют свой внешний вид, этот диван станет надежным элементом вашего интерьера.",
+        "Этот стул сочетает в себе стильный внешний вид и максимальный комфорт. Удобное сиденье и прочный каркас создают идеальные условия для отдыха.",
+        "Изготовленный из материалов, которые выдержат время и не потеряют свой внешний вид, этот стул станет надежным элементом вашего интерьера.",
     ],
     [
-        "Модный и элегантный диван, который обеспечит не только комфорт, но и долгосрочную эксплуатацию. Он идеально впишется в любой интерьер, добавив уюта и гармонии.",
-        "Диван выполнен из прочных материалов, устойчивых к износу, и прост в уходе, что делает его идеальным выбором для повседневного использования.",
+        "Модный и элегантный стул, который обеспечит не только комфорт, но и долгосрочную эксплуатацию. Он идеально впишется в любой интерьер, добавив уюта и гармонии.",
+        "Стул выполнен из прочных материалов, устойчивых к износу, и прост в уходе, что делает его идеальным выбором для повседневного использования.",
     ],
     [
-        "Идеальный диван для уютной гостиной. Мягкие и удобные подушки, а также стильная форма делают его отличным выбором для любого интерьера.",
-        "Этот диван с прочной каркасной конструкцией будет служить вам многие годы, обеспечивая комфорт и стиль.",
+        "Идеальный стул для уютной гостиной или рабочей зоны. Удобное сиденье и стильная форма делают его отличным выбором для любого интерьера.",
+        "Этот стул с прочной каркасной конструкцией будет служить вам многие годы, обеспечивая комфорт и стиль.",
     ],
     [
-        "Диван с уникальной конструкцией и современным дизайном, который превратит ваше пространство в уютное и стильное место для отдыха.",
-        "Высококачественные материалы и устойчивость к износу делают этот диван долговечным, а удобство использования подарит вам настоящий комфорт.",
+        "Стул с уникальной конструкцией и современным дизайном, который превратит ваше пространство в уютное и стильное место для отдыха.",
+        "Высококачественные материалы и устойчивость к износу делают этот стул долговечным, а удобство использования подарит вам настоящий комфорт.",
     ],
     [
-        "Уютный и функциональный диван, который станет отличным выбором для вашего дома. Прочные ткани и комфортная посадка создадут атмосферу уюта и покоя.",
-        "Подушки и сиденье, выполненные из качественного материала, обеспечат долгосрочную эксплуатацию и удобство для всей семьи.",
+        "Уютный и функциональный стул, который станет отличным выбором для вашего дома. Прочные ткани и комфортное сиденье создадут атмосферу уюта и покоя.",
+        "Сиденье, выполненное из качественного материала, обеспечит долгосрочную эксплуатацию и удобство для всей семьи.",
     ],
     [
-        "Диван, который идеально сочетает стиль и комфорт. Он станет центральным элементом вашей гостиной, создавая атмосферу уюта и элегантности.",
-        "Этот диван легко чистится и обладает высокой прочностью, что делает его идеальным выбором для ежедневного использования.",
+        "Стул, который идеально сочетает стиль и комфорт. Он станет центральным элементом вашего интерьера, создавая атмосферу уюта и элегантности.",
+        "Этот стул легко чистится и обладает высокой прочностью, что делает его идеальным выбором для ежедневного использования.",
     ],
     [
-        "Элегантный и удобный диван с мягким наполнителем, который подойдёт для любой комнаты. Стильный внешний вид и комфортное сиденье обеспечат вам приятное времяпрепровождение.",
-        "Диван изготовлен из высококачественных материалов, что гарантирует его долговечность и прочность.",
+        "Элегантный и удобный стул с мягким сиденьем, который подойдёт для любой комнаты. Стильный внешний вид и комфортное сиденье обеспечат вам приятное времяпрепровождение.",
+        "Стул изготовлен из высококачественных материалов, что гарантирует его долговечность и прочность.",
     ],
     [
-        "Этот диван идеально подходит для небольших помещений и квартир-студий. Компактные размеры и комфортные сиденья обеспечивают максимальное удобство при ограниченном пространстве.",
+        "Этот стул идеально подходит для небольших помещений и квартир-студий. Компактные размеры и комфортные сиденья обеспечивают максимальное удобство при ограниченном пространстве.",
         "Он выполнен из прочных и стойких материалов, которые легко чистятся и не теряют свою форму со временем.",
     ],
     [
-        "Диван с уникальным и современным дизайном, который подчеркнёт стиль вашего дома. Его комфорт и удобство удовлетворят даже самых требовательных пользователей.",
-        "Изготовленный из долговечных материалов, этот диван прослужит вам долго, оставаясь стильным и функциональным элементом интерьера.",
+        "Стул с уникальным и современным дизайном, который подчеркнёт стиль вашего дома. Его комфорт и удобство удовлетворят даже самых требовательных пользователей.",
+        "Изготовленный из долговечных материалов, этот стул прослужит вам долго, оставаясь стильным и функциональным элементом интерьера.",
     ],
     [
-        "Этот диван будет великолепным дополнением вашего дома, придавая интерьеру стиль и уют. Просторные сиденья и мягкая спинка обеспечивают комфорт для всей семьи.",
+        "Этот стул будет великолепным дополнением вашего дома, придавая интерьеру стиль и уют. Просторное сиденье и прочный каркас обеспечивают комфорт для всей семьи.",
         "Легко чистится и ухаживается, сохраняя свой первоначальный вид и комфорт на долгие годы.",
     ],
 ];
@@ -707,96 +631,95 @@ const descriptions = [
 const packing = [
     {
         packing: {
-            text: "Диван упакован в прочную защитную упаковку, которая обеспечивает его сохранность при транспортировке и предотвращает повреждения.",
+            text: "Стул упакован в прочную защитную упаковку, которая обеспечивает его сохранность при транспортировке и предотвращает повреждения.",
         },
     },
     {
         packing: {
-            text: "Каждый диван аккуратно упакован в полиэтиленовую пленку и защищён от внешних воздействий с помощью картонных коробок для безопасной доставки.",
+            text: "Каждый стул аккуратно упакован в полиэтиленовую пленку и защищён от внешних воздействий с помощью картонных коробок для безопасной доставки.",
         },
     },
     {
         packing: {
-            text: "Для обеспечения целостности изделия во время транспортировки диван помещен в устойчивую упаковку с антиударными вставками.",
+            text: "Для обеспечения целостности изделия во время транспортировки стул помещен в устойчивую упаковку с антиударными вставками.",
         },
     },
     {
         packing: {
-            text: "Диван надежно упакован в прочные картонные коробки, что гарантирует его защиту от механических повреждений в процессе транспортировки.",
+            text: "Стул надежно упакован в прочные картонные коробки, что гарантирует его защиту от механических повреждений в процессе транспортировки.",
         },
     },
     {
         packing: {
-            text: "Каждый элемент дивана обёрнут в защитную пленку, а затем упакован в коробку с дополнительной внутренней защитой для безопасной транспортировки.",
+            text: "Каждый элемент стула обёрнут в защитную пленку, а затем упакован в коробку с дополнительной внутренней защитой для безопасной транспортировки.",
         },
     },
     {
         packing: {
-            text: "Диван упакован в специализированные защитные материалы, которые предотвращают повреждения при транспортировке и обеспечивают сохранность изделия.",
+            text: "Стул упакован в специализированные защитные материалы, которые предотвращают повреждения при транспортировке и обеспечивают сохранность изделия.",
         },
     },
     {
         packing: {
-            text: "Для безопасной доставки диван упакован в несколько слоев защитного материала, включая пленку и плотную картонную упаковку.",
+            text: "Для безопасной доставки стул упакован в несколько слоев защитного материала, включая пленку и плотную картонную упаковку.",
         },
     },
     {
         packing: {
-            text: "Каждая часть дивана индивидуально упакована в защитную пленку и помещена в специально подготовленную коробку для транспортировки.",
+            text: "Каждая часть стула индивидуально упакована в защитную пленку и помещена в специально подготовленную коробку для транспортировки.",
         },
     },
     {
         packing: {
-            text: "Диван упакован в устойчивые коробки с защитными вставками, чтобы избежать повреждений в процессе перевозки.",
+            text: "Стул упакован в устойчивые коробки с защитными вставками, чтобы избежать повреждений в процессе перевозки.",
         },
     },
     {
         packing: {
-            text: "При упаковке диван обворачивается защитной пленкой и помещается в картонную коробку с амортизирующими элементами для надежности.",
+            text: "При упаковке стул обворачивается защитной пленкой и помещается в картонную коробку с амортизирующими элементами для надежности.",
         },
     },
     {
         packing: {
-            text: "Каждый диван тщательно упакован в защитную упаковку, которая гарантирует его сохранность при любых условиях транспортировки.",
+            text: "Каждый стул тщательно упакован в защитную упаковку, которая гарантирует его сохранность при любых условиях транспортировки.",
         },
     },
     {
         packing: {
-            text: "Для защиты от повреждений во время транспортировки диван упакован в прочные картонные коробки с дополнительными амортизирующими слоями.",
+            text: "Для защиты от повреждений во время транспортировки стул упакован в прочные картонные коробки с дополнительными амортизирующими слоями.",
         },
     },
     {
         packing: {
-            text: "Диван упакован в специально подготовленную упаковку, которая защищает его от механических повреждений при транспортировке.",
+            text: "Стул упакован в специально подготовленную упаковку, которая защищает его от механических повреждений при транспортировке.",
         },
     },
     {
         packing: {
-            text: "Для надежной транспортировки диван упакован в несколько слоев защитной пленки и картонной коробки с внутренними защитными вставками.",
+            text: "Для надежной транспортировки стул упакован в несколько слоев защитной пленки и картонной коробки с внутренними защитными вставками.",
         },
     },
     {
         packing: {
-            text: "Каждый диван упакован в прочную картонную коробку с защитой от внешних воздействий, чтобы обеспечить безопасную доставку.",
+            text: "Каждый стул упакован в прочную картонную коробку с защитой от внешних воздействий, чтобы обеспечить безопасную доставку.",
         },
     },
     {
         packing: {
-            text: "Для безопасной доставки диван аккуратно упакован в картонную упаковку, с использованием амортизирующих материалов для защиты от ударов.",
+            text: "Для безопасной доставки стул аккуратно упакован в картонную упаковку, с использованием амортизирующих материалов для защиты от ударов.",
         },
     },
     {
         packing: {
-            text: "Каждый диван упакован в защитную упаковку, которая гарантирует его сохранность при транспортировке и предотвращает повреждения от внешних факторов.",
+            text: "Каждый стул упакован в защитную упаковку, которая гарантирует его сохранность при транспортировке и предотвращает повреждения от внешних факторов.",
         },
     },
     {
         packing: {
-            text: "Диван упакован в специальную упаковку, обеспечивающую надежную защиту от повреждений при транспортировке и хранении.",
+            text: "Стул упакован в специальную упаковку, обеспечивающую надежную защиту от повреждений при транспортировке и хранении.",
         },
     },
 ];
-
 const materials = [
     {
         materials: {
@@ -943,7 +866,6 @@ const materials = [
         },
     },
 ];
-
  
  
  
@@ -971,7 +893,7 @@ for (let i = 0; i <= 89; i++) {
     probject.isNew = isNew[random(3, 1) - 1];
     probject.material = material[random(material.length)];
     probject.name = names[random(names.length)];
-    probject.price = Math.round(random(250000, 30000) / 1000) * 1000;
+    probject.price = Math.round(random(150000, 10000) / 1000) * 1000;
     probject.rating = (Math.random() * (5 - 3.8) + 3.8).toFixed(1);
 
     const nums = new Set();
@@ -993,18 +915,13 @@ for (let i = 0; i <= 89; i++) {
             optarr.push(options[number]);
         }
     }
-
-    probject.sleepingArea = sleepingArea[random(sleepingArea.length)];
-    probject.linenBox = linenBox[random(linenBox.length)];
-    probject.sofaType = sofaType[random(sofaType.length)];
-
-    probject.depth = Math.round(random(50, 100) / 10) * 10;
-    probject.width = Math.round(random(100, 350) / 100) * 100;
+ 
+ 
+  
     const sizes = {
-        ширина: [probject.width],
-
+        ширина: [Math.round(random(30, 70) / 100) * 100],
         высота: [Math.round(random(50, 80) / 10) * 10],
-        вес: [Math.round(random(50, 80) / 10) * 10],
+        вес: [Math.round(random(10, 50) / 10) * 10],
     };
 
     const a = Object.entries(sizes);
@@ -1047,7 +964,7 @@ for (let i = 0; i <= 89; i++) {
     probject.productDescription = {
         text: descriptions[random(descriptions.length)]
     }
-    probject.images = i <= 17 ? images[i] : images[random(images.length)]
+    probject.images = images[random(images.length)]
     probject.advatnages = advantages[random(advantages.length)];
     sofas.push(probject);
      

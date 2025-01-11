@@ -3,7 +3,7 @@ import cube from "../../../assets/icons/cube.svg";
 import model from '../../../assets/icons/3d-modeling.svg'
 import download from "../../../assets/icons/document-download.svg";
 export default function DownloadDetails({ catalog }) {
-    const construct = catalog === 'beds'
+    const construct = catalog !== 'decor'  
   return (
       <div className="download-details wrap row gap-30 s-between">
           {construct && <div className="row center-y gap-15">

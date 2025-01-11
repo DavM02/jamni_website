@@ -32,9 +32,7 @@
     position: relative;
 }
 
-
-
-#decor-intro.intro::after, #reviews-intro.intro::after,  #sofas-intro.intro::after, #article-intro.intro::after, #news-intro.intro::after, #poufs-intro.intro::after {
+.intro::after {
     content: "";
     opacity: 10%;
     background-color: #000000;
@@ -46,7 +44,7 @@
     left: 0;
 }
 
- #sofas-intro.intro::after {
+ #sofas-intro.intro::after,  #chairs-intro.intro::after{
     opacity: 30% !important;
  }
 
@@ -65,6 +63,6 @@
 
 }
 
-#reviews-intro .mask-layer , #article-intro .mask-layer, #sofas-intro .mask-layer{
+#reviews-intro .mask-layer , #article-intro .mask-layer, #sofas-intro .mask-layer, #chairs-intro .mask-layer {
     backdrop-filter: blur(0.5px);
 }

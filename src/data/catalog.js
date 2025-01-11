@@ -172,7 +172,60 @@ const catalog = {
                 "компактный"
             ], "sofaType"]
         ]
-    }
+    },
+    chairs: {
+        id: 'chairs-intro',
+        headline: 'стулья',
+        filterHeadline: 'все стулья',
+        description:
+            "Изысканные детали для комфорта и элегантности: обогатите свой интерьер стильными и уникальными стульями для любой обстановки.",
+          materials: [
+            "ткань",
+            "кожзам",
+            "натуральная кожа",
+            "велюр",
+            "экокожа",
+            "микрофибра",
+            "поролон",
+            "синтепон",
+            "жаккард",
+            "металл",
+            "дерево",
+            "пластик",
+        ],
+
+          collections: [
+            "classic collection",
+            "modern collection",
+            "comfort collection",
+            "elegance collection",
+            "premium collection",
+            "office collection",
+        ],
+        filters: [
+            ["цена", {
+                min: 1000, max: 250000, val: 'руб'
+            }, 'price']
+        ],
+        sliderData: [
+            { name: "classic collection", image: "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_JD240820_240820.jpg?preset=Product3840x2880" },
+            { name: "modern collection", image: "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_A220103.jpg?preset=Product3840x2880" },
+            { name: "comfort collection", image: "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DU200709.jpg?preset=Product3840x2880" },
+            { name: "elegance collection", image: "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_A201207.jpg?preset=Product3840x2880" },
+            { name: "premium collection", image: "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_A230731.jpg?preset=Product3840x2880" },
+            { name: "office collection", image: "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_C220919.jpg?preset=Product3840x2880" },
+            { name: "classic collection", image: "https://cdn.arhaus.com/product/StandardV2/30ATISDMERTC_JD240820_240820.jpg?preset=Product3840x2880" },
+            { name: "modern collection", image: "https://cdn.arhaus.com/product/StandardV2/55LYNBSLTECH_A220103.jpg?preset=Product3840x2880" },
+            { name: "comfort collection", image: "https://cdn.arhaus.com/product/StandardV2/30RHENCNCSCH_DU200709.jpg?preset=Product3840x2880" },
+            { name: "elegance collection", image: "https://cdn.arhaus.com/product/StandardV2/30BOTTONICHR_A201207.jpg?preset=Product3840x2880" },
+            { name: "premium collection", image: "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_A230731.jpg?preset=Product3840x2880" },
+            { name: "office collection", image: "https://cdn.arhaus.com/product/StandardV2/10GR04CHBNP_C220919.jpg?preset=Product3840x2880" }
+
+        ],
+        bg: "https://cdn.arhaus.com/product/StandardV2/30LNDSDCHCA_D230731.jpg?preset=Product3840x2880",
+        posY: '48%',
+
+    },
 }
 
 export default catalog

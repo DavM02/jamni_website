@@ -20,7 +20,7 @@ const initialData = [
   { type: "пуф", price: 30000, quantity: 0, img: img7 },
 ];
 
-export default function Configuration({ product }) {
+export default function Configuration({ price }) {
  
  
 
@@ -37,7 +37,7 @@ export default function Configuration({ product }) {
   };
 
   const calculateTotal = () => {
-    return product.price + data.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    return price + data.reduce((sum, item) => sum + item.price * item.quantity, 0);
   };
 
   return (

@@ -20,7 +20,7 @@ export default function Menu() {
             </ul>
             <ul className='column gap-20 text-main text-light xxsmall-text up-case'>
                 <li>
-                    <Link>Диваны</Link>
+                    <Link to={"catalog/sofas"}>Диваны</Link>
                 </li>
                 <li>
                     <Link>Кровати</Link>
@@ -34,7 +34,7 @@ export default function Menu() {
                     <Link>Кресла</Link>
                 </li>
                 <li>
-                    <Link>стулья</Link>
+                    <Link to={"catalog/chairs"}>стулья</Link>
                 </li>
                 <li>
                     <Link>Пуфы и банкетки</Link>
@@ -45,13 +45,13 @@ export default function Menu() {
             </ul>
             <ul className='column gap-20 text-main text-light xxsmall-text up-case'>
                 <li>
-                    <Link>Оплата</Link>
+                    <Link to={"/order"}>Оплата</Link>
                 </li>
                 <li>
-                    <Link>дотавка</Link>
+                    <Link to={"/order"}>дотавка</Link>
                 </li>
                 <li>
-                    <Link>реквизиты</Link>
+                    <Link to={"/order"}>реквизиты</Link>
                 </li>
             </ul>
         </div>
