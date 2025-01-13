@@ -8,17 +8,18 @@ export default function Home() {
             <div className='container'>
                 <Slider />
                 
-                <div className='headline'>
-                    <div className='years row gap-10 text-black'>
-                        <span> 2013</span>
-                        <span>—</span>
-                        <span>{new Date().getFullYear()}</span>
-                    </div>
-                    <h3 className='text-center'>
-                        Изысканная <br /> мебель - оживляющая <br /> пространство
-                    </h3>
-                </div>
+
             </div>
+             <div className='headline'>
+                 <div className='years row gap-10 text-black'>
+                     <span> 2013</span>
+                     <span>—</span>
+                     <span>{new Date().getFullYear()}</span>
+                 </div>
+                 <h3 className='text-center'>
+                     Изысканная <br /> мебель - оживляющая <br /> пространство
+                 </h3>
+             </div>
         </section>
     );
 }

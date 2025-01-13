@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useRef, useState } from 'react';
 import './header.css';
 import './media.css';
 import Navigation from './Navigation';
@@ -10,34 +10,24 @@ import { MainContext } from '../../../context/MainContext';
 import useMediaQ from '../../../hooks/useMediaQ';
 import ContactInfo from './ContactInfo';
 
-
 export default function Header() {
+
   const query = useMediaQ('(max-width: 777px)');
-  const [scroll, setScroll] = useState(true);
-  const { scrollbarAccess } = useContext(MainContext);
+
+  const { setHeaderHeight } = useContext(MainContext);
   const [menu, setMenu] = useState({ open: false, backdrop: false, nested: false });
-
-  useEffect(() => {
-    if (scrollbarAccess.current) {
+  const headerRef = useRef(null)
  
-      function handleScroll(event) {
-        const scrollY = event.offset.y;
-        setScroll(scrollY < 78);
+  useEffect(() => {
+    setHeaderHeight.current = (topValue) => {
+      if (headerRef.current && query) {
+        headerRef.current.style.top = topValue;
       }
-
-      const scrollbarInstance = scrollbarAccess.current;
-      scrollbarInstance.addListener(handleScroll);
-
-      return () => {
-        scrollbarInstance.removeListener(handleScroll);
-      };
+    };
+  }, []);
 
 
-    }
-  }, [scrollbarAccess, query]);
-
-
-
+ 
   useEffect(() => {
     if (menu.open || menu.nested) {
       setMenu({ open: false, backdrop: false, nested: false });
@@ -45,12 +35,10 @@ export default function Header() {
 
   }, [query]);
 
-
-
   return (
-    <header id='header'>
+    <header id='header' >
       <ContactInfo />
-      <div className='menu' style={{ top: `${(!scroll && !query) ? 'calc(30px - 55px - (var(--header-container-padding)*2))' : '30px'}` }}>
+      <div className='menu' ref={headerRef}>
         <div className='container'>
           <div className='grid-3 center-y'>
             <div className='toggle-menu'>

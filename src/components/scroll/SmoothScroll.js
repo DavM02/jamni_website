@@ -5,11 +5,10 @@ import './scroll.css'
 import useMediaQ from '../../hooks/useMediaQ'
 export default function SmoothScroll({ children }) {
     const scrollRef = useRef(null);
-    const { scrollbarAccess } = useContext(MainContext);
+    const { scrollbarAccess, setHeaderHeight } = useContext(MainContext);
 
     const query = useMediaQ('(min-width: 767px)');
-
-
+ 
     useLayoutEffect(() => {
         let scrollbar;
         let resizeObserver
@@ -23,8 +22,19 @@ export default function SmoothScroll({ children }) {
                     });
 
                     scrollbarAccess.current = scrollbar;
+                    scrollbarAccess.current.addListener(({ offset }) => {
+                        if (offset.y < 78 && query) {
+                            setHeaderHeight.current('30px')
+                        } else {
+                            setHeaderHeight.current('calc(30px - 55px - (var(--header-container-padding)*2))')
+
+
+                        }
+                    });
                 }
             };
+
+    
 
             const handleResize = () => {
                 if (scrollRef.current) {
@@ -36,19 +46,23 @@ export default function SmoothScroll({ children }) {
             if (scrollRef.current) {
                 resizeObserver.observe(scrollRef.current);
             }
+
+            return () => {
+
+                if (scrollbar) {
+                    scrollbar.destroy();
+      
+
+                }
+                if (resizeObserver) {
+                    resizeObserver.disconnect();
+                }
+            };
         }
 
 
 
-        return () => {
-
-            if (scrollbar) {
-                scrollbar.destroy();
-            }
-            if (resizeObserver) {
-                resizeObserver.disconnect();
-            }
-        };
+ 
     }, [query, scrollbarAccess]);
 
     return (

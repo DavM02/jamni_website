@@ -9,6 +9,8 @@
 #home .container {
     max-width: 1920px;
     padding: unset;
+    position: relative;
+    z-index: 5;
 }
 
 
@@ -20,8 +22,9 @@
 #home .headline {
     pointer-events: none;
     position: absolute;
+    z-index: 4;
     height: 100%;
-    z-index: -1;
+
     transform: translateX(-3px);
     top: 0;
     right: clamp(1.9375rem, -35.2898rem + 47.2727vw, 21.4375rem);
