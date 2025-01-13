@@ -38,6 +38,10 @@ export default function AppLoading({ setRenderApp }) {
             }, 100);
             sessionStorage.setItem('animationCompleted', 'true');
         }
+
+        return(() => {
+            sessionStorage.removeItem('animationCompleted')
+        })
     
     }, [setRenderApp]);
 
