@@ -20,11 +20,11 @@ export default function Header() {
  
   useEffect(() => {
     setHeaderHeight.current = (topValue) => {
-      if (headerRef.current && query) {
+      if (headerRef.current) {
         headerRef.current.style.top = topValue;
       }
     };
-  }, []);
+  }, [setHeaderHeight]);
 
 
  

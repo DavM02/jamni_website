@@ -8,6 +8,7 @@ export default function SmoothScroll({ children }) {
     const { scrollbarAccess, setHeaderHeight } = useContext(MainContext);
 
     const query = useMediaQ('(min-width: 767px)');
+    // const fixHeader = useMediaQ('(max-width: 777px)');
  
     useLayoutEffect(() => {
         let scrollbar;
@@ -23,11 +24,11 @@ export default function SmoothScroll({ children }) {
 
                     scrollbarAccess.current = scrollbar;
                     scrollbarAccess.current.addListener(({ offset }) => {
-                        if (offset.y < 78 && query) {
-                            setHeaderHeight.current('30px')
-                        } else {
+                        if (offset.y > 78) {
                             setHeaderHeight.current('calc(30px - 55px - (var(--header-container-padding)*2))')
 
+                        } else {
+                            setHeaderHeight.current('30px')
 
                         }
                     });
@@ -48,7 +49,7 @@ export default function SmoothScroll({ children }) {
             }
 
             return () => {
-
+                setHeaderHeight.current('30px')
                 if (scrollbar) {
                     scrollbar.destroy();
       
