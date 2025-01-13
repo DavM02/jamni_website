@@ -1,1061 +1,963 @@
 const advantages = [
-    [
-        {
-            title: "Регулируемые подголовники",
-            text: "Обеспечивают поддержку шеи и головы, позволяя выбрать оптимальное положение для отдыха или чтения.",
-        },
-        {
-            title: "Индивидуальная настройка жесткости",
-            text: "Позволяет изменять жесткость сидений и спинки для создания идеального уровня комфорта.",
-        },
-        {
-            title: "Технология защиты от пятен",
-            text: "Специальная обработка ткани препятствует впитыванию жидкостей, упрощая уход за диваном.",
-        },
-        {
-            title: "Широкие посадочные места",
-            text: "Обеспечивают достаточно пространства для комфортного отдыха всей семьей или большой компании.",
-        },
-    ],
-    [
-        {
-            title: "Оптимальная поддержка",
-            text: "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха.",
-        },
-        {
-            title: "Премиальные материалы",
-            text: "Обивка из высококачественной ткани или натуральной кожи устойчива к выцветанию и повреждениям, а наполнитель сохраняет упругость на долгие годы.",
-        },
-        {
-            title: "Механизм быстрого раскладывания",
-            text: "Инновационная система трансформации позволяет легко превратить диван в кровать, не прикладывая значительных усилий.",
-        },
-        {
-            title: "Дополнительные секции хранения",
-            text: "Скрытые ниши под сиденьем дают возможность хранить сезонные вещи и постельные принадлежности, экономя пространство в комнате.",
-        },
-        {
-            title: "Сменные чехлы",
-            text: "Съёмные чехлы упрощают уход за диваном — их можно стирать в машинке или заменять на новые, освежая внешний вид мебели.",
-        },
-        {
-            title: "Энергоэффективность",
-            text: "Используемые материалы обеспечивают теплоизоляцию, что создаёт уют и комфорт в прохладные дни.",
-        },
-    ],
-    [
-        {
-            title: "Угловая конфигурация",
-            text: "Идеальное решение для максимального использования пространства в углах комнаты, создавая больше мест для отдыха.",
-        },
-        {
-            title: "Дополнительные подушки",
-            text: "Комплект дополнительных подушек позволяет настроить уровень комфорта в соответствии с вашими предпочтениями.",
-        },
-        {
-            title: "Подлокотники с хранилищем",
-            text: "Встроенные секции в подлокотниках позволяют хранить мелкие предметы, такие как пульты или книги.",
-        },
-        {
-            title: "Водо- и грязеотталкивающее покрытие",
-            text: "Специальное покрытие защищает обивку от пятен и пролившихся жидкостей, упрощая уход за диваном.",
-        },
-        {
-            title: "Регулируемая глубина сидения",
-            text: "Позволяет адаптировать диван под разные предпочтения, обеспечивая максимальный комфорт.",
-        },
-        {
-            title: "Прочная конструкция",
-            text: "Каркас из усиленных материалов гарантирует долговечность и устойчивость даже при интенсивной эксплуатации.",
-        },
-    ],
-    [
-        {
-            title: "Гладкий механизм трансформации",
-            text: "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол.",
-        },
-        {
-            title: "Натуральные наполнители",
-            text: "Использование пуха и латекса обеспечивает мягкость и поддерживающие свойства, подходящие для длительного отдыха.",
-        },
-        {
-            title: "Двусторонние подушки",
-            text: "Позволяют выбрать между двумя различными уровнями жесткости, меняя их местами по мере необходимости.",
-        },
-        {
-            title: "Стабильность и баланс",
-            text: "Модульная конструкция исключает смещения и обеспечивает устойчивость даже на неровных поверхностях.",
-        },
-        {
-            title: "Антискользящие ножки",
-            text: "Обеспечивают безопасное использование, предотвращая случайные перемещения дивана.",
-        },
-        {
-            title: "Изоляция шума",
-            text: "Снижает уровень шума при использовании благодаря специальным амортизирующим слоям.",
-        },
-    ],
-    [
-        {
-            title: "Просторное спальное место",
-            text: "Диван легко трансформируется в кровать, обеспечивая комфортное спальное место для гостей.",
-        },
-        {
-            title: "Удобство хранения",
-            text: "Встроенный бельевой ящик позволяет хранить постельное белье и другие вещи.",
-        },
-        {
-            title: "Современный механизм раскладывания",
-            text: "Надежный механизм обеспечивает плавное и легкое преобразование дивана в кровать.",
-        },
-        {
-            title: "Простота сборки",
-            text: "Диван быстро собирается без дополнительных инструментов, экономя ваше время.",
-        },
-    ],
-    [
-        {
-            title: "Универсальный дизайн",
-            text: "Подходит как для современных интерьеров, так и для классического оформления.",
-        },
-        {
-            title: "Высокая износостойкость",
-            text: "Качественные материалы устойчивы к ежедневному использованию.",
-        },
-        {
-            title: "Регулируемые подлокотники",
-            text: "Настраиваемые подлокотники обеспечивают дополнительный комфорт.",
-        },
-        {
-            title: "Долговечность",
-            text: "Крепкий каркас гарантирует длительный срок службы.",
-        },
-    ],
-    [
-        {
-            title: "Эргономичный дизайн",
-            text: "Обеспечивает оптимальную поддержку спины для длительного отдыха.",
-        },
-        {
-            title: "Легкий уход",
-            text: "Материалы, не требующие сложного ухода, сохраняют свежесть дивана.",
-        },
-        {
-            title: "Компактное хранение",
-            text: "Идеальное решение для небольших помещений с ограниченным пространством.",
-        },
-        {
-            title: "Быстрая трансформация",
-            text: "Легко раскладывается в кровать благодаря продуманной конструкции.",
-        },
-    ],
-    [
-        {
-            title: "Мягкие подушки",
-            text: "Подушки с наполнителем обеспечивают дополнительный уют и поддержку.",
-        },
-        {
-            title: "Декоративные швы",
-            text: "Элегантные детали добавляют стильный акцент.",
-        },
-        {
-            title: "Водоотталкивающее покрытие",
-            text: "Обивка защищена от случайных пятен и влаги.",
-        },
-        {
-            title: "Сменные чехлы",
-            text: "Легко обновите внешний вид с помощью сменных чехлов.",
-        },
-    ],
-    [
-        {
-            title: "Съемные подлокотники",
-            text: "Позволяют использовать диван в нескольких конфигурациях.",
-        },
-        {
-            title: "Прочная конструкция",
-            text: "Каркас из дерева и металла обеспечивает надежность.",
-        },
-        {
-            title: "Гипоаллергенные материалы",
-            text: "Безопасны для людей с аллергией.",
-        },
-        {
-            title: "Экологичность",
-            text: "Материалы соответствуют высоким стандартам экологической безопасности.",
-        },
-    ],
-    [
-        {
-            title: "Элегантные линии",
-            text: "Современный минималистичный дизайн для стильного интерьера.",
-        },
-        {
-            title: "Глубокая посадка",
-            text: "Обеспечивает удобное положение для отдыха.",
-        },
-        {
-            title: "Надежные петли",
-            text: "Петли и механизмы выдерживают высокие нагрузки.",
-        },
-        {
-            title: "Легкая транспортировка",
-            text: "Компактные размеры позволяют перемещать диван без усилий.",
-        },
-    ],
-    [
-        {
-            title: "Дизайн с акцентом на комфорт",
-            text: "Мягкие сиденья и регулируемые подлокотники создают пространство для идеального расслабления после долгого дня.",
-        },
-        {
-            title: "Надежный механизм складывания",
-            text: "Улучшенный механизм позволяет легко раскладывать диван, не повреждая пол и другие поверхности.",
-        },
-        {
-            title: "Долговечность",
-            text: "Используемые материалы устойчивы к износу и сохраняют внешний вид даже при ежедневной эксплуатации.",
-        },
-        {
-            title: "Компактные размеры",
-            text: "Диван не занимает много места, оставаясь функциональным и удобным.",
-        },
-    ],
-    [
-        {
-            title: "Поддержка поясницы",
-            text: "Специально разработанная форма спинки помогает снизить нагрузку на поясничный отдел и предотвращает дискомфорт.",
-        },
-        {
-            title: "Выбор из различных обивок",
-            text: "Широкий выбор материалов и цветов позволяет подобрать диван для любого интерьера.",
-        },
-        {
-            title: "Безопасность",
-            text: "Все материалы соответствуют стандартам безопасности и не содержат токсичных веществ.",
-        },
-        {
-            title: "Элегантные декоративные элементы",
-            text: "Детали дизайна, такие как строчка или пуговицы, добавляют стильные акценты.",
-        },
-    ],
-    [
-        {
-            title: "Улучшенная вентиляция",
-            text: "Наполнители с эффектом вентиляции поддерживают комфортную температуру во время отдыха.",
-        },
-        {
-            title: "Модульная система",
-            text: "Позволяет изменять конфигурацию дивана для создания различных комбинаций сидений.",
-        },
-        {
-            title: "Простое использование",
-            text: "Переход от дивана к кровати занимает всего несколько секунд благодаря плавному механизму.",
-        },
-        {
-            title: "Экологичность",
-            text: "Используемые ткани и наполнители безопасны для окружающей среды и подлежат переработке.",
-        },
-    ],
-    [
-        {
-            title: "Стабильная конструкция",
-            text: "Каркас из усиленного дерева и стали обеспечивает максимальную прочность и устойчивость.",
-        },
-        {
-            title: "Встроенные боковые карманы",
-            text: "Позволяют хранить пульты, книги или журналы, экономя место.",
-        },
-        {
-            title: "Легкая чистка",
-            text: "Обивка устойчива к загрязнениям и легко очищается с помощью мягких средств.",
-        },
-        {
-            title: "Улучшенная амортизация",
-            text: "Специальные пружины распределяют вес равномерно для дополнительного комфорта.",
-        },
-    ],
-    [
-        {
-            title: "Антибактериальные свойства",
-            text: "Наполнители с антибактериальной пропиткой предотвращают рост бактерий и грибков.",
-        },
-        {
-            title: "Премиальная отделка",
-            text: "Ручная отделка добавляет уникальный штрих каждому изделию.",
-        },
-        {
-            title: "Отделение для мелочей",
-            text: "Скрытые отсеки позволяют аккуратно хранить личные вещи.",
-        },
-        {
-            title: "Встроенные лампы",
-            text: "Некоторые модели оснащены встроенными лампами для дополнительного удобства.",
-        },
-    ],
-    [
-        {
-            title: "Легкость сборки",
-            text: "Благодаря простому дизайну, сборка дивана занимает минимальное количество времени.",
-        },
-        {
-            title: "Повышенная устойчивость",
-            text: "Дополнительные ножки увеличивают устойчивость и распределение нагрузки.",
-        },
-        {
-            title: "Глубокие посадочные места",
-            text: "Обеспечивают дополнительное пространство для комфортного отдыха с семьей.",
-        },
-        {
-            title: "Энергоэффективность",
-            text: "Материалы помогают сохранять тепло в помещении, создавая уютную атмосферу.",
-        },
-    ],
+  [
+    {
+      title: "Поддержка позвоночника",
+      text: "Матрас с оптимальной жесткостью поддерживает правильное положение позвоночника во время сна, обеспечивая полноценный отдых.",
+    },
+    {
+      title: "Антибактериальное покрытие",
+      text: "Обивка и наполнители защищены от бактерий, что способствует гигиеничности и долговечности.",
+    },
+    {
+      title: "Устойчивость к деформации",
+      text: "Матрасы не теряют свою форму и упругость даже при длительном использовании.",
+    },
+    {
+      title: "Легкость в сборке",
+      text: "Конструкция кровати легко собирается и не требует специальных инструментов.",
+    },
+  ],
+  [
+    {
+      title: "Инновационная система охлаждения",
+      text: "Матрасы с охлаждающими свойствами поддерживают комфортную температуру для сна в любое время года.",
+    },
+    {
+      title: "Регулируемые основания",
+      text: "Позволяют настроить кровать под индивидуальные предпочтения, включая наклон головы или ног.",
+    },
+    {
+      title: "Экологичные материалы",
+      text: "Используемые наполнители и ткани безопасны для здоровья и не содержат токсичных веществ.",
+    },
+    {
+      title: "Антискользящая поверхность",
+      text: "Кровать оснащена специальным покрытием, которое предотвращает скольжение матраса и повышает безопасность.",
+    },
+  ],
+  [
+    {
+      title: "Модульная система",
+      text: "Конструкция кровати позволяет менять ее размеры и форму в зависимости от ваших нужд.",
+    },
+    {
+      title: "Встроенные секции хранения",
+      text: "Под кроватью можно разместить ящики для хранения постельного белья и других вещей.",
+    },
+    {
+      title: "Высококачественные материалы",
+      text: "Материалы, используемые в кровати, устойчивы к износу и сохраняют привлекательный внешний вид на долгие годы.",
+    },
+    {
+      title: "Простота ухода",
+      text: "Материалы легко чистятся, что упрощает уход за кроватью.",
+    },
+  ],
+  [
+    {
+      title: "Поддержка головы и шеи",
+      text: "Ортопедическая подушка, включенная в комплект, помогает поддерживать правильное положение шеи и головы во время сна.",
+    },
+    {
+      title: "Звукоизоляция",
+      text: "Особая конструкция кровати снижает уровень шума, что способствует лучшему отдыху.",
+    },
+    {
+      title: "Энергоэффективность",
+      text: "Кровать с теплоизоляционными материалами помогает сохранить комфортную температуру в холодное время года.",
+    },
+    {
+      title: "Долговечность",
+      text: "Крепкий каркас гарантирует долговечность и надежность кровати при ежедневном использовании.",
+    },
+  ],
+  [
+    {
+      title: "Индивидуальный дизайн",
+      text: "Предлагаются различные варианты дизайна, чтобы кровать идеально вписалась в ваш интерьер.",
+    },
+    {
+      title: "Легкость трансформации",
+      text: "Некоторые модели позволяют легко изменить размер кровати, превращая ее в дополнительное спальное место.",
+    },
+    {
+      title: "Удобство для гостей",
+      text: "Большие и удобные кровати идеально подходят для размещения гостей на ночлег.",
+    },
+    {
+      title: "Высокая стойкость к нагрузке",
+      text: "Кровать выдерживает значительные нагрузки, гарантируя надежность и устойчивость.",
+    },
+  ],
+  [
+    {
+      title: "Механизм подъема",
+      text: "Некоторые модели кроватей оснащены механизмом подъема, что позволяет использовать пространство под кроватью для хранения.",
+    },
+    {
+      title: "Натуральные материалы",
+      text: "Кровать изготовлена из экологически чистых и натуральных материалов, что способствует здоровому сну.",
+    },
+    {
+      title: "Устойчивость к повреждениям",
+      text: "Конструкция кровати устойчива к повреждениям, даже при сильных нагрузках.",
+    },
+    {
+      title: "Ортопедическая основа",
+      text: "Ортопедическое основание способствует равномерному распределению веса и повышает комфорт во время сна.",
+    },
+  ],
+  [
+    {
+      title: "Подходит для детей",
+      text: "Модели с низким расположением матраса идеально подходят для детей, обеспечивая безопасный и комфортный отдых.",
+    },
+    {
+      title: "Доступная цена",
+      text: "Кровать отличает оптимальное сочетание цены и качества, что делает ее доступной для большинства покупателей.",
+    },
+    {
+      title: "Многофункциональность",
+      text: "Некоторые кровати обладают дополнительными функциями, такими как встроенные столики или полки для хранения.",
+    },
+    {
+      title: "Большие размеры",
+      text: "Предлагаются кровати с большими размерами, что позволяет комфортно спать двум или более людям.",
+    },
+  ],
+  [
+    {
+      title: "Ретро-дизайн",
+      text: "Кровати в ретро-стиле придают интерьеру уникальный и элегантный вид.",
+    },
+    {
+      title: "Светодиодная подсветка",
+      text: "Модели с встроенной подсветкой создают уютную атмосферу и подходят для спальни с современным интерьером.",
+    },
+    {
+      title: "Регулируемая жесткость",
+      text: "Матрас можно настроить под индивидуальные предпочтения по жесткости для максимального комфорта.",
+    },
+    {
+      title: "Влагостойкость",
+      text: "Некоторые модели кроватей имеют влагостойкое покрытие, что предотвращает повреждения от влаги.",
+    },
+  ],
+  [
+    {
+      title: "Легкость перемещения",
+      text: "Конструкция кровати позволяет легко перемещать ее в помещении или при необходимости транспортировать.",
+    },
+    {
+      title: "Ортопедический матрас",
+      text: "Матрас с ортопедическими свойствами помогает снять напряжение с мышц и суставов, обеспечивая качественный отдых.",
+    },
+    {
+      title: "Борьба с аллергенами",
+      text: "Антиаллергенные материалы в кровати помогают избежать аллергических реакций во время сна.",
+    },
+    {
+      title: "Удобные подлокотники",
+      text: "Некоторые кровати имеют встроенные подлокотники для дополнительного комфорта и удобства.",
+    },
+  ],
+  [
+    {
+      title: "Низкий профиль",
+      text: "Низкий профиль кровати позволяет удобно спать и легко вставать, особенно для пожилых людей.",
+    },
+    {
+      title: "Разнообразие цветов",
+      text: "Кровати доступны в различных цветах, что позволяет подобрать модель, подходящую под любой интерьер.",
+    },
+    {
+      title: "Оптимизация пространства",
+      text: "Особенности конструкции кровати позволяют эффективно использовать пространство в небольших помещениях.",
+    },
+    {
+      title: "Современные технологии",
+      text: "Использование современных технологий в производстве кроватей обеспечивает долговечность и комфорт.",
+    },
+  ],
+  [
+    {
+      title: "Реализуем по индивидуальным заказам",
+      text: "Вы можете заказать кровать по индивидуальным размерам и с уникальными характеристиками для вашего дома.",
+    },
+    {
+      title: "Беспроводная зарядка",
+      text: "Некоторые модели кроватей оснащены беспроводной зарядкой для удобства использования мобильных устройств.",
+    },
+    {
+      title: "Матрасы с памятью формы",
+      text: "Матрасы с эффектом памяти формы повторяют контуры вашего тела, обеспечивая максимальный комфорт и поддержку.",
+    },
+    {
+      title: "Легкость в обслуживании",
+      text: "Съемные чехлы для матрасов и обивка делают уход за кроватью быстрым и простым.",
+    },
+  ],
+  [
+    {
+      title: "Отсутствие шума",
+      text: "Конструкция кровати минимизирует шум при движении, что делает ее идеальной для людей, чувствительных к шуму.",
+    },
+    {
+      title: "Многофункциональные модели",
+      text: "Некоторые кровати включают в себя дополнительные функции, такие как встроенные телевизоры или колонки.",
+    },
+    {
+      title: "Гарантия качества",
+      text: "Каждая кровать поставляется с гарантией качества, что подтверждает ее долговечность и надежность.",
+    },
+    {
+      title: "Удобство использования",
+      text: "Все механизмы и системы кровати просты в использовании и не требуют дополнительного обслуживания.",
+    },
+  ],
+  [
+    {
+      title: "Разнообразие стилей",
+      text: "Кровати могут быть выполнены в разных стилях: от классического до современного, что позволяет выбрать подходящую модель для любого интерьера.",
+    },
+    {
+      title: "Удобные размеры",
+      text: "Предлагаются кровати разных размеров, от односпальных до больших двуспальных моделей.",
+    },
+    {
+      title: "Экономия места",
+      text: "Кровати с встроенными полками и ящиками для хранения помогают сэкономить пространство в спальне.",
+    },
+    {
+      title: "Высокий комфорт",
+      text: "Специальные технологии и материалы в кроватях обеспечивают высокий уровень комфорта, что позволяет вам отдыхать на 100%.",
+    },
+  ],
+  [
+    {
+      title: "Поддержка для дополнительного сна",
+      text: "Кровати с дополнительными функциями, такими как раскладные механизмы, позволяют создать удобное спальное место для гостей.",
+    },
+    {
+      title: "Идеальные размеры для детей",
+      text: "Некоторые модели идеально подходят для детей и подростков, обеспечивая комфортный и безопасный сон.",
+    },
+    {
+      title: "Преимущества для спины",
+      text: "Особенности конструкции кровати, такие как поддержка поясничной области, способствуют улучшению состояния спины и уменьшению болей.",
+    },
+    {
+      title: "Невысокая цена",
+      text: "Кровати в данной категории доступны по цене, при этом качество не уступает более дорогим моделям.",
+    },
+  ],
+  [
+    {
+      title: "Гибкость при выборе матраса",
+      text: "Вы можете выбрать матрас с подходящей жесткостью и материалом, соответствующими вашим предпочтениям.",
+    },
+    {
+      title: "Встроенные дополнительные функции",
+      text: "Некоторые кровати имеют встроенные столики, полки или светильники для максимального удобства.",
+    },
+    {
+      title: "Удобство и стиль",
+      text: "Современный дизайн кровати гармонично сочетается с любым интерьером, добавляя комнате стиль и элегантность.",
+    },
+    {
+      title: "Простота установки",
+      text: "Кровать легко устанавливается без сложных инструкций и не требует профессиональной сборки.",
+    },
+  ],
 ];
 
 const bestseller = [true, false];
 
 const images = [
-    [
-        "https://i.ibb.co/1qXR3tD/img-1.jpg",
-        "https://murukaka.com/wp-content/uploads/2022/05/Neopolo-Sofa-3A-Seater5.jpg",
-        "https://murukaka.com/wp-content/uploads/2022/05/Neopolo-Sofa-3-Seater.jpg",
-        "https://murukaka.com/wp-content/uploads/2022/05/Neopolo-Sofa-3-Seater2.jpg",
-        "https://murukaka.com/wp-content/uploads/2022/05/Neopolo-Sofa-3-Seater3.jpg",
-        "https://murukaka.com/wp-content/uploads/2022/05/Neopolo-Sofa-3-Seater4.jpg"
-    ],
-    [
-        "https://i.ibb.co/fF2hTyS/img-2.jpg",
-        "https://s.alicdn.com/@sc04/kf/H589c309514a54234afc729da38f101dcn.jpg?avif=close",
-        "https://s.alicdn.com/@sc04/kf/H36e27806749542cda5c3c0b39b08f5d8L.jpg?avif=close",
-        "https://s.alicdn.com/@sc04/kf/H798705063d37449286c8d28e65897e04l.jpg?avif=close",
-        "https://s.alicdn.com/@sc04/kf/H569b43c2c3374655a7935ab2ea102695D.jpg?avif=close",
-        "https://s.alicdn.com/@sc04/kf/H9d04843ff2ae471fbaca9fea24b160ece.jpg?avif=close"
-    ],
-    [
-        "https://i.ibb.co/jZ9SDFc/img-3.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CB230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_F230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CA230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CJ230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CF230127.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/cXtw5Wn/img-4.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/XEBFSFA_C210820.jpg?preset=Product1920x1440",
-        "https://cdn.arhaus.com/product/StandardV2/XEBFSFA_G210820.jpg?preset=Product1920x1440",
-        "https://cdn.arhaus.com/product/StandardV2/XEBFSFA_D210820.jpg?preset=Product1920x1440",
-        "https://cdn.arhaus.com/product/StandardV2/XEBFSFA_F210820.jpg?preset=Product1920x1440"
-    ],
-    [
-        "https://i.ibb.co/2g3BTnB/img-5.jpg",
-        "https://imageresizer4.furnituredealer.net/img/remote/images.furnituredealer.net/img/products%2frowe%2fcolor%2foliver--1945899455_p880-038-b3.jpg?width=2000&height=2000&scale=canvas",
-        "https://imageresizer4.furnituredealer.net/img/remote/images.furnituredealer.net/img/products%2frowe%2fcolor%2foliver--1945899455_p880-038-b1.jpg?width=2000&height=2000&scale=canvas",
-        "https://imageresizer4.furnituredealer.net/img/remote/images.furnituredealer.net/img/products%2frowe%2fcolor%2foliver--1945899455_p880-038-b5.jpg?width=2000&height=2000&scale=canvas"
-    ],
-    [
-        "https://i.ibb.co/yX78CB6/img-6.jpg",
-        "https://img.inmyroom.ru/inmyroom/resize/1400x1400/jpg:85/uploads/photo/file/1d/1dd1/jpg_2000_1dd16762-e8e3-4452-a408-8b658bdf680a.jpg?sign=60c33130aa91fbbb97c02e5a2631aa5fb29d987217f7bb413f39c6b252cad12d",
-        "https://img.inmyroom.ru/inmyroom/resize/1400x1400/jpg:85/uploads/photo/file/7e/7ea5/jpg_2000_7ea59062-5d27-4e7e-9900-3b2d5a559539.jpg?sign=282a7269068d6a25d26b62e4b44f8b9ed7287c7d9a3ff52fed8d3aad2252749d",
-        "https://img.inmyroom.ru/inmyroom/resize/1400x1400/jpg:85/uploads/photo/file/8c/8ce7/jpg_2000_8ce7ccd1-3c1b-4564-b745-43941333dae2.jpg?sign=443ddacc0f36600bf1bb1a60032f6033340fb988e6cdc872b19f23b7d4c932c1",
-        "https://img.inmyroom.ru/inmyroom/resize/1400x1400/jpg:85/uploads/photo/file/db/dbdd/jpg_2000_dbddfea3-3e90-4998-8bca-f006ba13c875.jpg?sign=81ae34478dce42ee34ae67208ac94d3e01aaaed64483f632420e200bddb89f9d"
-    ],
-    [
-        "https://i.ibb.co/7K0Lc2t/img-7.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/10718SEC2NT_I230111.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718SEC2NT_K230111.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718SEC2NT_L230111.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718SEC2NT_O230111.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718SEC2NT_P230111.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/ftysdD4/img-8.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/102762SEC3NS_BZ220105.jpg?preset=Product1920x1440",
-        "https://cdn.arhaus.com/product/StandardV2/102762SEC3NS_CA220105.jpg?preset=Product1920x1440",
-        "https://cdn.arhaus.com/product/StandardV2/102762SEC3NS_CC220105.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/102762SEC3NS_CD220105.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/102762SEC3NS_Y220505.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/wzCsRTJ/img-9.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/102464SETTBG_D240812.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/102464SETTBG_A240812.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/102464SETTBG_B240812.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/102464SETTBG_C240812.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/dbKNMTH/img-10.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/101695MQGL_E211231.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/101695MQGL_A220113.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/101695MQGL_H211231.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/101695MQGL_I211231.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/101695MQGL_A211231.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/KqmpXDw/img-11.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CB230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_F230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CA230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CJ230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CF230127.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/6J369DC/img-12.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/XANFSFC_D230811.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XANFSFC_C230811.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XANFSFC_B230811.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XANFSFC_A230811.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/fCpHzJL/img-13.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/10AR02GSWF_A220520.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10AR02GSWF_C220520.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10AR02GSWF_F220520.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10AR02GSWF_G220520.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/Jc0P27F/img-14.jpg",
-        "https://product-images-cdn.liketoknow.it/.fqXVcMjHnEEzPLBjiKYhqAT8SoAOG1w7v1qC3KjI3KSnL.KyEDNm7H3mia5wVAJR09WEnryAOB1kkQ30ft6DxCCZRGcjoWErdae2woUfHFj.4JvnCQuPcHilf6QYZjzcW2pD55VQCozI4sCIn8zVwIKjxUY?v=2&auto=format&fm=webp&q=80",
-        "https://static01.nyt.com/images/2022/08/28/realestate/22shopping01/oakImage-1660837530419-superJumbo.jpg?quality=75&auto=webp",
-        "https://cdn.arhaus.com/product/StandardV2/ZFWFSTC_BL200708.jpg"
-    ],
-    [
-        "https://i.ibb.co/m87LQLD/img-15.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CB230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_F230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CA230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CJ230127.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/10718LAMS6NS_CF230127.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/yfv6Hbh/img-16.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/20AR02APLC_T230406.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/20AR02APLC_U230406.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/20AR02APLC_V230406.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/20AR02APLC_S230406.jpg?preset=Product3840x2880"
-    ],
-
-    [
-        "https://i.ibb.co/f9v6SzJ/img-17.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/CTMLTUPHASFB_A230313.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/CTMLTUPHASFB_C230313.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/CTMLTUPHASFB_F230313.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/CTMLTUPHASFB_G230313.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/CTMLTUPHASFB_B230313.jpg?preset=Product3840x2880"
-    ],
-    [
-        "https://i.ibb.co/yp1myT4/img-18.jpg",
-        "https://cdn.arhaus.com/product/StandardV2/XVRFSFC_F230327.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XVRFSFC_H230327.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XVRFSFC_I230327.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XVRFSFC_F230404.jpg?preset=Product3840x2880",
-        "https://cdn.arhaus.com/product/StandardV2/XVRFSFC_G230327.jpg?preset=Product3840x2880"
-    ]
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_E240620.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_C240620.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_A240620.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_D240620.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_B240620.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_E240510.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_C240510.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_A240510.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_B240510.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_D240510.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_E241104.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_D241104.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_B241104.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_A241104.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_C241104.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_B230221.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_A230221.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_E230221.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_D230221.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_C230221.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_G210722.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_I210722.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_H210722.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_F210722.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_J210722.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_E230712.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_C230712.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_A230712.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_B230712.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_D230712.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_E240802.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_D240802.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_B240802.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_A240802.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_C240802.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_E30708.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_C30708.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_B30708.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_D30708.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_A30708.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_D220825.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_D220825.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_C220825.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_G220825.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_G210329.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_C210329.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_D210329.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_E210329.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_B210329.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_S210212.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_R210212.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_U210212.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_T210212.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_V210212.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_BA210713.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_J231211.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_F231211.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_I231211.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_G231211.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_H231211.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_C210111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_B210111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_F210111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_H210111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_A210111.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_I211111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_H211111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_J211111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_N211111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_L211111.jpg?preset=Product1920x1440",
+  ],
 ];
- 
 
 const material = [
-    "ткань",
-    "кожзам",
-    "натуральная кожа",
-    "велюр",
-    "экокожа",
-    "микрофибра",
-    "поролон",
-    "синтепон",
-    "жаккард",
-    "пружинный блок",
-    "пух",
-    "латекс",
+  "дерево",
+  "МДФ",
+  "металл",
+  "натуральное дерево",
+  "ЛДСП",
+  "антикоррозийное покрытие",
+  "кованый металл",
+  "кожа",
+  "экокожа",
 ];
-
 const collections = [
-    "compact collection",
-    "module collection",
-    "goodnight collection",
+  "classic collection",
+  "luxury collection",
+  "modern collection",
+  "vintage collection",
+  "minimalist collection",
+  "elegant collection",
 ];
 
 const colors = [
-    "palette-gray-light",
-    "black",
-    "palette-brown",
-    "white",
-    "palette-beige",
-    "palette-green",
-    "palette-gray",
-    "palette-brown-light",
+  "palette-gray-light",
+  "black",
+  "palette-brown",
+  "white",
+  "palette-beige",
+  "palette-green",
+  "palette-gray",
+  "palette-brown-light",
 ];
 
 const discount = [true, false];
 
 const isNew = [true, false];
-
-  
-const sleepingArea = [
-    "есть",
-    "нет",
-    "полутораспальное",
-    "двуспальное",
-    "кинг-сайз",
+const bedSize = [
+  "односпальная",
+  "полутораспальная",
+  "двуспальная",
+  "кинг-сайз",
+  "евро-кровать",
+  "восточная",
 ];
-const linenBox = ["есть", "нет", "встроенный", "выдвижной"];
-const sofaType = [
-    "прямой",
-    "угловой",
-    "модульный",
-    "раскладной",
-    "диван-кровать",
-    "диван-пуф",
-    "компактный",
+
+const bedType = [
+  "классическая",
+  "подиумная",
+  "с подъемным механизмом",
+  "с мягким изголовьем",
+];
+
+const mattressType = [
+  "пружинный",
+  "беспружинный",
+  "ортопедический",
+  "анатомический",
+  "с memory foam",
 ];
 
 const names = [
-    "comforlux",
-    "foster",
-    "petrified",
-    "ramani",
-    "ivory",
-    "relaxmax",
-    "elegantform",
-    "modularease",
-    "cozynest",
-    "classicstyle",
-    "ultrasofa",
-    "dreamlounge",
-    "softline",
-    "primecomfort",
-    "spacesaver",
-    "urbanrelax",
-    "royalseat",
-    "harmonyset",
-    "flexisleep",
-    "velvettouch",
-    "cloudrest",
-    "modernfit",
+  "comfortplus",
+  "dreamlux",
+  "serenity",
+  "luxorest",
+  "sleeperra",
+  "restwell",
+  "bedora",
+  "sleepmax",
+  "dreamstyle",
+  "comfortfit",
+  "relaxlux",
+  "cloudrest",
+  "dreamtime",
+  "bedline",
+  "sleekbed",
+  "comfortex",
+  "nightrest",
+  "perfectsleep",
+  "restaura",
+  "bedlux",
+  "peacefit",
 ];
 
 const products = [
-    "удобный диван",
-    "современный диван",
-    "уютный диван",
-    "стильный диван",
-    "роскошный диван",
-    "практичный диван",
-    "просторный диван",
-  
-    "современный диван",
-
-    "классический диван",
-    "изящный диван",
-    "мягкий диван",
-    "уникальный диван",
-    "необычный диван",
+  "комфортная кровать",
+  "уютная кровать",
+  "роскошная кровать",
+  "просторная кровать",
+  "современная кровать",
+  "классическая кровать",
+  "стильная кровать",
 ];
-
 const options = [
-    {
-        "наличие подлокотников": ["есть", "нет"],
-    },
-    {
-        "ширина сиденья": ["80 см", "100 см", "120 см", "140 см"],
-    },
-    {
-        тип: [
-            "классический",
-            "раздвижной",
-            "кровать-раскладушка",
-            "с механизмом трансформации",
-            "диван-кровать",
-        ],
-    },
-    {
-        декор: [
-            "гладкая",
-            "рельефная",
-            "с орнаментом",
-            "с кнопками",
-            "с подушками",
-            "с вышивкой",
-            "с кожаным покрытием",
-        ],
-    },
-    {
-        "максимальная нагрузка": ["50 кг", "100 кг", "150 кг", "200 кг", "250 кг"],
-    },
-    {
-        "материал каркаса": ["дерево", "металл", "пластик"],
-    },
-    {
-        "тип наполнителя": ["поролон", "синтепон", "вата", "пух", "латекс"],
-    },
-    {
-        "тип обивки": ["ткань", "кожа", "экокожа", "велюр", "микрофибра"],
-    },
-    {
-        "регулировка спинки": ["есть", "нет"],
-    },
-    {
-        "наличие ящика для хранения": ["есть", "нет"],
-    },
-    {
-        "цвет каркаса": [
-            "черный",
-            "темно-коричневый",
-            "светлый",
-            "белый",
-            "деревянный",
-        ],
-    },
+  {
+    "наличие подъемного механизма": ["есть", "нет"],
+  },
+
+  {
+    декор: [
+      "гладкая",
+      "рельефная",
+      "с орнаментом",
+      "с вышивкой",
+      "с декоративными элементами",
+      "с кожаным покрытием",
+    ],
+  },
+  {
+    "максимальная нагрузка": ["100 кг", "200 кг", "300 кг", "400 кг", "500 кг"],
+  },
+  {
+    "материал каркаса": ["дерево", "металл", "пластик", "МДФ", "ДСП"],
+  },
+  {
+    "тип наполнителя матраса": [
+      "латекс",
+      "поролон",
+      "синтепон",
+      "кокосовая койра",
+      "пух",
+    ],
+  },
+  {
+    "тип обивки": ["ткань", "кожа", "экокожа", "велюр", "микрофибра"],
+  },
+  {
+    "регулировка основания": ["есть", "нет"],
+  },
+  {
+    "наличие ящика для хранения": ["есть", "нет", "встроенный", "выдвижной"],
+  },
+  {
+    "цвет каркаса": [
+      "черный",
+      "темно-коричневый",
+      "светлый",
+      "белый",
+      "деревянный",
+      "серый",
+    ],
+  },
 ];
 
 const maintenance = [
-    "Регулярно пылесосьте диван, чтобы избежать накопления пыли и грязи в обивке.",
-    "Для чистки используйте мягкие ткани или щетку, чтобы не повредить материал обивки.",
-    "Не допускайте попадания жидкости на диван, особенно если материал не водоотталкивающий.",
-    "Для тканей с чувствительным покрытием используйте средства, предназначенные для ухода за этим типом материала.",
-    "Не ставьте диван в места с высокой влажностью, чтобы избежать повреждения наполнителя и материала.",
-    "Для кожи и экокожи используйте специальные средства для ухода, чтобы поддерживать эластичность и внешний вид.",
-    "Протирайте поверхность дивана сухой или слегка увлажненной тканью, чтобы предотвратить появление пятен.",
-    "Храните диван вдали от прямых солнечных лучей, чтобы избежать выцветания или деградации материала.",
-    "Регулярно проверяйте крепление подушек и каркас дивана, чтобы предотвратить износ и повреждения.",
-    "Если диван оснащен механизмом трансформации, периодически проверяйте его работоспособность и смазывайте движущиеся части.",
-    "Не ставьте тяжелые предметы на диван, чтобы не повредить его форму и структуру.",
-    "Не допускайте частого нахождения животных на диване, чтобы избежать повреждения ткани или кожаных элементов.",
-    "При использовании дивана в общественных местах или офисах, проводите регулярную чистку для поддержания гигиеничности.",
-    "Периодически проветривайте диван, чтобы избежать накопления запахов и влаги.",
-    "Для чистки диванов с встраиваемыми подушками используйте чистку по отдельности, чтобы сохранить форму и комфорт.",
-    "Используйте специальные чехлы для защиты дивана от пыли и грязи, особенно в местах с высокой проходимостью.",
-    "Не помещайте диван рядом с источниками тепла, такими как обогреватели или радиаторы, чтобы избежать деформации материалов.",
-    "Используйте средства для ухода за наполнителями, чтобы сохранить форму и упругость сиденья на долгие годы.",
+  "Регулярно пылесосьте кровать и матрас, чтобы избежать накопления пыли и грязи.",
+  "Для чистки используйте мягкие ткани или щетку, чтобы не повредить материалы обивки и каркаса.",
+  "Не допускайте попадания жидкости на кровать, особенно если материал не водоотталкивающий.",
+  "Для тканей с чувствительным покрытием используйте средства, предназначенные для ухода за этим типом материала.",
+  "Не ставьте кровать в места с высокой влажностью, чтобы избежать повреждения наполнителя и материала.",
+  "Для кожи и экокожи используйте специальные средства для ухода, чтобы поддерживать эластичность и внешний вид.",
+  "Протирайте поверхность кровати сухой или слегка увлажненной тканью, чтобы предотвратить появление пятен.",
+  "Храните кровать вдали от прямых солнечных лучей, чтобы избежать выцветания или деградации материала.",
+  "Регулярно проверяйте крепление каркаса и подъемного механизма (если есть), чтобы предотвратить износ и повреждения.",
+  "Если кровать оснащена подъемным механизмом или ящиками для хранения, периодически проверяйте их работоспособность.",
+  "Не ставьте тяжелые предметы на кровать, чтобы не повредить ее форму и структуру.",
+  "Не допускайте частого нахождения животных на кровати, чтобы избежать повреждения ткани или кожаных элементов.",
+  "При использовании кровати в общественных местах или офисах, проводите регулярную чистку для поддержания гигиеничности.",
+  "Периодически проветривайте кровать, чтобы избежать накопления запахов и влаги.",
+  "Для чистки кроватей с встраиваемыми подушками или матрасами используйте чистку по отдельности, чтобы сохранить форму и комфорт.",
+  "Используйте специальные чехлы для защиты кровати от пыли и грязи, особенно в местах с высокой проходимостью.",
+  "Не помещайте кровать рядом с источниками тепла, такими как обогреватели или радиаторы, чтобы избежать деформации материалов.",
+  "Используйте средства для ухода за наполнителями матраса, чтобы сохранить форму и упругость на долгие годы.",
 ];
 
 const descriptions = [
-    [
-        "Этот диван — воплощение стиля и комфорта. Он идеально подходит для любого интерьера, будь то современный, классический или минималистичный стиль. Прочные материалы и изысканный дизайн делают его не только красивым, но и долговечным. Диван доступен в разных цветах и размерах, что позволяет легко подобрать модель для вашего помещения.",
-        "Кроме того, диван оснащён высококачественными материалами для сиденья, что обеспечивает комфорт на протяжении долгого времени. Он подойдёт как для гостиной, так и для офисных помещений, добавляя уюта и стиля в любую комнату.",
-    ],
-    [
-        "Диван с элегантным дизайном, который привнесёт в ваш дом атмосферу уюта и роскоши. Его простота и в то же время выразительность сделают его центральным элементом вашего интерьера. Подушки с мягкой наполнителями и удобное сиденье дарят незабываемый комфорт.",
-        "Изготовленный из высококачественных материалов, этот диван будет служить вам долгие годы. Он легко чистится и прост в уходе, что делает его отличным выбором для семей с детьми или домашними животными.",
-    ],
-    [
-        "Простой и в то же время стильный диван, который органично впишется в любой интерьер. Его минималистичный дизайн и функциональность делают его идеальным вариантом для малогабаритных квартир или офисных помещений.",
-        "Диван выполнен из прочных материалов, что обеспечивает его долговечность. Удобные подушки и простота ухода делают его идеальным выбором для ежедневного использования.",
-    ],
-    [
-        "Этот диван придаст вашему интерьеру роскошный вид и обеспечит комфорт для всей семьи. Удобные глубокие сиденья и мягкая спинка делают его идеальным для отдыха после долгого дня. Диван можно заказать в разных тканях и цветах.",
-        "Высококачественная обивка и наполнитель обеспечат долговечность и комфорт, а простота ухода сделает его отличным выбором для любого дома или офиса.",
-    ],
-    [
-        "Диван с современным дизайном и комфортными сиденьями, который станет отличным дополнением вашего интерьера. Он легко сочетается с различными стилями — от классики до модерна.",
-        "Удобные и мягкие подушки, а также прочные материалы гарантируют долговечность и комфорт. Диван будет служить вам верой и правдой многие годы.",
-    ],
-    [
-        "Элегантный и стильный диван с уникальными формами и текстурами, который станет акцентом в вашем доме. Этот диван идеально подходит для больших гостиных и современных офисов.",
-        "Собранный из качественных материалов, диван легко очищается и сохраняет свою форму. Мягкие и удобные подушки добавляют комфорта, делая отдых на этом диване приятным.",
-    ],
-    [
-        "Компактный и функциональный диван, который идеально подходит для небольших помещений. Его стильный дизайн и комфорт обеспечивают удобство для всей семьи.",
-        "Этот диван выполнен из прочных тканей, которые легко чистятся. Его можно использовать как для отдыха, так и для ночного сна, так как он оборудован механизмом трансформации.",
-    ],
-    [
-        "Диван с уникальным дизайном и качественной обивкой, который подчеркнёт стиль вашего интерьера. Он идеально подойдёт для тех, кто ценит не только внешний вид, но и функциональность.",
-        "Этот диван гарантирует комфорт и удобство, благодаря высококачественным наполнителям и продуманной конструкции. Удобные подушки создадут атмосферу уюта в вашем доме.",
-    ],
-    [
-        "Этот диван сочетает в себе стильный внешний вид и максимальный комфорт. Подушки с мягким наполнителем и удобная спинка создают идеальные условия для отдыха.",
-        "Изготовленный из материалов, которые выдержат время и не потеряют свой внешний вид, этот диван станет надежным элементом вашего интерьера.",
-    ],
-    [
-        "Модный и элегантный диван, который обеспечит не только комфорт, но и долгосрочную эксплуатацию. Он идеально впишется в любой интерьер, добавив уюта и гармонии.",
-        "Диван выполнен из прочных материалов, устойчивых к износу, и прост в уходе, что делает его идеальным выбором для повседневного использования.",
-    ],
-    [
-        "Идеальный диван для уютной гостиной. Мягкие и удобные подушки, а также стильная форма делают его отличным выбором для любого интерьера.",
-        "Этот диван с прочной каркасной конструкцией будет служить вам многие годы, обеспечивая комфорт и стиль.",
-    ],
-    [
-        "Диван с уникальной конструкцией и современным дизайном, который превратит ваше пространство в уютное и стильное место для отдыха.",
-        "Высококачественные материалы и устойчивость к износу делают этот диван долговечным, а удобство использования подарит вам настоящий комфорт.",
-    ],
-    [
-        "Уютный и функциональный диван, который станет отличным выбором для вашего дома. Прочные ткани и комфортная посадка создадут атмосферу уюта и покоя.",
-        "Подушки и сиденье, выполненные из качественного материала, обеспечат долгосрочную эксплуатацию и удобство для всей семьи.",
-    ],
-    [
-        "Диван, который идеально сочетает стиль и комфорт. Он станет центральным элементом вашей гостиной, создавая атмосферу уюта и элегантности.",
-        "Этот диван легко чистится и обладает высокой прочностью, что делает его идеальным выбором для ежедневного использования.",
-    ],
-    [
-        "Элегантный и удобный диван с мягким наполнителем, который подойдёт для любой комнаты. Стильный внешний вид и комфортное сиденье обеспечат вам приятное времяпрепровождение.",
-        "Диван изготовлен из высококачественных материалов, что гарантирует его долговечность и прочность.",
-    ],
-    [
-        "Этот диван идеально подходит для небольших помещений и квартир-студий. Компактные размеры и комфортные сиденья обеспечивают максимальное удобство при ограниченном пространстве.",
-        "Он выполнен из прочных и стойких материалов, которые легко чистятся и не теряют свою форму со временем.",
-    ],
-    [
-        "Диван с уникальным и современным дизайном, который подчеркнёт стиль вашего дома. Его комфорт и удобство удовлетворят даже самых требовательных пользователей.",
-        "Изготовленный из долговечных материалов, этот диван прослужит вам долго, оставаясь стильным и функциональным элементом интерьера.",
-    ],
-    [
-        "Этот диван будет великолепным дополнением вашего дома, придавая интерьеру стиль и уют. Просторные сиденья и мягкая спинка обеспечивают комфорт для всей семьи.",
-        "Легко чистится и ухаживается, сохраняя свой первоначальный вид и комфорт на долгие годы.",
-    ],
+  [
+    "Эта кровать — идеальное сочетание стиля и комфорта. Она отлично подойдёт для любого интерьера, будь то современный, классический или минималистичный стиль. Прочные материалы и элегантный дизайн делают её не только красивой, но и долговечной. Кровать доступна в различных размерах и цветах, что позволяет легко подобрать модель для вашего помещения.",
+    "Кроме того, кровать оснащена высококачественными материалами для матраса, что обеспечивает комфорт на протяжении долгого времени. Она подойдёт как для спальни, так и для гостевых комнат, добавляя уюта и стиля в любую комнату.",
+  ],
+  [
+    "Кровать с элегантным дизайном, которая привнесёт в ваш дом атмосферу уюта и роскоши. Простота и выразительность делают её центральным элементом вашего интерьера. Удобные подушки и комфортное основание дарят незабываемый комфорт.",
+    "Изготовленная из высококачественных материалов, эта кровать будет служить вам долгие годы. Легко чистится и проста в уходе, что делает её отличным выбором для семей с детьми или домашними животными.",
+  ],
+  [
+    "Простая, но стильная кровать, которая органично впишется в любой интерьер. Её минималистичный дизайн и функциональность делают её идеальным вариантом для малогабаритных квартир или офисных помещений.",
+    "Кровать выполнена из прочных материалов, что обеспечивает её долговечность. Удобное основание и простота ухода делают её идеальным выбором для ежедневного использования.",
+  ],
+  [
+    "Эта кровать придаст вашему интерьеру роскошный вид и обеспечит комфорт для всей семьи. Удобное основание и мягкая спинка делают её идеальной для отдыха после долгого дня. Кровать можно заказать в разных тканях и цветах.",
+    "Высококачественная обивка и наполнитель обеспечат долговечность и комфорт, а простота ухода сделает её отличным выбором для любого дома или офиса.",
+  ],
+  [
+    "Кровать с современным дизайном и комфортным основанием, которая станет отличным дополнением вашего интерьера. Она легко сочетается с различными стилями — от классики до модерна.",
+    "Удобные подушки и прочные материалы гарантируют долговечность и комфорт. Кровать будет служить вам верой и правдой многие годы.",
+  ],
+  [
+    "Элегантная и стильная кровать с уникальными формами и текстурами, которая станет акцентом в вашем доме. Эта кровать идеально подходит для больших спален и современных офисов.",
+    "Собранная из качественных материалов, кровать легко очищается и сохраняет свою форму. Мягкие и удобные подушки добавляют комфорта, делая отдых на этой кровати приятным.",
+  ],
+  [
+    "Компактная и функциональная кровать, которая идеально подходит для небольших помещений. Её стильный дизайн и комфорт обеспечивают удобство для всей семьи.",
+    "Эта кровать выполнена из прочных тканей, которые легко чистятся. Она может использоваться как для отдыха, так и для ночного сна, так как оснащена механизмом трансформации.",
+  ],
+  [
+    "Кровать с уникальным дизайном и качественной обивкой, которая подчеркнёт стиль вашего интерьера. Она идеально подойдёт для тех, кто ценит не только внешний вид, но и функциональность.",
+    "Эта кровать гарантирует комфорт и удобство благодаря высококачественным наполнителям и продуманной конструкции. Удобные подушки создадут атмосферу уюта в вашем доме.",
+  ],
+  [
+    "Эта кровать сочетает в себе стильный внешний вид и максимальный комфорт. Подушки с мягким наполнителем и удобное основание создают идеальные условия для отдыха.",
+    "Изготовленная из материалов, которые выдержат время и не потеряют свой внешний вид, эта кровать станет надёжным элементом вашего интерьера.",
+  ],
+  [
+    "Модная и элегантная кровать, которая обеспечит не только комфорт, но и долгосрочную эксплуатацию. Она идеально впишется в любой интерьер, добавив уюта и гармонии.",
+    "Кровать выполнена из прочных материалов, устойчивых к износу, и проста в уходе, что делает её идеальным выбором для повседневного использования.",
+  ],
+  [
+    "Идеальная кровать для уютной спальни. Мягкие и удобные подушки, а также стильная форма делают её отличным выбором для любого интерьера.",
+    "Эта кровать с прочной каркасной конструкцией будет служить вам многие годы, обеспечивая комфорт и стиль.",
+  ],
+  [
+    "Кровать с уникальной конструкцией и современным дизайном, которая превратит ваше пространство в уютное и стильное место для отдыха.",
+    "Высококачественные материалы и устойчивость к износу делают эту кровать долговечной, а удобство использования подарит вам настоящий комфорт.",
+  ],
+  [
+    "Уютная и функциональная кровать, которая станет отличным выбором для вашего дома. Прочные ткани и комфортное основание создадут атмосферу уюта и покоя.",
+    "Подушки и основание, выполненные из качественного материала, обеспечат долгосрочную эксплуатацию и удобство для всей семьи.",
+  ],
+  [
+    "Кровать, которая идеально сочетает стиль и комфорт. Она станет центральным элементом вашей спальни, создавая атмосферу уюта и элегантности.",
+    "Эта кровать легко чистится и обладает высокой прочностью, что делает её идеальным выбором для ежедневного использования.",
+  ],
+  [
+    "Элегантная и удобная кровать с мягким наполнителем, которая подойдёт для любой комнаты. Стильный внешний вид и комфортное основание обеспечат вам приятное времяпрепровождение.",
+    "Кровать изготовлена из высококачественных материалов, что гарантирует её долговечность и прочность.",
+  ],
+  [
+    "Эта кровать идеально подходит для небольших помещений и квартир-студий. Компактные размеры и комфортное основание обеспечивают максимальное удобство при ограниченном пространстве.",
+    "Она выполнена из прочных и стойких материалов, которые легко чистятся и не теряют свою форму со временем.",
+  ],
+  [
+    "Кровать с уникальным и современным дизайном, который подчеркнёт стиль вашего дома. Её комфорт и удобство удовлетворят даже самых требовательных пользователей.",
+    "Изготовленная из долговечных материалов, эта кровать прослужит вам долго, оставаясь стильным и функциональным элементом интерьера.",
+  ],
+  [
+    "Эта кровать будет великолепным дополнением вашего дома, придавая интерьеру стиль и уют. Просторные сиденья и мягкая спинка обеспечивают комфорт для всей семьи.",
+    "Легко чистится и ухаживается, сохраняя свой первоначальный вид и комфорт на долгие годы.",
+  ],
 ];
 
 const packing = [
-    {
-        packing: {
-            text: "Диван упакован в прочную защитную упаковку, которая обеспечивает его сохранность при транспортировке и предотвращает повреждения.",
-        },
+  {
+    packing: {
+      text: "Кровать упакована в прочную защитную упаковку, которая обеспечивает её сохранность при транспортировке и предотвращает повреждения.",
     },
-    {
-        packing: {
-            text: "Каждый диван аккуратно упакован в полиэтиленовую пленку и защищён от внешних воздействий с помощью картонных коробок для безопасной доставки.",
-        },
+  },
+  {
+    packing: {
+      text: "Каждая кровать аккуратно упакована в полиэтиленовую пленку и защищена от внешних воздействий с помощью картонных коробок для безопасной доставки.",
     },
-    {
-        packing: {
-            text: "Для обеспечения целостности изделия во время транспортировки диван помещен в устойчивую упаковку с антиударными вставками.",
-        },
+  },
+  {
+    packing: {
+      text: "Для обеспечения целостности изделия во время транспортировки кровать помещена в устойчивую упаковку с антиударными вставками.",
     },
-    {
-        packing: {
-            text: "Диван надежно упакован в прочные картонные коробки, что гарантирует его защиту от механических повреждений в процессе транспортировки.",
-        },
+  },
+  {
+    packing: {
+      text: "Кровать надежно упакована в прочные картонные коробки, что гарантирует её защиту от механических повреждений в процессе транспортировки.",
     },
-    {
-        packing: {
-            text: "Каждый элемент дивана обёрнут в защитную пленку, а затем упакован в коробку с дополнительной внутренней защитой для безопасной транспортировки.",
-        },
+  },
+  {
+    packing: {
+      text: "Каждый элемент кровати обёрнут в защитную пленку, а затем упакован в коробку с дополнительной внутренней защитой для безопасной транспортировки.",
     },
-    {
-        packing: {
-            text: "Диван упакован в специализированные защитные материалы, которые предотвращают повреждения при транспортировке и обеспечивают сохранность изделия.",
-        },
+  },
+  {
+    packing: {
+      text: "Кровать упакована в специализированные защитные материалы, которые предотвращают повреждения при транспортировке и обеспечивают сохранность изделия.",
     },
-    {
-        packing: {
-            text: "Для безопасной доставки диван упакован в несколько слоев защитного материала, включая пленку и плотную картонную упаковку.",
-        },
+  },
+  {
+    packing: {
+      text: "Для безопасной доставки кровать упакована в несколько слоев защитного материала, включая пленку и плотную картонную упаковку.",
     },
-    {
-        packing: {
-            text: "Каждая часть дивана индивидуально упакована в защитную пленку и помещена в специально подготовленную коробку для транспортировки.",
-        },
+  },
+  {
+    packing: {
+      text: "Каждая часть кровати индивидуально упакована в защитную пленку и помещена в специально подготовленную коробку для транспортировки.",
     },
-    {
-        packing: {
-            text: "Диван упакован в устойчивые коробки с защитными вставками, чтобы избежать повреждений в процессе перевозки.",
-        },
+  },
+  {
+    packing: {
+      text: "Кровать упакована в устойчивые коробки с защитными вставками, чтобы избежать повреждений в процессе перевозки.",
     },
-    {
-        packing: {
-            text: "При упаковке диван обворачивается защитной пленкой и помещается в картонную коробку с амортизирующими элементами для надежности.",
-        },
+  },
+  {
+    packing: {
+      text: "При упаковке кровать обворачивается защитной пленкой и помещается в картонную коробку с амортизирующими элементами для надежности.",
     },
-    {
-        packing: {
-            text: "Каждый диван тщательно упакован в защитную упаковку, которая гарантирует его сохранность при любых условиях транспортировки.",
-        },
+  },
+  {
+    packing: {
+      text: "Каждая кровать тщательно упакована в защитную упаковку, которая гарантирует её сохранность при любых условиях транспортировки.",
     },
-    {
-        packing: {
-            text: "Для защиты от повреждений во время транспортировки диван упакован в прочные картонные коробки с дополнительными амортизирующими слоями.",
-        },
+  },
+  {
+    packing: {
+      text: "Для защиты от повреждений во время транспортировки кровать упакована в прочные картонные коробки с дополнительными амортизирующими слоями.",
     },
-    {
-        packing: {
-            text: "Диван упакован в специально подготовленную упаковку, которая защищает его от механических повреждений при транспортировке.",
-        },
+  },
+  {
+    packing: {
+      text: "Кровать упакована в специально подготовленную упаковку, которая защищает её от механических повреждений при транспортировке.",
     },
-    {
-        packing: {
-            text: "Для надежной транспортировки диван упакован в несколько слоев защитной пленки и картонной коробки с внутренними защитными вставками.",
-        },
+  },
+  {
+    packing: {
+      text: "Для надежной транспортировки кровать упакована в несколько слоев защитной пленки и картонной коробки с внутренними защитными вставками.",
     },
-    {
-        packing: {
-            text: "Каждый диван упакован в прочную картонную коробку с защитой от внешних воздействий, чтобы обеспечить безопасную доставку.",
-        },
+  },
+  {
+    packing: {
+      text: "Каждая кровать упакована в прочную картонную коробку с защитой от внешних воздействий, чтобы обеспечить безопасную доставку.",
     },
-    {
-        packing: {
-            text: "Для безопасной доставки диван аккуратно упакован в картонную упаковку, с использованием амортизирующих материалов для защиты от ударов.",
-        },
+  },
+  {
+    packing: {
+      text: "Для безопасной доставки кровать аккуратно упакована в картонную упаковку, с использованием амортизирующих материалов для защиты от ударов.",
     },
-    {
-        packing: {
-            text: "Каждый диван упакован в защитную упаковку, которая гарантирует его сохранность при транспортировке и предотвращает повреждения от внешних факторов.",
-        },
+  },
+  {
+    packing: {
+      text: "Каждая кровать упакована в защитную упаковку, которая гарантирует её сохранность при транспортировке и предотвращает повреждения от внешних факторов.",
     },
-    {
-        packing: {
-            text: "Диван упакован в специальную упаковку, обеспечивающую надежную защиту от повреждений при транспортировке и хранении.",
-        },
+  },
+  {
+    packing: {
+      text: "Кровать упакована в специальную упаковку, обеспечивающую надежную защиту от повреждений при транспортировке и хранении.",
     },
+  },
 ];
 
 const materials = [
-    {
-        materials: {
-            "основной материал": "микрофибра",
-            каркас: "деревянный",
-            покрытие: "матовое",
-            декор: "гладкая",
-        },
+  {
+    materials: {
+      "основной материал": "микрофибра",
+      каркас: "деревянный",
+      покрытие: "матовое",
+      декор: "гладкая",
     },
-    {
-        materials: {
-            обивка: "кожа",
-            каркас: "металлический",
-            наполнитель: "латекс",
-            спецификация: "водоотталкивающее покрытие",
-        },
+  },
+  {
+    materials: {
+      обивка: "кожа",
+      каркас: "металлический",
+      наполнитель: "латекс",
+      спецификация: "водоотталкивающее покрытие",
     },
-    {
-        materials: {
-            "основной материал": "ткань",
-            каркас: "деревянный",
-            покрытие: "гладкое",
-            декор: "с орнаментом",
-        },
+  },
+  {
+    materials: {
+      "основной материал": "ткань",
+      каркас: "деревянный",
+      покрытие: "гладкое",
+      декор: "с орнаментом",
     },
-    {
-        materials: {
-            обивка: "велюр",
-            каркас: "металлический",
-            наполнитель: "поролон",
-            спецификация: "съемные чехлы",
-        },
+  },
+  {
+    materials: {
+      обивка: "велюр",
+      каркас: "металлический",
+      наполнитель: "поролон",
+      спецификация: "съемные чехлы",
     },
-    {
-        materials: {
-            "основной материал": "микрофибра",
-            каркас: "деревянный",
-            покрытие: "глянцевое",
-            декор: "рельефное",
-        },
+  },
+  {
+    materials: {
+      "основной материал": "микрофибра",
+      каркас: "деревянный",
+      покрытие: "глянцевое",
+      декор: "рельефное",
     },
-    {
-        materials: {
-            обивка: "кожа",
-            каркас: "металлический",
-            наполнитель: "латекс",
-            спецификация: "антиаллергенная обработка",
-        },
+  },
+  {
+    materials: {
+      обивка: "кожа",
+      каркас: "металлический",
+      наполнитель: "латекс",
+      спецификация: "антиаллергенная обработка",
     },
-    {
-        materials: {
-            "основной материал": "ткань",
-            каркас: "деревянный",
-            покрытие: "матовое",
-            декор: "с орнаментом",
-        },
+  },
+  {
+    materials: {
+      "основной материал": "ткань",
+      каркас: "деревянный",
+      покрытие: "матовое",
+      декор: "с орнаментом",
     },
-    {
-        materials: {
-            обивка: "велюр",
-            каркас: "металлический",
-            наполнитель: "синтепон",
-            спецификация: "устойчивость к выцветанию",
-        },
+  },
+  {
+    materials: {
+      обивка: "велюр",
+      каркас: "металлический",
+      наполнитель: "синтепон",
+      спецификация: "устойчивость к выцветанию",
     },
-    {
-        materials: {
-            "основной материал": "кожа",
-            каркас: "металлический",
-            покрытие: "глянцевое",
-            декор: "гладкая",
-        },
+  },
+  {
+    materials: {
+      "основной материал": "кожа",
+      каркас: "металлический",
+      покрытие: "глянцевое",
+      декор: "гладкая",
     },
-    {
-        materials: {
-            обивка: "ткань",
-            каркас: "деревянный",
-            наполнитель: "латекс",
-            спецификация: "съемные подушки",
-        },
+  },
+  {
+    materials: {
+      обивка: "ткань",
+      каркас: "деревянный",
+      наполнитель: "латекс",
+      спецификация: "съемные подушки",
     },
-    {
-        materials: {
-            "основной материал": "микрофибра",
-            каркас: "металлический",
-            покрытие: "матовое",
-            декор: "с орнаментом",
-        },
+  },
+  {
+    materials: {
+      "основной материал": "микрофибра",
+      каркас: "металлический",
+      покрытие: "матовое",
+      декор: "с орнаментом",
     },
-    {
-        materials: {
-            обивка: "кожа",
-            каркас: "деревянный",
-            наполнитель: "поролон",
-            спецификация: "устойчивость к механическим повреждениям",
-        },
+  },
+  {
+    materials: {
+      обивка: "кожа",
+      каркас: "деревянный",
+      наполнитель: "поролон",
+      спецификация: "устойчивость к механическим повреждениям",
     },
-    {
-        materials: {
-            "основной материал": "велюр",
-            каркас: "металлический",
-            покрытие: "глянцевое",
-            декор: "рельефное",
-        },
+  },
+  {
+    materials: {
+      "основной материал": "велюр",
+      каркас: "металлический",
+      покрытие: "глянцевое",
+      декор: "рельефное",
     },
-    {
-        materials: {
-            обивка: "ткань",
-            каркас: "деревянный",
-            наполнитель: "синтепон",
-            спецификация: "антибактериальная обработка",
-        },
+  },
+  {
+    materials: {
+      обивка: "ткань",
+      каркас: "деревянный",
+      наполнитель: "синтепон",
+      спецификация: "антибактериальная обработка",
     },
-    {
-        materials: {
-            "основной материал": "кожа",
-            каркас: "деревянный",
-            покрытие: "матовое",
-            декор: "гладкая",
-        },
+  },
+  {
+    materials: {
+      "основной материал": "кожа",
+      каркас: "деревянный",
+      покрытие: "матовое",
+      декор: "гладкая",
     },
-    {
-        materials: {
-            обивка: "микрофибра",
-            каркас: "металлический",
-            наполнитель: "латекс",
-            спецификация: "термостойкость",
-        },
+  },
+  {
+    materials: {
+      обивка: "микрофибра",
+      каркас: "металлический",
+      наполнитель: "латекс",
+      спецификация: "термостойкость",
     },
-    {
-        materials: {
-            "основной материал": "ткань",
-            каркас: "деревянный",
-            покрытие: "матовое",
-            декор: "с орнаментом",
-        },
+  },
+  {
+    materials: {
+      "основной материал": "ткань",
+      каркас: "деревянный",
+      покрытие: "матовое",
+      декор: "с орнаментом",
     },
-    {
-        materials: {
-            обивка: "велюр",
-            каркас: "металлический",
-            наполнитель: "синтепон",
-            спецификация: "легкость в уходе",
-        },
+  },
+  {
+    materials: {
+      обивка: "велюр",
+      каркас: "металлический",
+      наполнитель: "синтепон",
+      спецификация: "легкость в уходе",
     },
+  },
 ];
 
- 
- 
- 
-
 const random = (max, min = 0) => {
-    return Math.floor(Math.random() * (max - min) + min);
+  return Math.floor(Math.random() * (max - min) + min);
 };
 
 let sofas = [];
 
 for (let i = 0; i <= 89; i++) {
-    let probject = { id: i + 1 };
+  let probject = { id: i + 1 };
 
-    probject.bestseller = bestseller[random(3, 1) - 1];
-    probject.collection = collections[random(collections.length)];
-    probject.product = products[random(products.length)];
-    probject.colors = Array.from(
-        new Set(
-            Array(random(5, 2))
-                .fill(null)
-                .map((el, i) => colors[random(colors.length)])
-        )
-    );
-    probject.discount = discount[random(3, 1) - 1];
-    probject.isNew = isNew[random(3, 1) - 1];
-    probject.material = material[random(material.length)];
-    probject.name = names[random(names.length)];
-    probject.price = Math.round(random(250000, 30000) / 1000) * 1000;
-    probject.rating = (Math.random() * (5 - 3.8) + 3.8).toFixed(1);
+  probject.bestseller = bestseller[random(3, 1) - 1];
+  probject.collection = collections[random(collections.length)];
+  probject.product = products[random(products.length)];
+  probject.colors = Array.from(
+    new Set(
+      Array(random(5, 2))
+        .fill(null)
+        .map((el, i) => colors[random(colors.length)])
+    )
+  );
+  probject.discount = discount[random(3, 1) - 1];
+  probject.isNew = isNew[random(3, 1) - 1];
+  probject.material = material[random(material.length)];
+  probject.name = names[random(names.length)];
+  probject.price = Math.round(random(250000, 30000) / 1000) * 1000;
+  probject.rating = (Math.random() * (5 - 3.8) + 3.8).toFixed(1);
 
-    const nums = new Set();
-    let maintenancearray = [];
-    while (nums.size < 6) {
-        let number = random(maintenance.length);
-        if (!nums.has(number)) {
-            nums.add(number);
-            maintenancearray.push(maintenance[number]);
-        }
+  const nums = new Set();
+  let maintenancearray = [];
+  while (nums.size < 6) {
+    let number = random(maintenance.length);
+    if (!nums.has(number)) {
+      nums.add(number);
+      maintenancearray.push(maintenance[number]);
     }
+  }
 
-    const nums2 = new Set();
-    let optarr = [];
-    while (nums2.size < 6) {
-        let number = random(options.length);
-        if (!nums2.has(number)) {
-            nums2.add(number);
-            optarr.push(options[number]);
-        }
+  const nums2 = new Set();
+  let optarr = [];
+  while (nums2.size < 6) {
+    let number = random(options.length);
+    if (!nums2.has(number)) {
+      nums2.add(number);
+      optarr.push(options[number]);
     }
+  }
+  mattressType;
+  probject.bedSize = bedSize[random(bedSize.length)];
+  probject.bedType = bedType[random(bedType.length)];
+  probject.bedType = bedType[random(bedType.length)];
 
-    probject.sleepingArea = sleepingArea[random(sleepingArea.length)];
-    probject.linenBox = linenBox[random(linenBox.length)];
-    probject.sofaType = sofaType[random(sofaType.length)];
+  probject.width = Math.round(random(100, 350) / 100) * 100;
+  const sizes = {
+    ширина: [probject.width],
 
-    probject.depth = Math.round(random(50, 100) / 10) * 10;
-    probject.width = Math.round(random(100, 350) / 100) * 100;
-    const sizes = {
-        ширина: [probject.width],
+    высота: [Math.round(random(100, 130) / 10) * 10],
+    вес: [Math.round(random(100, 170) / 10) * 10],
+  };
 
-        высота: [Math.round(random(50, 80) / 10) * 10],
-        вес: [Math.round(random(50, 80) / 10) * 10],
-    };
+  const a = Object.entries(sizes);
+  a.forEach(([key, value], i) => {
+    for (let i = 0; i < 3; i++) {
+      sizes[key].push(sizes[key][i] + 20);
+    }
+  });
+  a.forEach(([key, value], i) => {
+    for (let i = 0; i < 4; i++) {
+      sizes[key][i] += key !== "вес" ? " см" : " кг";
+    }
+  });
 
-    const a = Object.entries(sizes);
-    a.forEach(([key, value], i) => {
-        for (let i = 0; i < 3; i++) {
-            sizes[key].push(sizes[key][i] + 20);
-        }
-    });
-    a.forEach(([key, value], i) => {
-        for (let i = 0; i < 4; i++) {
-            sizes[key][i] += key !== "вес" ? " см" : " кг";
-        }
-    });
-
-    probject.characteristics = [
+  probject.characteristics = [
+    {
+      dimensions: [
         {
-            dimensions: [
-                {
-                    ширина: sizes.ширина.map((el, i) => {
-                        return { value: el.replace(" см", ""), unit: "см" };
-                    }),
-                },
-                {
-                    высота: sizes.высота.map((el, i) => {
-                        return { value: el.replace(" см", ""), unit: "см" };
-                    }),
-                },
-            ],
+          ширина: sizes.ширина.map((el, i) => {
+            return { value: el.replace(" см", ""), unit: "см" };
+          }),
         },
-        { options: [{ "цвет": "_" }, ...optarr] },
-    ];
+        {
+          высота: sizes.высота.map((el, i) => {
+            return { value: el.replace(" см", ""), unit: "см" };
+          }),
+        },
+      ],
+    },
+    { options: [{ цвет: "_" }, ...optarr] },
+  ];
 
-    probject.technicalSpecifications = {
-        sizes,
-        materials: materials[random(materials.length)].materials,
-    };
+  probject.technicalSpecifications = {
+    sizes,
+    materials: materials[random(materials.length)].materials,
+  };
 
-    probject.maintenance = maintenancearray;
-    probject.packing = packing[random(packing.length)].packing;
-    probject.productDescription = {
-        text: descriptions[random(descriptions.length)]
-    }
-    probject.images = i <= 17 ? images[i] : images[random(images.length)]
-    probject.advatnages = advantages[random(advantages.length)];
-    sofas.push(probject);
-     
-   
+  probject.maintenance = maintenancearray;
+  probject.packing = packing[random(packing.length)].packing;
+  probject.productDescription = {
+    text: descriptions[random(descriptions.length)],
+  };
+  probject.images = images[random(images.length)];
+  probject.advatnages = advantages[random(advantages.length)];
+  sofas.push(probject);
 }
 
- 
+console.log(sofas);
 
 export default function Gen() {
-    return <div></div>;
+  return <div></div>;
 }

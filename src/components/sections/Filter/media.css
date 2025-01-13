@@ -1,125 +1,113 @@
 @media all and (max-width: 1024px) {
-    #filter .section-layout {
-        display: block;
-    }
+  #filter .section-layout {
+    display: block;
+  }
 
-    .filter-params {
-        position: absolute;
-        top: 10px;
-        left: 0;
-        padding: 40px 30px;
-        background-color: var(--white);
-        width: 280px;
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-        z-index: 5;
-        border: 0.5px solid var(--line-bg);
-        overflow-y: scroll;
-        min-height: 200px;
-    }
+  .filter-params {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 40px 30px;
+    background-color: var(--white);
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    z-index: 5;
+    border: 0.5px solid var(--line-bg);
+    overflow-y: scroll;
+    min-height: 200px;
+  }
 
-
-    #filter .pagination {
-        margin-left: 0;
-    }
-
-
-
-
+  #filter .pagination {
+    margin-left: 0;
+  }
 }
 
 @media all and (max-width: 769px) {
+  .error,
+  .loading,
+  .no-results {
+    grid-column: 1/-1;
+  }
 
-    .error,
-    .loading,
-    .no-results {
-        grid-column: 1/-1;
-    }
+  #filter .filter-display {
+    grid-template-areas: initial;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    #filter .filter-display {
-        grid-template-areas: initial;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  #filter .filter-display #article {
+    margin-bottom: 30px;
+  }
 
-    #filter .filter-display #article {
-        margin-bottom: 30px;
-    }
+  #filter .filter-display .filter-item,
+  #filter .filter-display #article {
+    grid-area: initial !important;
+  }
 
+  #filter .filter-display #article {
+    grid-column: 1/-1 !important;
+    height: auto;
+    min-height: calc(var(--filter-item-img-height) + 46px);
+  }
 
-    #filter .filter-display .filter-item,
-    #filter .filter-display #article {
-        grid-area: initial !important
-    }
-
-    #filter .filter-display #article {
-        grid-column: 1/-1 !important;
-        height: auto;
-        min-height: calc(var(--filter-item-img-height) + 46px);
-    }
-
-    #filter .filter-display .placeholder {
-        height: var(--filter-item-img-height) !important;
-    }
-
+  #filter .filter-display .placeholder {
+    height: var(--filter-item-img-height) !important;
+  }
 }
 
 @media all and (max-width: 480px) {
+  #filter .filter-display {
+    grid-template-areas: initial;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    #filter .filter-display {
-        grid-template-areas: initial;
-        grid-template-columns: 1fr 1fr;
-    }
+  #filter .filter-display > div:nth-child(3n),
+  #filter .filter-display .filter-item:nth-child(9),
+  #filter .filter-display #article + div {
+    grid-column: 1/-1 !important;
+  }
 
-    #filter .filter-display>div:nth-child(3n),
-    #filter .filter-display .filter-item:nth-child(9),
-    #filter .filter-display #article+div {
-        grid-column: 1/-1 !important;
-    }
+  #filter .filter-display > div:nth-child(3n) .placeholder,
+  #filter .filter-display #article + div .placeholder,
+  #filter .filter-display .filter-item:nth-child(9) .placeholder {
+    height: calc(var(--filter-item-img-height) * 2 + 101px) !important;
+  }
 
-    #filter .filter-display>div:nth-child(3n) .placeholder,
-    #filter .filter-display #article+div .placeholder,
-    #filter .filter-display .filter-item:nth-child(9) .placeholder {
-        height: calc(var(--filter-item-img-height) * 2 + 101px) !important;
-    }
-
-    #filter .pagination .row:nth-child(1) {
-        justify-content: center !important;
-    }
-
+  #filter .pagination .row:nth-child(1) {
+    justify-content: center !important;
+  }
 }
-
 
 #modal-root .filter-params {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    left: 0;
-    overflow-y: scroll;
-    z-index: 555;
-    border-radius: unset;
-    padding: 0 30px 40px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  z-index: 555;
+  border-radius: unset;
+  padding: 0 30px 40px;
 }
 
-#modal-root .filter-params>.row:nth-child(1) {
-    width: 100%;
-    padding-bottom: unset;
-    position: relative;
-    border-bottom: unset;
+#modal-root .filter-params > .row:nth-child(1) {
+  width: 100%;
+  padding-bottom: unset;
+  position: relative;
+  border-bottom: unset;
 }
 
-#modal-root .filter-params>.row:nth-child(1)::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -32px;
-    width: 128%;
-    height: 1px;
-    background-color: var(--line-bg);
-
+#modal-root .filter-params > .row:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -32px;
+  width: 128%;
+  height: 1px;
+  background-color: var(--line-bg);
 }
 
 #modal-root .filter-params .text-heading {
-    font-size: 24px;
-    line-height: 74px;
-    font-weight: 400;
+  font-size: 24px;
+  line-height: 74px;
+  font-weight: 400;
 }

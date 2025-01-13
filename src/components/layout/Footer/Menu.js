@@ -23,7 +23,7 @@ export default function Menu() {
                     <Link to={"catalog/sofas"}>Диваны</Link>
                 </li>
                 <li>
-                    <Link>Кровати</Link>
+                    <Link to={"catalog/beds"}>Кровати</Link>
                 </li>
                 <li>
                     <Link>Бескаркасная мебель</Link>

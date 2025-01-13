@@ -1,30 +1,42 @@
 #filter {
-    padding-top: 42px;
+  padding-top: 42px;
 }
 
 #filter .container {
-    overflow: unset;
-    max-width: 1438px;
+  overflow: unset;
+  max-width: 1438px;
 }
 
- 
+#beds-intro + section + #filter .filter-display img {
+  object-fit: contain !important;
+}
+
+#beds-intro + section + #filter .filter-display .placeholder span {
+  background-color: var(--white);
+}
+
+#beds-intro + #filter .filter-display img {
+  object-fit: contain !important;
+}
+
 #filter .filter-header {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-#filter .filter-header>div:nth-child(1) {
-    padding-bottom: var(--grid-padding);
+#filter .filter-header > div:nth-child(1) {
+  padding-bottom: var(--grid-padding);
 }
 
 #filter .pagination {
-    margin-left: 240px;
-    grid-column: 1 / -1;
+  margin-left: 240px;
+  grid-column: 1 / -1;
 }
 
-#filter .loading, #filter .error {
-    padding-bottom: var(--grid-padding);
+#filter .loading,
+#filter .error {
+  padding-bottom: var(--grid-padding);
 }
 
-#filter .collection-filter  .custom-checkbox {
-    margin-bottom: 3px;
+#filter .collection-filter .custom-checkbox {
+  margin-bottom: 3px;
 }
