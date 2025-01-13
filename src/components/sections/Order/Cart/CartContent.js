@@ -17,15 +17,17 @@ export default function CartContent({
     const { products } = userCartStore();
 
     const allowScroll = useCallback(() => {
-        scrollbarAccess.current.updatePluginOptions("overflow", { open: false });
+        if (scrollbarAccess.current) { scrollbarAccess.current.updatePluginOptions("overflow", { open: false }); }
+
     }, [scrollbarAccess]);
 
     const disableScroll = () => {
         const height = elRef?.current?.scrollHeight;
         if (height > 470) {
-            scrollbarAccess.current.updatePluginOptions("overflow", { open: true });
+            if (scrollbarAccess.current) { scrollbarAccess.current.updatePluginOptions("overflow", { open: true }); }
         }
     };
+
 
     useEffect(() => {
         allowScroll();

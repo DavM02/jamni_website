@@ -9,7 +9,7 @@ export default function CatalogSections({path}) {
 
 
     const pathExists = ['decor', "sofas", "poufs", "chairs"].includes(path)
-
+ 
     
     return (
        

@@ -18,7 +18,7 @@ export default function MoreProducts({ headline = "еще товары" }) {
         10
     ]);
 
-    console.log(data)
+ 
     return (
         <section id='more-products'>
             <div className='container'>

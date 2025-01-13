@@ -1,6 +1,6 @@
 import React from 'react';
 import Observer from './Observer';
-import './scroll.css'
+
 function AnimatedText({ text, as, center}) {
     let index = 0;
 

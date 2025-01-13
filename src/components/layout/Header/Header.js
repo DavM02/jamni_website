@@ -34,7 +34,7 @@ export default function Header() {
 
 
     }
-  }, [scrollbarAccess]);
+  }, [scrollbarAccess, query]);
 
 
 

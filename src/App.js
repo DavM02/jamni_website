@@ -23,7 +23,7 @@ import Gen from "./data/generateData";
 function App() {
   const location = useLocation();
   const [renderApp, setRenderApp] = useState(false)
-  return (
+   return (
     <>
       {renderApp && <Cursor />}
       <Gen/>

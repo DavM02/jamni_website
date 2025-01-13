@@ -1,46 +1,61 @@
 import React, { useLayoutEffect, useRef, useContext } from 'react';
 import Scrollbar, { ScrollbarPlugin } from 'smooth-scrollbar';
 import { MainContext } from '../../context/MainContext';
-
+import './scroll.css'
+import useMediaQ from '../../hooks/useMediaQ'
 export default function SmoothScroll({ children }) {
     const scrollRef = useRef(null);
     const { scrollbarAccess } = useContext(MainContext);
-     useLayoutEffect(() => {
+
+    const query = useMediaQ('(min-width: 767px)');
+
+
+    useLayoutEffect(() => {
         let scrollbar;
+        let resizeObserver
+        if (query) {
+            const initScrollbar = () => {
+                if (scrollRef.current) {
+                    scrollbar = Scrollbar.init(scrollRef.current, {
+                        damping: 0.09,
+                        alwaysShowTrack: true,
+                        renderByPixels: true,
+                    });
 
-        const initScrollbar = () => {
+                    scrollbarAccess.current = scrollbar;
+                }
+            };
+
+            const handleResize = () => {
+                if (scrollRef.current) {
+                    initScrollbar();
+                }
+            };
+
+            resizeObserver = new ResizeObserver(handleResize);
             if (scrollRef.current) {
-                scrollbar = Scrollbar.init(scrollRef.current, {
-                    damping: 0.09,
-                    alwaysShowTrack: true,
-                    renderByPixels: true,
-                });
-
-                scrollbarAccess.current = scrollbar;
+                resizeObserver.observe(scrollRef.current);
             }
-        };
-
-        const handleResize = () => {
-            if (scrollRef.current) {
-                initScrollbar();
-            }
-        };
-
-        const resizeObserver = new ResizeObserver(handleResize);
-        if (scrollRef.current) {
-            resizeObserver.observe(scrollRef.current); 
         }
- 
+
+
+
         return () => {
+
             if (scrollbar) {
                 scrollbar.destroy();
             }
-            resizeObserver.disconnect();
+            if (resizeObserver) {
+                resizeObserver.disconnect();
+            }
         };
-    }, []);  
+    }, [query, scrollbarAccess]);
 
     return (
-        <div id="scroll-wrapper" ref={scrollRef}>
+        <div id="scroll-wrapper" style={{
+            position: query ? 'fixed' : 'unset',
+            height: query ? 'unset' : '100%'
+        }} ref={scrollRef}>
             {children}
         </div>
     );

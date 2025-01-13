@@ -1054,7 +1054,7 @@ for (let i = 0; i <= 89; i++) {
    
 }
 
-console.log(sofas);
+ 
 
 export default function Gen() {
     return <div></div>;

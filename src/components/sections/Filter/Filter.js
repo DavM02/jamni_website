@@ -34,7 +34,7 @@ export default function Filter({ path }) {
 
     const isDesktop = useMediaQ('(max-width: 1023px)');
     const isMobile = useMediaQ('(max-width: 480px)');
-    console.log(dataLength)
+ 
     return (
         <section id="filter">
             <div className="container" >

@@ -54,10 +54,7 @@
         grid-template-areas: "a b"
             "c b";
     }
-
-    #contacts .section-layout>div:nth-child(1) {
-        grid-area: a;
-    }
+ 
 
     #contacts .section-layout>div:nth-child(2) {
         grid-area: c;
@@ -74,6 +71,7 @@
         border-right: none;
         justify-self: initial;
         padding-right: 0;
+        grid-area: a;
     }
 
 }
@@ -93,6 +91,12 @@
         padding: 0 var(--container-padding);
             gap: 50px;
     }
+
+         #contacts .text-center {
+            padding: 0 var(--container-padding);
+         }
+
+           
 
     #contacts .section-layout>div:nth-child(2) {
         margin: 40px 0;

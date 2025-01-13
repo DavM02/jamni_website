@@ -79,7 +79,7 @@ export async function getReviewsCount() {
 
 export async function getItem([id, dbName]) {
   try {
-    console.log(id, dbName)
+ 
     const articlesRef = ref(database, dbName);
     const q = query(articlesRef, orderByChild("id"), equalTo(id));
 
