@@ -61,6 +61,11 @@ export default function SmoothScroll({ children }) {
             };
         }
 
+        if ('scrollRestoration' in window.history) {
+            window.history.scrollRestoration = 'manual';
+        }
+
+
         function noScrollOnce(event) {
             event.preventDefault();
             // document.removeEventListener('scroll', noScrollOnce);
