@@ -24,14 +24,18 @@ function PageTransition(Component) {
 
 
     useEffect(() => {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'auto'
-      });
+  
       if (scrollbarAccess.current) {
         scrollbarAccess.current.scrollTo(0, 0);
       }  
+
+      return () => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'auto'
+        });
+      }
        
 
     }, []);
