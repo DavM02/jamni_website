@@ -11,7 +11,7 @@ import img7 from '../../assets/img_12.webp';
 import img8 from '../../assets/img_13.webp';
 import img9 from '../../assets/img_14.webp';
 import img10 from '../../assets/beds/img_5.webp';
- 
+
 export default function AppLoading({ setRenderApp }) {
     function generateRandomNumber() {
         return Math.min(9, Math.floor(Math.random() * 9));
@@ -20,29 +20,31 @@ export default function AppLoading({ setRenderApp }) {
     const numbers = useMemo(() => [
         Array(22).fill(null).map((el, i) => i === 0 ? 1 : generateRandomNumber()),
         Array(22).fill(null).map((el, i) => i === 0 ? 0 : generateRandomNumber()),
-        Array(22).fill(0+'%')
+        Array(22).fill(0 + '%')
     ], []);
 
     const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
     const [loaded, setLoaded] = useState(0);
 
     useEffect(() => {
-      
-        const isAnimationCompleted = sessionStorage.getItem('animationCompleted');
-        if (isAnimationCompleted) {
-            setRenderApp(true);
-            setLoaded(3);
-        } else {
-            setTimeout(() => {
-                setLoaded(1);
-            }, 100);
-            sessionStorage.setItem('animationCompleted', 'true');
-        }
 
-        return(() => {
+        setTimeout(() => {
+            const isAnimationCompleted = sessionStorage.getItem('animationCompleted');
+            if (isAnimationCompleted) {
+                setRenderApp(true);
+                setLoaded(3);
+            } else {
+                setTimeout(() => {
+                    setLoaded(1);
+                }, 100);
+                sessionStorage.setItem('animationCompleted', 'true');
+            }
+        }, (10));
+
+        return (() => {
             sessionStorage.removeItem('animationCompleted')
         })
-    
+
     }, [setRenderApp]);
 
 
@@ -50,7 +52,7 @@ export default function AppLoading({ setRenderApp }) {
     //     sessionStorage.setItem('animationCompleted', 'true');
     // }, [])
 
-   
+
 
     return (
         <>

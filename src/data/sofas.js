@@ -275,104 +275,15 @@ const bestseller = [true, false];
 
 const images = [
   [
-    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_E240620.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_C240620.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_A240620.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_D240620.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_B240620.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/10G132SWGLPB_O240709.jpg?preset=Product3840x2880",
+    "https://cdn.arhaus.com/product/StandardV2/10G132SWGLPB_N240709.jpg?preset=Product3840x2880",
+    "https://cdn.arhaus.com/product/StandardV2/10G132SWGLPB_K240709.jpg?preset=Product3840x2880",
+    "https://cdn.arhaus.com/product/StandardV2/10G132SWGLPB_L240709.jpg?preset=Product3840x2880",
+    "https://cdn.arhaus.com/product/StandardV2/10G132SWGLPB_M240709.jpg?preset=Product3840x2880"
   ],
   [
-    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_E240510.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_C240510.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_A240510.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_B240510.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_D240510.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_E241104.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_D241104.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_B241104.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_A241104.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_C241104.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_B230221.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_A230221.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_E230221.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_D230221.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_C230221.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_G210722.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_I210722.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_H210722.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_F210722.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_J210722.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_E230712.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_C230712.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_A230712.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_B230712.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_D230712.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_E240802.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_D240802.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_B240802.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_A240802.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_C240802.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_E30708.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_C30708.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_B30708.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_D30708.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_A30708.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_D220825.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_D220825.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_C220825.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_G220825.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_G210329.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_C210329.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_D210329.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_E210329.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_B210329.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_S210212.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_R210212.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_U210212.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_T210212.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_V210212.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_BA210713.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_J231211.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_F231211.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_I231211.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_G231211.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_H231211.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_C210111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_B210111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_F210111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_H210111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_A210111.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_I211111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_H211111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_J211111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_N211111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_L211111.jpg?preset=Product1920x1440",
-  ],
+    
+  ]
 ];
 
 const material = [
@@ -898,7 +809,7 @@ for (let i = 0; i <= 89; i++) {
       optarr.push(options[number]);
     }
   }
-  mattressType;
+ 
   probject.bedSize = bedSize[random(bedSize.length)];
   probject.bedType = bedType[random(bedType.length)];
   probject.bedType = bedType[random(bedType.length)];
@@ -952,7 +863,7 @@ for (let i = 0; i <= 89; i++) {
     text: descriptions[random(descriptions.length)],
   };
   probject.images = images[random(images.length)];
-  probject.advatnages = advantages[random(advantages.length)];
+  probject.advantages = advantages[random(advantages.length)];
   sofas.push(probject);
 }
 

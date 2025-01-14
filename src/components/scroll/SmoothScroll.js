@@ -61,7 +61,13 @@ export default function SmoothScroll({ children }) {
             };
         }
 
-
+        function noScrollOnce(event) {
+            event.preventDefault();
+            // document.removeEventListener('scroll', noScrollOnce);
+        }
+        window.onpopstate = function () {
+            document.addEventListener('scroll', noScrollOnce);
+        }
 
  
     }, [query, scrollbarAccess]);
