@@ -2,18 +2,20 @@
     position: fixed;
     z-index: 99999990;
     width: 100%;
-    height: 100%;
-    background-color: var(--placeholder-1);
+    height: 100lvh;
+    background-color: var(--black);
     top: 0;left: 0;
+    will-change: clip-path;
     pointer-events: all;
     --loading-height:clamp(6.25rem, 3.75rem + 12.5vw, 18.75rem);
     transition: var(--transition) 1s 1s clip-path;
 }
 
 #app-loading h1 {
-    color: var(--black);
+    color: var(--line-bg);
     font-size: var(--loading-height);
     line-height: var(--loading-height);
+    font-weight: lighter;
     text-align: end;
 }
 
