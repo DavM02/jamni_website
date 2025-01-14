@@ -2,13 +2,12 @@
     position: fixed;
     z-index: 99999990;
     width: 100%;
-    height: 100svh;
+    height: 100vh;
     background-color: var(--black);
-   inset: 0;
-
+    inset: 0;
     will-change: clip-path;
     pointer-events: all;
-    --loading-height:clamp(6.25rem, 3.75rem + 12.5vw, 18.75rem);
+    --loading-height: clamp(6.25rem, 3.75rem + 12.5vw, 18.75rem);
     transition: var(--transition) 1s 1s clip-path;
     overscroll-behavior: none;
 }
@@ -42,12 +41,13 @@
     width: 300px;
     height: 400px;
     position: absolute;
-    top: 50%;left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-transition: var(--transition) 1s clip-path;
+    transition: var(--transition) 1s clip-path;
 }
 
-#app-loading .app-loading-images .image{
+#app-loading .app-loading-images .image {
 
     position: absolute;
     right: 0;
