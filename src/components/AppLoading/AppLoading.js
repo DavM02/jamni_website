@@ -27,31 +27,24 @@ export default function AppLoading({ setRenderApp }) {
     const [loaded, setLoaded] = useState(0);
 
     useEffect(() => {
-
-        setTimeout(() => {
-            const isAnimationCompleted = sessionStorage.getItem('animationCompleted');
-            if (isAnimationCompleted) {
-                setRenderApp(true);
-                setLoaded(3);
-            } else {
-                setTimeout(() => {
-                    setLoaded(1);
-                }, 100);
+ 
+        const isAnimationCompleted = sessionStorage.getItem('animationCompleted');
+        if (isAnimationCompleted) {
+            setRenderApp(true);
+            setLoaded(3);
+        } else {
+            setTimeout(() => {
+                setLoaded(1);
                 sessionStorage.setItem('animationCompleted', 'true');
-            }
-        }, (10));
+            }, 100);
+          
+        }
 
         return (() => {
             sessionStorage.removeItem('animationCompleted')
         })
 
     }, [setRenderApp]);
-
-
-    // useEffect(() => {
-    //     sessionStorage.setItem('animationCompleted', 'true');
-    // }, [])
-
 
 
     return (
