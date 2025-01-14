@@ -6,7 +6,7 @@
 @import "./styles/typography.css";
 @import "./styles/shared.css";
 
-body {
+body, html {
   overscroll-behavior: none;
 }
 

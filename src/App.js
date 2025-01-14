@@ -28,7 +28,7 @@ function App() {
       {renderApp && <Cursor />}
       <Gen/>
       <AppLoading setRenderApp={setRenderApp} />
-      <div className="App" style={{ visibility: !renderApp ? 'hidden' : 'initial' }}>
+       <div className="App" style={{ visibility: !renderApp ? 'hidden' : 'initial', overflow: !renderApp ? 'hidden' : 'unset', }}>
         <MainContextProvider>
           <MotionConfig
             transition={{
