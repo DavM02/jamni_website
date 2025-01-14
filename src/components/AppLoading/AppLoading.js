@@ -57,13 +57,13 @@ export default function AppLoading({ setRenderApp }) {
     return (
         <>
             {
-               ReactDOM.createPortal(
+                loaded !== 3 && ReactDOM.createPortal(
                     <div id='app-loading'
-                        // onTransitionEnd={(e) => {
-                        //     if (e.target.id === 'app-loading') {
-                        //         setLoaded(3);
-                        //     }
-                        // }}
+                        onTransitionEnd={(e) => {
+                            if (e.target.id === 'app-loading') {
+                                setLoaded(3);
+                            }
+                        }}
                         style={{ clipPath: loaded >= 2 ? 'inset(0 0 100% 0)' : 'inset(0)' }}>
                         <div className='app-loading-images'
                             onTransitionEnd={(e) => {
