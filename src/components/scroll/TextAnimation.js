@@ -12,7 +12,7 @@ function AnimatedText({ text, as, center}) {
                         {word.split('').map((letter, j) => {
                             const currentIndex = index++;
                             return (
-                                <span key={currentIndex} style={{ transitionDelay: `${currentIndex / 20}s` }}>
+                                <span key={currentIndex} style={{ transition: `var(--transition) 1s ${currentIndex / 20}s filter, var(--transition) 1s ${currentIndex / 20}s opacity` }}>
                                     {letter}
                                 </span>
                             );

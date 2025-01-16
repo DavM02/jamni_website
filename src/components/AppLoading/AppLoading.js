@@ -26,6 +26,7 @@ export default function AppLoading({ setRenderApp }) {
 
     useEffect(() => {
         const isAnimationCompleted = sessionStorage.getItem('animationCompleted');
+        // alert('isAnimationCompleted')
         if (isAnimationCompleted) {
             setRenderApp(true);
             setLoaded(3);

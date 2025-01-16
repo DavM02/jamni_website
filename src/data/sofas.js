@@ -275,15 +275,22 @@ const bestseller = [true, false];
 
 const images = [
   [
-    "https://cdn.arhaus.com/product/StandardV2/10G132SWGLPB_O240709.jpg?preset=Product3840x2880",
-    "https://cdn.arhaus.com/product/StandardV2/10G132SWGLPB_N240709.jpg?preset=Product3840x2880",
-    "https://cdn.arhaus.com/product/StandardV2/10G132SWGLPB_K240709.jpg?preset=Product3840x2880",
-    "https://cdn.arhaus.com/product/StandardV2/10G132SWGLPB_L240709.jpg?preset=Product3840x2880",
-    "https://cdn.arhaus.com/product/StandardV2/10G132SWGLPB_M240709.jpg?preset=Product3840x2880"
-  ],
-  [
-    
-  ]
+    "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BV240126.jpg?preset=Product3840x2880",
+ "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BT240126.jpg?preset=Product3840x2880",
+ "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BQ240126.jpg?preset=Product3840x2880",
+ "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BU240126.jpg?preset=Product3840x2880",
+ "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BR240126.jpg?preset=Product3840x2880",
+ "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BS240126.jpg?preset=Product3840x2880",
+ 
+],
+[
+  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_D240126.jpg?preset=Product3840x2880",
+  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_A240126.jpg?preset=Product3840x2880",
+  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_E240126.jpg?preset=Product3840x2880",
+  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_B240126.jpg?preset=Product3840x2880",
+  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_C240126.jpg?preset=Product3840x2880",
+  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_F240126.jpg?preset=Product3840x2880"
+]
 ];
 
 const material = [
