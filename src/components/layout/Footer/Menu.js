@@ -31,7 +31,7 @@ export default function Menu() {
             </ul>
             <ul className='column gap-20 text-main text-light xxsmall-text up-case'>
                 <li>
-                    <Link>Кресла</Link>
+                    <Link to={"catalog/armchairs"}>Кресла</Link>
                 </li>
                 <li>
                     <Link to={"catalog/chairs"}>стулья</Link>
@@ -48,7 +48,7 @@ export default function Menu() {
                     <Link to={"/order"}>Оплата</Link>
                 </li>
                 <li>
-                    <Link to={"/order"}>дотавка</Link>
+                    <Link to={"/order"}>доставка</Link>
                 </li>
                 <li>
                     <Link to={"/order"}>реквизиты</Link>

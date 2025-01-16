@@ -7,11 +7,11 @@
   max-width: 1438px;
 }
 
-#beds-intro + section + #filter .filter-display img {
+#beds-intro + section + #filter .filter-display img, #armchairs-intro+section+#filter .filter-display img{
   object-fit: contain !important;
 }
 
-#beds-intro + section + #filter .filter-display .placeholder span {
+#beds-intro + section + #filter .filter-display .placeholder span, #armchairs-intro+section+#filter .filter-display .placeholder span {
   background-color: var(--white);
 }
 

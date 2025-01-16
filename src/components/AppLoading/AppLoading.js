@@ -21,8 +21,20 @@ export default function AppLoading({ setRenderApp }) {
         Array(22).fill('0%')
     ], []);
 
-    const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+    const images = useMemo(() => [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10], [])
     const [loaded, setLoaded] = useState(0);
+
+    useEffect(() => {
+
+        images.forEach((img) => {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.href = img;
+            link.as = 'image';
+            document.head.appendChild(link);
+        });
+    }, [images]);
+
 
     useEffect(() => {
         const isAnimationCompleted = sessionStorage.getItem('animationCompleted');
