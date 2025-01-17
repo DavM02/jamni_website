@@ -51,6 +51,7 @@ export default function Reviews() {
                     <Pagination
                         scrollOffset={350}
                         pagesCount={Math.ceil((reviewsCount.length - 1) / 12)}
+                        scrollElem={'#reviews'}
                     />
                 )}
             </div>

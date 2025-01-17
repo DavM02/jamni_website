@@ -1,10 +1,11 @@
 import arrowLeft from "../../../assets/icons/pagination-arrow-left.svg";
 import arrowRight from "../../../assets/icons/pagination-arrow-right.svg";
  import usePagination from "../../../hooks/usePagination";
-export default function Pagination({ pagesCount, scrollOffset }) {
+export default function Pagination({ pagesCount, scrollOffset, scrollElem }) {
   const { pages, activePage, handlePagination } = usePagination(
     pagesCount,
-    scrollOffset
+    scrollOffset,
+    scrollElem
   );
   
   return (

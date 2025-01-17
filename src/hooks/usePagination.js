@@ -1,21 +1,29 @@
 import { useState, useContext } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import {   useSearchParams } from 'react-router-dom';
 import { MainContext } from '../context/MainContext';
-export default function usePagination(pagesCount, scrollOffset) {
+export default function usePagination(pagesCount, scrollOffset, scrollElem) {
     const [pages, setPages] = useState(pagesCount > 5 ? [1, 2, 3, 4, 5, '...', pagesCount] :
         Array(pagesCount).fill(null).map((_, i) => i + 1));
     const [searchParams, setSearchParams] = useSearchParams()
     const activePage = parseInt(searchParams.get('page') ?? 1)
 
     const { scrollbarAccess } = useContext(MainContext)
-
+   
+   
     const handlePagination = (page) => {
         if (page > pagesCount || page <= 0 || page === '...') return;
+    
         if (scrollbarAccess.current) {
-            scrollbarAccess.current.scrollTo(0, scrollOffset + 110, 500)
+           
+
+            scrollbarAccess.current.scrollTo(0, scrollOffset, 1000);  
+
+         
+
         } 
         else {
-            const el = document.querySelector('#filter')
+            const el = document.querySelector(scrollElem)
+
             el.scrollIntoView({ behavior: 'smooth' })
         }
        

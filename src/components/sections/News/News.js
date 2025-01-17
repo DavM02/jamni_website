@@ -53,6 +53,7 @@ export default function News() {
           <Pagination
             scrollOffset={350}
             pagesCount={Math.ceil(dataLength / 16)}
+            scrollElem={'#news'}
           />
         )}
       </div>
