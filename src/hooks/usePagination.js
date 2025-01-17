@@ -19,7 +19,7 @@ export default function usePagination(pagesCount, scrollOffset) {
             window.scrollTo({
                 top: 500,
                 left: 0,
-                behavior: 'auto'
+                behavior: 'smooth'
             });
         }
        

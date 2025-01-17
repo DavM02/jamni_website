@@ -25,15 +25,17 @@ function PageTransition(Component) {
 
     useEffect(() => {
   
-      if (scrollbarAccess.current) {
-        scrollbarAccess.current.scrollTo(0, 0);
-      }  
-
       window.scrollTo({
         top: 0,
         left: 0,
         behavior: 'auto'
       });
+
+      if (scrollbarAccess.current) {
+        scrollbarAccess.current.scrollTo(0, 0);
+      }  
+
+   
        
 
     }, []);
