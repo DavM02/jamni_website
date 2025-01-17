@@ -44,7 +44,7 @@ function PageTransition(Component) {
 
     return (
       <React.Fragment>
-        <Component {...props} />
+   
         {ReactDOM.createPortal(
           <>
             <motion.div
@@ -124,7 +124,7 @@ function PageTransition(Component) {
           </>,
           document.getElementById("modal-root")
         )}
-
+        <Component {...props} />
       </React.Fragment>
     );
   };
