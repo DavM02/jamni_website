@@ -1,7 +1,7 @@
 import React from 'react';
 import Observer from './Observer';
 
-function AnimatedText({ text, as, center}) {
+function AnimatedText({ text, as, center }) {
     let index = 0;
 
     return (
@@ -13,6 +13,7 @@ function AnimatedText({ text, as, center}) {
                             const currentIndex = index++;
                             return (
                                 <span
+                                    key={currentIndex}
                                     style={{
                                         transition: `var(--transition) 1s ${currentIndex / 20}s filter, var(--transition) 1s ${currentIndex / 20}s opacity`,
                                         WebkitTransition: `var(--transition) 1s ${currentIndex / 20}s filter, var(--transition) 1s ${currentIndex / 20}s opacity`
