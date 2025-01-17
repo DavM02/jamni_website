@@ -25,18 +25,18 @@ function PageTransition(Component) {
 
     useEffect(() => {
   
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'auto'
-      });
+  
 
       if (scrollbarAccess.current) {
         scrollbarAccess.current.scrollTo(0, 0);
       }  
 
    
-       
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      });
 
     }, []);
 
@@ -44,7 +44,7 @@ function PageTransition(Component) {
 
     return (
       <React.Fragment>
-   
+        <Component {...props} />
         {ReactDOM.createPortal(
           <>
             <motion.div
@@ -78,7 +78,7 @@ function PageTransition(Component) {
               animate={{ clipPath: "inset(100% 0% 0% 0%)" }}
               exit={{ clipPath: "inset(0% 0% 0% 0%)" }}
               transition={{
-                duration: 0.5,
+                duration: 0.8,
                 ease: [0.645, 0.045, 0.355, 1],
               }}
               className="slide-in center-gr"
@@ -112,11 +112,11 @@ function PageTransition(Component) {
               exit={{
                 clipPath: "inset(0% 0% 100% 0%)",
                 transition: {
-                  delay: 1.8,
+                  delay: 2.3,
                 },
               }}
               transition={{
-                duration: 0.5,
+                duration: 0.8,
                 ease: [0.645, 0.045, 0.355, 1],
               }}
               className="slide-out center-gr"
@@ -124,7 +124,7 @@ function PageTransition(Component) {
           </>,
           document.getElementById("modal-root")
         )}
-        <Component {...props} />
+
       </React.Fragment>
     );
   };
