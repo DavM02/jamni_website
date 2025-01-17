@@ -39,15 +39,15 @@
 
 .heading-wrapper span {
     opacity: 0;
-    filter: blur(6px);
+    /* filter: blur(6px); */
     /* transition-delay: var(--delay);
     transition-timing-function: var(--transition);
     transition-duration: var(--delay);
     transition-property: opacity, filter; */
     transition-delay: var(--delay) !important;
-    -webkit-transition: var(--transition) 1s opacity, var(--transition) 1s filter;
-    transition: var(--transition) 1s opacity, var(--transition) 1s filter;
-    will-change: filter, opacity;
+    -webkit-transition: var(--transition) 1s opacity;
+    transition: var(--transition) 1s opacity;
+    will-change: opacity;
 }
 
 .heading-wrapper.visible span {
