@@ -14,6 +14,11 @@ export default function Delivery({ setActiveTab }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
     const fd = new FormData(e.target);
     const formDataObject = {
       deliveryType: fd.get("pickup") ? "delivery" : "pickup",
@@ -68,7 +73,15 @@ export default function Delivery({ setActiveTab }) {
       </form>
       <div className="row center-x">
         <button
-          onClick={() => setActiveTab("information")}
+          onClick={() => {setActiveTab("information");
+
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth'
+            });
+
+          } }
           type="button"
           className="row center-y gap-15 xsmall-text text-main text-black"
         >

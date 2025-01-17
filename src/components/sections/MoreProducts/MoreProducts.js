@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import InfiniteSlider from '../../InfiniteSlider/InfiniteSlider'
 import { AnimatePresence } from 'framer-motion'
 import FetchError from '../../ui/messages/FetchError'
@@ -9,17 +9,16 @@ import { useParams } from 'react-router-dom'
 import useSWRImmutable from 'swr/immutable'
 export default function MoreProducts({ headline = "еще товары" }) {
 
-
-    const {catalog} = useParams();
- 
+    const randomCatalog = useMemo(() => ['beds', 'decor', "sofas", "poufs", "chairs", "armchairs"][Math.min(5, Math.round(Math.random() * 6))], []);
+    const catalog = useParams().catalog ?? randomCatalog
+  console.log(catalog)
     const { data, error, isLoading } = useSWRImmutable([
         catalog,
         1,
         10
     ]);
-
  
-    return (
+     return (
         <section id='more-products'>
             <div className='container'>
                 <div className='text-center'>

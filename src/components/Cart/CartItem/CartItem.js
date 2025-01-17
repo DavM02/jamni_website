@@ -1,5 +1,6 @@
 import React, { memo } from "react";
  import trashIcon from "../../../assets/icons/bag.svg";
+  import { LazyLoadImage } from "react-lazy-load-image-component";
   
 function CartItem({
   product,
@@ -31,7 +32,14 @@ function CartItem({
     <>
       <div className="row wrap gap-30">
         <div className="cart-item-image">
-          <img src={product.image} alt={product.name} />
+          <LazyLoadImage
+            // visibleByDefault={true}
+            src={product.image}
+            width={"100%"}
+            height={"100%"}
+            effect="blur"
+            alt={product.name}/>
+        
         </div>
         <div className="column gap-20 s-between">
           <div>

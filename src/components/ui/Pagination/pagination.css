@@ -10,13 +10,19 @@
     cursor: pointer;
 }
 
-.pagination li.active,
-.pagination li:hover {
+.pagination li.active {
     color: var(--black);
     font-weight: 400;
 }
 
-.pagination .prev:hover,
-.pagination .next:hover {
-    filter: invert(1);
+@media all and (hover: hover) {
+    .pagination li:hover {
+        color: var(--black);
+        font-weight: 400;
+    }
+
+    .pagination .prev:hover,
+    .pagination .next:hover {
+        filter: invert(1);
+    }
 }
