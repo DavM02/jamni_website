@@ -29,7 +29,7 @@ function CartItem({
 
   return (
     <>
-      <div className="row gap-30">
+      <div className="row wrap gap-30">
         <div className="cart-item-image">
           <img src={product.image} alt={product.name} />
         </div>

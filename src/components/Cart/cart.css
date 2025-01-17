@@ -6,6 +6,7 @@
   height: 100%;
   background-color: var(--white);
   overflow-y: scroll;
+  overscroll-behavior: none;
   max-width: 580px;
   width: 100%;
 }
@@ -32,6 +33,7 @@
 .cart-items {
   height: 470px;
   overflow-y: scroll;
+    overscroll-behavior: none;
 }
 
 #cart .show-recommendations .row.gap-5,

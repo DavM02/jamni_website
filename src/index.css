@@ -22,6 +22,9 @@ html,
   height: 100%;
 }
 
+section {
+  background-color: var(--white);
+}
 
 main {
   min-height: 100vh;
