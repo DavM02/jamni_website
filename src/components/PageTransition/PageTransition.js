@@ -78,7 +78,7 @@ function PageTransition(Component) {
               animate={{ clipPath: "inset(100% 0% 0% 0%)" }}
               exit={{ clipPath: "inset(0% 0% 0% 0%)" }}
               transition={{
-                duration: 0.8,
+                duration: 0.5,
                 ease: [0.645, 0.045, 0.355, 1],
               }}
               className="slide-in center-gr"
@@ -112,11 +112,11 @@ function PageTransition(Component) {
               exit={{
                 clipPath: "inset(0% 0% 100% 0%)",
                 transition: {
-                  delay: 2.3,
+                  delay: 1.8,
                 },
               }}
               transition={{
-                duration: 0.8,
+                duration: 0.5,
                 ease: [0.645, 0.045, 0.355, 1],
               }}
               className="slide-out center-gr"
