@@ -15,8 +15,7 @@ function AnimatedText({ text, as, center }) {
                                 <span
                                     key={currentIndex}
                                     style={{
-                                        transition: `var(--transition) 1s ${currentIndex / 20}s filter, var(--transition) 1s ${currentIndex / 20}s opacity`,
-                                        WebkitTransition: `var(--transition) 1s ${currentIndex / 20}s filter, var(--transition) 1s ${currentIndex / 20}s opacity`
+                                        '--delay': `${currentIndex / 20}s`
                                     }}
                                 >
                                     {letter}

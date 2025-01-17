@@ -40,7 +40,10 @@
 .heading-wrapper span {
     opacity: 0;
     filter: blur(6px);
-    will-change: 'filter, opacity',
+    transition-delay: var(--delay) !important;
+    -webkit-transition: var(--transition) 1s opacity, var(--transition) 1s filter;
+    transition: var(--transition) 1s opacity, var(--transition) 1s filter;
+    will-change: 'filter, opacity';
 }
 
 .heading-wrapper.visible span {
