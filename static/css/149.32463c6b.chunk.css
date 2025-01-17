@@ -1,2 +1,0 @@
-#favorites{background-color:var(--gray)}#favorites .center-flex{min-height:calc(100vh - 85px - var(--nav-height) - var(--header-container-padding)*2);padding:var(--section-padding-equal-big) 0}#favorites .container{max-width:600px;width:-webkit-fill-available}#favorites .fav-items{container-type:inline-size}#favorites .fav-items .cart-item{flex-wrap:wrap}@container (max-width: 400px){#favorites .fav-items li>.row:first-child{flex-direction:column}}
-/*# sourceMappingURL=149.32463c6b.chunk.css.map*/
