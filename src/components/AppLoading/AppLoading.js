@@ -21,24 +21,28 @@ export default function AppLoading({ setRenderApp }) {
         Array(22).fill('0%')
     ], []);
 
-    const images = useMemo(() => [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10], [])
+    const images = useMemo(() => [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10], []);
     const [loaded, setLoaded] = useState(0);
+    const [allImagesLoaded, setAllImagesLoaded] = useState(false);
 
     useEffect(() => {
-
-        images.forEach((img) => {
-            const link = document.createElement('link');
-            link.rel = 'preload';
-            link.href = img;
-            link.as = 'image';
-            document.head.appendChild(link);
+        let loadedImagesCount = 0;
+        images.forEach((imgSrc) => {
+            const img = new Image();
+            img.src = imgSrc;
+            img.onload = () => {
+                loadedImagesCount += 1;
+                if (loadedImagesCount === images.length) {
+                    setAllImagesLoaded(true);
+                }
+            };
         });
     }, [images]);
 
-
     useEffect(() => {
+        if (!allImagesLoaded) return;
+
         const isAnimationCompleted = sessionStorage.getItem('animationCompleted');
-        // alert('isAnimationCompleted')
         if (isAnimationCompleted) {
             setRenderApp(true);
             setLoaded(3);
@@ -46,7 +50,7 @@ export default function AppLoading({ setRenderApp }) {
             setTimeout(() => setLoaded(1), 100);
             sessionStorage.setItem('animationCompleted', 'true');
         }
-    }, [setRenderApp]);
+    }, [allImagesLoaded, setRenderApp]);
 
     return loaded !== 3 && ReactDOM.createPortal(
         <div
