@@ -112,7 +112,7 @@ function PageTransition(Component) {
               exit={{
                 clipPath: "inset(0% 0% 100% 0%)",
                 transition: {
-                  delay: 2.2,
+                  delay: 2.3,
                 },
               }}
               transition={{

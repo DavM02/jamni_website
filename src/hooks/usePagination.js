@@ -15,10 +15,7 @@ export default function usePagination(pagesCount, scrollOffset, scrollElem) {
     
         if (scrollbarAccess.current) {
            
-
             scrollbarAccess.current.scrollTo(0, scrollOffset, 1000);  
-
-         
 
         } 
         else {
