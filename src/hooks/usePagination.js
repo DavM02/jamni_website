@@ -15,12 +15,8 @@ export default function usePagination(pagesCount, scrollOffset) {
             scrollbarAccess.current.scrollTo(0, scrollOffset + 110, 500)
         } 
         else {
-
-            window.scrollTo({
-                top: 500,
-                left: 0,
-                behavior: 'smooth'
-            });
+            const el = document.querySelector('#filter')
+            el.scrollIntoView({ behavior: 'smooth' })
         }
        
         setTimeout(() => {

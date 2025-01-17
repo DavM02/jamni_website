@@ -13,12 +13,9 @@ export default function Information({ setActiveTab }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
-
+    const el = document.querySelector('.wrap-cart + div')
+    el.scrollIntoView({ behavior: 'smooth' })
+    
     const fd = new FormData(e.target);
     const formDataObject = Object.fromEntries(fd.entries());
     clearErrors("infoForm");

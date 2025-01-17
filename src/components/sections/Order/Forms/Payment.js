@@ -17,11 +17,8 @@ export default function Payment({ setActiveTab, setIsBought }) {
     function handleSubmit(e) {
         e.preventDefault();
 
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-        });
+        const el = document.querySelector('.wrap-cart + div')
+        el.scrollIntoView({ behavior: 'smooth' })
 
         const fd = new FormData(e.target);
         const paymentType = fd.get("onspot") ? "onspot" : "bycard"
@@ -92,11 +89,10 @@ export default function Payment({ setActiveTab, setIsBought }) {
                 <button
                     onClick={() => {setActiveTab("delivery");
 
-                        window.scrollTo({
-                            top: 0,
-                            left: 0,
-                            behavior: 'smooth'
-                        });
+
+                        const el = document.querySelector('.wrap-cart + div')
+                        el.scrollIntoView({ behavior: 'smooth' })
+        
 
                     }}
                     type="button"
