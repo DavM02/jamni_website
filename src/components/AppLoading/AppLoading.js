@@ -48,9 +48,11 @@ export default function AppLoading({ setRenderApp }) {
     }, [images]);
 
     useEffect(() => {
-        if (!allImagesLoaded) return;
 
         const isAnimationCompleted = sessionStorage.getItem('animationCompleted');
+
+        if (!allImagesLoaded && !isAnimationCompleted) return;
+
         if (isAnimationCompleted) {
             setRenderApp(true);
             setLoaded(3);
