@@ -37,7 +37,7 @@
     }
 }
 
-.heading-wrapper span {
+.heading-wrapper .row>div{
     opacity: 0;
     filter: blur(6px);
     -webkit-filter: blur(6px);
@@ -48,7 +48,7 @@
     will-change: filter, opacity;
 }
 
-.heading-wrapper.visible span {
+.heading-wrapper.visible .row>div {
     opacity: 1;
  
     filter: blur(0);

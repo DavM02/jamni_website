@@ -12,14 +12,15 @@ function AnimatedText({ text, as, center }) {
                         {word.split('').map((letter, j) => {
                             const currentIndex = index++;
                             return (
-                                <span
-                                    key={currentIndex}
+                                <div key={currentIndex}
                                     style={{
                                         '--delay': `${currentIndex / 20}s`
-                                    }}
-                                >
-                                    {letter}
-                                </span>
+                                    }}>
+                                    <span >
+                                        {letter}
+                                    </span>
+                                </div>
+
                             );
                         })}
                     </div>
