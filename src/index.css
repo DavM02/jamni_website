@@ -25,6 +25,7 @@ html,
 main {
   min-height: 100vh;
   flex-grow: 1;
+  background-color: var(--white);
 }
 
 .lazy-load-image-background.blur {
