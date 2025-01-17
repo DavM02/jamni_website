@@ -27,7 +27,15 @@ export default function AppLoading({ setRenderApp }) {
 
     useEffect(() => {
         let loadedImagesCount = 0;
+ 
         images.forEach((imgSrc) => {
+
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.href = imgSrc;
+            link.as = 'image';
+            document.head.appendChild(link);
+
             const img = new Image();
             img.src = imgSrc;
             img.onload = () => {
