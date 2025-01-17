@@ -39,19 +39,19 @@
 
 .heading-wrapper span {
     opacity: 0;
-    /* filter: blur(6px); */
-    /* transition-delay: var(--delay);
-    transition-timing-function: var(--transition);
-    transition-duration: var(--delay);
-    transition-property: opacity, filter; */
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
     transition-delay: var(--delay) !important;
-    -webkit-transition: var(--transition) 1s opacity;
-    transition: var(--transition) 1s opacity;
-    will-change: opacity;
+    -webkit-transition-delay: var(--delay) !important;
+    -webkit-transition: var(--transition) 1s opacity, var(--transition) 1s filter;
+    transition: var(--transition) 1s opacity, var(--transition) 1s filter;
+    will-change: filter, opacity;
 }
 
 .heading-wrapper.visible span {
     opacity: 1;
+ 
     filter: blur(0);
+        -webkit-filter: blur(0);
 }
 
