@@ -2,21 +2,11 @@
     color: var(--white) !important;
 }
 
-.slide-in {
-    opacity: 60%;
-    background-color: red;
-}
-
-.slide-out {
-    background-color: blue;
-    opacity: 60%;
-}
-
 .slide-in,
 .slide-out {
-    /* background-color: var(--black); */
+    background-color: var(--black);
     position: fixed;
-    will-change: clip-path !important;
+    will-change: clip-path;
     top: 0;
     left: 0;
     z-index: 777;

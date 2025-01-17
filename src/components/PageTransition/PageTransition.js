@@ -83,7 +83,7 @@ function PageTransition(Component) {
               }}
               className="slide-in center-gr"
             >
-              {pathname && (
+              {/* {pathname && (
                 <motion.div
                   initial={{ opacity: 1 }}
                   animate={{ opacity: pathname ? 0 : 1 }}
@@ -95,7 +95,7 @@ function PageTransition(Component) {
                     text={pathname}
                   />
                 </motion.div>
-              )}
+              )} */}
             </motion.div>
 
             <motion.div
@@ -111,11 +111,12 @@ function PageTransition(Component) {
               animate={{ clipPath: "inset(0% 0% 100% 0%)" }}
               exit={{
                 clipPath: "inset(0% 0% 100% 0%)",
-                transition: {
-                  delay: 2.3,
-                },
+                // transition: {
+                //   delay: 2.3,
+                // },
               }}
               transition={{
+                delay: 0.5,
                 duration: 0.8,
                 ease: [0.645, 0.045, 0.355, 1],
               }}
