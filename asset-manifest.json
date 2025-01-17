@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jamni_website/static/css/main.28daa039.css",
-    "main.js": "/jamni_website/static/js/main.1519fd86.js",
+    "main.js": "/jamni_website/static/js/main.8f536ac2.js",
     "static/css/933.b644eb4d.chunk.css": "/jamni_website/static/css/933.b644eb4d.chunk.css",
     "static/js/933.a7e4ac53.chunk.js": "/jamni_website/static/js/933.a7e4ac53.chunk.js",
     "static/js/847.928ba969.chunk.js": "/jamni_website/static/js/847.928ba969.chunk.js",
@@ -144,7 +144,7 @@
     "static/media/arrow-left.svg": "/jamni_website/static/media/arrow-left.663964bd5818d0ae86708ff85e9360e8.svg",
     "static/media/arrow-right.svg": "/jamni_website/static/media/arrow-right.546c00a8f4fc58f1ad76de5d0c8aae18.svg",
     "main.28daa039.css.map": "/jamni_website/static/css/main.28daa039.css.map",
-    "main.1519fd86.js.map": "/jamni_website/static/js/main.1519fd86.js.map",
+    "main.8f536ac2.js.map": "/jamni_website/static/js/main.8f536ac2.js.map",
     "933.b644eb4d.chunk.css.map": "/jamni_website/static/css/933.b644eb4d.chunk.css.map",
     "933.a7e4ac53.chunk.js.map": "/jamni_website/static/js/933.a7e4ac53.chunk.js.map",
     "847.928ba969.chunk.js.map": "/jamni_website/static/js/847.928ba969.chunk.js.map",
@@ -171,6 +171,6 @@
   },
   "entrypoints": [
     "static/css/main.28daa039.css",
-    "static/js/main.1519fd86.js"
+    "static/js/main.8f536ac2.js"
   ]
 }
