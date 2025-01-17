@@ -20,6 +20,7 @@ export const modalStore = create((set) => ({
 
     getLength(["decor"])
       .then((dataLength) => {
+        console.log(dataLength)
         const randomPage = Math.floor(
           Math.random() * Math.max(1, Math.floor(dataLength / 18))
         );

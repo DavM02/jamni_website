@@ -1,10 +1,12 @@
 import arrow from "../../../assets/icons/arrow-down.svg";
+import AnimatedText from "../../scroll/TextAnimation";
 
 export default function ProjectHeader() {
     return (
         <div className="row center-x">
             <div className="text-center">
-                <h2>Воплотим ваш проект в уникальную мебель</h2>
+                <AnimatedText text={"Воплотим ваш проект в уникальную мебель"} as="big-heading" center={true}/>
+                {/* <h2>Воплотим ваш проект в уникальную мебель</h2> */}
                 <p className="small-text text-main text-black up-case">
                     Мы открыты к сотрудничеству и предложениям
                 </p>
