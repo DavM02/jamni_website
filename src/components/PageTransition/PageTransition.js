@@ -48,29 +48,29 @@ function PageTransition(Component) {
         {ReactDOM.createPortal(
           <>
             <motion.div
-              // onAnimationComplete={(e) => {
-              //   if (e.clipPath === "inset(0% 0% 0% 0%)") {
-              //     const getPath = window.location.hash.split("/");
+              onAnimationComplete={(e) => {
+                if (e.clipPath === "inset(0% 0% 0% 0%)") {
+                  const getPath = window.location.hash.split("/");
 
-              //     if (getPath.includes("article")) {
-              //       setPathname(
-              //         `article-${decodeURIComponent(
-              //           getPath[getPath.length - 1]
-              //             .split("?")[1]
-              //             .replace("id=", "")
-              //         )}`
-              //       );
-              //       return;
-              //     }
-              //     let path = getPath[getPath.length - 1];
+                  if (getPath.includes("article")) {
+                    setPathname(
+                      `article-${decodeURIComponent(
+                        getPath[getPath.length - 1]
+                          .split("?")[1]
+                          .replace("id=", "")
+                      )}`
+                    );
+                    return;
+                  }
+                  let path = getPath[getPath.length - 1];
 
-              //     path = decodeURIComponent(
-              //       path.includes("?") ? path.split("?")[0] : path
-              //     );
+                  path = decodeURIComponent(
+                    path.includes("?") ? path.split("?")[0] : path
+                  );
 
-              //     setPathname(path.length === 0 ? "home" : path);
-              //   }
-              // }}
+                  setPathname(path.length === 0 ? "home" : path);
+                }
+              }}
               onAnimationStart={() => {
                 setIsAnimating(true);
               }}

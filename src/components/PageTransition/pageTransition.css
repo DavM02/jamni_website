@@ -2,8 +2,14 @@
     color: var(--white) !important;
 }
 
+
+.slide-in, .slide-out {
+  clip-path: inset(100% 0 0 0);
+}
+
 .slide-in,
 .slide-out {
+    transition: var(--transition) 1s clip-path;
     background-color: var(--black);
     position: fixed;
     will-change: clip-path;
