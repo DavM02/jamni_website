@@ -15,31 +15,44 @@ import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import OrderPage from "./pages/OrderPage/OrderPage";
 import AppLoading from "./components/AppLoading/AppLoading";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cursor from "./components/Cursor/Cursor";
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
 // import Gen from "./data/generateData";
 
 function App() {
   const location = useLocation();
-  const [renderApp, setRenderApp] = useState(false)
-   return (
+  const [renderApp, setRenderApp] = useState(false);
+  // const [hideApp, setHideApp] = useState(window.location.hash);
+  // useEffect(() => {
+  //   // setHideApp((prev) => !prev);
+  //   alert("changed");
+  // }, [hideApp]);
+
+  return (
     <>
       {renderApp && <Cursor />}
       {/* <Gen/> */}
       <AppLoading setRenderApp={setRenderApp} />
-       <div className="App" style={{ visibility: !renderApp ? 'hidden' : 'initial', overflow: !renderApp ? 'hidden' : 'unset', }}>
+      <div
+        className="App"
+        style={{
+          // opacity: hideApp ? "0" : "1",
+          visibility: !renderApp ? "hidden" : "initial",
+          overflow: !renderApp ? "hidden" : "unset",
+        }}
+      >
         <MainContextProvider>
           <MotionConfig
             transition={{
               duration: 0.5,
-              ease: [0.645, 0.045, 0.355, 1]
+              ease: [0.645, 0.045, 0.355, 1],
             }}
           >
             <Header />
-            <SmoothScroll >
+            <SmoothScroll>
               <SWRConfigWrapper>
-                <main >
+                <main>
                   <AnimatePresence mode="wait" initial={false}>
                     <Routes location={location} key={location.pathname}>
                       <Route path="/" element={<HomePage />} />
