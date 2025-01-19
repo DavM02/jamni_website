@@ -12,22 +12,22 @@ function PageTransition(Component) {
     const [isAnimating, setIsAnimating] = useState(false);
     const { scrollbarAccess } = useContext(MainContext);
 
-    useBlocker(({ currentLocation: current, nextLocation: next }) => {
-      return isAnimating && current.pathname !== next.pathname;
-      // || currentLocation.pathname === nextLocation.pathname
-    });
+    // useBlocker(({ currentLocation: current, nextLocation: next }) => {
+    //   return isAnimating && current.pathname !== next.pathname;
+    //   // || currentLocation.pathname === nextLocation.pathname
+    // });
 
-    useEffect(() => {
-      if (scrollbarAccess.current) {
-        scrollbarAccess.current.scrollTo(0, 0);
-      }
+    // useEffect(() => {
+    //   if (scrollbarAccess.current) {
+    //     scrollbarAccess.current.scrollTo(0, 0);
+    //   }
  
-      // window.scrollTo({
-      //   top: 0,
-      //   left: 0,
-      //   behavior: "auto",
-      // });
-    }, []);
+    //   // window.scrollTo({
+    //   //   top: 0,
+    //   //   left: 0,
+    //   //   behavior: "auto",
+    //   // });
+    // }, []);
 
     return (
       <React.Fragment>
