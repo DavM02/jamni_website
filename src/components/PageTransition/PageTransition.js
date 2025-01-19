@@ -36,9 +36,12 @@ function PageTransition(Component) {
         {ReactDOM.createPortal(
           <>
             <motion.div
-              // onAnimationComplete={(e) => {
-              //   if (e.clipPath === "inset(0% 0% 0% 0%)") {
-              //     const getPath = window.location.hash.split("/");
+              onAnimationComplete={(e) => {
+                if (e.clipPath === "inset(0% 0% 0% 0%)") {
+ 
+                  scrollRef.current.closest("#root").style.opacity = "0";
+ 
+                  const getPath = window.location.hash.split("/");
 
                   if (getPath.includes("article")) {
                     setPathname(
