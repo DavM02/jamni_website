@@ -21,7 +21,7 @@ function PageTransition(Component) {
       if (scrollbarAccess.current) {
         scrollbarAccess.current.scrollTo(0, 0);
       }
-      console.log(scrollbarAccess);
+ 
       // window.scrollTo({
       //   top: 0,
       //   left: 0,

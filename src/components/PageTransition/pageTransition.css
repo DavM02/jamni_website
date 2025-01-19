@@ -2,10 +2,10 @@
   color: var(--white) !important;
 }
 
-
+/* 
 .slide-in, .slide-out {
   clip-path: inset(100% 0 0 0);
-}
+} */
 
 .slide-in,
 .slide-out {
