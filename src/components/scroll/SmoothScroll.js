@@ -61,13 +61,6 @@ export default function SmoothScroll({ children }) {
       window.history.scrollRestoration = "manual";
     }
 
-    // function noScrollOnce(event) {
-    //   event.preventDefault();
-    //   // document.removeEventListener('scroll', noScrollOnce);
-    // }
-    // window.onpopstate = function () {
-    //   document.addEventListener("scroll", noScrollOnce);
-    // };
   }, [query, scrollbarAccess]);
 
   return (
