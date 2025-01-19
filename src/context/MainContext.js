@@ -6,11 +6,11 @@ const MainContext = createContext();
 export default function MainContextProvider({ children }) {
   const scrollbarAccess = useRef(null);
   const setHeaderHeight = useRef(() => {});
-  const scrollRef = useRef(null);
+ 
 
   return (
     <MainContext.Provider
-      value={{ scrollbarAccess, setHeaderHeight, scrollRef }}
+      value={{ scrollbarAccess, setHeaderHeight }}
     >
       {children}
     </MainContext.Provider>

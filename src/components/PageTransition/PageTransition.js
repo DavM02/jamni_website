@@ -10,7 +10,7 @@ function PageTransition(Component) {
   return function WrappedComponent(props) {
     const [pathname, setPathname] = useState(null);
     const [isAnimating, setIsAnimating] = useState(false);
-    const { scrollbarAccess, scrollRef } = useContext(MainContext);
+    const { scrollbarAccess } = useContext(MainContext);
 
     useBlocker(({ currentLocation: current, nextLocation: next }) => {
       return isAnimating && current.pathname !== next.pathname;
@@ -22,11 +22,11 @@ function PageTransition(Component) {
         scrollbarAccess.current.scrollTo(0, 0);
       }
       console.log(scrollbarAccess);
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "auto",
-      });
+      // window.scrollTo({
+      //   top: 0,
+      //   left: 0,
+      //   behavior: "auto",
+      // });
     }, []);
 
     return (
@@ -41,25 +41,25 @@ function PageTransition(Component) {
  
                   // scrollRef.current.closest("#root").style.opacity = "0";
  
-                  const getPath = window.location.hash.split("/");
+                  // const getPath = window.location.hash.split("/");
 
-                  if (getPath.includes("article")) {
-                    setPathname(
-                      `article-${decodeURIComponent(
-                        getPath[getPath.length - 1]
-                          .split("?")[1]
-                          .replace("id=", "")
-                      )}`
-                    );
-                    return;
-                  }
-                  let path = getPath[getPath.length - 1];
+                  // if (getPath.includes("article")) {
+                  //   setPathname(
+                  //     `article-${decodeURIComponent(
+                  //       getPath[getPath.length - 1]
+                  //         .split("?")[1]
+                  //         .replace("id=", "")
+                  //     )}`
+                  //   );
+                  //   return;
+                  // }
+                  // let path = getPath[getPath.length - 1];
 
-                  path = decodeURIComponent(
-                    path.includes("?") ? path.split("?")[0] : path
-                  );
+                  // path = decodeURIComponent(
+                  //   path.includes("?") ? path.split("?")[0] : path
+                  // );
 
-                  setPathname(path.length === 0 ? "home" : path);
+                  // setPathname(path.length === 0 ? "home" : path);
                 }
               }}
               onAnimationStart={() => {
@@ -74,7 +74,7 @@ function PageTransition(Component) {
               }}
               className="slide-in center-gr"
             >
-              {pathname && (
+              {/* {pathname && (
                 <motion.div
                   initial={{ opacity: 1 }}
                   animate={{ opacity: pathname ? 0 : 1 }}
@@ -86,7 +86,7 @@ function PageTransition(Component) {
                     text={pathname}
                   />
                 </motion.div>
-              )}
+              )} */}
             </motion.div>
 
             <motion.div
@@ -94,7 +94,7 @@ function PageTransition(Component) {
                 if (e.clipPath === "inset(0% 0% 100% 0%)") {
                   // scrollRef.current.closest("#root").style.opacity = "1";
 
-                  setPathname(false);
+                  // setPathname(false);
                 }
               }}
               onAnimationComplete={() => {

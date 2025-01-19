@@ -4,9 +4,9 @@ import { MainContext } from "../../context/MainContext";
 import "./scroll.css";
 import useMediaQ from "../../hooks/useMediaQ";
 export default function SmoothScroll({ children }) {
-  const { scrollbarAccess, scrollRef, setHeaderHeight } =
+  const { scrollbarAccess, setHeaderHeight } =
     useContext(MainContext);
-
+  const scrollRef = useRef(null);
   const query = useMediaQ("(min-width: 767px)");
   // const fixHeader = useMediaQ('(max-width: 777px)');
 
@@ -61,13 +61,13 @@ export default function SmoothScroll({ children }) {
       window.history.scrollRestoration = "manual";
     }
 
-    function noScrollOnce(event) {
-      event.preventDefault();
-      // document.removeEventListener('scroll', noScrollOnce);
-    }
-    window.onpopstate = function () {
-      document.addEventListener("scroll", noScrollOnce);
-    };
+    // function noScrollOnce(event) {
+    //   event.preventDefault();
+    //   // document.removeEventListener('scroll', noScrollOnce);
+    // }
+    // window.onpopstate = function () {
+    //   document.addEventListener("scroll", noScrollOnce);
+    // };
   }, [query, scrollbarAccess]);
 
   return (

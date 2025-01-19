@@ -11,4 +11,4 @@ function ProjectPage() {
     </div>
   );
 }
-export default PageTransition(ProjectPage);
+export default PageTransition(React.memo(ProjectPage));
