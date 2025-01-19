@@ -5,9 +5,9 @@ const AboutSections = React.lazy(() => import("./AboutSections"));
 function AboutPage() {
   return (
     <div id="about-page">
-      <Suspense fallback={<ChunkLoading />}>
+      {/* <Suspense fallback={<ChunkLoading />}> */}
         <AboutSections />
-      </Suspense>
+      {/* </Suspense> */}
     </div>
   );
 }

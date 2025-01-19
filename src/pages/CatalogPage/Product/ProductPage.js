@@ -7,9 +7,9 @@ const ProductSections = React.lazy(() => import("./ProductSections"));
 function ProductPage() {
   return (
     <div id="product-page">
-      <Suspense fallback={<ChunkLoading />}>
+      {/* <Suspense fallback={<ChunkLoading />}> */}
         <ProductSections />
-      </Suspense>
+      {/* </Suspense> */}
     </div>
   );
 }

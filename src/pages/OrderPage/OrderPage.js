@@ -8,10 +8,10 @@ const OrderSections = React.lazy(() => import("./OrderSections"));
 function OrderPage() {
   return (
     <div id="order-page">
-      <Suspense fallback={<ChunkLoading />}>
+      {/* <Suspense fallback={<ChunkLoading />}> */}
         <OrderSections />
          
-      </Suspense>
+      {/* </Suspense> */}
     </div>
   );
 }

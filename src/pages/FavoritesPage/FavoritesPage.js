@@ -5,9 +5,9 @@ const FavoritesSections = React.lazy(() => import("./FavoritesSections"));
 function ContactsPage() {
     return (
         <div id="favorites-page">
-            <Suspense fallback={<ChunkLoading />}>
+            {/* <Suspense fallback={<ChunkLoading />}> */}
                 <FavoritesSections />
-            </Suspense>
+            {/* </Suspense> */}
         </div>
     );
 }

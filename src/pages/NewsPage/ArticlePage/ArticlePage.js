@@ -7,9 +7,9 @@ import ChunkLoading from "../../../components/ui/messages/ChunkLoading/ChunkLoad
 function ArticlePage() {
     return (
         <div id="article-page">
-          <Suspense fallback={<ChunkLoading />}>
+          {/* <Suspense fallback={<ChunkLoading />}> */}
                 <ArticleSections />
-            </Suspense>  
+            {/* </Suspense>   */}
         </div>
     );
 }

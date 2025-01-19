@@ -5,9 +5,9 @@ const ProjectSections = React.lazy(() => import("./ProjectSections"));
 function ProjectPage() {
   return (
     <div id="contacts-page">
-      <Suspense fallback={<ChunkLoading />}>
+      {/* <Suspense fallback={<ChunkLoading />}> */}
         <ProjectSections />
-      </Suspense>
+      {/* </Suspense> */}
     </div>
   );
 }

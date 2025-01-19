@@ -7,9 +7,9 @@ function DecorPage() {
     const { catalog } = useParams()
     return (
         <div id={`${catalog}-page`}>
-            <Suspense fallback={<ChunkLoading />}>
+            {/* <Suspense fallback={<ChunkLoading />}> */}
                 <CatalogSections path={catalog}/>
-            </Suspense>
+            {/* </Suspense> */}
         </div>
     );
 }
