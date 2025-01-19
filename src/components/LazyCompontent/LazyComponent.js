@@ -1,16 +1,11 @@
-import React, { lazy, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import ChunkLoading from '../ui/messages/ChunkLoading/ChunkLoading';
  
-const withLazyLoad = (importComponent) => {
-    const LazyComponent = lazy(importComponent);
+const LazyComponent = ({ path }) => {
+    const Sections = React.lazy(() => import("../../pages/NewsPage/NewsSections"))
+    return <Suspense fallback={<ChunkLoading />}>
+        <Sections />
+    </Suspense>
+}
 
-    const WrappedComponent = (props) => (
-        <Suspense fallback={<ChunkLoading/>}>
-            <LazyComponent {...props} />
-        </Suspense>
-    );
-
-    return WrappedComponent;
-};
-
-export default withLazyLoad;
+export default LazyComponent

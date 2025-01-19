@@ -1,3 +1,20 @@
+
+
+import React from "react";
+import PageTransition from "../../components/PageTransition/PageTransition";
+import LazyComponent from "../../components/LazyCompontent/LazyComponent";
+ 
+
+function NewsPage() {
+  return (
+    <div id="news-page">
+      <LazyComponent/>
+    </div>
+  );
+}
+
+export default PageTransition(React.memo(NewsPage));
+
 // import React, { Suspense } from "react";
 // import PageTransition from "../../components/PageTransition/PageTransition";
 // import ChunkLoading from "../../components/ui/messages/ChunkLoading/ChunkLoading";
@@ -15,20 +32,3 @@
 // }
 
 // export default PageTransition(React.memo(NewsPage));
-
-
-import React from "react";
-import PageTransition from "../../components/PageTransition/PageTransition";
-import withLazyLoad from "../../components/LazyCompontent/LazyComponent";
-// Используем с обёрткой для ленивой загрузки
-const NewsSections = withLazyLoad(() => import("./NewsSections"));
-
-function NewsPage() {
-  return (
-    <div id="news-page">
-      <NewsSections />
-    </div>
-  );
-}
-
-export default PageTransition(React.memo(NewsPage));
