@@ -7,7 +7,7 @@ import ReviewsSections from "./ReviewsSections";
 
 function ReviewsPage() {
   return (
-    <div id="news-page">
+    <div id="reviews-page">
       {/* <Suspense fallback={<ChunkLoading />}> */}
         <ReviewsSections />
       {/* </Suspense> */}
