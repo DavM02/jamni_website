@@ -5,6 +5,7 @@ import { useBlocker } from "react-router-dom";
 import "./pageTransition.css";
 import AnimatedText from "../scroll/TextAnimation";
 import { MainContext } from "../../context/MainContext";
+import SmoothAppearance from "../ui/SmoothAppearance";
 function PageTransition(Component) {
   return function WrappedComponent(props) {
     const [pathname, setPathname] = useState(null);
@@ -32,9 +33,13 @@ function PageTransition(Component) {
 
     return (
       <React.Fragment>
-        <Component {...props} />
 
-        {ReactDOM.createPortal(
+        <SmoothAppearance>
+          <Component {...props} />
+        </SmoothAppearance>
+      
+
+        {/* {ReactDOM.createPortal(
           <>
             <motion.div
               onAnimationComplete={(e) => {
@@ -120,7 +125,7 @@ function PageTransition(Component) {
             ></motion.div>
           </>,
           document.getElementById("modal-root")
-        )}
+        )} */}
       </React.Fragment>
     );
   };
