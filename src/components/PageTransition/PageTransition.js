@@ -39,7 +39,7 @@ function PageTransition(Component) {
               onAnimationComplete={(e) => {
                 if (e.clipPath === "inset(0% 0% 0% 0%)") {
  
-                  scrollRef.current.closest("#root").style.opacity = "0";
+                  // scrollRef.current.closest("#root").style.opacity = "0";
  
                   const getPath = window.location.hash.split("/");
 
@@ -92,7 +92,7 @@ function PageTransition(Component) {
             <motion.div
               onAnimationStart={(e) => {
                 if (e.clipPath === "inset(0% 0% 100% 0%)") {
-                  scrollRef.current.closest("#root").style.opacity = "1";
+                  // scrollRef.current.closest("#root").style.opacity = "1";
 
                   setPathname(false);
                 }
