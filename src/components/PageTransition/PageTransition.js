@@ -34,12 +34,12 @@ function PageTransition(Component) {
     return (
       <React.Fragment>
 
-        <SmoothAppearance>
-          <Component {...props} />
-        </SmoothAppearance>
-     
+        {/* <SmoothAppearance>
+       
+        </SmoothAppearance> */}
+        <Component {...props} />
 
-        {/* {ReactDOM.createPortal(
+        {ReactDOM.createPortal(
           <>
             <motion.div
               onAnimationComplete={(e) => {
@@ -125,7 +125,7 @@ function PageTransition(Component) {
             ></motion.div>
           </>,
           document.getElementById("modal-root")
-        )} */}
+        )}
       </React.Fragment>
     );
   };
