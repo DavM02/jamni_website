@@ -5,7 +5,6 @@ import { useBlocker } from "react-router-dom";
 import "./pageTransition.css";
 import AnimatedText from "../scroll/TextAnimation";
 import { MainContext } from "../../context/MainContext";
-import SmoothAppearance from "../ui/SmoothAppearance";
 function PageTransition(Component) {
   return function WrappedComponent(props) {
     const [pathname, setPathname] = useState(null);
@@ -33,10 +32,6 @@ function PageTransition(Component) {
 
     return (
       <React.Fragment>
-
-        {/* <SmoothAppearance>
-       
-        </SmoothAppearance> */}
         <Component {...props} />
 
         {ReactDOM.createPortal(
@@ -44,7 +39,7 @@ function PageTransition(Component) {
             <motion.div
               onAnimationComplete={(e) => {
                 console.log(e)
-                if (e.opacity == 1) {
+                if (e.transform === "translateY(0)") {
   
                   const getPath = window.location.hash.split("/");
 
@@ -70,14 +65,9 @@ function PageTransition(Component) {
               onAnimationStart={() => {
                 setIsAnimating(true);
               }}
-              // initial={{ transform: 'translateY(100%)' }}
-              // animate={{ transform: 'translateY(100%)' }}
-              // exit={{ transform: 'translateY(0)' }}
-
-              initial={{ opacity:  0 }}
-              animate={{ opacity: 0 }}
-              exit={{ opacity: 1 }}
-              
+              initial={{ transform: 'translateY(100%)' }}
+              animate={{ transform: 'translateY(100%)' }}
+              exit={{ transform: 'translateY(0)' }}
               transition={{
                 duration: 0.8,
                 ease: [0.645, 0.045, 0.355, 1],
@@ -101,7 +91,7 @@ function PageTransition(Component) {
 
             <motion.div
               onAnimationStart={(e) => {
-                if (e.opacity === 0) {
+                if (e.transform === "translateY(-100%)") {
 
                   setPathname(false);
                 }
@@ -109,15 +99,16 @@ function PageTransition(Component) {
               onAnimationComplete={() => {
                 setIsAnimating(false);
               }}
-              initial={{ opacity: 1 }}
-              animate={{ opacity: 0 }}
+              initial={{ transform: 'translateY(0)' }}
+              animate={{ transform: 'translateY(-100%)' }}
               exit={{
-                opacity: 0,
+                transform: 'translateY(-100%)',
                 transition: {
                   delay: 2.3,
                 },
               }}
               transition={{
+
                 duration: 0.8,
                 ease: [0.645, 0.045, 0.355, 1],
               }}

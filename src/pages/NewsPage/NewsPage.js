@@ -3,7 +3,7 @@ import PageTransition from "../../components/PageTransition/PageTransition";
 import ChunkLoading from "../../components/ui/messages/ChunkLoading/ChunkLoading";
 
  const NewsSections = React.lazy(() => import("./NewsSections"));
-
+console.log(NewsSections)
 function NewsPage() {
   return (
     <div id="news-page">

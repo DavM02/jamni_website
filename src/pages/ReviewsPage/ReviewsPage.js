@@ -8,9 +8,9 @@ import ChunkLoading from "../../components/ui/messages/ChunkLoading/ChunkLoading
 function ReviewsPage() {
   return (
     <div id="reviews-page">
-      <Suspense fallback={<ChunkLoading />}>
+      {/* <Suspense fallback={<ChunkLoading />}> */}
         <ReviewsSections />
-      </Suspense>
+      {/* </Suspense> */}
     </div>
   );
 }
