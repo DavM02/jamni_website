@@ -65,9 +65,9 @@ function PageTransition(Component) {
               // onAnimationStart={() => {
               //   setIsAnimating(true);
               // }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity:  0 }}
-              exit={{ opacity: 1 }}
+              initial={{ transform: 'translateY(100%)' }}
+              animate={{ transform: 'translateY(100%)' }}
+              exit={{ transform: 'translateY(0)' }}
               transition={{
                 duration: 0.8,
                 ease: [0.645, 0.045, 0.355, 1],
@@ -100,10 +100,10 @@ function PageTransition(Component) {
               // onAnimationComplete={() => {
               //   setIsAnimating(false);
               // }}
-              initial={{ opacity: 1 }}
-              animate={{ opacity: 0 }}
+              initial={{ transform: 'translateY(0)' }}
+              animate={{ transform: 'translateY(-100%)' }}
               exit={{
-                opacity: 0,
+                transform: 'translateY(-100%)',
                 transition: {
                   delay: 2.3,
                 },
