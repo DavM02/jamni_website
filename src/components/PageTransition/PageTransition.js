@@ -36,35 +36,35 @@ function PageTransition(Component) {
         {ReactDOM.createPortal(
           <>
             <motion.div
-              onAnimationComplete={(e) => {
-                if (e.clipPath === "inset(0% 0% 0% 0%)") {
+              // onAnimationComplete={(e) => {
+              //   if (e.clipPath === "inset(0% 0% 0% 0%)") {
  
-                  // scrollRef.current.closest("#root").style.opacity = "0";
+              //     // scrollRef.current.closest("#root").style.opacity = "0";
  
-                  // const getPath = window.location.hash.split("/");
+              //     // const getPath = window.location.hash.split("/");
 
-                  // if (getPath.includes("article")) {
-                  //   setPathname(
-                  //     `article-${decodeURIComponent(
-                  //       getPath[getPath.length - 1]
-                  //         .split("?")[1]
-                  //         .replace("id=", "")
-                  //     )}`
-                  //   );
-                  //   return;
-                  // }
-                  // let path = getPath[getPath.length - 1];
+              //     // if (getPath.includes("article")) {
+              //     //   setPathname(
+              //     //     `article-${decodeURIComponent(
+              //     //       getPath[getPath.length - 1]
+              //     //         .split("?")[1]
+              //     //         .replace("id=", "")
+              //     //     )}`
+              //     //   );
+              //     //   return;
+              //     // }
+              //     // let path = getPath[getPath.length - 1];
 
-                  // path = decodeURIComponent(
-                  //   path.includes("?") ? path.split("?")[0] : path
-                  // );
+              //     // path = decodeURIComponent(
+              //     //   path.includes("?") ? path.split("?")[0] : path
+              //     // );
 
-                  // setPathname(path.length === 0 ? "home" : path);
-                }
-              }}
-              onAnimationStart={() => {
-                setIsAnimating(true);
-              }}
+              //     // setPathname(path.length === 0 ? "home" : path);
+              //   }
+              // }}
+              // onAnimationStart={() => {
+              //   setIsAnimating(true);
+              // }}
               initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
               animate={{ clipPath: "inset(100% 0% 0% 0%)" }}
               exit={{ clipPath: "inset(0% 0% 0% 0%)" }}
@@ -90,16 +90,16 @@ function PageTransition(Component) {
             </motion.div>
 
             <motion.div
-              onAnimationStart={(e) => {
-                if (e.clipPath === "inset(0% 0% 100% 0%)") {
-                  // scrollRef.current.closest("#root").style.opacity = "1";
+              // onAnimationStart={(e) => {
+              //   if (e.clipPath === "inset(0% 0% 100% 0%)") {
+              //     // scrollRef.current.closest("#root").style.opacity = "1";
 
-                  // setPathname(false);
-                }
-              }}
-              onAnimationComplete={() => {
-                setIsAnimating(false);
-              }}
+              //     // setPathname(false);
+              //   }
+              // }}
+              // onAnimationComplete={() => {
+              //   setIsAnimating(false);
+              // }}
               initial={{ clipPath: "inset(0% 0% 0% 0%)" }}
               animate={{ clipPath: "inset(0% 0% 100% 0%)" }}
               exit={{
