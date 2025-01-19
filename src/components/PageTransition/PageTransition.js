@@ -65,9 +65,9 @@ function PageTransition(Component) {
               // onAnimationStart={() => {
               //   setIsAnimating(true);
               // }}
-              initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
-              animate={{ clipPath: "inset(100% 0% 0% 0%)" }}
-              exit={{ clipPath: "inset(0% 0% 0% 0%)" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity:  0 }}
+              exit={{ opacity: 1 }}
               transition={{
                 duration: 0.8,
                 ease: [0.645, 0.045, 0.355, 1],
@@ -100,10 +100,10 @@ function PageTransition(Component) {
               // onAnimationComplete={() => {
               //   setIsAnimating(false);
               // }}
-              initial={{ clipPath: "inset(0% 0% 0% 0%)" }}
-              animate={{ clipPath: "inset(0% 0% 100% 0%)" }}
+              initial={{ opacity: 1 }}
+              animate={{ opacity: 0 }}
               exit={{
-                clipPath: "inset(0% 0% 100% 0%)",
+                opacity: 0,
                 transition: {
                   delay: 2.3,
                 },
