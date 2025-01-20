@@ -463,17 +463,6 @@ const catalog = {
         ],
         "bedType",
       ],
-      [
-        "тип матраса",
-        [
-          "пружинный",
-          "беспружинный",
-          "ортопедический",
-          "анатомический",
-          "с memory foam",
-        ],
-        "mattressType",
-      ],
     ],
     bg: "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
     posY: "48%",
@@ -516,51 +505,63 @@ const catalog = {
     sliderData: [
       {
         name: "comfort collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BT240126.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BT240126.jpg?preset=Product3840x2880",
       },
       {
         name: "relax collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/10633R2PL_A240126.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/10633R2PL_A240126.jpg?preset=Product3840x2880",
       },
       {
         name: "executive collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_H230412.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_H230412.jpg?preset=Product3840x2880",
       },
       {
         name: "home collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/200019REBC_I220419.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/200019REBC_I220419.jpg?preset=Product3840x2880",
       },
       {
         name: "premium collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_BW220419.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_BW220419.jpg?preset=Product3840x2880",
       },
       {
         name: "urban collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/CTROWUPHARCB_K220802.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/CTROWUPHARCB_K220802.jpg?preset=Product3840x2880",
       },
       {
         name: "comfort collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BT240126.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BT240126.jpg?preset=Product3840x2880",
       },
       {
         name: "relax collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/10633R2PL_A240126.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/10633R2PL_A240126.jpg?preset=Product3840x2880",
       },
       {
         name: "executive collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_H230412.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_H230412.jpg?preset=Product3840x2880",
       },
       {
         name: "home collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/200019REBC_I220419.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/200019REBC_I220419.jpg?preset=Product3840x2880",
       },
       {
         name: "premium collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_BW220419.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_BW220419.jpg?preset=Product3840x2880",
       },
       {
         name: "urban collection",
-        image: "https://cdn.arhaus.com/product/StandardV2/CTROWUPHARCB_K220802.jpg?preset=Product3840x2880",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/CTROWUPHARCB_K220802.jpg?preset=Product3840x2880",
       },
     ],
 
@@ -571,7 +572,8 @@ const catalog = {
     id: "bedsheets-intro",
     headline: "постельное белье",
     filterHeadline: "все постельное белье",
-    description: "Создайте атмосферу уюта и покоя с нашим постельным бельём, которое не только добавит элегантности в ваш интерьер, но и обеспечит вам комфортный и здоровый сон каждую ночь.",
+    description:
+      "Создайте атмосферу уюта и покоя с нашим постельным бельём, которое не только добавит элегантности в ваш интерьер, но и обеспечит вам комфортный и здоровый сон каждую ночь.",
     materials: [
       "хлопок",
       "сатин",
@@ -628,7 +630,8 @@ const catalog = {
         name: "serenity",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_A210111.jpg?preset=Product1920x1440",
-      }, {
+      },
+      {
         name: "soft touch",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_C220825.jpg?preset=Product1920x1440",
@@ -655,7 +658,6 @@ const catalog = {
       },
     ],
 
-    
     bg: "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
     posY: "48%",
   },
@@ -699,56 +701,66 @@ const catalog = {
     sliderData: [
       {
         name: "morning breeze",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202451/0983/faye-textured-curtain-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202451/0983/faye-textured-curtain-xl.jpg",
       },
       {
         name: "midnight elegance",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-19-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-19-xl.jpg",
       },
       {
         name: "warmth of nature",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-5-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-5-xl.jpg",
       },
       {
         name: "classic charm",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-11-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-11-xl.jpg",
       },
       {
         name: "vintage chic",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202430/0294/elinor-floral-mughal-linen-cotton-curtain-1-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202430/0294/elinor-floral-mughal-linen-cotton-curtain-1-xl.jpg",
       },
       {
         name: "modern luxury",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0004/emery-linen-sheer-curtain-1-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0004/emery-linen-sheer-curtain-1-xl.jpg",
       },
       {
         name: "morning breeze",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-curtain-5-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-curtain-5-xl.jpg",
       },
       {
         name: "midnight elegance",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0218/bernyce-curtain-2-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0218/bernyce-curtain-2-xl.jpg",
       },
       {
         name: "warmth of nature",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0476/blue-floral-blackout-curtain-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0476/blue-floral-blackout-curtain-xl.jpg",
       },
       {
         name: "classic charm",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-4-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-4-xl.jpg",
       },
       {
         name: "vintage chic",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-3-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-3-xl.jpg",
       },
       {
         name: "modern luxury",
-        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-2-xl.jpg",
+        image:
+          "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-2-xl.jpg",
       },
     ],
 
-
-   
     bg: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-1-xl.jpg",
     posY: "75%",
   },
@@ -789,59 +801,68 @@ const catalog = {
         "price",
       ],
     ],
-      sliderData: [
+    sliderData: [
       {
         name: "cozy moments",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0011/textured-faux-suede-charcoal-modern-lounger-1-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0011/textured-faux-suede-charcoal-modern-lounger-1-xl.jpg",
       },
       {
         name: "urban comfort",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202446/0003/eco-performance-textured-weave-oat-double-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202446/0003/eco-performance-textured-weave-oat-double-modern-lounger-xl.jpg",
       },
       {
         name: "nature retreat",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0004/corduroy-dusty-olive-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0004/corduroy-dusty-olive-modern-lounger-xl.jpg",
       },
       {
         name: "relaxation hub",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0012/tweed-charcoal-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0012/tweed-charcoal-modern-lounger-xl.jpg",
       },
       {
         name: "vintage comfort",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202450/0003/tweed-charcoal-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202450/0003/tweed-charcoal-modern-lounger-xl.jpg",
       },
       {
         name: "modern chill",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202448/0023/faux-leather-caramel-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202448/0023/faux-leather-caramel-modern-lounger-xl.jpg",
       },
       {
         name: "cozy moments",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0011/textured-faux-suede-charcoal-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0011/textured-faux-suede-charcoal-modern-lounger-xl.jpg",
       },
       {
         name: "urban comfort",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202446/0003/eco-performance-textured-weave-oat-double-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202446/0003/eco-performance-textured-weave-oat-double-modern-lounger-xl.jpg",
       },
       {
         name: "nature retreat",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0004/corduroy-dusty-olive-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0004/corduroy-dusty-olive-modern-lounger-xl.jpg",
       },
       {
         name: "relaxation hub",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0012/tweed-charcoal-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0012/tweed-charcoal-modern-lounger-xl.jpg",
       },
       {
         name: "vintage comfort",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202450/0003/tweed-charcoal-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202450/0003/tweed-charcoal-modern-lounger-xl.jpg",
       },
       {
         name: "modern chill",
-        image: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202448/0023/faux-leather-caramel-modern-lounger-xl.jpg",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202448/0023/faux-leather-caramel-modern-lounger-xl.jpg",
       },
     ],
-
-
-
 
     bg: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0010/faux-leather-olive-modern-lounger-1-xl.jpg",
     posY: "57%",
