@@ -6,12 +6,12 @@ import useProductActions from "../../../../hooks/useProductActions";
 import { userFavStore } from "../../../../stores/favStore";
 export default function AddToFav({ data, formRef }) {
 
-  const {handleAddToFav } = useProductActions()
+  const { handleAddToFav, isFav } = useProductActions(data.id)
 
   const { removeProduct } = userFavStore()
  
-
-  const [added, setAdded] = useState(false)
+ 
+  const [added, setAdded] = useState(isFav)
 
   return (
     <div className="add-to-favorites" onClick={(e) => {e.stopPropagation(); 
@@ -21,7 +21,9 @@ export default function AddToFav({ data, formRef }) {
   }
     
     }>
-      <input type="checkbox" onChange={() =>  setAdded((prev) => !prev)} />
+      <input type="checkbox" 
+        defaultChecked={added}
+      onChange={() =>  setAdded((prev) => !prev)} />
       <svg
         width="28"
         height="25"

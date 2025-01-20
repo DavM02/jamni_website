@@ -5,20 +5,25 @@ import FetchError from '../../ui/messages/FetchError'
 import DataLoading from '../../ui/messages/DataLoading'
 import SmoothAppearance from '../../ui/SmoothAppearance'
 import Slide from './Slide'
-import { useParams } from 'react-router-dom'
+import { useParams, useSearchParams } from 'react-router-dom'
 import useSWRImmutable from 'swr/immutable'
 export default function MoreProducts({ headline = "еще товары" }) {
 
-    const randomCatalog = useMemo(() => ['beds', 'decor', "sofas", "poufs", "chairs", "armchairs"][Math.min(5, Math.round(Math.random() * 6))], []);
+    const randomCatalog = useMemo(() => ['bedsheets', 'curtains', 'beds', 'decor', "sofas", "poufs", "chairs", "armchairs"][Math.min(7, Math.round(Math.random() * 8))], []);
     const catalog = useParams().catalog ?? randomCatalog
- 
+    const [searchParams] = useSearchParams()
+
+    const id = searchParams.get('id')
+    const name = useParams().product
     const { data, error, isLoading } = useSWRImmutable([
         catalog,
         1,
-        10
+        16
     ]);
- 
-     return (
+
+
+
+    return (
         <section id='more-products'>
             <div className='container'>
                 <div className='text-center'>
@@ -33,10 +38,8 @@ export default function MoreProducts({ headline = "еще товары" }) {
                         !isLoading && data ? <>
                             <SmoothAppearance>
                                 <InfiniteSlider itemWidth={'moreitems-slider-img-width'}
-                                    sliderData={data.map((el) => ({
-                                        ...el,
-                                        catalog,
-                                    }))}
+                                    catalog={catalog}
+                                    sliderData={data.filter((el, i) => el.id !== id && el.name.toLowerCase() !== name).slice(0, 10)}
                                     wrapper={Slide} />
                             </SmoothAppearance>
                         </> : (

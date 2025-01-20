@@ -1,8 +1,11 @@
 import { useParams } from 'react-router-dom';
 import Article from './Article';
 import FilterItem from './FilterItem';
-
+import { userFavStore } from '../../../../stores/favStore';
 export default function FilterGrid({ data }) {
+
+  const {  products  } = userFavStore()
+ 
    let gridAreas = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
   ];
@@ -25,6 +28,8 @@ export default function FilterGrid({ data }) {
         }
      
         return <FilterItem 
+  
+
         key={item.id} 
         item={{...item, catalog, area}} />
       

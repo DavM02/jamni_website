@@ -24,7 +24,7 @@ export default function InfiniteSlider({
 
   const handleNextSlide = () => {
     setAdjustTransition(true);
-    debouncedFunction(1000, () => {
+    debouncedFunction(900, () => {
       setTransformIndex((prevIndex) => prevIndex + 1);
       timeoutId.current = setTimeout(() => {
         setSlideItems((prevItems) => {
@@ -33,13 +33,13 @@ export default function InfiniteSlider({
         });
         setTransformIndex(0);
         setAdjustTransition(false);
-      }, 1000);
+      }, 900);
     });
   };
 
   const handlePrevSlide = () => {
     setAdjustTransition(true);
-    debouncedFunction(1000, () => {
+    debouncedFunction(800, () => {
       setTransformIndex((prevIndex) => prevIndex - 1);
       timeoutId.current = setTimeout(() => {
         setSlideItems((prevItems) => {
@@ -48,7 +48,7 @@ export default function InfiniteSlider({
         });
         setTransformIndex(0);
         setAdjustTransition(false);
-      }, 1000);
+      }, 800);
     });
   };
 
@@ -69,7 +69,9 @@ export default function InfiniteSlider({
               Tag={Tag}
               width={itemWidth}
             >
-              <WrapperComponent el={el} />
+              <WrapperComponent el={el} 
+              catalog={props.catalog}
+              />
             </SlideItemWrapper>
           ))}
         </div>

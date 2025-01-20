@@ -5,12 +5,13 @@ import { modalStore } from "../stores/modalStore";
 import { getItem } from "../db/loadData";
 import { useParams } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
-function useProductActions() {
+function useProductActions(productId) {
     const addToCart = userCartStore((state) => state.addProduct);
-    const addToFav = userFavStore((state) => state.addProduct);
+    const { addProduct: addToFav, products} = userFavStore();
     const { toggleAdded } = modalStore();
     const { toggleFav } = modalStore();
-
+    const isFav = products.some((el) => productId === el.id)
+    
     const [searchParams] = useSearchParams()
 
     const id = parseInt(searchParams.get("id"));
@@ -81,6 +82,7 @@ function useProductActions() {
     return {
         handleAddToCart,
         handleAddToFav,
+        isFav
     };
 }
 

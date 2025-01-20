@@ -4,6 +4,7 @@ import AddToFav from "../../ui/buttons/AddToFav/AddToFav";
 import MainButton from "../../ui/buttons/MainButton/MainButton";
   import useProductActions from "../../../hooks/useProductActions";
   import { useRef } from "react";
+ 
 export default function Form({ data }) {
  
   const {handleAddToCart} = useProductActions()
@@ -11,6 +12,9 @@ export default function Form({ data }) {
   const dimensions = data && data.characteristics[0].dimensions;
   const options = data && data.characteristics[1].options;
  const formRef = useRef(null)
+
+ 
+
   return (
     <form ref={formRef} action="#" onSubmit={(e) =>  handleAddToCart(e)}>
       <div className="row wrap gap-20">

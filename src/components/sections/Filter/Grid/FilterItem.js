@@ -11,7 +11,8 @@ export default function FilterItem({ item }) {
       onClick={() => navigate(`${item.name.toLowerCase()}?id=${item.id}`)}
       style={{ gridArea: item.area }}
     >
-      <AddToFav data={item} />
+      <AddToFav
+      data={item} />
       {item ? (
         <div
           className="placeholder"

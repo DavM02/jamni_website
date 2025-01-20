@@ -2,10 +2,10 @@ import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import AddToFav from '../../ui/buttons/AddToFav/AddToFav'
 import { Link } from 'react-router-dom'
-export default function Slide({ el }) {
-
+export default function Slide({ el, catalog }) {
+ 
     return (
-        <Link to={`/catalog/${el.catalog}/${el.name.toLowerCase()}?id=${el.id}`}>
+        <Link to={`/catalog/${catalog}/${el.name.toLowerCase()}?id=${el.id}`}>
             <AddToFav data={el} />
             <div className='slider-image'
                 style={{ height: el.slideId % 2 ? 'var(--moreitems-slider-img-height-even)' : 'var(--moreitems-slider-img-height-odd)' }}
