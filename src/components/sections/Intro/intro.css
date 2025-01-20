@@ -66,3 +66,7 @@
 #reviews-intro .mask-layer , #article-intro .mask-layer, #sofas-intro .mask-layer, #chairs-intro .mask-layer {
     backdrop-filter: blur(0.5px);
 }
+
+#curtains-intro .mask-layer {
+    backdrop-filter: blur(0.7px);
+}

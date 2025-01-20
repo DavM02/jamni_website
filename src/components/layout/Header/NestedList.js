@@ -98,7 +98,7 @@ export default function NestedList({ menu, setMenu }) {
                 <NavLink to={"catalog/decor"}>Декор</NavLink>
               </li>
               <li>
-                <Link to={"catalog/decor"}>Шторы</Link>
+                <Link to={"catalog/curtains"}>Шторы</Link>
               </li>
             </ul>
           </li>

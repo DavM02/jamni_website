@@ -9,10 +9,11 @@
 
 #beds-intro + section + #filter .filter-display img,
  #armchairs-intro+section+#filter .filter-display img,
-    #bedsheets-intro+section+#filter .filter-display img
+#bedsheets-intro+section+#filter .filter-display img
  {
   object-fit: contain !important;
 }
+
 
 #beds-intro + section + #filter .filter-display .placeholder span,
  #armchairs-intro+section+#filter .filter-display .placeholder span,
@@ -39,6 +40,3 @@
   padding-bottom: var(--grid-padding);
 }
 
-#filter .collection-filter .custom-checkbox {
-  margin-bottom: 3px;
-}

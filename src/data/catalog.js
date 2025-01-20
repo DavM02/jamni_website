@@ -605,70 +605,152 @@ const catalog = {
     ],
     sliderData: [
       {
-        name: "classic collection",
+        name: "soft touch",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_C220825.jpg?preset=Product1920x1440",
       },
       {
-        name: "luxury collection",
+        name: "luxury sleep",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_U210212.jpg?preset=Product1920x1440",
       },
       {
-        name: "modern collection",
+        name: "dream comfort",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_R210212.jpg?preset=Product1920x1440",
       },
       {
-        name: "vintage collection",
+        name: "nature touch",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_H210111.jpg?preset=Product1920x1440",
       },
       {
-        name: "minimalist collection",
+        name: "serenity",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_A210111.jpg?preset=Product1920x1440",
-      },
-      {
-        name: "elegant collection",
-        image:
-          "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
-      },
-      {
-        name: "classic collection",
+      }, {
+        name: "soft touch",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_C220825.jpg?preset=Product1920x1440",
       },
       {
-        name: "luxury collection",
+        name: "luxury sleep",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_U210212.jpg?preset=Product1920x1440",
       },
       {
-        name: "modern collection",
+        name: "dream comfort",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_R210212.jpg?preset=Product1920x1440",
       },
       {
-        name: "vintage collection",
+        name: "nature touch",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_H210111.jpg?preset=Product1920x1440",
       },
       {
-        name: "minimalist collection",
+        name: "serenity",
         image:
           "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_A210111.jpg?preset=Product1920x1440",
-      },
-      {
-        name: "elegant collection",
-        image:
-          "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
       },
     ],
 
     
     bg: "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
     posY: "48%",
+  },
+  curtains: {
+    id: "curtains-intro",
+    headline: "шторы",
+    filterHeadline: "все шторы",
+    description:
+      "Создайте уют и стиль с нашими шторами, которые идеально дополнят ваш интерьер и обеспечат комфортное освещение для отдыха.",
+    materials: [
+      "хлопок",
+      "полиэстер",
+      "жаккард",
+      "лионский шелк",
+      "бархат",
+      "органза",
+      "лен",
+      "тюль",
+      "велюр",
+    ],
+
+    collections: [
+      "morning breeze",
+      "midnight elegance",
+      "warmth of nature",
+      "classic charm",
+      "vintage chic",
+      "modern luxury",
+    ],
+    filters: [
+      [
+        "цена",
+        {
+          min: 20000,
+          max: 70000,
+          val: "руб",
+        },
+        "price",
+      ],
+    ],
+    sliderData: [
+      {
+        name: "morning breeze",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202451/0983/faye-textured-curtain-xl.jpg",
+      },
+      {
+        name: "midnight elegance",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-19-xl.jpg",
+      },
+      {
+        name: "warmth of nature",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-5-xl.jpg",
+      },
+      {
+        name: "classic charm",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-11-xl.jpg",
+      },
+      {
+        name: "vintage chic",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202430/0294/elinor-floral-mughal-linen-cotton-curtain-1-xl.jpg",
+      },
+      {
+        name: "modern luxury",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0004/emery-linen-sheer-curtain-1-xl.jpg",
+      },
+      {
+        name: "morning breeze",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-curtain-5-xl.jpg",
+      },
+      {
+        name: "midnight elegance",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0218/bernyce-curtain-2-xl.jpg",
+      },
+      {
+        name: "warmth of nature",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0476/blue-floral-blackout-curtain-xl.jpg",
+      },
+      {
+        name: "classic charm",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-4-xl.jpg",
+      },
+      {
+        name: "vintage chic",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-3-xl.jpg",
+      },
+      {
+        name: "modern luxury",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-2-xl.jpg",
+      },
+    ],
+
+
+   
+    bg: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-1-xl.jpg",
+    posY: "75%",
   },
 };
 

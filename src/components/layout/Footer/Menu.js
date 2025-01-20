@@ -12,7 +12,7 @@ export default function Menu() {
                     <Link>Аксессуары из войлока</Link>
                 </li>
                 <li>
-                    <Link>Шторы</Link>
+                    <Link to={"catalog/curtains"}>Шторы</Link>
                 </li>
                 <li>
                     <Link>Horeca</Link>

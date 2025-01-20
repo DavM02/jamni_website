@@ -3,7 +3,7 @@ import FilterParam from '../FilterParams/FilterParam'
 import Accordion from '../../../ui/Accordion/Accordion'
 export default function ExtraFilter({ isOpen=true, data, headline, filterParam }) {
     return (
-        <div className="xxsmall-text text-main text-black">
+        <div className={`${filterParam}-filter xxsmall-text text-main text-black`}>
             <Accordion
                 headline={headline}
                 dataLength={data.length}

@@ -14,6 +14,10 @@
     cursor: pointer;
 }
 
+.filter-params .collection-filter span {
+    text-transform: uppercase;
+}
+
 .filter-params .main-filter span::after {
     content: "";
     position: absolute;
@@ -24,6 +28,10 @@
     left: 0;
     clip-path: inset(0 50%);
     transition: var(--transition) 0.5s clip-path;
+}
+
+#filter .collection-filter .custom-checkbox {
+    margin-bottom: 1.5px;
 }
 
 .filter-params>div {

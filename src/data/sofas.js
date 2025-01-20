@@ -1,272 +1,128 @@
 const advantages = [
   [
     {
-      title: "Поддержка позвоночника",
-      text: "Матрас с оптимальной жесткостью поддерживает правильное положение позвоночника во время сна, обеспечивая полноценный отдых.",
+      title: "Светоотражающие ткани",
+      text: "Шторы с такими тканями помогают уменьшить количество солнечного света, проникающего в помещение, создавая комфортную атмосферу.",
     },
     {
-      title: "Антибактериальное покрытие",
-      text: "Обивка и наполнители защищены от бактерий, что способствует гигиеничности и долговечности.",
+      title: "Легкость в уходе",
+      text: "Большинство тканей, используемых для штор, легко стираются и не требуют специального ухода.",
     },
     {
-      title: "Устойчивость к деформации",
-      text: "Матрасы не теряют свою форму и упругость даже при длительном использовании.",
+      title: "Антиаллергенные свойства",
+      text: "Шторы с антиаллергенными покрытиями помогают создать более здоровую атмосферу в доме, минимизируя распространение пыли.",
     },
     {
-      title: "Легкость в сборке",
-      text: "Конструкция кровати легко собирается и не требует специальных инструментов.",
-    },
-  ],
-  [
-    {
-      title: "Инновационная система охлаждения",
-      text: "Матрасы с охлаждающими свойствами поддерживают комфортную температуру для сна в любое время года.",
-    },
-    {
-      title: "Регулируемые основания",
-      text: "Позволяют настроить кровать под индивидуальные предпочтения, включая наклон головы или ног.",
-    },
-    {
-      title: "Экологичные материалы",
-      text: "Используемые наполнители и ткани безопасны для здоровья и не содержат токсичных веществ.",
-    },
-    {
-      title: "Антискользящая поверхность",
-      text: "Кровать оснащена специальным покрытием, которое предотвращает скольжение матраса и повышает безопасность.",
+      title: "Защита от УФ-лучей",
+      text: "Ткани штор обладают свойством блокировать ультрафиолетовые лучи, что помогает защитить мебель и обои от выцветания.",
     },
   ],
   [
     {
-      title: "Модульная система",
-      text: "Конструкция кровати позволяет менять ее размеры и форму в зависимости от ваших нужд.",
+      title: "Регулируемая длина",
+      text: "Шторы можно легко подогнать под нужный размер окна благодаря регулируемой длине ткани или использованию специального крепления.",
     },
     {
-      title: "Встроенные секции хранения",
-      text: "Под кроватью можно разместить ящики для хранения постельного белья и других вещей.",
+      title: "Терморегулирующие свойства",
+      text: "Шторы с терморегулирующим эффектом помогают поддерживать комфортную температуру в помещении в любое время года.",
     },
     {
-      title: "Высококачественные материалы",
-      text: "Материалы, используемые в кровати, устойчивы к износу и сохраняют привлекательный внешний вид на долгие годы.",
-    },
-    {
-      title: "Простота ухода",
-      text: "Материалы легко чистятся, что упрощает уход за кроватью.",
-    },
-  ],
-  [
-    {
-      title: "Поддержка головы и шеи",
-      text: "Ортопедическая подушка, включенная в комплект, помогает поддерживать правильное положение шеи и головы во время сна.",
+      title: "Многообразие дизайнов",
+      text: "Шторы представлены в различных стилях, от классики до модерна, что позволяет выбрать идеальный вариант для вашего интерьера.",
     },
     {
       title: "Звукоизоляция",
-      text: "Особая конструкция кровати снижает уровень шума, что способствует лучшему отдыху.",
+      text: "Некоторые модели штор обладают звукоизоляционными свойствами, обеспечивая тишину и комфорт в доме.",
+    },
+  ],
+  [
+    {
+      title: "Легкость монтажа",
+      text: "Шторы легко устанавливаются благодаря простым креплениям, не требующим сложных инструментов или профессиональных навыков.",
     },
     {
-      title: "Энергоэффективность",
-      text: "Кровать с теплоизоляционными материалами помогает сохранить комфортную температуру в холодное время года.",
+      title: "Широкая цветовая палитра",
+      text: "Шторы доступны в различных цветах и оттенках, что позволяет подобрать модель, идеально подходящую под ваш интерьер.",
+    },
+    {
+      title: "Устойчивость к выцветанию",
+      text: "Ткани штор устойчивы к выцветанию, что гарантирует долгий срок службы и сохранение яркости цвета.",
+    },
+    {
+      title: "Удобство регулировки",
+      text: "Механизмы для регулировки штор, такие как карнизы с возможностью подъема и опускания, обеспечивают удобство в использовании.",
+    },
+  ],
+  [
+    {
+      title: "Устойчивость к загрязнениям",
+      text: "Ткани, из которых изготовлены шторы, легко чистятся и устойчивы к загрязнениям, что упрощает уход.",
+    },
+    {
+      title: "Простота стирки",
+      text: "Шторы можно стирать в домашних условиях, что значительно облегчает их уход и поддержание в чистоте.",
+    },
+    {
+      title: "Экологичные материалы",
+      text: "Шторы из натуральных и экологически чистых материалов безопасны для здоровья и не содержат токсичных веществ.",
+    },
+    {
+      title: "Стиль и элегантность",
+      text: "Шторы добавляют изысканности и элегантности в любое помещение, создавая неповторимую атмосферу уюта.",
+    },
+  ],
+  [
+    {
+      title: "Разнообразие текстур",
+      text: "Шторы с разными текстурами могут добавить глубину и разнообразие вашему интерьеру, при этом подходя под любой стиль.",
+    },
+    {
+      title: "Система крепления на липучках",
+      text: "Шторы с липучками позволяют легко менять их без использования дополнительных инструментов или карнизов.",
+    },
+    {
+      title: "Поддержка индивидуальных заказов",
+      text: "Мы можем изготовить шторы по индивидуальному заказу с учетом всех ваших пожеланий и требований.",
+    },
+    {
+      title: "Минимизация сквозняков",
+      text: "Плотные шторы эффективно предотвращают сквозняки и помогают сохранить тепло в комнате.",
+    },
+  ],
+  [
+    {
+      title: "Антибактериальная защита",
+      text: "Некоторые ткани имеют антибактериальные свойства, которые способствуют улучшению качества воздуха в помещении.",
     },
     {
       title: "Долговечность",
-      text: "Крепкий каркас гарантирует долговечность и надежность кровати при ежедневном использовании.",
-    },
-  ],
-  [
-    {
-      title: "Индивидуальный дизайн",
-      text: "Предлагаются различные варианты дизайна, чтобы кровать идеально вписалась в ваш интерьер.",
+      text: "Шторы, изготовленные из качественных тканей, прослужат вам долго, сохраняя свою привлекательность и функциональность.",
     },
     {
-      title: "Легкость трансформации",
-      text: "Некоторые модели позволяют легко изменить размер кровати, превращая ее в дополнительное спальное место.",
-    },
-    {
-      title: "Удобство для гостей",
-      text: "Большие и удобные кровати идеально подходят для размещения гостей на ночлег.",
-    },
-    {
-      title: "Высокая стойкость к нагрузке",
-      text: "Кровать выдерживает значительные нагрузки, гарантируя надежность и устойчивость.",
-    },
-  ],
-  [
-    {
-      title: "Механизм подъема",
-      text: "Некоторые модели кроватей оснащены механизмом подъема, что позволяет использовать пространство под кроватью для хранения.",
-    },
-    {
-      title: "Натуральные материалы",
-      text: "Кровать изготовлена из экологически чистых и натуральных материалов, что способствует здоровому сну.",
-    },
-    {
-      title: "Устойчивость к повреждениям",
-      text: "Конструкция кровати устойчива к повреждениям, даже при сильных нагрузках.",
-    },
-    {
-      title: "Ортопедическая основа",
-      text: "Ортопедическое основание способствует равномерному распределению веса и повышает комфорт во время сна.",
-    },
-  ],
-  [
-    {
-      title: "Подходит для детей",
-      text: "Модели с низким расположением матраса идеально подходят для детей, обеспечивая безопасный и комфортный отдых.",
-    },
-    {
-      title: "Доступная цена",
-      text: "Кровать отличает оптимальное сочетание цены и качества, что делает ее доступной для большинства покупателей.",
+      title: "Устойчивость к изгибам",
+      text: "Шторы, выполненные из жестких тканей, не теряют своей формы даже при частом открывании и закрывании.",
     },
     {
       title: "Многофункциональность",
-      text: "Некоторые кровати обладают дополнительными функциями, такими как встроенные столики или полки для хранения.",
-    },
-    {
-      title: "Большие размеры",
-      text: "Предлагаются кровати с большими размерами, что позволяет комфортно спать двум или более людям.",
+      text: "Шторы с дополнительными функциями, такими как встроенные жалюзи, обеспечивают максимальную гибкость в использовании.",
     },
   ],
   [
     {
-      title: "Ретро-дизайн",
-      text: "Кровати в ретро-стиле придают интерьеру уникальный и элегантный вид.",
+      title: "Устойчивость к влаге",
+      text: "Некоторые модели штор устойчивы к влаге, что делает их отличным выбором для ванных комнат и кухонь.",
     },
     {
-      title: "Светодиодная подсветка",
-      text: "Модели с встроенной подсветкой создают уютную атмосферу и подходят для спальни с современным интерьером.",
+      title: "Простота установки на карниз",
+      text: "Шторы можно легко установить на стандартный карниз с использованием кольцевых креплений или петель.",
     },
     {
-      title: "Регулируемая жесткость",
-      text: "Матрас можно настроить под индивидуальные предпочтения по жесткости для максимального комфорта.",
+      title: "Пожарная безопасность",
+      text: "Некоторые ткани для штор имеют огнеупорные свойства, что обеспечивает дополнительную безопасность в помещении.",
     },
     {
-      title: "Влагостойкость",
-      text: "Некоторые модели кроватей имеют влагостойкое покрытие, что предотвращает повреждения от влаги.",
-    },
-  ],
-  [
-    {
-      title: "Легкость перемещения",
-      text: "Конструкция кровати позволяет легко перемещать ее в помещении или при необходимости транспортировать.",
-    },
-    {
-      title: "Ортопедический матрас",
-      text: "Матрас с ортопедическими свойствами помогает снять напряжение с мышц и суставов, обеспечивая качественный отдых.",
-    },
-    {
-      title: "Борьба с аллергенами",
-      text: "Антиаллергенные материалы в кровати помогают избежать аллергических реакций во время сна.",
-    },
-    {
-      title: "Удобные подлокотники",
-      text: "Некоторые кровати имеют встроенные подлокотники для дополнительного комфорта и удобства.",
-    },
-  ],
-  [
-    {
-      title: "Низкий профиль",
-      text: "Низкий профиль кровати позволяет удобно спать и легко вставать, особенно для пожилых людей.",
-    },
-    {
-      title: "Разнообразие цветов",
-      text: "Кровати доступны в различных цветах, что позволяет подобрать модель, подходящую под любой интерьер.",
-    },
-    {
-      title: "Оптимизация пространства",
-      text: "Особенности конструкции кровати позволяют эффективно использовать пространство в небольших помещениях.",
-    },
-    {
-      title: "Современные технологии",
-      text: "Использование современных технологий в производстве кроватей обеспечивает долговечность и комфорт.",
-    },
-  ],
-  [
-    {
-      title: "Реализуем по индивидуальным заказам",
-      text: "Вы можете заказать кровать по индивидуальным размерам и с уникальными характеристиками для вашего дома.",
-    },
-    {
-      title: "Беспроводная зарядка",
-      text: "Некоторые модели кроватей оснащены беспроводной зарядкой для удобства использования мобильных устройств.",
-    },
-    {
-      title: "Матрасы с памятью формы",
-      text: "Матрасы с эффектом памяти формы повторяют контуры вашего тела, обеспечивая максимальный комфорт и поддержку.",
-    },
-    {
-      title: "Легкость в обслуживании",
-      text: "Съемные чехлы для матрасов и обивка делают уход за кроватью быстрым и простым.",
-    },
-  ],
-  [
-    {
-      title: "Отсутствие шума",
-      text: "Конструкция кровати минимизирует шум при движении, что делает ее идеальной для людей, чувствительных к шуму.",
-    },
-    {
-      title: "Многофункциональные модели",
-      text: "Некоторые кровати включают в себя дополнительные функции, такие как встроенные телевизоры или колонки.",
-    },
-    {
-      title: "Гарантия качества",
-      text: "Каждая кровать поставляется с гарантией качества, что подтверждает ее долговечность и надежность.",
-    },
-    {
-      title: "Удобство использования",
-      text: "Все механизмы и системы кровати просты в использовании и не требуют дополнительного обслуживания.",
-    },
-  ],
-  [
-    {
-      title: "Разнообразие стилей",
-      text: "Кровати могут быть выполнены в разных стилях: от классического до современного, что позволяет выбрать подходящую модель для любого интерьера.",
-    },
-    {
-      title: "Удобные размеры",
-      text: "Предлагаются кровати разных размеров, от односпальных до больших двуспальных моделей.",
-    },
-    {
-      title: "Экономия места",
-      text: "Кровати с встроенными полками и ящиками для хранения помогают сэкономить пространство в спальне.",
-    },
-    {
-      title: "Высокий комфорт",
-      text: "Специальные технологии и материалы в кроватях обеспечивают высокий уровень комфорта, что позволяет вам отдыхать на 100%.",
-    },
-  ],
-  [
-    {
-      title: "Поддержка для дополнительного сна",
-      text: "Кровати с дополнительными функциями, такими как раскладные механизмы, позволяют создать удобное спальное место для гостей.",
-    },
-    {
-      title: "Идеальные размеры для детей",
-      text: "Некоторые модели идеально подходят для детей и подростков, обеспечивая комфортный и безопасный сон.",
-    },
-    {
-      title: "Преимущества для спины",
-      text: "Особенности конструкции кровати, такие как поддержка поясничной области, способствуют улучшению состояния спины и уменьшению болей.",
-    },
-    {
-      title: "Невысокая цена",
-      text: "Кровати в данной категории доступны по цене, при этом качество не уступает более дорогим моделям.",
-    },
-  ],
-  [
-    {
-      title: "Гибкость при выборе матраса",
-      text: "Вы можете выбрать матрас с подходящей жесткостью и материалом, соответствующими вашим предпочтениям.",
-    },
-    {
-      title: "Встроенные дополнительные функции",
-      text: "Некоторые кровати имеют встроенные столики, полки или светильники для максимального удобства.",
-    },
-    {
-      title: "Удобство и стиль",
-      text: "Современный дизайн кровати гармонично сочетается с любым интерьером, добавляя комнате стиль и элегантность.",
-    },
-    {
-      title: "Простота установки",
-      text: "Кровать легко устанавливается без сложных инструкций и не требует профессиональной сборки.",
+      title: "Энергосбережение",
+      text: "Шторы с теплоизоляционными свойствами помогают снизить потери тепла, что может снизить потребление энергии.",
     },
   ],
 ];
@@ -274,134 +130,128 @@ const advantages = [
 const bestseller = [true, false];
 
 const images = [
+  // Faye Textured Curtain
   [
-    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_E240620.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_C240620.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_A240620.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_D240620.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_B240620.jpg?preset=Product1920x1440",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0649/faye-textured-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202451/0983/faye-textured-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-curtain-7-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202451/0983/faye-textured-curtain-3-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-curtain-8-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202451/0983/faye-textured-curtain-2-xl.jpg",
   ],
+  // Cozy Cloud Curtain
   [
-    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_E240510.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_C240510.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_A240510.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_B240510.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_D240510.jpg?preset=Product1920x1440",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-14-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-19-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-9-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-15-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-16-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-2-xl.jpg",
   ],
+  // Cozy Cloud Blackout Curtain
   [
-    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_E241104.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_D241104.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_B241104.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_A241104.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_C241104.jpg?preset=Product1920x1440",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-15-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-5-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-3-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-18-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-4-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-23-xl.jpg",
   ],
+  // Cozy Cloud Blackout Curtain 2
   [
-    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_B230221.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_A230221.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_E230221.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_D230221.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_C230221.jpg?preset=Product1920x1440",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-2-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-11-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-1-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-9-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-blackout-curtain-1-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0745/cozy-cloud-curtain-6-xl.jpg",
   ],
+  // Elinor Floral Mughal Linen Cotton Curtain
   [
-    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_G210722.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_I210722.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_H210722.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_F210722.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_J210722.jpg?preset=Product1920x1440",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202430/0294/elinor-floral-mughal-linen-cotton-curtain-1-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202430/0294/elinor-floral-mughal-linen-cotton-curtain-1-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202430/0293/elinor-floral-mughal-linen-cotton-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202430/0297/elinor-floral-mughal-linen-cotton-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202430/0295/elinor-floral-mughal-linen-cotton-curtain-xl.jpg",
   ],
+  // Emery Linen Sheer Curtain
   [
-    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_E230712.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_C230712.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_A230712.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_B230712.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_D230712.jpg?preset=Product1920x1440",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202501/0040/custom-emery-linen-sheer-drape-white-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0004/emery-linen-sheer-curtain-1-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0005/open-box-emery-linen-sheer-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0005/open-box-emery-linen-sheer-curtain-1-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0088/emery-linen-sheer-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0031/emery-linen-sheer-curtain-1-xl.jpg",
   ],
+  // Emery Linen Sheer Curtain 2
   [
-    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_E240802.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_D240802.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_B240802.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_A240802.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_C240802.jpg?preset=Product1920x1440",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0002/emery-linen-sheer-curtain-6-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0002/emery-linen-sheer-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0002/emery-linen-sheer-curtain-4-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0002/emery-linen-sheer-curtain-3-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0002/emery-linen-sheer-curtain-5-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0002/emery-linen-sheer-curtain-gray-xl.jpg",
   ],
+  // Новый подмассив 1
   [
-    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_E30708.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_C30708.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_B30708.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_D30708.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_A30708.jpg?preset=Product1920x1440",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-curtain-4-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-curtain-5-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-curtain-10-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-curtain-3-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0650/faye-textured-blackout-curtain-xl.jpg",
   ],
+  // Новый подмассив 2
   [
-    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_D220825.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_D220825.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_C220825.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_G220825.jpg?preset=Product1920x1440",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0216/bernyce-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0218/bernyce-curtain-2-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0218/bernyce-curtain-3-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0216/bernyce-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0218/bernyce-curtain-1-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0016/open-box-bernyce-curtain-xl.jpg",
   ],
+  // Новый подмассив 3
   [
-    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_G210329.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_C210329.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_D210329.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_E210329.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_B210329.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_S210212.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_R210212.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_U210212.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_T210212.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_V210212.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_BA210713.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_J231211.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_F231211.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_I231211.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_G231211.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_H231211.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_C210111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_B210111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_F210111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_H210111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_A210111.jpg?preset=Product1920x1440",
-  ],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_I211111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_H211111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_J211111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_N211111.jpg?preset=Product1920x1440",
-    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_L211111.jpg?preset=Product1920x1440",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0476/blue-floral-blackout-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0476/blue-floral-blackout-curtain-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-4-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-2-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-3-xl.jpg",
+    "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0479/blue-floral-blackout-curtain-xl.jpg",
   ],
 ];
+
 
 const material = [
   "хлопок",
-  "сатин",
-  "перкаль",
+  "полиэстер",
+  "жаккард",
+  "лионский шелк",
+  "бархат",
+  "органза",
   "лен",
-  "шелк",
-  "бамбук",
-  "поплин",
-  "фланель",
-  "микрофибра",
+  "тюль",
+  "велюр",
 ];
 
 const collections = [
-  "soft touch",
-  "luxury sleep",
-  "dream comfort",
-  "nature touch",
-  "serenity",
-  "royal comfort",
+  "morning breeze",
+  "midnight elegance",
+  "warmth of nature",
+  "classic charm",
+  "vintage chic",
+  "modern luxury",
 ];
 
 const colors = [
-  "palette-gray-light",
-  "white",
-  "palette-beige",
+ "palette-gray-light",
+  "black",
+ "palette-brown",
+ "white",
+ "palette-beige",
+  "palette-green",
   "palette-gray",
-  "palette-brown-light",
+   "palette-brown-light",
 ];
 
 const discount = [true, false];
@@ -409,138 +259,155 @@ const discount = [true, false];
 const isNew = [true, false];
  
  
- 
 const names = [
+  "nightshade",
+  "velvetsilence",
+  "dreamveil",
+  "whispersoft",
+  "eclipsedream",
+  "moonlightmist",
+  "serenityveil",
+  "softglow",
+  "cozyshade",
+  "twilightsleep",
+  "midnightdream",
+  "dawnlight",
+  "silkshadow",
+  "starlightveil",
+  "dreamhaze",
+  "shadowrest",
+  "gentlesleep",
+  "calmwave",
+  "cloudveil",
   "dreamline",
-  "cozysleep",
-  "softnest",
-  "comfortset",
-  "snoozepure",
-  "slumberlux",
-  "restify",
-  "silkrest",
-  "snugglefit",
-  "cloudsleep",
-  "dreamnest",
-  "warmtouch",
-  "sleepmax",
-  "comfynight",
-  "velvetsnooze",
-  "purelinen",
-  "serenebed",
-  "sleepluxe",
-  "restora",
-  "snuggleline",
 ];
+
 
 
 const products = [
-  "постельное белье",
-  "постельное белье",
-  "постельное белье",
-  "постельное белье",
-  "постельное белье",
+  "легкие шторы",
+  "роскошные шторы",
+  "современные шторы",
+  "тканевые шторы",
+  "стильные шторы",
+  "утепленные шторы",
+  "элегантные шторы",
+  "плотные шторы",
+  "яркие шторы",
+  "веселые шторы",
+  "непрозрачные шторы",
+  "флористические шторы",
+  "классические шторы",
+  "декоративные шторы",
+  "премиум шторы",
 ];
 
-
 const options = [
+ 
   {
-    "материал": ["хлопок", "сатин", "бязь", "лен", "микрофибра", "шелк"],
+    "тип крепления": ["на люверсах", "на штанге", "на петлях", "на крючках"],
   },
   {
-    "размер комплекта": ["односпальный", "полутороспальный", "двуспальный", "евро", "семейный"],
+    "тип шторы": ["тёмная", "светопроницаемая", "тюлевая", "теплоизоляционная"],
   },
   {
-    "узор": ["однотонное", "с узором", "в полоску", "в клетку", "с цветами"],
+    "узор": ["однотонное", "в клетку", "в полоску", "с геометрическим узором", "с цветами", "флоральный"],
   },
   {
-    "тип пододеяльника": ["на молнии", "на пуговицах", "с прорезью"],
+    "светопоглощение": ["непрозрачные", "полупрозрачные", "прозрачные"],
   },
   {
-    "тип простыни": ["обычная", "на резинке"],
+    "влажность ткани": ["водоотталкивающее", "стандартное", "с водоотталкивающей пропиткой"],
   },
   {
-    "количество наволочек": ["1", "2", "4"],
+    "декор": ["с кружевом", "с вышивкой", "с бахромой", "без декора"],
   },
   {
-    "плотность ткани": ["120 г/м²", "140 г/м²", "160 г/м²"],
+    "плотность ткани": ["150 г/м²", "200 г/м²", "250 г/м²"],
+  },
+  {
+    "защита от солнца": ["есть", "нет"],
   },
   {
     "антибактериальная обработка": ["есть", "нет"],
   },
 ];
 
+
 const maintenance = [
-  "Стирать постельное белье перед первым использованием для удаления возможных загрязнений.",
-  "Соблюдайте рекомендации по температуре стирки, указанные на ярлыке изделия.",
-  "Используйте мягкие моющие средства, чтобы избежать повреждения ткани.",
-  "Стирайте светлое и темное белье отдельно, чтобы предотвратить окрашивание.",
-  "Выворачивайте пододеяльники и наволочки наизнанку перед стиркой для лучшей сохранности ткани.",
-  "Не используйте отбеливатели для цветных и деликатных тканей.",
-  "Избегайте перегрузки стиральной машины для равномерной стирки.",
-  "Сушите белье на свежем воздухе или при умеренной температуре в сушильной машине.",
-  "Гладьте постельное белье при температуре, указанной для конкретного типа ткани.",
-  "Не храните влажное белье, чтобы избежать появления плесени и запахов.",
-  "Соблюдайте регулярность смены постельного белья для поддержания гигиены.",
-  "Храните белье в сухом и проветриваемом месте вдали от прямых солнечных лучей.",
-  "Используйте ароматизированные саше для сохранения свежести белья при хранении.",
-  "Не допускайте домашних животных на постельное белье для предотвращения повреждений ткани.",
-  "Стирайте постельное белье с минимальным отжимом, чтобы сохранить мягкость материала.",
+  "Стирайте шторы перед первым использованием для удаления возможных загрязнений и запахов.",
+  "Следуйте инструкциям по стирке, указанным на ярлыке, чтобы сохранить ткань в хорошем состоянии.",
+  "Используйте мягкие моющие средства и избегайте агрессивных химикатов, чтобы не повредить ткань.",
+  "Стирайте светлые и темные шторы отдельно, чтобы избежать их окрашивания.",
+  "При стирке выворачивайте шторы наизнанку для защиты от излишнего износа.",
+  "Не используйте отбеливатели для цветных тканей, чтобы избежать потери цвета.",
+  "Для сохранения формы и структуры ткани избегайте перегрузки стиральной машины.",
+  "Сушите шторы на свежем воздухе или в помещении с хорошей вентиляцией, чтобы избежать запахов.",
+  "Гладьте шторы при температуре, подходящей для их материала, чтобы не повредить ткань.",
+  "Не храните влажные шторы, чтобы избежать появления плесени и неприятных запахов.",
+  "Регулярно чистите шторы, чтобы предотвратить накопление пыли и загрязнений.",
+  "Храните шторы в сухом месте, вдали от прямых солнечных лучей, чтобы сохранить их внешний вид.",
+  "Для сохранения свежести используйте ароматизированные саше или тканевые мешочки при хранении.",
+  "Не допускайте попадания домашних животных на шторы, чтобы избежать повреждения ткани.",
+  "Используйте деликатный режим отжима при стирке штор, чтобы избежать деформации ткани.",
 ];
 
-const descriptions = [ [
-  "Мягкое и комфортное постельное бельё из натурального хлопка создаёт уютную атмосферу для сна. Подходит для всех сезонов благодаря своей воздухопроницаемости.",
-  "Доступно в различных цветах и узорах, чтобы дополнить интерьер вашей спальни."
-],
+
+const descriptions = [
   [
-    "Элегантное постельное бельё из сатина с шелковистым блеском придаёт изысканности вашей спальне. Приятное на ощупь и долговечное в использовании.",
-  "Идеальный выбор для тех, кто ценит сочетание стиля и комфорта."
-  ],
-[
-  "Комплект постельного белья из микрофибры обеспечивает мягкость и устойчивость к износу. Легко стирается и быстро сохнет, оставаясь ярким даже после многих стирок.",
-  "Идеально подходит для интенсивного использования благодаря своей прочности."
-],
-  [
-    "Роскошное постельное бельё из египетского хлопка обеспечивает максимальный комфорт и долговечность. Ткань с плотным плетением гарантирует мягкость и прочность.",
-    "Подходит для создания роскошной и уютной спальни."
+    "Шторы из натурального хлопка создают уют и гармонию в вашем интерьере. Легкие и дышащие, они идеально подходят для летних месяцев.",
+    "Доступны в различных цветах и узорах, чтобы соответствовать любому стилю вашего помещения."
   ],
   [
-    "Дышащее льняное постельное бельё сохраняет прохладу летом и тепло зимой. Натуральный материал создаёт расслабляющую атмосферу.",
-    "С течением времени становится только мягче и приятнее на ощупь."
+    "Элегантные шторы из сатина с блеском придают интерьеру утончённость и стиль. Они создают атмосферу роскоши и комфорта.",
+    "Идеальный выбор для создания изысканного интерьера, который привлечет внимание."
   ],
   [
-    "Детский комплект постельного белья с яркими принтами и мягкой тканью. Идеально для создания уютной и безопасной зоны для сна.",
-    "Материалы гипоаллергенны и подходят для чувствительной кожи."
+    "Шторы из микрофибры долговечны, легко чистятся и быстро сохнут. Они сохраняют свою яркость даже после многих стирок.",
+    "Подходят для интенсивного использования и идеально подходят для кухни или ванной."
   ],
   [
-    "Гипоаллергенное постельное бельё из бамбукового волокна обладает антибактериальными свойствами и сохраняет свежесть в течение долгого времени.",
-    "Подходит для людей с чувствительной кожей или аллергиями."
+    "Роскошные шторы из шелка придают комнате элегантность и утонченность. Приятные на ощупь, они создают атмосферу уюта и стиля.",
+    "Отличный выбор для создания роскошного интерьера в спальне или гостиной."
   ],
   [
-    "Двухслойное постельное бельё с эффектом терморегуляции создаёт оптимальные условия для сна в любое время года.",
-    "Изготовлено из мягкой и дышащей ткани, которая сохраняет форму после стирки."
+    "Шторы из льна идеально подходят для создания расслабляющей и прохладной атмосферы в летний период. Зимой они сохраняют тепло и создают уют.",
+    "Натуральные материалы становятся мягче с течением времени и придают комнате естественную красоту."
   ],
- ]
+  [
+    "Шторы для детской комнаты с яркими принтами и мягкой текстурой. Они создают атмосферу уюта и безопасности для вашего ребенка.",
+    "Материалы гипоаллергенны и безопасны для чувствительной кожи малышей."
+  ],
+  [
+    "Гипоаллергенные шторы из бамбуковых волокон обладают антибактериальными свойствами и сохраняют свежесть даже после длительного использования.",
+    "Отлично подходят для людей с аллергиями и чувствительной кожей."
+  ],
+  [
+    "Шторы с терморегулирующим эффектом обеспечивают комфорт в помещении в любое время года, создавая оптимальные условия для сна и отдыха.",
+    "Изготавливаются из мягких и дышащих тканей, которые не теряют своей формы после стирки."
+  ]
+];
+
 
 const packing = [
   {
     packing: {
-      text: "Комплект постельного белья аккуратно упакован в пластиковый пакет и помещён в картонную коробку для безопасной доставки.",
+      text: "Комплект штор аккуратно упакован в пластиковый пакет и помещён в картонную коробку для безопасной доставки.",
     },
   },
   {
     packing: {
-      text: "Каждый комплект постельного белья завернут в защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+      text: "Каждый комплект штор завернут в защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
     },
   },
   {
     packing: {
-      text: "Постельное бельё упаковано в прочный пакет с воздухопроницаемой защитой, чтобы сохранить свежесть и предотвратить повреждения.",
+      text: "Шторы упакованы в прочный пакет с воздухопроницаемой защитой, чтобы сохранить их свежесть и предотвратить повреждения.",
     },
   },
   {
     packing: {
-      text: "Для защиты ткани от внешних воздействий комплект постельного белья упакован в многослойную защитную плёнку.",
+      text: "Для защиты ткани от внешних воздействий комплект штор упакован в многослойную защитную плёнку.",
     },
   },
   {
@@ -550,12 +417,12 @@ const packing = [
   },
   {
     packing: {
-      text: "Постельное бельё упаковано в герметичный пакет с защитой от влаги и запахов, чтобы обеспечить его сохранность при транспортировке.",
+      text: "Шторы упакованы в герметичный пакет с защитой от влаги и запахов, чтобы обеспечить их сохранность при транспортировке.",
     },
   },
   {
     packing: {
-      text: "Комплект постельного белья помещён в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+      text: "Комплект штор помещён в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
     },
   },
   {
@@ -565,32 +432,32 @@ const packing = [
   },
   {
     packing: {
-      text: "Комплект постельного белья запечатан в защитную плёнку и помещён в коробку с внутренней амортизацией для безопасной доставки.",
+      text: "Комплект штор запечатан в защитную плёнку и помещён в коробку с внутренней амортизацией для безопасной доставки.",
     },
   },
   {
     packing: {
-      text: "Постельное бельё упаковано в плотный пакет и снабжено дополнительной защитой в виде мягких прокладок в коробке.",
+      text: "Шторы упакованы в плотный пакет и снабжены дополнительной защитой в виде мягких прокладок в коробке.",
     },
   },
   {
     packing: {
-      text: "Для безопасной транспортировки комплект постельного белья упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+      text: "Для безопасной транспортировки комплект штор упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
     },
   },
   {
     packing: {
-      text: "Постельное бельё помещено в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+      text: "Шторы помещены в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
     },
   },
   {
     packing: {
-      text: "Комплект постельного белья упакован в индивидуальную упаковку и надежно помещён в коробку с дополнительными защитными материалами.",
+      text: "Комплект штор упакован в индивидуальную упаковку и надежно помещён в коробку с дополнительными защитными материалами.",
     },
   },
   {
     packing: {
-      text: "Постельное бельё упаковано в герметичную упаковку и картонную коробку с амортизирующими элементами для безопасной доставки.",
+      text: "Шторы упакованы в герметичную упаковку и картонную коробку с амортизирующими элементами для безопасной доставки.",
     },
   },
 ];
@@ -717,7 +584,6 @@ const materials = [
       декор: "с современными абстрактными узорами",
     },
   },
- 
 ];
 
 
@@ -771,9 +637,9 @@ for (let i = 0; i <= 89; i++) {
 
  
   const sizes = {
-    ширина: [Math.round(random(150, 650) / 100) * 100],
+    ширина: [Math.round(random(300, 500) / 100) * 100],
 
-    высота: [Math.round(random(150, 650) / 10) * 10],
+    высота: [Math.round(random(300, 500) / 10) * 10],
     // вес: [Math.round(random(100, 170) / 10) * 10],
   };
 
