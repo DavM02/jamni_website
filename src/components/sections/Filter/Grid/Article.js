@@ -9,7 +9,7 @@ export default function Article(props) {
 
   const { data: dataLength } = useSWRImmutable(["news"], getLength);
   const randomId = useMemo(() => [Math.floor(Math.random() * dataLength), "news"], [dataLength])
-  const { data, error, isLoading } = useSWRImmutable(
+  const { data, } = useSWRImmutable(
     randomId,
     getItem
   );

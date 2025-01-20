@@ -11,7 +11,7 @@ export default function MoreProducts({ headline = "еще товары" }) {
 
     const randomCatalog = useMemo(() => ['beds', 'decor', "sofas", "poufs", "chairs", "armchairs"][Math.min(5, Math.round(Math.random() * 6))], []);
     const catalog = useParams().catalog ?? randomCatalog
-  console.log(catalog)
+ 
     const { data, error, isLoading } = useSWRImmutable([
         catalog,
         1,

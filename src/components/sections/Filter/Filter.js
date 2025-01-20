@@ -12,12 +12,11 @@ import "./media.css";
 import { AnimatePresence } from "framer-motion";
 import SmoothAppearance from "../../ui/SmoothAppearance";
 import Pagination from "../../ui/Pagination/Pagination";
-
 export default function Filter({ path }) {
   const [searchParams] = useSearchParams();
 
   const page = parseInt(searchParams.get("page") ?? 1);
-
+ 
   const { data, error, isLoading, mutate } = useSWRImmutable([path, page, 18]);
   const { data: dataLength } = useSWRImmutable([path], getLength);
   const { handleFilter } = useFilter();

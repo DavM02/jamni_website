@@ -21,7 +21,7 @@ export default function ProductSections() {
     [id, catalog, id + catalog],
     getItem
   );
-
+ 
   return (
     <>
       <AnimatePresence mode="wait">
@@ -30,14 +30,14 @@ export default function ProductSections() {
         ) : data === null ? (
           <NoResults level={-1} />
         ) : data && !isLoading ? (
-          <SmoothAppearance key={"product"}>
+              <SmoothAppearance key={id}>
             <ProductOptions data={data}  />
             <ProductDescription data={data} />
                 {(catalog === "sofas" || catalog === 'beds') && <Configuration price={data.price} />}
             <MoreProducts />
           </SmoothAppearance>
         ) : (
-          <DataLoading />
+          <DataLoading key={'loading'}/>
         )}
         
       </AnimatePresence>

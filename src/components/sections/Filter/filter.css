@@ -7,18 +7,20 @@
   max-width: 1438px;
 }
 
-#beds-intro + section + #filter .filter-display img, #armchairs-intro+section+#filter .filter-display img{
+#beds-intro + section + #filter .filter-display img,
+ #armchairs-intro+section+#filter .filter-display img,
+    #bedsheets-intro+section+#filter .filter-display img
+ {
   object-fit: contain !important;
 }
 
-#beds-intro + section + #filter .filter-display .placeholder span, #armchairs-intro+section+#filter .filter-display .placeholder span {
+#beds-intro + section + #filter .filter-display .placeholder span,
+ #armchairs-intro+section+#filter .filter-display .placeholder span,
+    #bedsheets-intro+section+#filter .filter-display .placeholder span
+ {
   background-color: var(--white);
 }
-
-#beds-intro + #filter .filter-display img {
-  object-fit: contain !important;
-}
-
+ 
 #filter .filter-header {
   margin-bottom: 15px;
 }

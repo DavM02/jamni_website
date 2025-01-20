@@ -11,7 +11,7 @@ function PageTransition(Component) {
     const [isAnimating, setIsAnimating] = useState(false);
     const { scrollbarAccess } = useContext(MainContext);
 
-    const isIos = useMemo(() => /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream, [])
+    // const isIos = useMemo(() => /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream, [])
  
     useBlocker(({ currentLocation: current, nextLocation: next }) => {
       return isAnimating && current.pathname !== next.pathname;
@@ -104,7 +104,7 @@ function PageTransition(Component) {
               exit={{
                 transform: 'translateY(-100%)',
                 transition: {
-                  delay: 2.3,
+                  delay: 2.2,
                 },
               }}
               transition={{

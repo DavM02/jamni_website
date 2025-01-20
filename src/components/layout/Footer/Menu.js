@@ -6,7 +6,7 @@ export default function Menu() {
         <div className='footer-menu row wrap s-between gap-50'>
             <ul className='column gap-20 text-main text-light xxsmall-text up-case'>
                 <li>
-                    <Link>Постельное белье</Link>
+                    <Link to={"catalog/bedsheets"}>Постельное белье</Link>
                 </li>
                 <li>
                     <Link>Аксессуары из войлока</Link>

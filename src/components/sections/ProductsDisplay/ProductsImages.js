@@ -10,7 +10,7 @@ export default function ProductsImages({ category, getImages, data }) {
         return data.flatMap((el, i) => {
             return el
         })
-    }, [])
+    }, [data])
 
     return (
         <AnimatePresence mode='wait'>

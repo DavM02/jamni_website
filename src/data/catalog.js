@@ -567,6 +567,109 @@ const catalog = {
     bg: "https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_BW220419.jpg?preset=Product3840x2880",
     posY: "48%",
   },
+  bedsheets: {
+    id: "bedsheets-intro",
+    headline: "постельное белье",
+    filterHeadline: "все постельное белье",
+    description: "Создайте атмосферу уюта и покоя с нашим постельным бельём, которое не только добавит элегантности в ваш интерьер, но и обеспечит вам комфортный и здоровый сон каждую ночь.",
+    materials: [
+      "хлопок",
+      "сатин",
+      "перкаль",
+      "лен",
+      "шелк",
+      "бамбук",
+      "поплин",
+      "фланель",
+      "микрофибра",
+    ],
+
+    collections: [
+      "soft touch",
+      "luxury sleep",
+      "dream comfort",
+      "nature touch",
+      "serenity",
+      "royal comfort",
+    ],
+    filters: [
+      [
+        "цена",
+        {
+          min: 20000,
+          max: 70000,
+          val: "руб",
+        },
+        "price",
+      ],
+    ],
+    sliderData: [
+      {
+        name: "classic collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_C220825.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "luxury collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_U210212.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "modern collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_R210212.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "vintage collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_H210111.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "minimalist collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_A210111.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "elegant collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "classic collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_C220825.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "luxury collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_U210212.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "modern collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_R210212.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "vintage collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_H210111.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "minimalist collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_A210111.jpg?preset=Product1920x1440",
+      },
+      {
+        name: "elegant collection",
+        image:
+          "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
+      },
+    ],
+
+    
+    bg: "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
+    posY: "48%",
+  },
 };
 
 export default catalog;

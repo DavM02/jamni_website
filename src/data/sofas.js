@@ -275,119 +275,131 @@ const bestseller = [true, false];
 
 const images = [
   [
-    "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BV240126.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BT240126.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BQ240126.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BU240126.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BR240126.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/101917RCLPO_BS240126.jpg?preset=Product3840x2880",
- 
-],
-[
-  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_D240126.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_A240126.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_E240126.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_B240126.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_C240126.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/10633R2PL_F240126.jpg?preset=Product3840x2880"
-],
-  [
-    "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_I230412.jpg?preset=Product3840x2880",
-    "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_H230412.jpg?preset=Product3840x2880",
-    "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_J230412.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_M230412.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_N230412.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_O230412.jpg?preset=Product3840x2880"
-],
-[
- "https://cdn.arhaus.com/product/StandardV2/200019REBC_J220419.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/200019REBC_I220419.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/200019REBC_K220419.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/200019REBC_N220419.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/200019REBC_O220419.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/200019REBC_P220419.jpg?preset=Product3840x2880"
-],
-[
-  "https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_BX220419.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_BW220419.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_BY220419.jpg?preset=Product3840x2880",
- "https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_CB220419.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_CC220419.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/CTROWLTHARC3_CD220419.jpg?preset=Product3840x2880"
-],
-[
-  "https://cdn.arhaus.com/product/StandardV2/CTROWUPHARCB_BK220802.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/CTROWUPHARCB_K220802.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/CTROWUPHARCB_L220802.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/CTROWUPHARCB_N220802.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/CTROWUPHARCB_O220802.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/CTROWUPHARCB_P220802.jpg?preset=Product3840x2880"
-],
-  ["https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_I230412.jpg?preset=Product3840x2880",
-
-    "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_H230412.jpg?preset=Product3840x2880",
-    "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_J230412.jpg?preset=Product3840x2880",
-    "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_M230412.jpg?preset=Product3840x2880",
-    "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_N230412.jpg?preset=Product3840x2880",
-    "https://cdn.arhaus.com/product/StandardV2/CTOTSUPHRCRB_O230412.jpg?preset=Product3840x2880"
+    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_E240620.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_C240620.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_A240620.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_D240620.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45DNFCMKGBD_B240620.jpg?preset=Product1920x1440",
   ],
   [
-    "https://cdn.arhaus.com/product/StandardV2/ZKTFR2B_BJ240125.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/ZKTFR2B_BH240125.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/ZKTFR2B_BE240125.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/ZKTFR2B_BI240125.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/ZKTFR2B_BF240125.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/ZKTFR2B_BG240125.jpg?preset=Product3840x2880"
-],
-[
-  "https://cdn.arhaus.com/product/StandardV2/101129SWBLP_B210412.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/101129SWBLP_A210412.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/101129SWBLP_C210412.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/101129SWBLP_F210412.jpg?preset=Product3840x2880",
-"https://cdn.arhaus.com/product/StandardV2/101129SWBLP_G210412.jpg?preset=Product3840x2880"
-],
-[
-  "https://cdn.arhaus.com/product/StandardV2/101910SWKM.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/101910SWKM_2.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/101910SWKM_3.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/101910SWKM_5.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/101910SWKM_6.jpg?preset=Product3840x2880"
-],
-[
-  "https://cdn.arhaus.com/product/StandardV2/X91FSWB_I200313.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/X91FSWB_K210825.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/X91FSWB_L210825.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/X91FSWB_N210825.jpg?preset=Product3840x2880",
-  "https://cdn.arhaus.com/product/StandardV2/X91FSWB_O210825.jpg?preset=Product3840x2880"
-]
+    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_E240510.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_C240510.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_A240510.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_B240510.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45ASTHQNKT_D240510.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_E241104.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_D241104.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_B241104.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_A241104.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45LAUBBQNBD_C241104.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_B230221.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_A230221.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_E230221.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_D230221.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45MHLVAKGBD_C230221.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_G210722.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_I210722.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_H210722.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_F210722.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/X1DFQBA_J210722.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_E230712.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_C230712.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_A230712.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_B230712.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45FINEUPHQG_D230712.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_E240802.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_D240802.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_B240802.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_A240802.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/MDWYEF718376_C240802.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_E30708.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_C30708.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_B30708.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_D30708.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BODHIOTQN_A30708.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_D220825.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_D220825.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_C220825.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45STMARHQNKT_G220825.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_G210329.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_C210329.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_D210329.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_E210329.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARCFOGQN2_B210329.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_S210212.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_R210212.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_U210212.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_T210212.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_V210212.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFULQGL2_BA210713.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_J231211.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_F231211.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_I231211.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_G231211.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45BECKNSQNKT_H231211.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_C210111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_B210111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_F210111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_H210111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_D210111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45PEARFSTQGL2_A210111.jpg?preset=Product1920x1440",
+  ],
+  [
+    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_I211111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_H211111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_J211111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_N211111.jpg?preset=Product1920x1440",
+    "https://cdn.arhaus.com/product/StandardV2/45RIGBNOSQKT_L211111.jpg?preset=Product1920x1440",
+  ],
 ];
 
 const material = [
-  "натуральное дерево",
-  "металл с покрытием",
-  "кожа",
-  "экокожа",
-  "ткань",
-  "бархат",
-  "сетка для вентиляции",
+  "хлопок",
+  "сатин",
+  "перкаль",
+  "лен",
+  "шелк",
+  "бамбук",
+  "поплин",
+  "фланель",
+  "микрофибра",
 ];
 
 const collections = [
-  "comfort collection",
-  "relax collection",
-  "executive collection",
-  "home collection",
-  "premium collection",
-  "urban collection",
+  "soft touch",
+  "luxury sleep",
+  "dream comfort",
+  "nature touch",
+  "serenity",
+  "royal comfort",
 ];
 
 const colors = [
   "palette-gray-light",
-  "black",
-  "palette-brown",
   "white",
   "palette-beige",
-  "palette-green",
   "palette-gray",
   "palette-brown-light",
 ];
@@ -399,401 +411,313 @@ const isNew = [true, false];
  
  
 const names = [
-  "chairlux",
-  "relaxseat",
-  "comfortsit",
-  "loungerra",
-  "sitwell",
-  "armora",
-  "stylechair",
-  "seatmax",
-  "relaxline",
-  "comfortchair",
-  "serenityseat",
-  "cozyrest",
-  "chairify",
-  "luxsit",
-  "peacechair",
-  "sitplus",
-  "relaxfit",
-  "reclinerra",
-  "chairora",
-  "perfectsit",
-  "restaura",
+  "dreamline",
+  "cozysleep",
+  "softnest",
+  "comfortset",
+  "snoozepure",
+  "slumberlux",
+  "restify",
+  "silkrest",
+  "snugglefit",
+  "cloudsleep",
+  "dreamnest",
+  "warmtouch",
+  "sleepmax",
+  "comfynight",
+  "velvetsnooze",
+  "purelinen",
+  "serenebed",
+  "sleepluxe",
+  "restora",
+  "snuggleline",
 ];
 
 
 const products = [
-  "комфортное кресло",
-  "уютное кресло",
-  "роскошное кресло",
-  "просторное кресло",
-  "современное кресло",
-  "классическое кресло",
-  "стильное кресло",
+  "постельное белье",
+  "постельное белье",
+  "постельное белье",
+  "постельное белье",
+  "постельное белье",
 ];
+
+
 const options = [
   {
-    "наличие подлокотников": ["есть", "нет", "съемные"],
+    "материал": ["хлопок", "сатин", "бязь", "лен", "микрофибра", "шелк"],
   },
   {
-    "механизм качания": ["есть", "нет", "с фиксацией"],
+    "размер комплекта": ["односпальный", "полутороспальный", "двуспальный", "евро", "семейный"],
   },
   {
-    "материал обивки": ["ткань", "кожа", "экокожа", "велюр", "микрофибра"],
+    "узор": ["однотонное", "с узором", "в полоску", "в клетку", "с цветами"],
   },
   {
-    "материал каркаса": ["дерево", "металл", "пластик", "алюминий"],
+    "тип пододеяльника": ["на молнии", "на пуговицах", "с прорезью"],
   },
   {
-    "максимальная нагрузка": ["100 кг", "120 кг", "150 кг", "200 кг"],
+    "тип простыни": ["обычная", "на резинке"],
   },
   {
-    "тип основания": ["поворотное", "фиксированное", "с колесиками"],
+    "количество наволочек": ["1", "2", "4"],
   },
   {
-    "регулировка высоты": ["есть", "нет"],
+    "плотность ткани": ["120 г/м²", "140 г/м²", "160 г/м²"],
   },
   {
-    "цвет обивки": ["черный", "коричневый", "бежевый", "серый", "синий", "красный"],
-  },
-  {
-    "поддержка поясницы": ["есть", "нет", "регулируемая"],
+    "антибактериальная обработка": ["есть", "нет"],
   },
 ];
 
 const maintenance = [
-  "Регулярно удаляйте пыль и загрязнения с кресла с помощью мягкой щетки или пылесоса.",
-  "Для чистки обивки используйте мягкие моющие средства, подходящие для конкретного материала.",
-  "Избегайте попадания жидкости на обивку, особенно если материал не влагостойкий.",
-  "Используйте специальные средства для ухода за кожей и экокожей, чтобы сохранить их эластичность.",
-  "Не размещайте кресло рядом с источниками тепла, чтобы предотвратить деформацию материалов.",
-  "Протирайте металлические элементы сухой или слегка влажной тканью для предотвращения коррозии.",
-  "Регулярно проверяйте механизм качания и регулировки высоты, чтобы предотвратить износ.",
-  "Избегайте чрезмерных нагрузок на кресло, чтобы сохранить его прочность и долговечность.",
-  "Используйте защитные накладки на ножки, чтобы избежать повреждения напольного покрытия.",
-  "Не допускайте домашних животных к креслу, чтобы предотвратить царапины и повреждения обивки.",
-  "При длительном использовании кресла проветривайте помещение для предотвращения накопления запахов.",
-  "Проверяйте крепление подлокотников и других съемных частей для безопасности.",
-  "Используйте чехлы для защиты обивки в местах с высокой проходимостью.",
-  "Регулярно смазывайте подвижные механизмы для плавной работы кресла.",
-  "Периодически протирайте колеса, если кресло оснащено ими, чтобы избежать скопления грязи.",
+  "Стирать постельное белье перед первым использованием для удаления возможных загрязнений.",
+  "Соблюдайте рекомендации по температуре стирки, указанные на ярлыке изделия.",
+  "Используйте мягкие моющие средства, чтобы избежать повреждения ткани.",
+  "Стирайте светлое и темное белье отдельно, чтобы предотвратить окрашивание.",
+  "Выворачивайте пододеяльники и наволочки наизнанку перед стиркой для лучшей сохранности ткани.",
+  "Не используйте отбеливатели для цветных и деликатных тканей.",
+  "Избегайте перегрузки стиральной машины для равномерной стирки.",
+  "Сушите белье на свежем воздухе или при умеренной температуре в сушильной машине.",
+  "Гладьте постельное белье при температуре, указанной для конкретного типа ткани.",
+  "Не храните влажное белье, чтобы избежать появления плесени и запахов.",
+  "Соблюдайте регулярность смены постельного белья для поддержания гигиены.",
+  "Храните белье в сухом и проветриваемом месте вдали от прямых солнечных лучей.",
+  "Используйте ароматизированные саше для сохранения свежести белья при хранении.",
+  "Не допускайте домашних животных на постельное белье для предотвращения повреждений ткани.",
+  "Стирайте постельное белье с минимальным отжимом, чтобы сохранить мягкость материала.",
 ];
 
-const descriptions = [
+const descriptions = [ [
+  "Мягкое и комфортное постельное бельё из натурального хлопка создаёт уютную атмосферу для сна. Подходит для всех сезонов благодаря своей воздухопроницаемости.",
+  "Доступно в различных цветах и узорах, чтобы дополнить интерьер вашей спальни."
+],
   [
-    "Это кресло — идеальное сочетание комфорта и стиля. Его универсальный дизайн подходит для современных и классических интерьеров. Прочные материалы и эргономичная форма обеспечивают длительное удобство использования. Кресло доступно в различных цветах и текстурах.",
-    "Подходит для офисов, жилых комнат и спален, добавляя элегантности и комфорта в любую обстановку. Его долговечность делает это кресло отличным выбором для ежедневного использования."
+    "Элегантное постельное бельё из сатина с шелковистым блеском придаёт изысканности вашей спальне. Приятное на ощупь и долговечное в использовании.",
+  "Идеальный выбор для тех, кто ценит сочетание стиля и комфорта."
+  ],
+[
+  "Комплект постельного белья из микрофибры обеспечивает мягкость и устойчивость к износу. Легко стирается и быстро сохнет, оставаясь ярким даже после многих стирок.",
+  "Идеально подходит для интенсивного использования благодаря своей прочности."
+],
+  [
+    "Роскошное постельное бельё из египетского хлопка обеспечивает максимальный комфорт и долговечность. Ткань с плотным плетением гарантирует мягкость и прочность.",
+    "Подходит для создания роскошной и уютной спальни."
   ],
   [
-    "Элегантное кресло с мягкими подлокотниками и удобным сиденьем обеспечит комфорт на протяжении всего дня. Простой, но выразительный дизайн сделает его стильным дополнением вашего интерьера.",
-    "Прочные материалы и обивка из высококачественных тканей позволяют креслу сохранять внешний вид даже при интенсивном использовании. Легко чистится и ухаживается."
+    "Дышащее льняное постельное бельё сохраняет прохладу летом и тепло зимой. Натуральный материал создаёт расслабляющую атмосферу.",
+    "С течением времени становится только мягче и приятнее на ощупь."
   ],
   [
-    "Кресло с минималистичным дизайном идеально подходит для современных интерьеров. Компактные размеры делают его отличным выбором для малогабаритных помещений.",
-    "Обивка из прочного материала устойчива к загрязнениям, а регулируемая спинка добавляет функциональности. Надёжное основание обеспечивает устойчивость и безопасность."
+    "Детский комплект постельного белья с яркими принтами и мягкой тканью. Идеально для создания уютной и безопасной зоны для сна.",
+    "Материалы гипоаллергенны и подходят для чувствительной кожи."
   ],
   [
-    "Удобное кресло с уникальным дизайном, которое станет ярким акцентом в вашем интерьере. Высокая спинка и мягкое сиденье гарантируют комфортный отдых.",
-    "Легкость ухода и качественная обивка делают это кресло подходящим для использования в офисах и домашних условиях."
+    "Гипоаллергенное постельное бельё из бамбукового волокна обладает антибактериальными свойствами и сохраняет свежесть в течение долгого времени.",
+    "Подходит для людей с чувствительной кожей или аллергиями."
   ],
   [
-    "Кресло с регулируемым наклоном спинки и мягкими подлокотниками идеально подойдёт для офисных помещений и кабинетов. Эргономичная конструкция обеспечивает правильную поддержку спины.",
-    "Изготовлено из прочных и износостойких материалов, что гарантирует долговечность и комфорт при длительном использовании."
+    "Двухслойное постельное бельё с эффектом терморегуляции создаёт оптимальные условия для сна в любое время года.",
+    "Изготовлено из мягкой и дышащей ткани, которая сохраняет форму после стирки."
   ],
-  [
-    "Кресло с изысканной текстурой и стильной обивкой создаст атмосферу роскоши и уюта. Подходит для гостиной, спальни или кабинета.",
-    "Комфортное сиденье с мягким наполнителем и прочное основание обеспечивают надёжность и стиль, сочетая элегантность и функциональность."
-  ],
-  [
-    "Компактное и удобное кресло, идеально подходящее для небольших помещений. Легкий, но прочный каркас делает его удобным для перемещения.",
-    "Доступно в различных цветах и материалах, что позволяет легко подобрать модель для любого стиля интерьера."
-  ],
-  [
-    "Кресло с высококачественной обивкой и современным дизайном обеспечит комфорт и добавит элегантности вашему дому или офису.",
-    "Мягкие подлокотники и эргономичная спинка поддерживают правильную осанку, что делает это кресло отличным выбором для длительного использования."
-  ],
-  [
-    "Эргономичное кресло с поддержкой для поясницы и регулируемой высотой, идеально подходящее для офисных рабочих мест.",
-    "Качественные материалы и износостойкая обивка обеспечивают долгий срок службы и комфорт при работе за столом."
-  ],
-  [
-    "Модное кресло с плавными линиями и мягкой текстурой. Прекрасно сочетается с современными интерьерами, добавляя уюта и стиля.",
-    "Изготовлено из материалов, устойчивых к пятнам и износу, что делает его лёгким в уходе."
-  ],
-  [
-    "Кресло с дополнительной опцией поворотного механизма и регулируемой высотой. Отличный выбор для офисов и кабинетов.",
-    "Прочное основание и износостойкая обивка обеспечивают надёжность, комфорт и стильное дополнение к рабочему месту."
-  ],
-  [
-    "Кресло с просторным сиденьем и мягкими подушками станет любимым местом для отдыха после тяжёлого дня.",
-    "Прочные ткани и эргономичный дизайн поддерживают правильную осанку и создают комфорт для всей семьи."
-  ],
-  [
-    "Элегантное и современное кресло, которое подчёркивает стиль любого помещения. Плавные формы и богатая палитра цветов делают его выразительным акцентом интерьера.",
-    "Мягкая обивка и надёжный каркас гарантируют долговечность и комфорт в использовании."
-  ],
-  [
-    "Компактное кресло с функциональным дизайном, которое легко впишется в небольшие пространства. Прекрасный выбор для гостиных и офисных зон отдыха.",
-    "Изготовлено из прочных материалов, устойчивых к загрязнениям, и легко чистится."
-  ],
-  [
-    "Кресло с мягким сиденьем и регулируемой спинкой для максимального удобства. Отличный выбор для офиса или дома.",
-    "Лёгкость сборки и простота ухода делают его универсальным и удобным для ежедневного использования."
-  ],
-  [
-    "Комфортное кресло с подставкой для ног и мягкой спинкой идеально подойдёт для чтения и отдыха.",
-    "Высококачественные материалы и прочная конструкция делают его надёжным и стильным дополнением вашего интерьера."
-  ],
-  [
-    "Кресло с уникальным механизмом качания и фиксируемым положением для максимального расслабления.",
-    "Прочные подлокотники и устойчивая конструкция гарантируют безопасность и комфорт."
-  ],
-  [
-    "Современное кресло с ярким дизайном и удобным сиденьем станет украшением вашего офиса или домашней зоны отдыха.",
-    "Обивка из качественного материала устойчива к износу и обеспечивает комфорт на долгие годы."
-  ]
-];
-
+ ]
 
 const packing = [
   {
     packing: {
-      text: "Кресло упаковано в прочную картонную коробку с внутренней защитой, чтобы предотвратить повреждения при транспортировке.",
+      text: "Комплект постельного белья аккуратно упакован в пластиковый пакет и помещён в картонную коробку для безопасной доставки.",
     },
   },
   {
     packing: {
-      text: "Каждое кресло обёрнуто в полиэтиленовую плёнку и помещено в коробку с амортизирующими вставками для безопасной доставки.",
+      text: "Каждый комплект постельного белья завернут в защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
     },
   },
   {
     packing: {
-      text: "Для защиты кресла при перевозке используются дополнительные антиударные материалы и жёсткая картонная упаковка.",
+      text: "Постельное бельё упаковано в прочный пакет с воздухопроницаемой защитой, чтобы сохранить свежесть и предотвратить повреждения.",
     },
   },
   {
     packing: {
-      text: "Кресло надёжно упаковано в несколько слоёв защитной плёнки и помещено в коробку для предотвращения механических повреждений.",
+      text: "Для защиты ткани от внешних воздействий комплект постельного белья упакован в многослойную защитную плёнку.",
     },
   },
   {
     packing: {
-      text: "Каждая часть кресла индивидуально упакована для максимальной безопасности, а вся конструкция помещена в прочную коробку.",
+      text: "Каждое изделие в комплекте индивидуально упаковано в защитную плёнку, а коробка снабжена мягкими прокладками для дополнительной безопасности.",
     },
   },
   {
     packing: {
-      text: "Упаковка кресла включает плотный картон и мягкие прокладки, чтобы защитить обивку и элементы каркаса от повреждений.",
+      text: "Постельное бельё упаковано в герметичный пакет с защитой от влаги и запахов, чтобы обеспечить его сохранность при транспортировке.",
     },
   },
   {
     packing: {
-      text: "Кресло обёрнуто в защитную плёнку и зафиксировано внутри коробки с амортизирующими элементами для безопасной транспортировки.",
+      text: "Комплект постельного белья помещён в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
     },
   },
   {
     packing: {
-      text: "Прочная коробка и мягкие защитные вставки предотвращают повреждения кресла при перевозке и обеспечивают его сохранность.",
+      text: "Каждое изделие аккуратно сложено и упаковано в картонную коробку с защитной плёнкой для предотвращения повреждений.",
     },
   },
   {
     packing: {
-      text: "Каждое кресло упаковано с использованием ударопрочных материалов, чтобы гарантировать его целостность при доставке.",
+      text: "Комплект постельного белья запечатан в защитную плёнку и помещён в коробку с внутренней амортизацией для безопасной доставки.",
     },
   },
   {
     packing: {
-      text: "Для надёжной транспортировки кресло помещено в коробку с многослойной защитной плёнкой и мягкими подкладками.",
+      text: "Постельное бельё упаковано в плотный пакет и снабжено дополнительной защитой в виде мягких прокладок в коробке.",
     },
   },
   {
     packing: {
-      text: "Кресло упаковано с использованием плотных защитных материалов, которые обеспечивают его сохранность от ударов и повреждений.",
+      text: "Для безопасной транспортировки комплект постельного белья упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
     },
   },
   {
     packing: {
-      text: "Каждое кресло обёрнуто в плёнку, предотвращающую повреждения, и помещено в коробку с дополнительными прокладками.",
+      text: "Постельное бельё помещено в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
     },
   },
   {
     packing: {
-      text: "Кресло надёжно фиксируется внутри коробки с помощью антиударных прокладок для безопасной перевозки.",
+      text: "Комплект постельного белья упакован в индивидуальную упаковку и надежно помещён в коробку с дополнительными защитными материалами.",
     },
   },
   {
     packing: {
-      text: "Для предотвращения повреждений кресло помещено в коробку с мягкими защитными слоями и плёнкой для обивки.",
-    },
-  },
-  {
-    packing: {
-      text: "Каждое кресло аккуратно упаковано в плёнку и плотную коробку, чтобы обеспечить его доставку без повреждений.",
-    },
-  },
-  {
-    packing: {
-      text: "Защитная упаковка кресла включает картон и плёнку, которые предотвращают механические повреждения при транспортировке.",
-    },
-  },
-  {
-    packing: {
-      text: "Кресло упаковано в коробку с плёнкой и амортизирующими материалами, которые обеспечивают его сохранность при доставке.",
-    },
-  },
-  {
-    packing: {
-      text: "Прочная упаковка и дополнительные вставки защищают кресло от повреждений при перевозке и длительном хранении.",
+      text: "Постельное бельё упаковано в герметичную упаковку и картонную коробку с амортизирующими элементами для безопасной доставки.",
     },
   },
 ];
 
+
 const materials = [
   {
     materials: {
-      "основной материал": "микрофибра",
-      каркас: "деревянный",
-      покрытие: "матовое",
-      декор: "гладкая",
-    },
-  },
-  {
-    materials: {
-      обивка: "кожа",
-      каркас: "металлический",
-      наполнитель: "латекс",
-      спецификация: "водоотталкивающее покрытие",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "ткань",
-      каркас: "деревянный",
+      "основной материал": "хлопок",
+      основа: "100% хлопковая ткань с плотным переплетением",
       покрытие: "гладкое",
-      декор: "с орнаментом",
+      декор: "с нежным цветочным узором",
     },
   },
   {
     materials: {
-      обивка: "велюр",
-      каркас: "металлический",
-      наполнитель: "поролон",
-      спецификация: "съемные чехлы",
+      обивка: "перкаль",
+      основа: "натуральные волокна с высокой плотностью",
+      наполнитель: "синтепон",
+      спецификация: "дышащий и гипоаллергенный",
     },
   },
   {
     materials: {
       "основной материал": "микрофибра",
-      каркас: "деревянный",
-      покрытие: "глянцевое",
-      декор: "рельефное",
-    },
-  },
-  {
-    materials: {
-      обивка: "кожа",
-      каркас: "металлический",
-      наполнитель: "латекс",
-      спецификация: "антиаллергенная обработка",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "ткань",
-      каркас: "деревянный",
+      основа: "мелкозернистая ткань с водоотталкивающим покрытием",
       покрытие: "матовое",
-      декор: "с орнаментом",
+      декор: "с бархатистым рисунком",
+    },
+  },
+  {
+    materials: {
+      обивка: "лён",
+      основа: "натуральный лён с антибактериальной обработкой",
+      наполнитель: "пух",
+      спецификация: "устойчивость к выцветанию и износу",
+    },
+  },
+  {
+    materials: {
+      "основной материал": "полиэстер",
+      основа: "высокопрочный полиэстер, устойчивый к сминанию",
+      покрытие: "глянцевое",
+      декор: "с орнаментом из геометрических фигур",
+    },
+  },
+  {
+    materials: {
+      обивка: "шелк",
+      основа: "натуральный шелк с гладкой текстурой",
+      наполнитель: "пуховое волокно",
+      спецификация: "терморегуляция и гипоаллергенность",
+    },
+  },
+  {
+    materials: {
+      "основной материал": "сатин",
+      основа: "глянцевая сатиновая ткань с легким блеском",
+      покрытие: "гладкое",
+      декор: "с минималистичным узором",
     },
   },
   {
     materials: {
       обивка: "велюр",
-      каркас: "металлический",
+      основа: "плотная ткань с мягким ворсом",
       наполнитель: "синтепон",
-      спецификация: "устойчивость к выцветанию",
+      спецификация: "устойчивость к износу и выцветанию",
     },
   },
   {
     materials: {
-      "основной материал": "кожа",
-      каркас: "металлический",
-      покрытие: "глянцевое",
-      декор: "гладкая",
-    },
-  },
-  {
-    materials: {
-      обивка: "ткань",
-      каркас: "деревянный",
-      наполнитель: "латекс",
-      спецификация: "съемные подушки",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "микрофибра",
-      каркас: "металлический",
-      покрытие: "матовое",
-      декор: "с орнаментом",
-    },
-  },
-  {
-    materials: {
-      обивка: "кожа",
-      каркас: "деревянный",
-      наполнитель: "поролон",
-      спецификация: "устойчивость к механическим повреждениям",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "велюр",
-      каркас: "металлический",
-      покрытие: "глянцевое",
-      декор: "рельефное",
-    },
-  },
-  {
-    materials: {
-      обивка: "ткань",
-      каркас: "деревянный",
-      наполнитель: "синтепон",
-      спецификация: "антибактериальная обработка",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "кожа",
-      каркас: "деревянный",
-      покрытие: "матовое",
-      декор: "гладкая",
+      "основной материал": "трикотаж",
+      основа: "мягкая и эластичная ткань",
+      покрытие: "гладкое",
+      декор: "с рисунком в стиле ретро",
     },
   },
   {
     materials: {
       обивка: "микрофибра",
-      каркас: "металлический",
-      наполнитель: "латекс",
-      спецификация: "термостойкость",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "ткань",
-      каркас: "деревянный",
-      покрытие: "матовое",
-      декор: "с орнаментом",
-    },
-  },
-  {
-    materials: {
-      обивка: "велюр",
-      каркас: "металлический",
+      основа: "ткань с водоотталкивающим покрытием и высокой износостойкостью",
       наполнитель: "синтепон",
-      спецификация: "легкость в уходе",
+      спецификация: "гипоаллергенность и антибактериальная обработка",
     },
   },
+  {
+    materials: {
+      "основной материал": "хлопок",
+      основа: "натуральный хлопок с плотным переплетением для повышенной прочности",
+      покрытие: "гладкое",
+      декор: "с мягким пастельным узором",
+    },
+  },
+  {
+    materials: {
+      обивка: "бамбук",
+      основа: "экологичный материал с антибактериальной обработкой",
+      наполнитель: "пуховое волокно",
+      спецификация: "свежесть и комфорт в летнее время",
+    },
+  },
+  {
+    materials: {
+      "основной материал": "велюр",
+      основа: "мягкий и уютный материал с бархатистой текстурой",
+      покрытие: "гладкое",
+      декор: "с крупными геометрическими узорами",
+    },
+  },
+  {
+    materials: {
+      обивка: "перкаль",
+      основа: "плотная хлопковая ткань с мягким прикосновением",
+      наполнитель: "латекс",
+      спецификация: "высокая воздухопроницаемость и комфорт",
+    },
+  },
+  {
+    materials: {
+      "основной материал": "ткань с пропиткой",
+      основа: "материалы с водоотталкивающей и антибактериальной пропиткой",
+      покрытие: "матовое",
+      декор: "с современными абстрактными узорами",
+    },
+  },
+ 
 ];
 
 
@@ -820,7 +744,7 @@ for (let i = 0; i <= 89; i++) {
   probject.isNew = isNew[random(3, 1) - 1];
   probject.material = material[random(material.length)];
   probject.name = names[random(names.length)];
-  probject.price = Math.round(random(250000, 30000) / 1000) * 1000;
+  probject.price = Math.round(random(70000, 20000) / 1000) * 1000;
   probject.rating = (Math.random() * (5 - 3.8) + 3.8).toFixed(1);
 
   const nums = new Set();
@@ -847,10 +771,10 @@ for (let i = 0; i <= 89; i++) {
 
  
   const sizes = {
-    ширина: [Math.round(random(100, 350) / 100) * 100],
+    ширина: [Math.round(random(150, 650) / 100) * 100],
 
-    высота: [Math.round(random(100, 130) / 10) * 10],
-    вес: [Math.round(random(100, 170) / 10) * 10],
+    высота: [Math.round(random(150, 650) / 10) * 10],
+    // вес: [Math.round(random(100, 170) / 10) * 10],
   };
 
   const a = Object.entries(sizes);
