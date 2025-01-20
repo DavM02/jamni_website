@@ -67,6 +67,6 @@
     backdrop-filter: blur(0.5px);
 }
 
-#curtains-intro .mask-layer {
+#curtains-intro .mask-layer, #frameless-intro .mask-layer {
     backdrop-filter: blur(0.7px);
 }

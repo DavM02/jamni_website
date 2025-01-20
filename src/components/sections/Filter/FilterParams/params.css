@@ -45,16 +45,13 @@
 
 
 .filter-params .colors-filter li:nth-child(1) .input-state {
-
     background-color: var(--palette-gray-light);
     border: none;
 }
 
 .filter-params .colors-filter li:nth-child(2) .input-state {
-
     background-color: var(--black);
     border: none;
-
 }
 
 .filter-params .colors-filter li:nth-child(3) .input-state {

@@ -8,12 +8,16 @@
 }
 
 #beds-intro + section + #filter .filter-display img,
- #armchairs-intro+section+#filter .filter-display img,
-#bedsheets-intro+section+#filter .filter-display img
+#armchairs-intro+section+#filter .filter-display img,
+#bedsheets-intro+section+#filter .filter-display img,
+#frameless-intro+section+#filter .filter-display img
  {
   object-fit: contain !important;
 }
 
+#frameless-intro+section+#filter .filter-display img {
+background-color: #f6f6f6 !important;
+}
 
 #beds-intro + section + #filter .filter-display .placeholder span,
  #armchairs-intro+section+#filter .filter-display .placeholder span,

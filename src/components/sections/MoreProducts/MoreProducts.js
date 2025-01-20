@@ -9,7 +9,7 @@ import { useParams, useSearchParams } from 'react-router-dom'
 import useSWRImmutable from 'swr/immutable'
 export default function MoreProducts({ headline = "еще товары" }) {
 
-    const randomCatalog = useMemo(() => ['bedsheets', 'curtains', 'beds', 'decor', "sofas", "poufs", "chairs", "armchairs"][Math.min(7, Math.round(Math.random() * 8))], []);
+    const randomCatalog = useMemo(() => ['frameless', 'bedsheets', 'curtains', 'beds', 'decor', "sofas", "poufs", "chairs", "armchairs"][Math.min(7, Math.round(Math.random() * 8))], []);
     const catalog = useParams().catalog ?? randomCatalog
     const [searchParams] = useSearchParams()
 

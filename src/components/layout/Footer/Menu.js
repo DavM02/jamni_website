@@ -26,7 +26,7 @@ export default function Menu() {
                     <Link to={"catalog/beds"}>Кровати</Link>
                 </li>
                 <li>
-                    <Link>Бескаркасная мебель</Link>
+                    <Link to={"catalog/frameless"}>Бескаркасная мебель</Link>
                 </li>
             </ul>
             <ul className='column gap-20 text-main text-light xxsmall-text up-case'>
