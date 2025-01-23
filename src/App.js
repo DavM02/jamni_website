@@ -17,7 +17,7 @@ import OrderPage from "./pages/OrderPage/OrderPage";
 import AppLoading from "./components/AppLoading/AppLoading";
 import { useEffect, useState } from "react";
 import Cursor from "./components/Cursor/Cursor";
- 
+
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
 import Gen from "./data/sofas";
 // import Gen from "./data/generateData";
@@ -25,12 +25,11 @@ import Gen from "./data/sofas";
 function App() {
   const location = useLocation();
   const [renderApp, setRenderApp] = useState(false);
- 
 
   return (
     <>
       {renderApp && <Cursor />}
- {/* <Gen/> */}
+      <Gen />
       <AppLoading setRenderApp={setRenderApp} />
       <div
         className="App"

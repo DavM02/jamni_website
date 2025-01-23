@@ -37,10 +37,10 @@ export default function Menu() {
                     <Link to={"catalog/chairs"}>стулья</Link>
                 </li>
                 <li>
-                    <Link>Пуфы и банкетки</Link>
+                    <Link to={"catalog/poufs"}>Пуфы и банкетки</Link>
                 </li>
                 <li>
-                    <Link>Уличная мебель</Link>
+                    <Link to={"catalog/outdoor"}>Уличная мебель</Link>
                 </li>
             </ul>
             <ul className='column gap-20 text-main text-light xxsmall-text up-case'>

@@ -1,340 +1,439 @@
-const advantages = [
-  [
+const advantages = {
+  стулья: [
     {
-      title: "Регулируемые подголовники",
-      text: "Обеспечивают поддержку шеи и головы, позволяя выбрать оптимальное положение для отдыха или чтения.",
+      title: "Устойчивость к погодным условиям",
+      text: "Уличные стулья разработаны с учетом воздействия внешней среды, они устойчивы к дождю, ветру и солнечным лучам.",
     },
     {
-      title: "Индивидуальная настройка жесткости",
-      text: "Позволяет изменять жесткость сидений и спинки для создания идеального уровня комфорта.",
+      title: "Легкость в хранении",
+      text: "Эти стулья легко складываются и могут быть убраны на зиму или в случае ненадобности, что экономит место.",
     },
-    {
-      title: "Технология защиты от пятен",
-      text: "Специальная обработка ткани препятствует впитыванию жидкостей, упрощая уход за диваном.",
-    },
-    {
-      title: "Широкие посадочные места",
-      text: "Обеспечивают достаточно пространства для комфортного отдыха всей семьей или большой компании.",
-    },
-  ],
-  [
-    {
-      title: "Оптимальная поддержка",
-      text: "Диван оснащён прочными подушками спинки и сидений, которые обеспечивают идеальную поддержку позвоночника и помогают сохранять правильную осанку во время длительного отдыха.",
-    },
-    {
-      title: "Премиальные материалы",
-      text: "Обивка из высококачественной ткани или натуральной кожи устойчива к выцветанию и повреждениям, а наполнитель сохраняет упругость на долгие годы.",
-    },
-    {
-      title: "Механизм быстрого раскладывания",
-      text: "Инновационная система трансформации позволяет легко превратить диван в кровать, не прикладывая значительных усилий.",
-    },
-    {
-      title: "Дополнительные секции хранения",
-      text: "Скрытые ниши под сиденьем дают возможность хранить сезонные вещи и постельные принадлежности, экономя пространство в комнате.",
-    },
-    {
-      title: "Сменные чехлы",
-      text: "Съёмные чехлы упрощают уход за диваном — их можно стирать в машинке или заменять на новые, освежая внешний вид мебели.",
-    },
-    {
-      title: "Энергоэффективность",
-      text: "Используемые материалы обеспечивают теплоизоляцию, что создаёт уют и комфорт в прохладные дни.",
-    },
-  ],
-  [
-    {
-      title: "Угловая конфигурация",
-      text: "Идеальное решение для максимального использования пространства в углах комнаты, создавая больше мест для отдыха.",
-    },
-    {
-      title: "Дополнительные подушки",
-      text: "Комплект дополнительных подушек позволяет настроить уровень комфорта в соответствии с вашими предпочтениями.",
-    },
-    {
-      title: "Подлокотники с хранилищем",
-      text: "Встроенные секции в подлокотниках позволяют хранить мелкие предметы, такие как пульты или книги.",
-    },
-    {
-      title: "Водо- и грязеотталкивающее покрытие",
-      text: "Специальное покрытие защищает обивку от пятен и пролившихся жидкостей, упрощая уход за диваном.",
-    },
-    {
-      title: "Регулируемая глубина сидения",
-      text: "Позволяет адаптировать диван под разные предпочтения, обеспечивая максимальный комфорт.",
-    },
-    {
-      title: "Прочная конструкция",
-      text: "Каркас из усиленных материалов гарантирует долговечность и устойчивость даже при интенсивной эксплуатации.",
-    },
-  ],
-  [
-    {
-      title: "Гладкий механизм трансформации",
-      text: "Диван легко раскладывается в кровать благодаря инновационному механизму, который не царапает пол.",
-    },
-    {
-      title: "Натуральные наполнители",
-      text: "Использование пуха и латекса обеспечивает мягкость и поддерживающие свойства, подходящие для длительного отдыха.",
-    },
-    {
-      title: "Двусторонние подушки",
-      text: "Позволяют выбрать между двумя различными уровнями жесткости, меняя их местами по мере необходимости.",
-    },
-    {
-      title: "Стабильность и баланс",
-      text: "Модульная конструкция исключает смещения и обеспечивает устойчивость даже на неровных поверхностях.",
-    },
-    {
-      title: "Антискользящие ножки",
-      text: "Обеспечивают безопасное использование, предотвращая случайные перемещения дивана.",
-    },
-    {
-      title: "Изоляция шума",
-      text: "Снижает уровень шума при использовании благодаря специальным амортизирующим слоям.",
-    },
-  ],
-  [
-    {
-      title: "Просторное спальное место",
-      text: "Диван легко трансформируется в кровать, обеспечивая комфортное спальное место для гостей.",
-    },
-    {
-      title: "Удобство хранения",
-      text: "Встроенный бельевой ящик позволяет хранить постельное белье и другие вещи.",
-    },
-    {
-      title: "Современный механизм раскладывания",
-      text: "Надежный механизм обеспечивает плавное и легкое преобразование дивана в кровать.",
-    },
-    {
-      title: "Простота сборки",
-      text: "Диван быстро собирается без дополнительных инструментов, экономя ваше время.",
-    },
-  ],
-  [
-    {
-      title: "Универсальный дизайн",
-      text: "Подходит как для современных интерьеров, так и для классического оформления.",
-    },
-    {
-      title: "Высокая износостойкость",
-      text: "Качественные материалы устойчивы к ежедневному использованию.",
-    },
-    {
-      title: "Регулируемые подлокотники",
-      text: "Настраиваемые подлокотники обеспечивают дополнительный комфорт.",
-    },
-    {
-      title: "Долговечность",
-      text: "Крепкий каркас гарантирует длительный срок службы.",
-    },
-  ],
-  [
     {
       title: "Эргономичный дизайн",
-      text: "Обеспечивает оптимальную поддержку спины для длительного отдыха.",
-    },
-    {
-      title: "Легкий уход",
-      text: "Материалы, не требующие сложного ухода, сохраняют свежесть дивана.",
-    },
-    {
-      title: "Компактное хранение",
-      text: "Идеальное решение для небольших помещений с ограниченным пространством.",
-    },
-    {
-      title: "Быстрая трансформация",
-      text: "Легко раскладывается в кровать благодаря продуманной конструкции.",
-    },
-  ],
-  [
-    {
-      title: "Мягкие подушки",
-      text: "Подушки с наполнителем обеспечивают дополнительный уют и поддержку.",
-    },
-    {
-      title: "Декоративные швы",
-      text: "Элегантные детали добавляют стильный акцент.",
-    },
-    {
-      title: "Водоотталкивающее покрытие",
-      text: "Обивка защищена от случайных пятен и влаги.",
-    },
-    {
-      title: "Сменные чехлы",
-      text: "Легко обновите внешний вид с помощью сменных чехлов.",
-    },
-  ],
-  [
-    {
-      title: "Съемные подлокотники",
-      text: "Позволяют использовать диван в нескольких конфигурациях.",
-    },
-    {
-      title: "Прочная конструкция",
-      text: "Каркас из дерева и металла обеспечивает надежность.",
-    },
-    {
-      title: "Гипоаллергенные материалы",
-      text: "Безопасны для людей с аллергией.",
-    },
-    {
-      title: "Экологичность",
-      text: "Материалы соответствуют высоким стандартам экологической безопасности.",
-    },
-  ],
-  [
-    {
-      title: "Элегантные линии",
-      text: "Современный минималистичный дизайн для стильного интерьера.",
-    },
-    {
-      title: "Глубокая посадка",
-      text: "Обеспечивает удобное положение для отдыха.",
-    },
-    {
-      title: "Надежные петли",
-      text: "Петли и механизмы выдерживают высокие нагрузки.",
-    },
-    {
-      title: "Легкая транспортировка",
-      text: "Компактные размеры позволяют перемещать диван без усилий.",
-    },
-  ],
-  [
-    {
-      title: "Дизайн с акцентом на комфорт",
-      text: "Мягкие сиденья и регулируемые подлокотники создают пространство для идеального расслабления после долгого дня.",
-    },
-    {
-      title: "Надежный механизм складывания",
-      text: "Улучшенный механизм позволяет легко раскладывать диван, не повреждая пол и другие поверхности.",
+      text: "Стулья подходят для долгого пребывания на улице, обеспечивая комфорт и поддержку спины.",
     },
     {
       title: "Долговечность",
-      text: "Используемые материалы устойчивы к износу и сохраняют внешний вид даже при ежедневной эксплуатации.",
+      text: "Материалы, из которых изготовлены стулья, долговечны и не поддаются износу даже при частом использовании на открытом воздухе.",
     },
     {
-      title: "Компактные размеры",
-      text: "Диван не занимает много места, оставаясь функциональным и удобным.",
+      title: "Простота ухода",
+      text: "Уличные стулья легко чистятся и не требуют сложного ухода, что делает их удобными для повседневного использования.",
+    },
+    {
+      title: "Мобильность",
+      text: "Стулья легко перемещать по территории, они подходят для использования в любых местах, на даче или в саду.",
+    },
+    {
+      title: "Защита от ультрафиолетовых лучей",
+      text: "Материалы стульев не выгорают на солнце, что позволяет сохранять их внешний вид в идеальном состоянии.",
+    },
+    {
+      title: "Устойчивость к ветру",
+      text: "Стулья не переворачиваются даже при сильном ветре, обеспечивая стабильность и безопасность.",
+    },
+    {
+      title: "Удобство в использовании",
+      text: "Стулья имеют оптимальный угол наклона спинки и сиденья для комфортного отдыха на открытом воздухе.",
+    },
+    {
+      title: "Стильный внешний вид",
+      text: "Уличные стулья могут быть выполнены в различных стилях, идеально подходящих для вашего внешнего интерьера.",
     },
   ],
-  [
+  фонари: [
     {
-      title: "Поддержка поясницы",
-      text: "Специально разработанная форма спинки помогает снизить нагрузку на поясничный отдел и предотвращает дискомфорт.",
+      title: "Энергосбережение",
+      text: "Уличные фонари оснащены энергосберегающими лампами, которые обеспечивают долгое освещение без больших затрат электроэнергии.",
     },
     {
-      title: "Выбор из различных обивок",
-      text: "Широкий выбор материалов и цветов позволяет подобрать диван для любого интерьера.",
+      title: "Защита от влаги",
+      text: "Фонари защищены от дождя и снега, что позволяет им работать в любых погодных условиях.",
+    },
+    {
+      title: "Простота установки",
+      text: "Уличные фонари легко устанавливаются на даче, в саду или на улице, и не требуют особых знаний в монтаже.",
+    },
+    {
+      title: "Долговечность",
+      text: "Высококачественные материалы и устойчивость к внешним воздействиям делают фонари надежными и долговечными.",
+    },
+    {
+      title: "Регулируемая яркость",
+      text: "Некоторые модели фонарей позволяют регулировать яркость освещения в зависимости от времени суток.",
     },
     {
       title: "Безопасность",
-      text: "Все материалы соответствуют стандартам безопасности и не содержат токсичных веществ.",
+      text: "Уличные фонари обеспечивают безопасность, освещая участки на даче или во дворе, что уменьшает вероятность несчастных случаев.",
     },
     {
-      title: "Элегантные декоративные элементы",
-      text: "Детали дизайна, такие как строчка или пуговицы, добавляют стильные акценты.",
-    },
-  ],
-  [
-    {
-      title: "Улучшенная вентиляция",
-      text: "Наполнители с эффектом вентиляции поддерживают комфортную температуру во время отдыха.",
+      title: "Декоративное освещение",
+      text: "Фонари могут использоваться как декоративный элемент для создания уюта и атмосферы на вашем участке.",
     },
     {
-      title: "Модульная система",
-      text: "Позволяет изменять конфигурацию дивана для создания различных комбинаций сидений.",
-    },
-    {
-      title: "Простое использование",
-      text: "Переход от дивана к кровати занимает всего несколько секунд благодаря плавному механизму.",
+      title: "Автоматическое включение",
+      text: "Фонари с датчиками движения включаются автоматически, обеспечивая освещение по мере необходимости.",
     },
     {
       title: "Экологичность",
-      text: "Используемые ткани и наполнители безопасны для окружающей среды и подлежат переработке.",
+      text: "Фонари работают на солнечных батареях или используют энергосберегающие технологии, что помогает сократить углеродный след.",
+    },
+    {
+      title: "Мобильность",
+      text: "Некоторые модели фонарей можно легко перемещать по территории, создавая освещенные зоны в нужных местах.",
     },
   ],
-  [
+  столы: [
     {
-      title: "Стабильная конструкция",
-      text: "Каркас из усиленного дерева и стали обеспечивает максимальную прочность и устойчивость.",
+      title: "Устойчивость к внешним воздействиям",
+      text: "Уличные столы защищены от воздействия солнечного света и дождя, благодаря чему сохраняют привлекательный вид на долгое время.",
     },
     {
-      title: "Встроенные боковые карманы",
-      text: "Позволяют хранить пульты, книги или журналы, экономя место.",
+      title: "Простота ухода",
+      text: "Материалы, из которых сделаны столы, легко чистятся и не требуют сложного ухода.",
     },
     {
-      title: "Легкая чистка",
-      text: "Обивка устойчива к загрязнениям и легко очищается с помощью мягких средств.",
+      title: "Практичность",
+      text: "Эти столы подходят для различных мероприятий на открытом воздухе: пикников, барбекю или просто для отдыха в саду.",
     },
     {
-      title: "Улучшенная амортизация",
-      text: "Специальные пружины распределяют вес равномерно для дополнительного комфорта.",
-    },
-  ],
-  [
-    {
-      title: "Антибактериальные свойства",
-      text: "Наполнители с антибактериальной пропиткой предотвращают рост бактерий и грибков.",
+      title: "Мобильность",
+      text: "Уличные столы легко перемещать, что позволяет изменить расположение мебели в зависимости от настроения или погодных условий.",
     },
     {
-      title: "Премиальная отделка",
-      text: "Ручная отделка добавляет уникальный штрих каждому изделию.",
+      title: "Прочность",
+      text: "Таблицы выполнены из прочных материалов, которые выдерживают ежедневное использование и экстремальные погодные условия.",
     },
     {
-      title: "Отделение для мелочей",
-      text: "Скрытые отсеки позволяют аккуратно хранить личные вещи.",
+      title: "Многофункциональность",
+      text: "Столы могут быть использованы для разных нужд: как стол для еды, рабочее место или место для хранения.",
     },
     {
-      title: "Встроенные лампы",
-      text: "Некоторые модели оснащены встроенными лампами для дополнительного удобства.",
-    },
-  ],
-  [
-    {
-      title: "Легкость сборки",
-      text: "Благодаря простому дизайну, сборка дивана занимает минимальное количество времени.",
+      title: "Устойчивость к повреждениям",
+      text: "Столы не поддаются механическим повреждениям, и легко восстанавливаются после царапин и других повреждений.",
     },
     {
-      title: "Повышенная устойчивость",
-      text: "Дополнительные ножки увеличивают устойчивость и распределение нагрузки.",
+      title: "Сложность монтажа",
+      text: "Уличные столы легко собираются без необходимости в специализированных инструментах.",
     },
     {
-      title: "Глубокие посадочные места",
-      text: "Обеспечивают дополнительное пространство для комфортного отдыха с семьей.",
+      title: "Идеальные размеры",
+      text: "Столы бывают разных размеров, что позволяет выбрать оптимальный вариант для вашего пространства.",
     },
     {
-      title: "Энергоэффективность",
-      text: "Материалы помогают сохранять тепло в помещении, создавая уютную атмосферу.",
+      title: "Экологичность материалов",
+      text: "Материалы, использующиеся в уличных столах, экологически чистые и безопасны для здоровья человека и животных.",
     },
   ],
-];
+  диваны: [
+    {
+      title: "Комфорт на открытом воздухе",
+      text: "Уличные диваны специально разработаны для того, чтобы обеспечивать комфорт и уют на свежем воздухе, будь то балкон или дача.",
+    },
+    {
+      title: "Эстетичный внешний вид",
+      text: "Мебель для улицы выполнена в различных стилях, что позволяет выбрать идеальный вариант для любого внешнего пространства.",
+    },
+    {
+      title: "Устойчивость к погодным условиям",
+      text: "Диваны для улицы изготовлены из материалов, устойчивых к дождю и солнечным лучам, что гарантирует долгий срок службы.",
+    },
+    {
+      title: "Простота ухода",
+      text: "Мебель не требует особого ухода и легко чистится, что удобно при использовании на улице.",
+    },
+    {
+      title: "Удобство и функциональность",
+      text: "Диваны обеспечивают отличный комфорт, а некоторые модели включают дополнительные места для хранения.",
+    },
+    {
+      title: "Стойкость к пятнам",
+      text: "Материалы, используемые в диванах, устойчивы к пятнам, что упрощает уход за мебелью.",
+    },
+    {
+      title: "Эргономичный дизайн",
+      text: "Эти диваны удобны для длительного сидения, поддерживают правильное положение тела и идеально подходят для отдыха на улице.",
+    },
+    {
+      title: "Долговечность",
+      text: "Диваны для улицы прочные и устойчивые к износу, что гарантирует их долгий срок службы при активном использовании.",
+    },
+    {
+      title: "Экологичные материалы",
+      text: "Мебель изготавливается из экологически чистых материалов, что делает ее безопасной для здоровья.",
+    },
+    {
+      title: "Разнообразие стилей",
+      text: "Диваны могут быть выполнены в различных стилях, от минималистичных до роскошных моделей, подходящих для любого внешнего оформления.",
+    },
+  ],
+  кашпо: [
+    {
+      title: "Устойчивость к внешним воздействиям",
+      text: "Уличные кашпо сделаны из материалов, которые не боятся дождя, снега и солнечных лучей, сохраняют свою форму и цвет на долгие годы.",
+    },
+    {
+      title: "Подходит для любых растений",
+      text: "Кашпо имеют разнообразные формы и размеры, что позволяет выбрать подходящий вариант для любого растения.",
+    },
+    {
+      title: "Экологичность материалов",
+      text: "Все кашпо изготовлены из безопасных и экологически чистых материалов, что делает их безопасными для растений и окружающей среды.",
+    },
+    {
+      title: "Долговечность",
+      text: "Материалы, из которых изготавливаются кашпо, защищают от быстрого износа и не теряют привлекательного внешнего вида с течением времени.",
+    },
+    {
+      title: "Эстетика",
+      text: "Уличные кашпо могут быть выполнены в различных дизайнах, идеально сочетающихся с ландшафтным дизайном вашего участка.",
+    },
+    {
+      title: "Практичность",
+      text: "Кашпо удобно использовать для озеленения и декорирования садовых участков, террас или балконов.",
+    },
+    {
+      title: "Легкость в уходе",
+      text: "Кашпо не требуют особого ухода, они легко очищаются и не теряют своей формы.",
+    },
+    {
+      title: "Устойчивость к повреждениям",
+      text: "Кашпо устойчивы к механическим повреждениям и могут служить долго при правильном уходе.",
+    },
+    {
+      title: "Стойкость к выцветанию",
+      text: "Кашпо не выгорают на солнце и не теряют яркости, что делает их долговечными в наружном использовании.",
+    },
+    {
+      title: "Мобильность",
+      text: "Некоторые кашпо можно легко перемещать по территории, что позволяет обновить внешний вид вашего сада или балкона.",
+    },
+  ],
+};
 
 const bestseller = [true, false];
 
-const material = [
-  "ткань",
-  "кожзам",
-  "натуральная кожа",
-  "велюр",
-  "экокожа",
-  "микрофибра",
-  "поролон",
-  "синтепон",
-  "жаккард",
-  "пружинный блок",
-  "пух",
-  "латекс",
-];
+const images = {
+  кашпо: [
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0224/sienna-fiber-stone-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0334/sienna-fibre-stone-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0916/sienna-fibre-stone-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0925/sienna-fibre-stone-outdoor-planters-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202434/0031/sienna-fibre-stone-outdoor-planters-3-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0912/sienna-fibre-stone-outdoor-planters-xl.jpg",
+    ],
+    // Eclectic Villa Outdoor Planters
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0003/eclectic-villa-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0915/eclectic-villa-outdoor-planters-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202436/0003/artisan-handcrafted-terracotta-vase-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0335/eclectic-villa-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0915/eclectic-villa-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0335/eclectic-villa-outdoor-planters-1-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0036/img115xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0033/modern-rustic-fluted-outdoor-planters-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0041/img132xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0072/modern-rustic-fluted-outdoor-planters-2-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0072/modern-rustic-fluted-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0033/modern-rustic-fluted-outdoor-planters-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0890/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0888/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202439/0451/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0086/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0881/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0892/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0138/elena-planters-4-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0137/elena-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0138/elena-planters-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0137/elena-planters-10-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0138/elena-planters-2-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0137/elena-planters-4-xl.jpg",
+    ],
+  ],
+  диваны: [
+    // Lakewood Rope Outdoor Sofa
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0792/lakewood-rope-outdoor-sofa-76-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0794/lakewood-rope-outdoor-sofa-76-2-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0794/lakewood-rope-outdoor-sofa-76-3-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0499/lakewood-rope-outdoor-loveseat-xx-2-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0499/lakewood-rope-outdoor-loveseat-xx-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0499/lakewood-rope-outdoor-loveseat-xx-5-xl.jpg",
+    ],
+    // Huntington Wicker Slope Arm Outdoor Sofa
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0004/huntington-wicker-slope-arm-outdoor-sofa-84-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0002/huntington-wicker-slope-arm-outdoor-sofa-84-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0002/huntington-wicker-slope-arm-outdoor-sofa-84-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0003/build-your-own-huntington-wicker-slope-arm-ultimate-outdoo-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0876/huntington-wicker-4-piece-slope-arm-outdoor-sectional-100-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0007/huntington-wicker-slope-arm-outdoor-sofa-84-xl.jpg",
+    ],
+    // Kostas Wicker Outdoor Sofa
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0821/kostas-wicker-outdoor-sofa-88-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0528/kostas-wicker-outdoor-sofa-xx-2-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0528/kostas-wicker-outdoor-sofa-xx-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0069/kostas-wicker-outdoor-sofa-88-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0069/kostas-wicker-outdoor-sofa-88-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0853/kostas-wicker-outdoor-sofa-88-1-xl.jpg",
+    ],
+    // Indio Wood Modern Outdoor Sofa
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202443/0003/indio-wood-modern-outdoor-sofa-77-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202441/0005/indio-wood-modern-outdoor-sofa-77-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202441/0004/indio-wood-modern-outdoor-sofa-77-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0468/indio-eucalyptus-modern-platform-outdoor-sofa-77-5-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202441/0006/indio-wood-modern-outdoor-sofa-77-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202436/0019/indio-wood-modern-outdoor-sofa-77-1-xl.jpg",
+    ],
+  ],
+  стулья: [
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0058/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0877/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202435/0009/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0875/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0880/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0058/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0194/malibu-metal-platform-swivel-outdoor-lounge-chair-2-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0087/malibu-metal-platform-swivel-outdoor-lounge-chair-2-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0089/malibu-metal-platform-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0194/malibu-metal-platform-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0194/malibu-metal-platform-swivel-outdoor-lounge-chair-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0194/malibu-metal-platform-swivel-outdoor-lounge-chair-4-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0216/tulum-wicker-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0002/tulum-wicker-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0003/tulum-wicker-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0003/tulum-wicker-swivel-outdoor-lounge-chair-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0220/tulum-wicker-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0220/tulum-wicker-swivel-outdoor-lounge-chair-3-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0726/lakewood-rope-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0533/lakewood-rope-swivel-outdoor-lounge-chair-4-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0533/lakewood-rope-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0533/lakewood-rope-swivel-outdoor-lounge-chair-3-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0726/lakewood-rope-swivel-outdoor-lounge-chair-3-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0692/lakewood-rope-swivel-outdoor-lounge-chair-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202451/0022/torrey-wicker-papasan-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0898/torrey-wicker-papasan-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202451/0023/torrey-wicker-papasan-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0869/torrey-outdoor-furniture-cushion-covers-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0892/torrey-wicker-papasan-swivel-outdoor-lounge-chair-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0896/torrey-wicker-papasan-swivel-outdoor-lounge-chair-xl.jpg",
+    ],
+  ],
 
-const collections = [
-  "compact collection",
-  "module collection",
-  "goodnight collection",
-];
+  фонари: [
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0884/taylor-lantern-collection-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0885/taylor-lantern-collection-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0889/taylor-lantern-collection-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0897/taylor-lantern-collection-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1079/img190xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0889/taylor-lantern-collection-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0115/open-box-brooks-cross-bar-steel-glass-outdoor-lantern-2-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0115/open-box-brooks-cross-bar-steel-glass-outdoor-lantern-3-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0115/open-box-brooks-cross-bar-steel-glass-outdoor-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0037/brooks-cross-bar-steel-glass-outdoor-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0884/brooks-cross-bar-steel-glass-outdoor-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0882/envelope-mailbox-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1179/gale-metal-outdoor-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1179/gale-metal-outdoor-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1184/gale-metal-outdoor-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1181/gale-metal-outdoor-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1174/gale-metal-outdoor-lantern-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0200/easton-forged-iron-outdoor-lantern-4-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0200/easton-forged-iron-outdoor-lantern-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0889/easton-forged-iron-outdoor-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0030/easton-forged-iron-outdoor-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0028/easton-forged-iron-outdoor-lantern-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0617/avila-stamped-outdoor-coffee-table-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0095/blair-solar-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0096/blair-solar-lantern-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0096/blair-solar-lantern-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0096/blair-solar-lantern-3-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0096/blair-solar-lantern-2-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0095/blair-solar-lantern-1-xl.jpg",
+    ],
+  ],
+  столы: [
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0023/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
+      " https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0026/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0025/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
+
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0008/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
+
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0664/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0008/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--1-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0913/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0009/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0006/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0923/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0910/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0927/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0924/malibu-metal-extending-rectangular-outdoor-dining-table-76-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0002/malibu-metal-extending-rectangular-outdoor-dining-table-76-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0029/malibu-metal-extending-rectangular-outdoor-dining-table-76-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0031/malibu-metal-extending-rectangular-outdoor-dining-table-76-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0033/malibu-metal-extending-rectangular-outdoor-dining-table-76-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0002/malibu-metal-extending-rectangular-outdoor-dining-table-76-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0089/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0086/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0088/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0085/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0085/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0088/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-xl.jpg",
+    ],
+    [
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0590/riviera-72-metal-dining-table-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0590/riviera-72-metal-dining-table-1-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0756/riviera-metal-rectangular-outdoor-dining-table-72-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0755/riviera-metal-rectangular-outdoor-dining-table-72-5-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0755/riviera-metal-rectangular-outdoor-dining-table-72-4-xl.jpg",
+      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0755/riviera-metal-rectangular-outdoor-dining-table-72-1-xl.jpg",
+    ],
+  ],
+};
+
+const material = {
+  стулья: ["дерево", "металл", "пластик", "кожа", "ротанг"],
+  фонари: ["сталь", "стекло", "алюминий", "медь", "пластик"],
+  столы: ["дерево", "стекло", "металл", "камень", "МДФ"],
+  диваны: ["ткань", "кожа", "искусственная кожа", "дерево", "поролон"],
+  кашпо: ["керамика", "пластик", "бетон", "металл", "дерево"],
+};
+
+const collections = ["стулья", "фонари", "столы", "диваны", "кашпо"];
 
 const colors = [
   "palette-gray-light",
@@ -351,826 +450,791 @@ const discount = [true, false];
 
 const isNew = [true, false];
 
-const id = "";
+const names = {
+  стулья: ["sitflow", "relaxform", "zenchair", "seatmate", "woodbliss"],
+  фонари: ["glowlite", "brightbeam", "lanternova", "lumeorb", "shineflare"],
+  столы: ["tablecraft", "flatwood", "stonetop", "metalscape", "glassform"],
+  диваны: [
+    "sofasage",
+    "cushrealm",
+    "dreamlounger",
+    "comfortcloud",
+    "plushzone",
+  ],
+  кашпо: ["plantnest", "greenspire", "potbliss", "rootrock", "floraform"],
+};
+const products = {
+  стулья: [
+    "комфортный стул",
+    "садовый стул",
+    "классический стул",
+    "просторный стул",
+    "эстетичный стул",
+  ],
+  фонари: [
+    "умный фонарь",
+    "зарядный фонарь",
+    "декоративный фонарь",
+    "солнечный фонарь",
+    "мобильный фонарь",
+  ],
+  столы: [
+    "расширяемый стол",
+    "компактный стол",
+    "раздвижной стол",
+    "современный стол",
+    "компактный стол",
+  ],
+  диваны: [
+    "угловой диван",
+    "комфортный диван",
+    "трансформируемый диван",
+    "просторный диван",
+    "компактный диван",
+    "премиум диван",
+    "современный диван",
+    "классический диван",
+    "уютный диван",
+  ],
+  кашпо: [
+    "стильное кашпо",
+    "декоративное кашпо",
+    "роскошное кашпо",
+    "премиум кашпо",
+    "винтажное кашпо",
+  ],
+};
 
-const price = 30000 - 250000;
+const options = {
+  стулья: [
+    {
+      "тип сиденья": ["с подушкой", "без подушки"],
+    },
+    {
+      "регулировка высоты": ["есть", "нет"],
+    },
+    {
+      подлокотники: ["с подлокотниками", "без подлокотников"],
+    },
+    {
+      "устойчивость к погодным условиям": ["влагостойкие", "не влагостойкие"],
+    },
 
-const depth = 50 - 100;
+    {
+      "съемный чехол": ["да", "нет"],
+    },
+    {
+      "антискользящая база": ["есть", "нет"],
+    },
+    {
+      "поставка в комплекте": ["с подставкой для ног", "без подставки для ног"],
+    },
 
-const width = 100 - 350;
+    {
+      сборка: ["не требует сборки", "требует сборки"],
+    },
+  ],
+  фонари: [
+    {
+      "тип освещения": ["светодиодный", "галогенный", "флуоресцентный"],
+    },
+    {
+      "тип батареек": ["AA", "AAA", "литий-ионный аккумулятор"],
+    },
+    {
+      мощность: ["менее 5 Вт", "5-10 Вт", "более 10 Вт"],
+    },
+    {
+      "регулировка яркости": ["есть", "нет"],
+    },
+    {
+      "защита от дождя": ["водостойкие", "не водостойкие"],
+    },
+    {
+      "цвет света": ["теплый", "холодный", "нейтральный"],
+    },
+    {
+      управление: ["с пультом", "без пульта", "сенсорное"],
+    },
 
-const rating = 5;
+    {
+      "тип крепления": ["настенный", "напольный", "подвесной"],
+    },
+    {
+      "время работы": ["до 6 часов", "6-12 часов", "более 12 часов"],
+    },
+  ],
+  столы: [
+    {
+      "тип столешницы": ["дерево", "стекло", "металл"],
+    },
+    {
+      "регулировка высоты": ["есть", "нет"],
+    },
+    {
+      мобильность: ["с колесами", "без колес"],
+    },
+    {
+      "съемная столешница": ["да", "нет"],
+    },
+    {
+      форма: ["круглый", "прямоугольный", "квадратный"],
+    },
+    {
+      "количество ящиков": ["1", "2", "3 и более"],
+    },
+    {
+      "подставка для ног": ["есть", "нет"],
+    },
 
-const sleepingArea = [
-  "есть",
-  "нет",
-  "полутораспальное",
-  "двуспальное",
-  "кинг-сайз",
-];
-const linenBox = ["есть", "нет", "встроенный", "выдвижной"];
-const sofaType = [
-  "прямой",
-  "угловой",
-  "модульный",
-  "раскладной",
-  "диван-кровать",
-  "диван-пуф",
-  "компактный",
-];
+    {
+      "подставка в комплекте": ["с подставками для напитков", "без подставок"],
+    },
+  ],
+  диваны: [
+    {
+      "материал обивки": ["ткань", "кожа", "искусственная кожа"],
+    },
+    {
+      "тип механизма трансформации": ["раскладной", "выкатной", "книжка"],
+    },
+    {
+      "наличие подушек": ["с подушками", "без подушек"],
+    },
+    {
+      "регулировка наклона спинки": ["есть", "нет"],
+    },
+    {
+      "встроенный столик": ["есть", "нет"],
+    },
+    {
+      компактность: ["для небольшой комнаты", "для просторной комнаты"],
+    },
+    {
+      "съемный чехол": ["да", "нет"],
+    },
+  ],
+  кашпо: [
+    {
+      "тип установки": ["на подставке", "на земле", "на стене"],
+    },
+    {
+      "защита от перегрева": ["есть", "нет"],
+    },
+    {
+      "тип кашпо": ["с поддоном", "без поддона"],
+    },
 
-const names = [
-  "comforlux",
-  "foster",
-  "petrified",
-  "ramani",
-  "ivory",
-  "relaxmax",
-  "elegantform",
-  "modularease",
-  "cozynest",
-  "classicstyle",
-  "ultrasofa",
-  "dreamlounge",
-  "softline",
-  "primecomfort",
-  "spacesaver",
-  "urbanrelax",
-  "royalseat",
-  "harmonyset",
-  "flexisleep",
-  "velvettouch",
-  "cloudrest",
-  "modernfit",
-];
+    {
+      "антибактериальная обработка": ["есть", "нет"],
+    },
+    {
+      "устойчивость к морозам": ["есть", "нет"],
+    },
+    {
+      вентиляция: ["есть", "нет"],
+    },
 
-const products = [
-  "comfortable sofa",
-  "modern sofa",
-  "cozy sofa",
-  "stylish sofa",
-  "luxurious sofa",
-  "convenient sofa",
-  "spacious sofa",
-  "beautiful sofa",
-  "contemporary sofa",
-  "magnificent sofa",
-  "classic sofa",
-  "elegant sofa",
-  "soft sofa",
-  "unique sofa",
-  "unusual sofa",
-];
+    {
+      покрытие: ["гладкое", "матовое", "грубое"],
+    },
+    {
+      "экологичность материала": ["экологически чистое", "стандартное"],
+    },
+  ],
+};
 
-const options = [
-  {
-    "наличие подлокотников": ["есть", "нет"],
-  },
-  {
-    "ширина сиденья": ["80 см", "100 см", "120 см", "140 см"],
-  },
-  {
-    тип: [
-      "классический",
-      "раздвижной",
-      "кровать-раскладушка",
-      "с механизмом трансформации",
-      "диван-кровать",
-    ],
-  },
-  {
-    декор: [
-      "гладкая",
-      "рельефная",
-      "с орнаментом",
-      "с кнопками",
-      "с подушками",
-      "с вышивкой",
-      "с кожаным покрытием",
-    ],
-  },
-  {
-    "максимальная нагрузка": ["50 кг", "100 кг", "150 кг", "200 кг", "250 кг"],
-  },
-  {
-    "материал каркаса": ["дерево", "металл", "пластик"],
-  },
-  {
-    "тип наполнителя": ["поролон", "синтепон", "вата", "пух", "латекс"],
-  },
-  {
-    "тип обивки": ["ткань", "кожа", "экокожа", "велюр", "микрофибра"],
-  },
-  {
-    "регулировка спинки": ["есть", "нет"],
-  },
-  {
-    "наличие ящика для хранения": ["есть", "нет"],
-  },
-  {
-    "цвет каркаса": [
-      "черный",
-      "темно-коричневый",
-      "светлый",
-      "белый",
-      "деревянный",
-    ],
-  },
-];
+const maintenance = {
+  стулья: [
+    "Регулярно протирайте стул влажной тряпкой, чтобы избежать накопления пыли и грязи.",
+    "Проверяйте ножки стула на предмет повреждений или износа, чтобы избежать его шатания.",
+    "При необходимости очищайте стул с помощью мягких моющих средств.",
+    "Не ставьте стул на слишком горячие поверхности, чтобы избежать повреждения покрытия.",
+    "Регулярно осматривайте спинку и сиденье стула на наличие повреждений и зацепок.",
+    "Для деревянных стульев используйте специальные восковые или масляные покрытия для защиты древесины.",
+    "Не подвергайте стул прямому воздействию солнечных лучей, чтобы предотвратить выцветание материала.",
+    "При сильных загрязнениях используйте специализированные средства для очистки ткани или кожи.",
+    "Для стульев с мягким наполнителем периодически заменяйте наполнитель для поддержания формы.",
+    "Храните стулья в сухом месте, чтобы избежать воздействия влаги и появления плесени.",
+  ],
+  фонари: [
+    "Очистите фонарь от пыли и грязи с помощью мягкой тряпки или щетки.",
+    "Для солнечных фонарей периодически очищайте солнечные панели от пыли, чтобы они эффективно заряжались.",
+    "При использовании на улице защищайте фонарь от дождя и снега.",
+    "Не оставляйте фонарь включенным на долгое время, чтобы продлить срок службы батарей.",
+    "Если фонарь с солнечным аккумулятором, убедитесь, что он находится в месте, где есть достаточно света.",
+    "Регулярно проверяйте работоспособность ламп и батарей в фонаре.",
+    "Храните фонарь в сухом месте, чтобы избежать его повреждения.",
+    "Не используйте фонарь при сильном ветре, чтобы избежать повреждения.",
+    "Избегайте перегрева фонаря на солнечном свете в жаркую погоду.",
+    "Используйте специальные средства для очистки стеклянных частей фонаря от пятен и загрязнений.",
+  ],
+  столы: [
+    "Протирайте стол влажной тканью, чтобы избежать скопления пыли.",
+    "Не ставьте горячие предметы прямо на поверхность стола, чтобы избежать повреждения покрытия.",
+    "Регулярно проверяйте стол на устойчивость и при необходимости затягивайте крепления.",
+    "Если стол из дерева, используйте специализированные средства для ухода за древесиной.",
+    "Не допускайте попадания влаги на деревянные поверхности, чтобы избежать их повреждения.",
+    "Не ставьте на стол слишком тяжелые предметы, чтобы избежать его деформации.",
+    "Используйте подставки или коврики для защиты стола от царапин.",
+    "При необходимости, снимайте декоративные элементы с поверхности стола, чтобы не повредить их.",
+    "Для стола с мягким покрытием используйте средства для чистки ткани или кожи.",
+    "Храните стол в сухом и проветриваемом помещении, чтобы избежать появления плесени или запахов.",
+  ],
+  диваны: [
+    "Регулярно пылесосьте диван для удаления пыли и волос.",
+    "При необходимости протирайте поверхность дивана влажной тряпкой.",
+    "Для кожи используйте специальные средства по уходу за кожей, чтобы сохранить ее мягкость и цвет.",
+    "Не допускайте попадания влаги на тканевые поверхности дивана.",
+    "Периодически осматривайте диван на наличие повреждений, таких как трещины или потертости.",
+    "Используйте защитные чехлы для дивана, чтобы уменьшить износ ткани.",
+    "Не оставляйте диван под прямыми солнечными лучами, чтобы избежать выцветания ткани.",
+    "При необходимости стирайте съемные чехлы в соответствии с инструкцией.",
+    "Для поддержания формы дивана периодически заменяйте наполнители подушек.",
+    "Не перегружайте диван тяжелыми предметами, чтобы избежать его деформации.",
+  ],
+  кашпо: [
+    "Очистите кашпо от грязи и пыли с помощью мягкой ткани.",
+    "Для кашпо с растениями регулярно проверяйте дренажные отверстия, чтобы предотвратить застой воды.",
+    "Не ставьте кашпо на сильно нагреваемые поверхности, чтобы избежать повреждения материала.",
+    "Для пластиковых кашпо используйте средства для очистки от загрязнений, чтобы поддерживать их внешний вид.",
+    "Избегайте попадания воды на наружные части кашпо в зимний период, чтобы предотвратить его замерзание.",
+    "Периодически проверяйте состояние корней растений и меняйте грунт в кашпо.",
+    "При сильных загрязнениях кашпо можно помыть теплой водой с мягким моющим средством.",
+    "Не оставляйте кашпо на улице в условиях сильного ветра, чтобы избежать его повреждения.",
+    "Регулярно очищайте внешнюю поверхность от пыли и грязи для поддержания внешнего вида.",
+    "Для защиты от перепадов температуры используйте утеплители для кашпо в зимнее время.",
+  ],
+};
 
-const maintenance = [
-  "Регулярно пылесосьте диван, чтобы избежать накопления пыли и грязи в обивке.",
-  "Для чистки используйте мягкие ткани или щетку, чтобы не повредить материал обивки.",
-  "Не допускайте попадания жидкости на диван, особенно если материал не водоотталкивающий.",
-  "Для тканей с чувствительным покрытием используйте средства, предназначенные для ухода за этим типом материала.",
-  "Не ставьте диван в места с высокой влажностью, чтобы избежать повреждения наполнителя и материала.",
-  "Для кожи и экокожи используйте специальные средства для ухода, чтобы поддерживать эластичность и внешний вид.",
-  "Протирайте поверхность дивана сухой или слегка увлажненной тканью, чтобы предотвратить появление пятен.",
-  "Храните диван вдали от прямых солнечных лучей, чтобы избежать выцветания или деградации материала.",
-  "Регулярно проверяйте крепление подушек и каркас дивана, чтобы предотвратить износ и повреждения.",
-  "Если диван оснащен механизмом трансформации, периодически проверяйте его работоспособность и смазывайте движущиеся части.",
-  "Не ставьте тяжелые предметы на диван, чтобы не повредить его форму и структуру.",
-  "Не допускайте частого нахождения животных на диване, чтобы избежать повреждения ткани или кожаных элементов.",
-  "При использовании дивана в общественных местах или офисах, проводите регулярную чистку для поддержания гигиеничности.",
-  "Периодически проветривайте диван, чтобы избежать накопления запахов и влаги.",
-  "Для чистки диванов с встраиваемыми подушками используйте чистку по отдельности, чтобы сохранить форму и комфорт.",
-  "Используйте специальные чехлы для защиты дивана от пыли и грязи, особенно в местах с высокой проходимостью.",
-  "Не помещайте диван рядом с источниками тепла, такими как обогреватели или радиаторы, чтобы избежать деформации материалов.",
-  "Используйте средства для ухода за наполнителями, чтобы сохранить форму и упругость сиденья на долгие годы.",
-];
+const descriptions = {
+  стулья: [
+    [
+      "Элегантный стул с мягким сиденьем и стильной спинкой добавит изысканности в ваш интерьер. Подходит для долгих сидений за столом.",
+      "Этот стул выполнен из качественных материалов, обеспечивающих надежность и комфорт.",
+    ],
+    [
+      "Легкий и удобный стул с современным дизайном. Подходит для гостиной, кухни или рабочего кабинета.",
+      "Простой, но элегантный стул с прочной конструкцией, идеально вписывается в любой стиль интерьера.",
+    ],
+    [
+      "Прочный и комфортный стул для рабочего кабинета, обеспечивающий отличную поддержку спины.",
+      "Стул с регулируемой высотой и эргономичной спинкой для максимального комфорта.",
+    ],
+    [
+      "Стул с мягким сиденьем и стильными металлическими ножками подходит для модных и современных интерьеров.",
+      "Компактный и стильный стул для небольших помещений, создающий уют и комфорт.",
+    ],
+    [
+      "Модерн стул с высококачественными материалами и уникальной конструкцией, идеально подходящий для вашего дома.",
+      "Удобный стул с высокой спинкой, создающий дополнительную поддержку для спины.",
+    ],
+  ],
+  фонари: [
+    [
+      "Элегантный настольный фонарь с регулировкой яркости, создающий мягкое освещение в любое время суток.",
+      "Фонарь с ярким и теплым светом, который подойдет для создания уютной атмосферы в вашем интерьере.",
+    ],
+    [
+      "Классический стильный фонарь, который идеально впишется в минималистичный интерьер и обеспечит достаточно света.",
+      "Практичный и красивый фонарь, который можно использовать как декоративный элемент, так и для функционального освещения.",
+    ],
+    [
+      "Современный фонарь с уникальным дизайном, который привнесет современный стиль в ваше пространство.",
+      "Фонарь с регулируемым углом наклона, который идеально подойдет для чтения или работы.",
+    ],
+    [
+      "Маленький, но мощный светильник, который удобно разместить на столе или на полке.",
+      "Уличный фонарь с долговечными материалами, идеально подходящий для садов и дворов.",
+    ],
+    [
+      "Фонарь с интегрированным датчиком движения, который автоматически включается при обнаружении движения.",
+      "Энергосберегающий фонарь с LED лампами, который идеально подойдет для длительного использования.",
+    ],
+  ],
+  столы: [
+    [
+      "Современный стол с минималистичным дизайном, который идеально подойдет для офиса или кухни.",
+      "Стол с деревянной столешницей и металлическими ножками, создающий теплую атмосферу в вашем доме.",
+    ],
+    [
+      "Уютный стол с прочной конструкцией, который станет центром внимания в вашем интерьере.",
+      "Большой стол для рабочего кабинета с удобной функциональностью и современным дизайном.",
+    ],
+    [
+      "Компактный стол с элегантным дизайном, идеально подходящий для небольших помещений.",
+      "Стол с раздвижной конструкцией, позволяющим легко изменять размер стола для разных нужд.",
+    ],
+    [
+      "Стилизация стола в ретро-стиле, который добавит нотки винтажного шарма в ваше пространство.",
+      "Простой и функциональный стол, который идеально сочетает в себе комфорт и стиль.",
+    ],
+    [
+      "Минималистичный стол с прямыми линиями и красивой отделкой, который впишется в любой интерьер.",
+      "Стол с большой рабочей поверхностью и множеством полок для хранения, идеален для вашего кабинета.",
+    ],
+  ],
+  диваны: [
+    [
+      "Комфортабельный диван с мягкими подушками, идеально подходящий для долгих вечеров в гостиной.",
+      "Диван с высокой спинкой и глубокими сиденьями, который обеспечит максимальный комфорт для отдыха.",
+    ],
+    [
+      "Удобный диван с регулируемыми подголовниками и подлокотниками, подходящий для удобного расположения.",
+      "Элегантный диван с текстурированным покрытием, который добавит стиль в любой интерьер.",
+    ],
+    [
+      "Современный угловой диван, который удобно разместится в углу и обеспечит простор для всей семьи.",
+      "Мягкий и компактный диван, идеально подходящий для небольших квартир или студий.",
+    ],
+    [
+      "Прочный диван с отличной поддержкой для спины, идеально подходящий для комфортного сидения.",
+      "Диван с модульной конструкцией, позволяющей изменять форму в зависимости от ваших потребностей.",
+    ],
+    [
+      "Роскошный диван с мягкой обивкой и высокой спинкой, который станет главным элементом интерьера.",
+      "Диван с удобными подушками и прочной конструкцией, обеспечивающий долгосрочную эксплуатацию.",
+    ],
+  ],
+  кашпо: [
+    [
+      "Простое и элегантное кашпо из керамики, которое идеально подойдет для растений с корнями среднего размера.",
+      "Красивое кашпо в стиле минимализм, которое добавит изысканности в ваш интерьер.",
+    ],
+    [
+      "Стильное кашпо с необычной формой, которое станет ярким акцентом в комнате.",
+      "Эстетичное кашпо с гладкой поверхностью и простым дизайном для создания уютной атмосферы.",
+    ],
+    [
+      "Кашпо с ярким рисунком и фактурной поверхностью, которое добавит цвета в любой интерьер.",
+      "Удобное кашпо с дренажными отверстиями, которое предотвратит застой воды и обеспечит здоровый рост растений.",
+    ],
+    [
+      "Легкое пластиковое кашпо с красивым дизайном, подходящее для различных комнатных растений.",
+      "Кашпо в виде подставки с множеством отделений для удобного размещения растений.",
+    ],
+    [
+      "Кашпо с керамическим покрытием, которое отлично удерживает влагу и подходит для мелких растений.",
+      "Эко-кашпо из натуральных материалов, идеальное для любителей природных текстур.",
+    ],
+  ],
+};
 
-const descriptions = [
-  [
-    "Этот диван — воплощение стиля и комфорта. Он идеально подходит для любого интерьера, будь то современный, классический или минималистичный стиль. Прочные материалы и изысканный дизайн делают его не только красивым, но и долговечным. Диван доступен в разных цветах и размерах, что позволяет легко подобрать модель для вашего помещения.",
-    "Кроме того, диван оснащён высококачественными материалами для сиденья, что обеспечивает комфорт на протяжении долгого времени. Он подойдёт как для гостиной, так и для офисных помещений, добавляя уюта и стиля в любую комнату.",
+const packing = {
+  стулья: [
+    {
+      packing: {
+        text: "Каждый стул аккуратно упакован в защитную плёнку и помещен в картонную коробку для безопасной транспортировки.",
+      },
+    },
+    {
+      packing: {
+        text: "Стул обернут в многослойную защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+      },
+    },
+    {
+      packing: {
+        text: "Стул упакован в прочный пакет с защитой от влаги, чтобы сохранить его форму и предотвратить повреждения.",
+      },
+    },
+    {
+      packing: {
+        text: "Для защиты стула от внешних воздействий, он упакован в многослойную защитную пленку и помещен в картонную коробку.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждый стул упакован в защитную плёнку, а коробка снабжена мягкими прокладками для безопасности при транспортировке.",
+      },
+    },
+    {
+      packing: {
+        text: "Стул упакован в герметичный пакет с защитой от влаги и запахов для безопасной перевозки.",
+      },
+    },
+    {
+      packing: {
+        text: "Стул помещен в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждый стул аккуратно сложен и упакован в картонную коробку с защитной плёнкой для предотвращения повреждений.",
+      },
+    },
+    {
+      packing: {
+        text: "Стул запечатан в защитную плёнку и помещен в коробку с амортизирующими элементами для безопасной транспортировки.",
+      },
+    },
+    {
+      packing: {
+        text: "Стул упакован в плотный пакет и снабжен мягкими прокладками для защиты в коробке.",
+      },
+    },
+    {
+      packing: {
+        text: "Для безопасной транспортировки, стул упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+      },
+    },
+    {
+      packing: {
+        text: "Стул помещен в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждый стул упакован в индивидуальную упаковку и надежно помещен в коробку с дополнительными защитными материалами.",
+      },
+    },
   ],
-  [
-    "Диван с элегантным дизайном, который привнесёт в ваш дом атмосферу уюта и роскоши. Его простота и в то же время выразительность сделают его центральным элементом вашего интерьера. Подушки с мягкой наполнителями и удобное сиденье дарят незабываемый комфорт.",
-    "Изготовленный из высококачественных материалов, этот диван будет служить вам долгие годы. Он легко чистится и прост в уходе, что делает его отличным выбором для семей с детьми или домашними животными.",
+  фонари: [
+    {
+      packing: {
+        text: "Каждый фонарь аккуратно упакован в защитную плёнку и помещен в картонную коробку для безопасной доставки.",
+      },
+    },
+    {
+      packing: {
+        text: "Фонарь завернут в многослойную защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+      },
+    },
+    {
+      packing: {
+        text: "Фонарь упакован в прочный пакет с воздухопроницаемой защитой, чтобы сохранить его форму и предотвратить повреждения.",
+      },
+    },
+    {
+      packing: {
+        text: "Для защиты фонаря от внешних воздействий, он упакован в многослойную защитную плёнку и помещен в картонную коробку.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждый фонарь индивидуально упакован в защитную плёнку, а коробка снабжена мягкими прокладками для безопасности при транспортировке.",
+      },
+    },
+    {
+      packing: {
+        text: "Фонарь упакован в герметичный пакет с защитой от влаги и запахов, чтобы обеспечить сохранность при перевозке.",
+      },
+    },
+    {
+      packing: {
+        text: "Фонарь помещен в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждый фонарь аккуратно сложен и упакован в картонную коробку с защитной плёнкой для предотвращения повреждений.",
+      },
+    },
+    {
+      packing: {
+        text: "Фонарь запечатан в защитную плёнку и помещен в коробку с амортизирующими элементами для безопасной транспортировки.",
+      },
+    },
+    {
+      packing: {
+        text: "Фонарь упакован в плотный пакет и снабжен дополнительной защитой в виде мягких прокладок в коробке.",
+      },
+    },
+    {
+      packing: {
+        text: "Для безопасной транспортировки фонарь упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+      },
+    },
+    {
+      packing: {
+        text: "Фонарь помещен в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждый фонарь упакован в индивидуальную упаковку и надежно помещен в коробку с дополнительными защитными материалами.",
+      },
+    },
   ],
-  [
-    "Простой и в то же время стильный диван, который органично впишется в любой интерьер. Его минималистичный дизайн и функциональность делают его идеальным вариантом для малогабаритных квартир или офисных помещений.",
-    "Диван выполнен из прочных материалов, что обеспечивает его долговечность. Удобные подушки и простота ухода делают его идеальным выбором для ежедневного использования.",
+  столы: [
+    {
+      packing: {
+        text: "Каждый стол аккуратно упакован в защитную плёнку и помещен в картонную коробку для безопасной транспортировки.",
+      },
+    },
+    {
+      packing: {
+        text: "Стол обернут в многослойную защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+      },
+    },
+    {
+      packing: {
+        text: "Стол упакован в прочный пакет с защитой от влаги, чтобы сохранить его форму и предотвратить повреждения.",
+      },
+    },
+    {
+      packing: {
+        text: "Для защиты стола от внешних воздействий, он упакован в многослойную защитную пленку и помещен в картонную коробку.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждый стол упакован в защитную плёнку, а коробка снабжена мягкими прокладками для безопасности при транспортировке.",
+      },
+    },
+    {
+      packing: {
+        text: "Стол упакован в герметичный пакет с защитой от влаги и запахов для безопасной перевозки.",
+      },
+    },
+    {
+      packing: {
+        text: "Стол помещен в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждый стол аккуратно сложен и упакован в картонную коробку с защитной плёнкой для предотвращения повреждений.",
+      },
+    },
+    {
+      packing: {
+        text: "Стол запечатан в защитную плёнку и помещен в коробку с амортизирующими элементами для безопасной транспортировки.",
+      },
+    },
+    {
+      packing: {
+        text: "Стол упакован в плотный пакет и снабжен мягкими прокладками для защиты в коробке.",
+      },
+    },
+    {
+      packing: {
+        text: "Для безопасной транспортировки, стол упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+      },
+    },
+    {
+      packing: {
+        text: "Стол помещен в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+      },
+    },
   ],
-  [
-    "Этот диван придаст вашему интерьеру роскошный вид и обеспечит комфорт для всей семьи. Удобные глубокие сиденья и мягкая спинка делают его идеальным для отдыха после долгого дня. Диван можно заказать в разных тканях и цветах.",
-    "Высококачественная обивка и наполнитель обеспечат долговечность и комфорт, а простота ухода сделает его отличным выбором для любого дома или офиса.",
+  диваны: [
+    {
+      packing: {
+        text: "Каждый диван аккуратно упакован в защитную плёнку и помещен в картонную коробку для безопасной доставки.",
+      },
+    },
+    {
+      packing: {
+        text: "Диван завернут в многослойную защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+      },
+    },
+    {
+      packing: {
+        text: "Диван упакован в прочный пакет с воздухопроницаемой защитой, чтобы сохранить его форму и предотвратить повреждения.",
+      },
+    },
+    {
+      packing: {
+        text: "Для защиты дивана от внешних воздействий, он упакован в многослойную защитную плёнку и помещен в картонную коробку.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждый диван индивидуально упакован в защитную плёнку, а коробка снабжена мягкими прокладками для безопасности при транспортировке.",
+      },
+    },
+    {
+      packing: {
+        text: "Диван упакован в герметичный пакет с защитой от влаги и запахов, чтобы обеспечить сохранность при перевозке.",
+      },
+    },
+    {
+      packing: {
+        text: "Диван помещен в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждый диван аккуратно сложен и упакован в картонную коробку с защитной плёнкой для предотвращения повреждений.",
+      },
+    },
+    {
+      packing: {
+        text: "Диван запечатан в защитную плёнку и помещен в коробку с амортизирующими элементами для безопасной транспортировки.",
+      },
+    },
+    {
+      packing: {
+        text: "Диван упакован в плотный пакет и снабжен дополнительной защитой в виде мягких прокладок в коробке.",
+      },
+    },
+    {
+      packing: {
+        text: "Для безопасной транспортировки, диван упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+      },
+    },
+    {
+      packing: {
+        text: "Диван помещен в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+      },
+    },
   ],
-  [
-    "Диван с современным дизайном и комфортными сиденьями, который станет отличным дополнением вашего интерьера. Он легко сочетается с различными стилями — от классики до модерна.",
-    "Удобные и мягкие подушки, а также прочные материалы гарантируют долговечность и комфорт. Диван будет служить вам верой и правдой многие годы.",
+  кашпо: [
+    {
+      packing: {
+        text: "Каждое кашпо аккуратно упаковано в защитную плёнку и помещено в картонную коробку для безопасной транспортировки.",
+      },
+    },
+    {
+      packing: {
+        text: "Кашпо завернуто в многослойную защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+      },
+    },
+    {
+      packing: {
+        text: "Кашпо упаковано в прочный пакет с воздухопроницаемой защитой, чтобы сохранить его форму и предотвратить повреждения.",
+      },
+    },
+    {
+      packing: {
+        text: "Для защиты кашпо от внешних воздействий, оно упаковано в многослойную защитную плёнку и помещено в картонную коробку.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждое кашпо упаковано в защитную плёнку, а коробка снабжена мягкими прокладками для безопасности при транспортировке.",
+      },
+    },
+    {
+      packing: {
+        text: "Кашпо упаковано в герметичный пакет с защитой от влаги и запахов для безопасной перевозки.",
+      },
+    },
+    {
+      packing: {
+        text: "Кашпо помещено в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+      },
+    },
+    {
+      packing: {
+        text: "Каждое кашпо аккуратно сложено и упаковано в картонную коробку с защитной плёнкой для предотвращения повреждений.",
+      },
+    },
+    {
+      packing: {
+        text: "Кашпо запечатано в защитную плёнку и помещено в коробку с амортизирующими элементами для безопасной транспортировки.",
+      },
+    },
+    {
+      packing: {
+        text: "Кашпо упаковано в плотный пакет и снабжено дополнительной защитой в виде мягких прокладок в коробке.",
+      },
+    },
+    {
+      packing: {
+        text: "Для безопасной транспортировки, кашпо упаковано в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+      },
+    },
+    {
+      packing: {
+        text: "Кашпо помещено в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+      },
+    },
   ],
-  [
-    "Элегантный и стильный диван с уникальными формами и текстурами, который станет акцентом в вашем доме. Этот диван идеально подходит для больших гостиных и современных офисов.",
-    "Собранный из качественных материалов, диван легко очищается и сохраняет свою форму. Мягкие и удобные подушки добавляют комфорта, делая отдых на этом диване приятным.",
-  ],
-  [
-    "Компактный и функциональный диван, который идеально подходит для небольших помещений. Его стильный дизайн и комфорт обеспечивают удобство для всей семьи.",
-    "Этот диван выполнен из прочных тканей, которые легко чистятся. Его можно использовать как для отдыха, так и для ночного сна, так как он оборудован механизмом трансформации.",
-  ],
-  [
-    "Диван с уникальным дизайном и качественной обивкой, который подчеркнёт стиль вашего интерьера. Он идеально подойдёт для тех, кто ценит не только внешний вид, но и функциональность.",
-    "Этот диван гарантирует комфорт и удобство, благодаря высококачественным наполнителям и продуманной конструкции. Удобные подушки создадут атмосферу уюта в вашем доме.",
-  ],
-  [
-    "Этот диван сочетает в себе стильный внешний вид и максимальный комфорт. Подушки с мягким наполнителем и удобная спинка создают идеальные условия для отдыха.",
-    "Изготовленный из материалов, которые выдержат время и не потеряют свой внешний вид, этот диван станет надежным элементом вашего интерьера.",
-  ],
-  [
-    "Модный и элегантный диван, который обеспечит не только комфорт, но и долгосрочную эксплуатацию. Он идеально впишется в любой интерьер, добавив уюта и гармонии.",
-    "Диван выполнен из прочных материалов, устойчивых к износу, и прост в уходе, что делает его идеальным выбором для повседневного использования.",
-  ],
-  [
-    "Идеальный диван для уютной гостиной. Мягкие и удобные подушки, а также стильная форма делают его отличным выбором для любого интерьера.",
-    "Этот диван с прочной каркасной конструкцией будет служить вам многие годы, обеспечивая комфорт и стиль.",
-  ],
-  [
-    "Диван с уникальной конструкцией и современным дизайном, который превратит ваше пространство в уютное и стильное место для отдыха.",
-    "Высококачественные материалы и устойчивость к износу делают этот диван долговечным, а удобство использования подарит вам настоящий комфорт.",
-  ],
-  [
-    "Уютный и функциональный диван, который станет отличным выбором для вашего дома. Прочные ткани и комфортная посадка создадут атмосферу уюта и покоя.",
-    "Подушки и сиденье, выполненные из качественного материала, обеспечат долгосрочную эксплуатацию и удобство для всей семьи.",
-  ],
-  [
-    "Диван, который идеально сочетает стиль и комфорт. Он станет центральным элементом вашей гостиной, создавая атмосферу уюта и элегантности.",
-    "Этот диван легко чистится и обладает высокой прочностью, что делает его идеальным выбором для ежедневного использования.",
-  ],
-  [
-    "Элегантный и удобный диван с мягким наполнителем, который подойдёт для любой комнаты. Стильный внешний вид и комфортное сиденье обеспечат вам приятное времяпрепровождение.",
-    "Диван изготовлен из высококачественных материалов, что гарантирует его долговечность и прочность.",
-  ],
-  [
-    "Этот диван идеально подходит для небольших помещений и квартир-студий. Компактные размеры и комфортные сиденья обеспечивают максимальное удобство при ограниченном пространстве.",
-    "Он выполнен из прочных и стойких материалов, которые легко чистятся и не теряют свою форму со временем.",
-  ],
-  [
-    "Диван с уникальным и современным дизайном, который подчеркнёт стиль вашего дома. Его комфорт и удобство удовлетворят даже самых требовательных пользователей.",
-    "Изготовленный из долговечных материалов, этот диван прослужит вам долго, оставаясь стильным и функциональным элементом интерьера.",
-  ],
-  [
-    "Этот диван будет великолепным дополнением вашего дома, придавая интерьеру стиль и уют. Просторные сиденья и мягкая спинка обеспечивают комфорт для всей семьи.",
-    "Легко чистится и ухаживается, сохраняя свой первоначальный вид и комфорт на долгие годы.",
-  ],
-];
+};
 
-const packing = [
-  {
-    packing: {
-      text: "Диван упакован в прочную защитную упаковку, которая обеспечивает его сохранность при транспортировке и предотвращает повреждения.",
+const materials = {
+  стулья: [
+    {
+      materials: {
+        "основной материал": "велюр",
+        основа: "плотная ткань с мягким ворсом",
+        покрытие: "гладкое",
+        декор: "с бархатистым рисунком",
+      },
     },
-  },
-  {
-    packing: {
-      text: "Каждый диван аккуратно упакован в полиэтиленовую пленку и защищён от внешних воздействий с помощью картонных коробок для безопасной доставки.",
+    {
+      materials: {
+        обивка: "полиэстер",
+        основа: "высокопрочный полиэстер с водоотталкивающим покрытием",
+        наполнитель: "пенные гранулы",
+        спецификация: "устойчивость к износу и гипоаллергенность",
+      },
     },
-  },
-  {
-    packing: {
-      text: "Для обеспечения целостности изделия во время транспортировки диван помещен в устойчивую упаковку с антиударными вставками.",
+  ],
+  фонари: [
+    {
+      materials: {
+        "основной материал": "металл",
+        основа: "нержавеющая сталь",
+        покрытие: "матовое или глянцевое",
+        декор: "без дополнительных украшений",
+      },
     },
-  },
-  {
-    packing: {
-      text: "Диван надежно упакован в прочные картонные коробки, что гарантирует его защиту от механических повреждений в процессе транспортировки.",
+    {
+      materials: {
+        обивка: "алюминий",
+        основа: "прочный и легкий металл",
+        покрытие: "антикоррозийное",
+        спецификация: "влагозащита и устойчивость к ржавчине",
+      },
     },
-  },
-  {
-    packing: {
-      text: "Каждый элемент дивана обёрнут в защитную пленку, а затем упакован в коробку с дополнительной внутренней защитой для безопасной транспортировки.",
+  ],
+  столы: [
+    {
+      materials: {
+        "основной материал": "дуб",
+        основа: "натуральное дерево",
+        покрытие: "масляное или лаковое",
+        декор: "с деревянной текстурой",
+      },
     },
-  },
-  {
-    packing: {
-      text: "Диван упакован в специализированные защитные материалы, которые предотвращают повреждения при транспортировке и обеспечивают сохранность изделия.",
+    {
+      materials: {
+        "основной материал": "пластик",
+        основа: "ABS-пластик с высокой прочностью",
+        покрытие: "глянцевое или матовое",
+        декор: "с минималистичным узором",
+      },
     },
-  },
-  {
-    packing: {
-      text: "Для безопасной доставки диван упакован в несколько слоев защитного материала, включая пленку и плотную картонную упаковку.",
+  ],
+  диваны: [
+    {
+      materials: {
+        "основной материал": "велюр",
+        основа: "мягкий материал с бархатистой текстурой",
+        наполнитель: "синтепон",
+        спецификация: "гипоаллергенный и износостойкий",
+      },
     },
-  },
-  {
-    packing: {
-      text: "Каждая часть дивана индивидуально упакована в защитную пленку и помещена в специально подготовленную коробку для транспортировки.",
+    {
+      materials: {
+        обивка: "микрофибра",
+        основа: "ткань с водоотталкивающим покрытием",
+        наполнитель: "латексные гранулы",
+        спецификация: "устойчивость к влаге и антибактериальная обработка",
+      },
     },
-  },
-  {
-    packing: {
-      text: "Диван упакован в устойчивые коробки с защитными вставками, чтобы избежать повреждений в процессе перевозки.",
+  ],
+  кашпо: [
+    {
+      materials: {
+        "основной материал": "керамика",
+        основа: "гладкая глазурованная поверхность",
+        покрытие: "глянцевое",
+        декор: "с узорами или без них",
+      },
     },
-  },
-  {
-    packing: {
-      text: "При упаковке диван обворачивается защитной пленкой и помещается в картонную коробку с амортизирующими элементами для надежности.",
+    {
+      materials: {
+        "основной материал": "пластик",
+        основа: "легкий и прочный материал",
+        покрытие: "матовое",
+        декор: "с геометрическим узором",
+      },
     },
-  },
-  {
-    packing: {
-      text: "Каждый диван тщательно упакован в защитную упаковку, которая гарантирует его сохранность при любых условиях транспортировки.",
-    },
-  },
-  {
-    packing: {
-      text: "Для защиты от повреждений во время транспортировки диван упакован в прочные картонные коробки с дополнительными амортизирующими слоями.",
-    },
-  },
-  {
-    packing: {
-      text: "Диван упакован в специально подготовленную упаковку, которая защищает его от механических повреждений при транспортировке.",
-    },
-  },
-  {
-    packing: {
-      text: "Для надежной транспортировки диван упакован в несколько слоев защитной пленки и картонной коробки с внутренними защитными вставками.",
-    },
-  },
-  {
-    packing: {
-      text: "Каждый диван упакован в прочную картонную коробку с защитой от внешних воздействий, чтобы обеспечить безопасную доставку.",
-    },
-  },
-  {
-    packing: {
-      text: "Для безопасной доставки диван аккуратно упакован в картонную упаковку, с использованием амортизирующих материалов для защиты от ударов.",
-    },
-  },
-  {
-    packing: {
-      text: "Каждый диван упакован в защитную упаковку, которая гарантирует его сохранность при транспортировке и предотвращает повреждения от внешних факторов.",
-    },
-  },
-  {
-    packing: {
-      text: "Диван упакован в специальную упаковку, обеспечивающую надежную защиту от повреждений при транспортировке и хранении.",
-    },
-  },
-];
-
-const materials = [
-  {
-    materials: {
-      "основной материал": "микрофибра",
-      каркас: "деревянный",
-      покрытие: "матовое",
-      декор: "гладкая",
-    },
-  },
-  {
-    materials: {
-      обивка: "кожа",
-      каркас: "металлический",
-      наполнитель: "латекс",
-      спецификация: "водоотталкивающее покрытие",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "ткань",
-      каркас: "деревянный",
-      покрытие: "гладкое",
-      декор: "с орнаментом",
-    },
-  },
-  {
-    materials: {
-      обивка: "велюр",
-      каркас: "металлический",
-      наполнитель: "поролон",
-      спецификация: "съемные чехлы",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "микрофибра",
-      каркас: "деревянный",
-      покрытие: "глянцевое",
-      декор: "рельефное",
-    },
-  },
-  {
-    materials: {
-      обивка: "кожа",
-      каркас: "металлический",
-      наполнитель: "латекс",
-      спецификация: "антиаллергенная обработка",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "ткань",
-      каркас: "деревянный",
-      покрытие: "матовое",
-      декор: "с орнаментом",
-    },
-  },
-  {
-    materials: {
-      обивка: "велюр",
-      каркас: "металлический",
-      наполнитель: "синтепон",
-      спецификация: "устойчивость к выцветанию",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "кожа",
-      каркас: "металлический",
-      покрытие: "глянцевое",
-      декор: "гладкая",
-    },
-  },
-  {
-    materials: {
-      обивка: "ткань",
-      каркас: "деревянный",
-      наполнитель: "латекс",
-      спецификация: "съемные подушки",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "микрофибра",
-      каркас: "металлический",
-      покрытие: "матовое",
-      декор: "с орнаментом",
-    },
-  },
-  {
-    materials: {
-      обивка: "кожа",
-      каркас: "деревянный",
-      наполнитель: "поролон",
-      спецификация: "устойчивость к механическим повреждениям",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "велюр",
-      каркас: "металлический",
-      покрытие: "глянцевое",
-      декор: "рельефное",
-    },
-  },
-  {
-    materials: {
-      обивка: "ткань",
-      каркас: "деревянный",
-      наполнитель: "синтепон",
-      спецификация: "антибактериальная обработка",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "кожа",
-      каркас: "деревянный",
-      покрытие: "матовое",
-      декор: "гладкая",
-    },
-  },
-  {
-    materials: {
-      обивка: "микрофибра",
-      каркас: "металлический",
-      наполнитель: "латекс",
-      спецификация: "термостойкость",
-    },
-  },
-  {
-    materials: {
-      "основной материал": "ткань",
-      каркас: "деревянный",
-      покрытие: "матовое",
-      декор: "с орнаментом",
-    },
-  },
-  {
-    materials: {
-      обивка: "велюр",
-      каркас: "металлический",
-      наполнитель: "синтепон",
-      спецификация: "легкость в уходе",
-    },
-  },
-];
-
-const dimensions = [
-  {
-    ширина: [
-      {
-        value: 120,
-        unit: "см",
-      },
-      {
-        value: 150,
-        unit: "см",
-      },
-      {
-        value: 180,
-        unit: "см",
-      },
-      {
-        value: 200,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    высота: [
-      {
-        value: 80,
-        unit: "см",
-      },
-      {
-        value: 90,
-        unit: "см",
-      },
-      {
-        value: 100,
-        unit: "см",
-      },
-      {
-        value: 110,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    ширина: [
-      {
-        value: 140,
-        unit: "см",
-      },
-      {
-        value: 160,
-        unit: "см",
-      },
-      {
-        value: 190,
-        unit: "см",
-      },
-      {
-        value: 220,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    высота: [
-      {
-        value: 85,
-        unit: "см",
-      },
-      {
-        value: 95,
-        unit: "см",
-      },
-      {
-        value: 105,
-        unit: "см",
-      },
-      {
-        value: 115,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    ширина: [
-      {
-        value: 130,
-        unit: "см",
-      },
-      {
-        value: 160,
-        unit: "см",
-      },
-      {
-        value: 180,
-        unit: "см",
-      },
-      {
-        value: 200,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    высота: [
-      {
-        value: 70,
-        unit: "см",
-      },
-      {
-        value: 85,
-        unit: "см",
-      },
-      {
-        value: 95,
-        unit: "см",
-      },
-      {
-        value: 105,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    ширина: [
-      {
-        value: 110,
-        unit: "см",
-      },
-      {
-        value: 140,
-        unit: "см",
-      },
-      {
-        value: 170,
-        unit: "см",
-      },
-      {
-        value: 200,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    высота: [
-      {
-        value: 80,
-        unit: "см",
-      },
-      {
-        value: 90,
-        unit: "см",
-      },
-      {
-        value: 100,
-        unit: "см",
-      },
-      {
-        value: 110,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    ширина: [
-      {
-        value: 120,
-        unit: "см",
-      },
-      {
-        value: 140,
-        unit: "см",
-      },
-      {
-        value: 160,
-        unit: "см",
-      },
-      {
-        value: 180,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    высота: [
-      {
-        value: 85,
-        unit: "см",
-      },
-      {
-        value: 95,
-        unit: "см",
-      },
-      {
-        value: 105,
-        unit: "см",
-      },
-      {
-        value: 115,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    ширина: [
-      {
-        value: 150,
-        unit: "см",
-      },
-      {
-        value: 170,
-        unit: "см",
-      },
-      {
-        value: 200,
-        unit: "см",
-      },
-      {
-        value: 220,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    высота: [
-      {
-        value: 90,
-        unit: "см",
-      },
-      {
-        value: 100,
-        unit: "см",
-      },
-      {
-        value: 110,
-        unit: "см",
-      },
-      {
-        value: 120,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    ширина: [
-      {
-        value: 160,
-        unit: "см",
-      },
-      {
-        value: 190,
-        unit: "см",
-      },
-      {
-        value: 210,
-        unit: "см",
-      },
-      {
-        value: 240,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    высота: [
-      {
-        value: 75,
-        unit: "см",
-      },
-      {
-        value: 85,
-        unit: "см",
-      },
-      {
-        value: 95,
-        unit: "см",
-      },
-      {
-        value: 105,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    ширина: [
-      {
-        value: 130,
-        unit: "см",
-      },
-      {
-        value: 160,
-        unit: "см",
-      },
-      {
-        value: 190,
-        unit: "см",
-      },
-      {
-        value: 220,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    высота: [
-      {
-        value: 90,
-        unit: "см",
-      },
-      {
-        value: 100,
-        unit: "см",
-      },
-      {
-        value: 110,
-        unit: "см",
-      },
-      {
-        value: 120,
-        unit: "см",
-      },
-    ],
-  },
-  {
-    ширина: [
-      {
-        value: 110,
-        unit: "см",
-      },
-      {
-        value: 130,
-        unit: "см",
-      },
-      {
-        value: 150,
-        unit: "см",
-      },
-      {
-        value: 180,
-        unit: "см",
-      },
-    ],
-  },
-];
-
-const вес = 0;
-
-let probject = {};
-
-// {
-
-//                         "id": 1,
-//                             "images": [
-//                                 "https://i.pinimg.com/1200x/72/4b/85/724b85f22d478ec1f8d59688ae13e584.jpg",
-//                                 "https://4house.ru/upload/iblock/503/sx2gchfqbpn5a66f0sjhq52e4r4rnqyg.jpg",
-//                                 "https://4house.ru/upload/iblock/b54/oqnmq5q92o8uhdm6vrwxta0ihr1pxx5e.jpg",
-//                                 "https://4house.ru/upload/iblock/cbc/jvyhwbpd4wxpymhomklqtsumb20l25ly.jpg",
-//                                 "https://4house.ru/upload/iblock/257/o0wkvitfm8l70fef7g21ch6t482fut71.jpg",
-//                                 "https://4house.ru/upload/iblock/0c6/etfve5grx7jt1ez68bipb4k4anzoi294.jpg"
+  ],
+};
 
 const random = (max, min = 0) => {
   return Math.floor(Math.random() * (max - min) + min);
@@ -1178,12 +1242,12 @@ const random = (max, min = 0) => {
 
 let sofas = [];
 
-for (let i = 0; i <= 3; i++) {
+for (let i = 0; i <= 89; i++) {
   let probject = { id: i + 1 };
-
-  probject.bestseller = bestseller[random(3, 1) - 1];
   probject.collection = collections[random(collections.length)];
-  probject.product = products[random(products.length)];
+  const call = probject.collection;
+  probject.bestseller = bestseller[random(3, 1) - 1];
+
   probject.colors = Array.from(
     new Set(
       Array(random(5, 2))
@@ -1192,54 +1256,70 @@ for (let i = 0; i <= 3; i++) {
     )
   );
   probject.discount = discount[random(3, 1) - 1];
-  probject.isNew = discount[random(3, 1) - 1];
-  probject.material = material[random(material.length)];
-  probject.name = names[random(names.length)];
-  probject.price = Math.round(random(250000, 30000) / 1000) * 1000;
+  probject.isNew = isNew[random(3, 1) - 1];
+  probject.material = material[call][random(material.length)];
+  probject.name = names[call][random(names.length)];
+  probject.price = Math.round(random(200000, 20000) / 1000) * 1000;
   probject.rating = (Math.random() * (5 - 3.8) + 3.8).toFixed(1);
 
   const nums = new Set();
   let maintenancearray = [];
   while (nums.size < 6) {
-    let number = random(maintenance.length);
+    let number = random(maintenance[call].length);
     if (!nums.has(number)) {
       nums.add(number);
-      maintenancearray.push(maintenance[number]);
+      maintenancearray.push(maintenance[call][number]);
     }
   }
 
   const nums2 = new Set();
   let optarr = [];
   while (nums2.size < 6) {
-    let number = random(options.length);
+    let number = random(options[call].length);
     if (!nums2.has(number)) {
       nums2.add(number);
-      optarr.push(options[number]);
+      optarr.push(options[call][number]);
     }
   }
 
-  probject.sleepingArea = sleepingArea[random(sleepingArea.length)];
-  probject.linenBox = linenBox[random(linenBox.length)];
-  probject.sofaType = sofaType[random(sofaType.length)];
-
-  probject.depth = Math.round(random(50, 100) / 10) * 10;
-  probject.width = Math.round(random(100, 350) / 100) * 100;
   const sizes = {
-    ширина: [probject.width],
+    кашпо: {
+      ширина: [Math.round(random(40, 100) / 100) * 100],
 
-    высота: [Math.round(random(50, 80) / 10) * 10],
-    вес: [Math.round(random(50, 80) / 10) * 10],
+      высота: [Math.round(random(40, 100) / 10) * 10],
+    },
+    диваны: {
+      ширина: [Math.round(random(190, 260) / 100) * 100],
+
+      высота: [Math.round(random(120, 260) / 10) * 10],
+    },
+    стулья: {
+      ширина: [Math.round(random(80, 150) / 100) * 100],
+
+      высота: [Math.round(random(80, 150) / 10) * 10],
+    },
+    столы: {
+      ширина: [Math.round(random(80, 350) / 100) * 100],
+
+      высота: [Math.round(random(80, 150) / 10) * 10],
+    },
+    фонари: {
+      ширина: [Math.round(random(40, 130) / 100) * 100],
+
+      высота: [Math.round(random(40, 130) / 10) * 10],
+    },
   };
 
-  const a = Object.entries(sizes);
+  const a = Object.entries(sizes[call]);
   a.forEach(([key, value], i) => {
     for (let i = 0; i < 3; i++) {
-      sizes[key].push(sizes[key][i] + 20);
+      console.log(sizes[key]);
+      sizes[call][key].push(sizes[call][key][i] + 20);
     }
   });
   a.forEach(([key, value], i) => {
     for (let i = 0; i < 4; i++) {
-      sizes[key][i] += key !== "вес" ? " см" : " кг";
+      sizes[call][key][i] += key !== "вес" ? " см" : " кг";
     }
   });
 
@@ -1247,12 +1327,12 @@ for (let i = 0; i <= 3; i++) {
     {
       dimensions: [
         {
-          ширина: sizes.ширина.map((el, i) => {
+          ширина: sizes[call].ширина.map((el, i) => {
             return { value: el.replace(" см", ""), unit: "см" };
           }),
         },
         {
-          высота: sizes.высота.map((el, i) => {
+          высота: sizes[call].высота.map((el, i) => {
             return { value: el.replace(" см", ""), unit: "см" };
           }),
         },
@@ -1262,91 +1342,22 @@ for (let i = 0; i <= 3; i++) {
   ];
 
   probject.technicalSpecifications = {
-    sizes,
-    materials: materials[random(materials.length)].materials,
+    sizes: sizes[call],
+    materials: materials[call][random(materials[call].length)].materials,
   };
 
   probject.maintenance = maintenancearray;
-  probject.packing = packing[random(packing.length)].packing;
-  probject.productDescription = descriptions[random(descriptions.length)];
-
-  probject.advatnages = advantages[random(advantages.length)];
+  probject.packing = packing[call][random(packing[call].length)].packing;
+  probject.productDescription = {
+    text: descriptions[call][random(descriptions[call].length)],
+  };
+  probject.images = images[call][random(images[call].length)];
+  probject.advantages = advantages[call][random(advantages[call].length)];
+  if (call) {
+    probject.product = products[call][random(products[call].length)];
+    probject.name = names[call][random(names[call].length)];
+  }
   sofas.push(probject);
-  //   {
-
-  //     "images": [
-  //         "https://i.pinimg.com/1200x/72/4b/85/724b85f22d478ec1f8d59688ae13e584.jpg",
-  //         "https://4house.ru/upload/iblock/503/sx2gchfqbpn5a66f0sjhq52e4r4rnqyg.jpg",
-  //         "https://4house.ru/upload/iblock/b54/oqnmq5q92o8uhdm6vrwxta0ihr1pxx5e.jpg",
-  //         "https://4house.ru/upload/iblock/cbc/jvyhwbpd4wxpymhomklqtsumb20l25ly.jpg",
-  //         "https://4house.ru/upload/iblock/257/o0wkvitfm8l70fef7g21ch6t482fut71.jpg",
-  //         "https://4house.ru/upload/iblock/0c6/etfve5grx7jt1ez68bipb4k4anzoi294.jpg"
-  //     ],
-
-  //
-
-  //
-  //
-  //
-  //     "technicalSpecifications": {
-  //         "sizes": {
-  //             "ширина": [
-  //                 "40 см",
-  //                 "50 см",
-  //                 "60 см"
-  //             ],
-  //             "высота": [
-  //                 "40 см",
-  //                 "45 см",
-  //                 "50 см"
-  //             ],
-  //             "вес": [
-  //                 "3 кг",
-  //                 "5 кг",
-  //                 "7 кг"
-  //             ]
-  //         },
-  //         "materials": {
-  //             "основной материал": "ткань",
-  //             "наполнитель": "поролон"
-  //         }
-  //     },
-  //     "maintenance": [
-  //         "Регулярно чистите пуф от пыли с помощью мягкой щетки.",
-  //         "Для стирки используйте моющие средства, подходящие для ткани.",
-  //         "Не допускайте попадания жидкости на ткань.",
-  //         "Не оставляйте пуф в местах с повышенной влажностью.",
-  //         "Храните пуф вдали от прямых солнечных лучей, чтобы ткань не выгорела.",
-  //         "При необходимости используйте специальную пропитку для ткани, чтобы сохранить ее прочность и внешний вид."
-  //     ],
-  //     "packing": {
-  //         "text": "Пуфы упакованы в защитные коробки для безопасной транспортировки."
-  //     },
-  //     "productDescription": {
-  //         "text": [
-  //             "Пуф LuxePouf — это сочетание элегантности и функциональности. Изготовленный из высококачественной ткани, он станет стильным дополнением вашего интерьера. Пуф удобен для сидения или использования в качестве подставки для ног, а разнообразие цветов и форм позволяет подобрать модель, подходящую для любого стиля.",
-  //             "Благодаря качественным материалам и наполнителю, пуфы отличаются долговечностью и комфортом. Они доступны в различных размерах и цветах, что позволяет легко интегрировать их в любой интерьер. Пуфы LuxePouf идеально подходят как для дома, так и для офисных помещений, добавляя уют и стиль в любое пространство."
-  //         ]
-  //     },
-  //     "advantages": [
-  //         {
-  //             "title": "Элегантный дизайн",
-  //             "text": "Пуфы LuxePouf имеют утонченный внешний вид, который подходит для любого стиля интерьера."
-  //         },
-  //         {
-  //             "title": "Комфорт и удобство",
-  //             "text": "Пуфы обеспечивают комфортное сидение или поддержку для ног."
-  //         },
-  //         {
-  //             "title": "Долговечность",
-  //             "text": "Пуфы изготовлены из высококачественных материалов, что гарантирует их долговечность."
-  //         },
-  //         {
-  //             "title": "Разнообразие форм и цветов",
-  //             "text": "Вы можете выбрать пуфы в разных формах и цветах, чтобы они идеально вписывались в ваш интерьер."
-  //         }
-  //     ]
-  // },
 }
 
 console.log(sofas);

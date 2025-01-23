@@ -867,6 +867,109 @@ const catalog = {
     bg: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0010/faux-leather-olive-modern-lounger-1-xl.jpg",
     posY: "57%",
   },
+  outdoor: {
+    id: "outdoor-intro",
+    headline: "уличная мебель",
+    filterHeadline: "вся мебель",
+    description:
+      "Бескаркасная мебель обеспечивает максимальный комфорт, позволяя расслабиться и насладиться отдыхом в любом уголке вашего дома.",
+    materials: [
+      "экокожа",
+      "микровельвет",
+      "флок",
+      "жаккард",
+      "бархат",
+      "плюш",
+      "рогожка",
+      "канвас",
+      "вельвет",
+    ],
+
+    collections: [
+      "cozy moments",
+      "urban comfort",
+      "nature retreat",
+      "relaxation hub",
+      "vintage comfort",
+      "modern chill",
+    ],
+    filters: [
+      [
+        "цена",
+        {
+          min: 40000,
+          max: 120000,
+          val: "руб",
+        },
+        "price",
+      ],
+    ],
+    sliderData: [
+      {
+        name: "cozy moments",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0011/textured-faux-suede-charcoal-modern-lounger-1-xl.jpg",
+      },
+      {
+        name: "urban comfort",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202446/0003/eco-performance-textured-weave-oat-double-modern-lounger-xl.jpg",
+      },
+      {
+        name: "nature retreat",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0004/corduroy-dusty-olive-modern-lounger-xl.jpg",
+      },
+      {
+        name: "relaxation hub",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0012/tweed-charcoal-modern-lounger-xl.jpg",
+      },
+      {
+        name: "vintage comfort",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202450/0003/tweed-charcoal-modern-lounger-xl.jpg",
+      },
+      {
+        name: "modern chill",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202448/0023/faux-leather-caramel-modern-lounger-xl.jpg",
+      },
+      {
+        name: "cozy moments",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0011/textured-faux-suede-charcoal-modern-lounger-xl.jpg",
+      },
+      {
+        name: "urban comfort",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202446/0003/eco-performance-textured-weave-oat-double-modern-lounger-xl.jpg",
+      },
+      {
+        name: "nature retreat",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0004/corduroy-dusty-olive-modern-lounger-xl.jpg",
+      },
+      {
+        name: "relaxation hub",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0012/tweed-charcoal-modern-lounger-xl.jpg",
+      },
+      {
+        name: "vintage comfort",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202450/0003/tweed-charcoal-modern-lounger-xl.jpg",
+      },
+      {
+        name: "modern chill",
+        image:
+          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202448/0023/faux-leather-caramel-modern-lounger-xl.jpg",
+      },
+    ],
+
+    bg: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0010/faux-leather-olive-modern-lounger-1-xl.jpg",
+    posY: "57%",
+  },
 };
 
 export default catalog;

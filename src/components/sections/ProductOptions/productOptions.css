@@ -19,6 +19,8 @@
 
 #product-options .product-details h4 {
   font-size: 36px;
+  word-break: normal;
+  hyphens: auto;
 }
 
 #product-options
@@ -57,15 +59,12 @@
 
 #product-options .product-details form > .row:nth-child(1) > div::first-letter {
   text-transform: uppercase;
- 
-  
 }
- 
 
 #product-options form .submit-wrapper {
   border-top: var(--line-bg) 1px solid;
   padding-top: var(--middle-gap-responsive);
-  margin-top: var(--middle-gap-responsive)
+  margin-top: var(--middle-gap-responsive);
 }
 
 #product-options form .main-button + .row {
