@@ -59,36 +59,36 @@ export default function NestedList({ menu, setMenu }) {
           <li>
             <ul>
               <li>
-                <Link to={"catalog/sofas"}>Диваны</Link>
+                <NavLink to={"catalog/sofas"}>Диваны </NavLink>
               </li>
               <li>
-                <Link to={"catalog/beds"}>Кровати</Link>
+                <NavLink to={"catalog/beds"}>Кровати </NavLink>
               </li>
               <li>
-                <Link to={"catalog/poufs"}>Пуфы и банкетки</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <Link to={"catalog/armchairs"}>Кресла</Link>
-              </li>
-              <li>
-                <Link to={"catalog/chairs"}>Стулья</Link>
+                <NavLink to={"catalog/poufs"}>Пуфы и банкетки </NavLink>
               </li>
             </ul>
           </li>
           <li>
             <ul>
               <li>
-                <Link to={"catalog/frameless"}>Бескаркасная мебель</Link>
+                <NavLink to={"catalog/armchairs"}>Кресла </NavLink>
               </li>
               <li>
-                <Link to={"catalog/outdoor"}>Уличная мебель</Link>
+                <NavLink to={"catalog/chairs"}>Стулья </NavLink>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <NavLink to={"catalog/frameless"}>Бескаркасная мебель </NavLink>
               </li>
               <li>
-                <Link to={"catalog/bedsheets"}>Постельное белье</Link>
+                <NavLink to={"catalog/outdoor"}>Уличная мебель </NavLink>
+              </li>
+              <li>
+                <NavLink to={"catalog/bedsheets"}>Постельное белье </NavLink>
               </li>
             </ul>
           </li>
@@ -98,7 +98,7 @@ export default function NestedList({ menu, setMenu }) {
                 <NavLink to={"catalog/decor"}>Декор</NavLink>
               </li>
               <li>
-                <Link to={"catalog/curtains"}>Шторы</Link>
+                <NavLink to={"catalog/curtains"}>Шторы </NavLink>
               </li>
             </ul>
           </li>

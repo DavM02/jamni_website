@@ -15,12 +15,12 @@ import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import OrderPage from "./pages/OrderPage/OrderPage";
 import AppLoading from "./components/AppLoading/AppLoading";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import Cursor from "./components/Cursor/Cursor";
 
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
-import Gen from "./data/sofas";
-// import Gen from "./data/generateData";
+ 
+ 
 
 function App() {
   const location = useLocation();
@@ -29,12 +29,11 @@ function App() {
   return (
     <>
       {renderApp && <Cursor />}
-      <Gen />
+ 
       <AppLoading setRenderApp={setRenderApp} />
       <div
         className="App"
         style={{
-          // opacity: hideApp ? "0" : "1",
           visibility: !renderApp ? "hidden" : "initial",
           overflow: !renderApp ? "hidden" : "unset",
         }}

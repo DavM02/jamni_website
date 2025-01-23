@@ -1137,7 +1137,7 @@ const packing = {
     },
     {
       packing: {
-        text: "Кашпо помещено в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+        text: "Кашпо помещено в специаxльную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
       },
     },
   ],
@@ -1351,8 +1351,19 @@ for (let i = 0; i <= 89; i++) {
   probject.productDescription = {
     text: descriptions[call][random(descriptions[call].length)],
   };
+  const fuck = new Set();
+  let advantagesArrat = [];
+  while (fuck.size < 6) {
+    let number = random(advantages[call].length);
+    if (!fuck.has(number)) {
+      fuck.add(number);
+      advantagesArrat.push(advantages[call][number]);
+    }
+  }
+ 
   probject.images = images[call][random(images[call].length)];
-  probject.advantages = advantages[call][random(advantages[call].length)];
+  probject.advantages = advantagesArrat
+  console.log("SDSDSDSDSDSDD")
   if (call) {
     probject.product = products[call][random(products[call].length)];
     probject.name = names[call][random(names[call].length)];

@@ -872,103 +872,85 @@ const catalog = {
     headline: "уличная мебель",
     filterHeadline: "вся мебель",
     description:
-      "Бескаркасная мебель обеспечивает максимальный комфорт, позволяя расслабиться и насладиться отдыхом в любом уголке вашего дома.",
+"Уличная мебель создаёт идеальные условия для отдыха на свежем воздухе, сочетая стильный дизайн и практичность, чтобы сделать каждое мгновение на террасе или в саду комфортным и уютным.",
     materials: [
-      "экокожа",
-      "микровельвет",
-      "флок",
-      "жаккард",
-      "бархат",
-      "плюш",
-      "рогожка",
-      "канвас",
-      "вельвет",
+      "поролон",
+      "пластик",
+      "дерево",
+      "бетон",
+      "медь",
+      "металл",
+      "искусственная кожа",
+      "камень",
+      "ротанг",
+      "керамика",
+      "кожа",
+      "сталь",
+      "алюминий",
+      "стекло",
+      "ткань",
+      "МДФ"
     ],
 
-    collections: [
-      "cozy moments",
-      "urban comfort",
-      "nature retreat",
-      "relaxation hub",
-      "vintage comfort",
-      "modern chill",
-    ],
+    collections: ["стулья", "фонари", "столы", "диваны", "кашпо"],
     filters: [
       [
         "цена",
         {
-          min: 40000,
-          max: 120000,
+          min: 20000,
+          max: 200000,
           val: "руб",
         },
         "price",
       ],
     ],
-    sliderData: [
+      sliderData: [
       {
-        name: "cozy moments",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0011/textured-faux-suede-charcoal-modern-lounger-1-xl.jpg",
+        name: "стулья",
+          image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0194/malibu-metal-platform-swivel-outdoor-lounge-chair-4-xl.jpg",
       },
       {
-        name: "urban comfort",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202446/0003/eco-performance-textured-weave-oat-double-modern-lounger-xl.jpg",
+        name: "фонари",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0037/brooks-cross-bar-steel-glass-outdoor-lantern-xl.jpg",
       },
       {
-        name: "nature retreat",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0004/corduroy-dusty-olive-modern-lounger-xl.jpg",
+        name: "столы",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0008/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
+      },
+        {
+          name: "диваны",
+          image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0007/huntington-wicker-slope-arm-outdoor-sofa-84-xl.jpg",
+        },
+      {
+        name: "кашпо",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0335/eclectic-villa-outdoor-planters-xl.jpg",
       },
       {
-        name: "relaxation hub",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0012/tweed-charcoal-modern-lounger-xl.jpg",
+        name: "стулья",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0194/malibu-metal-platform-swivel-outdoor-lounge-chair-4-xl.jpg",
       },
       {
-        name: "vintage comfort",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202450/0003/tweed-charcoal-modern-lounger-xl.jpg",
+        name: "фонари",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0037/brooks-cross-bar-steel-glass-outdoor-lantern-xl.jpg",
       },
       {
-        name: "modern chill",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202448/0023/faux-leather-caramel-modern-lounger-xl.jpg",
+        name: "столы",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0008/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
       },
       {
-        name: "cozy moments",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0011/textured-faux-suede-charcoal-modern-lounger-xl.jpg",
+        name: "диваны",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0007/huntington-wicker-slope-arm-outdoor-sofa-84-xl.jpg",
       },
       {
-        name: "urban comfort",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202446/0003/eco-performance-textured-weave-oat-double-modern-lounger-xl.jpg",
+        name: "кашпо",
+        image: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0335/eclectic-villa-outdoor-planters-xl.jpg",
       },
-      {
-        name: "nature retreat",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0004/corduroy-dusty-olive-modern-lounger-xl.jpg",
-      },
-      {
-        name: "relaxation hub",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0012/tweed-charcoal-modern-lounger-xl.jpg",
-      },
-      {
-        name: "vintage comfort",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202450/0003/tweed-charcoal-modern-lounger-xl.jpg",
-      },
-      {
-        name: "modern chill",
-        image:
-          "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202448/0023/faux-leather-caramel-modern-lounger-xl.jpg",
-      },
+
     ],
 
-    bg: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202436/0010/faux-leather-olive-modern-lounger-1-xl.jpg",
-    posY: "57%",
+
+    bg: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202436/0003/artisan-handcrafted-terracotta-vase-1-xl.jpg",
+    posY: "75%",
   },
 };
 
