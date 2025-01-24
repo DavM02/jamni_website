@@ -21,7 +21,7 @@ export default function MoreProducts({ headline = "еще товары" }) {
         "poufs",
         "chairs",
         "armchairs",
-      ][Math.min(7, Math.round(Math.random() * 8))],
+      ][Math.min(9, Math.round(Math.random() * 9))],
     []
   );
   const catalog = useParams().catalog ?? randomCatalog;

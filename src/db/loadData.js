@@ -11,7 +11,7 @@ import {
 import { database } from "./firebaseConfig";
 
 async function loadData([path, page, count]) {
-
+  console.log(path);
   if ((!path, !page, !count)) {
     throw new Error("An unexpected error occurred");
   }
@@ -44,9 +44,7 @@ async function loadData([path, page, count]) {
 export default loadData;
 
 export async function getLength([path]) {
-
   try {
- 
     const dbRef = ref(database, path.replace("catalog/", ""));
 
     const snapshot = await get(query(dbRef, orderByKey()));
@@ -79,7 +77,6 @@ export async function getReviewsCount() {
 
 export async function getItem([id, dbName]) {
   try {
- 
     const articlesRef = ref(database, dbName);
     const q = query(articlesRef, orderByChild("id"), equalTo(id));
 
@@ -87,14 +84,13 @@ export async function getItem([id, dbName]) {
 
     if (snapshot.exists()) {
       const data = snapshot.val();
- 
+
       return Object.values(data)[0];
     } else {
       return null;
     }
   } catch (error) {
-    console.log(error)
+    console.log(error);
     throw new Error("An unexpected error occurred");
   }
 }
-  

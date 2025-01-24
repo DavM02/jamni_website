@@ -1,6 +1,7 @@
 import MoreProducts from "../../../components/sections/MoreProducts/MoreProducts";
 import ProductDescription from "../../../components/sections/ProductDescrioption/ProductDescription";
 import ProductOptions from "../../../components/sections/ProductOptions/ProductOptions";
+import BuildSet from "../../../components/sections/BuildSet/BuildSet";
 import { useParams, useSearchParams } from "react-router-dom";
 import useSWRImmutable from "swr/immutable";
 import { getItem } from "../../../db/loadData";
@@ -21,7 +22,7 @@ export default function ProductSections() {
     [id, catalog, id + catalog],
     getItem
   );
- 
+
   return (
     <>
       <AnimatePresence mode="wait">
@@ -30,19 +31,19 @@ export default function ProductSections() {
         ) : data === null ? (
           <NoResults level={-1} />
         ) : data && !isLoading ? (
-              <SmoothAppearance key={id}>
-            <ProductOptions data={data}  />
+          <SmoothAppearance key={id}>
+            <ProductOptions data={data} />
             <ProductDescription data={data} />
-                {(catalog === "sofas" || catalog === 'beds') && <Configuration price={data.price} />}
+            {(catalog === "sofas" || catalog === "beds") && (
+              <Configuration price={data.price} />
+            )}
+            <BuildSet />
             <MoreProducts />
           </SmoothAppearance>
         ) : (
-          <DataLoading key={'loading'}/>
+          <DataLoading key={"loading"} />
         )}
-        
       </AnimatePresence>
-
-
     </>
   );
 }

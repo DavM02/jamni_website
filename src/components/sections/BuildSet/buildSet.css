@@ -1,0 +1,10 @@
+#build-set {
+  background-color: var(--gray);
+  padding: var(--section-padding-equal-big) 0;
+}
+
+#build-set .section-layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: clamp(2.1875rem, 0.9615rem + 5.4487vw, 7.5rem);
+}
