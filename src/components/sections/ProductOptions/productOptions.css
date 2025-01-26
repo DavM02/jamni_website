@@ -12,7 +12,7 @@
   grid-template-columns: 1fr 45%;
 }
 
-#product-options .product-details > .row:nth-child(1) {
+#product-options .product-details>.row:nth-child(1) {
   line-height: unset;
   margin-bottom: clamp(1.875rem, 1.4423rem + 1.9231vw, 3.75rem);
 }
@@ -23,9 +23,7 @@
   hyphens: auto;
 }
 
-#product-options
-  .product-details
-  .xsmall-text:not(.custom-selection ul span, .custom-radio span) {
+#product-options .product-details .xsmall-text:not(.custom-selection ul span, .custom-radio span) {
   font-weight: 400;
 }
 
@@ -48,7 +46,7 @@
   line-height: 19px;
 }
 
-#product-options .product-details .download-details > div {
+#product-options .product-details .download-details>div {
   cursor: pointer;
 }
 
@@ -57,7 +55,7 @@
   gap: 10px 20px;
 }
 
-#product-options .product-details form > .row:nth-child(1) > div::first-letter {
+#product-options .product-details form>.row:nth-child(1)>div::first-letter {
   text-transform: uppercase;
 }
 
@@ -67,7 +65,7 @@
   margin-top: var(--middle-gap-responsive);
 }
 
-#product-options form .main-button + .row {
+#product-options form .main-button+.row {
   margin-top: 18px;
 }
 
@@ -93,21 +91,23 @@
 }
 
 @media all and (max-width: 550px) {
-  #project form > .row {
+  #project form>.row {
     flex-direction: column;
   }
 
-  #product-options form > .row > div {
+  #product-options form>.row>div {
     width: 100% !important;
   }
 }
 
-div[data-page="sofas"] #more-products {
-
-    background-color: var(--gray) !important;
+div[data-page="sofas"] #configuration {
+  background-color: var(--gray) !important;
 }
 
-div[data-page="sofas"]  #configuration{
- 
+div[data-page="sofas"] #build-set {
   background-color: var(--white) !important;
+}
+
+div[data-page="sofas"] #more-products {
+  background-color: var(--gray) !important;
 }

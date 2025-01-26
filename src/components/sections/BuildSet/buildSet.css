@@ -14,6 +14,7 @@
   width: 160px;
   height: 160px;
   aspect-ratio: 1/1;
+  background-color: var(--placeholder-1);
 }
 
 #build-set .preview h4 {
@@ -42,7 +43,6 @@
   transform: translateX(calc(var(--build-set-slider-img-width) * -3 - 60px));
   width: var(--build-set-slider-width);
   overflow: initial;
-  overflow-x: clip;
 }
 
 #build-set .slider-wrapper .slider-item {
@@ -130,6 +130,7 @@
   #build-set .section-layout>.column>.row {
     flex-direction: column;
     text-align: center;
+    padding-right: 0;
   }
 
   #build-set .preview {

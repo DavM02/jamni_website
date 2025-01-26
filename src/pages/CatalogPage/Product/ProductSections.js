@@ -34,10 +34,11 @@ export default function ProductSections() {
             <SmoothAppearance data-page={catalog} key={id}>
             <ProductOptions data={data} />
             <ProductDescription data={data} />
-            <BuildSet />
+           
                 {(catalog === "sofas") && (
                   <Configuration price={data.price} />
                 )}
+                <BuildSet />
             <MoreProducts />
           </SmoothAppearance>
         ) : (
