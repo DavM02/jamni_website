@@ -3,10 +3,11 @@ import React, { useState, } from 'react'
 import AnimButton from '../buttons/AnimButton/AnimButton'
 import SmoothAppearance from '../SmoothAppearance'
 import { AnimatePresence } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 export default function Descriptor({ data }) {
     const [showDescriptor, setShowDescriptor] = useState(false)
-
+const navigate = useNavigate()
     return (
         data.map((el, i) => {
             return <div
@@ -37,7 +38,7 @@ export default function Descriptor({ data }) {
                                 <div className='column'>
                                     <span className='xxsmall-text text-main text-black up-case'>{el.title}</span>
                                     <span className='xxxsmall-text text-main'>{el.subtitle}</span>
-                                    <AnimButton>
+                                    <AnimButton onClick={()=> navigate('/catalog/decor')}>
                                         посмотреть
                                     </AnimButton>
                                 </div>
