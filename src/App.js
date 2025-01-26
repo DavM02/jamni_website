@@ -24,18 +24,18 @@ import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
 
 function App() {
   const location = useLocation();
-  const [renderApp, setRenderApp] = useState(false);
-
+  const [renderApp, setRenderApp] = useState(sessionStorage.getItem('animationCompleted') || document.referrer.includes('jamni'));
+  
   return (
     <>
-      {renderApp && <Cursor />}
- 
-      <AppLoading setRenderApp={setRenderApp} />
+      <Cursor />
+      {(renderApp === false || renderApp === 'show') && <AppLoading setRenderApp={setRenderApp} />}
+     
       <div
         className="App"
         style={{
-          visibility: !renderApp ? "hidden" : "initial",
-          overflow: !renderApp ? "hidden" : "unset",
+          visibility: (renderApp || renderApp === 'show') ? "initial" : "hidden", 
+          overflow: (renderApp || renderApp === 'show') ? "unset" : "hidden",
         }}
       >
         <MainContextProvider>

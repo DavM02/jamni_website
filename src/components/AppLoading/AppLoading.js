@@ -24,10 +24,10 @@ export default function AppLoading({ setRenderApp }) {
     const images = useMemo(() => [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10], []);
     const [loaded, setLoaded] = useState(0);
     const [allImagesLoaded, setAllImagesLoaded] = useState(false);
- 
+
     useEffect(() => {
         let loadedImagesCount = 0;
- 
+
         images.forEach((imgSrc) => {
 
             const link = document.createElement('link');
@@ -49,28 +49,23 @@ export default function AppLoading({ setRenderApp }) {
 
     useEffect(() => {
 
-        const isAnimationCompleted = sessionStorage.getItem('animationCompleted') || document.referrer.includes('jamni');
-
-        if (!allImagesLoaded && !isAnimationCompleted) return;
-
-        if (isAnimationCompleted) {
-            setRenderApp(true);
-            setLoaded(3);
-        } else {
+        if (allImagesLoaded)  {
             setTimeout(() => setLoaded(1), 100);
             sessionStorage.setItem('animationCompleted', 'true');
         }
-    }, [allImagesLoaded, setRenderApp]);
 
-    return loaded !== 3 && ReactDOM.createPortal(
+
+    }, [allImagesLoaded]);
+
+    return ReactDOM.createPortal(
         <div
             id='app-loading'
-            onTransitionEnd={(e) => e.target.id === 'app-loading' && setLoaded(3)}
+            onTransitionEnd={(e) => e.target.id === 'app-loading' && setRenderApp('hide')}
             style={{ clipPath: loaded >= 2 ? 'inset(0 0 100% 0)' : 'inset(0)' }}
         >
             <div
                 className='app-loading-images'
-                onTransitionEnd={() => setRenderApp(true)}
+                onTransitionEnd={() => setRenderApp('show')}
                 style={{ clipPath: loaded >= 2 ? 'inset(0 0 100% 0)' : 'inset(0)' }}
             >
                 {images.map((el, i) => (
