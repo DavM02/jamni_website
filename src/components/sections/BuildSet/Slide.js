@@ -30,6 +30,8 @@ export default function Slide({ el, ...props }) {
       </span>
       <div className="grid-3 xsmall-text text-main text-black">
         <button className="center-gr" onClick={(e) => {
+          e.stopPropagation()
+          e.preventDefault()
           setCount((prev) => Math.max(0, prev - 1))
            if(count > 0) {
              props.decreaseQuantity(el.id, count)
@@ -39,6 +41,8 @@ export default function Slide({ el, ...props }) {
         </button>
         <span className="center-gr">{count}</span>
         <button className="center-gr" onClick={(e) => {
+          e.stopPropagation()
+          e.preventDefault()
           setCount((prev) => Math.min(9, prev + 1))
           if(count < 9) {
             props.addProduct(null, null, el)

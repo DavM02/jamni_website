@@ -98,7 +98,7 @@
 
 @media all and (min-width: 651px) {
   #build-set .slider-item:has(.to-bottom) {
-    bottom: 0;
+    bottom: 1px;
   }
 
   #build-set .slider-nav {
