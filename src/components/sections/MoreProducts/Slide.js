@@ -2,9 +2,9 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import AddToFav from "../../ui/buttons/AddToFav/AddToFav";
 import { Link } from "react-router-dom";
-export default function Slide({ el, catalog }) {
+export default function Slide({ el }) {
   return (
-    <Link to={`/catalog/${catalog}/${el.name.toLowerCase()}?id=${el.id}`}>
+    <Link to={`/catalog/${el.id.split('_')[1]}/${el.name.toLowerCase()}?id=${el.id}`}>
       <AddToFav data={el} />
       <div
         className="slider-image"

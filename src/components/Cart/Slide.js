@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 export default function Slide({ el }) {
   return (
-    <Link to={`catalog/${el.catalog}/${el.name.toLowerCase()}?id=${el.id}`}>
+    <Link
+      className={`${el.id.split('_')[1]}`}
+    to={`catalog/${el.id.split('_')[1]}/${el.name.toLowerCase()}?id=${el.id}`}>
 
       <div className='slider-image'>
         <LazyLoadImage

@@ -30,7 +30,7 @@ function useProductActions(productId) {
         const product = data ?? productData
 
         const newProduct = {
-            catalog,
+            catalog: product.id.split('_')[1],
             product: product.product,
             image: product.images[0],
             name: product.name,
@@ -61,7 +61,7 @@ function useProductActions(productId) {
     const handleAddToFav = (product, ref) => {
 
         const newProduct = {
-            catalog,
+            catalog: product.id.split('_')[1],
             product: product.product,
             image: product.images[0],
             name: product.name,

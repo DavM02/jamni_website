@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import loadData, { getLength } from "../db/loadData";
+import loadData  from "../db/loadData";
 export const modalStore = create((set) => ({
   isCartOpen: false,
   isAdded: false,
@@ -8,6 +8,8 @@ export const modalStore = create((set) => ({
   loading: false,
   error: null,
   auth: null,
+  showRecs: true,
+  setShowRecs: (val) => set((state) => ({showRecs: val})),
   setAuth: (val) => set((state) => ({
     auth: val
   })),
@@ -18,16 +20,24 @@ export const modalStore = create((set) => ({
   getCartRecommendations: () => {
     set({ loading: true, error: null });
 
-    getLength(["decor"])
-      .then((dataLength) => {
-        console.log(dataLength)
-        const randomPage = Math.floor(
-          Math.random() * Math.max(1, Math.floor(dataLength / 18))
-        );
-         return loadData(["decor", randomPage, 14]);
-      })
+
+
+    let catalogs = ['outdoor', 'frameless', 'curtains','beds', 'decor', "sofas", "poufs", "chairs", "armchairs"]
+
+    let array = new Set([]);
+
+    while (array.size !== 4) {
+      array.add(catalogs[Math.min(8, Math.round(Math.random() * 8))]);
+    }
+  
+   catalogs = Array.from(array);
+ 
+    Promise.all(catalogs.map((catalog) => loadData([catalog, Math.min(1, Math.round(Math.random() * 4)), 3])))
       .then((data) => {
-         set({ cartRecommendations: data, loading: false });
+   
+        const flatData = data.flat();
+        console.log(flatData)
+        set({ cartRecommendations: flatData, loading: false });
       })
       .catch((error) => {
         set({ error: error.message, loading: false });

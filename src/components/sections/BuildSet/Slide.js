@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-router-dom";
 
 export default function Slide({ el, ...props }) {
 
   const [count, setCount] = useState(0)
 
   return (
-    <div className={`column display-num center-y ${el.slideId % 2 !== 0 ? 'to-bottom' : 'to-top'}`}
+    <Link 
+    
+      to={`/catalog/${el.id.split('_')[1]}/${el.name.toLowerCase()}?id=${el.id}`}
+    className={`column display-num center-y ${el.slideId % 2 !== 0 ? 'to-bottom' : 'to-top'}`}
 
       data-num={count}
 
@@ -43,6 +47,6 @@ export default function Slide({ el, ...props }) {
           +
         </button>
       </div>
-    </div>
+    </Link>
   );
 }

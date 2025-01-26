@@ -7,30 +7,28 @@
   max-width: 1438px;
 }
 
-#beds-intro + section + #filter .filter-display img,
+#beds-intro+section+#filter .filter-display img,
 #armchairs-intro+section+#filter .filter-display img,
 #bedsheets-intro+section+#filter .filter-display img,
-#frameless-intro+section+#filter .filter-display img
- {
+#frameless-intro+section+#filter .filter-display img {
   object-fit: contain !important;
 }
 
-#frameless-intro+section+#filter .filter-display img {
-background-color: #f6f6f6 !important;
+#frameless-intro+section+#filter .filter-display .placeholder span {
+  background-color: #f6f6f6 !important;
 }
 
-#beds-intro + section + #filter .filter-display .placeholder span,
- #armchairs-intro+section+#filter .filter-display .placeholder span,
-    #bedsheets-intro+section+#filter .filter-display .placeholder span
- {
+#beds-intro+section+#filter .filter-display .placeholder span,
+#armchairs-intro+section+#filter .filter-display .placeholder span,
+#bedsheets-intro+section+#filter .filter-display .placeholder span {
   background-color: var(--white);
 }
- 
+
 #filter .filter-header {
   margin-bottom: 15px;
 }
 
-#filter .filter-header > div:nth-child(1) {
+#filter .filter-header>div:nth-child(1) {
   padding-bottom: var(--grid-padding);
 }
 
@@ -43,4 +41,3 @@ background-color: #f6f6f6 !important;
 #filter .error {
   padding-bottom: var(--grid-padding);
 }
-

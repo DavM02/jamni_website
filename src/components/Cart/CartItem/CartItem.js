@@ -12,7 +12,7 @@ function CartItem({
   
   return (
     <>
-      <div className="row wrap gap-30">
+      <div className={`${product.id.split('_')[1]} row wrap gap-30`} >
         <div className="cart-item-image">
           <LazyLoadImage
             // visibleByDefault={true}

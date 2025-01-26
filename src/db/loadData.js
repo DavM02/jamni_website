@@ -11,7 +11,7 @@ import {
 import { database } from "./firebaseConfig";
 
 async function loadData([path, page, count]) {
-  console.log(path);
+   
   if ((!path, !page, !count)) {
     throw new Error("An unexpected error occurred");
   }

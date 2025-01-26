@@ -4,6 +4,7 @@
   user-select: none;
   cursor: pointer;
 }
+
 .cart-item h6 {
   font-size: 24px !important;
   line-height: normal;
@@ -46,3 +47,4 @@
 .cart-item .remove-item:hover img {
   filter: invert();
 }
+

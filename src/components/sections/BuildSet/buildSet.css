@@ -34,9 +34,14 @@
   padding-right: 30px;
 }
 
-#build-set .section-layout>.column>.row.active,
-#build-set .section-layout>.column>.row:hover {
+#build-set .section-layout>.column>.row.active {
   border: 1.5px solid var(--line-bg);
+}
+
+@media all and (hover: hover){
+  #build-set .section-layout>.column>.row:hover {
+      border: 1.5px solid var(--line-bg);
+    }
 }
 
 #build-set .slider-wrapper {
@@ -47,6 +52,7 @@
 
 #build-set .slider-wrapper .slider-item {
   width: var(--build-set-slider-img-width);
+  cursor: pointer;
 
 }
 

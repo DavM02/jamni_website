@@ -164,3 +164,21 @@ header .icons .icon:nth-child(3)::after {
   }
 
 }
+
+
+.beds span,
+.armchairs span,
+.bedsheets span {
+  background-color: var(--white);
+}
+
+.beds img,
+.armchairs img,
+.bedsheets img,
+.frameless img {
+  object-fit: contain !important;
+}
+
+.frameless span {
+  background-color: #f6f6f6 !important;
+}

@@ -37,7 +37,7 @@
   line-height: 6px;
 }
 
-#filter .filter-item span:not(span:nth-child(2)) {
+#filter .filter-item span:not(.placeholder span) {
   display: block;
 }
 

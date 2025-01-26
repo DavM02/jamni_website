@@ -49,7 +49,6 @@ export default function MoreProducts({ headline = "еще товары" }) {
               <SmoothAppearance>
                 <InfiniteSlider
                   itemWidth={"moreitems-slider-img-width"}
-                  catalog={catalog}
                   sliderData={data
                     .filter(
                       (el, i) => el.id !== id && el.name.toLowerCase() !== name
