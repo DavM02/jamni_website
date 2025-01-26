@@ -28,6 +28,14 @@ function PageTransition(Component) {
         left: 0,
         behavior: "auto",
       });
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "hidden" && isAnimating) {
+          // setIsAnimating(false);
+          // setPathname(false)
+        }  
+      });
+
     }, []);
 
     return (

@@ -30,7 +30,7 @@ export default function MoreProducts({ headline = "еще товары" }) {
   const id = searchParams.get("id");
   const name = useParams().product;
   const { data, error, isLoading } = useSWRImmutable([catalog, 1, 16]);
-
+  console.log(data)
   return (
     <section id="more-products">
       <div className="container">
