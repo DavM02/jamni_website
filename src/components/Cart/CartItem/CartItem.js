@@ -9,25 +9,7 @@ function CartItem({
   removeProduct,
 }) {
 
-
- 
-  const handleDecreaseQuantity = (e) => {
-    e.stopPropagation();
-    product.quantity > 1
-      ? decreaseQuantity(product.id)
-      : removeProduct(product.id);
-  };
-
-  const handleIncreaseQuantity = (e) => {
-    e.stopPropagation();
-    increaseQuantity(product.id);
-  };
-
-  const handleRemoveProduct = (e) => {
-    e.stopPropagation();
-    removeProduct(product.id);
-  };
-
+  
   return (
     <>
       <div className="row wrap gap-30">
@@ -51,19 +33,19 @@ function CartItem({
             </span>
           </div>
           <div className="cart-item-quantity text-black-secondary grid-3 xsmall-text text-main">
-            <div className="center-gr" onClick={handleDecreaseQuantity}>
+            <div className="center-gr" onClick={(e) => { e.preventDefault(); e.stopPropagation(); decreaseQuantity(product.id, product.quantity) }}>
               <span>-</span>
             </div>
             <div className="center-gr">
               <span>{product.quantity}</span>
             </div>
-            <div className="center-gr" onClick={handleIncreaseQuantity}>
+            <div className="center-gr" onClick={(e) => { e.preventDefault(); e.stopPropagation(); increaseQuantity(product.id)}}>
               <span>+</span>
             </div>
           </div>
         </div>
       </div>
-      <div className="remove-item center-gr" onClick={handleRemoveProduct}>
+      <div className="remove-item center-gr" onClick={(e) => { e.preventDefault(); e.stopPropagation(); removeProduct(product.id) }}>
         <img src={trashIcon} alt="remove" />
       </div>
     </>

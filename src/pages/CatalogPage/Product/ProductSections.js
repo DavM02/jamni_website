@@ -16,10 +16,10 @@ export default function ProductSections() {
 
   const { catalog } = useParams();
 
-  const id = parseInt(searchParams.get("id"));
-
+  const id = searchParams.get("id")
+ 
   const { data, error, isLoading } = useSWRImmutable(
-    [id, catalog, id + catalog],
+    [id, catalog],
     getItem
   );
 
@@ -31,13 +31,13 @@ export default function ProductSections() {
         ) : data === null ? (
           <NoResults level={-1} />
         ) : data && !isLoading ? (
-          <SmoothAppearance key={id}>
+            <SmoothAppearance data-page={catalog} key={id}>
             <ProductOptions data={data} />
             <ProductDescription data={data} />
-            {(catalog === "sofas" || catalog === "beds") && (
-              <Configuration price={data.price} />
-            )}
             <BuildSet />
+                {(catalog === "sofas") && (
+                  <Configuration price={data.price} />
+                )}
             <MoreProducts />
           </SmoothAppearance>
         ) : (

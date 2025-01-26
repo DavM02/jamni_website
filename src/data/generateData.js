@@ -1,1377 +1,13065 @@
-const advantages = {
-  стулья: [
-    {
-      title: "Устойчивость к погодным условиям",
-      text: "Уличные стулья разработаны с учетом воздействия внешней среды, они устойчивы к дождю, ветру и солнечным лучам.",
-    },
-    {
-      title: "Легкость в хранении",
-      text: "Эти стулья легко складываются и могут быть убраны на зиму или в случае ненадобности, что экономит место.",
-    },
-    {
-      title: "Эргономичный дизайн",
-      text: "Стулья подходят для долгого пребывания на улице, обеспечивая комфорт и поддержку спины.",
-    },
-    {
-      title: "Долговечность",
-      text: "Материалы, из которых изготовлены стулья, долговечны и не поддаются износу даже при частом использовании на открытом воздухе.",
-    },
-    {
-      title: "Простота ухода",
-      text: "Уличные стулья легко чистятся и не требуют сложного ухода, что делает их удобными для повседневного использования.",
-    },
-    {
-      title: "Мобильность",
-      text: "Стулья легко перемещать по территории, они подходят для использования в любых местах, на даче или в саду.",
-    },
-    {
-      title: "Защита от ультрафиолетовых лучей",
-      text: "Материалы стульев не выгорают на солнце, что позволяет сохранять их внешний вид в идеальном состоянии.",
-    },
-    {
-      title: "Устойчивость к ветру",
-      text: "Стулья не переворачиваются даже при сильном ветре, обеспечивая стабильность и безопасность.",
-    },
-    {
-      title: "Удобство в использовании",
-      text: "Стулья имеют оптимальный угол наклона спинки и сиденья для комфортного отдыха на открытом воздухе.",
-    },
-    {
-      title: "Стильный внешний вид",
-      text: "Уличные стулья могут быть выполнены в различных стилях, идеально подходящих для вашего внешнего интерьера.",
-    },
-  ],
-  фонари: [
-    {
-      title: "Энергосбережение",
-      text: "Уличные фонари оснащены энергосберегающими лампами, которые обеспечивают долгое освещение без больших затрат электроэнергии.",
-    },
-    {
-      title: "Защита от влаги",
-      text: "Фонари защищены от дождя и снега, что позволяет им работать в любых погодных условиях.",
-    },
-    {
-      title: "Простота установки",
-      text: "Уличные фонари легко устанавливаются на даче, в саду или на улице, и не требуют особых знаний в монтаже.",
-    },
-    {
-      title: "Долговечность",
-      text: "Высококачественные материалы и устойчивость к внешним воздействиям делают фонари надежными и долговечными.",
-    },
-    {
-      title: "Регулируемая яркость",
-      text: "Некоторые модели фонарей позволяют регулировать яркость освещения в зависимости от времени суток.",
-    },
-    {
-      title: "Безопасность",
-      text: "Уличные фонари обеспечивают безопасность, освещая участки на даче или во дворе, что уменьшает вероятность несчастных случаев.",
-    },
-    {
-      title: "Декоративное освещение",
-      text: "Фонари могут использоваться как декоративный элемент для создания уюта и атмосферы на вашем участке.",
-    },
-    {
-      title: "Автоматическое включение",
-      text: "Фонари с датчиками движения включаются автоматически, обеспечивая освещение по мере необходимости.",
-    },
-    {
-      title: "Экологичность",
-      text: "Фонари работают на солнечных батареях или используют энергосберегающие технологии, что помогает сократить углеродный след.",
-    },
-    {
-      title: "Мобильность",
-      text: "Некоторые модели фонарей можно легко перемещать по территории, создавая освещенные зоны в нужных местах.",
-    },
-  ],
-  столы: [
-    {
-      title: "Устойчивость к внешним воздействиям",
-      text: "Уличные столы защищены от воздействия солнечного света и дождя, благодаря чему сохраняют привлекательный вид на долгое время.",
-    },
-    {
-      title: "Простота ухода",
-      text: "Материалы, из которых сделаны столы, легко чистятся и не требуют сложного ухода.",
-    },
-    {
-      title: "Практичность",
-      text: "Эти столы подходят для различных мероприятий на открытом воздухе: пикников, барбекю или просто для отдыха в саду.",
-    },
-    {
-      title: "Мобильность",
-      text: "Уличные столы легко перемещать, что позволяет изменить расположение мебели в зависимости от настроения или погодных условий.",
-    },
-    {
-      title: "Прочность",
-      text: "Таблицы выполнены из прочных материалов, которые выдерживают ежедневное использование и экстремальные погодные условия.",
-    },
-    {
-      title: "Многофункциональность",
-      text: "Столы могут быть использованы для разных нужд: как стол для еды, рабочее место или место для хранения.",
-    },
-    {
-      title: "Устойчивость к повреждениям",
-      text: "Столы не поддаются механическим повреждениям, и легко восстанавливаются после царапин и других повреждений.",
-    },
-    {
-      title: "Сложность монтажа",
-      text: "Уличные столы легко собираются без необходимости в специализированных инструментах.",
-    },
-    {
-      title: "Идеальные размеры",
-      text: "Столы бывают разных размеров, что позволяет выбрать оптимальный вариант для вашего пространства.",
-    },
-    {
-      title: "Экологичность материалов",
-      text: "Материалы, использующиеся в уличных столах, экологически чистые и безопасны для здоровья человека и животных.",
-    },
-  ],
-  диваны: [
-    {
-      title: "Комфорт на открытом воздухе",
-      text: "Уличные диваны специально разработаны для того, чтобы обеспечивать комфорт и уют на свежем воздухе, будь то балкон или дача.",
-    },
-    {
-      title: "Эстетичный внешний вид",
-      text: "Мебель для улицы выполнена в различных стилях, что позволяет выбрать идеальный вариант для любого внешнего пространства.",
-    },
-    {
-      title: "Устойчивость к погодным условиям",
-      text: "Диваны для улицы изготовлены из материалов, устойчивых к дождю и солнечным лучам, что гарантирует долгий срок службы.",
-    },
-    {
-      title: "Простота ухода",
-      text: "Мебель не требует особого ухода и легко чистится, что удобно при использовании на улице.",
-    },
-    {
-      title: "Удобство и функциональность",
-      text: "Диваны обеспечивают отличный комфорт, а некоторые модели включают дополнительные места для хранения.",
-    },
-    {
-      title: "Стойкость к пятнам",
-      text: "Материалы, используемые в диванах, устойчивы к пятнам, что упрощает уход за мебелью.",
-    },
-    {
-      title: "Эргономичный дизайн",
-      text: "Эти диваны удобны для длительного сидения, поддерживают правильное положение тела и идеально подходят для отдыха на улице.",
-    },
-    {
-      title: "Долговечность",
-      text: "Диваны для улицы прочные и устойчивые к износу, что гарантирует их долгий срок службы при активном использовании.",
-    },
-    {
-      title: "Экологичные материалы",
-      text: "Мебель изготавливается из экологически чистых материалов, что делает ее безопасной для здоровья.",
-    },
-    {
-      title: "Разнообразие стилей",
-      text: "Диваны могут быть выполнены в различных стилях, от минималистичных до роскошных моделей, подходящих для любого внешнего оформления.",
-    },
-  ],
-  кашпо: [
-    {
-      title: "Устойчивость к внешним воздействиям",
-      text: "Уличные кашпо сделаны из материалов, которые не боятся дождя, снега и солнечных лучей, сохраняют свою форму и цвет на долгие годы.",
-    },
-    {
-      title: "Подходит для любых растений",
-      text: "Кашпо имеют разнообразные формы и размеры, что позволяет выбрать подходящий вариант для любого растения.",
-    },
-    {
-      title: "Экологичность материалов",
-      text: "Все кашпо изготовлены из безопасных и экологически чистых материалов, что делает их безопасными для растений и окружающей среды.",
-    },
-    {
-      title: "Долговечность",
-      text: "Материалы, из которых изготавливаются кашпо, защищают от быстрого износа и не теряют привлекательного внешнего вида с течением времени.",
-    },
-    {
-      title: "Эстетика",
-      text: "Уличные кашпо могут быть выполнены в различных дизайнах, идеально сочетающихся с ландшафтным дизайном вашего участка.",
-    },
-    {
-      title: "Практичность",
-      text: "Кашпо удобно использовать для озеленения и декорирования садовых участков, террас или балконов.",
-    },
-    {
-      title: "Легкость в уходе",
-      text: "Кашпо не требуют особого ухода, они легко очищаются и не теряют своей формы.",
-    },
-    {
-      title: "Устойчивость к повреждениям",
-      text: "Кашпо устойчивы к механическим повреждениям и могут служить долго при правильном уходе.",
-    },
-    {
-      title: "Стойкость к выцветанию",
-      text: "Кашпо не выгорают на солнце и не теряют яркости, что делает их долговечными в наружном использовании.",
-    },
-    {
-      title: "Мобильность",
-      text: "Некоторые кашпо можно легко перемещать по территории, что позволяет обновить внешний вид вашего сада или балкона.",
-    },
-  ],
-};
-
-const bestseller = [true, false];
-
-const images = {
-  кашпо: [
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0224/sienna-fiber-stone-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0334/sienna-fibre-stone-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0916/sienna-fibre-stone-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0925/sienna-fibre-stone-outdoor-planters-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202434/0031/sienna-fibre-stone-outdoor-planters-3-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0912/sienna-fibre-stone-outdoor-planters-xl.jpg",
+const data = [
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "palette-brown-light",
+      "palette-green",
+      "palette-gray"
     ],
-    // Eclectic Villa Outdoor Planters
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0003/eclectic-villa-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0915/eclectic-villa-outdoor-planters-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202436/0003/artisan-handcrafted-terracotta-vase-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0335/eclectic-villa-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0915/eclectic-villa-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0335/eclectic-villa-outdoor-planters-1-xl.jpg",
+    "discount": true,
+    "id": 1,
+    "images": [
+      "https://i.ibb.co/BVqCfh9/img-1.jpg",
+      "https://i.ibb.co/dbK9x7B/img-2.jpg",
+      "https://i.ibb.co/sF2jc1F/img-4.webp",
+      "https://i.ibb.co/LdzMNX5/img-5.webp",
+      "https://i.ibb.co/R0rZ3sV/img-6.jpg",
+      "https://i.ibb.co/xJg9QM3/img-3.jpg"
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0036/img115xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0033/modern-rustic-fluted-outdoor-planters-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0041/img132xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0072/modern-rustic-fluted-outdoor-planters-2-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0072/modern-rustic-fluted-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0033/modern-rustic-fluted-outdoor-planters-xl.jpg",
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0890/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0888/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202439/0451/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0086/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0881/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0892/sedona-handcrafted-stone-outdoor-planters-xl.jpg",
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0138/elena-planters-4-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0137/elena-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0138/elena-planters-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0137/elena-planters-10-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0138/elena-planters-2-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0137/elena-planters-4-xl.jpg",
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Foster — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Foster предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Foster будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "white",
+      "palette-brown-light",
+      "palette-gray"
     ],
-  ],
-  диваны: [
-    // Lakewood Rope Outdoor Sofa
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0792/lakewood-rope-outdoor-sofa-76-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0794/lakewood-rope-outdoor-sofa-76-2-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0794/lakewood-rope-outdoor-sofa-76-3-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0499/lakewood-rope-outdoor-loveseat-xx-2-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0499/lakewood-rope-outdoor-loveseat-xx-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0499/lakewood-rope-outdoor-loveseat-xx-5-xl.jpg",
+    "discount": false,
+    "id": 2,
+    "images": [
+      "https://i.ibb.co/rpXkvCM/img-1.jpg",
+      "https://i.ibb.co/R7c0fXn/img-4.jpg",
+      "https://i.ibb.co/gmQBkvf/img-2.jpg",
+      "https://i.ibb.co/F6KvZtK/img-3.webp",
+      "https://i.ibb.co/wRWHTrf/img-5.jpg"
     ],
-    // Huntington Wicker Slope Arm Outdoor Sofa
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0004/huntington-wicker-slope-arm-outdoor-sofa-84-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0002/huntington-wicker-slope-arm-outdoor-sofa-84-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0002/huntington-wicker-slope-arm-outdoor-sofa-84-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0003/build-your-own-huntington-wicker-slope-arm-ultimate-outdoo-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0876/huntington-wicker-4-piece-slope-arm-outdoor-sectional-100-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0007/huntington-wicker-slope-arm-outdoor-sofa-84-xl.jpg",
+    "isNew": false,
+    "material": "стекло",
+    "name": "Petrified",
+    "price": 7000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
     ],
-    // Kostas Wicker Outdoor Sofa
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0821/kostas-wicker-outdoor-sofa-88-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0528/kostas-wicker-outdoor-sofa-xx-2-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0528/kostas-wicker-outdoor-sofa-xx-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0069/kostas-wicker-outdoor-sofa-88-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0069/kostas-wicker-outdoor-sofa-88-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0853/kostas-wicker-outdoor-sofa-88-1-xl.jpg",
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
     ],
-    // Indio Wood Modern Outdoor Sofa
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202443/0003/indio-wood-modern-outdoor-sofa-77-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202441/0005/indio-wood-modern-outdoor-sofa-77-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202441/0004/indio-wood-modern-outdoor-sofa-77-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0468/indio-eucalyptus-modern-platform-outdoor-sofa-77-5-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202441/0006/indio-wood-modern-outdoor-sofa-77-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202436/0019/indio-wood-modern-outdoor-sofa-77-1-xl.jpg",
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Petrified выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-brown",
+      "palette-gray-light"
     ],
-  ],
-  стулья: [
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0058/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0877/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202435/0009/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0875/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0880/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0058/huntington-wicker-slope-arm-swivel-outdoor-lounge-chair-xl.jpg",
+    "discount": true,
+    "id": 3,
+    "images": [
+      "https://i.ibb.co/pjv1Wds/img-1.jpg",
+      "https://i.ibb.co/9prPBsG/img-3.webp",
+      "https://i.ibb.co/N7jQ16x/img-2.webp",
+      "https://i.ibb.co/PZkGqGC/img-4.webp",
+      "https://i.ibb.co/gVZ6NWL/img-5.jpg"
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0194/malibu-metal-platform-swivel-outdoor-lounge-chair-2-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0087/malibu-metal-platform-swivel-outdoor-lounge-chair-2-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0089/malibu-metal-platform-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0194/malibu-metal-platform-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0194/malibu-metal-platform-swivel-outdoor-lounge-chair-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0194/malibu-metal-platform-swivel-outdoor-lounge-chair-4-xl.jpg",
+    "isNew": true,
+    "material": "керамика",
+    "name": "foster",
+    "price": 25000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0216/tulum-wicker-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0002/tulum-wicker-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0003/tulum-wicker-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0003/tulum-wicker-swivel-outdoor-lounge-chair-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0220/tulum-wicker-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0220/tulum-wicker-swivel-outdoor-lounge-chair-3-xl.jpg",
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0726/lakewood-rope-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0533/lakewood-rope-swivel-outdoor-lounge-chair-4-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0533/lakewood-rope-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202446/0533/lakewood-rope-swivel-outdoor-lounge-chair-3-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0726/lakewood-rope-swivel-outdoor-lounge-chair-3-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0692/lakewood-rope-swivel-outdoor-lounge-chair-xl.jpg",
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "картины",
+    "product": "эстетичная картина",
+    "colors": [
+      "palette-beige",
+      "black",
+      "white",
+      "palette-brown"
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202451/0022/torrey-wicker-papasan-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0898/torrey-wicker-papasan-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202451/0023/torrey-wicker-papasan-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0869/torrey-outdoor-furniture-cushion-covers-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0892/torrey-wicker-papasan-swivel-outdoor-lounge-chair-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0896/torrey-wicker-papasan-swivel-outdoor-lounge-chair-xl.jpg",
+    "discount": false,
+    "id": 4,
+    "images": [
+      "https://i.ibb.co/5ktYRt6/img-1.jpg",
+      "https://i.ibb.co/DpjCFB9/img-2.webp",
+      "https://i.ibb.co/p4DJnkn/img-3.webp",
+      "https://i.ibb.co/258VftK/img-4.jpg"
     ],
-  ],
-
-  фонари: [
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0884/taylor-lantern-collection-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0885/taylor-lantern-collection-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0889/taylor-lantern-collection-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0897/taylor-lantern-collection-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1079/img190xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0889/taylor-lantern-collection-xl.jpg",
+    "isNew": true,
+    "material": "ткань",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "цвет рамы": "_"
+          },
+          {
+            "тип рамы": [
+              "деревянная",
+              "металлическая",
+              "без рамы"
+            ]
+          },
+          {
+            "стиль": [
+              "современный",
+              "классический",
+              "абстракция",
+              "реализм"
+            ]
+          },
+          {
+            "форма": [
+              "прямоугольная",
+              "круглая",
+              "квадратная"
+            ]
+          }
+        ]
+      }
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0115/open-box-brooks-cross-bar-steel-glass-outdoor-lantern-2-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0115/open-box-brooks-cross-bar-steel-glass-outdoor-lantern-3-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202452/0115/open-box-brooks-cross-bar-steel-glass-outdoor-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0037/brooks-cross-bar-steel-glass-outdoor-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0884/brooks-cross-bar-steel-glass-outdoor-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0882/envelope-mailbox-xl.jpg",
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "высота": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "холст",
+        "структура": "плотная",
+        "покрытие": "глянцевое",
+        "декор": "абстракция"
+      }
+    },
+    "maintenance": [
+      "Для чистки картин используйте мягкую ткань и избегайте агрессивных химических средств.",
+      "Не рекомендуется подвергать картину воздействию прямых солнечных лучей, чтобы избежать выцветания.",
+      "При транспортировке или хранении картину рекомендуется упаковать в защитный чехол или коробку.",
+      "Если картина находится в рамке, проверяйте, чтобы не было повреждений или царапин на раме.",
+      "Для долгосрочного хранения картины рекомендуется повесить ее в сухом помещении с умеренной температурой."
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1179/gale-metal-outdoor-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1179/gale-metal-outdoor-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1184/gale-metal-outdoor-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1181/gale-metal-outdoor-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/1174/gale-metal-outdoor-lantern-xl.jpg",
+    "packing": {
+      "text": "Картина упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Картина Ramani выполнена из высококачественной ткани и станет ярким акцентом в вашем интерьере. Ее современный стиль и оригинальные художественные элементы добавят эстетическую ценность любому пространству. Картина доступна в различных размерах и формах, что позволяет выбрать наиболее подходящий вариант для вашего дома или офиса.",
+        "Она легка в уходе и долговечна, что делает ее идеальным выбором для тех, кто ценит качественные и стильные элементы декора."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Современные художественные элементы картины и разнообразие форм рам позволяют ей идеально вписаться в любой интерьер."
+      },
+      {
+        "title": "Качество",
+        "text": "Выполнена из высококачественной ткани, что гарантирует долговечность и устойчивость к повреждениям."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Картина доступна в различных размерах, формах и стилях, что позволяет подобрать идеальный вариант для любого пространства."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства для ткани и мягкую ткань для протирки, чтобы сохранить картину в отличном состоянии."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "шкатулки",
+    "product": "высококачественная шкатулка",
+    "colors": [
+      "palette-green",
+      "white",
+      "palette-gray"
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0200/easton-forged-iron-outdoor-lantern-4-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202438/0200/easton-forged-iron-outdoor-lantern-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0889/easton-forged-iron-outdoor-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0030/easton-forged-iron-outdoor-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0028/easton-forged-iron-outdoor-lantern-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202450/0617/avila-stamped-outdoor-coffee-table-xl.jpg",
+    "discount": true,
+    "id": 5,
+    "images": [
+      "https://i.ibb.co/Dz2q064/img-1.jpg",
+      "https://i.pinimg.com/736x/b2/a5/c8/b2a5c8e4b03c71e28f460e0edf052c58.jpg",
+      "https://images.quince.com/2I8W1IDkmGXxeuP5qjaYvu/f7a1066bffbf62eb8574b76275880d55/leatherbox_1.jpg?w=1582&q=50&h=1978&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/5fBCqzxpGgpxrBOgsrNFzL/32f57a1f82653396e37c394cca1e561a/Untitled_Session06590.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/10lTCMMvofnfCiGSWF6akG/d50f42e2f786a3c072a46be09c419f97/ShagreenCollection_7445.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg"
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0095/blair-solar-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0096/blair-solar-lantern-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0096/blair-solar-lantern-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0096/blair-solar-lantern-3-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0096/blair-solar-lantern-2-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202444/0095/blair-solar-lantern-1-xl.jpg",
+    "isNew": true,
+    "material": "кожа",
+    "name": "foster",
+    "price": 10000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 5,
+                "unit": "см"
+              },
+              {
+                "value": 8,
+                "unit": "см"
+              },
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "глубина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип": [
+              "для украшений",
+              "для документов",
+              "для мелочей"
+            ]
+          },
+          {
+            "замок": [
+              "с замком",
+              "без замка"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "с орнаментом",
+              "с гравировкой"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "500 г",
+              "1 кг",
+              "2 кг",
+              "5 кг"
+            ]
+          }
+        ]
+      }
     ],
-  ],
-  столы: [
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0023/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
-      " https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0026/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0025/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
-
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0008/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
-
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0664/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0008/indio-eucalyptus-x-base-extending-outdoor-dining-table-77--1-xl.jpg",
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "5 см",
+          "8 см",
+          "10 см",
+          "12 см"
+        ],
+        "глубина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "кожа",
+        "каркас": "деревянный",
+        "покрытие": "матовое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте шкатулку от пыли с помощью мягкой ткани, избегая абразивных материалов, чтобы не повредить поверхность.",
+      "Для очистки используйте специализированные средства для ухода за кожей, чтобы сохранить её эластичность и привлекательность. Избегайте попадания влаги, чтобы предотвратить повреждения материала.",
+      "Храните шкатулку в сухом месте, вдали от прямых солнечных лучей и источников тепла, чтобы избежать изменения цвета кожи и деформации материала.",
+      "При использовании в качестве шкатулки для украшений избегайте переполнения, чтобы сохранить её форму и предотвратить деформацию.",
+      "Если шкатулка загрязнилась, сразу же очистите её с помощью мягкой ткани, смоченной в специальном очищающем растворе для кожи, чтобы предотвратить появление пятен.",
+      "Для предотвращения появления трещин или царапин на поверхности, храните шкатулку в упаковке или в отдельной коробке при транспортировке."
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0913/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0009/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202449/0006/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0923/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0910/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0927/pomona-concrete-acacia-rectangular-outdoor-dining-table-86-xl.jpg",
+    "packing": {
+      "text": "Шкатулка упакована в прочную коробку с защитным материалом для безопасной транспортировки, что гарантирует её целостность при доставке."
+    },
+    "productDescription": {
+      "text": [
+        "Шкатулка выполнена из высококачественной кожи, что придает ей элегантный и стильный внешний вид. Она идеально подходит для хранения украшений, документов или различных мелочей. Благодаря своему классическому дизайну, она легко впишется в любой интерьер, будь то спальня, кабинет или гостиная. Кроме того, декор с изысканной гравировкой придаёт уникальность каждому экземпляру, делая его не только функциональным, но и стильным аксессуаром.",
+        "Эта шкатулка отличается не только эстетической привлекательностью, но и прочностью. Изготовленная из высококачественной кожи и деревянного каркаса, она способна служить долгие годы, сохраняя свой первоначальный внешний вид. С помощью простого ухода, шкатулка сохраняет свою эластичность и не теряет своего шарма. Она идеально подходит для тех, кто ценит стиль, долговечность и практичность в одном изделии."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде гравировки, который придаст вашему интерьеру утонченности и создаст атмосферу роскоши."
+      },
+      {
+        "title": "Прочность",
+        "text": "Шкатулка изготовлена из высококачественной кожи с деревянным каркасом, что обеспечивает её долговечность и устойчивость к механическим повреждениям, сохраняя её привлекательность на многие годы."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Шкатулка подходит для хранения украшений, документов или мелочей, обеспечивая порядок и добавляя стильный акцент в любой комнате вашего дома или офиса."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать специальные средства для ухода за кожей, чтобы она сохраняла свою привлекательность и долгие годы радовала глаз."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-gray",
+      "palette-brown"
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202503/0924/malibu-metal-extending-rectangular-outdoor-dining-table-76-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0002/malibu-metal-extending-rectangular-outdoor-dining-table-76-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0029/malibu-metal-extending-rectangular-outdoor-dining-table-76-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0031/malibu-metal-extending-rectangular-outdoor-dining-table-76-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202437/0033/malibu-metal-extending-rectangular-outdoor-dining-table-76-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202440/0002/malibu-metal-extending-rectangular-outdoor-dining-table-76-xl.jpg",
+    "discount": false,
+    "id": 6,
+    "images": [
+      "https://i.ibb.co/w4J4R4X/img-1.jpg",
+      "https://images.urbndata.com/is/image/Anthropologie/62200407_010_b4?$redesign-zoom-5x$",
+      "https://i.ibb.co/YPC4knc/img-3.webp",
+      "https://images.urbndata.com/is/image/Anthropologie/62200407_010_b?$redesign-zoom-5x$",
+      "https://i.ibb.co/wLbRqNr/img-5.jpg"
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0089/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0086/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0088/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0085/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0085/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202502/0088/indio-concrete-eucalyptus-x-base-outdoor-dining-table-72-xl.jpg",
+    "isNew": false,
+    "material": "мрамор",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
     ],
-    [
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0590/riviera-72-metal-dining-table-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0590/riviera-72-metal-dining-table-1-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0756/riviera-metal-rectangular-outdoor-dining-table-72-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0755/riviera-metal-rectangular-outdoor-dining-table-72-5-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0755/riviera-metal-rectangular-outdoor-dining-table-72-4-xl.jpg",
-      "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202442/0755/riviera-metal-rectangular-outdoor-dining-table-72-1-xl.jpg",
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          "30 см",
+          "40 см",
+          "50 см"
+        ],
+        "вес": [
+          "800 г",
+          "1000 г",
+          "1200 г"
+        ],
+        "механизм": [
+          "кварцевый",
+          "механический",
+          "автоматический"
+        ]
+      },
+      "materials": {
+        "основной материал": "сталь",
+        "ремешок": "кожа",
+        "стекло": "сапфировое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
     ],
-  ],
-};
-
-const material = {
-  стулья: ["дерево", "металл", "пластик", "кожа", "ротанг"],
-  фонари: ["сталь", "стекло", "алюминий", "медь", "пластик"],
-  столы: ["дерево", "стекло", "металл", "камень", "МДФ"],
-  диваны: ["ткань", "кожа", "искусственная кожа", "дерево", "поролон"],
-  кашпо: ["керамика", "пластик", "бетон", "металл", "дерево"],
-};
-
-const collections = ["стулья", "фонари", "столы", "диваны", "кашпо"];
-
-const colors = [
-  "palette-gray-light",
-  "black",
-  "palette-brown",
-  "white",
-  "palette-beige",
-  "palette-green",
-  "palette-gray",
-  "palette-brown-light",
-];
-
-const discount = [true, false];
-
-const isNew = [true, false];
-
-const names = {
-  стулья: ["sitflow", "relaxform", "zenchair", "seatmate", "woodbliss"],
-  фонари: ["glowlite", "brightbeam", "lanternova", "lumeorb", "shineflare"],
-  столы: ["tablecraft", "flatwood", "stonetop", "metalscape", "glassform"],
-  диваны: [
-    "sofasage",
-    "cushrealm",
-    "dreamlounger",
-    "comfortcloud",
-    "plushzone",
-  ],
-  кашпо: ["plantnest", "greenspire", "potbliss", "rootrock", "floraform"],
-};
-const products = {
-  стулья: [
-    "комфортный стул",
-    "садовый стул",
-    "классический стул",
-    "просторный стул",
-    "эстетичный стул",
-  ],
-  фонари: [
-    "умный фонарь",
-    "зарядный фонарь",
-    "декоративный фонарь",
-    "солнечный фонарь",
-    "мобильный фонарь",
-  ],
-  столы: [
-    "расширяемый стол",
-    "компактный стол",
-    "раздвижной стол",
-    "современный стол",
-    "компактный стол",
-  ],
-  диваны: [
-    "угловой диван",
-    "комфортный диван",
-    "трансформируемый диван",
-    "просторный диван",
-    "компактный диван",
-    "премиум диван",
-    "современный диван",
-    "классический диван",
-    "уютный диван",
-  ],
-  кашпо: [
-    "стильное кашпо",
-    "декоративное кашпо",
-    "роскошное кашпо",
-    "премиум кашпо",
-    "винтажное кашпо",
-  ],
-};
-
-const options = {
-  стулья: [
-    {
-      "тип сиденья": ["с подушкой", "без подушки"],
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
     },
-    {
-      "регулировка высоты": ["есть", "нет"],
+    "productDescription": {
+      "text": [
+        "Часы Ramani — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
     },
-    {
-      подлокотники: ["с подлокотниками", "без подлокотников"],
-    },
-    {
-      "устойчивость к погодным условиям": ["влагостойкие", "не влагостойкие"],
-    },
-
-    {
-      "съемный чехол": ["да", "нет"],
-    },
-    {
-      "антискользящая база": ["есть", "нет"],
-    },
-    {
-      "поставка в комплекте": ["с подставкой для ног", "без подставки для ног"],
-    },
-
-    {
-      сборка: ["не требует сборки", "требует сборки"],
-    },
-  ],
-  фонари: [
-    {
-      "тип освещения": ["светодиодный", "галогенный", "флуоресцентный"],
-    },
-    {
-      "тип батареек": ["AA", "AAA", "литий-ионный аккумулятор"],
-    },
-    {
-      мощность: ["менее 5 Вт", "5-10 Вт", "более 10 Вт"],
-    },
-    {
-      "регулировка яркости": ["есть", "нет"],
-    },
-    {
-      "защита от дождя": ["водостойкие", "не водостойкие"],
-    },
-    {
-      "цвет света": ["теплый", "холодный", "нейтральный"],
-    },
-    {
-      управление: ["с пультом", "без пульта", "сенсорное"],
-    },
-
-    {
-      "тип крепления": ["настенный", "напольный", "подвесной"],
-    },
-    {
-      "время работы": ["до 6 часов", "6-12 часов", "более 12 часов"],
-    },
-  ],
-  столы: [
-    {
-      "тип столешницы": ["дерево", "стекло", "металл"],
-    },
-    {
-      "регулировка высоты": ["есть", "нет"],
-    },
-    {
-      мобильность: ["с колесами", "без колес"],
-    },
-    {
-      "съемная столешница": ["да", "нет"],
-    },
-    {
-      форма: ["круглый", "прямоугольный", "квадратный"],
-    },
-    {
-      "количество ящиков": ["1", "2", "3 и более"],
-    },
-    {
-      "подставка для ног": ["есть", "нет"],
-    },
-
-    {
-      "подставка в комплекте": ["с подставками для напитков", "без подставок"],
-    },
-  ],
-  диваны: [
-    {
-      "материал обивки": ["ткань", "кожа", "искусственная кожа"],
-    },
-    {
-      "тип механизма трансформации": ["раскладной", "выкатной", "книжка"],
-    },
-    {
-      "наличие подушек": ["с подушками", "без подушек"],
-    },
-    {
-      "регулировка наклона спинки": ["есть", "нет"],
-    },
-    {
-      "встроенный столик": ["есть", "нет"],
-    },
-    {
-      компактность: ["для небольшой комнаты", "для просторной комнаты"],
-    },
-    {
-      "съемный чехол": ["да", "нет"],
-    },
-  ],
-  кашпо: [
-    {
-      "тип установки": ["на подставке", "на земле", "на стене"],
-    },
-    {
-      "защита от перегрева": ["есть", "нет"],
-    },
-    {
-      "тип кашпо": ["с поддоном", "без поддона"],
-    },
-
-    {
-      "антибактериальная обработка": ["есть", "нет"],
-    },
-    {
-      "устойчивость к морозам": ["есть", "нет"],
-    },
-    {
-      вентиляция: ["есть", "нет"],
-    },
-
-    {
-      покрытие: ["гладкое", "матовое", "грубое"],
-    },
-    {
-      "экологичность материала": ["экологически чистое", "стандартное"],
-    },
-  ],
-};
-
-const maintenance = {
-  стулья: [
-    "Регулярно протирайте стул влажной тряпкой, чтобы избежать накопления пыли и грязи.",
-    "Проверяйте ножки стула на предмет повреждений или износа, чтобы избежать его шатания.",
-    "При необходимости очищайте стул с помощью мягких моющих средств.",
-    "Не ставьте стул на слишком горячие поверхности, чтобы избежать повреждения покрытия.",
-    "Регулярно осматривайте спинку и сиденье стула на наличие повреждений и зацепок.",
-    "Для деревянных стульев используйте специальные восковые или масляные покрытия для защиты древесины.",
-    "Не подвергайте стул прямому воздействию солнечных лучей, чтобы предотвратить выцветание материала.",
-    "При сильных загрязнениях используйте специализированные средства для очистки ткани или кожи.",
-    "Для стульев с мягким наполнителем периодически заменяйте наполнитель для поддержания формы.",
-    "Храните стулья в сухом месте, чтобы избежать воздействия влаги и появления плесени.",
-  ],
-  фонари: [
-    "Очистите фонарь от пыли и грязи с помощью мягкой тряпки или щетки.",
-    "Для солнечных фонарей периодически очищайте солнечные панели от пыли, чтобы они эффективно заряжались.",
-    "При использовании на улице защищайте фонарь от дождя и снега.",
-    "Не оставляйте фонарь включенным на долгое время, чтобы продлить срок службы батарей.",
-    "Если фонарь с солнечным аккумулятором, убедитесь, что он находится в месте, где есть достаточно света.",
-    "Регулярно проверяйте работоспособность ламп и батарей в фонаре.",
-    "Храните фонарь в сухом месте, чтобы избежать его повреждения.",
-    "Не используйте фонарь при сильном ветре, чтобы избежать повреждения.",
-    "Избегайте перегрева фонаря на солнечном свете в жаркую погоду.",
-    "Используйте специальные средства для очистки стеклянных частей фонаря от пятен и загрязнений.",
-  ],
-  столы: [
-    "Протирайте стол влажной тканью, чтобы избежать скопления пыли.",
-    "Не ставьте горячие предметы прямо на поверхность стола, чтобы избежать повреждения покрытия.",
-    "Регулярно проверяйте стол на устойчивость и при необходимости затягивайте крепления.",
-    "Если стол из дерева, используйте специализированные средства для ухода за древесиной.",
-    "Не допускайте попадания влаги на деревянные поверхности, чтобы избежать их повреждения.",
-    "Не ставьте на стол слишком тяжелые предметы, чтобы избежать его деформации.",
-    "Используйте подставки или коврики для защиты стола от царапин.",
-    "При необходимости, снимайте декоративные элементы с поверхности стола, чтобы не повредить их.",
-    "Для стола с мягким покрытием используйте средства для чистки ткани или кожи.",
-    "Храните стол в сухом и проветриваемом помещении, чтобы избежать появления плесени или запахов.",
-  ],
-  диваны: [
-    "Регулярно пылесосьте диван для удаления пыли и волос.",
-    "При необходимости протирайте поверхность дивана влажной тряпкой.",
-    "Для кожи используйте специальные средства по уходу за кожей, чтобы сохранить ее мягкость и цвет.",
-    "Не допускайте попадания влаги на тканевые поверхности дивана.",
-    "Периодически осматривайте диван на наличие повреждений, таких как трещины или потертости.",
-    "Используйте защитные чехлы для дивана, чтобы уменьшить износ ткани.",
-    "Не оставляйте диван под прямыми солнечными лучами, чтобы избежать выцветания ткани.",
-    "При необходимости стирайте съемные чехлы в соответствии с инструкцией.",
-    "Для поддержания формы дивана периодически заменяйте наполнители подушек.",
-    "Не перегружайте диван тяжелыми предметами, чтобы избежать его деформации.",
-  ],
-  кашпо: [
-    "Очистите кашпо от грязи и пыли с помощью мягкой ткани.",
-    "Для кашпо с растениями регулярно проверяйте дренажные отверстия, чтобы предотвратить застой воды.",
-    "Не ставьте кашпо на сильно нагреваемые поверхности, чтобы избежать повреждения материала.",
-    "Для пластиковых кашпо используйте средства для очистки от загрязнений, чтобы поддерживать их внешний вид.",
-    "Избегайте попадания воды на наружные части кашпо в зимний период, чтобы предотвратить его замерзание.",
-    "Периодически проверяйте состояние корней растений и меняйте грунт в кашпо.",
-    "При сильных загрязнениях кашпо можно помыть теплой водой с мягким моющим средством.",
-    "Не оставляйте кашпо на улице в условиях сильного ветра, чтобы избежать его повреждения.",
-    "Регулярно очищайте внешнюю поверхность от пыли и грязи для поддержания внешнего вида.",
-    "Для защиты от перепадов температуры используйте утеплители для кашпо в зимнее время.",
-  ],
-};
-
-const descriptions = {
-  стулья: [
-    [
-      "Элегантный стул с мягким сиденьем и стильной спинкой добавит изысканности в ваш интерьер. Подходит для долгих сидений за столом.",
-      "Этот стул выполнен из качественных материалов, обеспечивающих надежность и комфорт.",
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
+      },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
+      },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
+      },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-beige",
+      "palette-gray-light",
+      "white"
     ],
-    [
-      "Легкий и удобный стул с современным дизайном. Подходит для гостиной, кухни или рабочего кабинета.",
-      "Простой, но элегантный стул с прочной конструкцией, идеально вписывается в любой стиль интерьера.",
+    "discount": true,
+    "id": 7,
+    "images": [
+      "https://i.ibb.co/gZQH7Kp/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/call-210209-MCGEE-51.jpg?v=1668634574&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D2.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D1.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/WinterCatalog13_e79463dd-9e15-4529-b502-fac8e03e1be0.jpg?v=1668634574&width=1200"
     ],
-    [
-      "Прочный и комфортный стул для рабочего кабинета, обеспечивающий отличную поддержку спины.",
-      "Стул с регулируемой высотой и эргономичной спинкой для максимального комфорта.",
+    "isNew": true,
+    "material": "керамика",
+    "name": "ivory",
+    "price": 3000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
     ],
-    [
-      "Стул с мягким сиденьем и стильными металлическими ножками подходит для модных и современных интерьеров.",
-      "Компактный и стильный стул для небольших помещений, создающий уют и комфорт.",
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          "30 см",
+          "40 см",
+          "50 см"
+        ],
+        "вес": [
+          "800 г",
+          "1000 г",
+          "1200 г"
+        ],
+        "механизм": [
+          "кварцевый",
+          "механический",
+          "автоматический"
+        ]
+      },
+      "materials": {
+        "основной материал": "сталь",
+        "ремешок": "кожа",
+        "стекло": "сапфировое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
     ],
-    [
-      "Модерн стул с высококачественными материалами и уникальной конструкцией, идеально подходящий для вашего дома.",
-      "Удобный стул с высокой спинкой, создающий дополнительную поддержку для спины.",
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Часы Ivory — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
+      },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
+      },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
+      },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-gray-light",
+      "white"
     ],
-  ],
-  фонари: [
-    [
-      "Элегантный настольный фонарь с регулировкой яркости, создающий мягкое освещение в любое время суток.",
-      "Фонарь с ярким и теплым светом, который подойдет для создания уютной атмосферы в вашем интерьере.",
+    "discount": false,
+    "id": 8,
+    "images": [
+      "https://i.ibb.co/6B0Hpt6/img-1.jpg",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039.jpg?preset=Product3840x2880",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039_1.jpg?preset=Product3840x2880",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039_3.jpg?preset=Product3840x2880"
     ],
-    [
-      "Классический стильный фонарь, который идеально впишется в минималистичный интерьер и обеспечит достаточно света.",
-      "Практичный и красивый фонарь, который можно использовать как декоративный элемент, так и для функционального освещения.",
+    "isNew": false,
+    "material": "керамика",
+    "name": "Petrified",
+    "price": 3000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
     ],
-    [
-      "Современный фонарь с уникальным дизайном, который привнесет современный стиль в ваше пространство.",
-      "Фонарь с регулируемым углом наклона, который идеально подойдет для чтения или работы.",
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
     ],
-    [
-      "Маленький, но мощный светильник, который удобно разместить на столе или на полке.",
-      "Уличный фонарь с долговечными материалами, идеально подходящий для садов и дворов.",
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Petrified — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Petrified предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Petrified будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "palette-green",
+      "black"
     ],
-    [
-      "Фонарь с интегрированным датчиком движения, который автоматически включается при обнаружении движения.",
-      "Энергосберегающий фонарь с LED лампами, который идеально подойдет для длительного использования.",
+    "discount": true,
+    "id": 9,
+    "images": [
+      "https://i.ibb.co/wKK5ZZ9/img-1.jpg",
+      "https://image.hm.com/assets/hm/a6/8f/a68f6a350f158335b72d8a943eb131636a3f54e1.jpg?imwidth=2160",
+      "https://img.tradera.net/images/303/583467303_d5493c20-670b-4c7a-b212-935272b81a3b.jpg",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F69%2F93%2F69934b1a7f5c4b86060b5547356c0cfc66eefb5c.jpg%3Fimwidth%3D2160_large.webp",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F20%2F18%2F2018542a741586d516fab9ba11c613b916cf7484.jpg%3Fimwidth%3D2160_large.webp"
     ],
-  ],
-  столы: [
-    [
-      "Современный стол с минималистичным дизайном, который идеально подойдет для офиса или кухни.",
-      "Стол с деревянной столешницей и металлическими ножками, создающий теплую атмосферу в вашем доме.",
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
     ],
-    [
-      "Уютный стол с прочной конструкцией, который станет центром внимания в вашем интерьере.",
-      "Большой стол для рабочего кабинета с удобной функциональностью и современным дизайном.",
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
     ],
-    [
-      "Компактный стол с элегантным дизайном, идеально подходящий для небольших помещений.",
-      "Стол с раздвижной конструкцией, позволяющим легко изменять размер стола для разных нужд.",
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Foster — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Foster предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Foster будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-brown-light",
+      "black"
     ],
-    [
-      "Стилизация стола в ретро-стиле, который добавит нотки винтажного шарма в ваше пространство.",
-      "Простой и функциональный стол, который идеально сочетает в себе комфорт и стиль.",
+    "discount": false,
+    "id": 10,
+    "images": [
+      "https://i.ibb.co/dJDf52B/img-1.jpg",
+      "https://cdn.laredoute.com/cdn-cgi/image/width=1200,height=1200,fit=pad,dpr=1/products/e/a/6/ea6d60183e8144f7b69f13311ad40beb.jpg",
+      "https://i.pinimg.com/1200x/a1/d3/82/a1d38295297e2d9b20aefff41ea87c5b.jpg",
+      "https://ae04.alicdn.com/kf/S4a4636c69c1f4ae487b9dfd45f79cf31x.jpg",
+      "https://ae04.alicdn.com/kf/S626719aeacb94b9193fd010609787776n.jpg"
     ],
-    [
-      "Минималистичный стол с прямыми линиями и красивой отделкой, который впишется в любой интерьер.",
-      "Стол с большой рабочей поверхностью и множеством полок для хранения, идеален для вашего кабинета.",
+    "isNew": false,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
     ],
-  ],
-  диваны: [
-    [
-      "Комфортабельный диван с мягкими подушками, идеально подходящий для долгих вечеров в гостиной.",
-      "Диван с высокой спинкой и глубокими сиденьями, который обеспечит максимальный комфорт для отдыха.",
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
     ],
-    [
-      "Удобный диван с регулируемыми подголовниками и подлокотниками, подходящий для удобного расположения.",
-      "Элегантный диван с текстурированным покрытием, который добавит стиль в любой интерьер.",
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "white",
+      "palette-brown",
+      "black",
+      "palette-gray"
     ],
-    [
-      "Современный угловой диван, который удобно разместится в углу и обеспечит простор для всей семьи.",
-      "Мягкий и компактный диван, идеально подходящий для небольших квартир или студий.",
+    "discount": true,
+    "id": 11,
+    "images": [
+      "https://i.ibb.co/k9mGs7b/img-1.webp",
+      "https://avatars.dzeninfra.ru/get-zen_doc/5233283/pub_6311f49f93168541bcd0f704_6311f8c6caaf0579521f5bb4/scale_2400",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/741909s2.jpg",
+      "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemZoom/741909s.jpg",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/176915s3.jpg",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/176915s2.jpg"
     ],
-    [
-      "Прочный диван с отличной поддержкой для спины, идеально подходящий для комфортного сидения.",
-      "Диван с модульной конструкцией, позволяющей изменять форму в зависимости от ваших потребностей.",
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
     ],
-    [
-      "Роскошный диван с мягкой обивкой и высокой спинкой, который станет главным элементом интерьера.",
-      "Диван с удобными подушками и прочной конструкцией, обеспечивающий долгосрочную эксплуатацию.",
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
     ],
-  ],
-  кашпо: [
-    [
-      "Простое и элегантное кашпо из керамики, которое идеально подойдет для растений с корнями среднего размера.",
-      "Красивое кашпо в стиле минимализм, которое добавит изысканности в ваш интерьер.",
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "картины",
+    "product": "эстетичная картина",
+    "colors": [
+      "palette-gray",
+      "white"
     ],
-    [
-      "Стильное кашпо с необычной формой, которое станет ярким акцентом в комнате.",
-      "Эстетичное кашпо с гладкой поверхностью и простым дизайном для создания уютной атмосферы.",
+    "discount": true,
+    "id": 12,
+    "images": [
+      "https://i.ibb.co/5ktYRt6/img-1.jpg",
+      "https://i.ibb.co/DpjCFB9/img-2.webp",
+      "https://i.ibb.co/p4DJnkn/img-3.webp",
+      "https://i.ibb.co/258VftK/img-4.jpg"
     ],
-    [
-      "Кашпо с ярким рисунком и фактурной поверхностью, которое добавит цвета в любой интерьер.",
-      "Удобное кашпо с дренажными отверстиями, которое предотвратит застой воды и обеспечит здоровый рост растений.",
+    "isNew": true,
+    "material": "стекло",
+    "name": "foster",
+    "price": 6000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "цвет рамы": "_"
+          },
+          {
+            "тип рамы": [
+              "деревянная",
+              "металлическая",
+              "без рамы"
+            ]
+          },
+          {
+            "стиль": [
+              "современный",
+              "классический",
+              "абстракция",
+              "реализм"
+            ]
+          },
+          {
+            "форма": [
+              "прямоугольная",
+              "круглая",
+              "квадратная"
+            ]
+          }
+        ]
+      }
     ],
-    [
-      "Легкое пластиковое кашпо с красивым дизайном, подходящее для различных комнатных растений.",
-      "Кашпо в виде подставки с множеством отделений для удобного размещения растений.",
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "высота": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "холст",
+        "структура": "плотная",
+        "покрытие": "глянцевое",
+        "декор": "абстракция"
+      }
+    },
+    "maintenance": [
+      "Для чистки картин используйте мягкую ткань и избегайте агрессивных химических средств.",
+      "Не рекомендуется подвергать картину воздействию прямых солнечных лучей, чтобы избежать выцветания.",
+      "При транспортировке или хранении картину рекомендуется упаковать в защитный чехол или коробку.",
+      "Если картина находится в рамке, проверяйте, чтобы не было повреждений или царапин на раме.",
+      "Для долгосрочного хранения картины рекомендуется повесить ее в сухом помещении с умеренной температурой."
     ],
-    [
-      "Кашпо с керамическим покрытием, которое отлично удерживает влагу и подходит для мелких растений.",
-      "Эко-кашпо из натуральных материалов, идеальное для любителей природных текстур.",
+    "packing": {
+      "text": "Картина упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Картина Foster выполнена из высококачественной ткани и станет ярким акцентом в вашем интерьере. Ее современный стиль и оригинальные художественные элементы добавят эстетическую ценность любому пространству. Картина доступна в различных размерах и формах, что позволяет выбрать наиболее подходящий вариант для вашего дома или офиса.",
+        "Она легка в уходе и долговечна, что делает ее идеальным выбором для тех, кто ценит качественные и стильные элементы декора."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Современные художественные элементы картины и разнообразие форм рам позволяют ей идеально вписаться в любой интерьер."
+      },
+      {
+        "title": "Качество",
+        "text": "Выполнена из высококачественной ткани, что гарантирует долговечность и устойчивость к повреждениям."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Картина доступна в различных размерах, формах и стилях, что позволяет подобрать идеальный вариант для любого пространства."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства для ткани и мягкую ткань для протирки, чтобы сохранить картину в отличном состоянии."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-beige",
+      "palette-brown",
+      "white",
+      "palette-gray"
     ],
-  ],
-};
-
-const packing = {
-  стулья: [
-    {
-      packing: {
-        text: "Каждый стул аккуратно упакован в защитную плёнку и помещен в картонную коробку для безопасной транспортировки.",
+    "discount": false,
+    "id": 13,
+    "images": [
+      "https://i.ibb.co/Ks8KTFq/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/Ross_Michelle_25.jpg?v=1668634804&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/SpringStyled49.jpg?v=1668634804&width=1200",
+      "https://rfdny.com/cdn/shop/products/Page-Pot-95797-00_2048x.jpg?v=1648730812",
+      "https://www.mcgeeandco.com/cdn/shop/products/RoundedCeramicVase_1.jpg?v=1661361684&width=1200"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "ramani",
+    "price": 15000,
+    "rating": 1,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
-    },
-    {
-      packing: {
-        text: "Стул обернут в многослойную защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
       },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
     },
-    {
-      packing: {
-        text: "Стул упакован в прочный пакет с защитой от влаги, чтобы сохранить его форму и предотвратить повреждения.",
-      },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-    {
-      packing: {
-        text: "Для защиты стула от внешних воздействий, он упакован в многослойную защитную пленку и помещен в картонную коробку.",
-      },
+    "productDescription": {
+      "text": [
+        "Ваза Ramani выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
     },
-    {
-      packing: {
-        text: "Каждый стул упакован в защитную плёнку, а коробка снабжена мягкими прокладками для безопасности при транспортировке.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
       },
-    },
-    {
-      packing: {
-        text: "Стул упакован в герметичный пакет с защитой от влаги и запахов для безопасной перевозки.",
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
       },
-    },
-    {
-      packing: {
-        text: "Стул помещен в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
       },
-    },
-    {
-      packing: {
-        text: "Каждый стул аккуратно сложен и упакован в картонную коробку с защитной плёнкой для предотвращения повреждений.",
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-green",
+      "palette-gray-light"
+    ],
+    "discount": false,
+    "id": 14,
+    "images": [
+      "https://i.ibb.co/rpXkvCM/img-1.jpg",
+      "https://i.ibb.co/R7c0fXn/img-4.jpg",
+      "https://i.ibb.co/gmQBkvf/img-2.jpg",
+      "https://i.ibb.co/F6KvZtK/img-3.webp",
+      "https://i.ibb.co/wRWHTrf/img-5.jpg"
+    ],
+    "isNew": true,
+    "material": "стекло",
+    "name": "foster",
+    "price": 8000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Petrified выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
     },
-    {
-      packing: {
-        text: "Стул запечатан в защитную плёнку и помещен в коробку с амортизирующими элементами для безопасной транспортировки.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "black"
+    ],
+    "discount": false,
+    "id": 15,
+    "images": [
+      "https://i.ibb.co/2jzvbkT/img-1.webp",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_1_1.jpg?t=1694010536094&imwidth=968&imformat=chrome",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_6_1.jpg?t=1694010536094&imwidth=968&imformat=chrome",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_2_1.jpg?t=1694010536094&imwidth=968&imformat=chrome",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_3_1.jpg?t=1694010536094&imwidth=968&imformat=chrome"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "Petrified",
+    "price": 10000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Petrified — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Petrified предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Petrified будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
     },
-    {
-      packing: {
-        text: "Стул упакован в плотный пакет и снабжен мягкими прокладками для защиты в коробке.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-gray",
+      "palette-brown-light"
+    ],
+    "discount": true,
+    "id": 16,
+    "images": [
+      "https://i.ibb.co/wKK5ZZ9/img-1.jpg",
+      "https://image.hm.com/assets/hm/a6/8f/a68f6a350f158335b72d8a943eb131636a3f54e1.jpg?imwidth=2160",
+      "https://img.tradera.net/images/303/583467303_d5493c20-670b-4c7a-b212-935272b81a3b.jpg",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F69%2F93%2F69934b1a7f5c4b86060b5547356c0cfc66eefb5c.jpg%3Fimwidth%3D2160_large.webp",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F20%2F18%2F2018542a741586d516fab9ba11c613b916cf7484.jpg%3Fimwidth%3D2160_large.webp"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "Ivory",
+    "price": 5000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Ivory — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Ivory предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Ivory будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
     },
-    {
-      packing: {
-        text: "Для безопасной транспортировки, стул упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "шкатулки",
+    "product": "высококачественная шкатулка",
+    "colors": [
+      "palette-brown",
+      "palette-gray-light"
+    ],
+    "discount": false,
+    "id": 17,
+    "images": [
+      "https://i.ibb.co/Dz2q064/img-1.jpg",
+      "https://i.pinimg.com/736x/b2/a5/c8/b2a5c8e4b03c71e28f460e0edf052c58.jpg",
+      "https://images.quince.com/2I8W1IDkmGXxeuP5qjaYvu/f7a1066bffbf62eb8574b76275880d55/leatherbox_1.jpg?w=1582&q=50&h=1978&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/5fBCqzxpGgpxrBOgsrNFzL/32f57a1f82653396e37c394cca1e561a/Untitled_Session06590.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/10lTCMMvofnfCiGSWF6akG/d50f42e2f786a3c072a46be09c419f97/ShagreenCollection_7445.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg"
+    ],
+    "isNew": false,
+    "material": "кожа",
+    "name": "foster",
+    "price": 20000,
+    "rating": 1,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 5,
+                "unit": "см"
+              },
+              {
+                "value": 8,
+                "unit": "см"
+              },
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "глубина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип": [
+              "для украшений",
+              "для документов",
+              "для мелочей"
+            ]
+          },
+          {
+            "замок": [
+              "с замком",
+              "без замка"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "с орнаментом",
+              "с гравировкой"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "500 г",
+              "1 кг",
+              "2 кг",
+              "5 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "5 см",
+          "8 см",
+          "10 см",
+          "12 см"
+        ],
+        "глубина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "кожа",
+        "каркас": "деревянный",
+        "покрытие": "матовое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте шкатулку от пыли с помощью мягкой ткани, избегая абразивных материалов, чтобы не повредить поверхность.",
+      "Для очистки используйте специализированные средства для ухода за кожей, чтобы сохранить её эластичность и привлекательность. Избегайте попадания влаги, чтобы предотвратить повреждения материала.",
+      "Храните шкатулку в сухом месте, вдали от прямых солнечных лучей и источников тепла, чтобы избежать изменения цвета кожи и деформации материала.",
+      "При использовании в качестве шкатулки для украшений избегайте переполнения, чтобы сохранить её форму и предотвратить деформацию.",
+      "Если шкатулка загрязнилась, сразу же очистите её с помощью мягкой ткани, смоченной в специальном очищающем растворе для кожи, чтобы предотвратить появление пятен.",
+      "Для предотвращения появления трещин или царапин на поверхности, храните шкатулку в упаковке или в отдельной коробке при транспортировке."
+    ],
+    "packing": {
+      "text": "Шкатулка упакована в прочную коробку с защитным материалом для безопасной транспортировки, что гарантирует её целостность при доставке."
+    },
+    "productDescription": {
+      "text": [
+        "Шкатулка выполнена из высококачественной кожи, что придает ей элегантный и стильный внешний вид. Она идеально подходит для хранения украшений, документов или различных мелочей. Благодаря своему классическому дизайну, она легко впишется в любой интерьер, будь то спальня, кабинет или гостиная. Кроме того, декор с изысканной гравировкой придаёт уникальность каждому экземпляру, делая его не только функциональным, но и стильным аксессуаром.",
+        "Эта шкатулка отличается не только эстетической привлекательностью, но и прочностью. Изготовленная из высококачественной кожи и деревянного каркаса, она способна служить долгие годы, сохраняя свой первоначальный внешний вид. С помощью простого ухода, шкатулка сохраняет свою эластичность и не теряет своего шарма. Она идеально подходит для тех, кто ценит стиль, долговечность и практичность в одном изделии."
+      ]
     },
-    {
-      packing: {
-        text: "Стул помещен в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде гравировки, который придаст вашему интерьеру утонченности и создаст атмосферу роскоши."
+      },
+      {
+        "title": "Прочность",
+        "text": "Шкатулка изготовлена из высококачественной кожи с деревянным каркасом, что обеспечивает её долговечность и устойчивость к механическим повреждениям, сохраняя её привлекательность на многие годы."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Шкатулка подходит для хранения украшений, документов или мелочей, обеспечивая порядок и добавляя стильный акцент в любой комнате вашего дома или офиса."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать специальные средства для ухода за кожей, чтобы она сохраняла свою привлекательность и долгие годы радовала глаз."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-beige",
+      "palette-gray",
+      "white"
+    ],
+    "discount": true,
+    "id": 18,
+    "images": [
+      "https://i.ibb.co/7tN1jr1/img-1.jpg",
+      "https://i.ibb.co/mNGszd1/img-4.jpg",
+      "https://www.coxandcox.co.uk/media/catalog/product/s/s/ss21-1128484-detail2.png?quality=80&fit=bounds&height=800&width=800",
+      "https://image-resizing.booztcdn.com/humdakin/hum762_crainbow_v208_11.webp?has_grey=0&has_webp=1&size=source",
+      "https://www.med-tehnik.ru/upload/iblock/352/tzpmbyd9kua4g7w0a9vwd3uc4o6xetp6/dekorativnyy_nabor_iz_gipsa_shampan_4_predmeta_1.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
     },
-    {
-      packing: {
-        text: "Каждый стул упакован в индивидуальную упаковку и надежно помещен в коробку с дополнительными защитными материалами.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "white",
+      "palette-brown",
+      "black",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 19,
+    "images": [
+      "https://i.ibb.co/k9mGs7b/img-1.webp",
+      "https://avatars.dzeninfra.ru/get-zen_doc/5233283/pub_6311f49f93168541bcd0f704_6311f8c6caaf0579521f5bb4/scale_2400",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/741909s2.jpg",
+      "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemZoom/741909s.jpg",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/176915s3.jpg",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/176915s2.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
     },
-  ],
-  фонари: [
-    {
-      packing: {
-        text: "Каждый фонарь аккуратно упакован в защитную плёнку и помещен в картонную коробку для безопасной доставки.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "картины",
+    "product": "эстетичная картина",
+    "colors": [
+      "palette-gray",
+      "white"
+    ],
+    "discount": true,
+    "id": 20,
+    "images": [
+      "https://i.ibb.co/5ktYRt6/img-1.jpg",
+      "https://i.ibb.co/DpjCFB9/img-2.webp",
+      "https://i.ibb.co/p4DJnkn/img-3.webp",
+      "https://i.ibb.co/258VftK/img-4.jpg"
+    ],
+    "isNew": true,
+    "material": "стекло",
+    "name": "foster",
+    "price": 6000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ],
+            "высота": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "цвет рамы": "_"
+          },
+          {
+            "тип рамы": [
+              "деревянная",
+              "металлическая",
+              "без рамы"
+            ]
+          },
+          {
+            "стиль": [
+              "современный",
+              "классический",
+              "абстракция",
+              "реализм"
+            ]
+          },
+          {
+            "форма": [
+              "прямоугольная",
+              "круглая",
+              "квадратная"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "высота": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "холст",
+        "структура": "плотная",
+        "покрытие": "глянцевое",
+        "декор": "абстракция"
+      }
+    },
+    "maintenance": [
+      "Для чистки картин используйте мягкую ткань и избегайте агрессивных химических средств.",
+      "Не рекомендуется подвергать картину воздействию прямых солнечных лучей, чтобы избежать выцветания.",
+      "При транспортировке или хранении картину рекомендуется упаковать в защитный чехол или коробку.",
+      "Если картина находится в рамке, проверяйте, чтобы не было повреждений или царапин на раме.",
+      "Для долгосрочного хранения картины рекомендуется повесить ее в сухом помещении с умеренной температурой."
+    ],
+    "packing": {
+      "text": "Картина упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Картина Foster выполнена из высококачественной ткани и станет ярким акцентом в вашем интерьере. Ее современный стиль и оригинальные художественные элементы добавят эстетическую ценность любому пространству. Картина доступна в различных размерах и формах, что позволяет выбрать наиболее подходящий вариант для вашего дома или офиса.",
+        "Она легка в уходе и долговечна, что делает ее идеальным выбором для тех, кто ценит качественные и стильные элементы декора."
+      ]
     },
-    {
-      packing: {
-        text: "Фонарь завернут в многослойную защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Современные художественные элементы картины и разнообразие форм рам позволяют ей идеально вписаться в любой интерьер."
+      },
+      {
+        "title": "Качество",
+        "text": "Выполнена из высококачественной ткани, что гарантирует долговечность и устойчивость к повреждениям."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Картина доступна в различных размерах, формах и стилях, что позволяет подобрать идеальный вариант для любого пространства."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства для ткани и мягкую ткань для протирки, чтобы сохранить картину в отличном состоянии."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-beige",
+      "palette-brown",
+      "white",
+      "palette-gray"
+    ],
+    "discount": false,
+    "id": 21,
+    "images": [
+      "https://i.ibb.co/Ks8KTFq/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/Ross_Michelle_25.jpg?v=1668634804&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/SpringStyled49.jpg?v=1668634804&width=1200",
+      "https://rfdny.com/cdn/shop/products/Page-Pot-95797-00_2048x.jpg?v=1648730812",
+      "https://www.mcgeeandco.com/cdn/shop/products/RoundedCeramicVase_1.jpg?v=1661361684&width=1200"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "ramani",
+    "price": 15000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
       },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
     },
-    {
-      packing: {
-        text: "Фонарь упакован в прочный пакет с воздухопроницаемой защитой, чтобы сохранить его форму и предотвратить повреждения.",
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Ramani выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-green",
+      "palette-gray-light"
+    ],
+    "discount": false,
+    "id": 22,
+    "images": [
+      "https://i.ibb.co/rpXkvCM/img-1.jpg",
+      "https://i.ibb.co/R7c0fXn/img-4.jpg",
+      "https://i.ibb.co/gmQBkvf/img-2.jpg",
+      "https://i.ibb.co/F6KvZtK/img-3.webp",
+      "https://i.ibb.co/wRWHTrf/img-5.jpg"
+    ],
+    "isNew": true,
+    "material": "стекло",
+    "name": "foster",
+    "price": 8000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
       },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
     },
-    {
-      packing: {
-        text: "Для защиты фонаря от внешних воздействий, он упакован в многослойную защитную плёнку и помещен в картонную коробку.",
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "black"
+    ],
+    "discount": false,
+    "id": 23,
+    "images": [
+      "https://i.ibb.co/2jzvbkT/img-1.webp",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_1_1.jpg?t=1694010536094&imwidth=968&imformat=chrome",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_6_1.jpg?t=1694010536094&imwidth=968&imformat=chrome",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_2_1.jpg?t=1694010536094&imwidth=968&imformat=chrome",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_3_1.jpg?t=1694010536094&imwidth=968&imformat=chrome"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "Petrified",
+    "price": 10000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
       },
+      "materials": {
+        "основной материал": "мрамор"
+      }
     },
-    {
-      packing: {
-        text: "Каждый фонарь индивидуально упакован в защитную плёнку, а коробка снабжена мягкими прокладками для безопасности при транспортировке.",
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Petrified — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Petrified предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Petrified будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-gray",
+      "palette-brown-light"
+    ],
+    "discount": true,
+    "id": 24,
+    "images": [
+      "https://i.ibb.co/wKK5ZZ9/img-1.jpg",
+      "https://image.hm.com/assets/hm/a6/8f/a68f6a350f158335b72d8a943eb131636a3f54e1.jpg?imwidth=2160",
+      "https://img.tradera.net/images/303/583467303_d5493c20-670b-4c7a-b212-935272b81a3b.jpg",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F69%2F93%2F69934b1a7f5c4b86060b5547356c0cfc66eefb5c.jpg%3Fimwidth%3D2160_large.webp",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F20%2F18%2F2018542a741586d516fab9ba11c613b916cf7484.jpg%3Fimwidth%3D2160_large.webp"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "Ivory",
+    "price": 5000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "шкатулки",
+    "product": "высококачественная шкатулка",
+    "colors": [
+      "palette-brown",
+      "palette-gray-light"
+    ],
+    "discount": false,
+    "id": 25,
+    "images": [
+      "https://i.ibb.co/Dz2q064/img-1.jpg",
+      "https://i.pinimg.com/736x/b2/a5/c8/b2a5c8e4b03c71e28f460e0edf052c58.jpg",
+      "https://images.quince.com/2I8W1IDkmGXxeuP5qjaYvu/f7a1066bffbf62eb8574b76275880d55/leatherbox_1.jpg?w=1582&q=50&h=1978&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/5fBCqzxpGgpxrBOgsrNFzL/32f57a1f82653396e37c394cca1e561a/Untitled_Session06590.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/10lTCMMvofnfCiGSWF6akG/d50f42e2f786a3c072a46be09c419f97/ShagreenCollection_7445.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg"
+    ],
+    "isNew": false,
+    "material": "кожа",
+    "name": "foster",
+    "price": 20000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 5,
+                "unit": "см"
+              },
+              {
+                "value": 8,
+                "unit": "см"
+              },
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "глубина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип": [
+              "для украшений",
+              "для документов",
+              "для мелочей"
+            ]
+          },
+          {
+            "замок": [
+              "с замком",
+              "без замка"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "с орнаментом",
+              "с гравировкой"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "500 г",
+              "1 кг",
+              "2 кг",
+              "5 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "5 см",
+          "8 см",
+          "10 см",
+          "12 см"
+        ],
+        "глубина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "кожа",
+        "каркас": "деревянный",
+        "покрытие": "матовое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте шкатулку от пыли с помощью мягкой ткани, избегая абразивных материалов, чтобы не повредить поверхность.",
+      "Для очистки используйте специализированные средства для ухода за кожей, чтобы сохранить её эластичность и привлекательность. Избегайте попадания влаги, чтобы предотвратить повреждения материала.",
+      "Храните шкатулку в сухом месте, вдали от прямых солнечных лучей и источников тепла, чтобы избежать изменения цвета кожи и деформации материала.",
+      "При использовании в качестве шкатулки для украшений избегайте переполнения, чтобы сохранить её форму и предотвратить деформацию.",
+      "Если шкатулка загрязнилась, сразу же очистите её с помощью мягкой ткани, смоченной в специальном очищающем растворе для кожи, чтобы предотвратить появление пятен.",
+      "Для предотвращения появления трещин или царапин на поверхности, храните шкатулку в упаковке или в отдельной коробке при транспортировке."
+    ],
+    "packing": {
+      "text": "Шкатулка упакована в прочную коробку с защитным материалом для безопасной транспортировки, что гарантирует её целостность при доставке."
+    },
+    "productDescription": {
+      "text": [
+        "Шкатулка выполнена из высококачественной кожи, что придает ей элегантный и стильный внешний вид. Она идеально подходит для хранения украшений, документов или различных мелочей. Благодаря своему классическому дизайну, она легко впишется в любой интерьер, будь то спальня, кабинет или гостиная. Кроме того, декор с изысканной гравировкой придаёт уникальность каждому экземпляру, делая его не только функциональным, но и стильным аксессуаром.",
+        "Эта шкатулка отличается не только эстетической привлекательностью, но и прочностью. Изготовленная из высококачественной кожи и деревянного каркаса, она способна служить долгие годы, сохраняя свой первоначальный внешний вид. С помощью простого ухода, шкатулка сохраняет свою эластичность и не теряет своего шарма. Она идеально подходит для тех, кто ценит стиль, долговечность и практичность в одном изделии."
+      ]
     },
-    {
-      packing: {
-        text: "Фонарь упакован в герметичный пакет с защитой от влаги и запахов, чтобы обеспечить сохранность при перевозке.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде гравировки, который придаст вашему интерьеру утонченности и создаст атмосферу роскоши."
+      },
+      {
+        "title": "Прочность",
+        "text": "Шкатулка изготовлена из высококачественной кожи с деревянным каркасом, что обеспечивает её долговечность и устойчивость к механическим повреждениям, сохраняя её привлекательность на многие годы."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Шкатулка подходит для хранения украшений, документов или мелочей, обеспечивая порядок и добавляя стильный акцент в любой комнате вашего дома или офиса."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать специальные средства для ухода за кожей, чтобы она сохраняла свою привлекательность и долгие годы радовала глаз."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-beige",
+      "palette-gray",
+      "white"
+    ],
+    "discount": true,
+    "id": 26,
+    "images": [
+      "https://i.ibb.co/7tN1jr1/img-1.jpg",
+      "https://i.ibb.co/mNGszd1/img-4.jpg",
+      "https://www.coxandcox.co.uk/media/catalog/product/s/s/ss21-1128484-detail2.png?quality=80&fit=bounds&height=800&width=800",
+      "https://image-resizing.booztcdn.com/humdakin/hum762_crainbow_v208_11.webp?has_grey=0&has_webp=1&size=source",
+      "https://www.med-tehnik.ru/upload/iblock/352/tzpmbyd9kua4g7w0a9vwd3uc4o6xetp6/dekorativnyy_nabor_iz_gipsa_shampan_4_predmeta_1.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
       },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
     },
-    {
-      packing: {
-        text: "Фонарь помещен в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Ramani выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "palette-brown-light",
+      "palette-green",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 27,
+    "images": [
+      "https://i.ibb.co/BVqCfh9/img-1.jpg",
+      "https://i.ibb.co/dbK9x7B/img-2.jpg",
+      "https://i.ibb.co/sF2jc1F/img-4.webp",
+      "https://i.ibb.co/LdzMNX5/img-5.webp",
+      "https://i.ibb.co/R0rZ3sV/img-6.jpg",
+      "https://i.ibb.co/xJg9QM3/img-3.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 1,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
       },
+      "materials": {
+        "основной материал": "мрамор"
+      }
     },
-    {
-      packing: {
-        text: "Каждый фонарь аккуратно сложен и упакован в картонную коробку с защитной плёнкой для предотвращения повреждений.",
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Foster — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Foster предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Foster будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "white",
+      "palette-brown-light",
+      "palette-gray"
+    ],
+    "discount": false,
+    "id": 28,
+    "images": [
+      "https://i.ibb.co/rpXkvCM/img-1.jpg",
+      "https://i.ibb.co/R7c0fXn/img-4.jpg",
+      "https://i.ibb.co/gmQBkvf/img-2.jpg",
+      "https://i.ibb.co/F6KvZtK/img-3.webp",
+      "https://i.ibb.co/wRWHTrf/img-5.jpg",
+      "https://i.ibb.co/wRWHTrf/img-5.jpg",
+      "https://i.ibb.co/wRWHTrf/img-5.jpg"
+    ],
+    "isNew": false,
+    "material": "стекло",
+    "name": "Petrified",
+    "price": 7000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
       },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
     },
-    {
-      packing: {
-        text: "Фонарь запечатан в защитную плёнку и помещен в коробку с амортизирующими элементами для безопасной транспортировки.",
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Petrified выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-brown",
+      "palette-gray-light"
+    ],
+    "discount": true,
+    "id": 29,
+    "images": [
+      "https://i.ibb.co/pjv1Wds/img-1.jpg",
+      "https://i.ibb.co/9prPBsG/img-3.webp",
+      "https://i.ibb.co/N7jQ16x/img-2.webp",
+      "https://i.ibb.co/PZkGqGC/img-4.webp",
+      "https://i.ibb.co/gVZ6NWL/img-5.jpg"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "foster",
+    "price": 25000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
       },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
     },
-    {
-      packing: {
-        text: "Фонарь упакован в плотный пакет и снабжен дополнительной защитой в виде мягких прокладок в коробке.",
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
       },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "картины",
+    "product": "эстетичная картина",
+    "colors": [
+      "palette-beige",
+      "black",
+      "white",
+      "palette-brown"
+    ],
+    "discount": false,
+    "id": 30,
+    "images": [
+      "https://i.ibb.co/5ktYRt6/img-1.jpg",
+      "https://i.ibb.co/DpjCFB9/img-2.webp",
+      "https://i.ibb.co/p4DJnkn/img-3.webp",
+      "https://i.ibb.co/258VftK/img-4.jpg",
+      "https://i.ibb.co/258VftK/img-4.jpg",
+      "https://i.ibb.co/258VftK/img-4.jpg"
+    ],
+    "isNew": true,
+    "material": "ткань",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "цвет рамы": "_"
+          },
+          {
+            "тип рамы": [
+              "деревянная",
+              "металлическая",
+              "без рамы"
+            ]
+          },
+          {
+            "стиль": [
+              "современный",
+              "классический",
+              "абстракция",
+              "реализм"
+            ]
+          },
+          {
+            "форма": [
+              "прямоугольная",
+              "круглая",
+              "квадратная"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "высота": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "холст",
+        "структура": "плотная",
+        "покрытие": "глянцевое",
+        "декор": "абстракция"
+      }
+    },
+    "maintenance": [
+      "Для чистки картин используйте мягкую ткань и избегайте агрессивных химических средств.",
+      "Не рекомендуется подвергать картину воздействию прямых солнечных лучей, чтобы избежать выцветания.",
+      "При транспортировке или хранении картину рекомендуется упаковать в защитный чехол или коробку.",
+      "Если картина находится в рамке, проверяйте, чтобы не было повреждений или царапин на раме.",
+      "Для долгосрочного хранения картины рекомендуется повесить ее в сухом помещении с умеренной температурой."
+    ],
+    "packing": {
+      "text": "Картина упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-    {
-      packing: {
-        text: "Для безопасной транспортировки фонарь упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+    "productDescription": {
+      "text": [
+        "Картина Ramani выполнена из высококачественной ткани и станет ярким акцентом в вашем интерьере. Ее современный стиль и оригинальные художественные элементы добавят эстетическую ценность любому пространству. Картина доступна в различных размерах и формах, что позволяет выбрать наиболее подходящий вариант для вашего дома или офиса.",
+        "Она легка в уходе и долговечна, что делает ее идеальным выбором для тех, кто ценит качественные и стильные элементы декора."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Современные художественные элементы картины и разнообразие форм рам позволяют ей идеально вписаться в любой интерьер."
+      },
+      {
+        "title": "Качество",
+        "text": "Выполнена из высококачественной ткани, что гарантирует долговечность и устойчивость к повреждениям."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Картина доступна в различных размерах, формах и стилях, что позволяет подобрать идеальный вариант для любого пространства."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства для ткани и мягкую ткань для протирки, чтобы сохранить картину в отличном состоянии."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "шкатулки",
+    "product": "высококачественная шкатулка",
+    "colors": [
+      "palette-green",
+      "white",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 31,
+    "images": [
+      "https://i.ibb.co/Dz2q064/img-1.jpg",
+      "https://i.pinimg.com/736x/b2/a5/c8/b2a5c8e4b03c71e28f460e0edf052c58.jpg",
+      "https://images.quince.com/2I8W1IDkmGXxeuP5qjaYvu/f7a1066bffbf62eb8574b76275880d55/leatherbox_1.jpg?w=1582&q=50&h=1978&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/5fBCqzxpGgpxrBOgsrNFzL/32f57a1f82653396e37c394cca1e561a/Untitled_Session06590.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/10lTCMMvofnfCiGSWF6akG/d50f42e2f786a3c072a46be09c419f97/ShagreenCollection_7445.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg"
+    ],
+    "isNew": true,
+    "material": "кожа",
+    "name": "foster",
+    "price": 10000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 5,
+                "unit": "см"
+              },
+              {
+                "value": 8,
+                "unit": "см"
+              },
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "глубина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип": [
+              "для украшений",
+              "для документов",
+              "для мелочей"
+            ]
+          },
+          {
+            "замок": [
+              "с замком",
+              "без замка"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "с орнаментом",
+              "с гравировкой"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "500 г",
+              "1 кг",
+              "2 кг",
+              "5 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "5 см",
+          "8 см",
+          "10 см",
+          "12 см"
+        ],
+        "глубина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "кожа",
+        "каркас": "деревянный",
+        "покрытие": "матовое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте шкатулку от пыли с помощью мягкой ткани, избегая абразивных материалов, чтобы не повредить поверхность.",
+      "Для очистки используйте специализированные средства для ухода за кожей, чтобы сохранить её эластичность и привлекательность. Избегайте попадания влаги, чтобы предотвратить повреждения материала.",
+      "Храните шкатулку в сухом месте, вдали от прямых солнечных лучей и источников тепла, чтобы избежать изменения цвета кожи и деформации материала.",
+      "При использовании в качестве шкатулки для украшений избегайте переполнения, чтобы сохранить её форму и предотвратить деформацию.",
+      "Если шкатулка загрязнилась, сразу же очистите её с помощью мягкой ткани, смоченной в специальном очищающем растворе для кожи, чтобы предотвратить появление пятен.",
+      "Для предотвращения появления трещин или царапин на поверхности, храните шкатулку в упаковке или в отдельной коробке при транспортировке."
+    ],
+    "packing": {
+      "text": "Шкатулка упакована в прочную коробку с защитным материалом для безопасной транспортировки, что гарантирует её целостность при доставке."
     },
-    {
-      packing: {
-        text: "Фонарь помещен в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+    "productDescription": {
+      "text": [
+        "Шкатулка выполнена из высококачественной кожи, что придает ей элегантный и стильный внешний вид. Она идеально подходит для хранения украшений, документов или различных мелочей. Благодаря своему классическому дизайну, она легко впишется в любой интерьер, будь то спальня, кабинет или гостиная. Кроме того, декор с изысканной гравировкой придаёт уникальность каждому экземпляру, делая его не только функциональным, но и стильным аксессуаром.",
+        "Эта шкатулка отличается не только эстетической привлекательностью, но и прочностью. Изготовленная из высококачественной кожи и деревянного каркаса, она способна служить долгие годы, сохраняя свой первоначальный внешний вид. С помощью простого ухода, шкатулка сохраняет свою эластичность и не теряет своего шарма. Она идеально подходит для тех, кто ценит стиль, долговечность и практичность в одном изделии."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде гравировки, который придаст вашему интерьеру утонченности и создаст атмосферу роскоши."
+      },
+      {
+        "title": "Прочность",
+        "text": "Шкатулка изготовлена из высококачественной кожи с деревянным каркасом, что обеспечивает её долговечность и устойчивость к механическим повреждениям, сохраняя её привлекательность на многие годы."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Шкатулка подходит для хранения украшений, документов или мелочей, обеспечивая порядок и добавляя стильный акцент в любой комнате вашего дома или офиса."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать специальные средства для ухода за кожей, чтобы она сохраняла свою привлекательность и долгие годы радовала глаз."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-gray",
+      "palette-brown"
+    ],
+    "discount": false,
+    "id": 32,
+    "images": [
+      "https://i.ibb.co/w4J4R4X/img-1.jpg",
+      "https://images.urbndata.com/is/image/Anthropologie/62200407_010_b4?$redesign-zoom-5x$",
+      "https://i.ibb.co/YPC4knc/img-3.webp",
+      "https://images.urbndata.com/is/image/Anthropologie/62200407_010_b?$redesign-zoom-5x$",
+      "https://i.ibb.co/wLbRqNr/img-5.jpg"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          "30 см",
+          "40 см",
+          "50 см"
+        ],
+        "вес": [
+          "800 г",
+          "1000 г",
+          "1200 г"
+        ],
+        "механизм": [
+          "кварцевый",
+          "механический",
+          "автоматический"
+        ]
+      },
+      "materials": {
+        "основной материал": "сталь",
+        "ремешок": "кожа",
+        "стекло": "сапфировое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
+    ],
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
     },
-    {
-      packing: {
-        text: "Каждый фонарь упакован в индивидуальную упаковку и надежно помещен в коробку с дополнительными защитными материалами.",
+    "productDescription": {
+      "text": [
+        "Часы Ramani — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
+      },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
+      },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
       },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-beige",
+      "palette-gray-light",
+      "white"
+    ],
+    "discount": true,
+    "id": 33,
+    "images": [
+      "https://i.ibb.co/gZQH7Kp/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/call-210209-MCGEE-51.jpg?v=1668634574&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D2.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D1.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/WinterCatalog13_e79463dd-9e15-4529-b502-fac8e03e1be0.jpg?v=1668634574&width=1200"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "ivory",
+    "price": 3000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          "30 см",
+          "40 см",
+          "50 см"
+        ],
+        "вес": [
+          "800 г",
+          "1000 г",
+          "1200 г"
+        ],
+        "механизм": [
+          "кварцевый",
+          "механический",
+          "автоматический"
+        ]
+      },
+      "materials": {
+        "основной материал": "сталь",
+        "ремешок": "кожа",
+        "стекло": "сапфировое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
+    ],
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
     },
-  ],
-  столы: [
-    {
-      packing: {
-        text: "Каждый стол аккуратно упакован в защитную плёнку и помещен в картонную коробку для безопасной транспортировки.",
+    "productDescription": {
+      "text": [
+        "Часы Ivory — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
+      },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
+      },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
       },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-gray-light",
+      "white"
+    ],
+    "discount": false,
+    "id": 34,
+    "images": [
+      "https://i.ibb.co/6B0Hpt6/img-1.jpg",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039.jpg?preset=Product3840x2880",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039_1.jpg?preset=Product3840x2880",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039_3.jpg?preset=Product3840x2880"
+    ],
+    "isNew": false,
+    "material": "керамика",
+    "name": "Petrified",
+    "price": 3000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
     },
-    {
-      packing: {
-        text: "Стол обернут в многослойную защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+    "productDescription": {
+      "text": [
+        "Свеча Petrified — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Petrified предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Petrified будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
       },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "palette-green",
+      "black"
+    ],
+    "discount": true,
+    "id": 35,
+    "images": [
+      "https://i.ibb.co/wKK5ZZ9/img-1.jpg",
+      "https://image.hm.com/assets/hm/a6/8f/a68f6a350f158335b72d8a943eb131636a3f54e1.jpg?imwidth=2160",
+      "https://img.tradera.net/images/303/583467303_d5493c20-670b-4c7a-b212-935272b81a3b.jpg",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F69%2F93%2F69934b1a7f5c4b86060b5547356c0cfc66eefb5c.jpg%3Fimwidth%3D2160_large.webp",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F20%2F18%2F2018542a741586d516fab9ba11c613b916cf7484.jpg%3Fimwidth%3D2160_large.webp"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
     },
-    {
-      packing: {
-        text: "Стол упакован в прочный пакет с защитой от влаги, чтобы сохранить его форму и предотвратить повреждения.",
+    "productDescription": {
+      "text": [
+        "Свеча Foster — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Foster предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Foster будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
       },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-brown-light",
+      "black"
+    ],
+    "discount": false,
+    "id": 36,
+    "images": [
+      "https://i.ibb.co/dJDf52B/img-1.jpg",
+      "https://cdn.laredoute.com/cdn-cgi/image/width=1200,height=1200,fit=pad,dpr=1/products/e/a/6/ea6d60183e8144f7b69f13311ad40beb.jpg",
+      "https://i.pinimg.com/1200x/a1/d3/82/a1d38295297e2d9b20aefff41ea87c5b.jpg",
+      "https://ae04.alicdn.com/kf/S4a4636c69c1f4ae487b9dfd45f79cf31x.jpg",
+      "https://ae04.alicdn.com/kf/S626719aeacb94b9193fd010609787776n.jpg"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 1,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
     },
-    {
-      packing: {
-        text: "Для защиты стола от внешних воздействий, он упакован в многослойную защитную пленку и помещен в картонную коробку.",
+    "productDescription": {
+      "text": [
+        "Свеча Foster — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Foster предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Foster будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
       },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "white",
+      "palette-brown",
+      "black",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 37,
+    "images": [
+      "https://i.ibb.co/k9mGs7b/img-1.webp",
+      "https://avatars.dzeninfra.ru/get-zen_doc/5233283/pub_6311f49f93168541bcd0f704_6311f8c6caaf0579521f5bb4/scale_2400",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/741909s2.jpg",
+      "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemZoom/741909s.jpg",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/176915s3.jpg",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/176915s2.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-    {
-      packing: {
-        text: "Каждый стол упакован в защитную плёнку, а коробка снабжена мягкими прокладками для безопасности при транспортировке.",
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "картины",
+    "product": "эстетичная картина",
+    "colors": [
+      "palette-gray",
+      "white"
+    ],
+    "discount": true,
+    "id": 38,
+    "images": [
+      "https://i.ibb.co/5ktYRt6/img-1.jpg",
+      "https://i.ibb.co/DpjCFB9/img-2.webp",
+      "https://i.ibb.co/p4DJnkn/img-3.webp",
+      "https://i.ibb.co/258VftK/img-4.jpg",
+      "https://i.ibb.co/258VftK/img-4.jpg"
+    ],
+    "isNew": true,
+    "material": "стекло",
+    "name": "foster",
+    "price": 6000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "цвет рамы": "_"
+          },
+          {
+            "тип рамы": [
+              "деревянная",
+              "металлическая",
+              "без рамы"
+            ]
+          },
+          {
+            "стиль": [
+              "современный",
+              "классический",
+              "абстракция",
+              "реализм"
+            ]
+          },
+          {
+            "форма": [
+              "прямоугольная",
+              "круглая",
+              "квадратная"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "высота": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "холст",
+        "структура": "плотная",
+        "покрытие": "глянцевое",
+        "декор": "абстракция"
+      }
+    },
+    "maintenance": [
+      "Для чистки картин используйте мягкую ткань и избегайте агрессивных химических средств.",
+      "Не рекомендуется подвергать картину воздействию прямых солнечных лучей, чтобы избежать выцветания.",
+      "При транспортировке или хранении картину рекомендуется упаковать в защитный чехол или коробку.",
+      "Если картина находится в рамке, проверяйте, чтобы не было повреждений или царапин на раме.",
+      "Для долгосрочного хранения картины рекомендуется повесить ее в сухом помещении с умеренной температурой."
+    ],
+    "packing": {
+      "text": "Картина упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Картина Foster выполнена из высококачественной ткани и станет ярким акцентом в вашем интерьере. Ее современный стиль и оригинальные художественные элементы добавят эстетическую ценность любому пространству. Картина доступна в различных размерах и формах, что позволяет выбрать наиболее подходящий вариант для вашего дома или офиса.",
+        "Она легка в уходе и долговечна, что делает ее идеальным выбором для тех, кто ценит качественные и стильные элементы декора."
+      ]
     },
-    {
-      packing: {
-        text: "Стол упакован в герметичный пакет с защитой от влаги и запахов для безопасной перевозки.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Современные художественные элементы картины и разнообразие форм рам позволяют ей идеально вписаться в любой интерьер."
       },
+      {
+        "title": "Качество",
+        "text": "Выполнена из высококачественной ткани, что гарантирует долговечность и устойчивость к повреждениям."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Картина доступна в различных размерах, формах и стилях, что позволяет подобрать идеальный вариант для любого пространства."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства для ткани и мягкую ткань для протирки, чтобы сохранить картину в отличном состоянии."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-beige",
+      "palette-brown",
+      "white",
+      "palette-gray"
+    ],
+    "discount": false,
+    "id": 39,
+    "images": [
+      "https://i.ibb.co/Ks8KTFq/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/Ross_Michelle_25.jpg?v=1668634804&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/SpringStyled49.jpg?v=1668634804&width=1200",
+      "https://rfdny.com/cdn/shop/products/Page-Pot-95797-00_2048x.jpg?v=1648730812",
+      "https://www.mcgeeandco.com/cdn/shop/products/RoundedCeramicVase_1.jpg?v=1661361684&width=1200"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "ramani",
+    "price": 15000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Ramani выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
     },
-    {
-      packing: {
-        text: "Стол помещен в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
       },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-green",
+      "palette-gray-light"
+    ],
+    "discount": false,
+    "id": 40,
+    "images": [
+      "https://i.ibb.co/R7c0fXn/img-4.jpg",
+      "https://i.ibb.co/rpXkvCM/img-1.jpg",
+      "https://i.ibb.co/gmQBkvf/img-2.jpg",
+      "https://i.ibb.co/F6KvZtK/img-3.webp"
+    ],
+    "isNew": true,
+    "material": "стекло",
+    "name": "foster",
+    "price": 8000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
     },
-    {
-      packing: {
-        text: "Каждый стол аккуратно сложен и упакован в картонную коробку с защитной плёнкой для предотвращения повреждений.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
       },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "black"
+    ],
+    "discount": false,
+    "id": 41,
+    "images": [
+      "https://i.ibb.co/2jzvbkT/img-1.webp",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_1_1.jpg?t=1694010536094&imwidth=968&imformat=chrome",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_6_1.jpg?t=1694010536094&imwidth=968&imformat=chrome",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_2_1.jpg?t=1694010536094&imwidth=968&imformat=chrome",
+      "https://static.zarahome.net/8/photos4/2025/V/4/1/p/8432/705/737/8432705737_2_3_1.jpg?t=1694010536094&imwidth=968&imformat=chrome"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "Petrified",
+    "price": 10000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Petrified — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Petrified предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Petrified будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
     },
-    {
-      packing: {
-        text: "Стол запечатан в защитную плёнку и помещен в коробку с амортизирующими элементами для безопасной транспортировки.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
       },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-gray",
+      "palette-brown-light"
+    ],
+    "discount": true,
+    "id": 42,
+    "images": [
+      "https://i.ibb.co/wKK5ZZ9/img-1.jpg",
+      "https://image.hm.com/assets/hm/a6/8f/a68f6a350f158335b72d8a943eb131636a3f54e1.jpg?imwidth=2160",
+      "https://img.tradera.net/images/303/583467303_d5493c20-670b-4c7a-b212-935272b81a3b.jpg",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F69%2F93%2F69934b1a7f5c4b86060b5547356c0cfc66eefb5c.jpg%3Fimwidth%3D2160_large.webp",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F20%2F18%2F2018542a741586d516fab9ba11c613b916cf7484.jpg%3Fimwidth%3D2160_large.webp"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "Ivory",
+    "price": 5000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
     },
-    {
-      packing: {
-        text: "Стол упакован в плотный пакет и снабжен мягкими прокладками для защиты в коробке.",
+    "productDescription": {
+      "text": [
+        "Свеча Ivory — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Ivory предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Ivory будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
       },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "шкатулки",
+    "product": "высококачественная шкатулка",
+    "colors": [
+      "palette-brown",
+      "palette-gray-light"
+    ],
+    "discount": false,
+    "id": 43,
+    "images": [
+      "https://i.ibb.co/Dz2q064/img-1.jpg",
+      "https://i.pinimg.com/736x/b2/a5/c8/b2a5c8e4b03c71e28f460e0edf052c58.jpg",
+      "https://images.quince.com/2I8W1IDkmGXxeuP5qjaYvu/f7a1066bffbf62eb8574b76275880d55/leatherbox_1.jpg?w=1582&q=50&h=1978&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/5fBCqzxpGgpxrBOgsrNFzL/32f57a1f82653396e37c394cca1e561a/Untitled_Session06590.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/10lTCMMvofnfCiGSWF6akG/d50f42e2f786a3c072a46be09c419f97/ShagreenCollection_7445.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg"
+    ],
+    "isNew": false,
+    "material": "кожа",
+    "name": "foster",
+    "price": 20000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 5,
+                "unit": "см"
+              },
+              {
+                "value": 8,
+                "unit": "см"
+              },
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "глубина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип": [
+              "для украшений",
+              "для документов",
+              "для мелочей"
+            ]
+          },
+          {
+            "замок": [
+              "с замком",
+              "без замка"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "с орнаментом",
+              "с гравировкой"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "500 г",
+              "1 кг",
+              "2 кг",
+              "5 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "5 см",
+          "8 см",
+          "10 см",
+          "12 см"
+        ],
+        "глубина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "кожа",
+        "каркас": "деревянный",
+        "покрытие": "матовое",
+        "декор": "с гравировкой"
+      }
     },
-    {
-      packing: {
-        text: "Для безопасной транспортировки, стол упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+    "maintenance": [
+      "Регулярно очищайте шкатулку от пыли с помощью мягкой ткани, избегая абразивных материалов, чтобы не повредить поверхность.",
+      "Для очистки используйте специализированные средства для ухода за кожей, чтобы сохранить её эластичность и привлекательность. Избегайте попадания влаги, чтобы предотвратить повреждения материала.",
+      "Храните шкатулку в сухом месте, вдали от прямых солнечных лучей и источников тепла, чтобы избежать изменения цвета кожи и деформации материала.",
+      "При использовании в качестве шкатулки для украшений избегайте переполнения, чтобы сохранить её форму и предотвратить деформацию.",
+      "Если шкатулка загрязнилась, сразу же очистите её с помощью мягкой ткани, смоченной в специальном очищающем растворе для кожи, чтобы предотвратить появление пятен.",
+      "Для предотвращения появления трещин или царапин на поверхности, храните шкатулку в упаковке или в отдельной коробке при транспортировке."
+    ],
+    "packing": {
+      "text": "Шкатулка упакована в прочную коробку с защитным материалом для безопасной транспортировки, что гарантирует её целостность при доставке."
+    },
+    "productDescription": {
+      "text": [
+        "Шкатулка выполнена из высококачественной кожи, что придает ей элегантный и стильный внешний вид. Она идеально подходит для хранения украшений, документов или различных мелочей. Благодаря своему классическому дизайну, она легко впишется в любой интерьер, будь то спальня, кабинет или гостиная. Кроме того, декор с изысканной гравировкой придаёт уникальность каждому экземпляру, делая его не только функциональным, но и стильным аксессуаром.",
+        "Эта шкатулка отличается не только эстетической привлекательностью, но и прочностью. Изготовленная из высококачественной кожи и деревянного каркаса, она способна служить долгие годы, сохраняя свой первоначальный внешний вид. С помощью простого ухода, шкатулка сохраняет свою эластичность и не теряет своего шарма. Она идеально подходит для тех, кто ценит стиль, долговечность и практичность в одном изделии."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде гравировки, который придаст вашему интерьеру утонченности и создаст атмосферу роскоши."
+      },
+      {
+        "title": "Прочность",
+        "text": "Шкатулка изготовлена из высококачественной кожи с деревянным каркасом, что обеспечивает её долговечность и устойчивость к механическим повреждениям, сохраняя её привлекательность на многие годы."
       },
+      {
+        "title": "Универсальность",
+        "text": "Шкатулка подходит для хранения украшений, документов или мелочей, обеспечивая порядок и добавляя стильный акцент в любой комнате вашего дома или офиса."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать специальные средства для ухода за кожей, чтобы она сохраняла свою привлекательность и долгие годы радовала глаз."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-beige",
+      "palette-gray",
+      "white"
+    ],
+    "discount": true,
+    "id": 44,
+    "images": [
+      "https://i.ibb.co/7tN1jr1/img-1.jpg",
+      "https://i.ibb.co/mNGszd1/img-4.jpg",
+      "https://www.coxandcox.co.uk/media/catalog/product/s/s/ss21-1128484-detail2.png?quality=80&fit=bounds&height=800&width=800",
+      "https://image-resizing.booztcdn.com/humdakin/hum762_crainbow_v208_11.webp?has_grey=0&has_webp=1&size=source",
+      "https://www.med-tehnik.ru/upload/iblock/352/tzpmbyd9kua4g7w0a9vwd3uc4o6xetp6/dekorativnyy_nabor_iz_gipsa_shampan_4_predmeta_1.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 1,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
     },
-    {
-      packing: {
-        text: "Стол помещен в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Ramani выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
       },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "картины",
+    "product": "эстетичная картина",
+    "colors": [
+      "palette-beige",
+      "black",
+      "white",
+      "palette-brown"
+    ],
+    "discount": false,
+    "id": 45,
+    "images": [
+      "https://i.ibb.co/5ktYRt6/img-1.jpg",
+      "https://i.ibb.co/DpjCFB9/img-2.webp",
+      "https://i.ibb.co/p4DJnkn/img-3.webp",
+      "https://i.ibb.co/258VftK/img-4.jpg",
+      "https://i.ibb.co/258VftK/img-4.jpg"
+    ],
+    "isNew": true,
+    "material": "ткань",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "цвет рамы": "_"
+          },
+          {
+            "тип рамы": [
+              "деревянная",
+              "металлическая",
+              "без рамы"
+            ]
+          },
+          {
+            "стиль": [
+              "современный",
+              "классический",
+              "абстракция",
+              "реализм"
+            ]
+          },
+          {
+            "форма": [
+              "прямоугольная",
+              "круглая",
+              "квадратная"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "высота": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "холст",
+        "структура": "плотная",
+        "покрытие": "глянцевое",
+        "декор": "абстракция"
+      }
     },
-  ],
-  диваны: [
-    {
-      packing: {
-        text: "Каждый диван аккуратно упакован в защитную плёнку и помещен в картонную коробку для безопасной доставки.",
+    "maintenance": [
+      "Для чистки картин используйте мягкую ткань и избегайте агрессивных химических средств.",
+      "Не рекомендуется подвергать картину воздействию прямых солнечных лучей, чтобы избежать выцветания.",
+      "При транспортировке или хранении картину рекомендуется упаковать в защитный чехол или коробку.",
+      "Если картина находится в рамке, проверяйте, чтобы не было повреждений или царапин на раме.",
+      "Для долгосрочного хранения картины рекомендуется повесить ее в сухом помещении с умеренной температурой."
+    ],
+    "packing": {
+      "text": "Картина упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Картина Ramani выполнена из высококачественной ткани и станет ярким акцентом в вашем интерьере. Ее современный стиль и оригинальные художественные элементы добавят эстетическую ценность любому пространству. Картина доступна в различных размерах и формах, что позволяет выбрать наиболее подходящий вариант для вашего дома или офиса.",
+        "Она легка в уходе и долговечна, что делает ее идеальным выбором для тех, кто ценит качественные и стильные элементы декора."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Современные художественные элементы картины и разнообразие форм рам позволяют ей идеально вписаться в любой интерьер."
+      },
+      {
+        "title": "Качество",
+        "text": "Выполнена из высококачественной ткани, что гарантирует долговечность и устойчивость к повреждениям."
       },
+      {
+        "title": "Универсальность",
+        "text": "Картина доступна в различных размерах, формах и стилях, что позволяет подобрать идеальный вариант для любого пространства."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства для ткани и мягкую ткань для протирки, чтобы сохранить картину в отличном состоянии."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "шкатулки",
+    "product": "высококачественная шкатулка",
+    "colors": [
+      "palette-green",
+      "white",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 46,
+    "images": [
+      "https://i.ibb.co/Dz2q064/img-1.jpg",
+      "https://i.pinimg.com/736x/b2/a5/c8/b2a5c8e4b03c71e28f460e0edf052c58.jpg",
+      "https://images.quince.com/2I8W1IDkmGXxeuP5qjaYvu/f7a1066bffbf62eb8574b76275880d55/leatherbox_1.jpg?w=1582&q=50&h=1978&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/5fBCqzxpGgpxrBOgsrNFzL/32f57a1f82653396e37c394cca1e561a/Untitled_Session06590.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/10lTCMMvofnfCiGSWF6akG/d50f42e2f786a3c072a46be09c419f97/ShagreenCollection_7445.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg"
+    ],
+    "isNew": true,
+    "material": "кожа",
+    "name": "foster",
+    "price": 10000,
+    "rating": 1,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 5,
+                "unit": "см"
+              },
+              {
+                "value": 8,
+                "unit": "см"
+              },
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "глубина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип": [
+              "для украшений",
+              "для документов",
+              "для мелочей"
+            ]
+          },
+          {
+            "замок": [
+              "с замком",
+              "без замка"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "с орнаментом",
+              "с гравировкой"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "500 г",
+              "1 кг",
+              "2 кг",
+              "5 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "5 см",
+          "8 см",
+          "10 см",
+          "12 см"
+        ],
+        "глубина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "кожа",
+        "каркас": "деревянный",
+        "покрытие": "матовое",
+        "декор": "с гравировкой"
+      }
     },
-    {
-      packing: {
-        text: "Диван завернут в многослойную защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+    "maintenance": [
+      "Регулярно очищайте шкатулку от пыли с помощью мягкой ткани, избегая абразивных материалов, чтобы не повредить поверхность.",
+      "Для очистки используйте специализированные средства для ухода за кожей, чтобы сохранить её эластичность и привлекательность. Избегайте попадания влаги, чтобы предотвратить повреждения материала.",
+      "Храните шкатулку в сухом месте, вдали от прямых солнечных лучей и источников тепла, чтобы избежать изменения цвета кожи и деформации материала.",
+      "При использовании в качестве шкатулки для украшений избегайте переполнения, чтобы сохранить её форму и предотвратить деформацию.",
+      "Если шкатулка загрязнилась, сразу же очистите её с помощью мягкой ткани, смоченной в специальном очищающем растворе для кожи, чтобы предотвратить появление пятен.",
+      "Для предотвращения появления трещин или царапин на поверхности, храните шкатулку в упаковке или в отдельной коробке при транспортировке."
+    ],
+    "packing": {
+      "text": "Шкатулка упакована в прочную коробку с защитным материалом для безопасной транспортировки, что гарантирует её целостность при доставке."
+    },
+    "productDescription": {
+      "text": [
+        "Шкатулка выполнена из высококачественной кожи, что придает ей элегантный и стильный внешний вид. Она идеально подходит для хранения украшений, документов или различных мелочей. Благодаря своему классическому дизайну, она легко впишется в любой интерьер, будь то спальня, кабинет или гостиная. Кроме того, декор с изысканной гравировкой придаёт уникальность каждому экземпляру, делая его не только функциональным, но и стильным аксессуаром.",
+        "Эта шкатулка отличается не только эстетической привлекательностью, но и прочностью. Изготовленная из высококачественной кожи и деревянного каркаса, она способна служить долгие годы, сохраняя свой первоначальный внешний вид. С помощью простого ухода, шкатулка сохраняет свою эластичность и не теряет своего шарма. Она идеально подходит для тех, кто ценит стиль, долговечность и практичность в одном изделии."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде гравировки, который придаст вашему интерьеру утонченности и создаст атмосферу роскоши."
+      },
+      {
+        "title": "Прочность",
+        "text": "Шкатулка изготовлена из высококачественной кожи с деревянным каркасом, что обеспечивает её долговечность и устойчивость к механическим повреждениям, сохраняя её привлекательность на многие годы."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Шкатулка подходит для хранения украшений, документов или мелочей, обеспечивая порядок и добавляя стильный акцент в любой комнате вашего дома или офиса."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать специальные средства для ухода за кожей, чтобы она сохраняла свою привлекательность и долгие годы радовала глаз."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-gray",
+      "palette-brown"
+    ],
+    "discount": false,
+    "id": 47,
+    "images": [
+      "https://i.ibb.co/w4J4R4X/img-1.jpg",
+      "https://images.urbndata.com/is/image/Anthropologie/62200407_010_b4?$redesign-zoom-5x$",
+      "https://i.ibb.co/YPC4knc/img-3.webp",
+      "https://images.urbndata.com/is/image/Anthropologie/62200407_010_b?$redesign-zoom-5x$",
+      "https://i.ibb.co/wLbRqNr/img-5.jpg"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          "30 см",
+          "40 см",
+          "50 см"
+        ],
+        "вес": [
+          "800 г",
+          "1000 г",
+          "1200 г"
+        ],
+        "механизм": [
+          "кварцевый",
+          "механический",
+          "автоматический"
+        ]
+      },
+      "materials": {
+        "основной материал": "сталь",
+        "ремешок": "кожа",
+        "стекло": "сапфировое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
+    ],
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
     },
-    {
-      packing: {
-        text: "Диван упакован в прочный пакет с воздухопроницаемой защитой, чтобы сохранить его форму и предотвратить повреждения.",
+    "productDescription": {
+      "text": [
+        "Часы Ramani — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
+      },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
+      },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
       },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-beige",
+      "palette-gray-light",
+      "white"
+    ],
+    "discount": true,
+    "id": 48,
+    "images": [
+      "https://i.ibb.co/gZQH7Kp/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/call-210209-MCGEE-51.jpg?v=1668634574&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D2.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D1.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/WinterCatalog13_e79463dd-9e15-4529-b502-fac8e03e1be0.jpg?v=1668634574&width=1200"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "ivory",
+    "price": 3000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          "30 см",
+          "40 см",
+          "50 см"
+        ],
+        "вес": [
+          "800 г",
+          "1000 г",
+          "1200 г"
+        ],
+        "механизм": [
+          "кварцевый",
+          "механический",
+          "автоматический"
+        ]
+      },
+      "materials": {
+        "основной материал": "сталь",
+        "ремешок": "кожа",
+        "стекло": "сапфировое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
+    ],
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
     },
-    {
-      packing: {
-        text: "Для защиты дивана от внешних воздействий, он упакован в многослойную защитную плёнку и помещен в картонную коробку.",
+    "productDescription": {
+      "text": [
+        "Часы Ivory — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
+      },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
+      },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
       },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-gray-light",
+      "white"
+    ],
+    "discount": false,
+    "id": 49,
+    "images": [
+      "https://i.ibb.co/6B0Hpt6/img-1.jpg",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039.jpg?preset=Product3840x2880",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039_1.jpg?preset=Product3840x2880",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039_3.jpg?preset=Product3840x2880"
+    ],
+    "isNew": false,
+    "material": "керамика",
+    "name": "Petrified",
+    "price": 3000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
     },
-    {
-      packing: {
-        text: "Каждый диван индивидуально упакован в защитную плёнку, а коробка снабжена мягкими прокладками для безопасности при транспортировке.",
+    "productDescription": {
+      "text": [
+        "Свеча Petrified — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Petrified предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Petrified будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
       },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "palette-green",
+      "black"
+    ],
+    "discount": true,
+    "id": 50,
+    "images": [
+      "https://i.ibb.co/wKK5ZZ9/img-1.jpg",
+      "https://image.hm.com/assets/hm/a6/8f/a68f6a350f158335b72d8a943eb131636a3f54e1.jpg?imwidth=2160",
+      "https://img.tradera.net/images/303/583467303_d5493c20-670b-4c7a-b212-935272b81a3b.jpg",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F69%2F93%2F69934b1a7f5c4b86060b5547356c0cfc66eefb5c.jpg%3Fimwidth%3D2160_large.webp",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F20%2F18%2F2018542a741586d516fab9ba11c613b916cf7484.jpg%3Fimwidth%3D2160_large.webp"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
     },
-    {
-      packing: {
-        text: "Диван упакован в герметичный пакет с защитой от влаги и запахов, чтобы обеспечить сохранность при перевозке.",
+    "productDescription": {
+      "text": [
+        "Свеча Foster — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Foster предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Foster будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
       },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-brown-light",
+      "black"
+    ],
+    "discount": false,
+    "id": 51,
+    "images": [
+      "https://i.ibb.co/dJDf52B/img-1.jpg",
+      "https://cdn.laredoute.com/cdn-cgi/image/width=1200,height=1200,fit=pad,dpr=1/products/e/a/6/ea6d60183e8144f7b69f13311ad40beb.jpg",
+      "https://i.pinimg.com/1200x/a1/d3/82/a1d38295297e2d9b20aefff41ea87c5b.jpg",
+      "https://ae04.alicdn.com/kf/S4a4636c69c1f4ae487b9dfd45f79cf31x.jpg",
+      "https://ae04.alicdn.com/kf/S626719aeacb94b9193fd010609787776n.jpg"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-    {
-      packing: {
-        text: "Диван помещен в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "palette-brown-light",
+      "palette-green",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 52,
+    "images": [
+      "https://i.ibb.co/BVqCfh9/img-1.jpg",
+      "https://i.ibb.co/dbK9x7B/img-2.jpg",
+      "https://i.ibb.co/sF2jc1F/img-4.webp",
+      "https://i.ibb.co/LdzMNX5/img-5.webp",
+      "https://i.ibb.co/R0rZ3sV/img-6.jpg",
+      "https://i.ibb.co/xJg9QM3/img-3.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
     },
-    {
-      packing: {
-        text: "Каждый диван аккуратно сложен и упакован в картонную коробку с защитной плёнкой для предотвращения повреждений.",
+    "productDescription": {
+      "text": [
+        "Свеча Foster — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Foster предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Foster будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
       },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "white",
+      "palette-brown-light",
+      "palette-gray"
+    ],
+    "discount": false,
+    "id": 53,
+    "images": [
+      "https://i.ibb.co/rpXkvCM/img-1.jpg",
+      "https://i.ibb.co/R7c0fXn/img-4.jpg",
+      "https://i.ibb.co/gmQBkvf/img-2.jpg",
+      "https://i.ibb.co/F6KvZtK/img-3.webp",
+      "https://i.ibb.co/wRWHTrf/img-5.jpg",
+      "https://i.ibb.co/wRWHTrf/img-5.jpg"
+    ],
+    "isNew": false,
+    "material": "стекло",
+    "name": "Petrified",
+    "price": 7000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-    {
-      packing: {
-        text: "Диван запечатан в защитную плёнку и помещен в коробку с амортизирующими элементами для безопасной транспортировки.",
+    "productDescription": {
+      "text": [
+        "Ваза Petrified выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-brown",
+      "palette-gray-light"
+    ],
+    "discount": true,
+    "id": 54,
+    "images": [
+      "https://i.ibb.co/pjv1Wds/img-1.jpg",
+      "https://i.ibb.co/9prPBsG/img-3.webp",
+      "https://i.ibb.co/N7jQ16x/img-2.webp",
+      "https://i.ibb.co/PZkGqGC/img-4.webp",
+      "https://i.ibb.co/gVZ6NWL/img-5.jpg"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "foster",
+    "price": 25000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-    {
-      packing: {
-        text: "Диван упакован в плотный пакет и снабжен дополнительной защитой в виде мягких прокладок в коробке.",
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "картины",
+    "product": "эстетичная картина",
+    "colors": [
+      "palette-beige",
+      "black",
+      "white",
+      "palette-brown"
+    ],
+    "discount": false,
+    "id": 55,
+    "images": [
+      "https://i.ibb.co/5ktYRt6/img-1.jpg",
+      "https://i.ibb.co/DpjCFB9/img-2.webp",
+      "https://i.ibb.co/p4DJnkn/img-3.webp",
+      "https://i.ibb.co/258VftK/img-4.jpg",
+      "https://i.ibb.co/258VftK/img-4.jpg"
+    ],
+    "isNew": true,
+    "material": "ткань",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ],
+            "высота": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "цвет рамы": "_"
+          },
+          {
+            "тип рамы": [
+              "деревянная",
+              "металлическая",
+              "без рамы"
+            ]
+          },
+          {
+            "стиль": [
+              "современный",
+              "классический",
+              "абстракция",
+              "реализм"
+            ]
+          },
+          {
+            "форма": [
+              "прямоугольная",
+              "круглая",
+              "квадратная"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "высота": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "холст",
+        "структура": "плотная",
+        "покрытие": "глянцевое",
+        "декор": "абстракция"
+      }
+    },
+    "maintenance": [
+      "Для чистки картин используйте мягкую ткань и избегайте агрессивных химических средств.",
+      "Не рекомендуется подвергать картину воздействию прямых солнечных лучей, чтобы избежать выцветания.",
+      "При транспортировке или хранении картину рекомендуется упаковать в защитный чехол или коробку.",
+      "Если картина находится в рамке, проверяйте, чтобы не было повреждений или царапин на раме.",
+      "Для долгосрочного хранения картины рекомендуется повесить ее в сухом помещении с умеренной температурой."
+    ],
+    "packing": {
+      "text": "Картина упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Картина Ramani выполнена из высококачественной ткани и станет ярким акцентом в вашем интерьере. Ее современный стиль и оригинальные художественные элементы добавят эстетическую ценность любому пространству. Картина доступна в различных размерах и формах, что позволяет выбрать наиболее подходящий вариант для вашего дома или офиса.",
+        "Она легка в уходе и долговечна, что делает ее идеальным выбором для тех, кто ценит качественные и стильные элементы декора."
+      ]
     },
-    {
-      packing: {
-        text: "Для безопасной транспортировки, диван упакован в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Современные художественные элементы картины и разнообразие форм рам позволяют ей идеально вписаться в любой интерьер."
+      },
+      {
+        "title": "Качество",
+        "text": "Выполнена из высококачественной ткани, что гарантирует долговечность и устойчивость к повреждениям."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Картина доступна в различных размерах, формах и стилях, что позволяет подобрать идеальный вариант для любого пространства."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства для ткани и мягкую ткань для протирки, чтобы сохранить картину в отличном состоянии."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "шкатулки",
+    "product": "высококачественная шкатулка",
+    "colors": [
+      "palette-green",
+      "white",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 56,
+    "images": [
+      "https://i.ibb.co/Dz2q064/img-1.jpg",
+      "https://i.pinimg.com/736x/b2/a5/c8/b2a5c8e4b03c71e28f460e0edf052c58.jpg",
+      "https://images.quince.com/2I8W1IDkmGXxeuP5qjaYvu/f7a1066bffbf62eb8574b76275880d55/leatherbox_1.jpg?w=1582&q=50&h=1978&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/5fBCqzxpGgpxrBOgsrNFzL/32f57a1f82653396e37c394cca1e561a/Untitled_Session06590.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/10lTCMMvofnfCiGSWF6akG/d50f42e2f786a3c072a46be09c419f97/ShagreenCollection_7445.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg"
+    ],
+    "isNew": true,
+    "material": "кожа",
+    "name": "foster",
+    "price": 10000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 5,
+                "unit": "см"
+              },
+              {
+                "value": 8,
+                "unit": "см"
+              },
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "глубина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип": [
+              "для украшений",
+              "для документов",
+              "для мелочей"
+            ]
+          },
+          {
+            "замок": [
+              "с замком",
+              "без замка"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "с орнаментом",
+              "с гравировкой"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "500 г",
+              "1 кг",
+              "2 кг",
+              "5 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "5 см",
+          "8 см",
+          "10 см",
+          "12 см"
+        ],
+        "глубина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "кожа",
+        "каркас": "деревянный",
+        "покрытие": "матовое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте шкатулку от пыли с помощью мягкой ткани, избегая абразивных материалов, чтобы не повредить поверхность.",
+      "Для очистки используйте специализированные средства для ухода за кожей, чтобы сохранить её эластичность и привлекательность. Избегайте попадания влаги, чтобы предотвратить повреждения материала.",
+      "Храните шкатулку в сухом месте, вдали от прямых солнечных лучей и источников тепла, чтобы избежать изменения цвета кожи и деформации материала.",
+      "При использовании в качестве шкатулки для украшений избегайте переполнения, чтобы сохранить её форму и предотвратить деформацию.",
+      "Если шкатулка загрязнилась, сразу же очистите её с помощью мягкой ткани, смоченной в специальном очищающем растворе для кожи, чтобы предотвратить появление пятен.",
+      "Для предотвращения появления трещин или царапин на поверхности, храните шкатулку в упаковке или в отдельной коробке при транспортировке."
+    ],
+    "packing": {
+      "text": "Шкатулка упакована в прочную коробку с защитным материалом для безопасной транспортировки, что гарантирует её целостность при доставке."
+    },
+    "productDescription": {
+      "text": [
+        "Шкатулка выполнена из высококачественной кожи, что придает ей элегантный и стильный внешний вид. Она идеально подходит для хранения украшений, документов или различных мелочей. Благодаря своему классическому дизайну, она легко впишется в любой интерьер, будь то спальня, кабинет или гостиная. Кроме того, декор с изысканной гравировкой придаёт уникальность каждому экземпляру, делая его не только функциональным, но и стильным аксессуаром.",
+        "Эта шкатулка отличается не только эстетической привлекательностью, но и прочностью. Изготовленная из высококачественной кожи и деревянного каркаса, она способна служить долгие годы, сохраняя свой первоначальный внешний вид. С помощью простого ухода, шкатулка сохраняет свою эластичность и не теряет своего шарма. Она идеально подходит для тех, кто ценит стиль, долговечность и практичность в одном изделии."
+      ]
     },
-    {
-      packing: {
-        text: "Диван помещен в специальную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде гравировки, который придаст вашему интерьеру утонченности и создаст атмосферу роскоши."
+      },
+      {
+        "title": "Прочность",
+        "text": "Шкатулка изготовлена из высококачественной кожи с деревянным каркасом, что обеспечивает её долговечность и устойчивость к механическим повреждениям, сохраняя её привлекательность на многие годы."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Шкатулка подходит для хранения украшений, документов или мелочей, обеспечивая порядок и добавляя стильный акцент в любой комнате вашего дома или офиса."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать специальные средства для ухода за кожей, чтобы она сохраняла свою привлекательность и долгие годы радовала глаз."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-gray",
+      "palette-brown"
+    ],
+    "discount": false,
+    "id": 57,
+    "images": [
+      "https://i.ibb.co/w4J4R4X/img-1.jpg",
+      "https://images.urbndata.com/is/image/Anthropologie/62200407_010_b4?$redesign-zoom-5x$",
+      "https://i.ibb.co/YPC4knc/img-3.webp",
+      "https://images.urbndata.com/is/image/Anthropologie/62200407_010_b?$redesign-zoom-5x$",
+      "https://i.ibb.co/wLbRqNr/img-5.jpg"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          "30 см",
+          "40 см",
+          "50 см"
+        ],
+        "вес": [
+          "800 г",
+          "1000 г",
+          "1200 г"
+        ],
+        "механизм": [
+          "кварцевый",
+          "механический",
+          "автоматический"
+        ]
+      },
+      "materials": {
+        "основной материал": "сталь",
+        "ремешок": "кожа",
+        "стекло": "сапфировое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
+    ],
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Часы Ramani — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
     },
-  ],
-  кашпо: [
-    {
-      packing: {
-        text: "Каждое кашпо аккуратно упаковано в защитную плёнку и помещено в картонную коробку для безопасной транспортировки.",
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
+      },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
+      },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
+      },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-beige",
+      "palette-gray-light",
+      "white"
+    ],
+    "discount": true,
+    "id": 58,
+    "images": [
+      "https://i.ibb.co/gZQH7Kp/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/call-210209-MCGEE-51.jpg?v=1668634574&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D2.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D1.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/WinterCatalog13_e79463dd-9e15-4529-b502-fac8e03e1be0.jpg?v=1668634574&width=1200"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "ivory",
+    "price": 3000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          "30 см",
+          "40 см",
+          "50 см"
+        ],
+        "вес": [
+          "800 г",
+          "1000 г",
+          "1200 г"
+        ],
+        "механизм": [
+          "кварцевый",
+          "механический",
+          "автоматический"
+        ]
+      },
+      "materials": {
+        "основной материал": "сталь",
+        "ремешок": "кожа",
+        "стекло": "сапфировое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
+    ],
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Часы Ivory — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
     },
-    {
-      packing: {
-        text: "Кашпо завернуто в многослойную защитную плёнку, а коробка дополнительно защищена амортизирующими вставками.",
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
+      },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
+      },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
+      },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-gray-light",
+      "white"
+    ],
+    "discount": false,
+    "id": 59,
+    "images": [
+      "https://i.ibb.co/6B0Hpt6/img-1.jpg",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039.jpg?preset=Product3840x2880",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039_1.jpg?preset=Product3840x2880",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039_3.jpg?preset=Product3840x2880"
+    ],
+    "isNew": false,
+    "material": "керамика",
+    "name": "Petrified",
+    "price": 3000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
       },
+      "materials": {
+        "основной материал": "мрамор"
+      }
     },
-    {
-      packing: {
-        text: "Кашпо упаковано в прочный пакет с воздухопроницаемой защитой, чтобы сохранить его форму и предотвратить повреждения.",
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Petrified — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Petrified предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Petrified будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "palette-green",
+      "black"
+    ],
+    "discount": true,
+    "id": 60,
+    "images": [
+      "https://i.ibb.co/wKK5ZZ9/img-1.jpg",
+      "https://image.hm.com/assets/hm/a6/8f/a68f6a350f158335b72d8a943eb131636a3f54e1.jpg?imwidth=2160",
+      "https://img.tradera.net/images/303/583467303_d5493c20-670b-4c7a-b212-935272b81a3b.jpg",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F69%2F93%2F69934b1a7f5c4b86060b5547356c0cfc66eefb5c.jpg%3Fimwidth%3D2160_large.webp",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F20%2F18%2F2018542a741586d516fab9ba11c613b916cf7484.jpg%3Fimwidth%3D2160_large.webp"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Foster — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Foster предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Foster будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
     },
-    {
-      packing: {
-        text: "Для защиты кашпо от внешних воздействий, оно упаковано в многослойную защитную плёнку и помещено в картонную коробку.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-brown-light",
+      "black"
+    ],
+    "discount": false,
+    "id": 61,
+    "images": [
+      "https://i.ibb.co/dJDf52B/img-1.jpg",
+      "https://cdn.laredoute.com/cdn-cgi/image/width=1200,height=1200,fit=pad,dpr=1/products/e/a/6/ea6d60183e8144f7b69f13311ad40beb.jpg",
+      "https://i.pinimg.com/1200x/a1/d3/82/a1d38295297e2d9b20aefff41ea87c5b.jpg",
+      "https://ae04.alicdn.com/kf/S4a4636c69c1f4ae487b9dfd45f79cf31x.jpg",
+      "https://ae04.alicdn.com/kf/S626719aeacb94b9193fd010609787776n.jpg"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
     },
-    {
-      packing: {
-        text: "Каждое кашпо упаковано в защитную плёнку, а коробка снабжена мягкими прокладками для безопасности при транспортировке.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "white",
+      "palette-brown",
+      "black",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 62,
+    "images": [
+      "https://i.ibb.co/k9mGs7b/img-1.webp",
+      "https://avatars.dzeninfra.ru/get-zen_doc/5233283/pub_6311f49f93168541bcd0f704_6311f8c6caaf0579521f5bb4/scale_2400",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/741909s2.jpg",
+      "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemZoom/741909s.jpg",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/176915s3.jpg",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/176915s2.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
       },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
     },
-    {
-      packing: {
-        text: "Кашпо упаковано в герметичный пакет с защитой от влаги и запахов для безопасной перевозки.",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "картины",
+    "product": "эстетичная картина",
+    "colors": [
+      "palette-gray",
+      "white"
+    ],
+    "discount": true,
+    "id": 63,
+    "images": [
+      "https://i.ibb.co/5ktYRt6/img-1.jpg",
+      "https://i.ibb.co/DpjCFB9/img-2.webp",
+      "https://i.ibb.co/p4DJnkn/img-3.webp",
+      "https://i.ibb.co/258VftK/img-4.jpg",
+      "https://i.ibb.co/258VftK/img-4.jpg"
+    ],
+    "isNew": true,
+    "material": "стекло",
+    "name": "foster",
+    "price": 6000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "цвет рамы": "_"
+          },
+          {
+            "тип рамы": [
+              "деревянная",
+              "металлическая",
+              "без рамы"
+            ]
+          },
+          {
+            "стиль": [
+              "современный",
+              "классический",
+              "абстракция",
+              "реализм"
+            ]
+          },
+          {
+            "форма": [
+              "прямоугольная",
+              "круглая",
+              "квадратная"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "высота": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
       },
+      "materials": {
+        "основной материал": "холст",
+        "структура": "плотная",
+        "покрытие": "глянцевое",
+        "декор": "абстракция"
+      }
     },
-    {
-      packing: {
-        text: "Кашпо помещено в картонную коробку с амортизирующими элементами для защиты от механических повреждений.",
+    "maintenance": [
+      "Для чистки картин используйте мягкую ткань и избегайте агрессивных химических средств.",
+      "Не рекомендуется подвергать картину воздействию прямых солнечных лучей, чтобы избежать выцветания.",
+      "При транспортировке или хранении картину рекомендуется упаковать в защитный чехол или коробку.",
+      "Если картина находится в рамке, проверяйте, чтобы не было повреждений или царапин на раме.",
+      "Для долгосрочного хранения картины рекомендуется повесить ее в сухом помещении с умеренной температурой."
+    ],
+    "packing": {
+      "text": "Картина упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Картина Foster выполнена из высококачественной ткани и станет ярким акцентом в вашем интерьере. Ее современный стиль и оригинальные художественные элементы добавят эстетическую ценность любому пространству. Картина доступна в различных размерах и формах, что позволяет выбрать наиболее подходящий вариант для вашего дома или офиса.",
+        "Она легка в уходе и долговечна, что делает ее идеальным выбором для тех, кто ценит качественные и стильные элементы декора."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Современные художественные элементы картины и разнообразие форм рам позволяют ей идеально вписаться в любой интерьер."
+      },
+      {
+        "title": "Качество",
+        "text": "Выполнена из высококачественной ткани, что гарантирует долговечность и устойчивость к повреждениям."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Картина доступна в различных размерах, формах и стилях, что позволяет подобрать идеальный вариант для любого пространства."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства для ткани и мягкую ткань для протирки, чтобы сохранить картину в отличном состоянии."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-beige",
+      "palette-brown",
+      "white",
+      "palette-gray"
+    ],
+    "discount": false,
+    "id": 64,
+    "images": [
+      "https://i.ibb.co/Ks8KTFq/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/Ross_Michelle_25.jpg?v=1668634804&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/SpringStyled49.jpg?v=1668634804&width=1200",
+      "https://rfdny.com/cdn/shop/products/Page-Pot-95797-00_2048x.jpg?v=1648730812",
+      "https://www.mcgeeandco.com/cdn/shop/products/RoundedCeramicVase_1.jpg?v=1661361684&width=1200"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "ramani",
+    "price": 15000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
       },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
     },
-    {
-      packing: {
-        text: "Каждое кашпо аккуратно сложено и упаковано в картонную коробку с защитной плёнкой для предотвращения повреждений.",
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Ramani выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-green",
+      "palette-gray-light"
+    ],
+    "discount": false,
+    "id": 65,
+    "images": [
+      "https://i.ibb.co/gZQH7Kp/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/call-210209-MCGEE-51.jpg?v=1668634574&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D2.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D1.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/WinterCatalog13_e79463dd-9e15-4529-b502-fac8e03e1be0.jpg?v=1668634574&width=1200"
+    ],
+    "isNew": true,
+    "material": "стекло",
+    "name": "foster",
+    "price": 8000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          "30 см",
+          "40 см",
+          "50 см"
+        ],
+        "вес": [
+          "800 г",
+          "1000 г",
+          "1200 г"
+        ],
+        "механизм": [
+          "кварцевый",
+          "механический",
+          "автоматический"
+        ]
       },
+      "materials": {
+        "основной материал": "сталь",
+        "ремешок": "кожа",
+        "стекло": "сапфировое",
+        "декор": "с гравировкой"
+      }
     },
-    {
-      packing: {
-        text: "Кашпо запечатано в защитную плёнку и помещено в коробку с амортизирующими элементами для безопасной транспортировки.",
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
+    ],
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Часы Foster — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
+      },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
+      },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
+      },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-beige",
+      "palette-gray",
+      "white"
+    ],
+    "discount": true,
+    "id": 66,
+    "images": [
+      "https://i.ibb.co/7tN1jr1/img-1.jpg",
+      "https://i.ibb.co/mNGszd1/img-4.jpg",
+      "https://www.coxandcox.co.uk/media/catalog/product/s/s/ss21-1128484-detail2.png?quality=80&fit=bounds&height=800&width=800",
+      "https://image-resizing.booztcdn.com/humdakin/hum762_crainbow_v208_11.webp?has_grey=0&has_webp=1&size=source",
+      "https://www.med-tehnik.ru/upload/iblock/352/tzpmbyd9kua4g7w0a9vwd3uc4o6xetp6/dekorativnyy_nabor_iz_gipsa_shampan_4_predmeta_1.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
       },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
     },
-    {
-      packing: {
-        text: "Кашпо упаковано в плотный пакет и снабжено дополнительной защитой в виде мягких прокладок в коробке.",
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Ваза Ramani выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
       },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "palette-brown-light",
+      "palette-green",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 67,
+    "images": [
+      "https://i.ibb.co/BVqCfh9/img-1.jpg",
+      "https://i.ibb.co/dbK9x7B/img-2.jpg",
+      "https://i.ibb.co/sF2jc1F/img-4.webp",
+      "https://i.ibb.co/LdzMNX5/img-5.webp",
+      "https://i.ibb.co/R0rZ3sV/img-6.jpg",
+      "https://i.ibb.co/xJg9QM3/img-3.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
     },
-    {
-      packing: {
-        text: "Для безопасной транспортировки, кашпо упаковано в картонную коробку с защитной плёнкой и амортизирующими вставками.",
+    "productDescription": {
+      "text": [
+        "Свеча Foster — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Foster предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Foster будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
       },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "white",
+      "palette-brown-light",
+      "palette-gray"
+    ],
+    "discount": false,
+    "id": 68,
+    "images": [
+      "https://i.ibb.co/rpXkvCM/img-1.jpg",
+      "https://i.ibb.co/R7c0fXn/img-4.jpg",
+      "https://i.ibb.co/gmQBkvf/img-2.jpg",
+      "https://i.ibb.co/F6KvZtK/img-3.webp",
+      "https://i.ibb.co/wRWHTrf/img-5.jpg",
+      "https://i.ibb.co/wRWHTrf/img-5.jpg"
+    ],
+    "isNew": false,
+    "material": "стекло",
+    "name": "Petrified",
+    "price": 7000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-    {
-      packing: {
-        text: "Кашпо помещено в специаxльную упаковку с защитой от влаги и внешних воздействий для сохранности при перевозке.",
+    "productDescription": {
+      "text": [
+        "Ваза Petrified выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-brown",
+      "palette-gray-light"
+    ],
+    "discount": true,
+    "id": 69,
+    "images": [
+      "https://i.ibb.co/7SJ0w0k/img-1.jpg",
+      "https://i.ibb.co/N7jQ16x/img-2.webp",
+      "https://i.ibb.co/Zxsj4Z3/img-3.jpg"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "foster",
+    "price": 25000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-  ],
-};
-
-const materials = {
-  стулья: [
-    {
-      materials: {
-        "основной материал": "велюр",
-        основа: "плотная ткань с мягким ворсом",
-        покрытие: "гладкое",
-        декор: "с бархатистым рисунком",
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "картины",
+    "product": "эстетичная картина",
+    "colors": [
+      "palette-beige",
+      "black",
+      "white",
+      "palette-brown"
+    ],
+    "discount": false,
+    "id": 70,
+    "images": [
+      "https://i.ibb.co/5ktYRt6/img-1.jpg",
+      "https://i.ibb.co/DpjCFB9/img-2.webp",
+      "https://i.ibb.co/p4DJnkn/img-3.webp",
+      "https://i.ibb.co/258VftK/img-4.jpg",
+      "https://i.ibb.co/258VftK/img-4.jpg"
+    ],
+    "isNew": true,
+    "material": "ткань",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ],
+            "высота": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "цвет рамы": "_"
+          },
+          {
+            "тип рамы": [
+              "деревянная",
+              "металлическая",
+              "без рамы"
+            ]
+          },
+          {
+            "стиль": [
+              "современный",
+              "классический",
+              "абстракция",
+              "реализм"
+            ]
+          },
+          {
+            "форма": [
+              "прямоугольная",
+              "круглая",
+              "квадратная"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "высота": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "холст",
+        "структура": "плотная",
+        "покрытие": "глянцевое",
+        "декор": "абстракция"
+      }
+    },
+    "maintenance": [
+      "Для чистки картин используйте мягкую ткань и избегайте агрессивных химических средств.",
+      "Не рекомендуется подвергать картину воздействию прямых солнечных лучей, чтобы избежать выцветания.",
+      "При транспортировке или хранении картину рекомендуется упаковать в защитный чехол или коробку.",
+      "Если картина находится в рамке, проверяйте, чтобы не было повреждений или царапин на раме.",
+      "Для долгосрочного хранения картины рекомендуется повесить ее в сухом помещении с умеренной температурой."
+    ],
+    "packing": {
+      "text": "Картина упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-    {
-      materials: {
-        обивка: "полиэстер",
-        основа: "высокопрочный полиэстер с водоотталкивающим покрытием",
-        наполнитель: "пенные гранулы",
-        спецификация: "устойчивость к износу и гипоаллергенность",
+    "productDescription": {
+      "text": [
+        "Картина Ramani выполнена из высококачественной ткани и станет ярким акцентом в вашем интерьере. Ее современный стиль и оригинальные художественные элементы добавят эстетическую ценность любому пространству. Картина доступна в различных размерах и формах, что позволяет выбрать наиболее подходящий вариант для вашего дома или офиса.",
+        "Она легка в уходе и долговечна, что делает ее идеальным выбором для тех, кто ценит качественные и стильные элементы декора."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Современные художественные элементы картины и разнообразие форм рам позволяют ей идеально вписаться в любой интерьер."
+      },
+      {
+        "title": "Качество",
+        "text": "Выполнена из высококачественной ткани, что гарантирует долговечность и устойчивость к повреждениям."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Картина доступна в различных размерах, формах и стилях, что позволяет подобрать идеальный вариант для любого пространства."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства для ткани и мягкую ткань для протирки, чтобы сохранить картину в отличном состоянии."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "шкатулки",
+    "product": "высококачественная шкатулка",
+    "colors": [
+      "palette-green",
+      "white",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 71,
+    "images": [
+      "https://i.ibb.co/Dz2q064/img-1.jpg",
+      "https://i.pinimg.com/736x/b2/a5/c8/b2a5c8e4b03c71e28f460e0edf052c58.jpg",
+      "https://images.quince.com/2I8W1IDkmGXxeuP5qjaYvu/f7a1066bffbf62eb8574b76275880d55/leatherbox_1.jpg?w=1582&q=50&h=1978&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/5fBCqzxpGgpxrBOgsrNFzL/32f57a1f82653396e37c394cca1e561a/Untitled_Session06590.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg",
+      "https://images.quince.com/10lTCMMvofnfCiGSWF6akG/d50f42e2f786a3c072a46be09c419f97/ShagreenCollection_7445.jpg?w=1600&q=50&h=2000&fm=webp&reqOrigin=website-ssg"
+    ],
+    "isNew": true,
+    "material": "кожа",
+    "name": "foster",
+    "price": 10000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 5,
+                "unit": "см"
+              },
+              {
+                "value": 8,
+                "unit": "см"
+              },
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "глубина": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип": [
+              "для украшений",
+              "для документов",
+              "для мелочей"
+            ]
+          },
+          {
+            "замок": [
+              "с замком",
+              "без замка"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "с орнаментом",
+              "с гравировкой"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "500 г",
+              "1 кг",
+              "2 кг",
+              "5 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "5 см",
+          "8 см",
+          "10 см",
+          "12 см"
+        ],
+        "глубина": [
+          "10 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "кожа",
+        "каркас": "деревянный",
+        "покрытие": "матовое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте шкатулку от пыли с помощью мягкой ткани, избегая абразивных материалов, чтобы не повредить поверхность.",
+      "Для очистки используйте специализированные средства для ухода за кожей, чтобы сохранить её эластичность и привлекательность. Избегайте попадания влаги, чтобы предотвратить повреждения материала.",
+      "Храните шкатулку в сухом месте, вдали от прямых солнечных лучей и источников тепла, чтобы избежать изменения цвета кожи и деформации материала.",
+      "При использовании в качестве шкатулки для украшений избегайте переполнения, чтобы сохранить её форму и предотвратить деформацию.",
+      "Если шкатулка загрязнилась, сразу же очистите её с помощью мягкой ткани, смоченной в специальном очищающем растворе для кожи, чтобы предотвратить появление пятен.",
+      "Для предотвращения появления трещин или царапин на поверхности, храните шкатулку в упаковке или в отдельной коробке при транспортировке."
+    ],
+    "packing": {
+      "text": "Шкатулка упакована в прочную коробку с защитным материалом для безопасной транспортировки, что гарантирует её целостность при доставке."
+    },
+    "productDescription": {
+      "text": [
+        "Шкатулка выполнена из высококачественной кожи, что придает ей элегантный и стильный внешний вид. Она идеально подходит для хранения украшений, документов или различных мелочей. Благодаря своему классическому дизайну, она легко впишется в любой интерьер, будь то спальня, кабинет или гостиная. Кроме того, декор с изысканной гравировкой придаёт уникальность каждому экземпляру, делая его не только функциональным, но и стильным аксессуаром.",
+        "Эта шкатулка отличается не только эстетической привлекательностью, но и прочностью. Изготовленная из высококачественной кожи и деревянного каркаса, она способна служить долгие годы, сохраняя свой первоначальный внешний вид. С помощью простого ухода, шкатулка сохраняет свою эластичность и не теряет своего шарма. Она идеально подходит для тех, кто ценит стиль, долговечность и практичность в одном изделии."
+      ]
     },
-  ],
-  фонари: [
-    {
-      materials: {
-        "основной материал": "металл",
-        основа: "нержавеющая сталь",
-        покрытие: "матовое или глянцевое",
-        декор: "без дополнительных украшений",
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде гравировки, который придаст вашему интерьеру утонченности и создаст атмосферу роскоши."
       },
+      {
+        "title": "Прочность",
+        "text": "Шкатулка изготовлена из высококачественной кожи с деревянным каркасом, что обеспечивает её долговечность и устойчивость к механическим повреждениям, сохраняя её привлекательность на многие годы."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Шкатулка подходит для хранения украшений, документов или мелочей, обеспечивая порядок и добавляя стильный акцент в любой комнате вашего дома или офиса."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать специальные средства для ухода за кожей, чтобы она сохраняла свою привлекательность и долгие годы радовала глаз."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-gray",
+      "palette-brown"
+    ],
+    "discount": false,
+    "id": 72,
+    "images": [
+      "https://i.ibb.co/w4J4R4X/img-1.jpg",
+      "https://images.urbndata.com/is/image/Anthropologie/62200407_010_b4?$redesign-zoom-5x$",
+      "https://i.ibb.co/YPC4knc/img-3.webp",
+      "https://images.urbndata.com/is/image/Anthropologie/62200407_010_b?$redesign-zoom-5x$",
+      "https://i.ibb.co/wLbRqNr/img-5.jpg"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "ramani",
+    "price": 5000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          "30 см",
+          "40 см",
+          "50 см"
+        ],
+        "вес": [
+          "800 г",
+          "1000 г",
+          "1200 г"
+        ],
+        "механизм": [
+          "кварцевый",
+          "механический",
+          "автоматический"
+        ]
+      },
+      "materials": {
+        "основной материал": "сталь",
+        "ремешок": "кожа",
+        "стекло": "сапфировое",
+        "декор": "с гравировкой"
+      }
+    },
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
+    ],
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Часы Ramani — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
     },
-    {
-      materials: {
-        обивка: "алюминий",
-        основа: "прочный и легкий металл",
-        покрытие: "антикоррозийное",
-        спецификация: "влагозащита и устойчивость к ржавчине",
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
       },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
+      },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
+      },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "часы",
+    "product": "часы",
+    "colors": [
+      "palette-beige",
+      "palette-gray-light",
+      "white"
+    ],
+    "discount": true,
+    "id": 73,
+    "images": [
+      "https://i.ibb.co/gZQH7Kp/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/call-210209-MCGEE-51.jpg?v=1668634574&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D2.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/PoseyTableClock-MDCR1895-BRS-OS-D1.jpg?v=1643301480&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/WinterCatalog13_e79463dd-9e15-4529-b502-fac8e03e1be0.jpg?v=1668634574&width=1200"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "ivory",
+    "price": 3000,
+    "rating": 1,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "диаметр": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "тип механизма": [
+              "кварцевый",
+              "механический",
+              "автоматический"
+            ]
+          },
+          {
+            "тип ремешка": [
+              "кожаный",
+              "металлический",
+              "текстильный"
+            ]
+          },
+          {
+            "стекло": [
+              "минеральное",
+              "сапфировое"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "диаметр": [
+          {
+            "value": 30,
+            "unit": "см"
+          },
+          {
+            "value": 40,
+            "unit": "см"
+          },
+          {
+            "value": 50,
+            "unit": "см"
+          }
+        ],
+        "вес": [
+          {
+            "value": 800,
+            "unit": "г"
+          },
+          {
+            "value": 1000,
+            "unit": "г"
+          },
+          {
+            "value": 1200,
+            "unit": "г"
+          }
+        ],
+        "механизм": [
+          {
+            "тип механизма": "кварцевый"
+          },
+          {
+            "тип механизма": "механический"
+          },
+          {
+            "тип механизма": "автоматический"
+          }
+        ]
+      }
     },
-  ],
-  столы: [
-    {
-      materials: {
-        "основной материал": "дуб",
-        основа: "натуральное дерево",
-        покрытие: "масляное или лаковое",
-        декор: "с деревянной текстурой",
+    "maintenance": [
+      "Регулярно очищайте поверхность часов с помощью мягкой ткани, избегая использования жестких щеток и абразивных материалов, чтобы не повредить отделку.",
+      "Для ухода за ремешком используйте специальные средства для того типа материала, из которого он изготовлен (кожа, металл или текстиль), чтобы сохранить его первоначальный вид и текстуру.",
+      "Избегайте попадания часов в воду, если они не водонепроницаемые, и не оставляйте их в местах с высокой влажностью, чтобы избежать повреждения механизма.",
+      "Не подвергайте часы длительному воздействию прямых солнечных лучей, так как это может повлиять на точность хода механизма и внешний вид материалов.",
+      "Для сохранения внешнего вида мраморного корпуса рекомендуется периодически протирать его сухой мягкой тканью и избегать контакта с химическими веществами.",
+      "Если часы не используются длительное время, храните их в коробке в прохладном, сухом месте, чтобы предотвратить их повреждение или накопление пыли на механизме."
+    ],
+    "packing": {
+      "text": "Часы упакованы в элегантную коробку, идеально подходящую для подарочной упаковки и безопасной транспортировки."
+    },
+    "productDescription": {
+      "text": [
+        "Часы Ivory — это не только точный инструмент для отслеживания времени, но и стильный аксессуар, который станет изысканным дополнением к вашему образу. Изготовленные из высококачественного мрамора, эти часы обладают уникальной эстетикой и долговечностью. Разнообразие вариантов диаметров и типов механизма позволяет выбрать модель, которая идеально соответствует вашим предпочтениям.",
+        "Мраморный корпус этих часов придает им неповторимый внешний вид, который делает каждую модель уникальной. Часы Ramani обладают отличной точностью и работают как кварцевые, механические, так и автоматические модели. Благодаря разнообразию ремешков (кожаный, металлический, текстильный) и стекол (минеральное или сапфировое), они подойдут для любого стиля и будут служить долгие годы."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и роскошь",
+        "text": "Часы Ramani из мрамора имеют уникальный дизайн, который привлекает внимание и добавляет элегантности любому образу. Их неповторимый стиль и качество материалов делают их идеальными для ценителей утонченной эстетики."
+      },
+      {
+        "title": "Долговечность и точность",
+        "text": "Изготовленные из мрамора и оснащенные качественным механизмом, часы Ramani обеспечивают долгий срок службы и точность хода, что делает их надежным аксессуаром на каждый день."
       },
+      {
+        "title": "Многофункциональность",
+        "text": "С разнообразием размеров, типов ремешков и стекол, эти часы могут быть использованы как стильный аксессуар в любой ситуации, от деловых встреч до повседневной носки."
+      },
+      {
+        "title": "Удобство в использовании",
+        "text": "Часы Ramani легко носить благодаря разнообразию ремешков, которые можно выбрать в зависимости от предпочтений, а также благодаря простоте ухода за материалами, из которых они изготовлены."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-gray-light",
+      "white"
+    ],
+    "discount": false,
+    "id": 74,
+    "images": [
+      "https://i.ibb.co/6B0Hpt6/img-1.jpg",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039.jpg?preset=Product3840x2880",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039_1.jpg?preset=Product3840x2880",
+      "https://cdn.arhaus.com/product/StandardV2/651920W039_3.jpg?preset=Product3840x2880"
+    ],
+    "isNew": false,
+    "material": "керамика",
+    "name": "Petrified",
+    "price": 3000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
     },
-    {
-      materials: {
-        "основной материал": "пластик",
-        основа: "ABS-пластик с высокой прочностью",
-        покрытие: "глянцевое или матовое",
-        декор: "с минималистичным узором",
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Petrified — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Petrified предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Petrified будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
       },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
+      },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "свечи",
+    "product": "декоративная свеча",
+    "colors": [
+      "palette-beige",
+      "palette-green",
+      "black"
+    ],
+    "discount": true,
+    "id": 75,
+    "images": [
+      "https://i.ibb.co/wKK5ZZ9/img-1.jpg",
+      "https://image.hm.com/assets/hm/a6/8f/a68f6a350f158335b72d8a943eb131636a3f54e1.jpg?imwidth=2160",
+      "https://img.tradera.net/images/303/583467303_d5493c20-670b-4c7a-b212-935272b81a3b.jpg",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F69%2F93%2F69934b1a7f5c4b86060b5547356c0cfc66eefb5c.jpg%3Fimwidth%3D2160_large.webp",
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimage.hm.com%2Fassets%2Fhm%2F20%2F18%2F2018542a741586d516fab9ba11c613b916cf7484.jpg%3Fimwidth%3D2160_large.webp"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 2,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 7,
+                "unit": "см"
+              },
+              {
+                "value": 9,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 10,
+                "unit": "см"
+              },
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 18,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "аромат": [
+              "лаванда",
+              "ваниль",
+              "цитрус",
+              "розмарин",
+              "розовый жасмин",
+              "мятный чай"
+            ]
+          },
+          {
+            "форма": [
+              "круглая",
+              "квадратная",
+              "в форме сердца",
+              "овальная",
+              "конусообразная"
+            ]
+          },
+          {
+            "длительность горения": [
+              "10 часов",
+              "20 часов",
+              "30 часов",
+              "40 часов"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "7 см",
+          "9 см",
+          "12 см",
+          "15 см"
+        ],
+        "высота": [
+          "10 см",
+          "12 см",
+          "15 см",
+          "18 см"
+        ],
+        "вес": [
+          "300 г",
+          "450 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "мрамор"
+      }
     },
-  ],
-  диваны: [
-    {
-      materials: {
-        "основной материал": "велюр",
-        основа: "мягкий материал с бархатистой текстурой",
-        наполнитель: "синтепон",
-        спецификация: "гипоаллергенный и износостойкий",
+    "maintenance": [
+      "Регулярная чистка свечей поможет поддерживать их в хорошем состоянии и предотвратить накопление пыли.",
+      "Не допускайте попадания жидкости на свечи, так как это может повлиять на их внешний вид и функциональность.",
+      "Для чистки используйте мягкую ткань, избегайте агрессивных химических средств.",
+      "Храните свечи в сухом и прохладном месте, вдали от прямых солнечных лучей.",
+      "Не оставляйте горящую свечу без присмотра и следите за соблюдением правил пожарной безопасности."
+    ],
+    "packing": {
+      "text": "Свечи упакованы в защитные коробки, обеспечивающие их сохранность при транспортировке."
+    },
+    "productDescription": {
+      "text": [
+        "Свеча Foster — это элегантное сочетание стиля и качества. Изготовленная из мрамора, эта свеча станет прекрасным дополнением любого интерьера. Мраморный корпус придает ей не только эстетическую привлекательность, но и долговечность. Вы можете выбрать свечу с различными ароматами, такими как лаванда, ваниль, цитрус и другие, что позволит создать неповторимую атмосферу в вашем доме. В зависимости от ваших предпочтений, свечи доступны в разных формах, включая круглую, квадратную и овальную, что позволяет выбрать вариант, подходящий под ваш интерьер.",
+        "Кроме того, свечи Foster предлагают различные варианты длительности горения: 10, 20, 30 или 40 часов, что позволяет наслаждаться их светом на протяжении долгого времени. Каждая свеча тщательно проверена на соответствие стандартам пожарной безопасности, что обеспечивает безопасность ее использования. Прочные и долговечные, свечи Foster будут радовать вас своим качеством и внешним видом, добавляя уют и атмосферу в вашем доме или офисе."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Свечи имеют утонченный внешний вид и подходят для любого стиля интерьера."
+      },
+      {
+        "title": "Долговечность горения",
+        "text": "Свечи обеспечивают длительное горение, что позволяет наслаждаться их светом и ароматом долгое время."
+      },
+      {
+        "title": "Разнообразие ароматов",
+        "text": "Свечи доступны с различными ароматами, включая лаванду, ваниль, цитрус и другие."
       },
+      {
+        "title": "Безопасность",
+        "text": "Свечи соответствуют стандартам пожарной безопасности."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "palette-brown-light",
+      "black"
+    ],
+    "discount": false,
+    "id": 76,
+    "images": [
+      "https://i.ibb.co/dJDf52B/img-1.jpg",
+      "https://cdn.laredoute.com/cdn-cgi/image/width=1200,height=1200,fit=pad,dpr=1/products/e/a/6/ea6d60183e8144f7b69f13311ad40beb.jpg",
+      "https://i.pinimg.com/1200x/a1/d3/82/a1d38295297e2d9b20aefff41ea87c5b.jpg",
+      "https://ae04.alicdn.com/kf/S4a4636c69c1f4ae487b9dfd45f79cf31x.jpg",
+      "https://ae04.alicdn.com/kf/S626719aeacb94b9193fd010609787776n.jpg"
+    ],
+    "isNew": false,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 4,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-    {
-      materials: {
-        обивка: "микрофибра",
-        основа: "ткань с водоотталкивающим покрытием",
-        наполнитель: "латексные гранулы",
-        спецификация: "устойчивость к влаге и антибактериальная обработка",
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "product": "декоративная ваза",
+    "colors": [
+      "white",
+      "palette-brown",
+      "black",
+      "palette-gray"
+    ],
+    "discount": true,
+    "id": 77,
+    "images": [
+      "https://i.ibb.co/k9mGs7b/img-1.webp",
+      "https://avatars.dzeninfra.ru/get-zen_doc/5233283/pub_6311f49f93168541bcd0f704_6311f8c6caaf0579521f5bb4/scale_2400",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/741909s2.jpg",
+      "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemZoom/741909s.jpg",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/176915s3.jpg",
+      "https://xcdn.next.co.uk/common/Items/Default/Default/ItemImages/AltItemZoom/176915s2.jpg"
+    ],
+    "isNew": true,
+    "material": "мрамор",
+    "name": "foster",
+    "price": 5000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-  ],
-  кашпо: [
-    {
-      materials: {
-        "основной материал": "керамика",
-        основа: "гладкая глазурованная поверхность",
-        покрытие: "глянцевое",
-        декор: "с узорами или без них",
+    "productDescription": {
+      "text": [
+        "Ваза Foster выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
+  },
+  {
+    "bestseller": false,
+    "collection": "картины",
+    "product": "эстетичная картина",
+    "colors": [
+      "palette-gray",
+      "white"
+    ],
+    "discount": true,
+    "id": 78,
+    "images": [
+      "https://i.ibb.co/5ktYRt6/img-1.jpg",
+      "https://i.ibb.co/DpjCFB9/img-2.webp",
+      "https://i.ibb.co/p4DJnkn/img-3.webp",
+      "https://i.ibb.co/258VftK/img-4.jpg",
+      "https://i.ibb.co/258VftK/img-4.jpg"
+    ],
+    "isNew": true,
+    "material": "стекло",
+    "name": "foster",
+    "price": 6000,
+    "rating": 3,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ],
+            "высота": [
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 50,
+                "unit": "см"
+              },
+              {
+                "value": 70,
+                "unit": "см"
+              },
+              {
+                "value": 100,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "цвет рамы": "_"
+          },
+          {
+            "тип рамы": [
+              "деревянная",
+              "металлическая",
+              "без рамы"
+            ]
+          },
+          {
+            "стиль": [
+              "современный",
+              "классический",
+              "абстракция",
+              "реализм"
+            ]
+          },
+          {
+            "форма": [
+              "прямоугольная",
+              "круглая",
+              "квадратная"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "высота": [
+          "30 см",
+          "50 см",
+          "70 см",
+          "100 см"
+        ],
+        "вес": [
+          "200 г",
+          "400 г",
+          "600 г",
+          "800 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "холст",
+        "структура": "плотная",
+        "покрытие": "глянцевое",
+        "декор": "абстракция"
+      }
+    },
+    "maintenance": [
+      "Для чистки картин используйте мягкую ткань и избегайте агрессивных химических средств.",
+      "Не рекомендуется подвергать картину воздействию прямых солнечных лучей, чтобы избежать выцветания.",
+      "При транспортировке или хранении картину рекомендуется упаковать в защитный чехол или коробку.",
+      "Если картина находится в рамке, проверяйте, чтобы не было повреждений или царапин на раме.",
+      "Для долгосрочного хранения картины рекомендуется повесить ее в сухом помещении с умеренной температурой."
+    ],
+    "packing": {
+      "text": "Картина упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-    {
-      materials: {
-        "основной материал": "пластик",
-        основа: "легкий и прочный материал",
-        покрытие: "матовое",
-        декор: "с геометрическим узором",
+    "productDescription": {
+      "text": [
+        "Картина Foster выполнена из высококачественной ткани и станет ярким акцентом в вашем интерьере. Ее современный стиль и оригинальные художественные элементы добавят эстетическую ценность любому пространству. Картина доступна в различных размерах и формах, что позволяет выбрать наиболее подходящий вариант для вашего дома или офиса.",
+        "Она легка в уходе и долговечна, что делает ее идеальным выбором для тех, кто ценит качественные и стильные элементы декора."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Современные художественные элементы картины и разнообразие форм рам позволяют ей идеально вписаться в любой интерьер."
+      },
+      {
+        "title": "Качество",
+        "text": "Выполнена из высококачественной ткани, что гарантирует долговечность и устойчивость к повреждениям."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Картина доступна в различных размерах, формах и стилях, что позволяет подобрать идеальный вариант для любого пространства."
       },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства для ткани и мягкую ткань для протирки, чтобы сохранить картину в отличном состоянии."
+      }
+    ]
+  },
+  {
+    "bestseller": true,
+    "collection": "вазы и кашпо",
+    "colors": [
+      "palette-beige",
+      "palette-brown",
+      "white",
+      "palette-gray"
+    ],
+    "discount": false,
+    "id": 79,
+    "images": [
+      "https://i.ibb.co/Ks8KTFq/img-1.jpg",
+      "https://www.mcgeeandco.com/cdn/shop/products/Ross_Michelle_25.jpg?v=1668634804&width=1200",
+      "https://www.mcgeeandco.com/cdn/shop/products/SpringStyled49.jpg?v=1668634804&width=1200",
+      "https://rfdny.com/cdn/shop/products/Page-Pot-95797-00_2048x.jpg?v=1648730812",
+      "https://www.mcgeeandco.com/cdn/shop/products/RoundedCeramicVase_1.jpg?v=1661361684&width=1200"
+    ],
+    "isNew": true,
+    "material": "керамика",
+    "name": "ramani",
+    "price": 15000,
+    "rating": 5,
+    "characteristics": [
+      {
+        "dimensions": [
+          {
+            "ширина": [
+              {
+                "value": 12,
+                "unit": "см"
+              },
+              {
+                "value": 15,
+                "unit": "см"
+              },
+              {
+                "value": 20,
+                "unit": "см"
+              },
+              {
+                "value": 25,
+                "unit": "см"
+              }
+            ]
+          },
+          {
+            "высота": [
+              {
+                "value": 25,
+                "unit": "см"
+              },
+              {
+                "value": 30,
+                "unit": "см"
+              },
+              {
+                "value": 35,
+                "unit": "см"
+              },
+              {
+                "value": 40,
+                "unit": "см"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "цвет": "_"
+          },
+          {
+            "форма": [
+              "круглая",
+              "овальная",
+              "квадратная",
+              "прямоугольная"
+            ]
+          },
+          {
+            "тип": [
+              "напольная",
+              "настольная",
+              "подвесная"
+            ]
+          },
+          {
+            "декор": [
+              "гладкая",
+              "рельефная",
+              "с орнаментом"
+            ]
+          },
+          {
+            "максимальная нагрузка": [
+              "2 кг",
+              "5 кг",
+              "10 кг",
+              "15 кг"
+            ]
+          }
+        ]
+      }
+    ],
+    "technicalSpecifications": {
+      "sizes": {
+        "ширина": [
+          "12 см",
+          "15 см",
+          "20 см",
+          "25 см"
+        ],
+        "высота": [
+          "25 см",
+          "30 см",
+          "35 см",
+          "40 см"
+        ],
+        "вес": [
+          "500 г",
+          "700 г",
+          "900 г",
+          "1100 г"
+        ]
+      },
+      "materials": {
+        "основной материал": "стекло",
+        "каркас": "металлический",
+        "покрытие": "глянцевое",
+        "декор": "с орнаментом"
+      }
+    },
+    "maintenance": [
+      "Регулярная чистка ваз помогает сохранить их в хорошем состоянии и предотвратить накопление пыли.",
+      "Для чистки используйте мягкую ткань, избегайте использования агрессивных химических средств, чтобы не повредить поверхность.",
+      "Не допускайте попадания жидкости на вазу, так как это может повлиять на ее внешний вид, особенно если она имеет декоративные элементы.",
+      "Храните вазу вдали от прямых солнечных лучей, чтобы избежать выцветания цвета или повреждения материалов.",
+      "Для стеклянных ваз используйте специализированные средства для ухода за стеклом, чтобы они оставались блестящими и чистыми.",
+      "Не ставьте вазу в местах с высокой температурой или рядом с нагревательными приборами, так как это может повлиять на ее устойчивость.",
+      "При использовании ваз в качестве кашпо для растений, убедитесь, что в вазе есть дренажные отверстия, чтобы избежать застоя воды и повреждения растений."
+    ],
+    "packing": {
+      "text": "Ваза упакована в защитную коробку с амортизирующими материалами для транспортировки."
     },
-  ],
-};
-
-const random = (max, min = 0) => {
-  return Math.floor(Math.random() * (max - min) + min);
-};
-
-let sofas = [];
-
-for (let i = 0; i <= 89; i++) {
-  let probject = { id: i + 1 };
-  probject.collection = collections[random(collections.length)];
-  const call = probject.collection;
-  probject.bestseller = bestseller[random(3, 1) - 1];
-
-  probject.colors = Array.from(
-    new Set(
-      Array(random(5, 2))
-        .fill(null)
-        .map((el, i) => colors[random(colors.length)])
-    )
-  );
-  probject.discount = discount[random(3, 1) - 1];
-  probject.isNew = isNew[random(3, 1) - 1];
-  probject.material = material[call][random(material.length)];
-  probject.name = names[call][random(names.length)];
-  probject.price = Math.round(random(200000, 20000) / 1000) * 1000;
-  probject.rating = (Math.random() * (5 - 3.8) + 3.8).toFixed(1);
-
-  const nums = new Set();
-  let maintenancearray = [];
-  while (nums.size < 6) {
-    let number = random(maintenance[call].length);
-    if (!nums.has(number)) {
-      nums.add(number);
-      maintenancearray.push(maintenance[call][number]);
-    }
+    "productDescription": {
+      "text": [
+        "Ваза Ramani выполнена из высококачественного стекла и станет отличным дополнением любого интерьера. Её стильный дизайн и уникальный декор с орнаментом придают ей элегантный вид, подходящий для самых разных помещений. Ваза представлена в различных размерах и формах, что позволяет подобрать оптимальный вариант для вашего пространства. Будь то напольная, настольная или подвесная ваза — она добавит особый акцент в любой интерьер.",
+        "Эта ваза также отличается высокой прочностью и долговечностью, благодаря чему прослужит вам долгие годы. Она легко чистится и требует минимального ухода."
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Эстетика и стиль",
+        "text": "Элегантный дизайн с декором в виде рельефных или орнаментальных элементов, который идеально впишется в любой интерьер, добавляя ему изысканности и утонченности."
+      },
+      {
+        "title": "Прочность",
+        "text": "Изготовлена из высококачественного стекла, обеспечивающего долговечность и устойчивость к повреждениям, что гарантирует безопасное использование и сохранение внешнего вида на долгое время."
+      },
+      {
+        "title": "Универсальность",
+        "text": "Ваза доступна в различных формах (круглая, овальная, квадратная, прямоугольная) и размерах, что позволяет подобрать идеальный вариант для любого пространства: будь то стол, подоконник или полка."
+      },
+      {
+        "title": "Легкость в уходе",
+        "text": "Очень проста в уходе: достаточно использовать мягкие моющие средства и ткань, чтобы сохранить ее чистоту и блеск, при этом не повредив поверхность. Идеально подходит для ежедневного использования."
+      }
+    ]
   }
-
-  const nums2 = new Set();
-  let optarr = [];
-  while (nums2.size < 6) {
-    let number = random(options[call].length);
-    if (!nums2.has(number)) {
-      nums2.add(number);
-      optarr.push(options[call][number]);
-    }
-  }
-
-  const sizes = {
-    кашпо: {
-      ширина: [Math.round(random(40, 100) / 100) * 100],
-
-      высота: [Math.round(random(40, 100) / 10) * 10],
-    },
-    диваны: {
-      ширина: [Math.round(random(190, 260) / 100) * 100],
-
-      высота: [Math.round(random(120, 260) / 10) * 10],
-    },
-    стулья: {
-      ширина: [Math.round(random(80, 150) / 100) * 100],
-
-      высота: [Math.round(random(80, 150) / 10) * 10],
-    },
-    столы: {
-      ширина: [Math.round(random(80, 350) / 100) * 100],
-
-      высота: [Math.round(random(80, 150) / 10) * 10],
-    },
-    фонари: {
-      ширина: [Math.round(random(40, 130) / 100) * 100],
-
-      высота: [Math.round(random(40, 130) / 10) * 10],
-    },
-  };
-
-  const a = Object.entries(sizes[call]);
-  a.forEach(([key, value], i) => {
-    for (let i = 0; i < 3; i++) {
-      console.log(sizes[key]);
-      sizes[call][key].push(sizes[call][key][i] + 20);
-    }
-  });
-  a.forEach(([key, value], i) => {
-    for (let i = 0; i < 4; i++) {
-      sizes[call][key][i] += key !== "вес" ? " см" : " кг";
-    }
-  });
-
-  probject.characteristics = [
-    {
-      dimensions: [
-        {
-          ширина: sizes[call].ширина.map((el, i) => {
-            return { value: el.replace(" см", ""), unit: "см" };
-          }),
-        },
-        {
-          высота: sizes[call].высота.map((el, i) => {
-            return { value: el.replace(" см", ""), unit: "см" };
-          }),
-        },
-      ],
-    },
-    { options: [{ цвет: "_" }, ...optarr] },
-  ];
-
-  probject.technicalSpecifications = {
-    sizes: sizes[call],
-    materials: materials[call][random(materials[call].length)].materials,
-  };
-
-  probject.maintenance = maintenancearray;
-  probject.packing = packing[call][random(packing[call].length)].packing;
-  probject.productDescription = {
-    text: descriptions[call][random(descriptions[call].length)],
-  };
-  const fuck = new Set();
-  let advantagesArrat = [];
-  while (fuck.size < 6) {
-    let number = random(advantages[call].length);
-    if (!fuck.has(number)) {
-      fuck.add(number);
-      advantagesArrat.push(advantages[call][number]);
-    }
-  }
- 
-  probject.images = images[call][random(images[call].length)];
-  probject.advantages = advantagesArrat
-  console.log("SDSDSDSDSDSDD")
-  if (call) {
-    probject.product = products[call][random(products[call].length)];
-    probject.name = names[call][random(names[call].length)];
-  }
-  sofas.push(probject);
+]
+for (let index = 0; index < data.length; index++) {
+  data[index].id += "_decor"
 }
 
-console.log(sofas);
+console.log(data)
 
 export default function Gen() {
   return <div></div>;

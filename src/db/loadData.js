@@ -76,9 +76,10 @@ export async function getReviewsCount() {
 }
 
 export async function getItem([id, dbName]) {
+  console.log(id)
   try {
-    const articlesRef = ref(database, dbName);
-    const q = query(articlesRef, orderByChild("id"), equalTo(id));
+    const dbRef = ref(database, dbName);
+    const q = query(dbRef, orderByChild("id"), equalTo(id));
 
     const snapshot = await get(q);
 

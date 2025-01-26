@@ -86,7 +86,7 @@
 }
 
 #cart .recommendations a,
-#cart .recommendations .rec-item-image {
+#cart .recommendations .slider-image {
   height: 100%;
   width: 100%;
 }
@@ -159,7 +159,7 @@ header .icons .icon:nth-child(3)::after {
 
 
 @container (max-width: 400px) {
-  .cart-items li>.row:nth-child(1) {
+  .cart-items li> a > .row:nth-child(1) {
     flex-direction: column;
   }
 

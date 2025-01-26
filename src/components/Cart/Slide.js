@@ -5,7 +5,7 @@ export default function Slide({ el }) {
   return (
     <Link to={`catalog/${el.catalog}/${el.name.toLowerCase()}?id=${el.id}`}>
 
-      <div className='rec-item-image'>
+      <div className='slider-image'>
         <LazyLoadImage
           width={'100%'}
           height={'100%'}

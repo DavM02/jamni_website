@@ -950,7 +950,7 @@ const catalog = {
 
 
     bg: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202436/0003/artisan-handcrafted-terracotta-vase-1-xl.jpg",
-    posY: "75%",
+    posY: "67%",
   },
 };
 

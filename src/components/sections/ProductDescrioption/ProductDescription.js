@@ -9,9 +9,9 @@ export default function ProductDescription() {
     const [searchParams] = useSearchParams();
     const param = useParams();
     const catalog = param["*"].split("/")[0];
-    const id = parseInt(searchParams.get("id"));
+    const id = searchParams.get("id")
 
-    const { data } = useSWRImmutable([id, catalog, id + catalog], getItem);
+    const { data } = useSWRImmutable([id, catalog], getItem);
  
     return (
         <section id="product-description">

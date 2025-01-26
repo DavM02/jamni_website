@@ -6,7 +6,8 @@
 @import "./styles/typography.css";
 @import "./styles/shared.css";
 
-body, html {
+body,
+html {
   overscroll-behavior: none;
 }
 
@@ -96,42 +97,39 @@ main {
   left: 0;
   top: 0;
   height: 2px;
-    will-change: left;
+  will-change: left;
   background-color: var(--black);
   transition: var(--transition) left 1s;
 }
 
+ 
 
 #filter .filter-item:nth-child(1n) .placeholder,
 .news-item:nth-child(1n) .placeholder,
 #home .slider-item:nth-child(1n),
-#bestsellers .slider-item:nth-child(1n) .slider-image,
-#projects .slider-item:nth-child(1n) .slider-image, #more-products .slider-item:nth-child(1n) .slider-image,
-.recommendations .slider-item:nth-child(1n) .rec-item-image,
-.cart-item-image:nth-child(1n),  #catalog-collections .slider-item:nth-child(1n) .slider-image {
+.cart-item-image:nth-child(1n),
+.slider-item:nth-child(1n) .slider-image{
   background-color: var(--placeholder-1);
   transition: var(--transition) 1s background-color;
 }
 
-#filter .filter-item:nth-child(2n) .placeholder, .news-item:nth-child(2n) .placeholder, 
+#filter .filter-item:nth-child(2n) .placeholder,
+.news-item:nth-child(2n) .placeholder,
 #home .slider-item:nth-child(2n),
-#bestsellers .slider-item:nth-child(2n) .slider-image,
-#projects .slider-item:nth-child(2n) .slider-image, #more-products .slider-item:nth-child(2n) .slider-image,
-.recommendations .slider-item:nth-child(2n) .rec-item-image,
-.cart-item-image:nth-child(2n),  #catalog-collections .slider-item:nth-child(2n) .slider-image {
+.cart-item-image:nth-child(2n),
+ .slider-item:nth-child(2n) .slider-image {
   background-color: var(--placeholder-2);
-    transition: var(--transition) 1s background-color;
+  transition: var(--transition) 1s background-color;
 }
 
 #filter .filter-item:nth-child(3n) .placeholder,
 .news-item:nth-child(3n) .placeholder,
 #home .slider-item:nth-child(3n),
-#bestsellers .slider-item:nth-child(3n) .slider-image,
-#projects .slider-item:nth-child(3n) .slider-image, #more-products .slider-item:nth-child(3n) .slider-image,
-.recommendations .slider-item:nth-child(3n) .rec-item-image,
-.cart-item-image:nth-child(3n), #catalog-collections .slider-item:nth-child(3n) .slider-image {
+.cart-item-image:nth-child(3n),
+.slider-item:nth-child(3n) .slider-image
+{
   background-color: var(--placeholder-3);
-    transition: var(--transition) 1s background-color;
+  transition: var(--transition) 1s background-color;
 }
 
 .error,
@@ -147,6 +145,8 @@ main {
   min-height: unset !important;
 }
 
-#product-page .loading, #product-page .error, #product-page .no-results {
-      height: calc(100vh - (30px + 55px + var(--nav-height) + (var(--header-container-padding)*2)));
+#product-page .loading:not(#build-set .loading),
+#product-page .error:not(#build-set .error),
+#product-page .no-results {
+  height: calc(100vh - (30px + 55px + var(--nav-height) + (var(--header-container-padding)*2)));
 }

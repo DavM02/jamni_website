@@ -69,18 +69,21 @@ export default function InfiniteSlider({
               Tag={Tag}
               width={itemWidth}
             >
-              <WrapperComponent el={el} 
-              catalog={props.catalog}
+              <WrapperComponent el={el}
+                {...props}
               />
             </SlideItemWrapper>
           ))}
         </div>
       </div>
+
       <SliderNav
+        hideNav={props.hideNav}
         onPrev={handlePrevSlide}
         onNext={handleNextSlide}
         itemsCount={slideItems.length}
       />
+
     </>
   );
 }

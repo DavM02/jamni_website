@@ -24,7 +24,7 @@ export default function AppLoading({ setRenderApp }) {
     const images = useMemo(() => [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10], []);
     const [loaded, setLoaded] = useState(0);
     const [allImagesLoaded, setAllImagesLoaded] = useState(false);
-
+ 
     useEffect(() => {
         let loadedImagesCount = 0;
  
@@ -49,7 +49,7 @@ export default function AppLoading({ setRenderApp }) {
 
     useEffect(() => {
 
-        const isAnimationCompleted = sessionStorage.getItem('animationCompleted');
+        const isAnimationCompleted = sessionStorage.getItem('animationCompleted') || document.referrer.includes('jamni');
 
         if (!allImagesLoaded && !isAnimationCompleted) return;
 

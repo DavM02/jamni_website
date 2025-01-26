@@ -45,18 +45,25 @@ export const userFavStore = create(
                 });
             },
 
-            decreaseQuantity: (itemId) => {
+            decreaseQuantity: (itemId, quantity) => {
                 set((state) => {
-                    const updatedProducts = state.products.map((el) =>
-                        el.id === itemId
-                            ? { ...el, quantity: Math.max(1, el.quantity - 1) }
-                            : el
-                    );
+                    let updatedProducts = []
+                    if (quantity === 1) {
+                        updatedProducts = state.products.filter(
+                            (item) => item.id !== itemId
+                        );
+                    } else {
+                        updatedProducts = state.products.map((el) =>
+                            el.id === itemId
+                                ? { ...el, quantity: Math.max(1, el.quantity - 1) }
+                                : el
+                        );
+                    }
                     return { products: updatedProducts };
                 });
             },
 
- 
+
         }),
         {
             name: "fav-storage",

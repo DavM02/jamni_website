@@ -101,3 +101,13 @@
     width: 100% !important;
   }
 }
+
+div[data-page="sofas"] #more-products {
+
+    background-color: var(--gray) !important;
+}
+
+div[data-page="sofas"]  #configuration{
+ 
+  background-color: var(--white) !important;
+}

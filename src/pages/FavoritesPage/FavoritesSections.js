@@ -4,7 +4,6 @@ import { userFavStore } from '../../stores/favStore';
 import { AnimatePresence } from 'framer-motion';
 import SmoothAppearance from '../../components/ui/SmoothAppearance';
 import CartItem from '../../components/Cart/CartItem/CartItem';
-import { useNavigate } from 'react-router-dom';
 import { userCartStore } from '../../stores/cartStore';
 import MainButton from '../../components/ui/buttons/MainButton/MainButton';
 import { modalStore } from '../../stores/modalStore';
@@ -14,8 +13,7 @@ export default function FavoritesSections() {
     const { products, removeProduct, increaseQuantity, decreaseQuantity } = userFavStore();
     const addToCart = userCartStore((state) => state.addProduct);
     const { toggleAdded } = modalStore()
-    const navigate = useNavigate()
-
+ 
     return (
         <section id='favorites'>
 
@@ -33,7 +31,6 @@ export default function FavoritesSections() {
                                 {products.map((el) => (
                                     <CartWrapper 
                                         key={el.id}
-                                        navigate={navigate}
                                         product={el}
                                     >
                            

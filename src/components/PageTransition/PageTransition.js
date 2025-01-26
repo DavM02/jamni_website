@@ -38,7 +38,7 @@ function PageTransition(Component) {
           <>
             <motion.div
               onAnimationComplete={(e) => {
-                console.log(e)
+   
                 if (e.transform === "translateY(0)") {
   
                   const getPath = window.location.hash.split("/");

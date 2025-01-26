@@ -15,7 +15,7 @@ export default function Menu() {
                     <Link to={"catalog/curtains"}>Шторы</Link>
                 </li>
                 <li>
-                    <Link>Horeca</Link>
+                    <Link>Home</Link>
                 </li>
             </ul>
             <ul className='column gap-20 text-main text-light xxsmall-text up-case'>
