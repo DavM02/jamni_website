@@ -10,9 +10,9 @@ function PageTransition(Component) {
     const [pathname, setPathname] = useState(null);
     const [isAnimating, setIsAnimating] = useState(false);
     const { scrollbarAccess } = useContext(MainContext);
-
+    const [isDocumentHidden, setIsDocumentHidden] = useState(false)
     // const isIos = useMemo(() => /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream, [])
- 
+
     useBlocker(({ currentLocation: current, nextLocation: next }) => {
       return isAnimating && current.pathname !== next.pathname;
       // || currentLocation.pathname === nextLocation.pathname
@@ -22,7 +22,7 @@ function PageTransition(Component) {
       if (scrollbarAccess.current) {
         scrollbarAccess.current.scrollTo(0, 0);
       }
- 
+
       window.scrollTo({
         top: 0,
         left: 0,
@@ -30,10 +30,11 @@ function PageTransition(Component) {
       });
 
       document.addEventListener("visibilitychange", () => {
-        if (document.visibilityState === "hidden" && isAnimating) {
-          // setIsAnimating(false);
-          // setPathname(false)
-        }  
+        if (document.hidden) {
+          setIsDocumentHidden(true)
+        } else {
+          setIsDocumentHidden(false)
+        }
       });
 
     }, []);
@@ -41,14 +42,15 @@ function PageTransition(Component) {
     return (
       <React.Fragment>
         <Component {...props} />
-
+ 
         {ReactDOM.createPortal(
           <>
             <motion.div
+
               onAnimationComplete={(e) => {
-   
+        
                 if (e.transform === "translateY(0)") {
-  
+
                   const getPath = window.location.hash.split("/");
 
                   if (getPath.includes("article")) {
@@ -73,7 +75,7 @@ function PageTransition(Component) {
               onAnimationStart={() => {
                 setIsAnimating(true);
               }}
-              initial={{ transform: 'translateY(100%)' }}
+              initial={{ transform:  'translateY(100%)' }}
               animate={{ transform: 'translateY(100%)' }}
               exit={{ transform: 'translateY(0)' }}
               transition={{

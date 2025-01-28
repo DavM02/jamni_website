@@ -47,7 +47,7 @@ function useProductActions(productId) {
 
             for (let [key, value] of formData.entries()) {
                 newProduct[key] = value;
-                console.log(key, value)
+    
             }
 
         }

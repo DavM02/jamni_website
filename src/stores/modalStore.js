@@ -36,7 +36,7 @@ export const modalStore = create((set) => ({
       .then((data) => {
    
         const flatData = data.flat();
-        console.log(flatData)
+   
         set({ cartRecommendations: flatData, loading: false });
       })
       .catch((error) => {

@@ -6,18 +6,18 @@
 .slide-in, .slide-out {
   clip-path: inset(100% 0 0 0);
 } */
-
+ 
 .slide-in,
 .slide-out {
-    transition: var(--transition) 1s clip-path;
-    background-color: var(--black);
-    position: fixed;
-    will-change:transform;
-    top: 0;
-    left: 0;
-    z-index: 777;
-    pointer-events: all;
-    width: 100%;
-    height: 100%;
+  transition: var(--transition) 1s clip-path;
+  background-color: var(--black);
+  position: fixed;
+  will-change: transform;
+  top: 0;
+  left: 0;
+  z-index: 777;
+  pointer-events: all;
+  width: 100%;
+  height: 100%;
 
 }

@@ -22,7 +22,7 @@ export const userCartStore = create(
                 ? { ...el, ...item, quantity: el.quantity + (item.quantity || 1) }
                 : el
             );
-            console.log(updatedProducts)
+       
             return { products: updatedProducts };
           }
         });
