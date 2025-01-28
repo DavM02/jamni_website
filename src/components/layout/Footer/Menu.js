@@ -9,7 +9,7 @@ export default function Menu() {
                     <Link to={"catalog/bedsheets"}>Постельное белье</Link>
                 </li>
                 <li>
-                    <Link>Аксессуары из войлока</Link>
+                    <Link to={"catalog/decor"}>Аксессуары из войлока</Link>
                 </li>
                 <li>
                     <Link to={"catalog/curtains"}>Шторы</Link>
