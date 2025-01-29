@@ -42,8 +42,8 @@ function useProductActions(productId) {
             configuration: (configuration && configuration.length) ? configuration : undefined
         };
 
-        if (e?.target instanceof FormData) {
-
+        if (e?.target instanceof HTMLFormElement) {
+ 
             const formData = new FormData(e.target);
 
             for (let [key, value] of formData.entries()) {
