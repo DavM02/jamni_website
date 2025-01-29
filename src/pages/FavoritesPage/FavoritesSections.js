@@ -13,7 +13,7 @@ export default function FavoritesSections() {
     const { products, removeProduct, increaseQuantity, decreaseQuantity } = userFavStore();
     const addToCart = userCartStore((state) => state.addProduct);
     const { toggleAdded } = modalStore()
- 
+
     return (
         <section id='favorites'>
 
@@ -29,26 +29,27 @@ export default function FavoritesSections() {
 
                                 className="fav-items column gap-40">
                                 {products.map((el) => (
-                                    <CartWrapper 
+                                    <CartWrapper
                                         key={el.id}
                                         product={el}
                                     >
-                           
-                                            <CartItem
-                                                product={el}
-                                                increaseQuantity={increaseQuantity}
-                                                decreaseQuantity={decreaseQuantity}
-                                                removeProduct={removeProduct}
-                                            />
-                                            <MainButton onClick={(e) => {
-                                                e.stopPropagation()
-                                                addToCart({ ...el, quantity: el.quantity }); toggleAdded(); setTimeout(() => {
-                                                    toggleAdded()
-                                                }, 1500);
-                                            }}>
-                                                добавить в корзину
-                                            </MainButton>
-                                
+
+                                        <CartItem
+                                            product={el}
+                                            increaseQuantity={increaseQuantity}
+                                            decreaseQuantity={decreaseQuantity}
+                                            removeProduct={removeProduct}
+                                        />
+                                        <MainButton onClick={(e) => {
+                                            e.preventDefault()
+                                            e.stopPropagation()
+                                            addToCart({ ...el, quantity: el.quantity }); toggleAdded(); setTimeout(() => {
+                                                toggleAdded()
+                                            }, 1500);
+                                        }}>
+                                            добавить в корзину
+                                        </MainButton>
+
                                     </CartWrapper>
                                 ))}
                             </ul>
