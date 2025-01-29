@@ -32,16 +32,17 @@ function useProductActions(productId) {
         const newProduct = {
             catalog: product.id.split('_')[1],
             product: product.product,
-            image: product.images[0],
+            image: product.image ?? product.images[0],
             name: product.name,
             collection: product.collection,
             id: product.id,
             price: product.price,
+            quantity: product.quantity ?? 0,
             priceConfig:  ((configuration && configuration.length)? configuration.reduce((sum, item) => sum + item.price * item.quantity, 0) : 0),
             configuration: (configuration && configuration.length) ? configuration : undefined
         };
 
-        if (e?.target) {
+        if (e?.target instanceof FormData) {
 
             const formData = new FormData(e.target);
 
