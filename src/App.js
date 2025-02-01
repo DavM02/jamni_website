@@ -15,26 +15,25 @@ import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import OrderPage from "./pages/OrderPage/OrderPage";
 import AppLoading from "./components/AppLoading/AppLoading";
-import {  useState } from "react";
+import { useState } from "react";
 import Cursor from "./components/Cursor/Cursor";
-
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
- 
- 
+
+
 
 function App() {
   const location = useLocation();
   const [renderApp, setRenderApp] = useState(sessionStorage.getItem('animationCompleted') || document.referrer.includes('jamni'));
-  
+
   return (
     <>
       <Cursor />
       {(renderApp === false || renderApp === 'show') && <AppLoading setRenderApp={setRenderApp} />}
-     
+
       <div
         className="App"
         style={{
-          visibility: (renderApp || renderApp === 'show') ? "initial" : "hidden", 
+          visibility: (renderApp || renderApp === 'show') ? "initial" : "hidden",
           overflow: (renderApp || renderApp === 'show') ? "unset" : "hidden",
         }}
       >

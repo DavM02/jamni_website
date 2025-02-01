@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const CartWrapper = ({ children, product }) => (
     <SmoothAppearance
-        key={product.id}
+        // key={product.id}
         Tag={motion.li}
         layout
     >

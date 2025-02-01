@@ -179,6 +179,6 @@ header .icons .icon:nth-child(3)::after {
   object-fit: contain !important;
 }
 
-.frameless span {
+.frameless span:not(.center-gr span, .xsmall-text) {
   background-color: #f6f6f6 !important;
 }
