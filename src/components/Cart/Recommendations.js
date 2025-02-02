@@ -12,7 +12,7 @@ import SmoothAppearance from "../ui/SmoothAppearance";
 function Recommendations() {
  
   const { cartRecommendations, error, isLoading, showRecs, setShowRecs } = modalStore();
-  
+   
   return (
     <div className="show-recommendations">
       <div

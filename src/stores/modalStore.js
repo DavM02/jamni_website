@@ -31,8 +31,8 @@ export const modalStore = create((set) => ({
     }
   
    catalogs = Array.from(array);
- 
-    Promise.all(catalogs.map((catalog) => loadData([catalog, Math.min(1, Math.round(Math.random() * 4)), 3])))
+  
+    Promise.all(catalogs.map((catalog) => loadData([catalog, Math.max(1, Math.round(Math.random() * 4)), 3])))
       .then((data) => {
    
         const flatData = data.flat();
