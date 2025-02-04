@@ -37,7 +37,7 @@
     position: relative;
 }
 
-.intro::after {
+.intro .center-gr::after {
     content: "";
     opacity: 10%;
     background-color: #000000;
@@ -49,13 +49,13 @@
     left: 0;
 }
 
-#sofas-intro.intro::after,
-#chairs-intro.intro::after {
+#sofas-intro.intro .center-gr::after,
+#chairs-intro.intro .center-gr::after {
     opacity: 30% !important;
 }
 
-#reviews-intro.intro::after,
-#article-intro.intro::after {
+#reviews-intro.intro .center-gr::after,
+#article-intro.intro .center-gr::after {
     opacity: 32%;
 }
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './intro.css'
+
 export default function Intro({ id, bg, posY, description, headline }) {
     const [show, setShow] = useState(false)
     useEffect(() => {

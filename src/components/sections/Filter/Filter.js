@@ -54,7 +54,6 @@ export default function Filter({ path }) {
           />
           {dataLength && (
             <Pagination
-              scrollOffset={780}
               pagesCount={Math.ceil(dataLength / 18)}
               scrollElem={'#filter'}
             />

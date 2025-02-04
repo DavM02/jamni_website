@@ -1,13 +1,12 @@
 import arrowLeft from "../../../assets/icons/pagination-arrow-left.svg";
 import arrowRight from "../../../assets/icons/pagination-arrow-right.svg";
  import usePagination from "../../../hooks/usePagination";
-export default function Pagination({ pagesCount, scrollOffset, scrollElem }) {
+export default function Pagination({ pagesCount, scrollElem }) {
   const { pages, activePage, handlePagination } = usePagination(
     pagesCount,
-    scrollOffset,
     scrollElem
   );
-  
+ 
   return (
     <div className="pagination">
       <div className="row gap-30 center-y end-x">
