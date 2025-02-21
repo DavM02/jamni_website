@@ -8,11 +8,17 @@ export default function SmoothScroll({ children }) {
     useContext(MainContext);
   const scrollRef = useRef(null);
   const query = useMediaQ("(min-width: 767px)");
-  // const fixHeader = useMediaQ('(max-width: 777px)');
+
 
   useLayoutEffect(() => {
     let scrollbar;
-    let resizeObserver;
+
+
+    if ("scrollRestoration" in window.history) {
+      console.log('done')
+      window.history.scrollRestoration = "manual";
+    }
+
     if (query) {
       const initScrollbar = () => {
         if (scrollRef.current) {
@@ -35,31 +41,17 @@ export default function SmoothScroll({ children }) {
         }
       };
 
-      const handleResize = () => {
-        if (scrollRef.current) {
-          initScrollbar();
-        }
-      };
-
-      resizeObserver = new ResizeObserver(handleResize);
-      if (scrollRef.current) {
-        resizeObserver.observe(scrollRef.current);
-      }
+       initScrollbar();
+    }
 
       return () => {
         setHeaderHeight.current("30px");
         if (scrollbar) {
           scrollbar.destroy();
-        }
-        if (resizeObserver) {
-          resizeObserver.disconnect();
+          scrollbarAccess.current = null;
+          console.log(scrollbarAccess.current)
         }
       };
-    }
-
-    if ("scrollRestoration" in window.history) {
-      window.history.scrollRestoration = "manual";
-    }
 
   }, [query, scrollbarAccess]);
 

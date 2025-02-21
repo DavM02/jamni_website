@@ -8,7 +8,7 @@ export default function usePagination(pagesCount, scrollElem) {
     const activePage = parseInt(searchParams.get('page') ?? 1)
 
     const { scrollbarAccess } = useContext(MainContext)
-console.log(scrollElem)
+ 
 
     const handlePagination = (page) => {
         if (page > pagesCount || page <= 0 || page === '...') return;

@@ -5,10 +5,6 @@
         aspect-ratio: unset;
     }
 
-    #home .container {
-        position: relative;
-    }
-
     #home .slider-wrapper {
         height: clamp(33.75rem, 20.4643rem + 20.7589vw, 45.375rem);
     }

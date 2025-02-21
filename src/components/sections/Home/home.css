@@ -30,6 +30,16 @@
     right: clamp(1.9375rem, -35.2898rem + 47.2727vw, 21.4375rem);
 }
 
+#home .container:has(.headline) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
 #home .headline::after {
     position: absolute;
     content: '';
