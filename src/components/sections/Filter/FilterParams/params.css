@@ -1,6 +1,6 @@
 .filter-params .main-filter span:hover,
 .filter-params .main-filter span.active {
-    font-weight: 600;
+    text-shadow: var(--text-bold);
 }
 
 .filter-params .main-filter span:hover::after,

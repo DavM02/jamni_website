@@ -1,6 +1,6 @@
 .custom-cursor {
     background-color: var(--white);
-    position: fixed;
+    position: absolute;
  
     border-radius: 50%;
     width: 20px;
@@ -11,5 +11,6 @@
     mix-blend-mode: exclusion;
     z-index: 1299;
     pointer-events: none;
-    transition: var(--cursor-transition) 1s transform, 
+    transition: var(--cursor-transition) 1s transform;
+ 
 }

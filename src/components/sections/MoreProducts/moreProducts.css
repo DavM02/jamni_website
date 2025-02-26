@@ -19,7 +19,7 @@
 
 #more-products .slider-image + div span:nth-child(1) {
   display: block;
-  font-weight: 600;
+ text-shadow: var(--text-bold);
   margin-top: 13px;
 }
 

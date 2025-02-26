@@ -8,6 +8,9 @@
   --line-bg: #d3d3d3;
   --backdrop: #00000052;
 
+  --text-bold: 0 0 .45px var(--black),
+    0 0 .45px var(--black);
+
   --placeholder-1: rgb(157, 153, 149);
   --placeholder-2: rgb(73 69 69);
   --placeholder-3: rgb(87, 99, 87);

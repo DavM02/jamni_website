@@ -6,6 +6,12 @@
 @import "./styles/typography.css";
 @import "./styles/shared.css";
 
+
+html {
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body,
 html {
   overscroll-behavior: none;
