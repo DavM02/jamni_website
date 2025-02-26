@@ -3,6 +3,7 @@
     width: 100%;
     padding-top: calc(30px + 55px + var(--nav-height) + (var(--header-container-padding) * 2));
     background-color: var(--white);
+    perspective: 1px;
 }
 
 .scroll-content {
