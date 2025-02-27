@@ -2,6 +2,9 @@
 .infinite-slider .slider-item {
     position: absolute;
     will-change: left;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1px;
 }
 
 .infinite-slider.slider-container {
