@@ -57,3 +57,9 @@ button:disabled {
     cursor: unset;
     pointer-events: none;
 }
+
+section {
+    perspective: 1px;
+    backface-visibility: hidden;
+    transform: translateZ(0, 0, 0);
+}

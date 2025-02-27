@@ -5,8 +5,7 @@
 
 #configuration .section-layout {
   display: grid;
-  padding: clamp(2.5rem, 2.2115rem + 1.2821vw, 3.75rem) 0
-    clamp(3.125rem, 2.4038rem + 3.2051vw, 6.25rem);
+  padding: clamp(2.5rem, 2.2115rem + 1.2821vw, 3.75rem) 0 clamp(3.125rem, 2.4038rem + 3.2051vw, 6.25rem);
   column-gap: 20px;
   row-gap: 60px;
   grid-template-columns: repeat(auto-fill, minmax(251px, 1fr));
@@ -17,24 +16,27 @@
 
 #configuration .config-image {
   aspect-ratio: 1/1;
+  width: -webkit-fill-available;
   background-color: var(--placeholder-2);
 }
 
-#configuration .section-layout > div span {
+#configuration .section-layout>div span {
   line-height: normal;
-} 
+}
 
 #configuration .section-layout>div {
-position: relative;
+  position: relative;
 }
 
 #configuration .config-adjustment {
-    min-width: 180px;
-      height: 48px;
-      border-radius: 20px;
-      border: 1px solid var(--black);
+  min-width: 180px;
+  height: 48px;
+  border-radius: 20px;
+  border: 1px solid var(--black);
 }
-#configuration .config-adjustment span:not(:nth-child(2)), #configuration .config-adjustment button {
+
+#configuration .config-adjustment span:not(:nth-child(2)),
+#configuration .config-adjustment button {
   cursor: pointer;
   user-select: none;
 }
@@ -43,7 +45,7 @@ position: relative;
   margin-top: 36px;
 }
 
-#configuration  .output > span:nth-child(1){
+#configuration .output>span:nth-child(1) {
   font-weight: bold;
   margin-bottom: 5px;
   display: block;
