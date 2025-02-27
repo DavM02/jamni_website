@@ -24,14 +24,14 @@ const Slider = () => {
     const debouncedFunction = useDebounce();
 
     const handleNextSlide = () => {
-        debouncedFunction(300, () => {
+        debouncedFunction(700, () => {
 
             setActiveSlide((prev) => Math.min(prev + 1, maxTransformIndex));
         })
     };
 
     const handlePrevSlide = () => {
-        debouncedFunction(300, () => {
+        debouncedFunction(700, () => {
             setActiveSlide((prev) => Math.max(prev - 1, 0));
         })
     };
@@ -40,12 +40,12 @@ const Slider = () => {
         if (query) {
             setMobileDescriptor(false)
         }
-        debouncedFunction(300, () => {
+        debouncedFunction(700, () => {
             setActiveSlide((prev) => Math.max(id - 1, 0));
         })
         setTimeout(() => {
             setMobileDescriptor(true)
-        }, 300);
+        }, 700);
 
     };
 

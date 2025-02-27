@@ -8,7 +8,7 @@ const Slide = ({ image, isActive, index, onClick, data }) => {
         <motion.div
             onClick={() => onClick(index)}
             transition={{
-                duration: 1,
+                duration: 0.7,
                 ease: [0.645, 0.045, 0.355, 1],
             }}
             layout
