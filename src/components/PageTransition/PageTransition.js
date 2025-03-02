@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useMemo, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ReactDOM from "react-dom";
 import { useBlocker } from "react-router-dom";
@@ -10,9 +10,7 @@ function PageTransition(Component) {
     const [pathname, setPathname] = useState(null);
     const [isAnimating, setIsAnimating] = useState(false);
     const { scrollbarAccess } = useContext(MainContext);
-    const [isDocumentHidden, setIsDocumentHidden] = useState(false)
-    // const isIos = useMemo(() => /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream, [])
-
+ 
     useBlocker(({ currentLocation: current, nextLocation: next }) => {
       return isAnimating && current.pathname !== next.pathname;
       // || currentLocation.pathname === nextLocation.pathname
@@ -29,13 +27,6 @@ function PageTransition(Component) {
         behavior: "auto",
       });
 
-      document.addEventListener("visibilitychange", () => {
-        if (document.hidden) {
-          setIsDocumentHidden(true)
-        } else {
-          setIsDocumentHidden(false)
-        }
-      });
 
     }, []);
 
@@ -75,8 +66,8 @@ function PageTransition(Component) {
               onAnimationStart={() => {
                 setIsAnimating(true);
               }}
-              initial={{ transform:  'translateY(100%)' }}
-              animate={{ transform: 'translateY(100%)' }}
+              initial={{ transform:  'translateY(100vh)' }}
+              animate={{ transform: 'translateY(100vh)' }}
               exit={{ transform: 'translateY(0)' }}
               transition={{
                 duration: 0.8,
@@ -101,7 +92,7 @@ function PageTransition(Component) {
 
             <motion.div
               onAnimationStart={(e) => {
-                if (e.transform === "translateY(-100%)") {
+                if (e.transform === "translateY(-100vh)") {
 
                   setPathname(false);
                 }
@@ -110,9 +101,9 @@ function PageTransition(Component) {
                 setIsAnimating(false);
               }}
               initial={{ transform: 'translateY(0)' }}
-              animate={{ transform: 'translateY(-100%)' }}
+              animate={{ transform: 'translateY(-100vh)' }}
               exit={{
-                transform: 'translateY(-100%)',
+                transform: 'translateY(-100vh)',
                 transition: {
                   delay: 2.2,
                 },
