@@ -30,8 +30,7 @@ html,
 }
 
 main {
-  min-height: 100vh;
-  flex-grow: 1;
+  min-height: 100lvh;
   background-color: var(--white);
 }
 
