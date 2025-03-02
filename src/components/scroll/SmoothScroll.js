@@ -49,7 +49,7 @@ export default function SmoothScroll({ children }) {
         if (scrollbar) {
           scrollbar.destroy();
           scrollbarAccess.current = null;
-          console.log(scrollbarAccess.current)
+
         }
       };
 
