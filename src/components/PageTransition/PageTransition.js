@@ -70,7 +70,7 @@ function PageTransition(Component) {
               animate={{ transform: 'translateY(100vh)' }}
               exit={{ transform: 'translateY(0)' }}
               transition={{
-                duration: 0.8,
+                duration: 1,
                 ease: [0.645, 0.045, 0.355, 1],
               }}
               className="slide-in center-gr"
@@ -79,7 +79,7 @@ function PageTransition(Component) {
                 <motion.div
                   initial={{ opacity: 1 }}
                   animate={{ opacity: pathname ? 0 : 1 }}
-                  transition={{ duration: 0.3, delay: 1.1 }}
+                  transition={{ duration: 0.4, delay: 1.1 }}
                 >
                   <AnimatedText
                     center={true}
@@ -105,12 +105,12 @@ function PageTransition(Component) {
               exit={{
                 transform: 'translateY(-100vh)',
                 transition: {
-                  delay: 2.2,
+                  delay: 2.5,
                 },
               }}
               transition={{
 
-                duration: 0.8,
+                duration: 1,
                 ease: [0.645, 0.045, 0.355, 1],
               }}
               className="slide-out center-gr"
