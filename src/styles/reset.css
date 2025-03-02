@@ -61,5 +61,5 @@ button:disabled {
 section {
     perspective: 1px;
     backface-visibility: hidden;
-    transform: translateZ(0, 0, 0);
+    transform: translateZ(0);
 }
