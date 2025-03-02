@@ -30,7 +30,7 @@ html,
 }
 
 main {
-  min-height: 100lvh;
+  min-height: 100dvh;
   background-color: var(--white);
 }
 
