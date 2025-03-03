@@ -66,8 +66,8 @@ function PageTransition(Component) {
               onAnimationStart={() => {
                 setIsAnimating(true);
               }}
-              initial={{ transform:  'translateY(100vh)' }}
-              animate={{ transform: 'translateY(100vh)' }}
+              initial={{ transform:  'translateY(100%)' }}
+              animate={{ transform: 'translateY(100%)' }}
               exit={{ transform: 'translateY(0)' }}
               transition={{
                 duration: 1,
@@ -92,7 +92,7 @@ function PageTransition(Component) {
 
             <motion.div
               onAnimationStart={(e) => {
-                if (e.transform === "translateY(-100vh)") {
+                if (e.transform === "translateY(-100%)") {
 
                   setPathname(false);
                 }
@@ -101,9 +101,9 @@ function PageTransition(Component) {
                 setIsAnimating(false);
               }}
               initial={{ transform: 'translateY(0)' }}
-              animate={{ transform: 'translateY(-100vh)' }}
+              animate={{ transform: 'translateY(-100%)' }}
               exit={{
-                transform: 'translateY(-100vh)',
+                transform: 'translateY(-100%)',
                 transition: {
                   delay: 2.5,
                 },
