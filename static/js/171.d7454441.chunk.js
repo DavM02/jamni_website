@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjamni=self.webpackChunkjamni||[]).push([[171],{8171:function(a,c,e){e(5043);c.A=e.p+"static/media/3d-modeling.9d3c5faa5b68b20c7893a9784b775da0.svg"}}]);
+//# sourceMappingURL=171.d7454441.chunk.js.map

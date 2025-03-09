@@ -1,0 +1,2 @@
+#favorites .center-flex{min-height:calc(100vh - 85px - var(--nav-height) - var(--header-container-padding)*2);padding:var(--section-padding-equal-big) 0}#favorites .container{max-width:600px;width:-webkit-fill-available}#favorites .fav-items{container-type:inline-size}#favorites .fav-items .cart-item{-ms-flex-wrap:wrap;flex-wrap:wrap}@container (max-width: 400px){#favorites .fav-items li>.row:first-child{-ms-flex-direction:column;flex-direction:column}}
+/*# sourceMappingURL=149.4039d1c3.chunk.css.map*/
