@@ -13,9 +13,9 @@ const router = createHashRouter(
 );
  
 root.render(
-  <RouterProvider router={router}>
-    <StrictMode/>
-  </RouterProvider>
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
  
 );
 
