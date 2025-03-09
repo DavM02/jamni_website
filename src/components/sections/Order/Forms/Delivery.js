@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import DeliveryOutput from "../DeliveryOutput";
 import Checkbox from "../../../ui/inputs/Checkbox/Checkbox";
 import AnimButton from "../../../ui/buttons/AnimButton/AnimButton";

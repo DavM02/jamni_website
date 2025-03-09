@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import DescriptionItem from './DescriptionItem';
 import useDebounce from '../../../hooks/useDebounce';
 

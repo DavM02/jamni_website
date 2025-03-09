@@ -1,4 +1,3 @@
-import React from 'react'
 import instagram from '../../../assets/icons/Instagram_white.svg'
 import facebook from '../../../assets/icons/Facebook_white.svg'
 import vk from '../../../assets/icons/VK_white.svg'

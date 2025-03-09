@@ -1,4 +1,4 @@
-import React from 'react'
+
 import icon1 from '../../../assets/icons/3d-modeling.svg'
 import icon2 from '../../../assets/icons/medal-star.svg'
 import icon3 from '../../../assets/icons/crown.svg'

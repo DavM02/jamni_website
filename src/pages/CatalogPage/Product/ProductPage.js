@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import PageTransition from "../../../components/PageTransition/PageTransition";
 import ChunkLoading from "../../../components/ui/messages/ChunkLoading/ChunkLoading";
 
@@ -8,7 +8,7 @@ function ProductPage() {
   return (
     <div id="product-page">
       {/* <Suspense fallback={<ChunkLoading />}> */}
-        <ProductSections />
+      <ProductSections />
       {/* </Suspense> */}
     </div>
   );

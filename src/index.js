@@ -1,12 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import './index.css';
-
 import App from './App';
 import {  RouterProvider } from 'react-router-dom';
 import { createRoutesFromElements, createHashRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
 
  
 const router = createHashRouter(
@@ -15,7 +14,7 @@ const router = createHashRouter(
  
 root.render(
   <RouterProvider router={router}>
-    <React.StrictMode/>
+    <StrictMode/>
   </RouterProvider>
  
 );

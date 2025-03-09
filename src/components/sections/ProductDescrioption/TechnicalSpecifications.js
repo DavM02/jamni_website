@@ -1,4 +1,4 @@
-import React from 'react';
+
 import sketch from '../../../assets/bed-sketch.jpg'
 import { useParams } from 'react-router-dom';
 export default function TechnicalSpecifications({ content }) {

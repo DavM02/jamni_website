@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Intro from '../../../components/sections/Intro/Intro'
 import bg from '../../../assets/img_22.webp'
 import { useParams } from 'react-router-dom'

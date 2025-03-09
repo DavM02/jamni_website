@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useContext } from "react";
+import { useLayoutEffect, useRef, useContext } from "react";
 import Scrollbar, { ScrollbarPlugin } from "smooth-scrollbar";
 import { MainContext } from "../../context/MainContext";
 import "./scroll.css";
@@ -15,7 +15,6 @@ export default function SmoothScroll({ children }) {
 
 
     if ("scrollRestoration" in window.history) {
-      console.log('done')
       window.history.scrollRestoration = "manual";
     }
 

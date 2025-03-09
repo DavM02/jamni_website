@@ -1,4 +1,4 @@
-import React from 'react'
+
 import FilterParams from './FilterParams/FilterParams'
 import Portal from '../../ui/Portal'
 export default function MobileFilter({  showMobileParams, setShowMobileParams }) {

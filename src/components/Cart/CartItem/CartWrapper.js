@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import SmoothAppearance from "../../ui/SmoothAppearance";
 import { Link } from "react-router-dom";

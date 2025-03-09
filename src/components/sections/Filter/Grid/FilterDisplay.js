@@ -1,4 +1,4 @@
-import React from "react";
+
 import { AnimatePresence } from "framer-motion";
 import SmoothAppearance from "../../../ui/SmoothAppearance";
 import FilterGrid from "./FilterGrid";
@@ -10,7 +10,7 @@ import FetchError from "../../../ui/messages/FetchError";
 export default function FilterDisplay({ isLoading, searchParams, data, error }) {
 
   const noResults = data && data.every((el) => el.isShown === false);
-  
+
   return (
     <AnimatePresence mode="wait">
       {error ? (
@@ -18,7 +18,7 @@ export default function FilterDisplay({ isLoading, searchParams, data, error }) 
       ) : !isLoading && data ? (
         !noResults ? (
           <SmoothAppearance key={searchParams}>
-              <FilterGrid data={data} />
+            <FilterGrid data={data} />
           </SmoothAppearance>
 
         ) : (

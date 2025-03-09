@@ -1,4 +1,4 @@
-import React from "react";
+
 import logo from "../../../assets/logo.svg";
 import arrowLeft from "../../../assets/icons/arrow-cursive-left.svg";
 import arrowRight from "../../../assets/icons/arrow-cursive-right.svg";

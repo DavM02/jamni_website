@@ -1,9 +1,9 @@
-import React from "react";
+
 import MainButton from "../../ui/buttons/MainButton/MainButton";
 import useProductActions from "../../../hooks/useProductActions";
 export default function ConfigSummary({ totalPrice, configuration }) {
- 
-    const { handleAddToCart} = useProductActions()
+
+    const { handleAddToCart } = useProductActions()
     return (
         <form action="#" onSubmit={(e) => handleAddToCart(e, configuration)} className="output column center-y">
 

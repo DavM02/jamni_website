@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './footer.css'
 import Menu from './Menu'
 import Socials from './Socials'

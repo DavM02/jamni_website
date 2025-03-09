@@ -1,8 +1,8 @@
-import React from 'react'
+
 import AnimButton from '../buttons/AnimButton/AnimButton'
 import { useNavigate } from 'react-router-dom'
 import SmoothAppearance from '../SmoothAppearance'
-export default function NoResults({level}) {
+export default function NoResults({ level }) {
   const navigate = useNavigate()
   return (
     <SmoothAppearance key={'no-results'} className="no-results center-gr">

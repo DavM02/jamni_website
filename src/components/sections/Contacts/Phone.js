@@ -1,4 +1,4 @@
-import React from 'react'
+
 import phone from '../../../assets/icons/phone.svg'
 
 export default function Phone() {

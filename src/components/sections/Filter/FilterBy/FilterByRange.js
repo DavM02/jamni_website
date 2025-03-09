@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Accordion from '../../../ui/Accordion/Accordion'
 import MultiRangeSlider from '../../../ui/inputs/RangeInput/MultiRangeSlider'
 export default function FilterByRange({ min, max, val, headline, filterParam }) {

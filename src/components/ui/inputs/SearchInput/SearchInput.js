@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import searchIcon from '../../../../assets/icons/search.svg';
  
 export default function SearchInput() {

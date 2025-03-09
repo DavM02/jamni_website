@@ -1,4 +1,4 @@
-import React from "react";
+
 import InfiniteSlider from "../InfiniteSlider/InfiniteSlider";
 import arrow from "../../assets/icons/arrow-up.svg";
 import Slide from "./Slide";
@@ -10,9 +10,9 @@ import DataLoading from "../ui/messages/DataLoading";
 import SmoothAppearance from "../ui/SmoothAppearance";
 
 function Recommendations() {
- 
+
   const { cartRecommendations, error, isLoading, showRecs, setShowRecs } = modalStore();
-   
+
   return (
     <div className="show-recommendations">
       <div
@@ -40,7 +40,7 @@ function Recommendations() {
           ) : cartRecommendations.length > 0 && !isLoading ? (
             <SmoothAppearance>
               <InfiniteSlider
-                  sliderData={cartRecommendations}
+                sliderData={cartRecommendations}
                 wrapper={Slide}
                 itemWidth={"rec-slider-width"}
               />

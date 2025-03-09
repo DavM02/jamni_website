@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { modalStore } from '../../../stores/modalStore';
 
 export default function Navigation({ activeTab }) {

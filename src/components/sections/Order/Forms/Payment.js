@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import { useState } from 'react'
 import SmoothAppearance from '../../../ui/SmoothAppearance'
 import DeliveryOutput from '../DeliveryOutput'
 import { formStore } from '../../../../stores/formStore'

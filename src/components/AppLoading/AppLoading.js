@@ -1,5 +1,5 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import ReactDOM from "react-dom";
+import { useEffect, useMemo, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 import img1 from '../../assets/img_6.webp';
 import img2 from '../../assets/img_7.webp';
@@ -57,7 +57,7 @@ export default function AppLoading({ setRenderApp }) {
 
     }, [allImagesLoaded]);
 
-    return ReactDOM.createPortal(
+    return createPortal(
         <div
             id='app-loading'
             onTransitionEnd={(e) => e.target.id === 'app-loading' && setRenderApp('hide')}

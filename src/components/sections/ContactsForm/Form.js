@@ -1,4 +1,3 @@
-import React from "react";
 import Input from "../../ui/inputs/Input/Input";
 import AnimButton from "../../ui/buttons/AnimButton/AnimButton";
 import mailIcon from "../../../assets/icons/mail.svg";

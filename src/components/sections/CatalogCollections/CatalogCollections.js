@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './catalogCollections.css'
 import Slide from './Slide'
 import InfiniteSlider from '../../InfiniteSlider/InfiniteSlider'

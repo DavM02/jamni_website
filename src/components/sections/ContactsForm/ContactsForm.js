@@ -1,4 +1,4 @@
-import React from 'react'
+
 import AnimatedText from '../../scroll/TextAnimation'
 import mockup from '../../../assets/Mockup.png';
 import './contactForm.css'

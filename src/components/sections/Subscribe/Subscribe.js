@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./subscribe.css";
 import mockup from "../../../assets/Mockup.png";
 import AnimatedText from "../../scroll/TextAnimation";
@@ -7,7 +7,7 @@ import AnimButton from "../../ui/buttons/AnimButton/AnimButton";
 import mailIcon from "../../../assets/icons/mail.svg";
 import FormWrapper from "../../FormWrapper/FormWrapper";
 export default function Subscribe() {
- 
+
   return (
     <section id="subscribe">
       <div className="container">
@@ -22,7 +22,7 @@ export default function Subscribe() {
               получайте <b>скидки</b> и супер предложения
             </p>
             <FormWrapper
-            formkey="subscribeForm">
+              formkey="subscribeForm">
               <div className="row wrap gap-15">
                 <Input
                   type="email"

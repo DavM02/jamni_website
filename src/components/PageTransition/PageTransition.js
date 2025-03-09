@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import ReactDOM from "react-dom";
+import { createPortal } from 'react-dom';
 import { useBlocker } from "react-router-dom";
 import "./pageTransition.css";
 import AnimatedText from "../scroll/TextAnimation";
@@ -34,7 +34,7 @@ function PageTransition(Component) {
       <React.Fragment>
         <Component {...props} />
  
-        {ReactDOM.createPortal(
+        {createPortal(
           <>
             <motion.div
 

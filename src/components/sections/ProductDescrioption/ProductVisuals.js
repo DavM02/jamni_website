@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Advantages from './Advantages'
 export default function ProductVisuals({ data, images, advantages, }) {

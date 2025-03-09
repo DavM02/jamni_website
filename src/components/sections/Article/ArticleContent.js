@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ArticleTitle from './ArticleTitle';
 import ArticleText from './ArticleText';
 import ArticleImages from './ArticleImages';

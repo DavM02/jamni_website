@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './moreArticles.css'
 import InfiniteSlider from '../../InfiniteSlider/InfiniteSlider'
 import useSWRImmutable from 'swr/immutable'
@@ -11,7 +11,7 @@ import { useSearchParams } from 'react-router-dom'
 export default function MoreArticles() {
 
 
-  
+
 
     const [searchParams] = useSearchParams()
     const id = parseInt(searchParams.get('id'))
@@ -34,7 +34,7 @@ export default function MoreArticles() {
                     ) : (
                         !isLoading && data ? <>
                             <SmoothAppearance>
-                                    <InfiniteSlider itemWidth={'moreitems-slider-img-width'} sliderData={data.filter((el, i) => el.id !== id).slice(0, 10)} wrapper={Slide} />
+                                <InfiniteSlider itemWidth={'moreitems-slider-img-width'} sliderData={data.filter((el, i) => el.id !== id).slice(0, 10)} wrapper={Slide} />
                             </SmoothAppearance>
                         </> : (
                             <DataLoading />

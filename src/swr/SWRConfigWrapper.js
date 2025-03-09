@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { SWRConfig } from 'swr';
 import loadData from '../db/loadData';
 

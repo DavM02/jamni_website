@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import InfiniteSlider from "../../InfiniteSlider/InfiniteSlider";
 import { AnimatePresence } from "framer-motion";
 import FetchError from "../../ui/messages/FetchError";

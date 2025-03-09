@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './home.css';
 import './media.css'
 import Slider from './Slider/Slider';

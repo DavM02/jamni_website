@@ -1,5 +1,6 @@
 import SmoothAppearance from "./SmoothAppearance"
-import ReactDOM from "react-dom"
+import { createPortal } from 'react-dom';
+
 import { AnimatePresence } from "framer-motion"
 
 export default function Portal({ value, root, ...props }) {
@@ -14,7 +15,7 @@ export default function Portal({ value, root, ...props }) {
             {value && <>
                 {
                     root
-                        ? ReactDOM.createPortal(content, document.getElementById(root ?? 'modal-root'))
+                        ? createPortal(content, document.getElementById(root ?? 'modal-root'))
                         : content
                 }
             </>}

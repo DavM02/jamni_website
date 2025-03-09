@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import sortIcon from '../../../../assets/icons/sort.svg';
 import './sort.css';
 import SmoothAppearance from '../../../ui/SmoothAppearance';

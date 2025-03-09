@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Radio from '../../../ui/inputs/Radio/Radio'
 export default function DimensionItems({ label, values, height }) {
     return (

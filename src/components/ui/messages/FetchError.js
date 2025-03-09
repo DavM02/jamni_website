@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SmoothAppearance from '../SmoothAppearance'
 export default function FetchError({ message }) {
   return (

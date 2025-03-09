@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SmoothAppearance from '../../ui/SmoothAppearance'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 export default function Bought() {

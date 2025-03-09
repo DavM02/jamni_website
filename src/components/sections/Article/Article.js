@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./article.css";
 import "./media.css";
 import useSWRImmutable from "swr/immutable";
@@ -38,7 +38,7 @@ export default function Article() {
           {error ? (
             <FetchError message={error.message} />
           ) : data === null ? (
-            <NoResults level={-1}/>
+            <NoResults level={-1} />
           ) : data && !isLoading ? (
             <SmoothAppearance key={'article'} className="section-layout">
               <ArticleContent data={data} />

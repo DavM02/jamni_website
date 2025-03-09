@@ -1,8 +1,8 @@
-import React from 'react'
+
 import { colorMap } from '../../../../hooks/useFilter';
 import OptionItems from './OptionItems';
 export default function Options({ options, colors }) {
-    
+
     return (options &&
         options.map((el, i, arr) => {
             const [key, values] = Object.entries(el)[0];

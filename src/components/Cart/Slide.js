@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 export default function Slide({ el }) {

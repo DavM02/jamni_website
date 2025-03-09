@@ -1,4 +1,4 @@
-import React from "react";
+
 import SmoothAppearance from "../../ui/SmoothAppearance";
 import InfiniteSlider from "../../InfiniteSlider/InfiniteSlider";
 import FetchError from "../../ui/messages/FetchError";

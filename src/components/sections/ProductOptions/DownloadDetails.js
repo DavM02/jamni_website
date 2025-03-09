@@ -1,4 +1,4 @@
-import React from 'react'
+
 import cube from "../../../assets/icons/cube.svg";
 import model from '../../../assets/icons/3d-modeling.svg'
 import download from "../../../assets/icons/document-download.svg";

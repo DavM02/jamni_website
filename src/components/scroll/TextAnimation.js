@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Observer from './Observer';
 
 function AnimatedText({ text, as, center }) {

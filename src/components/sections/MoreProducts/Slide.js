@@ -1,4 +1,4 @@
-import React from "react";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import AddToFav from "../../ui/buttons/AddToFav/AddToFav";
 import { Link } from "react-router-dom";

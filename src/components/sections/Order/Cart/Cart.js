@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './cart.css'
 import Input from '../../../ui/inputs/Input/Input'
 import CartCells from './CartCells'

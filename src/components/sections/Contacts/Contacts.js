@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './contacts.css'
 import Map from './Map'
 import location from '../../../assets/icons/location.svg'

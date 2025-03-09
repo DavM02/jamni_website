@@ -1,4 +1,4 @@
-import React from 'react'
+
 import DimensionItems from './DimensionItems';
 
 export default function Dimensions({ dimensions }) {

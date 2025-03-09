@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import ChunkLoading from "../../../components/ui/messages/ChunkLoading/ChunkLoading";
 import PageTransition from "../../../components/PageTransition/PageTransition";
 import { useParams } from "react-router-dom";
@@ -8,7 +8,7 @@ function DecorPage() {
     return (
         <div id={`${catalog}-page`}>
             {/* <Suspense fallback={<ChunkLoading />}> */}
-                <CatalogSections path={catalog}/>
+            <CatalogSections path={catalog} />
             {/* </Suspense> */}
         </div>
     );

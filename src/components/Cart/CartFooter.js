@@ -1,4 +1,4 @@
-import React from "react";
+
 import MainButton from "../ui/buttons/MainButton/MainButton";
 import { useNavigate } from "react-router-dom";
 export default function CartFooter({ totalPrice }) {

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Route, Routes } from "react-router-dom";
 import ArticlePage from "./ArticlePage/ArticlePage";
 import NewsPage from "./NewsPage";
@@ -7,7 +7,7 @@ function NewsRoute() {
     return (
 
         <Routes>
-            <Route path='/' element={<NewsPage/>} />
+            <Route path='/' element={<NewsPage />} />
             <Route path="/article/:title" element={<ArticlePage />} />
             <Route path="*" element={<NoFound />} />
         </Routes>

@@ -1,10 +1,10 @@
-import React from 'react'
+
 import sketh from '../../../assets/sketch.jpg'
 import { Link } from 'react-router-dom';
 import AnimatedText from '../../scroll/TextAnimation';
 
 export default function Sketch() {
- 
+
 
   return (
     <div className='container'>
@@ -13,10 +13,10 @@ export default function Sketch() {
           <img alt='sketch' src={sketh} />
         </div>
         <div className='column center-x gap-40 text-center'>
-      
-            <AnimatedText text={'Воплотим ваш проект в уникальную мебель'} as={'middle-heading'}  center={true}/>
-   
-        
+
+          <AnimatedText text={'Воплотим ваш проект в уникальную мебель'} as={'middle-heading'} center={true} />
+
+
           <p className='xsmall-text text-main text-black'>
             Команда Jamni продолжает работать с профессионалами! Работать с архитекторами, дизайнерами и уникальными проектами — наша страсть, давайте делать это вместе! Мы всегда готовы встретиться с вами в Шоу Руме, подобрать и предоставить материалы, дать доступ к коллекции оцифрованных моделей.
           </p>

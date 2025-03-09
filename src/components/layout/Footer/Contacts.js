@@ -1,4 +1,4 @@
-import React from 'react'
+
 import mail from '../../../assets/icons/mail.svg'
 import phone from '../../../assets/icons/phone.svg'
 import location from '../../../assets/icons/location.svg'
@@ -7,7 +7,7 @@ export default function Contacts() {
     return (
         <div className='footer-contacts column gap-30'>
             <div className='row start-y gap-15'>
-                <img src={phone} alt='phone-icon' style={{marginTop: '4px'}}/>
+                <img src={phone} alt='phone-icon' style={{ marginTop: '4px' }} />
                 <div>
                     <a href="tel:+79160257790" className='text-main text-light xxsmall-text'>+7 (916) 025-77-90</a>
                     <br />  <a href="tel:+74951501091" className='text-main text-light xxsmall-text'>+7 (495) 150-10-91</a>
