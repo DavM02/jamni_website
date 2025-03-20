@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 
 import img1 from '../../assets/img_6.webp';
@@ -12,24 +12,26 @@ import img8 from '../../assets/img_13.webp';
 import img9 from '../../assets/img_14.webp';
 import img10 from '../../assets/beds/img_5.webp';
 
+const generateRandomNumber = () => Math.min(9, Math.floor(Math.random() * 9));
+const numbers = [
+    Array.from({ length: 22 }, (_, i) => (i === 0 ? 1 : generateRandomNumber())),
+    Array.from({ length: 22 }, (_, i) => (i === 0 ? 0 : generateRandomNumber())),
+    Array(22).fill('0%')
+]
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+
 export default function AppLoading({ setRenderApp }) {
-    const generateRandomNumber = () => Math.min(9, Math.floor(Math.random() * 9));
 
-    const numbers = useMemo(() => [
-        Array.from({ length: 22 }, (_, i) => (i === 0 ? 1 : generateRandomNumber())),
-        Array.from({ length: 22 }, (_, i) => (i === 0 ? 0 : generateRandomNumber())),
-        Array(22).fill('0%')
-    ], []);
-
-    const images = useMemo(() => [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10], []);
     const [loaded, setLoaded] = useState(0);
     const [allImagesLoaded, setAllImagesLoaded] = useState(false);
 
     useEffect(() => {
         let loadedImagesCount = 0;
-
+      
+      
         images.forEach((imgSrc) => {
-
+           
             const link = document.createElement('link');
             link.rel = 'preload';
             link.href = imgSrc;
@@ -40,16 +42,24 @@ export default function AppLoading({ setRenderApp }) {
             img.src = imgSrc;
             img.onload = () => {
                 loadedImagesCount += 1;
+             
                 if (loadedImagesCount === images.length) {
                     setAllImagesLoaded(true);
                 }
             };
         });
-    }, [images]);
+
+        return () => {
+            images.forEach((imgSrc) => {
+                const link = document.head.querySelector(`link[href="${imgSrc}"]`);
+                if (link) link.remove();
+            });
+        };
+    }, []);
 
     useEffect(() => {
 
-        if (allImagesLoaded)  {
+        if (allImagesLoaded) {
             setTimeout(() => setLoaded(1), 100);
             sessionStorage.setItem('animationCompleted', 'true');
         }
@@ -61,7 +71,7 @@ export default function AppLoading({ setRenderApp }) {
         <div
             id='app-loading'
             onTransitionEnd={(e) => e.target.id === 'app-loading' && setRenderApp('hide')}
-            style={{ clipPath: loaded >= 2 ? 'inset(0 0 100% 0)' : 'inset(0)' }}
+            style={{ transform: loaded >= 2 ? 'translateY(-100%)' : 'translateY(0%)' }}
         >
             <div
                 className='app-loading-images'
