@@ -42,7 +42,7 @@ export default function FilterParams() {
               headline={key}
               filterParam={param}
               data={val}
-              isOpen={false}
+              // isOpen={false}
             />
           );
         })}

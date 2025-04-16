@@ -8,6 +8,7 @@ export default function Cursor() {
     const animationFrameId = useRef(null);  
 
     useEffect(() => {
+        if (query) return;
         const updateCursor = (e) => {
             const { clientX, clientY } = e;
 
@@ -26,7 +27,7 @@ export default function Cursor() {
             document.body.removeEventListener('mousemove', updateCursor);
             cancelAnimationFrame(animationFrameId.current);  
         };
-    }, []);
+    }, [query]);
 
     return (!query && <div className='custom-cursor' ref={posRef}></div>);
 }

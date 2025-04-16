@@ -1,5 +1,7 @@
 #filter {
   padding-top: 42px;
+  position: relative;
+  z-index: 99;
 }
 
 #filter .container {

@@ -6,7 +6,8 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Jamni - это ландшафтное ателье с дружной командой единомышленников, искренне любящих свое дело. Для каждого из нас это не просто работа, это одна маленькая жизнь, где мы создаём лёгкие, яркие и действительно качественные вещи для дома и сада." />
+  <meta name="description"
+    content="Jamni - это ландшафтное ателье с дружной командой единомышленников, искренне любящих свое дело. Для каждого из нас это не просто работа, это одна маленькая жизнь, где мы создаём лёгкие, яркие и действительно качественные вещи для дома и сада." />
 
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <!--
@@ -15,13 +16,16 @@
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-  <link rel="preload" href="%PUBLIC_URL%/fonts/ofont.ru_Proxima Nova.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="%PUBLIC_URL%/fonts/ofont.ru_Proxima Nova.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="%PUBLIC_URL%/fonts/ofont.ru_Proxima Nova.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="%PUBLIC_URL%/fonts/ofont.ru_Proxima Nova.woff" as="font" type="font/woff"
+    crossorigin="anonymous">
 
 
-  <link rel="preload" href="%PUBLIC_URL%/fonts/Romile-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="%PUBLIC_URL%/fonts/Romile-Regular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
   <link rel="preload" href="%PUBLIC_URL%/fonts/Romile-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
- 
+
   <link rel="preload" href="%PUBLIC_URL%/appLoading.css" as="style" crossorigin="anonymous">
   <link rel="stylesheet" href="%PUBLIC_URL%/appLoading.css" crossorigin="anonymous">
 
@@ -44,8 +48,24 @@
         url("%PUBLIC_URL%/fonts/Romile-Regular.eot") format("embedded-opentype"),
         url("%PUBLIC_URL%/fonts/Romile-Regular.otf") format("opentype");
     }
-
   </style>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const applyBg = sessionStorage.getItem('animationCompleted') || document.referrer.includes('jamni');
+      const app = document.querySelector('.App');
+
+      if (!app) return;  
+
+      if (applyBg === "false") {
+        app.classList.add('loaded');
+      } else {
+        app.classList.add('loading');
+      }
+    });
+    
+  </script>
 
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.

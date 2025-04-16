@@ -10,12 +10,24 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
+
+html:has(.loaded) {
+  background-color: var(--white);
+}
+
+html:has(.loading) {
+background-color: var(--black);
+}
+
 
 body,
 html {
   overscroll-behavior: none;
 }
+
+
 
 .App {
   visibility: hidden;
