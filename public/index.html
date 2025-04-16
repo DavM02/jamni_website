@@ -54,7 +54,7 @@
 
     document.addEventListener('DOMContentLoaded', function () {
       const applyBg = sessionStorage.getItem('animationCompleted') || document.referrer.includes('jamni');
-      const app = document.querySelector('.App');
+      const app = document.documentElement
 
       if (applyBg === false) {
         app.classList.add('loaded');

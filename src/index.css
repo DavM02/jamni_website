@@ -13,11 +13,11 @@ html {
  
 }
 
-html:has(.loaded) {
+html.loaded {
   background-color: var(--white);
 }
 
-html:has(.loading) {
+html.loading {
 background-color: var(--black);
 }
 
