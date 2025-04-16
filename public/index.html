@@ -56,8 +56,6 @@
       const applyBg = sessionStorage.getItem('animationCompleted') || document.referrer.includes('jamni');
       const app = document.querySelector('.App');
 
-      if (!app) return;  
-
       if (applyBg === false) {
         app.classList.add('loaded');
       } else {
