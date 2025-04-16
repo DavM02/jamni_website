@@ -56,10 +56,10 @@
       const applyBg = sessionStorage.getItem('animationCompleted') || document.referrer.includes('jamni');
       const app = document.documentElement
 
-      if (applyBg === false) {
-        app.classList.add('loaded');
-      } else {
+      if (applyBg === false || applyBg === 'show') {
         app.classList.add('loading');
+      } else {
+        app.classList.add('loaded');
       }
     });
 
