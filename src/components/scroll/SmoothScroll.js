@@ -7,8 +7,8 @@ export default function SmoothScroll({ children }) {
   const { scrollbarAccess, setHeaderHeight } =
     useContext(MainContext);
   const scrollRef = useRef(null);
-  // const query = useMediaQ("(min-width: 767px)");
-  const query = true
+  const query = useMediaQ("(min-width: 767px)");
+
 
   useLayoutEffect(() => {
     let scrollbar;
