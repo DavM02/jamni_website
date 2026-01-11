@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react'
-
 export default function Map() {
 
-    const [showMap, setShowMap] = useState(false)
+ 
     return (
-<>
+ 
         <div id='map'
-            onMouseDown={() => setShowMap(true)}
-        >
+         >
             <iframe
 
                 title="map"
@@ -18,7 +15,7 @@ export default function Map() {
                 style={{ position: 'relative' }}
             ></iframe>
         </div>
-</>
+   
 
     )
 }
