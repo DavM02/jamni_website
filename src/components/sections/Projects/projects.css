@@ -74,6 +74,7 @@
     width: 119px;
     transform: translateY(-1px);
     line-height: 0;
+    text-transform: lowercase;
 }
 
 #projects p span {
